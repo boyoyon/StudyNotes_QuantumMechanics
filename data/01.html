@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="utf-8" />
+        <title>重ね合わせの原理</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+            .margin-large
+            {
+                margin-left: 30px;
+            }
+            .margin-large-blue
+            {
+                margin-left: 30px;
+                color: blue;
+            }
+           .margin-abstract {
+               margin-left: 60px; /* 左マージンを広くする */
+               margin-right: 60px; /* 右マージンを広くする */
+           }
+        </style>
+    <style>
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 20px; /* 列間のスペース */
+        }
+        .column {
+            flex: 1; /* 各列が均等に幅を取る */
+        }
+    </style>
+<style>
+.three-columns {
+  display: flex;
+  gap: 10px; /* 列間の余白を設定 */
+}
+.column {
+  flex: 1; /* 各列の幅を均等にする */
+  padding: 10px; /* 内側の余白を設定 */
+}
+</style>
+    <style>
+        .styleRef { 
+            text-indent: -40px; /* 最初の行の字下げを逆方向に */
+            margin-left: 10px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 40px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+        .styleBullet { 
+            text-indent: -20px; /* 最初の行の字下げを逆方向に */
+            margin-left: 30px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 0px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+            ol
+            {
+                margin-left: 30px;
+            }
+            ul
+            {
+                margin-left: 30px;
+            }
+    </style>
+    <style>
+        .thin-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 1px;
+            background-color: gray;
+        }
+
+        .thick-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+    <style>
+        .blue {
+            color: blue; /* 好きな色に変更してください */
+        }
+    </style>
+    </head>
+    <body>
+<h2><center>Ⅰ THE PRINCIPLE OF SUPERPOSITION<br>重ね合わせの原理</center></h2>
+<h3>1. The need for a quantum theory　量子論の必要性</h3>
+<p>
+Classical mechanics has been developed continuously from the time
+of Newton and applied to an ever-widening range of dynamical
+systems, including the electromagnetic field in interaction with
+matter. The underlying ideas and the laws governing their applica-
+tion form a simple and elegant scheme, which one would be inclined
+to think could not be seriously modified without having all its
+attractive features spoilt. Nevertheless it has been found possible to
+set up a new scheme, called quantum mechanics, which is more
+suitable for the description of phenomena on the atomic scale and
+which is in some respects more elegant and satisfying than the
+classical scheme. This possibility is due to the changes which the
+new scheme involves being of a very profound character and not
+clashing with the features of the classical theory that make it-so
+attractive, as a result of which all these features can be incorporated in the new scheme.
+
+</p><p class="blue">
+古典力学はニュートンの時代から継続的に発展し、物質と相互作用する電磁場を含む、ますます広範囲にわたる力学系に適用されてきました。その根底にある考え方とその適用を支配する法則は、単純かつ洗練された体系を形成しており、その魅力的な特徴をすべて損なうことなく、大幅に変更することはできないと思われがちです。しかしながら、量子力学と呼ばれる新しい体系を構築することが可能であることが発見されました。この体系は原子スケールの現象の記述に適しており、いくつかの点で古典力学の体系よりも洗練され、満足のいくものです。この可能性は、新しい体系に伴う変更が非常に深遠な性質を持ち、古典力学理論を非常に魅力的なものにしている特徴と衝突しないため、これらの特徴すべてを新しい体系に組み込むことができるからです。
+
+</p><p>
+The necessity for a departure from classical mechanics is clearly
+shown by experimental results. In the first place the forces known
+in classical electrodynamics are inadequate for the explanation of the
+remarkable stability of atoms and molecules, which is necessary in
+order that materials may have any definite physical and chemical
+properties at all. The introduction of new hypothetical forces will not
+save the situation, since there exist general principles of classical
+mechanics, holding for all kinds of forces, leading to results in direct
+disagreement with observation. For example, if an atomic system has
+its equilibrium disturbed in any way and is then left alone, it will he set
+in oscillation and the oscillations will get impressed on the surround-
+ing electromagnetic field, so that their frequencies may be observed
+with a spectroscope. Now whatever the laws of force governing the
+equilibrium, one would expect to be able to include the various fre-
+quencies in a scheme comprising certain fundamental frequencies and
+their harmonics. This is not observed to be the case. Instead, there
+is observed a new and unexpected connexion between the frequencies,
+called Ritz’s Combination Law of Spectroscopy, according to which all
+the frequencies can be expressed as differences between certain terms,
+the number of terms being much less than the number of frequencies.
+This law is quite unintelligible from the classical standpoint.
+
+</p><p class="blue">
+古典力学からの脱却の必要性は、実験結果によって明確に示されています。まず第一に、古典電気力学で知られている力は、物質が明確な物理的・化学的性質を持つために不可欠な、原子や分子の驚くべき安定性を説明するには不十分です。新たな仮説的な力を導入しても状況は改善されません。なぜなら、あらゆる種類の力に当てはまる古典力学の一般原理が存在し、それが観測結果と直接矛盾する結果をもたらすからです。例えば、原子系の平衡が何らかの形で乱され、そのまま放置されると、振動が始まり、その振動は周囲の電磁場に印加されるため、分光器でその周波数を観測することができます。さて、平衡を支配する力の法則が何であれ、特定の基本周波数とその高調波からなる体系の中に、様々な周波数を含めることができると期待されます。しかし、実際にはそうではありません。その代わりに、周波数の間には、リッツの分光学的結合法則と呼ばれる、新しく予期せぬ関係が観察されます。これによれば、すべての周波数は特定の項間の差として表すことができ、項の数は周波数の数よりもはるかに少ないとされます。この法則は、古典的な観点からは全く理解できません。<br>
+<br>
+(蛇足)<br>
+\[
+\tilde{\nu} \propto \left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right) cm^{-1}
+\]
+(蛇足おわり)
+</p><p>
+One might try to get over the difficulty without departing from
+classical mechanics by assuming each of the spectroscopically ob-
+served frequencies to be a fundamental frequency with its own degree
+of freedom, the laws of force being such that the harmonic vibrations
+do not occur. Such a theory will not do, however, even apart from
+the fact that it would give no explanation of the Combination Law,
+since it would immediately bring one into conflict with the experi-
+mental evidence on specific heats. Classical statistical mechanics
+enables one to establish a general connexion between the total number
+of degrees of freedom of an assembly of vibrating systems and its
+specific heat. If one assumes all the spectroscopic frequencies of an
+atom to correspond to different degrees of freedom, one would get a
+specific heat for any kind of matter very much greater than the
+observed value. In fact the observed specific heats at ordinary
+temperatures are given fairly well by a theory that takes into account
+merely the motion of each atom as a whole and assigns no internal
+motion to it at all.
+
+</p><p class="blue">
+古典力学から逸脱することなく、分光学的に観測される各周波数がそれぞれ独自の自由度を持つ基本周波数であり、力の法則により調和振動は発生しないと仮定することで、この困難を克服しようとする人もいるかもしれない。しかし、そのような理論は、結合法則を説明できないという事実を別にしても、比熱に関する実験的証拠と直ちに矛盾するため、不十分である。古典統計力学は、振動系の集合体の自由度の総数とその比熱との間に一般的な関連性を確立することを可能にする。もし原子のすべての分光学的周波数が異なる自由度に対応すると仮定するならば、あらゆる種類の物質の比熱は、観測される値よりもはるかに大きくなるであろう。実際、常温で観測される比熱は、各原子全体の運動のみを考慮し、原子に内部運動を全く割り当てない理論によって、かなり正確に与えられています。
+
+</p><p>
+This leads us to a new clash between classical mechanics and the
+results of experiment. There must certainly be some internal motion
+in an atom to account for its spectrum, but the internal degrees of
+freedom, for some classically inexplicable reason, do not contribute
+to the specific heat. A similar clash is found in connexion with the
+energy of oscillation of the electromagnetic fieldina vacuum. Classical
+mechanics requires the specific heat corresponding to this energy to
+be infinite, but it is observed to be quite finite. A general conclusion
+from experimental results is that oscillations of high frequency do
+not contribute their classical quota to the specific heat.
+
+</p><p class="blue">
+このことは、古典力学と実験結果の間に新たな衝突をもたらす。原子のスペクトルを説明するには、原子内部に何らかの内部運動が存在することは間違いないが、内部自由度は、古典力学では説明できない何らかの理由により、比熱には寄与しない。同様の衝突は、真空中の電磁場の振動エネルギーに関しても見られる。古典力学では、このエネルギーに対応する比熱は無限大であることが求められるが、実際には極めて有限であることが観測されている。実験結果から得られる一般的な結論は、高周波振動は、その古典的な寄与分を比熱に与えないということである。<br>
+<br>
+(蛇足)<br>
+　<a href="https://ja.wikipedia.org/wiki/紫外破綻">紫外破綻</a> などを参照<br>
+(蛇足おわり)
+</p><p>
+As another illustration of the failure of classical mechanics we may
+consider the behaviour of light. We have, on the one hand, the
+phenomena of interference and diffraction, which can be explained
+only on the basis of a wave theory; on the other, phenomena such as
+photo-electric emission and scattering by free electrons, which show
+that light is composed of small particles. These particles, which
+are called photons, have each a definite energy and momentum, de-
+pending on the frequency of the light, and appear to have just as
+real an existence as electrons, or any other particles known in physics.A fraction of a photon is never observed.
+
+</p><p class="blue">
+古典力学の欠陥をもう一つ示す例として、光の振る舞いを考えてみましょう。一方では、干渉と回折という現象があり、これらは波動理論によってのみ説明できます。他方では、光電放出や自由電子による散乱といった現象があり、これらは光が小さな粒子で構成されていることを示しています。光子と呼ばれるこれらの粒子は、光の周波数に応じてそれぞれ一定のエネルギーと運動量を持ち、電子や物理学で知られている他の粒子と同様に実在するように見えます。光子の一部は決して観測されません。
+
+</p><p>
+Experiments have shown that this anomalous behaviour is not
+peculiar to light, but is quite general. All material particles have
+wave properties, which can be exhibited under suitable conditions.
+We have here a very striking and general example of the breakdown
+of classical mechanics—not merely an inaccuracy in its laws of motion,
+but an inadequacy of its concepts to supply us with a description of
+atomic events.
+
+</p><p class="blue">
+実験は、この異常な振る舞いが光に特有なものではなく、極めて一般的なものであることを示しています。すべての物質粒子は波動性を持ち、適切な条件下ではそれを示すことがあります。これは、古典力学の崩壊を示す、非常に顕著かつ一般的な例です。それは、単に運動法則の不正確さだけでなく、原子現象を記述する上での概念の不十分さも示しています。
+
+</p><p>
+The necessity to depart from classical ideas when one wishes to
+account for the ultimate structure of matter may be seen, not only
+from experimentally established facts, but also from general philo-
+sophical grounds. In a classical explanation of the constitution of
+matter, one would assume it to be made up of a large number of small
+constituent parts and one would postulate laws for the behaviour of
+these parts, from which the laws of the matter in bulk could be de-
+. duced. This would not conyplete the explanation, however, since the
+question of the structure and stability of the constituent parts is left
+untouched. To go into this question, it becomes necessary to postu-
+late that each constituent part is itself made up of smaller parts, in
+terms of which its behaviour is to be explained. There is clearly no
+end to this procedure, so that one can never arrive at the ultimate
+structure of matter on these lines. So long as big and smail are merely
+relative concepts, it is no help to explain the big in terms of the small.
+It is therefore necessary to modify classical ideas in such a way as to
+give an absolute meaning to size.
+
+</p><p class="blue">
+物質の究極的な構造を説明しようとする場合、古典的な考え方から離れる必要があることは、実験的に確立された事実だけでなく、一般的な哲学的根拠からも明らかである。物質の構成に関する古典的な説明では、物質は多数の小さな構成要素から成り立っていると仮定し、これらの構成要素の挙動に関する法則を仮定する。そして、そこから物質全体の法則を演繹する。しかし、構成要素の構造と安定性の問題が未解決のままであるため、これでは説明は完全ではない。この問題を検討するには、各構成要素自体がさらに小さな構成要素から成り、それらの構成要素の挙動をそれらの構成要素によって説明しなければならないと仮定することが必要となる。この手順には明らかに終わりがなく、したがって、この方法では物質の究極的な構造に到達することは決してできない。大きいことと小さいことが単なる相対的な概念である限り、大きいことを小さいことの観点から説明しても何の役にも立ちません。したがって、大きさに絶対的な意味を与えるように、古典的な概念を修正する必要があります。
+
+</p><p>
+At this stage it becomes important to remember that science is
+concerned only with observable things and that we can observe an
+object only by letting it interact with some outside influence. An act
+of observation is thus necessarily accompanied by some disturbance
+of the object observéd. We may define an object to be big when the
+disturbance accompanying our observation of it may be neglected,
+and small when the disturbance cannot be neglected. This definition
+is in close agreement with the common meanings of big and small.
+
+</p><p class="blue">
+この段階では、科学は観察可能なもののみを対象としており、物体を観察するには、何らかの外部の影響と相互作用させる必要があることを覚えておくことが重要になります。したがって、観察行為は必然的に、観察対象に対する何らかの撹乱を伴います。観察に伴う撹乱を無視できる場合、物体は大きいと定義でき、撹乱を無視できない場合、物体は小さいと定義できます。この定義は、「大きい」と「小さい」の一般的な意味とほぼ一致しています。
+
+</p><p>
+It is usually assumed that, by being careful, we may cut down the
+disturbance accompanying our observation to any desired extent.
+The concepts of big and small are then purely relative and refer to the
+gentleness of our means of observation as well as to the object being
+described. In order to give an absolute meaning to size, such as is
+required for any theory of the ultimate structure of matter, we have
+to assume that there is a limit to the fineness of our powers of observation and the smallness of the dccompanying disturbance—a limit which is
+inherent in the nature of things and can never be surpassed by improved
+technique or increased skill on the part of the observer. Ifthe object under
+observation is such that the unavoidable limiting disturbance is negli-
+gible, then the object is big in the absolute sense and we may apply
+classical mechanics to it. If, on the other hand, the limiting dis-
+turbance is not negligible, then the object is small in the absolute
+sense and we require a new theory for dealing with it.
+
+</p><p class="blue">
+通常、注意深く観察すれば、観察に伴う擾乱を望みどおりに低減できると考えられています。したがって、「大きい」と「小さい」という概念は純粋に相対的なものであり、観察手段の繊細さと観察対象そのものの繊細さを左右します。物質の究極的な構造に関するあらゆる理論に求められるように、大きさに絶対的な意味を与えるためには、観察能力の精細さとそれに伴う擾乱の小ささには限界があると仮定しなければなりません。この限界は事物の性質に内在するものであり、観察者の技術や技能の向上によっても決して超えることはできません。もし観察対象が、避けられない限界擾乱を無視できるほどのものであるならば、その対象は絶対的な意味で大きいものであり、古典力学を適用することができます。一方、限界擾乱が無視できない場合は、物体は絶対的な意味で小さくなり、それを扱うための新しい理論が必要になります。
+
+</p><p>
+A consequence of the preceding discussion is that we must revise
+our ideas of causality. Causality applies only to a system which is
+left undisturbed. If a system is small, we cannot observe it without
+producing a serious disturbance and hence we cannot expect to find
+any causal connexion between the results of our observations.
+Causality will still be assumed to apply to undisturbed systems and
+the equations which will be set up to describe an undisturbed system
+will be differential equations expressing a causal connexion between
+conditions at one time and conditions at a later time. These equations
+will be in close correspondence with the equations of classical
+mechanics, but they will be connected only indirectly with the results
+of observations. There is an unavoidable indeterminacy in the caleu-
+lation of observational results, the theory enabling us to calculate in general only the probability of our obtaining a particular result when we make an observation.
+
+</p><p class="blue">
+これまでの議論の結果として、因果関係についての考え方を見直さなければならない。因果関係は、撹乱を受けない系にのみ適用される。系が小さい場合、深刻な撹乱を生じさせずに観測することはできず、したがって、観測結果の間に因果関係を見出すことは期待できない。因果関係は依然として撹乱を受けない系に適用されるものと仮定し、撹乱を受けない系を記述するために設定される方程式は、ある時点の状態と後の時点の状態との間の因果関係を表す微分方程式となる。これらの方程式は古典力学の方程式と密接に対応しているが、観測結果とは間接的にしか結びつかない。観測結果の計算には避けられない不確定性があり、理論は一般に、観測を行った際に特定の結果が得られる確率しか計算できない。
+
+</p>
+
+<h3>2. The polarization of photons　光子の偏光</h3>
+<p>
+The discussion in the preceding section about the limit to the
+gentleness with which observations can be made and the consequent
+indeterminacy in the results of those observations does not provide
+any quantitative basis for the building up of quantum mechanics.
+For this purpose a new set of accurate laws of nature is required.
+One of the most fundamental and most drastic of these is the Principle
+of Superposition of States. We shall lead up to a general formulation
+of this principle through a consideration of some special cases, taking
+first the example provided by the polarization of light.
+
+</p><p class="blue">
+前節で述べた、観測の容易さの限界と、その結果としての観測結果の不確定性に関する議論は、量子力学の構築に定量的な根拠を与えるものではない。この目的のためには、新たな一連の正確な自然法則が必要である。その中で最も基本的かつ最も根本的なものの一つが、状態の重ね合わせの原理である。まず光の偏光を例に挙げ、いくつかの特殊なケースを検討することにより、この原理の一般的な定式化に至る。
+
+</p><p>
+It is known experimentally that when plane-polarized light is used
+for ejecting photo-electrons, there is a preferential direction for the
+electron emission. Thus the polarization properties of light are closely
+connected with its corpuscular properties and one must ascribe a
+polarization to the photons. One must consider, for instance, a beam
+of light plane-polarized in a certain direction as consisting of photons
+each of which is plane-polarized in that direction and a beam of
+circularly polarized light as consisting of photons each circularly
+polarized. Every photon is in a certain state of polarization, as we
+shall say. The problem we must now consider is how to fit in these
+ideas with the known facts about the resolution of light into polarized
+components and the recombination of these components.
+
+</p><p class="blue">
+実験的に、平面偏光を用いて光電子を放出する場合、電子放出には優先的な方向があることが知られています。したがって、光の偏光特性はその粒子特性と密接に関連しており、光子に偏光を帰属させる必要があります。例えば、ある方向に平面偏光した光線は、その方向にそれぞれ平面偏光した光子で構成されていると考え、円偏光した光線は、それぞれ円偏光した光子で構成されていると考えます。すべての光子は、いわゆる特定の偏光状態にあります。ここで検討すべき問題は、これらの考え方を、光の偏光成分への分解と、これらの成分の再結合に関する既知の事実とどのように適合させるかということです。
+
+</p><p>
+Let us take a definite case. Suppose we have a beam of light passing
+through a crystal of tourmaline, which has the property of letting
+through only light plane-polarized perpendicular to its optic axis.
+Classical electrodynamics tels us what will happen for any given
+polarization of the incident beam. If this beam is polarized per-
+pendicular to the optic axis, it will all go through the crystal; if
+parallel to the axis, none of it will go through; while if polarized at
+an angle \(\alpha\) to the axis, a fraction \(\sin^2\alpha\) will go through. How are we
+to understand these results on a photon basis?
+
+</p><p class="blue">
+具体的な例を挙げてみましょう。トルマリンの結晶を通過する光線があるとします。トルマリンの結晶は、光軸に垂直な平面偏光の光のみを透過します。古典電気力学によれば、入射光線の偏光状態がどのようなものであっても、何が起こるかが分かります。この光線が光軸に垂直に偏光している場合、光線はすべて結晶を通過します。光軸に平行な場合は、全く透過しません。一方、光軸に対して \(\alpha\) の角度で偏光している場合は、\(\sin^2\alpha\) の割合で透過します。これらの結果を光子レベルでどのように理解すればよいのでしょうか。
+
+</p><p>
+A beam that is plane-polarized in a certain direction is to be
+pictured as made up of photons each plane-polarized in that
+direction. This picture leads to no difficulty in the cases when our
+incident beam is polarized perpendicular or parallel to the optic axis.
+We merely have to suppose that each photon polarized perpendicular
+to the axis passes unhindered and unchanged through the crystal,
+while each photon polarized parallel to the axis is stopped and ab-
+sorbed. A difficulty arises, however, in the case of the obliquely
+polarized incident beam. Each of the incident photons is then
+obliquely polarized and it is not clear what will happen to such a
+photon when it reaches the tourmaline.
+
+</p><p class="blue">
+ある方向に平面偏光したビームは、その方向に平面偏光した光子から構成されていると描かなければならない。この描像は、入射ビームが光軸に垂直または平行に偏光している場合には何ら困難を生じない。軸に垂直に偏光した光子は結晶を妨害されることなく変化せずに通過し、軸に平行に偏光した光子は阻止されて吸収されると仮定すればよい。しかし、斜め偏光した入射ビームの場合は困難が生じる。その場合、入射光子はそれぞれ斜め偏光しており、トルマリンに到達したときに何が起こるかは明らかではない。
+
+</p><p>
+A question about what will happen to a particular photon under
+certain conditions is not really very precise. To make it precise one
+must imagine some experiment performed having a bearing on the
+question and inquire what will be the result of the experiment. Only
+questions about the results of experiments have a real significance
+and it is only such questions that theoretical physics has to consider.
+
+</p><p class="blue">
+ある条件下で特定の光子に何が起こるかという問いは、実際にはそれほど正確なものではありません。正確にするには、その問いに関係する何らかの実験が行われた場合を想定し、その実験の結果がどうなるかを問わなければなりません。実験結果に関する問いだけが真の意味を持ち、理論物理学が考察しなければならないのはそのような問いだけなのです。
+
+</p><p>
+In our present example the obvious experiment is to use an incident
+beam consisting of only a single photon and to observe what appears
+on the back side of the crystal. According to quantum mechanics
+the result of this experiment will be that sometimes one will find a
+whole photon, of energy equal to the energy of the incident photon,
+on the back side and other times one will find nothing. When one
+finds a whole photon, it will be polarized perpendicular to the optic
+axis. One will never find only a part of a photon on the back side.
+If one repeats the experiment a large number of times, one will find
+the photon on the back side in a fraction \(\sin^2\alpha\) of the total number
+of times. Thus we may say that the photon has a probability \(\sin^2\alpha\) of passing through the tourmaline and appearing on the back side
+polarized perpendicular to the axis and a probability \(\cos^2\alpha\) of being
+absorbed. These values for the probabilities lead to the correct
+classical results for an incident beam containing a large number of
+photons.
+
+</p><p class="blue">
+この例では、明らかな実験は、単一の光子のみからなる入射ビームを用いて、結晶の裏側に何が現れるかを観察することです。量子力学によれば、この実験の結果、裏側に入射光子のエネルギーに等しいエネルギーを持つ光子全体が現れる場合もあれば、何も現れない場合もあります。光子全体が現れる場合、それは光軸に垂直に偏光しています。裏側に光子の一部だけが現れることはありません。この実験を何度も繰り返すと、光子が裏側に現れる確率は、総回数の \(\sin^2\alpha\) の割合になります。したがって、光子がトルマリンを通過して軸に垂直に偏光した状態で裏側に現れる確率は \(\sin^2\alpha\) であり、吸収される確率は \(\cos^2\alpha\) であると言えます。これらの確率値は、多数の光子を含む入射ビームに対して正しい古典的な結果をもたらします。
+
+</p><p>
+In this way we preserve the individuality of the photon in all
+cases. We are able to do this, however, only because we abandon the .
+determinacy of the classical theory. The result of an experiment is
+not determined, as it would be according to classical ideas, by the
+conditions under the control of the experimenter. The most that can
+be predicted is a set of possible results, with a probability of occurrence for each.
+
+</p><p class="blue">
+このようにして、我々はあらゆる場合において光子の個別性を保つことができます。しかし、これは古典理論の決定性を放棄しているからこそ可能なのです。実験の結果は、古典的な考え方によればそうであるように、実験者の制御下にある条件によって決定されるわけではありません。予測できるのはせいぜい、起こりうる結果の集合と、それぞれの発生確率だけです。
+
+</p><p>
+The foregoing discussion about the result of an experiment with a
+single obliquely polarized photon incident on a crystal of tourmaline
+answers all that can legitimately be asked about what happens to an
+obliquely polarized photon when it reaches the tourmaline. Questions
+about what decides whether the photon is to go through or not and
+how it changes its direction of polarization when it does go through
+cannot be investigated by experiment and should be regarded as
+outside the domain of science. Nevertheless some further description
+is necessary in order to correlate the results of this experiment with
+the results of other experiments that might be performed with
+photons and to fit them all into a general scheme. Such further
+description should be regarded, not as an attempt to answer questions
+outside the domain of science, but as an aid to the formulation of
+rules for expressing concisely the results of large numbers of experi-
+ments.
+
+</p><p class="blue">
+トルマリン結晶に入射する単一の斜め偏光光子を用いた実験の結果に関する上記の議論は、斜め偏光光子がトルマリンに到達したときに何が起こるかについて正当に問われ得るすべてのことに答えを与えている。光子が通過するかどうかを何が決定するのか、また通過した場合に偏光方向がどのように変化するのかという疑問は、実験では調べることができず、科学の領域外とみなされるべきである。しかしながら、この実験の結果を、光子を用いて行われる可能性のある他の実験の結果と相関させ、それらすべてを一般的な枠組みに当てはめるためには、さらなる記述が必要である。このようなさらなる記述は、科学の領域外の疑問に答えようとする試みではなく、多数の実験の結果を簡潔に表現するための規則を策定するための助けとみなされるべきである。
+
+</p><p>
+The further description provided by quantum mechanics runs as
+follows. It is supposed that a photon polarized obliquely to the optic
+axis may be regarded as being partly in the state of polarization
+parallel to the axis and partly in the state of polarization perpen-
+dicular to the axis. The state of oblique polarization may be con-
+sidered as the result of some kind of superposition process applied to
+the two states of parallel and perpendicular polarization. This implies a certain special kind of relationship between the various states of polarization, a relationship similar to that between polarized beams in classical optics, but which is now to be applied, not to beams, but to the states of polarization of one particular photon. This relationship allows any state of polarization to be resolved into, or expressed as a superposition of, any two mutually perpendicular states of polarization.
+
+</p><p class="blue">
+量子力学によるさらなる説明は以下の通りである。光軸に対して斜めに偏光した光子は、部分的には光軸に平行な偏光状態にあり、部分的には光軸に垂直な偏光状態にあるとみなせると仮定する。斜め偏光状態は、平行偏光と垂直偏光の2つの状態に何らかの重ね合わせを適用した結果と考えられる。これは、様々な偏光状態の間にある特別な関係、すなわち古典光学における偏光ビーム間の関係に類似した関係を意味するが、ここではビームではなく、ある特定の光子の偏光状態に適用する。この関係により、任意の偏光状態を、互いに垂直な任意の2つの偏光状態の重ね合わせとして分解、あるいは表現することができる。
+
+</p><p>
+When we make the photon meet a tourmaline crystal, we are sub-
+jecting it to an observation. We are observing whether it is polarized
+parallel or perpendicular to the optic axis. The effect of making this
+observation is to force the photon entirely into the state of parallel
+or entirely into the state of perpendicular polarization. It has to
+make a sudden jump from being partly in each of these two states to
+being entirely in one or other of them. Which of the two states it will jump into cannot be predicted, but is governed only by probability laws. If it jumps into the parallel state it gets absorbed and if it jumps into the perpendicular state it passes through the crystal and appears on the other side preserving this state of polarization.
+
+</p><p class="blue">
+光子をトルマリン結晶に当てると、私たちはそれを観測していることになります。つまり、光軸に対して平行偏光か垂直偏光かを観測しているのです。この観測を行う効果は、光子を完全に平行偏光状態、あるいは完全に垂直偏光状態にすることです。光子は、これらの2つの状態のいずれかに部分的に存在する状態から、完全にどちらか一方の状態へと突然遷移しなければなりません。どちらの状態に移行するかは予測できず、確率法則によってのみ決まります。平行偏光状態に移行した場合は吸収され、垂直偏光状態に移行した場合は結晶を通過し、偏光状態を維持したまま反対側に現れます。
+
+</p>
+
+<h3>3. Interference of photons　光子の干渉</h3>
+<p>
+
+In this section we shall deal with another example of superposition.
+We shall again take photons, but shall be concerned with their posi-
+tion in space and their momentum instead of their polarization. If
+we are given a beam of roughly monochromatic light, then we know
+something about the location and momentum of the associated
+photons. We know that each of them is located somewhere in the
+region of space through which the beam is passing and has a momen-
+tum in the direction of the beam of magnitude given in terms of the
+frequency of the beam by Einstein’s photo-electric law—momentum
+equals frequency multiplied by a universal constant. When we have
+such information about the location and momentum of a photon we
+shall say that it is in a definite translational state.
+
+</p><p class="blue">
+この節では、重ね合わせの別の例を取り上げます。
+再び光子を取り上げますが、偏光ではなく、空間における位置と運動量に着目します。ほぼ単色の光線が与えられた場合、関連する光子の位置と運動量についてある程度のことが分かっています。それぞれの光子は、光線が通過する空間領域のどこかに位置し、光線の方向に運動量を持ち、その大きさは光線の周波数で表され、アインシュタインの光電法則（運動量は周波数に普遍定数を乗じた値に等しい）によって与えられます。光子の位置と運動量に関するこのような情報が得られているとき、光子は明確な並進状態にあると言えます。
+
+</p><p>
+
+We shall discuss the description which quantum mechanics pro-
+vides of the interference of photons. Let us take a definite experi-
+ment demonstrating interference. Suppose we have a beam of light
+which is passed through some kind of interferometer, so that it gets
+split up into two components and the two components are subse-
+quently made to interfere. We may, as in the preceding section, take
+an incident beam consisting of only a single photon and inquire what
+will happen to it as it goes through the apparatus. This will present
+to us the difficulty of the conflict between the wave and corpuscular
+theories of light in an acute form.
+
+</p><p class="blue">
+量子力学が光子の干渉についてどのように記述しているかを議論する。干渉を実証する具体的な実験を例に挙げよう。光線が何らかの干渉計を通過し、2つの成分に分割され、その後、2つの成分が干渉するとする。前節と同様に、1つの光子のみからなる入射光線を取り出し、装置を通過する際に何が起こるかを調べることができる。これは、光の波動理論と粒子理論の対立の難しさを、鋭い形で提示することになる。
+
+</p><p>
+Corresponding to the description that we had in the case of the
+polarization, we must now describe the photon as going partly into
+each of the two components into which the incident beam is split.
+The photon is then, as we may say, in a translational state given by the
+superposition of the two translational states associated with the two
+components. We are thus led to a generalization of the term ‘trans-
+lational state’ applied to a photon. For a photon to be in a definite
+translational state it need not be associated with one single beam of
+light, but may be associated with two or more beams of light which
+are the components into which one original beam has been split.<sup>†</sup> In the accurate mathematical theory each translational state is associated
+with one of the wave functions of ordinary wave optics, which wave
+function may describe either a single beam or two or more beams
+into which one original beam has been split. Translational states are
+thus superposable in a similar way to wave functions.
+
+</p><p class="margin-large">
+<sup>†</sup> 
+The circumstance that the superposition idea requires us to generalize our
+original meaning of translational states, but that no corresponding generalization was
+needed for the states of polarization of the preceding section, is an accidental one
+with no underlying theoretical significance.
+
+</p><p class="blue">
+偏光の場合の記述に対応して、光子は入射ビームが分割された2つの成分のそれぞれに部分的に進入するものとして記述する必要がある。すると光子は、いわば、2つの成分に関連する2つの並進状態の重ね合わせによって与えられる並進状態になる。こうして、光子に適用される「並進状態」という用語の一般化が導かれる。光子が明確な並進状態にあるためには、1本の光線に関連付けられている必要はなく、元の1本の光線が分割された成分である2本以上の光線に関連付けられていてもよい。<sup>†</sup> 正確な数学理論では、各並進状態は通常の波動光学の波動関数の1つに関連付けられており、その波動関数は1本の光線、または元の1本の光線が分割された2本以上の光線を記述することができる。したがって、並進状態は波動関数と同様に重ね合わせることができる。
+
+</p><p class="margin-large-blue">
+<sup>†</sup>
+重ね合わせの考え方は、並進状態についての本来の意味を一般化することを要求するが、前節の分極状態については対応する一般化が必要なかったという状況は、偶然の産物であり、その根底には理論的な意味はない。
+
+</p><p>
+Let us consider now what happens when we determine the energy
+in one of the components. The result of such a determination must
+be either the whole photon or nothing at all. Thus the photon must
+change suddenly from being partly in one beam and partly in the
+other to being entirely in one of the beams. This sudden change is
+due to the disturbance in the translational state of the photon which
+the observation necessarily makes. It is impossible to predict in which
+of the two beams the photon will be found. Only the probability of
+either result can be calculated from the previous distribution of the
+photon over the two beams.
+
+</p><p class="blue">
+さて、成分の1つにおけるエネルギーを決定した場合に何が起こるかを考えてみましょう。このような決定の結果は、光子全体がエネルギーを持つか、全く持たないかのどちらかです。つまり、光子は、一方のビームに部分的に、もう一方のビームに部分的に存在する状態から、一方のビームに完全に存在する状態へと突然変化しなければなりません。この突然の変化は、観測によって必然的に生じる光子の並進状態の乱れによるものです。光子が2つのビームのどちらに存在するかを予測することは不可能です。2つのビームにおける光子の以前の分布から、どちらかの結果となる確率を計算することしかできません。
+
+</p><p>
+One could carry out the energy measurement without destroying the
+component beam by, for example, reflecting the beam from a movable
+mirror and observing the recoil. Our description of the photon allows
+us to infer that, after such an energy measurement, it would not be
+possible to bring about any interference effects between the two components. So long as the photon is partly in one beam and partly in
+the other, interference can occur when the two beams are superposed,
+but this possibility disappears when the photon is forced entirely into one of the beams by an observation. The other beam then no longer
+enters into the deseription of the photon, so that it counts as being
+entirely in the one beam in the ordinary way for any experiment that
+may subsequently be performed on it.
+
+</p><p class="blue">
+例えば、可動鏡でビームを反射させ、その反動を観測すれば、成分ビームを破壊することなくエネルギー測定を行うことができる。光子の記述から、このようなエネルギー測定後、2つの成分間に干渉効果が生じることは不可能であると推論できる。光子が一方のビームに部分的に含まれ、もう一方のビームに部分的に含まれていれば、2つのビームが重ね合わされた際に干渉が生じる可能性があるが、観測によって光子が完全に一方のビームに押し込まれると、この可能性は消滅する。その場合、もう一方のビームはもはや光子の記述には含まれなくなり、その後に行われるあらゆる実験において、通常の方法では、光子は完全に一方のビームに含まれているものとみなされる。
+
+</p><p>
+On these lines quantum mechanics is able to effect a reconciliation
+of the wave and corpuscular properties of light. The essential point
+is the association of each of the translational states of a photon with
+one of the wave functions of ordinary wave optics. The nature of this
+association cannot be pictured on a basis of classical mechanics, but
+is something entirely new. It would be quite wrong to picture the
+photon and its associated wave as interacting in the way in which
+particles and waves can interact in classical mechanics. The associa-
+tion can be interpreted only statistically, the wave function giving
+us information about the probability of our finding the photon in any
+particular place when we make an observation of where it is.
+
+</p><p class="blue">
+このような観点から、量子力学は光の波動性と粒子性を調和させることができます。本質的な点は、光子のそれぞれの並進状態が、通常の波動光学の波動関数の1つと関連していることです。この関連の性質は古典力学の基盤では描けず、全く新しいものです。光子とそれに関連する波動が、古典力学における粒子と波動の相互作用のように相互作用すると描くのは全くの誤りです。この関連は統計的にしか解釈できず、波動関数は、光子がある場所を観測したときに、特定の場所で光子が見つかる確率に関する情報を与えてくれます。
+
+</p><p>
+Some time before the discovery of quantum mechanics people
+realized that the connexion between light waves and photons must
+be of a statistical character. What they did not clearly realize, how-
+ever, was that the wave function gives information about the proba-
+bility of one photon being in a particular place and not the probable
+number of photons in that place. The importance of the distinction
+can be made clear in the following way. Suppose we have.a beam
+of light consisting of a large number of photons split up into two components of equal intensity. On the assumption that the intensity of
+a beam is connected with the probable number of photons in it, we
+should have half the total number of photons going into each com-
+ponent. If the two components are now made to interfere, we should
+require a photon in one component to be able to interfere with one in
+the other. Sometimes these two photons would have to annihilate one
+another and other times they would have to produce four photons.
+This would contradict the conservation of energy. The new theory,
+which connects the wave function with probabilities for one photon,
+gets over the difficulty by making each photon go partly into each of
+the two components. Each photon then interferes only with itself. .
+Interference between two different photons never occurs.
+
+</p><p class="blue">
+量子力学が発見される以前から、人々は光波と光子の関係は統計的な性質を持つはずだと認識していました。しかし、波動関数は特定の場所に光子が1個存在する確率に関する情報を与えるのであって、その場所に存在する光子の確率数に関する情報を与えるのではない、ということを彼らは明確に理解していませんでした。この区別の重要性は、次のように説明できます。多数の光子からなる光線があり、それが等しい強度の2つの成分に分割されているとします。光線の強度がその中の光子の確率数と関係していると仮定すると、各成分には光子の総数が半分ずつ入っていくはずです。この2つの成分を干渉させる場合、一方の成分に1個の光子が存在することで、もう一方の成分に干渉することが可能になります。この2つの光子は、時には互いに消滅し、時には4個の光子を生成する必要があります。これはエネルギー保存則に反する。波動関数を光子1個の確率と結びつける新しい理論は、各光子を2つの成分のそれぞれに部分的に進入させることでこの困難を克服する。こうすることで、各光子は自身とのみ干渉する。2つの異なる光子間の干渉は決して起こらない。
+
+</p><p>
+The association of particles with waves discussed above is not
+restricted to the case of light, but is, according to modern theory,
+of universal applicability. All kinds of particles are associated with
+waves in this way and conversely all wave motion is associated with
+particles. Thus all particles can be made to exhibit interference
+effects and all wave motion has its energy in the form of quanta. The
+reason why these general phenomena are not more obvious is on
+account of a law of proportionality between the mass or energy of the
+particles and the frequency of the waves, the coefficient being such
+that for waves of familiar frequencies the associated quanta are
+extremely small, while for particles even as light as electrons the
+associated wave frequency is so high that it is not easy to demonstrate
+interference.
+
+</p><p class="blue">
+上で論じた粒子と波の関連性は、光の場合に限らず、現代理論によれば普遍的に適用可能です。あらゆる種類の粒子はこのように波と関連しており、逆にすべての波動は粒子と関連しています。したがって、すべての粒子は干渉効果を発揮することができ、すべての波動は量子という形でエネルギーを持ちます。これらの一般的な現象がより明白でない理由は、粒子の質量またはエネルギーと波の周波数の間に比例法則があるためです。この係数は、よく知られている周波数の波の場合、関連する量子は極めて小さいのに対し、電子のように軽い粒子の場合でさえ、関連する波の周波数は非常に高いため、干渉を証明するのは容易ではありません。
+
+</p><p>
+
+<h3>4. Superposition and indeterminacy　重ね合わせと不確定性</h3>
+<p>
+
+The reader may possibly feel dissatisfied with the attempt in the
+two preceding sections to fit in the existence of photons with the
+classical theory of light. He may argue that a very strange idea has
+been introduced—the possibility of a photon being partly in each of
+two states of polarization, or partly in each of two separate beams—
+but even with the help of this strange idea no satisfying picture of
+the fundamental single-photon processes has been given. He may say
+further that this strange idea did not provide any information about
+experimental results for the experiments discussed, beyond what
+could have been obtained from an elementary consideration of
+photons being guided in some vague way by waves. What, then, is
+the use of the strange idea?
+
+</p><p class="blue">
+読者は、前2節における光子の存在を古典的光理論に当てはめようとする試みに、おそらく不満を感じるかもしれない。非常に奇妙な考え、すなわち光子が2つの偏光状態のそれぞれに部分的に存在したり、2つの別々のビームのそれぞれに部分的に存在したりする可能性があるという考えが導入さているが、この奇妙な考えをもってしても、基本的な単一光子過程についての満足のいく描写は示されていない、と主張するかもしれない。さらに読者は、この奇妙な考えは、議論された実験の実験結果に関して、光子が波によって何らかの漠然とした方法で導かれるという基本的な考察から得られる以上の情報を何も提供していない、と言うかもしれない。では、この奇妙な考えは何の役に立つのだろうか？
+
+</p><p>
+In answer to the first criticism it may be remarked that the main
+object of physical science is not the provision of pictures, but is the
+formulation of laws governing phenomena and the application of
+these laws to the discovery of new phenomena. If a picture exists,
+so much the better; but whether a picture exists or not is a matter
+of only secondary importance. In the case of atomic phenomena
+no picture can be expected to exist in the usual sense of the word
+‘picture’, by which is meant a model functioning essentially on
+classical lines. One may, however, extend the meaning of the word
+‘picture’ to include any way of looking at the fundamental laws which
+makes their self-consistency obvious. With this extension, one may
+gradually acquire a picture of atomic phenomena by becoming
+familiar with the laws of the quantum theory.
+
+</p><p class="blue">
+最初の批判に対しては、物理科学の主目的は像を提供することではなく、現象を支配する法則を定式化し、それらの法則を新しい現象の発見に応用することにあると指摘しておこう。像が存在するならば、なおさら良いのだが、像が存在するかどうかは二次的な問題に過ぎない。原子現象の場合、「像」という言葉の通常の意味、つまり本質的に古典的な線に沿って機能するモデルの意味での像は存在しないと期待できる。しかし、「像」という言葉の意味を拡張し、基本法則の自己無矛盾性を明らかにするあらゆる見方を含むように解釈することもできる。この拡張によって、量子論の法則に精通することによって、原子現象の像を徐々に獲得することができるであろう。
+
+</p><p>
+With regard to the second criticism, it may be remarked that for
+many simple experiments with light, an elementary theory of waves
+and photons connected in a vague statistical way would be adequate
+to account for the results. In the case of such experiments quantum
+mechanics has no further information to give. In the great majority
+of experiments, however, the conditions are too complex for an
+elementary theory of this kind to be applicable and some more
+elaborate scheme, such as is provided by quantum mechanics, is then
+needed. The method of description that quantum mechanics gives
+in the more complex cases is applicable also to the simple cases and
+although it is then not really necessary for accounting for the experimental results, its study in these simple cases is perhaps a suitable introduction to its study in the general case.
+
+</p><p class="blue">
+第二の批判に関して言えば、光を用いた多くの単純な実験においては、波と光子を漠然とした統計的方法で結び付けた初等理論で十分結果を説明することができるだろう。そのような実験の場合、量子力学はそれ以上の情報を提供することはできない。しかしながら、大多数の実験においては、条件があまりにも複雑であるためこの種の初等理論を適用することはできず、量子力学が提供するような、より精巧な枠組みが必要となる。量子力学がより複雑なケースにおいて与える記述方法は、単純なケースにも適用可能であり、実験結果を説明するために必ずしも必要ではないものの、これらの単純なケースにおける量子力学の研究は、おそらく一般的なケースにおける量子力学の研究への適切な導入となるであろう。
+
+</p><p>
+There remains an overall criticism that one may make to the whole
+scheme, namely, that in departing from the determinacy of the
+classical theory a great complication is introduced into the descrip-
+tion of Nature, which is a highly undesirable feature. This complica-
+tion is undeniable, but it is offset by a great simplification, provided by the general principle of superposition of states, which we shall now go on to consider. But first it is necessary to make precise the important concept of a ‘state’ of a general atomic system.
+
+</p><p class="blue">
+この全体構想に対しては、依然として一つの批判が残されている。すなわち、古典理論の決定性から逸脱することで、自然の記述に大きな複雑さが生じ、それは極めて望ましくない特徴となる、という批判である。この複雑さは否定できないが、状態の重ね合わせという一般原理によってもたらされる大きな単純化によって相殺される。この一般原理については、これから考察する。しかしまず、一般的な原子系における「状態」という重要な概念を明確にする必要がある。
+
+</p><p>
+Let us take any atomic system, composed of particles or bodies
+with specified properties (mass, moment of inertia, etc.) interacting
+according to specified laws of force. There will be various possible
+motions of the particles or bodies consistent with the laws of force.:
+Each such motion is called a staie of the system. According to
+classical ideas one could specify a state by giving numerical values
+to all the coordinates and velocities of the various component parts
+of the system at some instant of time, the whole motion being then
+completely determined. Now the argument of pp. 3 and 4 shows that
+we cannot observe a small system with that amount of detail which
+classical theory supposes. The limitation in the power of observation
+puts a limitation on the number of data that can be assigned to a
+state. Thus a state of an atomic system must be specified by fewer
+or more indefinite data than a complete set of numerical values
+for all the coordinates and velocities at some instant of time. In the
+case when the system is just a single photon, a state would be completely specified by a given translational state in the sense of §3
+together with a given state of polarization in the sense of §2.
+
+</p><p class="blue">
+特定の特性（質量、慣性モーメントなど）を持ち、特定の力の法則に従って相互作用する粒子または物体で構成される原子系を考えてみましょう。粒子または物体には、力の法則に合致する様々な運動が考えられます。このような運動はそれぞれ、系の状態と呼ばれます。古典的な考え方によれば、ある瞬間における系の様々な構成要素のすべての座標と速度に数値を与えることで状態を特定することができ、それによって全体の運動が完全に決定されます。さて、3ページと4ページの議論は、古典理論が想定するような詳細さで小さな系を観察することはできないことを示しています。観測能力の限界は、状態に割り当てることができるデータの数にも制限を課します。したがって、原子系の状態は、ある瞬間におけるすべての座標と速度の完全な数値セットよりも、より少ない、またはより不確定なデータによって特定されなければなりません。系が単なる単一光子である場合、状態は§3の意味での与えられた並進状態と、§2の意味での与えられた偏光状態によって完全に規定される。
+
+</p><p>
+A state of a system may be defined as an undisturbed motion that
+is restricted by as many conditions or data as are theoretically
+possible without mutual interference or contradiction. In practice
+the conditions could be imposed by a suitable preparation of the
+system, consisting perhaps in passing it through various kinds of
+sorting apparatus, such as slits and polarimeters, the system being
+left undisturbed after the preparation. The word ‘state’ may be
+used to mean either the state at one particular time (after the
+preparation), or the state throughout the whole of time after the
+preparation. To distinguish these two meanings, the latter will be
+called a ‘state of motion’ when there is liable to be arubiguity.
+
+</p><p class="blue">
+系の状態とは、理論的に可能な限り多くの条件またはデータによって、相互干渉や矛盾が生じることなく制限される、乱されない運動と定義できる。実際には、系に適切な準備を施すことで、これらの条件を課すことができる。例えば、系をスリットや旋光計などの様々な選別装置に通し、準備後は乱されないままにしておくといった方法が挙げられる。「状態」という言葉は、ある特定の時点（準備後）における状態、あるいは準備後の全時間にわたる状態のいずれかを意味するために使用される。これら2つの意味を区別するために、曖昧さが生じやすい場合には、後者を「運動状態」と呼ぶ。
+
+</p><p>
+The general principle of superposition of quantum mechanics
+applies to the states, with either of the above meanings, of any one
+dynamical system. It requires us to assume that between these
+states there exist peculiar relationships such that whenever the
+system is definitely in one state we can consider it as being partly
+in each of two or more other states. The original state must be
+regarded as the result of a kind of superposition of the two or more
+new states, in a way that cannot be conceived on classical ideas. Any
+state may be considered as the result of a superposition of two or
+more other states, and indeed in an infinite number of ways. Con-
+versely any two or more states may be superposed to give a new
+state. The procedure of expressing @ state as the result of super-
+position of a number of other states is a mathematical procedure
+that is always permissible, independent of any reference to physical
+conditions, like the procedure of resolving a wave into Fourier com-
+ponents. Whether it is useful in any particular case, though, depends
+on the special physical conditions of the problem under consideration.
+
+</p><p class="blue">
+量子力学の重ね合わせの一般原理は、任意の力学系における、上記のいずれかの意味を持つ状態に適用されます。この原理は、これらの状態間に特異な関係が存在することを仮定することを必要とします。つまり、系が明確に1つの状態にあるときはいつでも、それを2つ以上の他の状態のそれぞれに部分的にあると見なすことができます。元の状態は、古典的な考え方では考えられないような方法で、2つ以上の新しい状態の一種の重ね合わせの結果と見なす必要があります。任意の状態は、2つ以上の他の状態の重ね合わせの結果として見なすことができ、その方法は無限にあります。逆に、任意の2つ以上の状態を重ね合わせることで、新しい状態が生じることもあります。状態を他の複数の状態の重ね合わせの結果として表現する手順は、波をフーリエ成分に分解する手順と同様に、物理的条件とは無関係に、常に許容される数学的手順です。しかし、それが特定のケースにおいて有用であるかどうかは、検討中の問題の特殊な物理的条件に依存します。
+
+</p><p>
+In the two preceding sections examples were given of the super-
+position principle applied to a system consisting of a single photon.
+§2 dealt with states differing only with regard to the polarization and §3 with states differing only with regard to the motion of the photon as a whole.
+
+</p><p class="blue">
+前の2つの節では、重ね合わせの原理を単一光子からなる系に適用した例を示した。§2では偏光に関してのみ異なる状態を扱い、§3では光子全体の運動に関してのみ異なる状態を扱った。
+
+</p><p>
+The nature of the relationships which the superposition principle
+requires to exist between the states of any system is of a kind that
+cannot be explained in terms of familiar physical concepts. One
+cannot in the classical sense picture a system being partly in each of
+two states and see the equivalence of this to the system being com-
+pletely in some other state. There is an entirely new idea involved,
+to which one must get accustomed and in terms of which one must
+proceed to build up an exact mathematical theory, without having
+any detailed classical picture.
+
+</p><p class="blue">
+重ね合わせの原理が、あらゆる系の状態間に存在することを要求する関係の性質は、馴染みのある物理的概念では説明できない種類のものである。古典的な意味では、系が二つの状態のそれぞれに部分的に存在する様子を描き、それが系が他の状態と完全に一致することを理解することはできない。そこには全く新しい概念が関わっており、それに慣れ、詳細な古典的な概念を持たずに、正確な数学理論を構築していく必要がある。
+
+</p><p>
+When a state is formed by the superposition of two other states, it will have properties that are in some vague way intermediate between those of the two original states and that approach more or less closely to those of either of them according to the greater or less ‘weight’ attached to this state in the superposition process. The new state is completely defined by the two original states when their relative weights in the superposition process are known, together with a certain phase difference, the exact meaning of weights and phases being provided in the general case by the mathematical theory. In the case of the polarization of a photon their meaning is that provided by classical optics, so that, for example, when two perpendicularly plane polarized states are superposed with equal weights, the new state may be circularly polarized in either direction, or linearly polarized at an angle \(\frac{1}{4}\pi\), or else elliptically polarized, according to the phase difference.
+
+</p><p class="blue">
+ある状態が他の2つの状態の重ね合わせによって形成される場合、その状態は、2つの元の状態の特性の中間的な性質を漠然と持ち、重ね合わせ過程においてこの状態に付与される「重み」の程度に応じて、どちらか一方の状態の特性に多少なりとも近づく。重ね合わせ過程における2つの元の状態の相対的な重みと、ある位相差が既知である場合、新しい状態はそれらの状態によって完全に定義される。重みと位相の正確な意味は、一般的なケースでは数学理論によって与えられる。光子の偏光の場合、それらの意味は古典光学によって与えられる。例えば、2つの直交する平面偏光状態が等しい重みで重ね合わされた場合、新しい状態は位相差に応じて、どちらの方向にも円偏光、角度 \(\frac{1}{4}\pi\) の直線偏光、あるいは楕円偏光となる。
+
+</p><p>
+The non-classical nature of the superposition process is brought out clearly if we consider the superposition of two states, A and B, such that there exists an observation which, when made on the system in state A, is certain to lead to one particular result, a say, and when made on the system in state B is certain to lead to some different result, b say. What will be the result of the observation when made on the system in the superposed state? The answer is that the result will be sometimes a and sometimes 6, according to a probability law depending on the relative weights of A and B in the superposition process. It will never be different from both a and b. The intermediate character of the state formed by superposition thus expresses itself through the probability of a particular result for an observation being intermediate between the corresponding probabilities for the original states,<sup>†</sup> not through the result itself being intermediate between the corresponding results for the original states.
+
+</p><p class="margin-large">
+<sup>†</sup> The probability of a particular result for the state formed by superposition is not always intermediate between those for the original states in the general case when those for the original states are not zero or unity, so there are restrictions on the ‘intermediateness’ of a state formed by superposition.
+
+</p><p class="blue">
+重ね合わせ過程の非古典的性質は、2つの状態 A と B の重ね合わせを考えれば明確に浮かび上がります。この場合、状態 A のシステムに対して観測を行うと、ある特定の結果 (例えば a) が確実に得られ、状態 B のシステムに対して観測を行うと、別の結果 (例えば b) が確実に得られます。重ね合わせ状態のシステムに対して観測を行った場合、その結果はどうなるでしょうか。答えは、重ね合わせ過程における A と B の相対的な重み付けに依存する確率法則に従い、結果は a になることもあれば 6 になることもあります。a と b の両方と異なることはありません。重ね合わせによって形成される状態の中間的性質は、観測の特定の結果が元の状態の対応する確率の中間となる確率によって表されるのであって、結果自体が元の状態の対応する結果の中間となることによって表されるのではありません。<sup>†</sup>
+
+</p><p class="margin-large-blue">
+<sup>†</sup> 重ね合わせによって形成される状態における特定の結果の確率は、元の状態の確率がゼロでも1でもない一般的なケースでは、必ずしも元の状態の確率の中間とは限らないため、重ね合わせによって形成される状態の「中間性」には制約があります。
+
+</p><p>
+In this way we see that such a drastic departure from ordinary ideas as the assumption of superposition relationships between the states is possible only on account of the recognition of the importance of the disturbance accompanying an observation and of the consequent indeterminaey in the result of the observation. When an observation is made on any atomic system that is in a given state, in general the result will not be determinate, i.e., if the experiment is repeated several times under identical conditions several different results may be obtained. It is a law of nature, though, that if the experiment is repeated a large number of times, each particular result will be obtained in a definite fraction of the total number of times, so that there is a definite probability of its being obtained. This probability is what the theory sets out to calculate. ‘Only in special cases when the probability for some result is unity is the result of the experiment determinate.
+
+</p><p class="blue">
+このようにして、状態間の重ね合わせ関係の仮定のような通常の考えからの劇的な逸脱は、観測に伴う擾乱の重要性と、その結果としての観測結果の不確定性の認識があって初めて可能であることが分かります。与えられた状態にある任意の原子系を観測した場合、一般に結果は確定的ではありません。つまり、同一条件下で実験を複数回繰り返すと、いくつかの異なる結果が得られる可能性があります。しかし、実験を多数回繰り返すと、各特定の結果が総回数の一定の割合で得られるのは自然法則であり、したがって、その結果が得られる確率は一定です。この確率こそが、理論が計算しようとするものです。「ある結果の確率が 1 である特別な場合においてのみ、実験の結果は確定的です。
+
+</p><p>
+The assumption of superposition relationships between the states leads to a mathematical theory in which the equations that define a state are linear in the unknowns. In consequence of this, people have tried to establish analogies with systems in classical mechanics, such as vibrating strings or membranes, which are governed by linear equations and for which, therefore, a superposition principle holds. Such analogies have led to the name ‘Wave Mechanics’ being sometimes given to quantum mechanics. It is important to remember, however, that ihe superposition that occurs in quantum mechanics is of an essentially different nature from any occurring in the classical theory, as is shown by the fact that the quantum superposition principle demands indeterminacy in the results of observations in order to be capable of a sensible physical interpretation. The analogies are thus liable to be misleading.
+
+</p><p class="blue">
+状態間の重ね合わせ関係を仮定すると、状態を定義する方程式が未知数に関して線形であるという数学理論が導かれます。この結果、振動する弦や膜など、線形方程式に支配され、したがって重ね合わせの原理が成り立つ古典力学のシステムとの類似性を確立しようと試みられてきました。このような類似性から、量子力学は「波動力学」と呼ばれることもあります。しかし、量子力学で生じる重ね合わせは、古典力学で生じる重ね合わせとは本質的に異なる性質のものであることを覚えておくことが重要です。これは、量子重ね合わせの原理が、合理的な物理的解釈を可能にするために、観測結果の不確定性を要求するという事実によって示されています。したがって、この類似性は誤解を招く可能性があります。
+
+</p><p>
+
+<h3>5. Mathematical formulation of the principle　原理の数学的定式化</h3>
+<p>
+A profound change has taken place during the present century in the opinions physicists have held on the mathematical foundations of their subject. Previously they supposed that the principles of Newtonian mechanics would provide the basis for the description of the whole of physical phenomena and that all the theoretical physicist had to do was suitably to develop and apply these principles. With the recognition that there is no logical reason why Newtonian and other classical principles should be valid outside the domains in which they have been experimentally verified has come the realization that departures from these principles are indeed necessary. Such departures find their expression through the introduction of new mathematical formalisms, new schemes of axioms and rules of manipulation, into the methods of theoretical physics.
+
+</p><p class="blue">
+今世紀において、物理学者たちが自らの研究分野における数学的基礎について抱いてきた見解は大きく変化した。かつて物理学者たちは、ニュートン力学の原理が物理現象全体を記述する基礎となり、理論物理学者はこれらの原理を適切に発展させ、適用するだけでよいと考えていた。しかし、ニュートン力学やその他の古典力学の原理が、実験的に検証された領域以外では妥当であるべきという論理的根拠がないという認識が広まり、これらの原理からの逸脱が必然的であるという認識が生まれた。こうした逸脱は、理論物理学の方法論に新たな数学的形式主義、新たな公理体系、そして新たな操作規則を導入することで実現される。
+
+</p><p>
+Quantum mechanics provides a good exampile of the new ideas. It requires the states of a dynamical system and the dynamical variables to be interconnected in quite strange ways that are unintelligible from the classical standpoint. The states and dynamical variables have to be represented by mathematical quantities of different natures from those ordinarily used in physics. The new scheme ‘becomes a precise physical theory when all the axioms and rules of manipulation governing the mathematical quantities are specified and when in addition certain laws are laid down connecting physical facts with the mathematical formalism, so that from any given physical conditions equations between the mathematical quantities may be inferred and vice versa. In an application of the theory one would be given certain physical information, which one would proceed to express by equations between the mathematical quantities. One would then deduce new equations with the help of the axioms and rules of manipulation and would conclude by interpreting these new equations as physical conditions. The justification for the whole scheme depends, apart from internal consistency, on the agreement of the final results with experiment.
+
+</p><p class="blue">
+量子力学は、この新しい考え方の良い例である。量子力学は、力学系の状態と力学変数が、古典的な観点からは理解できない、極めて奇妙な方法で相互に関連していることを要求する。状態と力学変数は、物理学で通常用いられるものとは異なる性質の数学的量で表現されなければならない。この新しい枠組みは、「数学的量を支配するすべての公理と操作規則が規定され、さらに物理的事実と数学的形式主義を結びつける一定の法則が規定され、与えられた物理的条件から数学的量間の方程式を推論し、またその逆も可能となるとき、精密な物理理論となる」。この理論を応用すれば、ある物理的情報が与えられ、それを数学的量間の方程式で表現する。そして、公理と操作規則を用いて新たな方程式を導き出し、これらの新たな方程式を物理的条件として解釈することで結論づける。この枠組み全体の正当性は、内部的な整合性とは別に、最終結果が実験と一致するかどうかにかかっている。
+
+</p><p>
+We shall begin to set up the scheme by dealing with the mathematical relations between the states of a dynamical system at one instant of time, which relations will come from the mathematical formulation of the principle of superposition. The superposition process is a kind of additive process and implies that states can in some way be added to give new states. The states must therefore be connected with mathematical quantities of a kind which can be added together to give other quantities of the same kind. The most obvious of such quantities are vectors. Ordinary vectors, existing in a space of a finite number of dimensions, are not sufficiently general for most of the dynamical systems in quantum mechanics. We have to make a generalization to vectors in a space of an infinite number of dimensions, and the mathematical treatment becomes complicated by questions of convergence. For the present, however, we shall deal merely with some general properties of the vectors, properties which can be deduced on the basis of a simple scheme of axioms, and questions of convergence and related topics will not be gone into until the need arises.
+
+</p><p class="blue">
+まず、ある瞬間における力学系の状態間の数学的関係を扱うことから、この枠組みを構築していきます。これらの関係は、重ね合わせの原理の数学的定式化から導き出されます。重ね合わせの過程は一種の加法過程であり、何らかの方法で状態を加算することで新しい状態が得られることを意味します。したがって、これらの状態は、加算することで同じ種類の他の量が得られるような数学的量と結び付けられている必要があります。そのような量の中で最も明白なものはベクトルです。有限次元空間に存在する通常のベクトルは、量子力学におけるほとんどの力学系に対して十分に一般化されていません。無限次元空間におけるベクトルへの一般化を行う必要があり、収束の問題によって数学的処理が複雑になります。しかしながら、ここではベクトルの一般的な性質、つまり単純な公理体系に基づいて導出できる性質のみを扱い、収束の問題や関連する話題については、必要になるまで触れません。
+
+</p><p>
+It is desirable to have a special name for describing the vectors which are connected with the states of a system in quantum mechanics, whether they are in a space of a finite or an infinite number of dimensions. We shall call them ket vectors, or simply kets, and denote a general one of them by a special symbol \(|\rangle\). If we want to specify a particular one of them by a label, A say, we insert it in the middle, thus \(|A\rangle\). The suitability of this notation will become clear as the scheme is developed.
+
+</p><p class="blue">
+量子力学において、系の状態と結びついたベクトルを記述するための特別な名前を持つことが望ましい。それが有限次元空間であろうと無限次元空間であろうと関係ない。ここではこれらをケットベクトル、あるいは単にケットと呼び、その一般的なベクトルを特別な記号 \(|\rangle\) で表す。特定のベクトル、例えば A をラベルで指定したい場合は、ベクトルの中央にラベルを挿入し、\(|A\rangle\) とする。この表記法の妥当性は、この体系が発展するにつれて明らかになるだろう。
+
+</p><p>
+Ket vectors may be multiplied by complex numbers and may be added together to give other ket vectors, e.g. from two ket vectors \(|A\rangle\) and \(|B\rangle\) we can form
+
+</p><p class="blue">
+ケットベクトルは複素数で乗算したり、足し合わせて他のケットベクトルを得ることもできる。例えば、2つのケットベクトル\(|A\rangle\)と\(|B\rangle\)から、
+</p><p>
+
+\[
+c_1|A\rangle + c_2 |B\rangle = |R\rangle \tag{1}
+\]
+
+say, where \(c_1\) and \(c_2\) are any two complex numbers. We may also perform more general linear processes with them, such as adding an infinite sequence of them, and if we have a ket vector \(|x\rangle\), depending on and labelled by a parameter \(x\) which can take on all values in a certain range, we may integrate it with respect to \(x\), to get another ket vector
+
+</p><p class="blue">
+例えば、\(c_1\) と \(c_2\) は任意の2つの複素数です。これらの複素数を無限列で加算するなど、より一般的な線形処理を実行することもできます。また、パラメータ \(x\) に依存し、ラベル付けされたケットベクトル \(|x\rangle\) があり、これが特定の範囲のすべての値を取ることができる場合、これを \(x\) について積分して別のケットベクトルを得ることができます。
+</p><p>
+
+\[
+\int |x\rangle\;dx=|Q\rangle
+\]
+
+say. A ket vector which is expressible linearly in terms of certain others is said to be dependent on them. A set of ket vectors are called independent if no one of them is expressible linearly in terms of the others.
+
+</p><p class="blue">
+例えば、あるケットベクトルが他の特定のベクトルを用いて線形表現できる場合、そのベクトルに従属しているといいます。また、ケットベクトルの集合が独立であるとは、その集合のいずれにも他のベクトルを用いて線形表現できないことを意味します。
+
+</p><p>
+We now assume that each state of a dynamical system at a particular time corresponds to a ket vector, the correspondence being such that if a state results from the superposiiton of certain other states, its corresponding ket vector is expressible linearly in terms of the corresponding ket vectors of the other states, and conversely. Thus the state \(R\) results from a superposition of the states \(A\) and \(B\) when the corresponding ket vectors are connected by (1).
+
+</p><p class="blue">
+ここで、ある時点における力学系の各状態はケットベクトルに対応すると仮定する。この対応関係は、ある状態が他の特定の状態の重ね合わせから生じる場合、それに対応するケットベクトルは他の状態の対応するケットベクトルを用いて線形に表現でき、逆もまた同様である。したがって、対応するケットベクトルが(1)で結ばれている場合、状態 \(R\) は状態 \(A\) と \(B\) の重ね合わせから生じる。
+
+</p><p>
+The above assumption leads to certain properties of the superposition process, properties which are in fact necessary for the word ‘superposition’ to be appropriate. When two or more states are superposed, the order in which they occur in the superposition process is unimportant, so the superposition process is symmetrical between the states that are superposed. Again, we see from equation (1) that (excluding the case when the coefficient \(c_1\) or \(c_2\) is zero) if the state \(R\) can be formed by superposition of the states \(A\) and \(B\), then the state \(A\) can be formed by superposition of \(B\) and \(R\), and \(B\) can be formed by superposition of \(A\) and \(R\). The superposition relationship is symmetrical between all three states \(A\), \(B\), and \(R\).
+
+</p><p class="blue">
+上記の仮定は、重ね合わせ過程の特定の特性、つまり「重ね合わせ」という語が適切であるために必要な特性を導きます。2つ以上の状態が重ね合わせられる場合、それらの状態が重ね合わせ過程において発生する順序は重要ではないため、重ね合わせ過程は重ね合わせられる状態間で対称的です。ここでも、式(1)から（係数 \(c_1\) または \(c_2\) が 0 の場合を除いて）、状態 \(R\) が状態 \(A\) と \(B\) の重ね合わせによって形成できる場合、状態 \(A\) は \(B\) と \(R\) の重ね合わせによって形成でき、状態 \(B\) は \(A\) と \(R\) の重ね合わせによって形成できることがわかります。重ね合わせ関係は、3つの状態 \(A\)、\(B\)、\(R\) の間で対称的です。
+
+</p><p>
+A state which results from the superposition of certain other states will be said to be dependent on those states. More generally, a state will be said to be dependent on any set of states, finite or infinite in number, if its corresponding ket vector is dependent on the corresponding ket vectors of the set of states. A set of states will be called independent if no one of them is dependent on the others.
+
+</p><p class="blue">
+ある状態が他の特定の状態の重ね合わせから生じる場合、その状態はそれらの状態に依存していると言われる。より一般的には、ある状態に対応するケットベクトルが、その状態集合の対応するケットベクトルに依存している場合、その状態は有限数または無限数の任意の状態集合に依存していると言われる。ある状態集合が他の状態に依存していない場合、その状態集合は独立していると言われる。
+
+</p><p>
+To proceed with the mathematical formulation of the superposition principle we must introduce a further assumption, namely the assumption that by superposing a state with itself we cannot form any new state, but only the original state over again. If the original state corresponds to the ket vector \(|A\rangle\), when it is superposed with itself the resulting state will correspond to
+
+</p><p class="blue">
+重ね合わせ原理の数学的定式化を進めるには、さらなる仮定を導入する必要がある。それは、ある状態を自身と重ね合わせることで新たな状態を形成することはできず、元の状態を繰り返すことしかできないという仮定である。もし元の状態がケットベクトル \(|A\rangle\) に対応するとすると、重ね合わせた結果の状態は次のようになる。
+</p><p>
+
+\[
+c_1|A\rangle + c_2 |A\rangle = (c_1+c_2)|A\rangle
+\]
+
+where \(c_1\) and \(c_2\) are numbers. Now we may have \(c_1 + c_2 = 0\), in which case the result of the superposition process would be nothing at all, the two components having cancelled each other by an interference effect. Our new assumption requires that, apart from this special case, the resulting state must be the same as the original one, so that \((c_1+c_2)|A\rangle\) must correspond to the same state that \(|A\rangle\) does. Now \(c_1+c_2\) is an arbitrary complex number and hence we can conclude that if the ket vector corresponding to a siate is multiplied by any complex number, not zero, the resulting ket vector will correspond to the same state. Thus a state is specified by the direction of a ket vector and any length one may assign to the ket vector is irrelevant. All the states of the dynamical system are in one-one correspondence with all the possible directions for a ket vector, no distinction being made between the directions of the ket vectors \(|A\rangle\) and \(-|A\rangle\).
+
+</p><p class="blue">
+ここで、\(c_1\) と \(c_2\) は数値です。\(c_1 + c_2 = 0\) となる場合もあり、その場合、重ね合わせ過程の結果は何もなくなり、2 つの要素は干渉効果によって互いに打ち消し合います。この新しい仮定では、この特殊なケースを除き、結果の状態は元の状態と同じでなければならないため、\((c_1+c_2)|A\rangle\) は \(|A\rangle\) と同じ状態に対応している必要があります。\(c_1+c_2\) は任意の複素数であるため、ある状態に対応するケット ベクトルに 0 以外の任意の複素数を乗じると、結果のケット ベクトルは同じ状態に対応すると結論付けることができます。したがって、状態はケット ベクトルの方向によって指定され、ケット ベクトルに割り当てる長さは無関係です。動的システムのすべての状態は、ケット ベクトルのすべての可能な方向と 1 対 1 に対応しており、ケット ベクトル \(|A\rangle\) と \(-|A\rangle\) の方向は区別されません。
+
+</p><p>
+The assumption just made shows up very clearly the fundamental difference between the superposition of the quantum theory and any kind of classical superposition. In the case of a classical system for which a superposition principle holds, for instance a vibrating membrane, when one superposes a state with itself the result is a different state, with a different magnitude of the oscillations. There is no physical characteristic of a quantum state corresponding to the magnitude of the classical oscillations, as distinct from their quality, described by the ratios of the amplitudes at different points of the membrane. Again, while there exists a classical state with zero amplitude of oscillation everywhere, namely the state of rest, there does not exist any corresponding state for a quantum system, the zero ket vector corresponding to no state at all.
+
+</p><p class="blue">
+今立てた仮定は、量子論の重ね合わせとあらゆる種類の古典的な重ね合わせとの根本的な違いを非常に明確に示しています。重ね合わせの原理が成り立つ古典的なシステム、たとえば振動する膜の場合、ある状態をそれ自体と重ね合わせると、振動の振幅が異なる別の状態になります。膜のさまざまなポイントでの振幅の比で説明される古典的な振動の質とは異なり、古典的な振動の振幅に対応する量子状態の物理的特性はありません。また、どこでも振動の振幅がゼロの古典的な状態、つまり静止状態が存在する一方で、量子システムには対応する状態は存在せず、ケットベクトルがゼロであることはまったく状態がないことに相当します。
+
+</p><p>
+Given two states corresponding to the ket vectors \(|A\rangle\) and \(|B\rangle\), the general state formed by superposing them corresponds to a ket vector \(|R\rangle\) which is determined by two complex numbers, namely the coefficients \(c_1\) and \(c_2\) of equation (1). If these two coefficients are multiplied by the same factor (itself a complex number), the ket vector \(|R\rangle\) will get multiplied ‘by this factor and the corresponding state will be unaltered. Thus only the ratio of the two coefficients is effective in determining the state \(R\). Hence this state is determined by one complex number, or by two real parameters. Thus from two given states, a twofold infinity of states may be obtained by superposition.
+
+</p><p class="blue">
+ケットベクトル \(|A\rangle\) と \(|B\rangle\) に対応する2つの状態が与えられた場合、それらを重ね合わせることで形成される一般状態は、式(1)の係数 \(c_1\) と \(c_2\) という2つの複素数によって決定されるケットベクトル \(|R\rangle\) に対応します。これらの2つの係数に同じ係数（それ自体が複素数）を乗じると、ケットベクトル \(|R\rangle\) にもこの係数が乗じられ、対応する状態は変化しません。したがって、2つの係数の比のみが状態 \(R\) を決定する際に有効です。したがって、この状態は1つの複素数、または2つの実パラメータによって決定されます。このように、2つの与えられた状態から、重ね合わせによって2倍の無限の状態を得ることができます。
+
+</p><p>
+This result is confirmed by the examples discussed in §2 and §3. In the example of §2 there are just two independent states of polarization for a photon, which may be taken to be the states of plane polarization parallel and perpendicular to some fixed direction, and from the superposition of these two a twofold infinity of states of polarization can be obtained, namely all the states of elliptic polarization, the general one of which requires two parameters to describe it. Again, in the example of §3, from the superposition of two given translational states for a photon a twotold infinity of translational states may be obtained, the general one of which is described by two parameters, which may be taken to be the ratio of the amplitudes of the two wave functions that are added together and their phase relationship. This confirmation shows the need for allowing complex coefficients in equation (1). If these coefficients were restricted to be real, then, since only their ratio is of importance for determining the direction of the resultant ket vector \(|R\rangle\) when \(|A\rangle\) and \(|B\rangle\) are given, there would be only a simple infinity of states obtainable from the superposition.
+
+</p><p class="blue">
+この結果は、§2 および §3 で説明した例によって確認されています。§2 の例では、光子には独立した 2 つの偏光状態があり、これらは、ある固定方向に平行な平面偏光の状態と垂直な平面偏光の状態と見なすことができます。これら 2 つの重ね合わせから、2 倍の無限の偏光状態、つまり楕円偏光のすべての状態を取得できます。その一般的な状態を記述するには、2 つのパラメータが必要です。また、§3 の例では、光子に対する 2 つの与えられた並進状態の重ね合わせから、2 倍の無限の並進状態を取得できます。その一般的な状態は、2 つの波動関数の振幅の比とそれらの位相関係として見なされる 2 つのパラメータで記述されます。この確認は、式 (1) で複素係数を許容する必要があることを示しています。これらの係数が実数に制限されている場合、\(|A\rangle\) と \(|B\rangle\) が与えられたときに結果のケット ベクトル \(|R\rangle\) の方向を決定するのにそれらの比のみが重要であるため、重ね合わせから得られる状態は単純に無限になります。
+
+</p><p>
+
+<h3>6. Bra and ket vectors　ブラベクトルとケットベクトル</h3>
+<p>
+
+Whenever we have a set of vectors in any mathematical theory, we can always set up a second set of vectors, which mathematicians call the dual vectors. The procedure will be described for the case when the original vectors are our ket vectors.
+
+</p><p class="blue">
+あらゆる数学理論においてベクトルの集合が与えられているときはいつでも、数学者が双対ベクトルと呼ぶ第二のベクトルの集合を設定することができます。ここでは、元のベクトルがケットベクトルである場合を例に、その手順を説明します。
+
+</p><p>
+Suppose we have a number \(\phi\) which is a function of a ket vector \(|A\rangle\), i.e. to each ket vector \(|A\rangle\) there corresponds one number \(\phi\), and suppose further that the function is a linear one, which means that the number corresponding to \(|A\rangle + |A^\prime\rangle\) is the sum of the numbers corresponding to \(|A\rangle\) and to \(|A^\prime\rangle\), and the number corresponding to \(c|A\rangle\) is \(c\) times the number corresponding to \(|A\rangle\), \(c\) being any numerical factor. Then the number \(\phi\) corresponding to any \(|A\rangle\) may be looked upon as the scalar product of that \(|A\rangle\) with some new vector, there being one of these new vectors for each linear function of the ket vectors \(|A\rangle\). The justification for this way of looking at \(\phi\) is that, as will be seen later (see equations (5) and (6)), the new vectors may be added together and may be multiplied by numbers to give other vectors of the same kind. The new vectors are, of course, defined only to the extent that their scalar products with the original ket vectors are given numbers, but this is sufficient for one to be able to build up a mathematical theory about them.
+
+</p><p class="blue">
+ケットベクトル \(|A\rangle\) の関数である数 \(\phi\) があるとします。つまり、各ケットベクトル \(|A\rangle\) には 1 つの数 \(\phi\) が対応します。また、関数が線形関数であるとします。つまり、\(|A\rangle + |A^\prime\rangle\) に対応する数は、\(|A\rangle\) と \(|A^\prime\rangle\) に対応する数の合計であり、\(c|A\rangle\) に対応する数は、\(|A\rangle\) に対応する数の \(c\) 倍です (\(c\) は任意の数値因数です)。すると、任意の \(|A\rangle\) に対応する数 \(\phi\) は、その \(|A\rangle\) と何らかの新しいベクトルとのスカラー積と見なすことができます。これらの新しいベクトルは、ケットベクトル \(|A\rangle\) の各線形関数ごとに 1 つ存在します。\(\phi\) をこのように考える理由は、後ほど説明するように（式 (5) および (6) を参照）、新しいベクトルを加算したり、数値を掛け合わせたりすることで、同じ種類の他のベクトルを生成できるからです。もちろん、新しいベクトルは、元のケットベクトルとのスカラー積に数値が与えられている範囲でのみ定義されますが、これらに関する数学的理論を構築するにはこれで十分です。
+
+</p><p>
+We shall call the new vectors bra vectors, or simply bras, and denote a general one of them by the symbol \(\langle |\), the mirror image of the symbol for a ket vector. If we want to specify a particular one of them by a label, \(B\) say, we write it in the middle, thus \(\langle B|\). The scalar product of a bra vector \(\langle B|\) and a ket vector \(|A\rangle\) will be written \(\langle B|A \rangle\),i.e., as a juxtaposition of the symbols for the bra and ket vectors, that for the bra vector being on the left, and the two vertical lines being contracted to one for brevity.
+
+</p><p class="blue">
+新しいベクトルをブラベクトル、または単にブラベクトルと呼び、その一般的なベクトルを、ケットベクトルの鏡像である記号 \(\langle |\) で表します。特定のベクトルをラベル（例えば \(B\)）で指定したい場合は、中央に \(\langle B|\) と書きます。ブラベクトル \(\langle B|\) とケットベクトル \(|A\rangle\) のスカラー積は \(\langle B|A \rangle\) と書きます。つまり、ブラベクトルとケットベクトルの記号を並べた形で、ブラベクトルの記号を左側に、簡潔にするために2本の縦線を1本に縮めます。
+
+</p><p>
+One may look upon the symbols \(\langle\) and \(\rangle\) as a distinctive kind of brackets. A scalar product \(\langle B|A \rangle\) now appears as a complete bracket expression and a bra vector \(\langle B|\) or a ket vector \(|A\rangle\) as an incomplete bracket expression. We have the rules that any complete bracket expression denotes a number and any incomplete bracket expression denotes a vector, of the bra or ket kind according to whether it contains the first or second part of the brackets.
+
+</p><p class="blue">
+記号 \(\langle\) と \(\rangle\) は、異なる種類の括弧として考えることができます。スカラー積 \(\langle B|A \rangle\) は完全な括弧式として、ブラベクトル \(\langle B|\) またはケットベクトル \(|A\rangle\) は不完全な括弧式として表されます。完全な括弧式は数値を表し、不完全な括弧式はベクトルを表すという規則があります。括弧の最初の部分を含むか2番目の部分を含むかによって、ブラベクトルまたはケットベクトルの種類が決定されます。
+
+</p><p>
+The condition that the scalar product of \(\langle B|\) and \(|A\rangle\) is a linear function of \(|A\rangle\) may be expressed symbolically by
+
+</p><p class="blue">
+\(\langle B|\) と \(|A\rangle\) のスカラー積が \(|A\rangle\) の線形関数であるという条件は、記号的に次のように表される。
+</p><p>
+
+\[
+\begin{align}
+\langle B|\{|A\rangle +|A^\prime\rangle\} &= \langle B|A \rangle + \langle B|A^\prime \rangle  \tag{2} \\
+\\
+\langle B|\{c|A\rangle\} & = c\langle B|A \rangle \tag{3}
+\end{align}
+\]
+
+\(c\) being any number.
+
+</p><p class="blue">
+\(c\) は任意の数です。
+
+</p><p>
+
+A bra vector is considered to be completely defined when its scalar product with every ket vector is given, so that if a bra vector has its scalar product with every ket vector anishing, the bra vector itself must be considered as vanishing. In symbols, if
+
+</p><p class="blue">
+ブラベクトルは、すべてのケットベクトルとのスカラー積が与えられているときに完全に定義されているとみなされる。したがって、ブラベクトルがすべてのケットベクトルとのスカラー積が0であるとき、ブラベクトル自体は0であるとみなされる。記号で表すと、
+</p><p>
+
+\[
+\left .
+\begin{array}{l l l}
+& \langle P|A \rangle = 0 & all\; |A\rangle \\
+then & \langle P|= 0 & 
+\end{array}
+\right\} \tag{4}
+\]
+
+The sum of two bra vectors \(\langle B|\) and \(\langle B^\prime|\) is defined by the condition that its scalar product with any ket vector \(|A\rangle\) is the sum of the scalar products of \(\langle B|\) and \(\langle B^\prime |\) with \(|A\rangle\),
+
+</p><p class="blue">
+2つのブラベクトル\(\langle B|\)と\(\langle B^\prime|\)の和は、任意のケットベクトル\(|A\rangle\)とのスカラー積が\(\langle B|\)および\(\langle B^\prime |\)と\(|A\rangle\)とのスカラー積の和となるという条件で定義されます。
+</p><p>
+
+\[
+\{\langle B|+\langle B^\prime |\}|A\rangle = \langle B|A \rangle + \langle B^\prime |A \rangle  \tag{5}
+\]
+
+and the product of a bra vector \(\langle B|\) and a number \(c\) is defined by the condition that its scalar product with any ket vector \(|A\rangle\) is \(c\) times the scalar product of \(\langle B|\) with \(|A\rangle\),
+
+</p><p class="blue">
+ブラベクトル \(\langle B|\) と数 \(c\) の積は、任意のケットベクトル \(|A\rangle\) とのスカラー積が \(\langle B|\) と \(|A\rangle\) とのスカラー積の \(c\) 倍であるという条件によって定義される。
+</p><p>
+
+\[
+\{c\langle B|\}|A\rangle = c\langle B|A \rangle  \tag{6}
+\]
+
+Equations (2) and (5) show that products of bra and ket vectors satisfy the distributive axiom of multiplication, and equations (3) and (6) show that multiplication by numerical factors satisfies the usual algebraic axioms.
+
+</p><p class="blue">
+式(2)および式(5)は、ブラベクトルとケットベクトルの積が乗法の分配公理を満たすことを示し、式(3)および式(6)は、数値因数による乗算が通常の代数公理を満たすことを示しています。
+
+</p><p>
+The bra vectors, as they have been here introduced, are quite a different kind of vector from the kets, and so far there is no connexion between them except for the existence of a scalar product of a bra and a ket. We now make the assumption that there is a one-one correspondence between the bras and the kets, such that the bra corresponding to \(|A\rangle +|A^\prime\rangle\) is the sum of the bras corresponding to \(|A\rangle\) and to \(|A^\prime\rangle\), and the bra corresponding to \(c|A\rangle\) is \(\overline{c}\) times the bra corresponding to \(|A\rangle\), \(\overline{c}\) being the conjugate complex number to \(c\). We shall use the same label to specify a ket and the corresponding bra. Thus the bra corresponding to \(|A\rangle\) will be written \(\langle A|\).
+
+</p><p class="blue">
+ここで紹介したブラベクトルは、ケットベクトルとは全く異なる種類のベクトルであり、ブラベクトルとケットベクトルのスカラー積が存在するという点を除けば、両者の間には関連がありません。ここで、ブラベクトルとケットベクトルの間には一対一対応関係があり、\(|A\rangle +|A^\prime\rangle\) に対応するブラベクトルは、\(|A\rangle\) に対応するブラベクトルと \(|A^\prime\rangle\) に対応するブラベクトルの和であり、\(c|A\rangle\) に対応するブラベクトルは、\(|A\rangle\) に対応するブラベクトルの \(\overline{c}\) 倍であり、\(\overline{c}\) は \(c\) の共役複素数であると仮定します。ケットベクトルと対応するブラベクトルには、同じラベルを使用します。したがって、\(|A\rangle\) に対応するブラは \(\langle A|\) と表記されます。
+
+</p><p>
+The relationship between a ket vector and the corresponding bra makes it reasonable to call one of them the conjugate imaginary of the other. Our bra and ket vectors are complex quantities, since they can be multiplied by complex numbers and are then of the same nature as before, but they are complex quantities of a special kind which cannot be split up into real and pure imaginary parts. The usual method of getting the real part of a complex quantity, by taking half the sum of the quantity itself and its conjugate, cannot be applied since a bra and a ket vector are of different natures and cannot be added together. To call attention to this distinction, we shall use the words ‘conjugate complex’ to refer to numbers and other complex quantities which can be split up into real and pure imaginary parts, and the words ‘conjugate imaginary’ for bra and. ket vectors, which cannot. With the former kind of quantity, we shall use the notation of putting a bar over one of them to get the conjugate complex one.
+
+</p><p class="blue">
+ケットベクトルとそれに対応するブラベクトルの関係から、一方を他方の共役虚数と呼ぶのは妥当である。ブラベクトルとケットベクトルは複素数である。なぜなら、複素数を乗じても前者と同じ性質を持つからである。しかし、これらは実部と純虚部に分離できない特殊な種類の複素量である。複素量の実部を求める通常の方法、すなわち量自体とその共役量の和の半分を取る方法は、ブラベクトルとケットベクトルは性質が異なり、互いに加算できないため適用できない。この区別を明確にするために、実部と純虚部に分離できる数やその他の複素量については「共役複素数」という言葉を用い、分離できないブラベクトルとケットベクトルについては「共役虚数」という言葉を用いる。前者の種類の量については、共役複素数を求めるために、どちらか一方にバーを付ける表記を用いる。
+
+</p><p>
+On account of the one-one correspondence between bra vectors and ket vectors, any state of our dynamical system at a particular time may be specified by the direction of a bra vector just as well as by the direction of a ket vector. In fact the whole theory will be symmetrical in its essentials between bras and kets.
+
+</p><p class="blue">
+ブラベクトルとケットベクトルは一対一に対応しているため、ある特定の時刻における力学系の任意の状態は、ケットベクトルの方向だけでなく、ブラベクトルの方向によっても規定される。実際、理論全体はブラベクトルとケットベクトルの間で本質的に対称的となる。
+
+</p><p>
+Given any two ket vectors \(|A\rangle\) and \(|B\rangle\), we can construct from them a number \(\langle B|A \rangle\) by taking the scalar product of the first with the conjugate imaginary of the second. This number deperids linearly on \(|A\rangle\) and antilinearly on \(|B\rangle\), the antilinear dependence meaning that the number formed from \(|B\rangle + |B^\prime\rangle\) is the sum of the numbers formed from \(|B\rangle\) and from \(|B^\prime\rangle\), and the number formed from \(c|B\rangle\) is \(\overline{c}\) times the number formed from \(|B\rangle\). There is a second way in which we can construct a number which depends linearly on \(|A\rangle\) and antilinearly on \(|B\rangle\), namely by forming the scalar product of \(|B\rangle\) with the conjugate imaginary of \(|A\rangle\) and taking the conjugate complex of this scalar product. We assume that these two numbers are always equal, i.e. 
+
+</p><p class="blue">
+任意の2つのケットベクトル \(|A\rangle\) と \(|B\rangle\) が与えられている場合、最初のベクトルと2番目のベクトルの共役虚数とのスカラー積をとることで、数 \(\langle B|A \rangle\) を構築できます。この数は \(|A\rangle\) に対して線形に、\(|B\rangle\) に対して反線形に周期化します。この反線形依存性とは、\(|B\rangle + |B^\prime\rangle\) から形成される数は \(|B\rangle\) と \(|B^\prime\rangle\) から形成される数の和であり、\(c|B\rangle\) から形成される数は \(|B\rangle\) から形成される数の \(\overline{c}\) 倍であることを意味します。 \(|A\rangle\) に線形依存し、\(|B\rangle\) に反線形依存する数を構築する2つ目の方法があります。それは、\(|B\rangle\) と \(|A\rangle\) の共役虚数とのスカラー積をとり、このスカラー積の共役複素数を求めることです。これらの2つの数は常に等しいと仮定します。つまり、
+</p><p>
+
+\[
+\langle B|A \rangle = \overline{\langle A|B \rangle} \tag{7}
+\]
+
+Putting \(|B\rangle = |A\rangle\) here, we find that the number \(\langle A|A\rangle\) must be
+real, We make the further assumption
+
+</p><p class="blue">
+ここで\(|B\rangle = |A\rangle\)と置くと、\(\langle A|A\rangle\)は実数であることがわかります。さらに、
+</p><p>
+
+\[
+\langle A|A \rangle \gt 0  \tag{8}
+\]
+
+except when \(|A\rangle  = 0\).
+
+</p><p class="blue">
+ただし、\(|A\rangle = 0\) の場合には除きます。
+
+</p><p>
+In ordinary space, from any two vectors one can construct a number—their scalar product—which is a real number and is symmetrical between them. In the space of bra vectors or the space of ket vectors, from any two vectors one can again construct a number — the scalar product of one with the conjugate imaginary of the other — but this number is complex and goes over into the conjugate complex number when the two vectors are interchanged. There is thus a kind of perpendicularity in these spaces, which is a generalization of the perpendicularity in ordinary space. We shall call a bra and a ket vector orthogonal if their scalar product is zero, and two bras or two kets will be called orthogonal if the scalar product of one with the conjugate imaginary of the other is zero. Further we shall say that two states of our dynamical system are orthogonal if the vectors corresponding to these states are orthogonal.
+
+</p><p class="blue">
+通常の空間では、任意の 2 つのベクトルから、実数でそれらのベクトル間で対称な数、つまりそれらのスカラー積を構成することができます。ブラベクトルの空間またはケットベクトルの空間では、任意の 2 つのベクトルから、やはり数、つまり一方のベクトルともう一方のベクトルの共役虚数とのスカラー積を構成することができますが、この数は複素数であり、2 つのベクトルを交換すると共役複素数になります。したがって、これらの空間には、通常の空間における垂直性の一般化である一種の直交性があります。ブラベクトルとケットベクトルのスカラー積が 0 のとき、これらのベクトルは直交していると呼び、2 つのブラベクトルまたは 2 つのケットベクトルは、一方と他方の共役虚数とのスカラー積が 0 のとき、直交していると呼びます。さらに、この力学系の 2 つの状態は、それらの状態に対応するベクトルが直交している場合、直交していると言えます。
+
+</p><p>
+The length of a bra vector \(\langle A|\) or of the conjugate imaginary ket vector \(|A\rangle\) is defined as the square root of the positive number \(\langle A|A\rangle\). When we are given a state and wish to set up a bra or ket vector to correspond to it, only the direction of the vector is given and the vector itself is ndetermined to the extent of an arbitrary numerical factor. It is often convenient to choose this numerical factor so that the vector is of length unity. This procedure is called normalization and the vector so chosen is said to be normalized. The vector is not completely determined even then, since one can still multiply it by any number of modulus unity, ie. any number \(e^{i\gamma}\) where \(\gamma\) is real, without changing its length. We shall call such a number a phase factor.
+
+</p><p class="blue">
+ブラベクトル \(\langle A|\) または共役虚数ケットベクトル \(|A\rangle\) の長さは、正の数 \(\langle A|A\rangle\) の平方根として定義されます。ある状態が与えられ、それに対応するブラベクトルまたはケットベクトルを設定したい場合、ベクトルの方向のみが与えられ、ベクトル自体は任意の数値係数の範囲内で決定されません。この数値係数は、ベクトルの長さが 1 になるように選択すると便利な場合がよくあります。この手順は正規化と呼ばれ、このようにして選択されたベクトルは正規化されていると言われます。それでもベクトルは完全には決定されません。なぜなら、ベクトルの長さを変えずに、係数 1 の任意の数、つまり \(e^{i\gamma}\)（\(\gamma\) は実数）を乗じることができるからです。このような数を位相係数と呼びます。
+
+</p><p> 
+The foregoing assumptions give the complete scheme of relations between the states of a dynamical system at a particular time. The relations appear in mathematical form, but they imply physical conditions, which will lead to results expressible in terms of observa tions when the theory is developed further. For instance, if two states are orthogonal, it means at present simply a certain equation in our formalism, but this equation implies a definite physical relationship between the states, which further developments of the theory will enable us to interpret in terms of observational results (see the bottom of p.35).
+
+</p><p class="blue">
+上述の仮定は、特定の時点における力学系の状態間の関係性を完全に規定するものである。これらの関係性は数学的な形で現れるが、物理的な条件を暗示しており、理論をさらに発展させることで、観測結果によって表現可能な結果が導かれる。例えば、二つの状態が直交している場合、それは現時点では我々の形式論では単に特定の方程式を意味するに過ぎないが、この方程式は状態間の明確な物理的関係性を暗示しており、理論をさらに発展させることで、観測結果によってこれを解釈することが可能になる（Ⅱ章10節下段参照）。
+</p>
+    </body>
+</html>

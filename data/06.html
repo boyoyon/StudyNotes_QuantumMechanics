@@ -1,0 +1,1606 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="utf-8" />
+        <title>初歩的な応用</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+            .margin-large
+            {
+                margin-left: 30px;
+            }
+           .margin-abstract {
+               margin-left: 60px; /* 左マージンを広くする */
+               margin-right: 60px; /* 右マージンを広くする */
+           }
+        </style>
+    <style>
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 20px; /* 列間のスペース */
+        }
+        .column {
+            flex: 1; /* 各列が均等に幅を取る */
+        }
+    </style>
+<style>
+.three-columns {
+  display: flex;
+  gap: 10px; /* 列間の余白を設定 */
+}
+.column {
+  flex: 1; /* 各列の幅を均等にする */
+  padding: 10px; /* 内側の余白を設定 */
+}
+</style>
+    <style>
+        .styleRef { 
+            text-indent: -40px; /* 最初の行の字下げを逆方向に */
+            margin-left: 10px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 40px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+        .styleBullet { 
+            text-indent: -20px; /* 最初の行の字下げを逆方向に */
+            margin-left: 30px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 0px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+            ol
+            {
+                margin-left: 30px;
+            }
+            ul
+            {
+                margin-left: 30px;
+            }
+    </style>
+    <style>
+        .thin-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 1px;
+            background-color: gray;
+        }
+
+        .thick-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+    <style>
+        .blue {
+            color: blue; /* 好きな色に変更してください */
+        }
+    </style>
+    </head>
+    <body>
+        <h1><center>Ⅵ ELEMENTARY APPLICATIONS<br>初歩的な応用</center></h1>
+<h2>34. The harmonic oscillator</h2>
+<p>
+A SIMPLE and interesting example of a dynamical system in quantum
+mechanics is the harmonic oscillator. This example is of importance
+for general theory, because it forms a corner-stone in the theory of
+radiation. The dynamical variables needed for describing the system
+are just one coordinate g and its conjugate momentum p. The
+Hamiltonian in classical mechanics is
+
+H == (p*+mra%?), (1)
+
+where m is the mass of the oscillating particle and w is 27 times the
+frequency. We assume the same Hamiltonian in quantum mechanics.
+This Hamiltonian, together with the quantum condition (10) of § 22,
+define the system completely.
+
+The Heisenberg equations of motion are
+
+By = [p, H] = —maq,.
+
+It is convenient to introduce the dimensionless complex dynamical
+
+variable 4 == (2mfiw)?(p+imag). (3)
+
+The equations of motion (2) give
+
+ty = (2mhw)*(—mw*g, twp) = tony
+This equation can be integrated to give ;
+m= noe, (4)
+where 7 is a linear operator independent of t, and is equal to the
+value of 7, at time t= 0. The above equations are all as in the
+classical theory.
+
+We can express g and p in terms of 7 and its conjugate complex 7
+and may thus work entirely in terms of 7 and 7. We have
+
+hon = (2m)~(p+-imag)(p—imeg)
+= (2m)~[p?-+-m?w*g? +-imeo(gp —P9)}
+= H—thw (5)
+and similarly hwiyn = H+thew. (8)
+Thus 99-7 = 1. (7)
+﻿§ 34 THE HARMONIC OSCILLATOR 137
+
+Equation (5) or (6) gives H in terms of 7 and 4 and (7) gives the
+commutation relation connecting y and 7. From (5)
+
+heoinh = TH hoa
+
+and from (6) hong = H7+ es.
+Thus FH—Hy = hoi. (8)
+Also, (7) leads to An — qq = ny" (9)
+
+for any positive integer n, as may be verified by induction, since, by
+multiplying (9) by 7 on the left, we can deduce (9) with n+1 for n.
+Let H’ be an eigenvalue of H and |H’> an eigenket belonging to it.
+
+From. (5)
+hw |\n7q| > = <H' \f—tMie|> = (f’—tho)<H' |’).
+Now <H'|n7q|H’> is the square of the length of the ket 7|H’>, and
+
+h ‘ - ‘
+ence <H'|n¥|H"> > 0,
+the case of equality occurring only if 7|/H’> = 0. Also (H’|H’> > 0.
+
+the case of equality occurring only if 7/H’> = 0. From the form (1)
+of H as a sum of squares, we should expect its eigenvalues to be all
+positive or zero (since the average value of H for any state must be
+positive or zero). We now have the more stringent condition (10).
+From. (8)
+
+HG\H'> = (GH —het)|H"> = (H'—hw)q|H). (11)
+Now if H’ + dw, 7|H'> is not zero and is then according to (11) an
+eigenket of H belonging to the eigenvalue H’—tw. Thus, with H’
+any eigenvalue of H not equal to diw, H’—fw is another eigenvalue
+of H. We can repeat the argument and infer that, if H’—hw ¥¢ fho,
+H’—2haw is another eigenvalue of H. Continuing in this way, we
+obtain the series of eigenvalues H’, H’—hw, H'—2hw, H’—dhw,...,
+which cannot extend to infinity; because then it would contain eigen-
+values contradicting (10), and can terminate only with the value jiw.
+Again, from the conjugate complex of equation (8)
+
+Hn|\H'> = (nH+hwn)|H"> = (H'+hew)n|H">,
+
+showing that H’+%w is another eigenvalue of H,,with 7|H’> as an
+eigenket belonging to it, unless y/H’> = 0. The latter alternative
+can be ruled out, since it would lead to
+
+0 = hwin|H'> = (H+ fhw)|H"> = (H+ thw) |H,
+﻿138 ELEMENTARY APPLICATIONS § 34
+
+which contradicts (10). Thus H’--iw is always another eigenvalue
+of H, and so are H’+ 2iw, H’-++-3hw and soon. Hence the eigenvalues
+of H are the series of numbers
+
+Mio, Bho, Bw, Tio, ... (12)
+
+extending to infinity. These are the possible energy values for the
+harmonic oscillator.
+Let |0> be an eigenket of H belonging to the lowest eigenvalue
+
+1
+and form the sequence of kets
+
+10>, 9/0, nP10>, —-8]0>, (14)
+These kets are all eigenkets of H, belonging to the sequence of eigen-
+values (12) respectively. From (9) and (13)
+
+n"|0> = na"4]0 (15)
+for any non-negative integer n. Thus the set of kets (14) is such that
+n or 4 applied to any one of the set gives a ket dependent on the set.
+Now all the dynamical variables in our problem are expressible in terms
+of » and 7, so the kets (14) must form a complete set (otherwise there
+would be some more dynamical variables). There is just one of these
+kets for each eigenvalue (12) of H, so H by itself forms a complete
+commuting set of observables. The kets (14) correspond to the various
+stationary states of the oscillator. The stationary state with energy
+(n-+-4)hw, corresponding to y”|0), is called the nth quantum state.
+
+The square of the length of the ket 4”|0> is
+
+(O|7"9" 0) = 2X0] "49-40
+with the help of (15). By induction, we find that
+<0|q""|0> = ni} (16)
+provided |0> is normalized. Thus the kets (14) multiplied by the
+coefficients n!-? with n = 0,1, 2,..., respectively form the basic kets
+of a representation, namely the representation with H diagonal. Any
+ket |z> can be expanded in the form
+
+ke) = Se, 10>, ~ a7)
+
+where the 2,’s are numbers. In this way the ket |x) is put into
+correspondence with a power series > x, 7” in the variable 7, the
+various terms in the power series corresponding to the various
+stationary states. If jx> is normalized, it defines a state for which
+﻿§ 34 THE HARMONIC OSCILLATOR 139
+
+the probability of the oscillator being in the nth quantum state,
+ie. the probability of H having the value (n+4)ha, is
+
+P= n! |x|, (18)
+as follows from the same argument which led to (51) of § 18.
+
+We may consider the ket |0) as a standard ket and the power series
+in 7 as a wave function, since any ket can be expressed as such a
+wave function multiplied into this standard ket. We get a kind of
+wave function differing from the usual kind, introduced by equations
+(62) of § 20, in that it is a function of the complex dynamical variable
+y instead of observables. It was first introduced by V. Fock, so we
+shall call the representation Fock’s representation. It is for many
+purposes the most convenient representation for describing states of
+the harmonic oscillator. The standard ket [0 satisfies the condition
+(13), which replaces the conditions (43) of § 22 for the standard ket
+in Schrédinger’s representation.
+
+Let us introduce Schrédinger’s representation with g diagonal and
+obtain the representatives of the stationary states. From (13) and (3)
+
+(p—imag)|0> = 0,
+
+so <q |p—imwg|0> = 0.
+With the help of (45) of § 22, this gives
+a ? f i
+head |0>+-mwg'<q'|0> = 0. (19)
+The solution of this differential equation is
+<q'10> = (marfhiyremoa"?h, (20)
+
+the numerical coefficient being chosen so as to make |0> normalized.
+We have here the representative of the normal state, as the state of
+lowest energy is called. The representatives of the other stationary
+states can be obtained from it. We have from (3)
+
+<q‘ |g" |0> = (2mhiw)-"?¢q'|(p +imagq)”|0>
+
+= (mfiny-nPin( —h jgi-t+ men’) <a '0>
+
+= i*(2fen)-*( mean) z+ mcf) emo, (21)
+
+This may easily be worked out for small values of‘n. The result is of
+the form of e~”@7l2% times a power series of degree n in g’. A further
+factor n!-? must be inserted in (21) to get the normalized representa-
+tive of the nth quantum state. The phase factor i” may be discarded.
+﻿140 ELEMENTARY APPLICATIONS § 35
+
+35. Angular momentum
+
+Let us consider a particle described by the three Cartesian coordi-
+nates x, y, z and their conjugate momenta p,, p,, p,. Its angular
+momentum about the origin is defined as in the classical theory, by
+
+or by the vector equation
+m= XX p.
+
+We must evaluate the P.B.s of the angular momentum components
+with the dynamical variables x, p,, etc., and with each other. This
+we can do most conveniently with the help of the laws (4) and (5) of
+§ 21, thus
+
+and similarly,
+
+(23)
+
+[m,, Pa] = Py [m,, Py] = —DPz; (25)
+[m,, P2| = 0, (26)
+
+with corresponding relations for m, and m,. Again
+[m,; m,| = [zp,—xp,,m,| = 2[ Pz; m,|—[x, Mp] P,
+
+(27)
+[m., mz = My [m,, my} = ™M,-
+
+These results are all the same as in the classical theory. The sign in
+the results (23), (25), and (27) may easily be remembered from the
+rule that the + sign occurs when the three dynamical! variables, con-
+sisting of the two in the P.B. on the left-hand side’and the one
+forming the result on the right, are in the cyclic order (xyz) and the
+— sign occurs otherwise. Equations (27) may be put in the vector
+
+form mxm = iim. (28)
+
+Now suppose we have several particles with angular momenta
+m,,m,,.... Each of these angular momentum vectors will satisfy
+
+9
+and any one of them will commute with any other, so that
+
+m.<xm+m,xm,=0 (rs).
+﻿§ 35 ANGULAR MOMENTUM ; 141
+
+Hence if M = > m, is the total angular momentum,
+r
+
+MxM => m,xm, = > m,xm,+ > (m,xm,-+m,x m,)
+rs r r<s
+
+= ik Sm, = isM. (29)
+
+This result is of the same form as (28), so that the components of the
+total angular momentum M of any number of particles satisfy the
+same commutation relations as those of the angular momentum of
+a single particle.
+
+Let A,, A,, A, denote the three coordinates of any one of the
+particles, or else the three components of momentum of one of
+the particles. The A’s will commute with the angular momenta of
+the other particles, and hence from (23), (24), (25), and (26)
+
+[M,4)=4, (If,4,)=—4,, [MA] = 0. (30)
+
+If B,, B,, B, are a second set of three quantities denoting the
+coordinates or momentum components of one of the particles, they
+will satisfy similar relations to (30). We shall then have
+
+[M,, A, B, +A, By, +A,B,]
+= (M,, A,]B,+4,[M, B,]+[M,A,]B,+4,[B,]
+= A,B,+A,B,—A, B,—A, B,
+= 0.
+
+Thus the scalar product A, B,+A,B,+A,B, commutes with M,,
+and similarly with M,, and M,. Introduce the vector product
+
+AxB=C
+or
+A,B,—A,B,=C,  A,B,-A,B,=C,,  4,B,—A,B, =,
+
+and similarly  [M,,C,] = —C,, [M,, G,] = 0.
+
+These equations are again of the form (30), with C for A. We can
+conclude from this work that equations of the form (30) hold for the
+three components of any vector that we can construct from our
+dynamical variables, and that any scalar commutes with M.
+
+We can introduce linear operators # referring to rotations about
+the origin in the same way in which we introduced the linear operators
+D in § 25 referring to displacements. Taking a rotation through an
+﻿142 ELEMENTARY APPLICATIONS § 35
+
+angle 5¢ about the z-axis and making 6¢ infinitesimal, we can obtain
+the limit operator corresponding to (64) of § 25,
+i —1)/
+Jim (R—1)/84,
+
+which we shall call the rotation operator about the z-axis and denote
+by r,. Like the displacement operators, r, is a pure imaginary linear
+operator and is undetermined to the extent of an arbitrary additive
+pure imaginary number. Corresponding to (66) of § 25, the change
+in any dynamical variable » caused by a rotation through a small
+angle 64 about the z-axis is
+
+86(r, v—vr,), (31)
+to the first order in 5¢. Now the changes produced in the three
+components A,, A,, A, of a vector by a (right-handed) rotation 6¢
+about the z-axis applied to all measuring apparatus are 6¢A4,,
+
+—5A,, and 0 respectively, and any scalar quantity is unchanged by
+the rotation. Equating these changes to (31), we find that
+
+r,A,—Az1, = Ay 1,4,—A,1, = —A,;
+7,4,—A,1', = 9,
+
+and r, commutes with any scalar. Comparing these results with (30),
+we see that ifr, satisfies the same commutation relations as M,.
+Their difference, Mf,—ifir,, commutes with all the dynamical variables
+and must therefore be a number. This number, which is necessarily
+real since M, and ihr, are real, may be made zero by a suitable choice
+of the arbitrary pure imaginary number that can be added to r,. We
+then have the result M, = itr,. (32)
+
+Similar equations hold for M/, and M,. They are the analogues of (69)
+of §25. Thus the total angular momentum is connected with the rota-
+tion operators as the total momentum ts connected with the displacement
+operators. This conclusion is valid for any point as origin.
+
+The above argument applies to the angular momentum arising
+from the motion of particles, defined by (22) for each particle. There
+is another kind of angular momentum occurring in atomic theory,
+spin angular momentum. The former kind of angular momentum will
+be called orbital angular momentum, to distinguish it. The spin angu-
+lar momentum of a particle should be pictured as due to some internal
+motion of the particle, so that it is associated with different degrees
+of freedom from those describing the motion of the particle as a whole,
+﻿§ 35 ANGULAR MOMENTUM 143
+
+and hence the dynamical variables that describe the spin must com-
+mute with x, y, 2, Pz, Py, and p,. The spin does not correspond very
+closely to anything in classical mechanics, so the method of classical
+analogy is not suitable for studying it. However, we can build up a
+theory of the spin simply from the assumption that the components
+of the spin angular momentum are connected with the rotation opera-
+tors in the same way as we had above for orbital angular momentum,
+i.e. equation (32) holds with J, as the z component of the spin angular
+momentum of a particle and r, as the rotation operator about the
+z-axis referring to states of spin of that particle. With this assump-
+tion, the commutation relations connecting the components of the
+spin angular momentum M with any vector A referring to the spin
+must be of the standard form (30), and hence, taking A to be the
+spin angular momentum itself, we have equation (29) holding also
+for the spin. We now have (29) holding quite generally, for any sum
+of spin and orbital angular momenta, and also (30) will hold generally,
+for M the total spin and orbital angular momentum and A any vector
+dynamical variable, and the connexion between angular momentum
+and rotation operators will be always valid.
+
+As an immediate consequence of this connexion, we can deduce the
+law of conservation of angular momentum. For an isolated system, the
+Hamiltonian must be unchanged by any rotation about the origin, in
+other words it must be a scalar, so it must commute with the angular
+momentum about the origin. Thus the angular momentum is a
+constant of the motion. For this argument the origin may be any
+point.
+
+As a second immediate consequence, we can deduce that a state
+with zero total angular momentum is spherically symmetrical. The state
+will correspond to a ket |S>, say, satisfying
+
+M,|S> = M,|S) = M,|8 = 0,
+and hence ,|S> = r,|S> = 7,|S> = 0.
+
+This shows that the ket |S) is unaltered by infinitesimal rotations,
+and it must therefore be unaltered by finite rotations, since the latter
+can be built up from infinitesimal ones. Thus the state is spherically
+symmetrical. The converse theorem, a spherically symmetrical state
+has zero total angular momentum, is also true, though its proof is not
+quite so simple. A spherically symmetrical state corresponds to a ket
+|S whose direction is unaltered by any rotation. Thus the change
+﻿144 ELEMENTARY APPLICATIONS § 35
+
+in |S) produced by a rotation operator 7,,7,, or 7, must be a numerical
+multiple of |S), say
+e|S> = Cy|S>, ry|S> = Cy |S, 7,|S> = c,|8>,
+where the c’s are numbers. This gives
+M,|S> = ttie,|S>, MM, |8> = ihe,|S>,
+
+M,|S> = ike,|S). (33)
+These equations are not consistent with the commutation relations
+(29) for M,, M,, M, unless c, = ¢, = c, = 0, in which case the state
+has zero total angular momentum. We have in (33) an example of
+a ket which is simultaneously an eigenket of the three non-commuting
+
+linear operators M,, M,, M,, and this is possible only if all three
+eigenvalues are zero.
+
+36. Properties of angular momentum
+
+There are some general properties of angular momentum, deducible
+simply from the commutation relations between the three compo-
+nents. These properties must hold equally for spin and orbital angular
+momentum. Let m,, m,, m, be the three components of an angular
+momentum, and introduce the quantity 8 defined by
+
+B= mh+m2 +m.
+Since f is a scalar it must commute with m,, m,, and m,. Let us
+suppose we have a dynamical system for which m,, m,, m, are the
+only dynamical variables. Then 8 commutes with everything and
+
+must be a number. We can study this dynamical system on much
+the same lines as we used for the harmonic oscillator in § 34.
+
+Put M,—tM, = 7.
+From the commutation relations (27) we get
+
+m,-+mZ— tm, My—M, Mz)
+
+= B—m2--tim, (34)
+and similarly qq = B—m2—im,. (85)
+Thus AN—H = BZhm,. (36)
+Also M,N—NM, = tim, —im, = —tin. (37)
+
+We assume that the components of an angular momentum are
+observables and thus m, has eigenvalues. Let mj be one of them,
+and |m;> an eigenket belonging to it. From (34)
+
+<m, lin |m,> = <m,|B—mi-+-hm,|m,> = (B—m?+-hm,)<m,|m,.
+﻿§ 36 PROPERTIES OF ANGULAR MOMENTUM 145
+
+The left-hand side here is the square of the length of the ket y!mz>
+and is thus greater than or equal to zero, the case of equality occur-
+ring if and only if y|{m,)> = 0. Hence
+
+B—m2-+him!, > 0,
+
+or B+-40" > (mi—4h)?. (38)
+Thus B+it? > 0.
+Defining the number & by
+
+be = (BEE)! = (m3--m}-m2+ Hey, (39)
+
+so that k > —4$h, the inequality (38) becomes
+k-+-Hi > |i —4h|
+or k+h > m, > —k. (40)
+An equality occurs if and only if y]m,> = 0. Similarly from (35)
+mt nii|m,> = (B—m,2—Fim) mim’),
+showing that p—mZ—im, > 0
+or k > m, > —k—Ah,
+with an equality occurring if and only if q]m> == 0. This result
+combined with (40) shows that &£ > 0 and
+k>m, > ~k, (41)
+with m, = kif aim = 0 and m, = —k if ylm> = 0.
+From (37)
+m,\m,> = (ym,—fin)|m,> = (m,—h)y|m,).
+Now if m, 4 —k, y/mj> is not zero and is then an eigenket of m,
+belonging to the eigenvalue m,—h. Similarly, ifmj,—h + —k, m,—2h
+is another eigenvalue of m,, and so on. We get in this way a series
+of eigenvalues mj, m,—h, m,—2#,..., which must terminate from (41),
+and can terminate only with the value —k. Again, from the conjugate
+complex of equation (37)
+mi, ilmgy = (Fm, HHA) |my> = (mi, -A)Alm,,
+showing that m}+-# is another eigenvalue of m, unless 7|/m,> = 0, in
+which case m, = &. Continuing in this way we get a series of eigen-
+values m,,m,+h,m,+2h,.... which must terminate from (41), and
+can terminate only with the value &. We can conclude that 2% is an
+integral multiple of 4 and that the eigenvalues of m, are
+
+k, k—-h, k—2h, ..., —k+h, —k. (42)
+﻿146 ELEMENTARY APPLICATIONS § 36
+
+The eigenvalues of m, and m, are the same, from symmetry. These
+eigenvalues are all integral or half odd integral multiples of %, accord-
+ing to whether 2k is an even or odd multiple of %.
+
+Let |max> be an eigenket of m, belonging to the maximum eigen-
+
+value k, so that qimax) = 0, (43)
+and form the sequence of kets
+
+jmax>, ylmax>, 7?|max>, ...,  »?/*|max). (44)
+
+These kets are all eigenkets of m,, belonging to the sequence of eigen-
+values (42) respectively. The set of kets (44) is such that the operator
+7 applied to any one of them gives a ket dependent on the set (y
+applied to the last gives zero), and from (36) and (43) one sees
+that 7 applied to any one of the set also gives a ket dependent on the
+set. All the dynamical variables for the system we are now dealing
+with are expressible in terms of 7 and 7, so the set of kets (44) is a
+complete set. There is just one of these kets for each eigenvalue (42)
+of m,, so m, by itself forms a complete commuting set of observables.
+
+It is convenient to define the magnitude of the angular momentum
+vector m to be k, given by (39), rather than f!, because the possible
+
+values for k are 0, fh, h, 3h, Qh, on, (45)
+
+extending to infinity, while the possible values for £? are a more
+complicated set of numbers.
+
+For a dynamical system involving other dynamical variables besides
+Mz, M,, and m,, there may be variables that do not commute with f.
+Then f is no longer a number, but a general linear operator. This
+happens for any orbital angular momentum (22), as x, y, z, Dz, Py, and
+p, do not commute with 8. We shall assume that 8 is always an
+observable, and & can then be defined by (39) with the positive square
+root function and is also an observable. We shall call & so defined
+the magnitude of the angular momentum vector m in the general
+case. The above analysis by which we obtained the eigenvalues of
+m, is still valid if we replace |m,> by a simultaneous eigenket |k’m,>
+of the commuting observables k and m,, and leads to the result that
+the possible eigenvalues for k are the numbers (45), and for each
+eigenvalue k’ of k the eigenvalues of m, are the numbers (42) with k’
+substituted for k. We have here an example of a phenomenon which
+we have not met with previously, namely that with two commuting
+observables, the eigenvalues of one depend on what eigenvalue we
+﻿§ 36 PROPERTIES OF ANGULAR MOMENTUM 147
+
+assign to the other. This phenomenon may be understood as the two
+observables being not altogether independent, but partially functions
+of one another. The number of independent simultaneous eigenkets
+of & and m, belonging to the eigenvalues k’ and m, must be indepen-
+dent of mj, since for each independent jk’m}> we can obtain an
+independent |k’m;>, for any mz in the sequence (42), by multiplying
+\b’m,> by a suitable power of y or 7.
+
+As an example let us consider a dynamical system with two angular
+momenta m, and m,, which commute with one another. If there are
+no other dynamical variables, then all the dynamical variables com-
+mute with the magnitudes /, and k, of m, and mg, so k, and k, are
+numbers. However, the magnitude K of the resultant angular
+momentum M = m,-+m, is not a number (it does not commute
+with the components of m, and m,) and it is interesting to work out
+the eigenvalues of K. This can be done most simply by a method
+of counting independent kets. There is one independent simultaneous
+eigenket of m,, and m,, belonging to any eigenvalue m,, having one of
+the values k,, ky —h, ky —26h,..., —k, and any eigenvalue m,, having one
+of the values k,, k,—f, k,—2h,..., —k,, and this ket is an eigenket
+of M, belonging to the eigenvalue M, = m,,+mj,. The possible
+values of M’, are thus h,-+-k,, hk, tky—h, ky +k,—2h,...,—k,—ky, and
+the number of times each of them occurs is given by the following
+scheme (if we assume for definiteness that k, > k,),
+
+Tey} Keng bey hhg Fi, Boy + ig — 2h ooey ley leg, bey — leg,»
+
+1 2 3 Qhg tl k+1 (46)
+Jey len, —hey + lig Ih...) — ho — hog
+ky 1 Qk, .. 1
+
+Now each eigenvalue K’ of K will be associated with the eigenvalues
+K’, K'—h, K'—%,..., ~K’' for M,, with the same number of indepen-
+dent simultaneous eigenkets of K and M, for each of them. The total
+number of independent eigenkets of J, belonging to any eigenvalue
+Mi must be the same, whether we take them to be simultaneous
+eigenkets of m,, and mg, or simultaneous eigenkets of K and M,, i.e.
+it is always given by the scheme (46). It follows that the eigenvalues
+
+for K are
+
+lett, ey-tky—h, fey hog — 2H, ws ey — eg, (47)
+
+and that for each of these eigenvalues for K and an eigenvalue for
+﻿148 ELEMENTARY APPLICATIONS § 36
+
+M, going with it there is just one independent simultaneous eigenket
+of K and M,.
+
+The effect of rotations on eigenkets of angular momentum variables
+should be noted. Take any eigenket |) of the z component of total
+angular momentum for any dynamical system, and apply to it a small
+rotation through an angle 6¢ about the z-axis. It will change into
+
+(1-+8¢r,)|Mz> = (1—i8$.M,/)|M,)
+with the help of (32). This equals
+(1—i86.Mi/%) |My == e~BOMIh| >
+
+to the first order in 8¢. Thus |M{> gets multiplied by the numerical
+factor e-®¢MJk, By applying a succession of these small rotations, we
+find that the application of a finite rotation through an angle ¢ about
+the z-axis causes |M{> to get multiplied by e~**™%"_ Putting 6 = 2m,
+we find that an application of one revolution about the z-axis leaves
+|M“> unchanged if the eigenvalue M;, is an integral multiple of f and
+causes |M{> to change sign if 1, is half an odd integral multiple of h.
+Now consider an eigenket |K’> of the magnitude K of the total angu-
+lar momentum. If the eigenvalue K’ is an integral multiple of #, the
+possible eigenvalues of M, are all integral multiples of# and the applica-
+tion of one revolution about the z-axis must leave |K’> unchanged.
+Conversely, if K’ is halfan odd integral multiple of 4, the possible eigen-
+values of M, are all half odd integral multiples of # and the revolution
+must change the sign of |K’>. From symmetry, the application of a
+revolution about any other axis must have the same effect on |’)
+as one about the z-axis. We thus get the general result, the application
+of one revolution about any axis leaves a ket unchanged or changes tts
+sign according to whether it belongs to eigenvalues of the magnitude of
+the total angular momentum which are integral or half odd integral
+multiples of h. A state, of course, is always unaffected by the revolu-
+tion, since a state is unaffected by a change of sign of the ket corre-
+sponding to it.
+
+For a dynamical system involving only orbital angular momenta,
+a ket must be unchanged by a revolution about an axis, since we can
+set up Schrédinger’s representation, with the coordinates of all the
+particles diagonal, and the Schrédinger representative of a ket will
+get brought back to its original value by the revolution. It follows
+that the eigenvalues of the magnitude of an orbital angular momentum
+are always integral multiples of k. The eigenvalues of a component
+﻿§ 36 PROPERTIES OF ANGULAR MOMENTUM 149
+
+of an orbital angular momentum are also always integral multiples
+of #. For a spin angular momentum, Schrédinger’s representation
+
+does not exist and both kinds of eigenvalue are possible.
+
+37. The spin of the electron
+
+Electrons, and also some of the other fundamental particles (pro-
+tons, neutrons) have a spin whose magnitude is 4%. This is found
+from experimental evidence, and also there are theoretical reasons
+showing that this spin value is more elementary than any other, even
+spin zero (see Chapter XI). The study of this particular spin is there-
+fore of special importance.
+
+For dealing with an angular momentum m whose magnitude is 3%,
+
+it is convenient to put m = Hie. (48)
+
+The components of the vector « then satisfy, from (27),
+
+Oy Fg 0, 0y = Qoz
+0,0 y-—8,0, = to, (49)
+
+Og Sy—FySz, = 2to,.
+The eigenvalues of m, are $7 and —4%, so the eigenvalues of a, are 1
+and —1, and o2 has just the one eigenvalue 1. It follows that o? must
+equal 1, and similarly for o2 and a3, i.e.
+
+B= =of =i, (50)
+We can get equations (49) and (50) into a simpler form by means of
+
+some straightforward non-commutative algebra. From (50)
+
+2 2.
+OF, 9, 0% = 0
+
+or 0,(Fy F,— 0, Fy) + (oy 0,—G, 5y)o, = 0
+
+or Oy Fg tz Fy =
+
+with the help of the first of equations (49). Thismeansa, oa, = —oy oz.
+Two dynamical variables or linear operators like these which satisfy
+the commutative law of multiplication except for a minus sign will
+be said to anticommute. Thus o, anticommutes with c,. From sym-
+
+metry each of the three dynamical variables c,, o,, o, must anti-
+commute with any other. Equations (49) may now be written
+
+0,0, = 0, = —G, Oy,
+Oz F_ = Wy = —O,5,, (51)
+Og Fy = 1G, = — dy Fz,
+and also from (50 GO, 6,0, == t. 52
+Yo) 7
+
+3595.57 L
+﻿150 ELEMENTARY APPLICATIONS § 37
+
+Equations (50), (51), (52) are the fundamental equations satisfied by
+the spin variables o describing a spin whose magnitude is 4%.
+
+Let us set up a matrix representation for the o’s and let us take o,
+to be diagonal. If there are no other independent dynamical variables
+besides the m’s or o’s in our dynamical system, then o, by itself forms
+a complete set of commuting observables, since the form of equations
+(50) and (51) is such that we cannot construct out of o,, o,, and o,
+any new dynamical variable that commutes with o,. The diagonal
+
+elements of the matrix representing o, being the eigenvalues 1 and
+—1 of o,, the matrix itself will be
+
+( 1 0
+0 i}:
+L ay a)
+et a, be represented by ):
+a
+
+This matrix must be Hermitian, so that a, and a, must be real and
+a, and a, conjugate complex numbers. The equation o,¢, = —o,9,
+
+gives us
+ay Ge) f% a
+—d, —a Mz —a,)’
+
+so that a, = a, = 0. Hence o, is represented by a matrix of the form
+
+0 a,
+
+a, Of
+The equation of = 1 now shows that a,a, = 1. Thus a, and ag, being
+conjugate complex numbers, must be of the form e’“ and e-* re-
+
+spectively, where « is a real number, so that o, is represented by a
+matrix of the form 0 “
+
+ete OP
+Similarly it may be shown that a, is also represented by a matrix of
+this form. By suitably choosing the phase factors in the representa-
+
+tion, which is not completely determined by the condition that o,
+shall be diagonal, we can arrange that o, shall be represented by the
+
+matrix 01
+1 of
+
+The representative of o, is then determined by the equation
+
+= 0,0, We thus obtain finally the three matrices
+
+(to) (Fo op a
+
+Cy
+﻿§ 37 THE SPIN OF THE ELECTRON 151
+
+to represent o,, o,, and a, respectively, which matrices satisfy all the
+algebraic relations (49), (50), (51), (52). The component of the vector
+o in an arbitrary direction specified by the direction cosines 1, m, n,
+namely Ic,-+-mo,-+no,, is represented by
+n l—im
+lism on} (8
+The representative of a ket vector will consist of just two numbers,
+corresponding to the two values +1 and —1 for oj. These two num-
+bers form a function of the variable of whose domain consists of only
+the two points +land —1. The state for which oc, has the value unity
+will be represented by the function, f,(o{) say, consisting of the pair
+of numbers 1, 0 and that for which o, has the value —1 will be
+represented by the function, fs(o,) say, consisting of the pair 0, 1.
+Any function of the variable oj, i.e. any pair of numbers, can be
+expressed as a linear combination of these two. Thus any state can
+be obtained by superposition of the two states for which o, equals +1 and
+—1 respectively. For example, the state for which the component of
+o in the direction |, m, n, represented hy (54), has the value +1 is
+represented by the pair of numbers a, 6 which satisfy
+
+n a) a\ fa
+itim —n ) ~ (;
+or nat+(l—im)b = a,
+
+(+tim)a—nb = b.
+
+a l—im I+”
+
+Th ~ = = .
+“ 6 in ~ Tim
+
+This state can be regarded as a superposition of the two states for
+
+which o, equals +1 and —1, the relative weights in the superposition
+
+process being as
+jal? : [|]? = [l—im|?: (l—n)? = l+n:l—n. (55)
+For the complete description of an electron (or other elementary
+particle with spin 44) we require the spin dynamical variables o,
+whose connexion with the spin angular momentum is given by (48),
+together with the Cartesian coordinates x, y, z and momenta p,, Dy,
+p, The spin dynamical variables commute with these coordinates
+and momenta. Thus a complete set of commuting observables for a
+system consisting of a single electron will be z, y, z, ¢,. In a repre-
+sentation in which these are diagonal, the representative of any state
+﻿152 ELEMENTARY APPLICATIONS § 37
+
+will be a function of four variables 2’, y’, 2’, oj. Since o, has a domain
+consisting of only two points, namely 1 and —1, this function of four
+variables is the same as two functions of three variables, namely the
+two functions
+
+Ca'y"2" |) == <8", y', 2’, +1), kaly'2'|>_ == <a’, y’,2',—1|>. (56)
+Thus the presence of the spin may be considered either as introducing a
+
+new variable into the representative of a state or as giving this representa-
+tive two components.
+
+38. Motion in a central field of force
+
+An atom consists of a massive positively charged nucleus together
+with a number of electrons moving round, under the influence of the
+attractive force of the nucleus and their own mutual repulsions. An
+exact treatment of this dynamical system is a very difficult mathe-
+matical problem. One can, however, gain some insight into the main
+features of the system by making the rough approximation of regard-
+ing each electron as moving independently in a certain cenéral field
+of force, namely that of the nucleus, assumed fixed, together with
+some kind of average of the forces due to the other electrons. Thus
+our present problem of the motion of a particle in a central field of
+force forms a corner-stone in the theory of the atom.
+
+Let the Cartesian coordinates of the particle, referred to a system
+of axes with the centre of force as origin, be x, y, z and the corre-
+sponding components of momentum p,, p,, Pp, The Hamiltonian,
+with neglect of relativistic mechanics, will be of the form
+
+H = 1/2m.(p2+p2+p2)+V, (57)
+
+where V, the potential energy, is a function only of (2?+y?+2*). To
+develop the theory it is convenient to introduce polar dynamical
+variables. We introduce first the radius 7, defined as the positive
+
+square root r= (aL y?+a2)i,
+Its eigenvalues go from 0 too. If we evaluate its P.B.s with p,, p,,
+and p,, we obtain, with the help of formula (32) of § 22, -
+
+or 2 y
+
+2
+[7, De = ex = r [7, Pyl = , [7, Pe] = 7’
+
+the same as in the classical theory. We introduce also the dynamical
+variable p, defined by
+
+Dp == Tey t+ YPy t+ ePe)- (58
+﻿§ 38 MOTION IN A CENTRAL FIELD OF FORCE 153
+Its P.B. with r is given by
+rr, Pr] = [r, rp, | —_ [7, CPs YPy } zp,|
+
+= alr, Pal+yl7, Py] +2[r, p,]
+== e.a/rty.y/rte.2z/r =r.
+
+Hence [7,p,] = 1
+or 1),—P,T = th.
+
+The commutation relation between r and p, is just the one for a
+canonical coordinate and momentum, namely equation (10) of § 22.
+This makes p, like the momentum conjugate to the r coordinate, but
+it is not exactly equal to this momentum because it is not real, its
+conjugate complex being
+
+By = (Pet +iyytp,2)0* = (epz+ypy+ep,— 3ih)r
+== (rp.—dvh)r“ = p,—2ihir-1. (59)
+
+Thus p,—tir— is real and is the true momentum conjugate to r.
+The angular momentum m of the particle about the origin is given
+by (22) and its magnitude & is given by (39). Since r and p, are
+scalars, they commute with m, and therefore also with &.
+We can express the Hamiltonian in terms ofr, p,, and k. We have,
+
+if ¥ denotes a sum over cyclic permutations of the suffixes x, y, z,
+LYS
+
+k(k-+-h) =a = > (xp,—yp.)*
+
+xyz
+
+= > (Cy XPy+YDz YP2—ZPy YPz—YPz LP y)
+
+= > (x2 p32 + y*p2— xp, Py Y—YPy Pn ED — UP Dy C—
+cyz
+—2hap,)
+
+= (22+-y2-+2%)(p2-++p? +p)
+— (ap, +YyPy+2p,)(Pet+Py Y +P, 2+ 2m)
+7? (pt pi + p2)—1D,(B,7 + 21)
+= P(pitpi+pe)—Tpr.
+from (59). Hence
+H=-— (oer SE a7. (60)
+
+~~ 9m 7
+
+This form for H is such that k commutes not only with H, as is
+necessary since & is a constant of the motion, but also with every
+dynamical variable occurring in H, namely r, p,, and V, which is a
+﻿154 ELEMENTARY APPLICATIONS § 38
+
+function of r. In consequence, a simple treatment becomes possible,
+namely, we may consider an eigenstate of k belonging to an eigen-
+value k’ and then we can substitute b’ for & in (60) and get a problem
+in one degree of freedom r.
+
+Let us introduce Schrédinger’s representation with x, y, z diagonal.
+Then pz, Py, p, are equal to the operators —i% 6/éx, —ih a/éy, —th d/0z
+respectively. A state is represented by a wave function y(xyzt) satis-
+fying Schrédinger’s wave equation (7) of § 27, which now reads, with
+Hf given by (57),
+
+ea = oO =| ! a (61)
+
+Qm\ ax? ' dy? ' az?
+We may pass from the Cartesian coordinates w,y,z to the polar
+coordinates 7,9,6é by means of the equations
+x = rsin@cos¢,
+y = rsin @sin ¢d, (62)
+z= rcos6,
+
+and may express the wave function in terms of the polar coordinates,
+so that it reads 4(rédt). The equations (62) give the operator equation
+
+a. de 6 by a Ge HA Ye 220
+ar er aut or by | ar bz roe ay tr oz’
+which shows, on being compared with (58), that p, = —i#a/ér. Thus
+Schrédinger’s wave equation reads, with the form (60) for H,
+Op [ie 1 @ k(k-+h)\ | Q
+i at (= (—3 Bret Here]! a (68)
+
+Here & is a certain linear operator which, since it commutes with r
+and 6/ér, can involve only @, ¢, @/€0, and 8/86. From the formula
+
+k(k-+h) = m-m2 +m, (64)
+
+which comes from (39), and from (62) one can work out the form of
+k(k-+-%) and one finds
+
+h(k-+h) 1@.,8@ 1 @
+i nd 0a Sk OE (8)
+This operator is well known in mathematical physics. Its eigen-
+functions are called spherical harmonics and its eigenvalues are
+n(n-+-1) where nm is an integer. Thus the theory of spherical har-
+monies provides an alternative proof that the eigenvalues of k are
+
+integral multiples of %.
+﻿§ 38 MOTION IN A CENTRAL FIELD OF FORCE 155
+
+For an eigenstate of & belonging to the eigenvalue nfi (n a non-
+negative integer) the wave function will be of the form
+
+| . = r2y(r8)S,,(66), (66)
+where S,,(@¢) satisfies
+
+K(k+-R)S, (86) = n(n+ 1)hS,,(89), (67)
+ie. from (65) S,, is a spherical harmonic of order ». The factor r-t
+
+is inserted in (66) for convenience. Substituting (66) into (63), we
+get as the equation for x
+
+0x (#8 &  nlnt+))\ ,
+
+he (sa Bre pe V}x. (68)
+If the state is a stationary state belonging to the energy value H’,
+x will be of the form x(rt) = xo(ryentettt
+
+and (68) will reduce to
+2 2
+By = [E(t +7) (69)
+
+Qm\ drt
+
+This equation may be used to determine the energy-levels H’ cf the
+system. For each solution y, of (69), arising from a given n, there
+will be 2n+-1 independent states, because there are 2n--1 indepen-
+dent solutions of (67) corresponding to the 2n+1 different values
+that a component of the angular momentum, m, say, can take on.
+
+The probability of the particle being in an element of volume
+dadyéz is proportional to |b/?dzdydz. With % of the form (66) this
+becomes r-?|y/2|S,,|2dadydz. The probability of the particle being in
+a spherical shell between r and r+dr is then proportional to |x|?dr.
+It now becomes clear that, in solving equation (68) or (69), we must
+impose a boundary condition on the function y at r = 0, namely the
+function must be such that the integral to the origin i ly|? dr is
+
+0
+
+convergent. If this integral were not convergent, the wave function
+would represent a state for which the chances are infinitely in favour
+of the particle being at the origin and such a state would not be
+physically admissible.
+
+The boundary condition at r = 0 obtained by the above considera-
+tion of probabilities is, however, not sufficiently stringent. We get a
+more stringent condition by verifying that the wave function obtained
+by solving the wave equation in polar coordinates (63) really satisfies
+the wave equation in Cartesian coordinates (61). Let us take the case
+﻿156 ELEMENTARY APPLICATIONS § 38
+
+of V = 0, giving us the problem of the free particle. Applied to a
+stationary state with energy H’ == 0, equation (61) gives
+
+V4 = 0, (70)
+
+where V? is written for the Laplacian operator 6?/éx?+-6?/ay? + 27/é2",
+and equation (63) gives
+
+( a ses = 0. (71)
+
+r or? hr?
+
+A solution of (71) for k=0 is 4 =r. This does not satisfy
+(70), since, although V?r-! vanishes for any finite value of 7, its integral
+through a volume containing the origin is —47 (as may be verified
+by transforming this volume integral to a surface integral by means
+of Gauss’s theorem), and hence
+
+V2r-k == — 4 8(x)5(y)5(2). (72)
+
+Thus not every solution of (71) gives a solution of (70), and more
+generally, not every solution of (63) is a solution of (61). We must
+impose on the solution of (63) the condition that it shall not tend to
+infinity as rapidly as r-1 when r -> 0 in order that, when substituted
+into (61), it shall not give a 5 function on the right like the right-hand
+side of (72), Only when equation (63) is supplemented with this condi-
+tion does it become equivalent to equation (61). We thus have the
+boundary condition rf > 0 or y> 0 as r—-> 0.
+
+There are also boundary conditions for the wave function at r = oo.
+If we are interested only in ‘closed’ states, i.e. states for which the
+particle does not go off to infinity, we must restrict the integral to
+
+infinity i |x(r)|? dr to be convergent. These closed states, however,
+are not the only ones that are physically permissible, as we can also
+have states in which the particle arrives from infinity, is scattered
+by the central field of force, and goes off to infinity again. For these
+states the wave function may remain finite as r -> 00. Such states will
+be dealt with in Chapter VIII under the heading of collision problems.
+In any case the wave function must not tend to infinity as r > 00, or
+it will represent a state that has no physical meaning.
+
+39. Energy-levels of the hydrogen atom
+
+The above analysis may be applied to the problem of the hydrogen
+atom with neglect of relativistic mechanics and the spin of the
+﻿§ 39 ENERGY-LEVELS OF THE HYDROGEN ATOM 157
+
+electron. The potential energy V is nowt —e?/r, so that equation
+(69) becomes
+
+a n(nt+l) , 2me* 1 2mH’
+ie re + Fe 7 (Xo Fe Xo (73)
+
+;
+A thorough investigation of this equation has been given by Schré-
+dinger.t We shall here obtain its eigenvalues H’ by an elementary
+
+argument.
+t is convenient to put
+Xo = (rye, (74)
+introducing the new function f(r), where a is one or other of the
+square roots a == t4)(—H2/2mH’). (75)
+
+Equation (73) now becomes
+
+@ 2d n(nm+il) , Ime? 1 _
+fe adr 7 or Flr) = 0. (78)
+We look for a solution of this equation in the form of a power series
+f(r) = 2 C,r, (77)
+
+in which consecutive values for s differ by unity although these
+values themselves need not be integers. On substituting (77) in (76)
+
+we obtain
+¥ o,{s(s—1)r*-2— (28/a)r8-1—n(n-+ 1 prs? + (2me?/h?)rs-1} = 0,
+
+8
+
+which gives, on equating to zero the coefficient of r°-*, the following
+relation between successive coefficients c,,
+
+ca[s(s—1)—n(n-+1)] = ¢,_,[2(s—1)/a—2me?/h?]. (78)
+
+We saw in the preceding section that only those eigenfunctions x
+are allowed that tend to zero with r and hence, from (74), f(r) must
+tend to zero with r. The series (77) must therefore terminate on the
+side of small s and the minimum value of s must be greater than zero.
+Now the only possible minimum values of s are those that make the
+coefficient of c, in (78) vanish, ie. n-+1 and —n, and the second
+of these is negative or zero. Thus the minimum value of s must be
+n+1. Since n is always an integer, the values of s will all be integers.
+
++ The e here, denoting minus the charge on an electron, is, of course, to be dis-
+tinguished from the e denoting the base of exponentials.
+} Schrédinger, Ann, d. Physik, 79 (1926), 361.
+﻿158 ELEMENTARY APPLICATIONS § 39
+
+The series (77) will in general extend to infinity on the side of large s.
+For large values of s the ratio of successive terms is
+
+Cy ar
+
+t=
+
+Cy-4 8a
+
+according to (78). Thus the series (77) will always converge, as the
+ratios of the higher terms to one another are the same as for the
+
+series
+1 /2r\s
+S siz] ; (79)
+
+&
+which converges to e?7/@,
+
+We must now examine how our solution xy, behaves for large
+values of r. We must distinguish between the two cases of H’ positive
+and H' negative. For H’ negative, a given by (75) will be real. Sup-
+pose we take the positive value for a. Then as roo the sum of the
+series (77) will tend to infinity according to the same law as the sum
+of the series (79), ie. the law e2/¢. Thus, from (74), yo will tend to
+infinity according to the law e/@ and will not represent a physically
+possible state. There is therefore in general no permissible solution
+of (73) for negative values of H’. An exception arises, however, when-
+ever the series (77) terminates on the side of large s, in which case the
+boundary conditions are all satisfied. The condition for this termina-
+tion of the series is that the coefficient of c,_, in (78) shall vanish for
+some value of the suffix s—1 not less than its minimum value n+ 1,
+which is the same as the condition that
+
+s me?
+
+2 =0
+
+a
+
+for some integer s not less than n+-1. With the help of (75) this
+
+condition becomes 4
+me
+
+Ht’ —
+282K?’
+
+I
+
+(80)
+
+and is thus a condition for the energy-level H’. Since s may be any
+positive integer, the formula (80) gives a discrete set of negative
+energy-levels for the hydrogen atom. These are in agreement with
+experiment. For each of them (except the lowest one s = 1) there
+are several independent states, as there are various possible values
+for n, namely any positive or zero integer less than s. This multi-
+plicity of states belonging to an energy-level is in addition to that
+mentioned in the preceding section arising from the various possible
+﻿§ 39 ENERGY-LEVELS OF THE HYDROGEN ATOM 159
+
+values for a component of angular momentum, which latter multi-
+plicity occurs with any central field of force. The x multiplicity occurs
+only with an inverse square law of force and even then is removed
+when one takes relativistic mechanics into account, as will be found
+in Chapter XI. The solution x, of (73) when H’ satisfies (80) tends to
+zero exponentially as r > co and thus represents a closed state (corre-
+sponding to an elliptic orbit in Bohr’s theory).
+
+For any positive values of H’, a given by (75) will be pure imaginary.
+The series (77), which is like the series (79) for large r, will now have a
+sum that remains finite asr ->00. Thus x, given by (74) willnowremain
+finite as r > co and will therefore be a permissible solution of (73),
+giving a wave function ¢ that tends to zero according to the law r-* as
+r->co. Hence in addition to the discrete set of negative energy-levels
+(80), all positive energy-levels are allowed. The states of positive
+
+co
+
+energy are not closed, since for them the integral to infinity | lyql? dr
+does not converge. (These states correspond to the hyperbolic orbits
+
+of Bohr’s theory.)
+
+40. Selection rules
+
+If a dynamical system is set up in a certain stationary state, it will
+remain in that stationary state so long as it is not acted upon by
+outside forces. Any atomic system in practice, however, frequently
+gets acted upon by external electromagnetic fields, under whose
+influence it is liable to cease to be in one stationary state and to make
+a transition to another. The theory of such transitions will be de-
+veloped in §§ 44and 45. A result of this theory is that, to a high degree
+of accuracy, transitions between two states cannot occur under the
+influence of electromagnetic radiation if, in a Heisenberg representa-
+tion with these two stationary states as two of the basic states, the
+matrix element, referring to these two states, of the representative
+of the total electric displacement D of the system vanishes. Now it
+happens for many atomic systems that the great majority of the
+matrix elements of D in a Heisenberg representation do vanish, and
+hence there are severe limitations on the possibilities for transitions.
+The rules that express these limitations are called selection rules.
+
+The idea of selection rules can be refined by a more detailed
+application of the theory of §§44 and 45, according to which
+the matrix elements of the different Cartesian components of the
+vector D are associated with different states of polarization of the
+﻿160 ELEMENTARY APPLICATIONS § 40
+
+electromagnetic radiation. The nature of this association is just what
+one would get if one considered the matrix elements, or rather their
+real parts, as the amplitudes of harmonic oscillators which interact
+with the field of radiation according to classical electrodynamics.
+There is a general method for obtaining all selection rules, as
+follows. Let us call the constants of the motion which are diagonal in
+the Heisenberg representation «’s and let D be one of the Cartesian
+components of D. We must obtain an algebraic equation connecting
+D and the «’s which does not involve any dynamical variables other
+than D and the a’s and which is linear in D. Such an equation will
+
+be of the form YF-Do, = 0, (81)
+
+where the f,’s and g,’s are functions of the a’s only. If this equation
+is expressed in terms of representatives, it gives us
+
+X fla’)<a!|D |a"dg,(") = 0,
+
+or <o" Do" > flo )ge(") = 0,
+which shows that <a’|D|x”> == 0 unless
+E fila! gp(o") = 0. (82)
+
+This last equation, giving the connexion which must exist between
+« and «” in order that <«'|D|a”> may not vanish, constitutes the
+selection rule, so far as the component D of D is concerned.
+
+Our work on the harmonic oscillator in § 34 provides an example
+of a selection rule. Equation (8) is of the form (81) with 7 for D and
+H playing the part of the «’s, and it shows that the matrix elements
+(H'|q|H"> of 7 all vanish except those for which H”’—H’ = hw. The
+conjugate complex of this result is that the matrix elements (H’|n|H’>
+of » all vanish except those for which H”—H’ = —iiw. Since q is a
+numerical multiple of »—4, its matrix elements (H’|q|H”) all vanish
+except those for which H’—H’ = tiw. If the harmonic oscillator
+carries an electric charge, its electric displacement D will be pro-
+portional to g. The selection rule is then that only those transitions
+
+can take place in which the energy H changes by a single quan-
+tum fiw.
+
+We shall now obtain the selection rules fer m, and k for an electron
+moving in a central field of force. The components. of electric dis-
+﻿§ 40 SELECTION RULES 161
+
+placement are here proportional to the Cartesian coordinates 2, y, 2.
+Taking first m,, we have that m, commutes with z, or that
+
+M,2—zm, = 0.
+
+This is an equation of the required type (81), giving us the selection
+
+rule , ”
+m,—M, = 0
+
+for the z-component of the displacement. Again, from equations
+
+(23) we have [ms [m,, al] = [m,, y| =e
+
+or mxz—2m,7m,+omi—a = 0,
+
+which is also of the type (81) and gives us the selection rule
+
+a”
+
+"2 tt A yp Ff2 =
+m,2—In,m,+-mPe—h 0
+
+or (m,—m,—h)(m,—m, +h) = 0
+
+for the z-component of the displacement. The selection rule for the
+y-component is the same. Thus our selection rules for m, are that
+in transitions associated with radiation with a polarization corresponding
+to an electric dipole in the z-direction, m, cannot change, while in transi-
+tions associated with a polarization corresponding to an electric dipole
+in the x-direction or y-direction, m, must change by -h.
+
+We can determine more accurately the state of polarization of the
+radiation associated with a transition in which m, changes by +4, by
+considering the condition for the non-vanishing of matrix elements
+of a-+iy and z—iy. We have
+
+[m,,2+iy] = y—-w = —iatity)
+or m,(a-+iy)—(a+iy)(m,+h) = 9,
+
+which is again of the type (81). It gives
+m,—m,—h = 0
+
+as the condition that <m/,|z-+ty|mz> shall not vanish. Similarly,
+m,—m,+h = 0
+
+is the condition that <m,|2—iy|m%> shall not vanish. Hence
+
+<m,|e—iy|m,—h> = 0
+
+or <mi,|x|m,,—h> = i<m,|y|m,—hy = (a-+ibje
+say, a, b, and w being real. The conjugate complex of this is
+Cnt, —Ti\an|miy = —idm’,—Tily|my = (a—tb)e**.
+
+Thus the vector #{(m,|D|m,—h>-+<m,—h|D [m,>}, which determines
+﻿162 ELEMENTARY APPLICATIONS § 40
+
+the state of polarization of the radiation associated with transitions
+for which m, = m,—h, has the following three components
+
+4{<m,|x|\m,—h> + <m,—h|x|\m>}
+= U(a+tibjeiot+ (a—ibjeo} = acoswt—bsinut,
+
+Hdmi ly|m,—h> + <m,—fly|m>} (83)
+= fi{—(a+ibje!+ (a—ibje} = asinwt+6 cos wt,
+{<m,|z|m,—h> +m, —h|z|my} = 0.
+
+From the form of these components we see that the associated radia-
+tion moving in the z-direction will be circularly polarized, that
+moving in any direction in the «y-plane will be linearly polarized in
+this plane, and that moving in intermediate directions will be
+elliptically polarized. The direction of circular polarization for radia-
+tion moving in the z-direction will depend on whether w is positive
+or negative, and this will depend on which of the two states m, or
+m, = m,—h has the greater energy.
+We shall now determine the selection rule for k. We have
+
+[k(k-+-h), 2] = [mi,z]+[m2, z]
+
+YM. My, YELM, HM
+
+ye
+
+= 2(m,x—m, y+ itz)
+
+= 2(m,x—ym,) = 2am —M,Y¥).
+
+Similarly, [k(k-+-h), c] = 2(ym,—m, 2)
+and [k(k-+-4), y] = 2(m,2—am,).
+Hence
+
+[k(e-Lh), [e(e-+A), 2]
+= 4k(k+-h), m,x—m, y+tiz] “.
+am, [k(k-+h), x] —2m,[k(k+h), y]+ 2ih[k(k-+H), 2]
+z)—4m,,(m, z2—xm,)-+ Wh(k-h)z—2k(k-+hy}
+2b my, ym, 2)m,—4(m3-+m2-+-m2)z4
++ 2fk(k+-h)e—zk(ke+h)}.
+From (22) MyzL+-MyY+M,% = 0 (84)
+and hence
+[k(h-+h), [k(k-+-h), 2] = —2{k(k+hje+ek(kh+hy},
+which gives
+k2(ke--i)22—~ Qhe(k-+ hiek(k--h) 2k? (lo-fi)?
+QWAAk(k+Aje+ek(k+h)} = 0. (85)
+﻿§ 40 SELECTION RULES 163
+
+Similar equations hold for « and y. These equations are of the re-
+quired type (81), and give us the selection rule
+
+h'?(Ke’ -+-5)2— 2h (Ie! +B) k" (kl +h) + b"2(k" Bs)?
+— 282k’ (ke! +h) —QH2k" (k” Lh) = 0,
+
+which reduces to
+(ho Lk" + 2h) (k' +k Vk’ — kh’ +h) (kb’ —k” —h) = 0.
+
+A transition can take place between two states &’ and k” only if one
+of these four factors vanishes.
+
+Now the first of the factors, (k’+-k’ +24), can never vanish, since
+the eigenvalues of & are all positive or zero. The second, (k'--4"), can
+vanish only if k’ = O0and k” = 0. But transitions between two states
+with these values for & cannot occur on account of other selection
+rules, as may be seen from the following argument. If two states
+(labelled respectively with a single prime and a double prime) are
+such that &’ = 0 and hk” = 0, then from (41) and the corresponding
+results for m, and m,, mi, = ml = m, = 0 and mZ = mj) = mi = 0.
+The selection rule for m, now shows that the matrix elements of
+a and y referring to the two states must vanish, as the value of m,
+does not change during the transition, and the similar selection rule
+for m, or m, shows that the matrix element of z also vanishes. Thus
+
+ransitions between the two states cannot occur. Our selection rule
+for k now reduces to
+
+(h’—k’ +h)(k’—k’ fh) = 0,
+showing that k must change by --h. This selection rule may be written
+hy? 2h’ kh’ +-h2—H? = 0,
+
+and since this is the condition that a matrix element ¢k’ |z|k"> shall
+not vanish, we get the equation
+
+h?z—Qkhzek+zkh?*—h2 = 0
+or [k, [k, 2] = —2, (86)
+
+a result which could not easily be obtained in a more direct way.
+As a final example we shall obtain the selection rule for the magni-
+tude K of the total angular momentum M ofa general atomic system.
+Let x,y,z be the coordinates of one of the electrons. We must obtain
+the condition that the (K’, K”) matrix element of 2, y, or z sball not
+vanish. This is evidently the same as the condition that the (K’, K”)
+matrix element of A,, A,, or A, shall not vanish, where A,, Ag, and Ag
+﻿164 ELEMENTARY APPLICATIONS § 40
+
+are any three independent linear functions of x, y, and z with numeri-
+cal coefficients, or more generally with any coefficients that commute
+with K and are thus represented by matrices which are diagonal with
+
+respect to K. Let Ay = e+ M, y+ M2,
+A, = M,z—M,y—ta,
+d, = M,x—M,2—thy,
+A, = M,y—M,x—thz.
+We have
+M,d,+M,r, +r, = > (Mf, M,2z—M, M,y—hM, x)
+
+Eye
+
+=> (M,M,—M,M,—ihMjze=0 (87)
+Lye
+
+from (29). Thus A,, A,, and A, are not linearly independent functions
+of z, y, and z. Any two of them, however, together with A, are three
+linearly independent functions of x, y, and z and may be taken as the
+above A,, As; Ag, Since the coefficients M,, M,, M, all commute with K.
+Our problem thus reduces to finding the condition that the (K’, K”)
+matrix elements of Ay, A,, A,, and A, shall not vanish. The physical
+meanings of these )’s are that A, is proportional to the component of
+the vector (x, y,2) in the direction of the vector M, and A,, A,, A, are
+proportional to the Cartesian components of the component of (xz, y, 2)
+perpendicular to M.
+
+Since A, is a scalar it must commute with K. It follows that only
+the diagonal elements (K'|A,|K’> of A, can differ from zero, so the
+selection rule is that K cannot change so far as A, is concerned. Apply-
+
+ing (30) to the vector A,,A,,A,, we have
+
+eo Ayo
+These relations between M, and A,,A,, A, are of exactly the same form
+
+or Ny,
+as the relations (23), (24) between m, and x,y,z, and also (87) is of
+the same form as (84). The dynamical variables ,, i,, A, thus have the
+same properties relative to the angular momentum M as x,y,z have
+relative to m. The deduction of the selection rule for k when the
+electric displacement is proportional to (x,y,z) can therefore be taken
+over and applied to the selection rule for K when the electric displace-
+ment is proportional to (A,,A,,4,). We find in this way that, so far as
+Ap Ay: A, ave concerned, the selection rule for K is that it must change
+by -Lh.
+
+Collecting results, we have as the selection rule for K that it must
+change by 0 or +#. We have considered the electric displacement
+﻿§ 40 SELECTION RULES 165
+
+produced by only one of the electrons, but the same selection rule
+must hold for each electron and thus also for the total electric dis-
+
+placement.
+
+41. The Zeeman effect for the hydrogen atom
+
+We shall now consider the system of a hydrogen atom in a uniform
+magnetic field. The Hamiltonian (57) with V = —e®/r, which describes
+the hydrogen atom in no external field, gets modified by the magnetic
+field, the modification, according to classical mechanics, consisting
+in the replacement of the components of momentum, p,, Py: Pz bY
+Detele. Ag, Pypele-Ay, Patele-A,, where A,, A,, A, are the com-
+ponents of the vector potential describing the field. For a uniform
+field of magnitude # in the direction of the z-axis we may take
+A, = —}y, A, = 34s, A, = 0. The classical Hamiltonian will
+
+then be
+oe?
+~~ 2m r
+This classical Hamiltonian may be taken over into the quantum
+theory if we add on to it a term giving the effect of the spin of the
+electron. According to experimental evidence and according to the
+theory of Chapter XI, theelectronhasa magnetic moment —eh/2mc.c,
+where o is the spin vector of §37. The energy of this magnetic moment
+in the magnetic field will be eh#/2me.o,. Thus the total quantum
+Hamiltonian will be
+a 2 2
+= (e354) +(0y-+5 <a) i} —o +o, (88)
+
+There ought strictly to be other terms in this Hamiltonian giving the
+interaction of the magnetic moment of the electron with the electric
+field of the nucleus of the atom, but this effect is small, of the same
+order of magnitude as the correction one gets by taking relativistic
+mechanics into account, and will be neglected here. It will be taken
+into account in the relativistic theory of the electron given in
+Chapter XI.
+
+If the magnetic field is not too large, we can neglect terms involving
+
+#2, so that the Hamiltonian (88) reduces to
+
+1 1 2 l a
+= alle 3541) +(0,+5 < Ha) +93|—
+
+a pep — 4 ep, yp) +
+H = Sma Pe Pat P2) 7 tome (py YPa) Ta a,
+1 a H#
+= | (ptt pip) —— + = (m, +he,). (89)
+
+2m r  2me
+3595.57 mM
+﻿166 ELEMENTARY APPLICATIONS § 41
+
+The extra terms due to the magnetic field are now e#/2me.(m,+-/ia,).
+But these extra terms commute with the total Hamiltonian and are
+thus constants of the motion. This makes the problem very easy.
+The stationary states of the system, i.e. the eigenstates of the Hamil-
+tonian (89), will be those eigenstates of the Hamiltonian for no field
+that are simultaneously eigenstates of the observables m, and o,, or
+at least of the one observable m,+fo,, and the energy-levels of the
+system will be those for the system with no field, given by (80) if
+one considers only closed states, increased by an eigenvalue of
+eH/2mc.(m,+tis,). Thus stationary states of the system with no
+field for which m, has the numerical value m,, an integral multiple
+of i, and for which also o, has the numerical value o, = +1, will still
+be stationary states when the field is applied. Their energy will be
+increased by an amount consisting of the sum of two parts, a part
+eF#/2mc.m, arising from the orbital motion, which part may be con-
+sidered as due to an orbital magnetic moment —em,/2mce, and a part
+e#/2me. ho’, arising from the spin. The ratio of the orbital magnetic
+moment to the orbital angular momentum m, is —e/2mc, which is
+half the ratio of the spin magnetic moment to the spin angular
+momentum. This fact is sometimes referred to as the magnetic
+anomaly of the spin.
+
+Since the energy-levels now involve m,, the selection rule for m,
+obtained in the preceding section becomes capable of direct com-
+parison with experiment. We take a Heisenberg representation in
+which, among other constants of the motion, m, and o, are diagonal.
+The selection rule for m, now requires m, to change by 7, 0, or —f,
+while o,, since it commutes with the electric displacement, will not
+change at all. Thus the energy difference between the two states
+taking part in the transition process will differ by an amount
+ch t/2mc, 0, or —eh.A#/2me from its value for no magnetic field.
+Hence, from Bohr’s frequency condition, the frequency of the
+associated electromagnetic radiation will differ by e4/4nmec, 0, or
+—eH#H/4ame from that for no magnetic field. This means that each
+spectral line for no magnetic field gets split up by the field into three
+components. If one considers radiation moving in the z-direction,
+then from (83) the two outer components will be circularly polarized,
+while the central undisplaced one will be of zero intensity. These
+results are in agreement with experiment and also with the classical
+theory of the Zeeman effect.
+
+</p>
+    </body>
+</html>

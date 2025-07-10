@@ -1,0 +1,1471 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="utf-8" />
+        <title>力学変数とオブザーバブル</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+            .margin-large
+            {
+                margin-left: 30px;
+            }
+           .margin-abstract {
+               margin-left: 60px; /* 左マージンを広くする */
+               margin-right: 60px; /* 右マージンを広くする */
+           }
+        </style>
+    <style>
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 20px; /* 列間のスペース */
+        }
+        .column {
+            flex: 1; /* 各列が均等に幅を取る */
+        }
+    </style>
+<style>
+.three-columns {
+  display: flex;
+  gap: 10px; /* 列間の余白を設定 */
+}
+.column {
+  flex: 1; /* 各列の幅を均等にする */
+  padding: 10px; /* 内側の余白を設定 */
+}
+</style>
+    <style>
+        .styleRef { 
+            text-indent: -40px; /* 最初の行の字下げを逆方向に */
+            margin-left: 10px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 40px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+        .styleBullet { 
+            text-indent: -20px; /* 最初の行の字下げを逆方向に */
+            margin-left: 30px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 0px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+            ol
+            {
+                margin-left: 30px;
+            }
+            ul
+            {
+                margin-left: 30px;
+            }
+    </style>
+    <style>
+        .thin-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 1px;
+            background-color: gray;
+        }
+
+        .thick-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+    <style>
+        .blue {
+            color: blue; /* 好きな色に変更してください */
+        }
+    </style>
+    </head>
+    <body>
+        <h2><center>Ⅱ DYNAMICAL VARIABLES AND OBSERVABLES<br>力学変数とオブザーバブル</center></h2>
+<h3>7. Linear operators　線形演算子</h3>
+<p>
+In the preceding section we considered a number which is a linear
+function of a ket vector, and this led to the concept of a bra vector.
+We shall now consider a ket vector which is a linear function of a
+ket vector, and this will lead to the concept of a linear operator.
+
+</p><p class="blue">
+前の節では、ケットベクトルの線形関数である数を考え、そこからブラベクトルの概念を導きました。次に、ケットベクトルの線形関数であるケットベクトルを考え、そこから線形演算子の概念を導きます。
+
+</p><p>
+Suppose we have a ket \(|F\rangle\) which is a function of a ket \(|A\rangle\), i.e. to each ket \(|A\rangle\) there corresponds one ket \(|F\rangle\), and suppose further that the function is a linear one, which means that the \(|F\rangle\) corresponding to \(|A\rangle + |A^\prime\rangle\) is the sum of the \(|F\rangle\)'s corresponding to \(|A\rangle\) and to \(|A^\prime\rangle\), and the \(|F\rangle\) corresponding to \(c|A\rangle\) is \(c\) times the \(|F\rangle\) corresponding to \(|A\rangle\), \(c\) being any numerical factor. Under these conditions, we may look upon the passage from \(|A\rangle\) to \(|F\rangle\) as the application of a linear operator to \(|A\rangle\). Introducing the symbol \(\alpha\) for the linear operator, we may write
+
+</p><p class="blue">
+ケット \(|F\rangle\) がケット \(|A\rangle\) の関数であるとします。つまり、各ケット \(|A\rangle\) には 1 つのケット \(|F\rangle\) が対応します。また、この関数は線形関数であるとします。つまり、\(|A\rangle + |A^\prime\rangle\) に対応する \(|F\rangle\) は、\(|A\rangle\) と \(|A^\prime\rangle\) に対応する \(|F\rangle\) の合計であり、\(c|A\rangle\) に対応する \(|F\rangle\) は、\(|A\rangle\) に対応する \(|F\rangle\) の \(c\) 倍です (\(c\) は任意の数値因数です)。これらの条件下では、\(|A\rangle\)から\(|F\rangle\)への遷移は、\(|A\rangle\) への線形演算子の適用とみなすことができます。線形演算子を表す記号 \(\alpha\) を導入すると、次のように書きます。
+</p><p>
+
+\[
+|F\rangle = \alpha |A\rangle
+\]
+
+in which the result of \(\alpha\) operating on \(|A\rangle\) is written like a product of \(\alpha\) with \(|A\rangle\). We make the rule that in such products the ket vector must always be put on the right of the linear operator. The above conditions of linearity may now be expressed by the equations
+
+</p><p class="blue">
+ここで、\(\alpha\) を \(|A\rangle\) に作用させた結果は、\(\alpha\) と \(|A\rangle\) の積のように表される。このような積においては、ケットベクトルは常に線形演算子の右側に置くという規則を定める。上記の線形性の条件は、以下の式で表される。
+</p><p>
+
+\[
+\left.
+\begin{align}
+\alpha\{|A\rangle + |A^\prime\rangle\} &= \alpha |A\rangle + \alpha |A^\prime\rangle \\
+\\
+\alpha \{c|A\rangle\} &= c\alpha |A\rangle
+\end{align}
+\right\}
+\tag{1}
+\]
+
+</p><p>
+A linear operator is considered to be completely defined when the result of its application to every ket vector is given. Thus a linear operator is to be considered zero if the result of its application to every ket vanishes, and two linear operators are to be considered equal if they produce the same result when applied to every ket.
+
+</p><p class="blue">
+線形作用素は、すべてのケットベクトルに適用した結果が与えられたときに完全に定義されているとみなされます。したがって、すべてのケットベクトルに適用した結果がゼロになる場合、線形作用素はゼロであるとみなされ、2つの線形作用素は、すべてのケットベクトルに適用したときに同じ結果になる場合、等しいとみなされます。
+
+</p><p>
+Linear operators can he added together, the sum of two linear operators being defined to be that linear operator which, operating on any ket, produces the sum of what the two linear operators separately would produce. Thus \(\alpha + \beta\) is defined by
+
+</p><p class="blue">
+線型作用素は互いに加算することができ、2つの線型作用素の和は、任意のケットに作用して、2つの線型作用素を別々に作用させた場合の和となる線型作用素と定義される。したがって、\(\alpha + \beta\) は次のように定義される。
+</p><p>
+
+\[
+\{\alpha + \beta\}|A\rangle = \alpha |A\rangle + \beta |A\rangle  \tag{2}
+\]
+
+for any \(|A\rangle\). Equation (2) and the first of equations (1) show that
+products of linear operators with ket vectors satisfy the distributive
+axiom of multiplication.
+
+</p><p>
+Linear operators can also be multiplied together, the product of
+two linear operators being defined as that linear operator, the appli-
+cation of which to any ket produces the same result as the application
+of the two linear operators successively. Thus the product \(\alpha\beta\) is defined as the linear operator which, operating on any ket \(|A\rangle\),
+changes it into that ket which one would get by operating first on
+\(|A\rangle\) with \(\beta\), and then on the result of the first operation with \(\alpha\). In symbols
+
+\[
+\{\alpha\beta\}|A\rangle = \alpha\{\beta|A\rangle\}
+\]
+
+This definition appears as the associative axiom of multiplication for
+the triple product of «, 8, and |A>, and allows us to write this triple
+product as «8|A> without brackets. However, this triple product is
+in general not the same as what we should get if we operated on |A>
+first with « and then with f, i.e. in general «B|A)> differs from Ba|A),
+so that in general of must differ from Ba. The commutative axiom of
+multiplication does not hold for linear operators. It may happen as a
+special case that two linear operators ¢ and y are such that éy and
+nf€ are equal. In this case we say that & commutes with y, or that &
+and » commute. :
+
+</p><p>
+By repeated applications of the above processes of adding and
+multiplying linear operators, one can form sums and products of
+more than two of them, and one can proceed to build up an algebra
+with them. In this algebra the commutative axiom of multiplication
+does not hold, and also the product of two linear operators may
+vanish without either factor vanishing. But all the other axioms of
+ordinary algebra, including the associative and distributive axioms
+of multiplication, are valid, as may easily be verified.
+
+</p><p>
+If we take a number & and multiply it into ket vectors, it appears
+as a linear operator operating on ket vectors, the conditions (1) being
+fulfilled with k substituted for «. A number is thus a special case of
+a linear operator. It has the property that it commutes with all linear
+operators and this property distinguishes it from a general linear
+operator.
+
+</p><p>
+So far we have considered linear operators operating only on ket
+vectors. We can give a meaning to their operating also on bra vectors,
+in the following way. Take the scalar product of any bra ¢B| with
+the ket «|A>. This scalar product is a number which depends
+linearly on |A> and therefore, from the definition of bras, it may be
+considered as the scalar product of |A> with some bra. The'bra thus
+defined depends linearly on <B], s0 we may look upon it as the result of
+some linear operator applied to <B|. This linear operator is uniquely
+determined by the original linear operator a and may reasonably be
+called the same linear operator operating on a bra. In this way our
+linear operators are made capable of operating on bra vectors.
+
+</p><p>
+A suitable notation to use for the resulting bra when a operates on
+the bra <B| is (Bla, as in this notation the equation which defines
+\(\langle B|\) is
+
+\[
+\{\langle B|\alpha\}|A\rangle = \langle B|\{\alpha|A\rangle\} \tag{3}
+\]
+
+for any |A>, which simply expresses the associative axiom of multi-
+plication for the triple product of <B|, «, and |A>. We therefore
+make the general rule that in a product of a bra and a linear operator,
+the bra must always be put on the left. We can now write the triple
+product of <B|, «, and |A> simply as (Bla|A> without brackets. It
+may easily be verified that the distributive axiom of multiplication
+holds for products of bras and linear operators just as well as for
+products of linear operators and kets. .
+
+</p><p>
+There is one further kind of product which has a meaning in our
+scheme, namely the product of a ket vector and a bra vector with
+the ket on the left, such as |A><B|. To examine this product, let us
+multiply it into an arbitrary ket |P>, putting the ket on the right,
+and assume the associative axiom of multiplication. The product is
+then |A><B|P)>, which is another ket, namely |A> multiplied by the
+number <B|P>, and this ket depends linearly on the ket |P>. Thus
+|A><B| appears as a linear operator that can operate on kets. It
+can also operate on bras, its product with a bra (Q| on the left being
+<Q|A><B|, which is the number <Q|A> times the bra <¢B]. The
+product |A><B| is to be sharply distinguished from the product
+<B|A)> of the same factors in the reverse order, the latter product
+being, of course, a number.
+
+</p><p>
+We now have a complete algebraic scheme involving three kinds
+of quantities, bra vectors, ket vectors, and linear operators. They can
+be multiplied together in the various ways discussed above, and the
+associative and distributive axioms of multiplication always hold,
+but the commutative axiom of multiplication does not hold. In this
+general scheme we still have the rules of notation of the preceding
+section, that any complete bracket expression, containing ¢ on the
+left and > on the right, denotes a number, while any incomplete
+bracket expression, containing only < or >, denotes a vector.
+
+</p><p>
+With regard to the physical significance of the scheme, we have
+already assumed that the bra vectors and ket vectors, or rather the
+directions of these vectors, correspond to the states of a dynamical
+system at a particular time. We now make the further assumption
+that the linear operators correspond to the dynamical variables at that
+time. By dynamical variables are meant quantities such as the
+coordinates and the components of velocity, momentum and angular
+momentum of particles, and functions of these quantities—in fact
+the variables in terms of which classical mechanics is built up. The
+new assumption requires that these quantities shall occur also in
+quantum mechanics, but with the striking difference that they are
+now subject to an algebra in which the commutative axiom of multiplica-
+tion does not hold.
+
+</p><p>
+This different algebra for the dynamical variables is one of the
+most important ways in which quantum mechanics differs from
+classical mechanics. We shall see later on that, in spite of this funda-
+mental difference, the dynamical variables of quantum mechanics
+still have many properties in common with their classical counter-
+parts and it will be possible to build up a theory of them closely
+analogous to the classical theory and forming a beautiful generaliza-
+tion of it.
+
+</p><p>
+It is convenient to use the same letter to denote a dynamical
+variable and the corresponding linear operator. In fact, we may con-
+sider a dynamical variable and the corresponding linear operator to
+be both the same thing, without getting into confusion.
+</p><p>
+
+<h3>8. Conjugate relations</h3>
+<p>
+Our linear operators are complex quantities, since one can multiply
+them by complex numbers and get other quantities of the same nature.
+Hence they must correspond in general to complex dynamical vari-
+ables, ie. to complex functions of the coordinates, velocities, etc. We
+need some further development of the theory to see what kind of
+linear operator corresponds to a real dynamical variable.
+
+</p><p>
+Consider the ket which is the conjugate imaginary of (Pla. This
+ket depends antilinearly on (P| and thus depends linearly on |P).
+It may therefore be considered as the result of some linear operator
+operating on |P>. This linear operator is called the adjoint of « and
+we shall denote it by &. With this notation, the conjugate imaginary
+of (Pl« is a|P>. .
+
+</p><p>
+In formula (7) of Chapter I put (Pla for <A| and its conjugate
+imaginary «|P) for |A>. The result is
+
+<Bla|P> = ¢Pla|B>. (4)
+
+This is a general formula holding for any ket vectors |B), |P> and
+
+any linear operator a, and it expresses one of the most frequently
+
+used properties of the adjoint.
+
+</p><p>
+Putting & for a in (4), we get
+
+(Ble|P) = <P|é|B> = <Bla|P>,
+
+by using (4) again with |P> and |B> interchanged. This holds for
+any ket |P>, so we can infer from (4) of Chapter I,
+
+(Bla = <Bla,
+and since this holds for any bra vector <B|, we can infer
+
+a= a.
+
+Thus the adjoint of the adjoint of a linear operator is the original linear
+operator. This property of the adjoint makes it like the conjugate
+complex of a number, and it is easily verified that in the special case
+when the linear operator is a number, the adjoint linear operator is
+the conjugate complex number. Thus it is reasonable to assume that
+the adjoint of a linear operator corresponds to the conjugate complex of
+a dynamical variable. With this physical significance for the adjoint
+of a linear operator, we may call the adjoint alternatively the con-
+jugate complex linear operator, which conforms with our notation &.
+
+</p><p>
+A linear operator may equal its adjoint, and is then called self-
+adjoint. It corresponds to a real dynamical variable, so it may be
+called alternatively a real linear operator. Any linear operator may
+be split up into a real part and a pure imaginary part. For this
+reason the words 'conjugate complex' are applicable to linear
+operators and not the words 'conjugate imaginary'.
+
+</p><p>
+The conjugate complex of the sum of two linear operators is
+obviously the sum of their conjugate complexes. To get the conjugate
+complex of the product of two linear operators a and 8, we apply
+formula (7) of Chapter I with
+
+(A| = <Pla, (Bl = <QIB,
+so that |A> == alP), |B> = B|Q>.
+The result is
+
+(Q|Ba|P> = <PloB|Q> = <Q|oB|P>
+
+
+from (4). Since this holds for any |P> and <Q], we can infer that
+Bi = of. (5)
+
+Thus the conjugate complex of the product of two linear operators equals
+the product of the conjugate complexes of the factors in the reverse order.
+
+</p><p>
+As simple examples of this result, it should be noted that, if € and
+y are real, in general éy is not real. This is an important difference
+from classical mechanics. However, y+ n€ is real, and so is 1(éy— 76).
+Only when é and 7 commute is y itself also real. Further, if € is real,
+then so is £7 and, more generally, €" with n any positive integer.
+
+</p><p>
+We may get the conjugate complex of the product of three linear
+operators by successive applications of the rule (5) for the conjugate
+complex of the product of two of them. We have
+
+oy = a(By) = Bye = 7B a, (8)
+so the conjugate complex of the product of three linear operators
+equals the product of the conjugate complexes of the factors in the
+reverse order. The rule may easily be extended to the product of any
+number of linear operators.
+
+</p><p>
+In the preceding section we saw that the product |A><B| is a linear
+operator. We may get its conjugate complex by referring directly to
+the definition of the adjoint. Multiplying |A><B| into a general bra
+<P| we get <P|A><B|, whose conjugate imaginary ket is
+
+(P\|A>|B> = (A|P>|B> = |B><A|P).-
+Hence |JAS<B| = [B><A]. (7)
+
+</p><p>
+We now have several rules concerning conjugate complexes and
+conjugate imaginaries of products, namely equation (7) of Chapter I,
+equations (4), (5), (6), (7) of this chapter, and the rule that the
+conjugate imaginary of (P|«is &|P>. These rules can all be summed
+up in a single comprehensive rule, the conjugate complex or conjugate
+imaginary of any product of bra vectors, ket vectors, and linear operators
+is obtained by taking the conjugate complex or conjugate imaginary of
+each factor and reversing the order of all the factors. The rule is easily
+
+verified to hold quite generally, also for the cases not explicitly given |
+above.
+
+</p><p>
+THEOREM. If € ts a real linear operator and
+ém|P> = 0 (8)
+jor a particular ket |P>, m being a positive integer, then
+é|P) = 0.
+
+</p><p>
+To prove the theorem, take first the case when m = 2. Equation
+(8) then gives <Pig|P) = 0,
+
+showing that the ket €|P> multiplied by the conjugate imaginary bra
+<P\éis zero. From the assumption (8) of Chapter I with ¢|P) for |A),
+we see that €|P> must be zero. Thus the theorem is proved form = 2.
+
+</p><p>
+Now take m > 2 and put
+gm?|P> = 1Q).
+Equation (8) now gives 21Q> = 0.
+Applying the theorem for m = 2, we get
+
+E|Q> = 0
+or EM-1| PY = 0, (9)
+
+By repeating the process by which equation (9) is obtained from
+(8), we obtain successively
+
+and so the theorem is proved generally.
+</p><p>
+
+<h3>9. Eigenvalues and eigenvectors</h3>
+<p>
+We must make a further development of the theory of linear
+operators, consisting in studying the equation
+
+alP> = a|P», (10)
+
+where « is a linear operator and a is a number. This equation usually
+presents itself in the form that « is a known linear operator and the
+number @ and the ket |P> are unknowns, which we have to try to
+choose so as to satisfy (10), ignoring the trivial solution |P> = 0.
+
+</p><p>
+Equation (10) means that the linear operator « applied to the ket
+|P> just multiplies this ket by a numerical factor without changing
+its direction, or else multiplies it by the factor zero, so that it ceases
+to have a direction. This same « applied to other kets will, of course,
+in general change both their lengths and their directions. It should
+be noticed that only the direction of |P> is of importance in equation
+(10). If one multiplies |P> by any number not zero, it will not affect
+the question of whether (10) is satisfied or not.
+
+</p><p>
+Together with equation (10), we should consider also the conjugate
+imaginary form of equation
+
+(Qla = b<¢QI, ' (11)
+
+where 5 is a number. Here the unknowns are the number 6 and the
+non-zero bra <Q]. Equations (10) and (11) are of such fundamental
+importance in the theory that it is desirable to have some special
+words to describe the relationships between the quantities involved.
+If (10) is satisfied, we shall call a an eigenvaluet of the linear operator
+«, or of the corresponding dynamical variable, and we shall call | P>
+an. eigenket of the linear operator or dynamical variable. Further, we
+shall say that the eigenket |P> belongs to the eigenvalue a. Similarly,
+if (11) is satisfied, we shall call 6 an eigenvalue of « and <Q| an
+eigenbra belonging to this eigenvalue. The words eigenvalue, eigen-
+ket, eigenbra have a meaning, of course, only with reference to a linear
+operator or dynamical variable.
+
+</p><p>
+Using this terminology, we can assert that, if an eigenket of « is
+multiplied by any number not zero, the resulting ket is also an
+eigenket and belongs to the same eigenvalue as the original one.
+It is possible to have two or more independent eigenkets of a linear
+operator belonging to the same eigenvalue of that linear operator,
+e.g. equation (10) may have several solutions, |P1>, |P2>, |P3),... say,
+all holding for the same value of a, with the various eigenkets |P1),
+|P2>, |P3>,... independent. In this case it is evident that any linear
+combination of the eigenkets is another eigenket belonging to the
+same eigenvalue of the linear operator, e.g.
+
+Cy |P1) +6 | P2>+65 | P3>+...
+
+is another solution of (10), where ¢,, C2, ¢3,... are any numbers.
+
+</p><p>
+In the special case when the linear operator « of equations (10) and
+(11) is a number, & say, it is obvious that any ket |P> and bra <Q|
+will satisfy these equations provided a and b equal k. Thus a number
+considered as a linear operator has just one eigenvalue, and any ket
+is an eigenket and any bra is an eigenbra, belonging to this eigenvalue.
+
+The theory of eigenvalues and eigenvectors of a linear operator «
+which is not real is not of much use for quantum mechanics. We
+shall therefore confine ourselves to real linear operators for the further
+development of the theory. Putting for « the real linear operator &,
+we have instead of equations (10) and (11)
+
+E|P> = a|P), (12)
+(QE = 1KQI. (13)
+
+† The word 'proper' is sometimes used instead of 'eigen', but this is not satisfactory
+as the words 'proper' and 'improper' are often used with other meanings. For example,
+in §15 and §46 the words 'improper function' and 'proper-energy' are used.
+
+
+Three important results can now be readily deduced.
+
+(i) 
+
+The eigenvalues are all real numbers. 'To prove that a satisfying
+(12) is real, we multiply (12) by the bra ¢Pj| on the left, obtaining
+
+(P\E|P> = ac P|P).
+
+Now from equation (4) with <B| replaced by ¢Pj| and « replaced by
+the real linear operator €, we see that the number ¢P|é|P> must be
+real, and from (8) of § 6, <P|P> must be real and not zero. Hence a
+is real. Similarly, by multiplying (13) by [Q@> on the right, we can
+prove that 0 is real.
+
+</p><p>
+Suppose we have a solution of (12) and we form the conjugate
+
+imaginary equation, which will read
+(P|f = a¢P|
+
+in view of the reality of € anda. This conjugate imaginary equation
+now provides a solution of (13), with <Q| = <P| and 6=a. Thus
+we can infer
+
+</p><p>
+(ii) The eigenvalues associated with eigenkets are the same as the
+eigenvalues associated with eigenbras.
+
+</p><p>
+(iii) The conjugate imaginary of any eigenket is an eigenbra belonging
+to the same eigenvalue, and conversely. This last result makes it reason-
+able to call the state corresponding to any eigenket or to the conjugate
+imaginary eigenbra an eigenstate of the real dynamical variable €.
+
+</p><p>
+Eigenvalues and eigenvectors of various real dynamical variables
+are used very extensively in quantum mechanics, so it is desirable
+to have some systematic notation for labelling them. The following
+is suitable for most purposes. If é is a real dynamical variable, we-
+call its eigenvalues é', é”, &, etc. Thus we have a letter by itself
+denoting a real dynamical variable or a real linear operator, and the
+same letter with primes or an index attached denoting a number,
+namely an eigenvalue of what the letter by itself denotes. An eigen-
+vector may now be labelled by the eigenvalue to which it belongs.
+Thus |') denotes an eigenket belonging to the eigenvalue £' of the
+dynamical variable €. If in a piece of work we deal with more than
+one eigenket belonging to the same eigenvalue ofa dynamical variable,
+we may distinguish them one from another by means of a further
+label, or possibly of more than one further labels. Thus, if we are
+dealing with two eigenkets belonging to the same eigenvalue of £',
+
+we may call them [€'1> and |£'2).
+
+
+the algebraic expression y,(€). Since the c's are all different, x,(¢,)
+cannot vanish. Consider now the expression
+
+2 Oe (21)
+
+If c, is substituted for ¢ here, every term in the sum vanishes except
+the one for which r = s, since x,(€) contains (—c,) as a factor when
+r % 8, and the term for which r = s is unity, so the whole expression
+vanishes. Thus the expression (21) vanishes when é is put equal to
+any of the m numbers ¢;,¢9,...,¢,- Since, however, the expression
+is only of degree n—1 in é, it must vanish identically. If we now
+apply the linear operator (21) to an arbitrary ket |P> and equate —
+the result to zero, we get
+
+IP> = Day wllP>- (22)
+
+Each term in the sum on the right here is, according to (19), an
+eigenket of &, if it does not vanish. Equation (22) thus expresses the
+arbitrary ket |P> as a sum of eigenkets of €, and thus (8) is proved.
+
+</p><p>
+As a simple example we may consider a real linear operator o that
+satisfies the equation =. (23)
+
+r
+
+Then o has the two eigenvalues 1 and —1. Any ket |P> can be
+expressed as \P) = 4(1+o)|P)+4h(1—o)|P).
+
+It is easily verified that the two terms on the right here are eigenkets
+of o, belonging to the eigenvalues 1 and —1 respectively, when they
+do not vanish.
+</p><p>
+
+<h3>10. Observables</h3>
+<p>
+We have made a number of assumptions about the way in which
+states and dynamical variables are to be represented mathematically
+in the theory. These assumptions are not, by themselves, laws of
+nature, but become laws of nature when we make some further
+assumptions that provide a physical interpretation of the theory.
+Such further assumptions must take the form of establishing con-
+nexions between the results of observations, on one hand, and the
+equations of the mathematical formalism-on the other.
+
+</p><p>
+When we make an observation we measure some dynamical variable.
+Tt is obvious physically that the result of such a measurement must
+always be a real number, so we should expect that any dynamical
+variable that we can measure must be a real dynamical variable.
+One might think one could measure a complex dynamical variable
+by measuring separately its real and pure imaginary parts. But this
+would involve two measurements or two observations, which would
+be all right in classical mechanics, but would not do in quantum
+mechanics, where two observations in general interfere with one
+another—it is not in general permissible to consider that two observa-
+tions can be made exactly simultaneously, and if they are made in
+quick succession the first will usually disturb the state of the system
+and introduce an indeterminacy that will affect the second. We
+therefore have to restrict the dynamical variables that we can
+measure to be real, the condition for this in quantum mechanics
+being as given in § 8. Not every real dynamical variable can be
+measured, however. A further restriction is needed, as we shall see
+later.
+
+</p><p>
+We now make some assumptions for the physical interpretation of
+the theory. Jf the dynamical system is in an eigenstate of a real
+dynamical variable €, belonging to the eigenvalue £', then a measurement
+of € will certainly give as result the number €'. Conversely, if the system
+is in a@ state such that a measurement of a real dynamical variable € is
+certain to give one particular result (instead of giving one or other of
+several possible results according to a probability law, as is in general
+the case), then the state is an eigenstate of E and the result of the measure-
+ment is the eigenvalue of € to which this eigenstate belongs. These
+assumptions are reasonable on account of the eigenvalues of real
+linear operators being always real numbers. :
+
+</p><p>
+Some of the immediate consequences of the assumptions will be
+noted. If we have two or more eigenstates of a real dynamical
+variable € belonging to the same eigenvalue €', then any state
+formed by superposition of them will also be an eigenstate of &
+belonging to the eigenvalue £'. We can infer that if we have two or
+more states for which a measurement of ¢ is certain to give the result
+é", then for any state formed by superposition of them a measurement
+of & will still be certain to give the result ¢'. This gives us some insight
+into the physical significance of superposition of states. Again, two
+eigenstates of € belonging to different eigenvalues are orthogonal.
+We can infer that two states for which a measurement of £ is certain
+to give two different results are orthogonal. This gives us some
+insight into the physical significance of orthogonal states.
+
+</p><p>
+When we measure a real dynamical variable ¢, the disturbance
+involved in the act of measurement causes a jump in the state of the
+dynamical system. From physical continuity, if we make a second
+measurement of the same dynamical variable £ immediately after
+the first, the result of the second measurement must be the same as
+that of the first. Thus after the first measurement has been made,
+there is no indeterminacy in the result of the second. Hence, after
+the first measurement has been made, the system is in an eigenstate
+of the dyriamical variable é, the eigenvalue it belongs to being equal
+to the result of the first measurement. This conclusion must still hold
+if the second measurement is not actually made. In this way we see
+that a measurement always causes the system to jump into an eigen-
+state of the dynamical variable that is being measured, the eigenvalue
+this eigenstate belongs to being equal to the result of the measure-
+ment.
+
+</p><p>
+We can infer that, with the dynamical system in any state, any
+result of a measurement of a real dynamical variable is one of its ewgen-
+values. Conversely, every eigenvalue is a possible result of a measure-
+ment of the dynamical variable for some state of the system, since it is
+certainly the result if the state is an eigenstate belonging to this
+eigenvalue. This gives us the physical significance of eigenvalues.
+The set of eigenvalues of a real dynamical variable are just the
+possible results of measurements of that dynamical variable and the
+calculation. of eigenvalues is for this reason an important problem.
+
+</p><p>
+Another assumption we make connected with the physical inter-
+pretation of the theory is that, if a certain real dynamical variable
+é is measured with the system in a particular state, the states into which
+the system may jump on account of the measurement are such that the
+original state is dependent on them. Now these states into which
+the system may jump are all eigenstates of €, and hence the original
+state is dependent on eigenstates of £. But the original state may be
+any state, so we can conclude that any state is dependent on eigen-
+states of &. If we define a complete set of states to be a set such that
+any state is dependent on them, then our conclusion can be formu-
+lated—the eigenstates of € form a complete set.
+
+</p><p>
+Not every real dynamical variable has sufficient eigenstates to form
+a complete set. Those whose eigenstates do not form complete sets
+are not quantities that can be measured. We obtain in this way a
+further condition that a dynamical variable has to satisfy in order
+that it shall be susceptible to measurement, in addition to the con-
+dition that it shall be real. We call a real dynamical variable whose
+eigenstates form a complete set an observable. Thus any quantity
+that can be measured is an observable.
+
+</p><p>
+The question now presents itself—Can every observable be
+measured? The answer theoretically is yes. In practice it may be
+very awkward, or perhaps even beyond the ingenuity of the experi-
+menter, to devise an apparatus which could measure some particular
+observable, but the theory always allows one to imagine that the
+measurement can be made.
+
+</p><p>
+Let us examine mathematically the condition for a real dynamical
+variable & to be an observable. Its eigenvalues may consist of a
+(finite or infinite) discrete set of numbers, or alternatively, they
+may consist of all numbers in a certain range, such as all numbers
+lying between a and 6. In the former case, the condition that
+any state is dependent on eigenstates of € is that any ket can
+be expressed as a sum of eigenkets of €. In the latter case the
+condition needs modification, since one may have an integral instead
+of a sum, i.e. a ket |P> may be expressible as an integral of eigen-
+
+ets of IP) = fie>ae' , (24)
+
+|é'> being an eigenket of € belonging to the eigenvalue ¢' and the
+range of integration being the range of eigenvalues, as such a ket is
+dependent on eigenkets of €. Not every ket dependent on eigenkets
+of € can be expressed in the form of the right-hand side of (24), since
+one of the eigenkets itself cannot, and more generally any sum of
+eigenkets cannot. The condition for the eigenstates of € to form a
+complete set must thus be formulated, that any ket |P> can be
+expressed as an integral plus a sum of eigenkets of €, ie.
+
+IP> = | le'e> dé'+ 3 led, (25)
+
+where the |é'e>, |d) are all eigenkets of €, the labels ¢ and d being
+inserted to distinguish them when the eigenvalues ¢' and £" are equal,
+and where the integral is taken over the whole range of eigenvalues
+and the sum is taken over any selection of them. If this condition
+is satisfied in the case when the eigenvalues of € consist of a range
+of numbers, then € is an observable.
+
+</p><p>
+There is a more general case that sometimes occurs, namely the
+eigenvalues of € may consist of a range of numbers together with a
+discrete set of numbers lying outside the range. In this case the
+condition that shall be an observable is still that any ket shall be
+expressible in the form of the right-hand side of (25), but the sum
+over 7 is now a sum over the discrete set of eigenvalues as well as a
+selection of those in the range.
+
+</p><p>
+It is often very difficult to decide mathematically whether a par-
+ticular real dynamical variable satisfies the condition for being an
+observable or not, because the whole problem of finding eigenvalues
+and eigenvectors is in general very difficult. However, we may have
+good reason on experimental grounds for believing that the dynamical
+variable can be measured and then we may reasonably assume that it
+is an observable even though the mathematical proofis missing. This is
+a thing we shall frequently do during the course of development of the
+theory, e.g. we shall assume the energy of any dynamical system to be
+always an observable, even though it is beyond the power of present-
+day mathematical analysis to prove it so except in simple cases.
+
+</p><p>
+In the special case when the real dynamical variable is a number,
+every state is an eigenstate and the dynamical variable is obviously
+an observable. Any measurement of it always gives the same result,
+so it is just a physical constant, like the charge on an electron.
+A physical constant in quantum mechanics may thus be looked upon
+either as an observable with a single eigenvalue or as a mere number
+appearing in the equations, the two points of view being equivalent.
+
+</p><p>
+If the real dynamical variable satisfies an algebraic equation, then
+the result (8) of the preceding section shows that the dynamical
+variable is an observable. Such an observable has a finite number
+of eigenvalues. Conversely, any observable with a finite number of
+eigenvalues satisfies an algebraic equation, since if the obsérvable ¢
+has as its eigenvalues ¢', é”,...,é", then
+
+(E—€')(E-£")... (E—&) |P> = 0
+holds for |P> any eigenket of €, and thus it holds for any |P) what-
+
+ever, because any ket can be expressed as a sum of eigenkets of €
+on account of € being an observable. Hence
+
+(E—£')(E—8")... E—8") = 0. (26)
+
+</p><p>
+As an example we may consider the linear operator |A)<A|, where
+
+|A> is a normalized ket. This linear operator is real according to (7),
+and its square is
+
+HADCAIP = |A><A|AD<A| = |A><A| (27)
+
+since (A|A> = 1. Thus its square equals itself and so it satisfies an
+algebraic equation and is an observable. Its eigenvalues are 1 and 0,
+with |A> as the eigenket belonging to the eigenvalue I and all kets
+orthogonal to |A> as eigenkets belonging to the eigenvalue 0. A
+measurement of the observable thus certainly gives the result 1 if
+the dynamical system is in the state corresponding to [A> and the
+result 0 if the system is in any orthogonal state, so the observable
+may be described as the quantity which determines whether the
+system is in the state |A> or not.
+
+</p><p>
+Before concluding this section we should examine the conditions
+for an integral such as occurs in (24) to be significant. Suppose |X)
+and | Y> are two kets which can be expressed as integrals of eigenkets
+of the observable €, :
+
+IX> = [lem de, [Y= f ley ae",
+
+x and y being used as labels to distinguish the two integrands. Then
+we have, taking the conjugate imaginary of the first equation and
+multiplying by the second
+
+<E|¥)> = ff e'ale'y> ae'ae". (28)
+Consider now the single integral
+f <exlery> de”. (29)
+
+From the orthogonality theorem, the integrand here must vanish
+over the whole range of integration except the one point é” = £'
+If the integrand is finite at this point, the integral (29) vanishes, and
+if this holds for all €', we get from (28) that <X|Y> vanishes. Now
+in general ¢X|Y) does not vanish, so in general <é'x|é'y> must be
+infinitely great in such a way as to make (29) non-vanishing and
+finite. The form of infinity required for this will be discussed in § 15.
+
+</p><p>
+In our work up to the present it has been implied that our bra and
+ket vectors are of finite length and their scalar products are finite.
+We see now the need for relaxing this condition when we are dealing
+with eigenvectors of an observable whose eigenvalues form a range.
+If we did not relax it, the phenomenon of ranges of eigenvalues could
+not occur and our theory would be too weak for most practical
+problems.
+
+</p><p>
+Taking | Y> = |X> above, we get the result that in general <é'x|£'x)
+is infinitely great. We shall assume that if |£'2> 4 0
+
+[ <enle"e de" > 0, (30)
+
+as the axiom corresponding to (8) of §6 for vectors of infinite
+length.
+
+</p><p>
+The space of bra or ket vectors when the vectors are restricted to
+be of finite length and to have finite scalar products is called by
+mathematicians a Hilbert space. The bra and ket vectors that we
+now use form a more general space than a Hilbert space.
+
+We can now see that the expansion of a ket |P) in the form of the
+right-hand side of (25) is unique, provided there are not two or more
+terms in the sum referring to the same eigenvalue. To prove this
+result, let us suppose that two different expansions of |P> are pos-
+sible. Then by subtracting one from the other, we get an equation
+
+of the form 0 =x f ea de' + & \eby, (31)
+
+a and 6 being used as new labels for the eigenvectors, and the sum
+over s including all terms left after the subtraction of one sum from
+the other. If there is a term in the sum in (31) referring to an eigen-
+value € not in the range, we get, by multiplying (31) on the left by
+<@b| and using the orthogonality theorem, ,
+
+0 = ¢£|&>,
+which contradicts (8) of § 6. Again, if the integrand in (31) does not
+vanish for some eigenvalue &” not equal to any £* occurring in the
+sum, we get, by multiplying (31) on the left by <é'a| and using the
+orthogonality theorem,
+
+Oo = [ <e'ale'ay dé',
+
+which contradicts (30). Finally, if there is a term in the sum in (31)
+referring to an eigenvalue & in the range, we get, multiplying (31) on
+the left by <&b|,
+
+0 = | <b|é'ay dé” +-<£b |g (32)
+and multiplying (31) on the left by <éa]
+O= { <Calg'a> de' +<galeb>. (33)
+
+Now the integral in (33) is finite, so <@a|&b) is finite and <b|&a> is
+finite. The integral in (32) must then be zero, so <éb|Eb> is zero and
+
+
+we again have a contradiction. Thus every term in (31) must vanish
+and the expansion of a ket |P)> in the form of the right-hand side of
+(25) must be unique.
+</p><p>
+
+<h3>11. Functions of observables</h3>
+<p>
+
+Let € be an observable. We can multiply it by any real number k
+and get another observable ké. In order that our theory may be
+self-consistent it is necessary that, when the system is in a state such
+that a measurement of the observable é certainly gives the result ¢',
+a measurement of the observable £é shall certainly give the result x£é'.
+It is easily verified that this condition is fulfilled. The ket correspond-
+ing to a state for which a measurement of é certainly gives the result
+é' is an eigenket of €, |€ say, satisfying
+
+51> = EE.
+
+This equation leads to
+
+hE|E") = hg" \&'),
+
+showing that |é'> is an eigenket of ké belonging to the eigenvalue ké',
+and thus that a measurement of ké will certainly give the result ké'.
+
+</p><p>
+More generally, we may take any real function of €, fle) say, and
+consider it as a new observable which is automatically measured
+whenever € is measured, since an experimental determination of the
+value of € also provides the value of f(£). We need not restrict f(£) to
+be real, and then its real and pure imaginary parts are two observables
+which are automatically measured when ¢ is measured. For the theory
+to be consistent it is necessary that, when the system is in a state
+such that a measurement of € certainly gives the result é', a measure-
+ment of the real and pure imaginary parts of f(€) shall certainly give
+for results the real and pure imaginary parts of f(¢'). In the case when
+f(€) is expressible as a power series
+
+F(E) = Cote, E+ 62 +03 F+...,
+the c's being numbers, this condition can again be verified by elemen-
+tary algebra. In the case of more general functions f it may not be
+possible to verify the condition. The condition may then be used to
+define f(£), which we have not yet defined mathematically. In this
+
+way we can get a more general definition of a function of an observ-
+able than is provided by power series.
+
+</p><p>
+We define f(€) in general to be that linear operator which satisfies
+FONED = FEED (34)
+
+for every eigenket |é'> of €, f(€') being a number for each eigenvalue &'.
+It is easily seen that this definition is self-consistent when applied to
+eigenkets |é'> that are not independent. If we have an eigenket |£'A>
+dependent on other eigenkets of £, these other eigenkets must all
+belong to the same eigenvalue €', otherwise we should have an equa-
+tion of the type (31), which we have seen is impossible. On multiplying
+the equation which expresses |é'A> linearly in terms of the other
+eigenkets of £ by f(é) on the left, we merely multiply each term in it
+by the number f(é'), so we obviously get a consistent equation.
+Further, equation (34) is sufficient to define the linear operator f(&)
+completely, since to get the result of f(€) multiplied into an arbitrary
+ket |P), we have only to expand |P> in the form of the right-hand
+side of (25) and take
+
+FE) P> = [feo dé' + ZAE)8 a>. (35)
+
+</p><p>
+The conjugate complex f(é) of f(é) is defined by the conjugate
+imaginary equation to (34), namely
+
+ENF) = FEEL,
+
+holding for any eigenbra <é'|, f(é') being the conjugate complex
+function to f(é'). Let us replace é' here by é” and multiply the
+equation on the right by the arbitrary ket |P>. Then we get, using
+the expansion (25) for |P>,
+
+E"FOIP> = FEE PY
+= | FEE EoD de + HEME EdD
+
+= { FEE NE CD dg! + FEED (36)
+
+with the help of the orthogonality theorem, <é"|&"d> being under-
+stood to be zero if €” is not one of the eigenvalues to which the terms
+in the sum in (25) refer. Again, putting the conjugate complex
+function f(é') for f(é') in (35) and multiplying on the left by <é”|,
+we get
+
+ENFEIPY = [Fees dé! +fe")E"l ed).
+
+The right-hand side here equals that of (36), since the integrands
+vanish for & + &", and hence
+
+E"fOIP> = "FOP.
+
+This holds for <&”| any eigenbra and |P> any ket, so
+
+fe) =f. (37)
+
+Thus the conjugate complex of the linear operator f(£) is the conjugate
+complex function f of &.
+
+</p><p>
+It follows as a corollary that if f(é') is a real function of &', f(&) is
+a real linear operator. f(&) is then also an observable, since its
+eigenstates form a complete set, every eigenstate of € being also an
+eigenstate of f(£).
+
+</p><p>
+With the above definition we are able to give a meaning to any
+function f of an observable, provided only that the domain of existence
+of the function of a real variable f(x) includes all the eigenvalues of the
+observable. If the domain of existence contains other points besides
+these eigenvalues, then the values of f(x) for these other points will
+not affect the function of the observable. The function need not be
+analytic or continuous. The eigenvalues of a function f of an observ-
+able are just the function f of the eigenvalues of the. observable.
+
+</p><p>
+It is important to observe that the possibility of defining a function
+f of an observable requires the existence of a unique number f(x) for
+each value of « which is an eigenvalue of the observable. Thus the
+function f(z) must be single-valued. This may be illustrated by con-
+sidering the question: When we have an observable f(A) which is a
+real function of the observable A, is the observable A a function of
+the observable f(4)? The answer to this is yes, if different eigenvalues
+A' of A always lead to different values of f(A'). If, however, there
+exist two different eigenvalues of A, A' and A” say, such that
+f(A') = f(A"), then, corresponding to the eigenvalue f(A') of the
+observable f(A), there will not be a unique eigenvalue of the observ-
+able A and the latter will not be a function of the observable f(A).
+
+</p><p>
+It may easily be verified mathematically, from the definition, that
+the sum or product of two functions of an observable is a function
+of that observable and that a function of a function of an observable
+is a function of that observable. Also it is easily seen that the whole
+theory of functions of an observable is symmetrical between bras and
+kets and that we could equally well work from the equation -
+
+OTF) = FENKE' (38)
+instead of from (34).
+
+</p><p>
+We shall conclude this section with a discussion of two examples
+which are of great practical importance, namely the reciprocal and
+the square root. The reciprocal of an observable exists if the observ-
+able does not have the eigenvalue zero. If the observable « does not
+have the eigenvalue zero, the reciprocal observable, which we call a
+or 1/x, will satisfy
+
+ate') = oa"), , (39)
+where |«'> is an eigenket of « belonging to the eigenvalue a'. Hence
+aa o!> == aa' la"> = |o'>.
+
+Since this holds for any eigenket |«'>, we must have
+aon = J, (40)
+Similarly, atte = 1. (41)
+
+Hither of these equations is sufficient to determine «~! completely,
+provided « does not have the eigenvalue zero. To prove this in the
+case of (40), let x be any linear operator satisfying the equation
+
+ot = 1]
+
+and multiply both sides on the left by the «-1 defined by (39). The
+
+result is 1
+
+ante = a
+and hence from (41) ez oot,
+
+</p><p>
+Equations (40) and (41) can be used to define the reciprocal, when
+it exists, of a general linear operator «, which need not even be real.
+One of these equations by itself is then not necessarily sufficient. If
+any two linear operators « and f have reciprocals, their product of
+has the reciprocal (oB)-2 = Bto-2, (42)
+
+obtained by taking the reciprocal of each factor and reversing their
+order. We verify (42) by noting that its right-hand sidé gives unity
+when multiplied by of, either on the right or on the left. This reci-
+procal law for products can be immediately extended to more than
+
+two factors, i.e., (oBy...)-b == wy Blan},
+
+</p><p>
+The square root of an observable « always exists, and is real if «
+has no negative eigenvalues. We write it va or a}. It satisfies
+
+Vola”> = ve' |a'>, (43)
+'x'> being an eigenket of « belonging to the eigenvalue «'. Hence
+Mowrloclor'> == Vee' Vox' fou” == cea' = ala',
+and since this holds for any eigenket |x'> we must have
+
+Nao = a. (44)
+
+</p><p>
+On account of the ambiguity of sign in (43) there will be several
+square roots. To fix one of them we must specify a particular sign
+in (43) for each eigenvalue. This sign may vary irregularly from one
+eigenvalue to the next and equation (43) will always define a linear
+operator Va satisfying (44) and forming a square-root function of a.
+If there is an eigenvalue of « with two or more independent eigenkets
+belonging to it, then we must, according to our definition of a func-
+tion, have the same sign in (43) for each of these eigenkets. If we
+took different signs, however, equation (44) would still hold, and hence
+equation (44) by itself is not sufficient to define Va, except in the
+special case when there is only one independent eigenket of « belong-
+ing to any eigenvalue.
+
+</p><p>
+The number of different square roots of an observable is 2", where
+n is the total number of eigenvalues not zero. In practice the square-
+root function is used only for observables without negative eigen-
+values and the particular square root that is useful is the one for
+which the positive sign is always taken in (43). This one will be called
+the positive square root.
+</p><p>
+
+<h3>12. The general physical interpretation</h3>
+<p>
+The assumptions that we made at the beginning of § 10 to get a
+physical interpretation of the mathematical theory are of a rather
+special kind, since they can be used only in connexion with eigen-
+states. We need some more general assumption which will enable us
+to extract physical information from the mathematics even when we
+are not dealing with eigenstates.
+
+</p><p>
+In classical mechanics an observable always, as we say, 'has a
+value' for any particular state of the system. What is there in quan-
+tum mechanics corresponding to this? If we take any observable €
+and any two states x and y, corresponding to the vectors <| and |y>,
+then we can form the number <z/é|y>. This number is not very
+closely analogous to the value which an observable can 'have' in the
+classical theory, for three reasons, namely, (i) it refers to two states
+of the system, while the classical value always refers to one, (ii) it is
+in general not a real number, and (iii) it is not uniquely determined
+by the observable and the states, since the vectors <x| and |y> contain
+arbitrary numerical factors. Even if we impose on <x] and |y> the
+condition that they shall be normalized, there will still be an undeter-
+
+mined factor of modulus unity in <x|€|y>. These three reasons cease
+to apply, however, if we take the two states to be identical and |y>
+to be the conjugate imaginary vector to <z|. The number that we
+then get, namely <x/élxz>, is necessarily real, and also it is uniquely
+determined when <x| is normalized, since if we multiply <x] by the
+numerical factor e”, c being some real number, we must multiply
+\x> by e-* and <x[E|a> will be unaltered.
+
+</p><p>
+One might thus be inclined to make the tentative assumption that
+the observable & 'has the value' <a|£|2> for the state z, in a sense
+analogous to the classical sense. This would not be satisfactory,
+though, for the following reason. Let us take a second observable 7»,
+which would have by the above assumption the value <a|n|x> for
+this same state. We should then expect, from classical analogy, that
+for this state the sum of the two observables would have a value
+equal to the sum of the values of the two observables separately and
+the product of the two observables would have a value equal to the
+product of the values of the two observables separately. Actually, the
+tentative assumption would give for the sum of the two observables
+the value <z|f+y|2>, which is, in fact, equal to the sum of <2|£|x>
+and <x|y|">, but for the product it would give the value <a|éy|x>
+or <2|né|x>, neither of which is connected in any simple way with
+<a|éle> and <2x|q|2). :
+
+</p><p>
+However, since things go wrong only with the product and not with
+the sum, it would be reasonable to call <a|E|z> the average value of
+the observable € for the state x. This is because the average of the
+sum of two quantities must equal the sum of their averages, but the
+average of their product need not equal the product of their averages.
+We therefore make the general assumption that if the measurement
+of the observable & for the system tn the state corresponding to |x» is
+made a large number of times, the average of all the results obtained will
+be <x\|E\x>, provided |x> is normalized. If |a> is not normalized, as is
+necessarily the case if the state z is an eigenstate of some observable
+belonging to an eigenvalue in a range, the assumption becomes that
+the average result of a measurement of € is proportional to <z/é|2>.
+This general assumption provides a basis for a general physical inter-
+pretation of the theory.
+
+</p><p>
+The expression that an observable 'has a particular value' for a
+particular state is permissible in quantum mechanics in the special
+case when a measurement of the observable is certain to lead to the
+particular value, so that the state is an eigenstate of the observable.
+It may easily be verified from the algebra that, with this restricted
+meaning for an observable 'having a value', if two observables have
+values for a particular state, then for this state the sum of the two
+observables (if this sum is an cobservable<sup>†</sup>) has a value equal to the
+sum of the values of the two observables separately and the product
+of the two observables (if this product is an observable<sup>‡</sup>) has a value
+equal to the product of the values of the two observables separately.
+
+</p><p class="margin-large">
+<sup>†</sup> This is not obviously so, since the sum may not have sufficient eigenstates to form a complete set, in which case the sum, considered as a single quantity, would not be measurable.<br>
+<br>
+‡ Here the reality condition may fail, as well as the condition for the eigenstates
+to form a complete set.
+</p><p>
+In the general case we cannot speak of an observable having a value
+for a particular state, but we can speak of its having an average value
+for the state.' We can go further and speak of the probability of its
+having any specified value for the state, meaning the probability of
+this specified value being obtained when one makes a measurement of
+the observable. This probability can be obtained from the general
+assumption in the following way.
+
+</p><p>
+Let the observable be é and let the state correspond to the normal-
+ized ket |z). Then the general assumption tells us, not only that the
+average value of € is <x|f/x>, but also that the average value of any
+function of , f(£) say, is <x|f(é)|z>. Take f(£) to be that function of &
+which is equal to unity when ¢ = a, a being some real number, and
+zero otherwise. This function of € has a meaning according to our
+general theory of functions of an observable, and it may be denoted
+by 8, in conformity with the general notation of the symbol 6 with
+two suffixes given on p. 62 (equation (17)). The average value of
+this function of € is just the probability, P, say, of € having the value
+
+a. Thus > == Ca|Seq|>. (45)
+
+If a is not an eigenvalue of &, 6;, multiplied into any eigenket of € is
+zero, and hence 6g, = 0 and F, = 0. This agrees with a conclusion
+of § 10, that any result of a measurement of an observable must be
+one of its eigenvalues.
+
+</p><p>
+If the possible results of a measurement of ¢ form a range of num-
+bers, the probability of € having exactly a particular value will be
+zero in most physical problems. The quantity of physical importance
+is then the probability of € having a value within a small range, say
+from a to a+da. This probability, which we may call P(a) da, is
+equal to the average value of that function of & which is equal to
+unity for € lying within the range a to a+da and zero otherwise.
+This function of € has a meaning according to our general theory of
+functions of an observable. Denoting it by x(&), we have
+
+P(a) da = <a\|x(€)|z>. (46)
+If the range a to a+da does not include any eigenvalues of £, we
+have as above y(¢) = 0 and P(a) = 0. If |x> is not normalized, the
+right-hand sides of (45) and (46) will still be proportional to the
+probability of having the value a and lying within the range a to
+a+da respectively.
+
+</p><p>
+The assumption of §10, that a measurement of £ is certain to give
+the result ¢' if the system is in an eigenstate of € belonging to the
+eigenvalue £', is consistent with the general assumption for physical
+interpretation and can in fact be deduced from it. Working from the
+general assumption we see that, if |é'> is an eigenket of € belonging
+to the eigenvalue é', then, in the case of discrete eigenvalues of &,
+
+Sea lf> = 0 unless a= &,
+and in the case of a range of eigenvalues of €
+x(é)\é> = 0 unless the range a to a+da includes é'.
+
+In either case, for the state corresponding to |é">, the probability of
+é having any value other than ' is zero.
+
+</p><p>
+An eigenstate of £ belonging to an eigenvalue &' lying in a range
+is a state which cannot strictly be realized in practice, since it would
+need an infinite amount of precision to get € to equal exactly ¢'.
+The most that could be attained in practice would be to get & to lie
+within a narrow range about the value é'. The system would then
+be in a state approximating to an eigenstate of €. Thus an eigenstate
+belonging to an eigenvalue in a range is a mathematical idealization
+of what can be attained in practice. All the same such eigenstates
+play a very useful role in the theory and one could not very well do
+without them. Science contains many examples of theoretical con-
+cepts which are limits of things met with in practice and are useful
+for the precise formulation of laws of nature, although they are not
+realizable experimentally, and this is just one more of them. It may
+be that the infinite length of the ket vectors corresponding to these
+eigenstates is connected with their unrealizability, and that all realiz-
+able states correspond to ket vectors that can be normalized and that
+form a Hilbert space.
+</p><p>
+
+<h3>13. Commutability and compatibility</h3>
+<p>
+A state may be simultaneously an eigenstate of two observables.
+If the state corresponds to the ket vector |A> and the observables are
+& and 7, we should then have the equations
+
+E|A> = &|AD,
+nl|A> = 7'|A),
+
+where £' and 7' are eigenvalues of € and 7 respectively. We can now
+deduce
+
+En|A> = &9'|A> = €'7)'|A> = &'n|A> = n€"|A> = nf 14),
+
+or (én—ng)|4> = 0.
+This suggests that the chances for the existence of a simultaneous
+eigenstate are most favourable if &£y7—-y€é = 0 and the two observables
+commute. If they do not commute a simultaneous eigenstate is not
+impossible, but is rather exceptional. On the other hand, if they do
+commute there exist so many simultaneous eigenstates that they form a
+complete set, as will now be proved.
+
+</p><p>
+Let £ and 7 be two commuting observables. Take an eigenket of -
+n, |n'> say, belonging to the eigenvalue 7', and expand it in terms
+of eigenkets of € in the form of the right-hand side of (25), thus —
+
+In'> = | lé'n'c> ae" + & len'. (47)
+
+The eigenkets of € on the right-hand side here have y' inserted in
+them as an extra label, in order to remind us that they come from
+the expansion of a special ket vector, namely |y'>, and not a general
+one as in equation (25). We can now show that each of these eigen-
+kets of € is also an eigenket of y belonging to the eigenvalue 7'. We
+have
+
+0 = (n—7')|9> = | (ra ViE'n'e> de" + (nn )ern'd>. (48)
+Now the ket (7—7')|&"n'd> satisfies
+E(n—')|é'n'd> = (n—a NE lé'n'd> = (g—7')"|é"n'd>
+= &(n—7')\en'd>,
+showing that it is an eigenket of € belonging to the eigenvalue é',
+and similarly the ket (7—7')|é'n'c> is an eigenket of € belonging to
+
+the eigenvalue é'. Equation (48) thus gives an integral plus a sum
+of eigenkets of & equal to zero, which, as we have seen with equation
+(31), is impossible unless the integrand and every term in the sum
+vanishes. Hence
+(n—')lE'n'c>) = 0, (n—9')|Ern'd> = 0,
+
+so that all the kets appearing on the right-hand side of (47) are
+eigenkets of 7 as well as of £. Equation (47) now gives |y'> expanded
+in terms of simultaneous eigenkets of € and 7. Since any ket can be
+expanded in terms of eigenkets |7y'> of 7, it follows that any ket can
+be expanded in terms of simultaneous eigenkets of € and 7, and thus
+the simultaneous eigenstates form a complete set.
+
+</p><p>
+The above simultaneous eigenkets of \(\xi\) and \(\eta, |\xi^\prime\eta^\prime c\rangle\) and \(|\xi^r\eta^\prime d\rangle\),
+are labelled by the eigenvalues €' and 7', or €* and 7', to which they
+belong, together with the labels ¢ and d which may also be necessary.
+The procedure of using eigenvalues as labels for simultaneous eigen-
+vectors will be generally followed in the future, just as it has been
+followed in the past for eigenvectors of single observables.
+
+</p><p>
+The converse to the above theorem says that, if \(\xi\) and \(\eta\) are two
+observables such that their simultaneous eigenstates form a complete set,
+then \(\xi\) and \(\eta\) commute. To prove this, we note that, if \(|xi^\prime\eta^\prime\rangle\) is a
+simultaneous eigenket belonging to the eigenvalues \(xi^\prime\) and \(\eta^\prime\),
+
+\[
+(\xi\eta—\eta\xi)|\xi^\prime\eta^\prime\rangle = (\xi^\prime\eta^\prime - \eta^\prime\xi^\prime)|\xi^\prime\eta^\prime\rangle = 0  \tag{49}
+\]
+
+Since the simultaneous eigenstates form a complete set, an arbitrary
+ket \(|P\rangle\) can be expanded in terms of simultaneous eigenkets \(|\xi^\prime\eta^\prime\rangle\),
+for each of which (49) holds, and hence
+
+\[
+(\xi\eta - \eta\xi)|P\rangle = 0
+\]
+
+and so 
+
+\[
+\xi\eta - \eta\xi = 0
+\]
+
+</p><p>
+The idea of simultaneous eigenstates may be extended to more
+than two observables and the above theorem and its converse still
+hold, i.e. if any set of observables commute, each with all the others,
+their simultaneous eigenstates form a complete set, and conversely.
+The same arguments used for the proof with two observables are
+adequate for the general case; e.g., if we have three commuting
+observables \(\xi,\eta,\zeta,\) we can expand any simultaneous eigenket of \(\xi\)
+and \(\eta\) in terms of eigenkets of \(\zeta\) and then show that each of these
+eigenkets of \(\zeta\) is also an eigenket of \(\xi\) and of \(\eta\). Thus the simultaneous
+eigenket of \(\xi\) and \(\eta\) is expanded in terms of simultaneous eigenkets
+of \(\xi,\eta,\) and \(\zeta\), and since any ket can be expanded in terms of simul-
+taneous eigenkets of \(\xi\) and \(\eta\), it can also be expanded in terms of
+simultaneous eigenkets of \(\xi,\eta,\) and \(\zeta\).
+
+</p><p>
+The orthogonality theorem applied to simultaneous eigenkets tells
+us that two simultaneous eigenvectors of a set of commuting observ-
+ables are orthogonal if the sets of eigenvalues to which they belong
+differ in any way.
+
+</p><p>
+Owing to the simultaneous eigenstates of two or more commuting
+observables forming a complete set, we can set up a theory of func-
+tions of two or more commuting observables on the same lines as the
+theory of functions of a single observable given in §11. If \(\xi, \eta, \zeta, ...\) are commuting observables, we define a general function \(f\) of them to be that linear operator \(f(\xi, \eta, \zeta,...)\) which satisfies
+
+\[
+f(\xi, \eta, \zeta, ...)|\xi^\prime \eta^\prime \zeta^\prime ...\rangle = f(\xi^\prime,\eta^\prime,\zeta^\prime,...)|\xi^\prime \eta^\prime \zeta^\prime...\rangle  \tag{50}
+\]
+
+where \(|\xi^\prime\eta^\prime\zeta^\prime ...\rangle\) is any simultaneous eigenket of \(\xi,\eta,\zeta,...\) belonging
+to the eigenvalues \(\xi^\prime,\eta^\prime,\zeta^\prime,...\). Here \(f\) is any function such that \(f(a,b,c,...)\) is defined for all values of \(a,b,c,...\) which are eigenvalues of \(\xi,\eta,\zeta,...\) respectively. As with a function of a single observable
+defined by (34), we can show that \(f(\xi,\eta,\zeta,...)\) is completely determined by (50), that
+
+\[
+\overline{f(\xi,\eta,\zeta,...)}=\overline{f}(\xi,\eta,\zeta,...)
+\]
+
+corresponding to (37), and that if \(f(a,b,c,...)\) is a real function,
+\(f(\xi,\eta,\zeta,...)\) is real and is an observable.
+
+</p><p>
+We can now proceed to generalize the results (45) and (46). Given
+a set of commuting observables \(\xi,\eta,\zeta,...\), we may form that function
+of them which is equal to unity when \(\xi=a,\eta=b,\zeta=c,...,a,b,c,..\) being real numbers, and is equal to zero when any of these conditions
+is not fulfilled. This function may be written \(\delta_{\xi a}\delta_{\eta b}\delta_{\zeta c},...\), and is in fact just the product in any order of the factors \(\delta_{\xi a},\delta_{\eta b},\delta_{\zeta c},...\) defined
+as functions of single observables, as may be seen by substituting this
+product for \(f(\xi, \eta, \zeta)\) in the left-hand side of (50). The average
+value of this function for any state is the probability, \(P_{abc...}\) say, of
+\(\xi,\eta,\zeta,...\) having the values \(a,b,c,...\) respectively for that state. Thus
+if the state corresponds to the normalized ket vector \(|x\rangle\), we get from
+our general assumption for physical interpretation .
+
+\[
+P_{abc...} = \langle x|\delta_{\xi a}\delta_{\eta b}\delta_{\zeta c}\cdots|x\rangle \tag{51}
+\]
+
+\(P_{abc...}\) is zero unless each of the numbers \(a,b,c,...\) is an eigenvalue of
+the corresponding observable. If any of the numbers \(a,b,c,...\) is an
+eigenvalue in a range of eigenvalues of the corresponding observable,
+\(P_{abc...}\) will usually again be zero, but in this case we ought to replace
+the requirement that this observable shall have exactly one value by
+the requirement that it shall have a value lying within a small range,
+which involves replacing one of the \(\delta\) factors in (51) by a factor like
+the \(\chi(\xi)\) of equation (46). On carrying out such a replacement for
+each of the observables \(\xi, \eta, \zeta,...\), whose corresponding numerical
+value \(a,b,c,...\) lies in a range of eigenvalues, we shall get a proba-
+bility which does not in general vanish.
+
+</p><p>
+If certain observables commute, there exist states for which they all
+have particular values, in the sense explained at the bottom of p.46,
+namely the simultaneous eigenstates. Thus one can give a meaning to
+several commuting observables having values at the same time. Further, we
+see from (51) that for any state one can give a meaning to the probability
+of particular results being obtained for simultaneous measurements of
+several commuting observables. This conclusion is an important new
+development. In general one cannot make an observation on a
+system in a definite state without disturbing that state and spoiling
+it for the purposes of a second observation. One cannot then give
+any meaning to the two observations being made simultaneously.
+The above conclusion tells us, though, that in the special case when
+the two observables cominute, the observations are to be considered
+as non-interfering or compatible, in such a way that one can give a
+meaning to the two observations being made simultaneously and can
+discuss the probability of any particular results being obtained. The
+two observations may, in fact, be considered as a single observation
+of a more complicated type, the result of which is expressible by two
+numbers instead of a single number. From the point of view of generat
+theory, any two or more commuting observables may be counted as a
+single observable, the result of a measurement of which consists of two or
+more numbers. The states for which this measurement is certain to
+lead to one particular result are the simultaneous eigenstates.
+
+</p>
+    </body>
+</html>

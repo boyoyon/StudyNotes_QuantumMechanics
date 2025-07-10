@@ -1,0 +1,1125 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="utf-8" />
+        <title>衝突問題</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+            .margin-large
+            {
+                margin-left: 30px;
+            }
+           .margin-abstract {
+               margin-left: 60px; /* 左マージンを広くする */
+               margin-right: 60px; /* 右マージンを広くする */
+           }
+        </style>
+    <style>
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 20px; /* 列間のスペース */
+        }
+        .column {
+            flex: 1; /* 各列が均等に幅を取る */
+        }
+    </style>
+<style>
+.three-columns {
+  display: flex;
+  gap: 10px; /* 列間の余白を設定 */
+}
+.column {
+  flex: 1; /* 各列の幅を均等にする */
+  padding: 10px; /* 内側の余白を設定 */
+}
+</style>
+    <style>
+        .styleRef { 
+            text-indent: -40px; /* 最初の行の字下げを逆方向に */
+            margin-left: 10px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 40px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+        .styleBullet { 
+            text-indent: -20px; /* 最初の行の字下げを逆方向に */
+            margin-left: 30px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 0px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+            ol
+            {
+                margin-left: 30px;
+            }
+            ul
+            {
+                margin-left: 30px;
+            }
+    </style>
+    <style>
+        .thin-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 1px;
+            background-color: gray;
+        }
+
+        .thick-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+    <style>
+        .blue {
+            color: blue; /* 好きな色に変更してください */
+        }
+    </style>
+    </head>
+    <body>
+        <h1><center>Ⅷ COLLISION PROBLEMS<br>衝突問題</center></h1>
+<h2>48. General remarks</h2>
+<p>
+In this chapter we shall investigate problems connected with a par-
+ticle which, coming from infinity, encounters or ‘collides with’ some
+atomic system and, after being scattered through a certain angle, goes
+off to infinity again. The atomic system which does the scattering
+we shall call, for brevity, the scatterer. We thus have a dynamical
+system composed of an incident particle and a scatterer interacting
+with each other, which we must deal with according to the laws of
+quantum mechanics, and for which we must, in particular, calculate
+the probability of scattering through any given angle. The scatterer
+is usually assumed to be of infinite mass and to be at rest throughout
+the scattering process. The problem was first solved by Born by a
+method substantially equivalent to that of the next section. We must
+take into account the possibility that the scatterer, considered as a
+system by itself, may have a number of different stationary states
+and that if it is initially in one of these states when the particle arrives
+from infinity, it may be left in a different one when the particle goes
+off to infinity again. The colliding particle may thus induce transi-
+tions in the scatterer.
+
+The Hamiltonian for the whole system of scatterer plus particle
+will not involve the time explicitly, so that this whole system will
+have stationary states represented by periodic solutions of Schré-
+dinger’s wave equation. The meaning of these stationary states
+requires a little care to be properly understood. It is evident that
+for any state of motion of the system the particle will spend nearly all
+its time at infinity, so that the time average of the probability of the
+particle being in any finite volume will be zero. Now for a stationary
+state the probability of the particle being in a given finite volume,
+like any other result of observation, must be independent of the time,
+and hence this probability will equal its time average, which we have
+seen is zero. Thus only the relative probabilities of the particle being
+in different finite volumes will be physically significant, their absolute
+values being all zero. The total energy of the system has a continuous
+range of eigenvalues, since the initial energy of the particle can be
+anything. Thus a ket, |s> say, corresponding to a stationary state,
+﻿186 COLLISION PROBLEMS § 48
+
+being an eigenket of the total energy, must be of infinite length. We
+can see a physical reason for this, since if |s> were normalized and if
+@ denotes that observable—a certain function of the position of
+the particle—that is equal to unity if the particle is in a given finite
+volume and zero otherwise, then <s|Q|s> would be zero, meaning that |
+the average value of Q, i.e. the probability of the particle being in the
+given volume, is zero. Such a ket |s> would not be a convenient one
+to work with. However, with |s> of infinite length, <s/Q|s> can be
+finite and would then give the relative probability of the particle
+being in the given volume.
+
+In picturing a state of a system corresponding to a ket |z> which
+is not normalized, but for which <a|z> = n say, it may be convenient
+to suppose that we have n similar systems all occupying the same
+space but with no interaction between them, so that each one follows
+out its own motion independently of the others, as we had in the
+theory of the Gibbs ensemble in § 33. We can then interpret <za[x),
+where «is any observable, directly as the total « for all the n systems.
+In applying these ideas to the above-mentioned |s) of infinite length,
+corresponding to a stationary state of the system of scatterer plus
+colliding particle, we should picture an infinite number of such sys-
+tems with the scatterers all located at the same point and the particles
+distributed continuously throughout space. The number of particles
+in a given finite volume would be pictured as <s|Q|s>, Q being the
+observable defined above, which has the value unity when the particle
+is in the given volume and zero otherwise. If the ket is represented
+by a Schrédinger wave function involving the Cartesian coordinates
+of the particle, then the square of the modulus of the wave function
+could be interpreted directly as the density of particles in the picture.
+One must remember, however, that each of these particles has its own
+individual scatterer. Different particles may belong to scatterers in
+different states. There will thus be one particle density for each state
+of the scatterer, namely the density of those particles belonging to
+scatterers in that state. This is taken account of by the wave function
+involving variables describing the state of the scatterer in addition
+to those describing the position of the particle.
+
+For determining scattering coefficients we have to investigate
+stationary states of the whole system of scatterer plus particle. For
+instance, if we want to determine the probability of scattering in
+various directions when the scatterer is initially in a given stationary
+﻿§ 48 GENERAL REMARKS 187
+
+state and the incident particle has initially a given velocity in a given
+direction, we must investigate that stationary state of the whole
+system whose picture, according to the above method, contains at
+great distances from the point of location of the scatterers only
+particles moving with the given initial velocity and direction and
+belonging each to a scatterer in the given initial stationary state,
+together with particles moving outward from the point of location
+of the scatterers and belonging possibly to scatterers in various
+stationary states. This picture corresponds closely to the actual state
+of affairs in an experimental determination of scattering coefficients,
+with the difference that the picture really describes only one actual
+system of scatterer plus particle. The distribution of outward moving
+particles at infinity in the picture gives us immediately all the infor-
+mation about scattering coefficients that could be obtained by experi-
+ment. For practical calculations about the stationary state described
+by this picture one may use a perturbation method somewhat like
+that of § 43, taking as unperturbed system, for example, that for
+which there is no interaction between the scatterer and particle.
+
+In dealing with collision problems, a further possibility to be taken
+into consideration is that the scatterer may perhaps be capable of
+absorbing and re-emitting the particle. This possibility arises when
+there exists one or more states of absorption of the whole system, a
+state of absorption being an approximately stationary state which
+is closed in the sense mentioned at the end of § 38 (i.e. for which
+the probability of the particle being at a greater distance than r from
+the scatterer tends to zero as r > c0). Since a state of absorption is
+only approximately stationary, its property of being closed will be
+only a transient one, and after a sufficient lapse of time there will be
+a finite probability of the particle being on its way to infinity.
+Physically this means there is a finite probability of spontaneous
+emission of the particle. The fact that we had to use the word
+‘approximately’ in stating the conditions required for the phenomena
+of emission and absorption to be able to occur shows that these condi-
+tions are not expressible in exact mathematical language. One can give
+a meaning to these-phenomena only with reference to a perturbation
+method. They occur when the unperturbed system (of scatterer plus
+particle) has stationary states that are closed. The introduction of the
+perturbation spoils the stationary property of these states and gives
+rise to spontaneous emission and its converse absorption.
+﻿188 COLLISION PROBLEMS § 48
+
+For calculating absorption and emission probabilities it is necessary
+to deal with non-stationary states of the system, in contradistinction
+to the case for scattering coefficients, so that the perturbation method
+of § 44 must be used. Thus for calculating an emission coefficient
+we must consider the non-stationary states of absorption described
+above. Again, since an absorption is always followed by a re-emission,
+it cannot be distinguished from a scattering in any experiment in-
+volving a steady state of affairs, corresponding to a stationary state
+of the system. The distinction can be made only by reference to a
+non-steady state of affairs, e.g. by use of a stream of incident particles
+that has a sharp beginning, so that the scattered particles will appear
+immediately after the incident particles meet the scatterers, while
+those that have been absorbed and re-emitted will begin to appear
+only some time later. This stream of particles would be the picture
+of a certain ket of infinite length, which could be used for calculating
+the absorption coefficient.
+
+49, The scattering coefficient
+
+We shall now consider the calculation of scattering coefficients,
+taking first the case when there is no absorption and emission, which
+means that our unperturbed system has no closed stationary states.
+We may conveniently take this unperturbed system to be that for
+which there is no interaction between the scatterer and particle. Its
+Hamiltonian will thus be of the form
+
+E=H+W, (1)
+
+where H, is that for the scatterer alone and W that for the particle
+alone, namely, with neglect of relativistic mechanics,
+
+W = 1/2m.(pit+-py+P?)- (2)
+The perturbing energy V, assumed small, will now be a function of
+
+the Cartesian coordinates of the particle x, y, z, and also, perhaps,
+
+of its momenta p,, p,, pP,, together with dynamical variables describ-
+ing the scatterer.
+
+Since we are now interested only in stationary states of the whole
+system, we use a perturbation method like that of § 43. Our unper-
+turbed system now necessarily has a continuous range of energy-
+levels, since it contains a free particle, and this gives rise to certain
+modifications in the perturbation method. The question of the change
+in the energy-levels caused by the perturbation, which was the main
+﻿§ 49 THE SCATTERING COEFFICIENT 189
+
+question of § 43, no longer has a meaning, and the convention in § 43
+of using the same number of primes to denote nearly equal eigen-
+values of # and H now drops out. Again, the splitting of energy-
+levels which we had in§ 43 when the unperturbed system is degenerate
+cannot now arise, since if the unperturbed system is degenerate the
+perturbed one, which must also have a continuous range of energy-
+levels, will also be degenerate to exactly the same extent.
+
+We again use the general scheme of equations developed at the
+beginning of § 43, equations (1) to (4) there, but we now take our
+unperturbed stationary state forming the zero-order approximation
+to belong to an energy-level EH’ just equal to the energy-level H’ of
+our perturbed stationary state. Thus the a’s introduced in the second
+of equations (3) § 43 are now all zero and the second of equations
+
+(4) there now reads (B’—B)|1) = V0). (3)
+Similarly, the third of equations (4) § 43 now reads
+
+We shall proceed to solve equation (3) and to obtain the scattering
+coefficient to the first order. We shall need equation (4) in § 51.
+Let « denote a complete set of commuting observables describing
+the scatterer, which are constants of the motion when the scatterer is
+alone and may thus be used for labelling the stationary states of the
+scatterer. This requires that H, shall commute with the «’s and be
+a function of them. We can now take a representation of the whole
+system in which the a’s and x, y, z, the coordinates of the particle,
+are diagonal. This will make H, diagonal. Let |0> be represented by
+éxa’|0> and |1> by <xa’ll>, the single variable x being written to
+denote x, y, z and the prime being omitted from x for brevity. Also
+the single differential d?x will be written to denote the product dadydz.
+Equation (3), written in terms of representatives, becomes, with the
+help of (1) and (2),
+{E! —H,(o') +-h?/2m V7} xa! |L> = > | xa’ |V | x"a"S da” x"x" 09.
+(5)
+Suppose that the incident particle has the momentum p® and that
+the initial stationary state of the scatterer is «°. The stationary state
+
+of our unperturbed system is now the one for which p = p® and
+a == «, and hence its representative is
+
+<a’ [0 = buat EP? xh (6)
+﻿190 COLLISION PROBLEMS § 49
+
+This makes equation (5) reduce to
+
+(E’ — H,(o')+h?/2m. V2 xa" [I> = | xo" |V | xx 3x0 eilp?. x0
+
+or (Kk? +-V?)(xa'|l> = F, (7)
+where 2 = 2mh-*{ HE’ — H,(a')} (8)
+and F = 2mh- | (X00 |V |X 3x9 etx, (9)
+
+a definite function of x, y, z, and «’. We must also have
+HE’ = H,(x)+ p%/2m. (10)
+
+Our problem now is to obtain a solution <x«’|1> of (7) which, for
+values of x, y, z denoting points far from the scatterer, represents
+only outward moving particles. The square of its modulus, |(x«'|1)]°,
+will then give the density of scattered particles belonging to scatterers
+in the state «’ when the density of the incident particles is [(xw|0)|2,
+which is unity. If we transform to polar coordinates r, 8, 6, equation
+(7) becomes
+
+a ! 20 1 Qo. o 1 a
+j}-— — ++, — sin? — -++-
+ar" r Or r* sin @ 26 26 ° r*sin?@ ad?
+
+ke (rOba' jl) = F. (11)
+Now F must tend to zero as 7 + 00, on account of the physical re-
+quirement that the interaction energy between the scatterer and
+particle must tend to zero as the distance between them tends to
+infinity. If we neglect F in (11) altogether, an approximate solution
+
+for large r is CO pal! |) == U(Ogou" r-het*r, (12)
+
+where w is an arbitrary function of 6, ¢, and «’, since this expression
+substituted in the left-hand side of (11) gives a result of order r-3.
+When we do not neglect F, the solution of (11) will still be of the
+form (12) for large r, provided F tends to zero sufficiently rapidly as
+roo, but the function uw will now be definite and determined by the
+solution for smaller values of r.
+
+For values «’ of the «’s such that k?, defined by (8), is positive, the
+k in (12) must be chosen to be the positive square root of &, in order
+that (12) may represent only outward moving particles, i.e. particles
+for which the radial component of momentum, which from § 38
+equals p,—thr-1 or —th(d/er+r-1), has a positive value. We now
+have that the density of scattered particles belonging to scatterers in
+state a’, equal to the square of the modulus of (12), falls off with
+increasing y according to the inverse square law, as is physically
+﻿§ 49 THE SCATTERING COEFFICIENT 191
+
+necessary, and their angular distribution is given by |u(6¢a’)|?.
+Further, the magnitude, P’ say, of the momentum of these scattered
+particles must equal kf, the momentum ‘being radial for large 7,
+so that their energy is equal to
+
+12 242
+FO EE 2 BY Bol) = Ho!) Hiya’) +
+with the help of (8) and (10). This is just the energy of an incident
+particle, namely p%/2m, reduced by the increase in energy of the
+scatterer, namely H,(a’)—H,(a°)s in agreement with the law of con-
+servation of energy. For values «’ of the «’s such that 4? is negative
+there are no scattered particles, the total initial energy being insuffi-
+cient for the scatterer to be left in the state a’.
+
+We must now evaluate u(#da’) for a set of values «’ for the a’s such
+that k? is positive, and obtain the angular distribution of the scattered
+particles belonging to scatterers in state a’. It is sufficient to evaluate
+uw for the direction @ = 0 of the pole of the polar coordinates, since
+this direction is arbitrary. We make use of Green’s theorem, which
+states that for any two functions of position A and B the volume
+integral i] (AV?-B—BV?A) d'x taken over any volume equals the
+surface iutegral il (Adb/én— BOA/on) dS taken over the boundary
+of the volume, @/én denoting differentiation along the normal to
+the surface. We take
+
+A= e—ikr cos 7 B= <r Occ’ |1>
+and apply the theorem to a large sphere with the origin as centre.
+The volume integrand is thus
+
+e-ikr eos 8 V2<r bce’ |1>— <r Oba’ | 1) V2e—tr cos 8
+— e~tkro0s9(724 2) roa’ |1> = e~tkroosé
+from (7) or (11), while the surface integrand is, with the help of (12),
+
+p®
+Im’
+
+. o.,
+e-tbreond = robot! | LDb—~ <r bbex! | 1d re e-ikr cos 0
+
+= en tkr e088 lt eikr 14% pikr he agg 8 e~ikr cos 8
+rior r
+
+== thurH1 -L-cos A)ethr(1—cos 8)
+
+with neglect of r-?. Hence we get
+
+2a 7
+| en tkreosd Ft dq == | dd i r?sin 6 dO. ikwr-l(1+ cos 0)etrA ~c089),
+. é 0 ;
+﻿192 COLLISION PROBLEMS § 49
+
+the volume integral on the left being taken over the whole of space.
+The right-hand side becomes, on being integrated by parts with
+respect to 8,
+
+2a kia
+{ d¢ {iva ++ cos A)ethrt cos = _ | etkr(i—c08 6) 5 [e(1-+-cos 8)] a8}.
+0 0
+
+The second term in the {} brackets is of the order of magnitude of
+r-1, as would be revealed by further partial integrations, and may
+therefore be neglected. We are thus left with
+Qa
+
+[ en tkroos® FT d3y = —2 | dd u(Oda’) = —4rru(0da’),
+
+, a
+giving the value of u(#¢a’) for the direction @ = 0.
+
+This result may be written
+
+u(Oga’) = (dr) [ eProp de, (13)
+
+since P’ = kh. If the vector p’ denotes the momentum of the scattered
+
+electrons coming off in a certain direction (and is thus of magnitude
+P’), the value of u for this direction will be
+
+u(O'¢'e’) = —(4n)7} | ew On F dar,
+
+as follows from (13) if one takes this direction to be the pole of the
+polar coordinates. This becomes, with the help of (9),
+
+U(O'p'oe') == — (2x) nh | [ EHP XIE AB.x Xo" | V | x%a% dx? etlprrnin
+= —2Inmh<p'a'|V |p%, (14)
+
+when one makes a transformation from the coordinates x to the
+momenta p of the particle, using the transformation function (54)
+of §23. The single letter p is here used as a label for the three
+components of momentum.
+
+The density of scattered particles belonging to scatterers in state
+x’ is now given by |u(6'¢’a’)|?/r?. Since their velocity is P’/m, the
+rate at which these particles appear per unit solid angle about the
+direction of the vector p’ will be P’/m.|u(6'd’a’)|?. The density of
+the incident particles is, as we have seen, unity, so that the number
+of incident particles crossing unit area per unit time is equal to their
+velocity P°/m, where P° is the magnitude of p®. Hence the effective
+area that must be hit by an incident particle in order to be scattered
+﻿§ 49 THE SCATTERING COEFFICIENT 193
+
+in a unit solid angle about the direction p’ and then belong to a
+scatterer in state «’ will be
+
+P'/P9.|u(6'p'a’)|2 = 4n2m2h2P’/P?.|<p'a’|Vip%a|2. (15)
+
+This is the scattering coefficient for transitions «° > a’ of the scatterer.
+Tt depends on that matrix element (p’o’|V|p%x°> of the perturbing
+energy V whose column p%° and whose row p’«’ refer respectively to
+the initial and fina] states of the unperturbed system, between which
+the scattering transition process takes place. The result (15) is thus
+in some ways analogous to the result (24) of § 44, although the
+numerical coefficients are different in the two cases, corresponding
+to the different natures of the two transition processes.
+
+50. Solution with the momentum representation
+
+The result (15) for the scattering coefficient makes a reference only
+to that representation in which the momentum p is diagonal. One
+would thus expect to be able to get a more direct proof of the result
+by working all the time in the p-representation, instead of working
+im the x-representation and transforming at the end to the p-repre-
+sentation, as was done in § 49. This would not at first sight appear
+to be a great improvement, as the lack of directness of the x-repre-
+sentation method is offset by more direct applicability, it being
+possible to picture the square of the modulus of the x-representative
+of a state as the density of a stream of particles in process of being
+scattered. The x-representation method has, however, other more
+serious disadvantages. One of the main applications of the theory
+of collisions is to the case of photons as incident particles. Now a
+photon is not a simple particle but has a polarization. It is evident
+from classical electromagnetic theory that a photon with a definite
+momentum, i.e. one moving in a definite direction with a definite
+frequency, may have a definite state of polarization (linear, circular,
+etc.), while a photon with a definite position, which is to be pictured
+as an electromagnetic disturbance confined to a very small volume,
+cannot have any definite polarization. These facts mean that the
+polarization observable of a photon commutes with its momentum
+but not with its position. This results in the p-representation method
+being immediately applicable to the case of photons, it being only
+necessary to introduce the polarizing variable into the representatives
+and treat it along with the o’s describing the scatterer, while the
+﻿194 COLLISION PROBLEMS § 50
+
+x-representation method is not applicable. Further, in dealing with
+photons, it is necessary to take relativistic mechanics into account.
+This can easily be done in the p-representation method, but not so
+easily in the x-representation method.
+
+Equation (3) still holds with relativistic mechanics, but W is now
+
+given by W2/c2 == m2c2-+ P? = me2+Lp2-+p2-+p? (16)
+
+instead of by (2). Written in terms of p-representatives, equation (3)
+gives {B' —H,(o')—W}<pa'|1> = <pa’|V 0,
+
+p being written instead of p’ for brevity and W being understood as
+a definite function of p,, py, p, given by (16). This may be written
+
+(W'—W)<po|1> = <pa'|V|0>, (17)
+where W = H’—H,{«’) (18)
+
+and is the energy required by the law of conservation of energy for
+a scattered particle belonging to a scatterer in state «’. The ket |0>
+is represented by (6) in the x-representation and the basic ket |p°a®»
+is represented by
+
+(xa! [Pa = Byigo(X|P% = Syryo herr,
+
+from the transformation function (54) of § 23. Hence
+
+|0> = hi|p%®>, (19)
+and equation (17) may be written
+(W'—W)<pa'|1> == hi pa’ |V |p). (20)
+
+We now meke a transformation from the Cartesian coordinates
+Das Pys Pz Of p to its polar coordinates P, w, x, given by
+
+Dy = Pcosw, Py = Psinw cos x, p, = Psinwsiny.
+
+If in the new representation we take the weight function P?sinw,
+then the weight attached to any volume of p-space will be the same
+as in the previous p-representation, so that the transformation will
+mean simply a relabelling of the rows and columns of the matrices
+
+without any alteration of the matrix elements. Thus (20) will become
+in the new representation
+
+(W'— W)< Puyo’ |L> = MC Paya’ |V| Paya, (21)
+
+W being now a function of the single variable P.
+﻿§ 50 SOLUTION WITH MOMENTUM REPRESENTATION 195
+
+The coefficient of (Pwya’|1>, namely W’—W, is now simply a
+multiplying factor and not a differential operator as it was with the
+x-representation method. We can therefore divide out by this factor
+and obtain an explicit expression for <Pwya’|1>. When, however, «’
+is such that W’, defined by (18), is greater than mec?, this factor will
+have the value zero for a certain point in the domain of the variable
+P, namely the point P = P’, given in terms of W’ by (16). The
+function <Pwxa’|1> will then have a singularity at this point. This
+singularity shows that <Pwya’|1> represents an infinite number of
+particles moving about at great distances from the scatterers with
+energies indefinitely close to W’ and it is therefore this singularity
+that we have to study to get the angular distribution of the particles
+at infinity.
+
+The result of dividing out (21) by the factor W’— W is, according
+to (18) of § 15,
+
+(Paya’ |) = AK Paya’ |V | Powx%a>/(W’— W)+A(wxe’) 8(W'— W),
+(22)
+
+where A is an arbitrary function of w, y, and «’. To give a meaning
+to the first term on the right-hand side of (22), we make the conven-
+tion that its integral with respect to P over a range that includes the
+value P’ is the limit when ¢->0 of the integral when the small
+domain P’—« to P’-+« is excluded from the range of integration.
+This is sufficient to make the meaning of (22) precise, since we are
+interested effectively only in the integrals of the representatives of
+states when the representation has continuous ranges of rows and
+columns. We see that equation (21) is inadequate to determine the
+representative <Pwya’|l> completely, on account of the arbitrary
+function A occurring in (22). We must choose this A such that
+<Pwxa’|1> represents only outward moving particles, since we want_
+the only inward moving particles to be those corresponding to |0>.
+
+Let us take first the general case when the representative <Pwy|>
+of a state of the particle satisfies an equation of the type
+
+(W’—W)<Pux|> = f(Pex), (23)
+
+where f(Pwx) is any function of P, w, and x, and W" is a number
+greater than mc?, so that <Pwy|> is of the form
+
+(Pwx|> = f(Pex)|(W'—W)+A(wox) 8(W'"— W), (24)
+
+and let us determine now what A must be in order that <Pwy|> may
+﻿196 . COLLISION PROBLEMS § 50
+
+represent only outward moving particles. We can do this by trans-
+forming <Pwx|> to the x-representation, or rather the (r6¢)-repre-
+sentation, and comparing it with (12) for large values of r. The
+transformation function is
+
+<r6|Pwx> — f-icip.xi — hy-ietPricos w cos 0+ sin w sin § coa(y—S)yii
+For the direction 9 = 0 we find
+
+co ar T
+<r06|> = h-# ii P?dP ii dy J sinw dw ePrewseli¢ Pury |
+
+0 0
+~ an iPr cos colts w=
+— P2dP | dr ~ | pea Pwrxl>| +
+w=0
+0 Qa
+
+; [a etPrevsaf 9 (Pu |
+TOTP rR Ba OX! f-
+0
+
+The second term in the { } brackets is of order 7-2, as may be verified
+
+by further partial integrations with respect to w, and can therefore
+be neglected. We are left with
+
+foe) 2ar
+<r0$|> = thar) | P dP | dy {ert Pry |y—etP POy|)}
+9 0
+
+= th-iy-} { P dP {e*Prlh¢ Prry|y— et Prt Poy ly}, (25)
+0
+
+When we substitute for <Pwy|> its value given by (24), the first
+term in the integrand in (25) gives
+
+ih} [e dP e*Paill (Py) |(W!—W)-+-Amy) 8(W'—W)}.. (26)
+
+The term involving 6(W’— IW) here may be integrated immediately
+and gives, when one uses the relation PdP = W aW/c?, which
+follows from (16),
+
+ihote-2p-1 f W dW ePr\(ry)8(W'—W)
+me
+
+= th-te~ 1 W'D(ary)etPh, (27)
+To integrate the other term in (26) we use the formula
+
+e-iPrih Nf extbrlh
+| mrs per = ae) [ 8 ae, (28)
+
+0 . 0
+﻿§ 50 SOLUTION WITH MOMENTUM REPRESENTATION 407
+
+with neglect of terms involving r-1, for any continuous function g(P),
+which formula holds since | K(P)e-Prlt dP is of order r-! for any
+0
+
+continuous function K(P) and since the difference
+g(P)|(P'—P)—g(P')/(P’— P)
+
+is continuous. The right-hand side of (28), when evaluated with
+neglect of terms involving r—1, and also with neglect of the small
+domain P’—« to P’-+-e in the domain of integration, gives
+
+foe) foe)
+
+Pp e7tPrit dP Pp iPr eP'—Pyrlh ap
+= ig(P’etPrn | map "ap = ing(P’)ePl, (29)
+
+In our present example g(P) is
+g(P) = thr P f(Prx)(P'— P)/(W'—W),
+which has the limiting value when P = P’,
+g(P’) = th-3 PY (P’ay) WP’? = ther Wf (P'2x).
+Substituting this in (29) and adding on the expression (27), we obtain
+the following value for the integral (26)
+
+h-te27 Wf — af (P’ary) +iN(ax) pe, (30)
+Similarly the second term in the integrand in (25) gives
+
+h-tc2r Wf — a f(P’ 0x) —iA(Ox jer". (31)
+The sum of these two expressions is the value of <70¢/> when r is
+
+large.
+We require that <r0¢|> shall represent only outward moving
+
+particles, and hence it must be of the form of a multiple of eP”,
+Thus (30) must vanish, so that \
+
+ary) = —inf(P'rx). (32)
+We see in this way that the condition that <r0¢!> shall represent
+only outward moving particles in the direction 0 = 0 fixes the value
+of A for the opposite direction @ = 7. Since the direction @ = 0 or
+w = 0 of the pole of our polar coordinates is not in any way singular,
+we can generalize (32) to
+
+Ney) = —inf(P’ox), (33)
+
+3595.57 fe)
+﻿198 COLLISION PROBLEMS § 50
+
+which gives the value of A for an arbitrary direction. This value
+substituted in (24) gives a result that may be written
+
+(Pwx|> = f(Pwx)/(W'— W)—in 8(W'—W)}, (34)
+
+since one can substitute P’ for P in the coefficient of a term involving
+8(W’—W) as a factor without changing the value of the term. Zhe
+condition that <Pwy|> shall represent only outward moving particles is
+thus that it shall contain the factor
+
+O/(W'—W)—in 8(W'—W)}. (35)
+
+It is interesting to note that this factor is of the form of the right-
+hand side of equation (15) of § 15.
+
+With A given by (33), expression (30) vanishes and the value of
+<r0¢|> for large r is given by expression (31) alone, thus
+
+(r0$|> = —2th-to-tr AW 'F(P'Oy err.
+This may be generalized to
+<rOb|> == —Qah-te~2e 1 W'f(P’wy)elP 7h,
+
+giving the value of <r@4|> for any direction @, d in terms of f(P’wy)
+for the same direction labelled by w, y. This is of the form (12) with
+
+u(Oh) = —2rh-*c* W'f(P’wx)
+and thus represents a distribution of outward moving particles of
+momentum P’ whose number is
+
+CP’.  4a*W'P’ 1 2 °
+
+per unit solid angle per unit time. This distribution is the one
+represented by the (Pwy|> of (34).
+
+From this general result we can infer that, whenever we have a
+representative <Pwy|> representing only outward moving particles
+and satisfying an equation of the type (23), the number per unit solid
+angle per unit time of these particles is given by (36). If this <Pwy|>
+occurs in a problem in which the number of incident particles is one
+per unit volume, it will correspond to a scattering coefficient of
+amount 2Wow p:
+
+eT Pont (37)
+It is only the value of the function f(Pwy) for the point P = P’ that
+is of importance. -
+﻿§ 50 SOLUTION WITH MOMENTUM REPRESENTATION 199
+
+If we now apply this general theory to our equations (21) and
+(22), we have
+
+f{(Poy) = hi Paya’ |V | P%wy%q%,
+Hence from (37) the scattering coefficient is
+Soh? WW! P’ [ct P®. |< P’ axa! |V | Pa (7. (38)
+
+If one neglects relativity and puts W°W’/c* = m2, this result reduces
+to the result (15) obtained in the preceding section by means of
+
+Green’s theorem.
+
+51. Dispersive scattering
+
+We shall now determine the scattering when the incident particle
+is capable of being absorbed, that is, when our unperturbed system
+of scatterer plus particle has closed stationary states with the particle
+absorbed. The, existence of these closed states for the unperturbed
+system will be found to have a considerable effect on the scattering
+for the perturbed system, and indeed an effect that depends very
+much on the energy of the incident particle, giving rise to the pheno-
+menon of dispersion in optics when the incident particle is taken to
+be a photon. |
+
+We use a representation for which the basic kets correspond to
+the stationary states of the unperturbed system, as was the case with
+the p-representation of the preceding section. We take these station-
+ary states to be the states (p’a’) for which the particle has a definite
+momentum p’ and the scatterer is in a definite state «’, together with
+the closed states, & say, which form a separate discrete set, and
+assume that these states are all independent and orthogonal. This
+assumption is not accurate when the particle is an electron or atomic
+nucleus, since in this case for an absorbed state & the particle will
+still certainly be sormewhere, so that one would expect to be able to
+expand [k> in terms of the eigenkets |x’a’> of x, y, 2, and the a’s,
+and hence also in terms of the |p’a’>’s. On the other hand, when the
+particle is a photon it will no longer exist for the absorbed states,
+which are then certainly independent of and orthogonal to the states
+(p'«’) for which the particle does exist. Thus the assumption is valid
+
+in this case, which is an important practical one.
+Since we are concerned with scattering, we must still deal with -
+
+stationary states of the whole system. We shall now, however, have
+to work to the second order of accuracy, so that we cannot use merely
+﻿200 COLLISION PROBLEMS § 51
+
+the first-order equation (3), but must use also (4). Equation (3)
+
+becomes, when written in terms of representatives in our present
+representation,
+
+(W'—W)<pe'|1> = <pa’|V|0), | (39)
+(E'—E,)<k|l> = <k|V 0,
+
+where W’ is the function of E’ and the «’’s given by (18) and EF; is the
+
+energy of the stationary state k of the unperturbed system. Similarly,
+equation (4) becomes
+
+(W’—W)<po'|2> = <pa"|V|D, | (40)
+(#’—E,)k|2> = <k{V[L>.
+
+Expanding the right-hand sides by matrix multiplication, we get
+
+(W’—W)<pa’|2>
+
+= XJ <Pe'lVp'a"> dp" p's" [D+ <pa' | jk"><k"1),
+
+(BB, <1 (41)
+= 3 J AIM [p a" Pp" pra"|1>-+ ¥ <k|P |e").
+The ket |0> is still given by (19), so (39) may be written
+
+(W'—W)<po'|1> = hic pa’ |V |p), (42)
+
+(B’—E,)<k|L) = WKR|V |p. (43)
+
+We may assume that the matrix elements <k’|V |k"> of V vanish,
+since these matrix elements are not essential to the phenomena under
+investigation, and if they did not vanish it would mean simply that
+the absorbed states & had not been suitably chosen. We shall further
+assume that the matrix elements (p’a’|V |p’w”> are of the second order
+of smallness when the matrix elements <k'|V|p"x">, <p’a’|V|k’> are
+taken to be of the first order of smallness. This assumption will be
+justified for the case of photons in § 64. We now have from (43) and.
+(42) that ¢k|1) is of the first order of smallness, provided E’ does not
+he near one of the discrete set of energy-levels E,, and (pa'|1> is of
+the second order. The value of (pa’|2> to the second order will thus
+be given, from the first of equations (41), by
+
+(W'—W)<po'|2> = A 2 Ba" |V |k"><k"|V | p°a®) /(H — Eye).
+﻿§ 51 DISPERSIVE SCATTERING 201
+
+The total correction in the wave function to the second order, namely
+<pa’|1l> plus (pa’|2>, therefore satisfies
+
+(W’—W){< pa’ |1>-+< pa’ |29}
+= Apo’ |V |pw>+ p3 {pa’|V |k><k|V | p°>/(£’ —E,)}.
+
+This equation is of the type (23), provided «’ is such that W’ > me?,
+which means that «’ as a final state for the scatterer is not incon-
+sistent with the law of conservation of energy. We can therefore infer
+from the general result (37) that the scattering coefficient is
+
+47h Wow' P|, , ‘a! |¥ |A>CR|V | px |?
+NE cpa’ pao) +S Pe ey (44)
+k
+
+The scattering may now be considered as composed of two parts,
+a part that arises from the matrix element <p’a’|V|p%x°> of the per-
+turbing energy and a part that arises from the matrix elements
+{p’a’|V|k> and <k|V|p%°>. The first part, which is the same as our
+previously obtained result (38), may be called the direct scattering.
+The second part may be considered as arising from an absorption of
+the incident particle into some state k, followed immediately by a
+re-emission in « different direction, and is like the transitions through
+an intermediate state considered in § 44. The fact that we have to
+add the two terms before taking the square of the modulus denotes
+interference between the two kinds of scattering. There is no experi-
+mental way of separating the two kinds, the distinction between
+them being only mathematical.
+
+52. Resonance scattering
+
+Suppose the energy of the incident particle to be varied con-
+tinuously while the initial state «° of the scatterer is kept fixed, so
+that the total energy H’ or H’ varies continuously. The formula (44)
+now shows that as HZ’ approaches one of the discrete set of energy-
+levels H,, the scattering becomes very large. In fact, according to
+formula (44) the scattering should be infinite when H’ is exactly equal
+to an #,. An infinite scattering coefficient is, of course, physically
+impossible, so that we can infer that the approximations used in
+deriving (44) are no longer legitimate when £’ is close to an H,. To
+investigate the scattering in this case we must therefore go back to
+
+the exact equation (E’ —B)|H’) = VIB’)
+equation (2) of § 43 with #’ written for H’, and use a different method
+﻿202 COLLISION PROBLEMS § 52
+
+of approximating to its solution. This exact equation, written in
+terms of representatives like (41), becomes
+
+(’ —W)<po'|H’>
+
+= >| <pa'|V[p"a"> dp" (p'a"|H) +S <pal | Vik ><k"|H">,
+(H!~By)<k\H'y
+
+=| <hVip'x"> Bp" pa") + IVR RY.
+
+Let us take one particular H,, and consider the case when Z’ is close
+toit. The large term in the scattering coefficient (44) now arises from
+those elements of the matrix representing V that lie in row & or in
+column &, i.e. those of the type <&£|V|pa’> or (pa’|V[k>. The scatter-
+ing arising from the other matrix elements of V is of a smaller order
+of magnitude. This suggests that in our exact equations (45) we should
+make the approximation of neglecting all the matrix elements of V
+except the important ones, which are those of the type <pa’|V|k> or
+<k|V|poa’>, where a’ is a state of the scatterer that has not too much
+energy to be disallowed as a final state by the law of conservation of
+energy. These equations then reduce to
+
+(W'—W)<pa'|H’> = <pa'|V|k><kl"),
+(H! Ey) k\H"> = al Ck|V |pa’> dp Cpe’ |H">,
+
+the «’ summation being over those values of «’ for which W’ given
+by (18) is > mc. These equations are now sufficiently simple for us
+to be able to solve exactly without further approximation.
+
+From the first of equations (46) we obtain by division
+
+(pa’ HE") = <pa’|V[k><k|H’>|(W'—W)+28(W'—W). (47)
+
+We must choose A, which may be any function of the momentum
+pand «’, such that (47) represents the incident particles corresponding
+to |0> or A?|p%®) together with only outward moving particles. [The
+representative of h!fp°a) is actually of the form Ad(W’— W), since
+the conditions «’ = «® and p= p°® for it not to vanish lead to
+W’ = E'—H,(o') = EB’ —H,(o°) = W = W.] Thus (47) must be
+
+<po’ |H"> = Apo" | pa) +
++<po' |V|kA><k|A>{1/(W'— W)—in d(W'—W)}, (48)
+and from the general formula (37) the scattering coefficient will be
+4a? WW" P' het P®. | p'a’ |V kD |? |Ck| A. (49)
+
+(45)
+
+(46)
+﻿§ 52 RESONANCE SCATTERING 203
+
+It remains for us to determine the value of <k|H’>. We can do this
+by substituting for <pa’|H'> in the second of equations (46) its value
+given by (48). This gives
+(B!—B,)k| "> = WARY (pa) +
+
++<k|H’> > ) [kV | po’> [2(1/(W’ — W)—in 8(W'— WY) ap
+= hi<k|V |p) + <k|H>(a—16),
+where a= > | KkIV |po’>|? d®p/(W'—W) (50)
+
+Ot
+
+and yaad | {k|V pw >a’ —W) Mp
+= 9 > Hy [<h|V|Pwxe’>|?8(W'— W)P2dP sin w dud
+= 7 > P We ff [k|V|P’wya'>|?sin w dedy. (51)
+
+Thus ki") = h8Ck|V |p%°)/(E’ —E,—a-+ib). (52)
+
+Note that a and 6 are real and that 0 is positive.
+This value for <k|H’) substituted in (49) gives for the scattering
+coefficient
+
+nh? WW'P’ |¢p'a’|V|e> [PF 1Ce|V | pon |?
+cp? (H' —H,,—a)?+-6? :
+One can obtain the total effective area that the incident particle
+must hit in order to be scattered anywhere by integrating (53) over
+all directions of scattering, i.e. by integrating over all directions of
+the vector p’ with its magnitude kept fixed at P’, and then summing
+over all «’ that are to be taken into consideration, ie. for which
+
+W’ > me. This gives, with the help of (51), the result
+Ach? W b]<k|V [px |? (54)
+
+Pe (#’—H,—a)+b"
+
+If we suppose H’ to vary continuously through the value #,,, the
+main variation of (53) or (54) will be due to the small denominator
+(B’—E,,—a)?--b®. If we neglect the dependence of the other factors
+in (53) and (54) on #’, then the maximum scattering will occur when
+FB’ has the value H,-+a and the scattering will be half its maximum
+when £ differs from this value by an amount 6. The large amount of
+scattering that occurs for values of the energy of the incident particle
+
+that make Z’ nearly equal to #,, give rise to the phenomenon of an
+absorption line. The centre of the line is displaced by an amount
+
+(53)
+﻿204 COLLISION PROBLEMS ‘ § 52
+
+a from the resonance energy of the incident particle, i.e. the energy
+which would make the total energy just #,,, while the quantity 6 is
+what is sometimes called the half-width of the line.
+
+53. Emission and absorption
+
+For studying emission and absorption we must consider non-
+stationary states of the system and must use the perturbation method
+of § 44. To determine the coefficient of spontaneous emission we must
+take an initial state for which the particle is absorbed, corresponding
+to a ket |£>, and determine the probability that at some later time
+the particle shall be on its way to infinity with a definite momentum.
+The method of § 46 can now be applied. From the result (39) of that
+section we see that the probability per unit time per unit range of w
+and y, of the particle being emitted in any direction w’, y’ with the
+scatterer being left in state «’ is
+
+Qa CW ew’ ya |V [> |, (55)
+
+provided, of course, that «’ is such that the energy W’, given by (18),
+of the particle is greater than mc”. For values of «’ that do not satisfy
+this condition there is no emission possible. The matrix element
+<W'w'y’a' |V |k> here must refer to a representation in which W, w, y,
+and « are diagonal with the weight function unity. The matrix
+elements of V appearing in the three preceding sections refer to a repre-
+sentation in which p,, p,, p, are diagonal with the weight function
+unity, or P, w, x are diagonal with the weight function P?sinw.
+They would thus refer to a representation in which W, w, y are
+diagonal with the weight function dP/dW.P*?sinw = WP/c?.sinw.
+Thus the matrix element <W'w'y'a’|Vik> in (55) is equal to
+(W'P'/c? sin wv’)? times our previous matrix element <W'w'y'a’|V|k>
+or (p’a'|V|k>, so that (55) is equal to
+
+2a W'P"
+
+hk oe
+
+sin w’|<p’a" [Vk 2.
+
+The probability of emission per unit solid angle per unit time, with
+the seatterer simultaneously dropping to state «’, is thus
+
+| nO
+
+I<p’a"|V[>|?. (56)
+
+To obtain the total probability per unit time of the particle being
+emitted in any direction, with any final state for the scatterer, we
+﻿§ 53 EMISSION AND ABSORPTION 205
+
+must integrate (56) over all angles w’, x’ and sum over all states a’
+whose energy 4,(«’) is such that H,(a’)+mce? < #,. The result is
+just 2b/%, where b is defined by (51). There ts thus this simple rela-
+tion between the total emission coefficient and the half-width b of the
+absorption line.
+
+Let us now consider absorption. This requires that we shall take
+an initial state for which the particle is certainly not absorbed but is
+incident with a definite momentum. Thus the ket corresponding to
+the initial state must be of the form (19). We must now determine
+the probability of the particle being absorbed after time 4. Since our
+final state & is not one of a continuous range, we cannot use directly
+the result (39) of § 46. If, however, we take
+
+|0> = |p», (57)
+as the ket corresponding to the initial state, the analysis of §§ 44 and 46
+is still applicable as far as equation (36) and shows us that the proba-
+bility of the particle being absorbed into state & after time ¢ is
+
+2|<k|V |p%®> |-[1 —cos{(H,—B")t/B} | E,— EB’).
+This corresponds to a distribution of incident particles of density
+h-8, owing to the omission of the factor #! from (57), as compared
+with (19). The probability of there being an absorption after time
+
+t when there is one incident particle crossing unit area per unit time
+is therefore
+
+2h W/c2®P?. [<k|V | p%x> |?[1—cos{(H,— #’)i/i} (L,Y. (58)
+To obtain the absorption coefficient we must consider the incident
+particles not all to have exactly the same energy W° = H'—H,(a°),
+but to have a distribution of energy values about the correct value
+E,,—H,(o®) required for absorptidn. If we take a beam of incident
+particles consisting of one crossing unit area per unit time per unit
+energy range, the probability of there being an absorption after time
+t will be given by the integral of (58) with respect to H’. This integral
+may be evaluated in the same way as (37) of § 46 and is equal to
+
+4h We? P. |<k| V | p°a>|?.
+The probability per unit time of an absorption taking place with an
+
+incident beam of one particle per unit area per unit time per unit
+energy range is therefore
+
+42h? W/e2P?. [Ck|V | p%) |2, (59)
+which is the absorption coefficient.
+﻿206 COLLISION PROBLEMS § 53
+
+The connexion between the absorption and emission coefficients
+(59) and (56) and the resonance scattering coefficients calculated in
+the preceding section should be noted. When the incident beam does
+not consist of particles all with the same energy, but consists of a unit
+distribution of particles per unit energy range crossing unit area per
+unit time, the total number of incident particles with energies near
+an absorption line that get scattered will be given by the integral
+of (54) with respect to #’. If one neglects the dependence of the
+numerator of (54) on H’, this integral will, since
+
+r b
+| (HB, — ape
+
+have just the value (59). Thus the total number of scattered particles
+in the neighbourhood of an absorption line is equal to the total number
+absorbed. We can therefore regard all these scattered particles as
+absorbed particles that are subsequently re-emitted in a different
+direction. Further, the number of particles in the neighbourhood of
+the absorption line that get scattered per unit solid angle about a
+given direction specified by p’ and then belong to scatterers in state
+a’ will be given by the integral with respect to E’ of (53), which
+integral has in the same way the value
+
+2h2T70 yy" Pp!
+SE Kp'a' IFIED ICEIV tp %>
+This is just equal to the absorption coefficient (59) multiplied by the
+emission coefficient (56) divided by 26/#, the total emission coefficient.
+This is in agreement with the point of view of regarding the resonance
+scattered particles as those that are absorbed and then re-emitted,
+with the absorption and emission processes governed independently
+each by its own probability law, since this point of view would
+make the fraction of the total number of absorbed particles that are
+re-emitted in a unit solid angle about a given direction just the
+emission coefficient for this direction divided by the total emission
+coefficient.
+
+df’ = a,
+
+</p>
+    </body>
+</html>

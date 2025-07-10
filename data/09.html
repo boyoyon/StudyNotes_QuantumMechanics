@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="utf-8" />
+        <title>類似粒子をいくつか含むシステム</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+            .margin-large
+            {
+                margin-left: 30px;
+            }
+           .margin-abstract {
+               margin-left: 60px; /* 左マージンを広くする */
+               margin-right: 60px; /* 右マージンを広くする */
+           }
+        </style>
+    <style>
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 20px; /* 列間のスペース */
+        }
+        .column {
+            flex: 1; /* 各列が均等に幅を取る */
+        }
+    </style>
+<style>
+.three-columns {
+  display: flex;
+  gap: 10px; /* 列間の余白を設定 */
+}
+.column {
+  flex: 1; /* 各列の幅を均等にする */
+  padding: 10px; /* 内側の余白を設定 */
+}
+</style>
+    <style>
+        .styleRef { 
+            text-indent: -40px; /* 最初の行の字下げを逆方向に */
+            margin-left: 10px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 40px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+        .styleBullet { 
+            text-indent: -20px; /* 最初の行の字下げを逆方向に */
+            margin-left: 30px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 0px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+            ol
+            {
+                margin-left: 30px;
+            }
+            ul
+            {
+                margin-left: 30px;
+            }
+    </style>
+    <style>
+        .thin-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 1px;
+            background-color: gray;
+        }
+
+        .thick-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+    <style>
+        .blue {
+            color: blue; /* 好きな色に変更してください */
+        }
+    </style>
+    </head>
+    <body>
+        <h1><center>Ⅸ SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES<br>類似粒子をいくつか含むシステム</center></h1>
+<h2>54. Symmetrical and antisymmetrical states</h2>
+<p>
+
+Ir a system in atomic physics contains a number of particles of the
+same kind, e.g. a number of electrons, the particles are absolutely
+indistinguishable one from another. No observable change is made
+when two of them are interchanged. This circumstance gives rise to
+some curious phenomena in quantum mechanics having no analogue
+in the classical theory, which arise from the fact that in quantum
+mechanics a transition may occur resulting in merely the interchange
+of two similar particles, which transition then could not be detected
+by any observational means. A satisfactory theory ought, of course,
+to count two observationally indistinguishable states as the same
+state and to deny that any transition does occur when two similar
+particles exchange places. We shail find that it is possible to reformu-
+late the theory so that this is so.
+
+Suppose we have a system containing x similar particles. We may
+take as our dynamical variables a set of variables ¢, describing the
+first particle, the corresponding set €, describing the second particle,
+and so on up to the set £, describing the nth particle. We shall then
+have the &,’s commuting with the €,’3 for r 4s. (We may require
+certain extra variables, describing what the system consists of in
+addition to the » similar particles, but it is not necessary to mention
+these explicitly in the present chapter.) The Hamiltonian describing
+the motion of the system will now be expressible as a function of the
+£,,£5,-5€, The fact that the particles are similar requires that the
+Hamiltonian shall be a symmetrical function of the &,, &o,...,€); Le. it
+shall remain unchanged when the sets of variables é, are interchanged
+or permuted in any way. This condition must hold, no matter what
+perturbations are applied to the system. In fact, any quantity of
+physical significance must be a symmetrical function of the é’s.
+
+Let |a,>, |b,>,... be kets for the first particle considered as a dynami-
+cal system by itself. There will be corresponding kets |a,), |b,>,... for
+the second particle by itself, and so on. We can get a ket for the
+assembly by taking the product of kets for each particle by itself,
+for example
+
+|@y>[bg>[€3>-+|Fn> = 1812 C3.+-In> (1)
+﻿208 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 54
+
+say, according to the notation of (65) of § 20. The ket (1) corresponds
+to a special kind of state for the assembly, which may be described
+by saying that each particle is in its own state, corresponding to its
+own factor on the left-hand side of (1). The general ket for the
+assembly is of the form of a sum or integral of kets like (1), and
+corresponds to a state for the assembly for which one cannot say that
+each particle is in its own state, but only that each particle is partly
+in several states, in a way which is correlated with the other particles
+being partly in several states. If the kets |a,), |b,>,... are a set of
+basic kets for the first particle by itself, the kets |a,>, |b,>,... will be
+a set of basic kets for the second particle by itself, and so on, and the
+kets (1) will be a set of basic kets for the assembly. We call the repre-
+sentation provided by such basic kets for the assembly a symmetrical
+representation, as it treats all the particles on the same footing.
+
+In (1) we may interchange the kets for the first two particles and
+get another ket for the assembly, namely
+
+1by>|!4q>{63>.-19n> = [by dy g.--Gn>-
+
+More generally, we may interchange the role of the first two particles
+in any ket for the assembly and get another ket for the assembly.
+The process of interchanging the first two particles is an operator
+which can be applied to kets for the assembly, and is evidently a
+linear operator, of the type dealt with in § 7. Similarly, the process
+of interchanging any pair of particles is a linear operator, and by
+repeated applications of such interchanges we get any permutation
+of the particles appearing as a linear operator which can be applied
+to kets for the assembly. A permutation is called an even permutation
+or an odd permutation according to whether it can be built up from
+an even or an odd number of interchanges.
+
+A ket for the assembly |X is called symmetrical if it is unchanged
+by any permutation, i.e. if
+
+P\|X> = |X) (2)
+for any permutation P. It is called antisymmetrical if it is unchanged
+by any even permutation and has its sign changed by any odd
+
+permutation, i.e. if P\|X) = +|X), (3)
+
+the + or — sign being taken according to whether P is even or odd.
+The state corresponding te a symmetrical ket is called a symmetrical
+state, and the state corresponding to an antisymmetrical ket is called
+an antisymmetrical state. In a symmetrical representation, the repre-
+﻿§ 54 SYMMETRICAL AND ANTISYMMETRICAL STATES 209
+
+sentative of a symmetrical ket is a symmetrical function of the
+variables referring to the various particles and the representative of
+an antisymmetrical ket is an antisymmetrical function.
+
+In the Schrédinger picture, the ket corresponding to a state of the
+assembly will vary with time according to Schrédinger’s equation of
+motion. If it is initially symmetrical it must always remain sym-
+metrical, since, owing to the Hamiltonian being symmetrical, there
+is nothing to disturb the symmetry. Similarly if the ket is initially
+antisymmetrical it must always remain antisymmetrical. Thus a
+state which is initially symmetrical always remains symmetrical and
+a state which is initially antisymmetrical always remains antisym-
+metrical. In consequence, it may be that for a particular kind of
+particle only symmetrical states occur in nature, or only anti-
+symmetrical states occur in nature. If either of these possibilities
+held, it would lead to certain special phenomena for the particles in
+question. ;
+
+Let us suppose first that only antisymmetrical states occur in
+nature. The ket (1) is not antisymmetrical and so does not corre-
+spond to a state occurring in nature. From (1) we can in general form
+an antisymmetrical ket by applying all possible permutations to it
+and adding the results, with the coefficient —1 inserted before those
+terms arising from an odd permutation, so as to get
+
+» +P\a, bg C3---In>> (4)
+
+the + or — sign being taken according to whether P is even or odd.
+The ket (4) may be written as a determinant
+
+lay> |@_> |@g> . . - (Gn?
+[> [62> |e . - - 10.
+I9> I92> IWsr> - - + IGn>
+
+and its representative in a symmetrical representation is a determi-
+nant. The ket (4) or (5) is not the general antisymmetrical ket, but
+is a specially simple one. It corresponds to a state for the assembly
+for which one can say that certain particle-states, namely the states
+a,b,c,...,g, are occupied, but one cannot say which particle is in
+which state, each particle being equally likely to be in any state. If
+﻿210 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 54
+
+two of the particle-states a,b,c,...,g are the same, the ket (4) or (5)
+vanishes and does not correspond to any state for the assembly.
+Thus two particles cannot occupy the same state. More generally, the
+occupied states must be all independent, otherwise (4) or (5) vanishes.
+This is an important characteristic of particles for which only anti-
+symmetrical states occur in nature. It leads to a special statistics,
+which was first studied by Fermi, so we shall call particles for which
+only antisymmetrical states occur in nature fermions.
+
+Let us suppose now that only symmetrical states occur in nature.
+The ket (1) is not symmetrical, except in the special case when all the
+particle-states a,b,c,...,g are the same, but we can always obtain a
+symmetrical ket from it by applying all possible permutations to it
+and adding the results, so as to get
+
+p Pla, by C3...9,>- (6)
+
+The ket (6) is not the general symmetrical ket, but is a specially
+simple one. It corresponds to a state for the assembly for which one
+can say that certain particle-states are occupied, namely the states
+a, 6,c,...,g, without being able to say which particle is in which state.
+It is now possible for two or more of the states a,b,c,...,g to be the
+same, so that two or more particles can be in the same state. In spite
+of this, the statistics of the particles is not the same as the usual
+statistics of the classical theory. The new statistics was first studied
+by Bose, so we shall call particles for which only symmetrical states
+occur in nature bosons.
+
+We can see the difference of Bose statistics from the usual statistics
+by considering a special case—that of only two particles and only two
+independent states a and 6 for a particle. According to classical
+mechanics, if the assembly of two particles is in thermodynamic
+equilibrium at a high temperature, each particle will be equally likely
+to be in either state. There is thus a probability 4 of both particles
+being in state a, a probability } of both particles being in state b,
+and a probability 4 of one particle being in each state. In the quan-
+tum theory there are three independent symmetrical states for the
+pair of particles, corresponding to the symmetrical kets |a,)|a.),
+|5>|b,>, and |a,>[b,>+ |ag>|6,>, and describable as both particles in
+state a, both particles in state 6, and one particle in each state
+respectively. For thermodynamic equilibrium at a high temperature
+these three states are equally probable, as was shown in § 33, so that
+﻿§ 54 SYMMETRICAL AND ANTISYMMETRICAL STATES 211
+
+there is a probability 4 of both particles being in state a, a probability
+4 of both particles being in state b, and a probability 4 of one particle
+being in each state. Thus with Bose statistics the probability of two
+particles being in the same state is greater than with classical statistics.
+Bose statistics differ from classical statistics in the opposite direction
+to Fermi statistics, for which the probability of two particles being
+in the same state is zero.
+
+In building up a theory of atoms on the lines mentioned at the
+beginning of § 38, to get agreement with experiment one must assume
+that two electrons are never in the same state. This rule is known as
+Pauli’s exclusion principle. It shows us that electrons are fermions.
+Planck’s law of radiation shows us that photons are bosons, as only the
+Bose statistics for photons will lead to Planck’s law. Similarly, for
+each of the other kinds of particle known in physics, there is experi-
+mental evidence to show either that they are fermions, or that they
+are bosons. Protons, neutrons, positrons are fermions, «-particles are
+bosons. It appears that all particles occurring in nature are either
+fermions or bosons, and thus only antisymmetrical or symmetrical
+states for an assembly of similar particles are met with in practice.
+Other more complicated kinds of symmetry are possible mathemati-
+cally, but do not apply to any known particles. With a theory which
+allows only antisymmetrical or only symmetrical states for a particu-
+lar kind of particle, one cannot make a distinction between two states
+which differ only through a permutation of the particles, so that the
+transitions mentioned at the beginning of this section disappear.
+
+55. Permutations as dynamical variables
+
+We shall now build up a general theory for a system containing n
+similar particles when states with any kind of symmetry properties
+are allowed, i.e. when there is no restriction to only symmetrical or
+only antisymmetrical states. The general state now will not be sym-
+metrical or antisymmetrical, nor will it be expressible linearly in
+terms of symmetrical and antisymmetrical states when n > 2. This
+theory will not apply directly to any particles occurring in nature,
+but all the same it is useful for setting up an approximate treatment
+for an assembly of electrons, as will be shown in § 58.
+
+We have seen that each permutation P of the n particles is a linear
+operator which can be applied to any ket for the assembly. Hence
+we can regard P as a dynamical variable in our system of » particles.
+﻿212 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 55
+
+There are »! permutations, each of which can be regarded as a
+dynamical variable. One of them, F, say, is the identical permutation,
+which is equal to unity. The product of any two permutations is a
+third permutation and hence any function of the permutations is
+reducible to a linear function of them. Any permutation P has a
+reciprocal P-1 satisfying
+
+PP = PAP =P =1.,
+
+A permutation P can be applied to a bra <X| for the assembly,
+to give another bra, which we shall denote for the present by P<X|.
+If P is applied to both factors of the product <X|Y>, the product
+
+must be unchanged, since it is just a number, independent of any
+order of the particles. Thus
+
+(PCX|)P|¥> = <X| PY)
+showing that POX) = (X|PH (7)
+
+Now P<X| is the conjugate imaginary of P|X)> and is thus equal to
+<X|P, and hence from (7) ,
+
+P= Po, . (8)
+
+Thus a permutation is not in general a real dynamical variable, its
+conjugate complex being equal to its reciprocal.
+
+Any permutation of the numbers 1, 2, 3,..., n may be expressed in
+the cyclic notation, e.g. with n = 8
+
+P, = (148)(27)(58)(6), (9)
+
+in which each number is to be replaced by the succeeding number in
+a bracket, unless it is the last in a bracket, when it is to be replaced
+by the first in that bracket. Thus P, changes the numbers 12345678
+into 47138625. The type of any permutation is specified by the
+partition of the number 2 which is provided by the number of num-
+bers in each of the brackets. Thus the type of P, is specified by the
+partition 8 = 3--2+2-+1. Permutations of the same type, ie. corre-
+sponding to the same partition, we shall call similar. Thus, for
+example, P, in (9) is similar to
+
+F,, = (871)(35)(46)(2). (10)
+
+The whole of the n! possible permutations may be divided into sets
+of similar permutations, each such set being called a class. The per-
+
+mutation F, = 1 forms a class by itself. Any permutation is similar
+to its reciprocal.
+﻿§ 55 PERMUTATIONS AS DYNAMICAL VARIABLES 213
+
+When two permutations P, and FP, are similar, either of them F,
+may be obtained by making a certain permutation P, in the other
+P,. Thus, in our example (9), (10) we can take P, to be the permuta-
+tion that changes 14327586 into 87155462, ie. the permutation
+
+P, = (18623)(475).
+Different ways of writing P, and P, in the cyclic notation would lead
+
+to different P,’s. Any of these P,’s applied to the product P,|X>
+would change it into B,.P,|X>, ie.
+
+P,P,|X> = BPX.
+Hence Pi = P,P, Pz, (13)
+which expresses the condition for P, and FP, to be similar as an
+
+algebraic equation. The existence of any P, satisfying (11) is suffi-
+cient to show that P, and P, are similar.
+
+56. Permutations as constants of the motion
+Any symmetrical function V of the dynamical variables of all the
+
+particles is unchanged by the application of any permutation P, so
+P applied to the product V|X> affects only the factor |X), thus
+
+PV|X> = VP|X).
+
+Hence PV =VP, (12)
+showing that a symmetrical function of the dynamical variables com-
+mutes with every permutation. The Hamiltonian is a symmetrical
+fanction of the dynamical variables and thus commutes with every
+permutation. It follows that each permutation is a constant of the _
+motion. This holds even if the Hamiltonian is not constant. If |Xt
+is any solution of Schrédinger’s equation of motion, P|X¢) is another.
+
+In dealing with any system in quantum mechanics, when we have
+found a constant of the motion a, we know that if for any state of
+motion, « initially has the numerical value «’, then it always has this
+value, so that we can assign different numbers «’ to the different
+states and so obtain a classification of the states. The procedure is
+not so straightforward, however, when we have several constants of
+the motion « which do not commute (as is the case with our permuta-
+tions P), since we cannot in general assign numerical values for all
+the a’s simultaneously to any state. Let us first take the case of a
+system whose Hamiltonian does not involve the time explicitly. The
+existence of constants of the motion « which do not commute is
+
+then a sign that the system is degenerate. This is because, for a
+3595.57 | P
+﻿214 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 56
+
+non-degenerate system, the Hamiltonian H by itself forms a complete
+set of commuting observables and hence, from Theorem 2 of § 19, each
+of the a’s is a function of H and therefore commutes with any other a.
+
+We must now look for a function f of the «’s which has one and
+the same numerical value f’ for all those states belonging to one
+energy-level H’, so that we can use f for classifying the energy-levels
+of the system. We can express the condition for f by saying that it
+must be a function of H and must therefore commute with every
+dynamical variable that commutes with H, ie. with every constant
+of the motion. If the a’s are the only constants of the motion, or if
+they are a set that commute with all other independent constants of
+the motion, our problem reduces to finding a function B of the a’s
+which commutes with all the a’s. We can then assign a numerical
+value ’ for 8 to each energy-level of the system. If we can find
+several such functions 8, they must all commute with each other, so
+that we can give them all numerical values simultaneously. We ob-
+tain thus a classification of the energy-levels. When the Hamiltonian
+involves the time explicitly one cannot talk about energy-levels, but
+
+* the f’s will still give a useful classification of the states.
+
+We follow this method in dealing with our permutations P. We
+must find a function y of the P’s such that PyP-! = x for every P.
+It is evident that a possible y is > P,, the sum of all the permutations
+in a certain class c, i.e. the sum of a set of similar permutations, since
+> PF, P- must consist of the same permutations summed in a differ-
+ent order. There will be one such y for each class. Further, there can
+be no other independent y, since an arbitrary function of the P’s can
+be expressed as a linear function of them with numerical coefficients,
+and it will not then commute with every P unless the coefficients of
+similar P’s are always the same. We thus obtain all the x’s that can
+be used for classifying the states. It is convenient to define each x as
+an average instead of a sum, thus
+
+Xe = NDP,
+
+' where 7, is the number of P’s in the class c. An alternative expression
+
+for x, is Xe = nt Y PP, P-l, (13)
+P
+
+the sum being extended over all the n! permutations P, it being easy
+to verify that this sum contains each member of the class ¢ the same
+number of times. For each permutation P there is one x, x(P) say,
+﻿§56 PERMUTATIONS AS CONSTANTS OF THE MOTION 235
+
+equal to the average of ail permutations similar to P. One of the
+xs is x(R) = 1.
+
+The constants of the motion y,, X2,---, ¥_ Obtained in this way will
+each have a definite numerical value for every stationary state of the
+system, in the case when the Hamiltonian does not involve the time
+explicitly, and also in the general case can be used for classifying
+the states, there being one set of states for every permissible set of
+numerical values yj, %2)---, X¥m for the y’s. Since the y’s are always
+constants of the motion, these sets of states will be exclusive, i.e.
+transitions will never take place from a state in one set to a state in
+another.
+
+The permissible sets of values x’ that one can give to the y’s are
+limited by the fact that there exist algebraic relations between the
+x’s. The product of any two x’s, x, X,. is of course expressible as
+a linear function of the P’s, and since it commutes with every P it
+must be expressible as a linear function of the y’s, thus
+
+{ i} [ A)
+Xp Xq = 8% Xi 8 Xo Tn Xm: (14)
+
+where the a’s are numbers. Any numerical values x’ that one gives
+to the y’s must be eigenvalues of the y’s and must satisfy these same
+algebraic equations. For every solution x’ of these equations there
+is one exclusive set of states. One solution is evidently y,, = 1 for
+every Xp, giving the set of symmetrical states. A second obvious
+solution, giving the set of antisymmetrical states, is y, = --1, the
++ or — sign being taken according to whether the permutations in
+the class p are even or odd. The other solutions may be worked out
+in any special case by ordinary algebraic methods, as the coefficients
+@ in (14) may be obtained directly by a consideration of the types
+of permutation to which the y’s concerned refer. Any solution is,
+apart from a certain factor, what is called in group theory a character
+of tke group of permutations. The y’s are all real dynamical variables,
+since each P and its conjugate complex P-! are similar and will occur
+added together in the definition of any x, so that the x’’s must be all
+real numbers.
+
+The number of possible solutions of the equations (14) may easily
+be determined, since it must equal the number of different eigen-
+values of an arbitrary function B of the y’s. We can express B as
+a linear function of the y’s with the help of equations (14); thus
+
+B == by yy tbe xo+--- tlm Xm (i
+
+on
+
+\
+i
+﻿216 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 56
+
+Similarly, we can express each of the quantities B®, B°,..., B™ as a
+linear function of the y’s. From ‘the m equations thus obtained,
+‘together with the equation x(P,) = 1, we can eliminate the m un-
+knowns X14, Xo.» Xm» Obtaining as result an algebraic equation of
+degree m for B,
+
+Bre, Bt +-¢, Bre, == 0,
+
+The m solutions of this equation give the m possible eigenvalues
+for B, each of which will, according to (15), be a linear function of 6,,
+b,..., b, whose coefficients are a permissible set of values x1, Xos--63 Xm
+The sets of values x’ thus obtained must be all different, since if
+there were fewer than m different permissible sets of values y’ for the
+x’s, there would exist a linear function of the y’s every one of whose
+eigenvalues vanishes, which would mean that the linear function itself
+vanishes and the y’s are not linearly independent. Thus the number of
+permissible sets of numerical values for the y’s is just equal tom, which
+is the number of classes of permutations or the number of partitions
+of x. This number is therefore the number of exclusive sets of states.
+
+All dynamical variables of physical importance and all observable
+quantities are symmetrical between the particles and thus commute
+with all the P’s. Thus the only functions of the P’s of physical
+importance are the y’s. The states corresponding to |y’> and to
+S(P)\x’>, where |y’> is any eigenket of the y’s belonging to the eigen-
+values x’ and f(P) is any function of the P’s such that f(P)|y> < 9,
+are observationally indistinguishable and are thus physically equiva-
+lent. There is a definite number, n(x’) say, of independent kets which
+can be formed by multiplying |y’> by functions of the P’s, which
+number depends only on the y”s. It is the number of rows and
+columns in a matrix representation of the P’s in which each x is
+equal to x’. If |x’> corresponds to a stationary state, n(x‘) will be
+its degree of degeneracy (so far as concerns degeneracy caused by the
+symmetry between the particles). This degeneracy cannot beremoved
+by any perturbation that is symmetrical between the particles.
+
+57. Determination of the energy-levels
+
+Let us apply the perturbation method of § 43 and make a first-order
+calculation of the energy-levels in the case when the Hamiltonian
+does not involve the time explicitly. We suppose that for our unper-
+turbed stationary states of the assembly each of the similar particles
+has its own individual state. With n particles, we shall have n of
+﻿§ 57 DETERMINATION OF THE ENERGY-LEVELS 217
+
+these states, corresponding to kets Jat, |a*>,..., |a”> say, which we
+assume for the present to be all orthogonal. The ket for the assembly
+
+is then [XD = foed> odd... fo®, (16)
+
+like (1) with a, «?,... instead of a, b,.... If we apply any permutation
+P to it we get another ket
+
+P|X> = [ap> 05>... lay (17)
+say, 7, 8... 2 being some permutation of the numbers 1, 2,..., ”,
+corresponding to another stationary state of the assembly with the
+same energy. There are thus altogether m! unperturbed states with
+this energy, if we assume there are no other causes of degeneracy.
+According to the method of § 43 when the unperturbed system is
+degenerate, we must consider those elements of the matrix represent-
+ing the perturbing energy V that refer to two states with the same
+energy, i.e. those of the type (X|P, VB,|X>. These will form a matrix
+with 2! rows and columns, whose eigenvalues are the first-order
+corrections in the energy-levels.
+
+We must now introduce another kind of permutation operator
+which can be applied to kets of the form (17), namely a permutation
+which acts on the indices of the «’s. We denote such a permutation
+operator by P*. The essential difference between the P’s and the
+P’s may be seen in the following way. Let us consider a permutation
+in the general sense, say that consisting of the interchange of 2 and 3.
+This may be interpreted either as the interchange of the objects 2 and
+3 or as the interchange of the objects in the places 2 and 3, these two
+operations producing in general quite different results. The first of
+these interpretations is the one that gives the operators P, the objects
+concerned being the similar particles. A permutation P can be
+applied to an arbitrary ket for the assembly. A permutation with the
+second interpretation has a meaning, however, only when applied
+to a ket of the form (17), for which each of the particles is in a ‘place’
+specified by an «, or to a sum of kets of the form (17). A permutation
+P may be considered as an ordinary dynamical variable. A permuta-
+tion P* may be considered as a dynamical variable in a restricted
+sense, valid when one is dealing only with states obtainable by super-
+position of the various states (17). This is the case for our present
+
+perturbation problem.
+We can form algebraic functions of the P* which will be other
+
+operators applicable to kets of the form (17). In particular we can
+﻿218 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 57
+
+form x(P2%), the average of all P*’s in a certain class c. This must
+equal y(P,), the average of the permutation operators P in the same
+class, since the total set of all permutations in a given class must
+evidently be the same whether the permutations are applied to the
+particles or to the places the particles arein. Any P commutes with
+
+any P%, ie. P, Px = P2P,, (18)
+By labelling the «’s by the same numbers 1, 2, 3,..., » which label
+the particles, we set up a one-one correspondence between the «’s and
+the particles, so that given any permutation PF, applying to the par-
+ticles, we can give a meaning to the same permutation P% applying
+to the a’s. This meaning is such that, for the ket |X given by (16),
+PGL|X> = |X). (19)
+Since the various kets |a1>, |o*),... are orthogonal, |X> and P|X) are
+orthogonal unless P = 1. It follows that, for any coefficients cp,
+
+D2 6p<X|P*P,|X> = Cp, (20)
+
+provided |X> is normalized, the summation being over all the n!
+permutations P or P*, with P, fixed. Now define VY by .
+
+Vp = (X|VP|X). (21)
+We then have, for any two permutations P, and P,,
+(AP, VEX = <X|VP,F,|X> = Ve. p,
+= 2 Vp (X| Ph, Py|X>
+
+with the help of (20). From (18) this gives
+(XP, VE,|X> = & Ye KE, P*B,|X>. (22)
+
+We may write this result as
+VS Pe, (23)
+B
+
+where the sign means an equation in a restricted sense, the
+operators on the two sides being equal so long as they are used only
+with kets of the form P|X> and their conjugate imaginary bras.
+The formula (23) shows that the perturbing energy V is equal, in
+the restricted sense, to a linear function of the permutation operators
+P* with coefficients Vp given by (21). The restricted sense is adequate
+for the calculation of the first-order correction in the energy-levels,
+as this calculation involves only those matrix elements of V given by
+﻿§ 57 DETERMINATION OF THE ENERGY-LEVELS 219
+
+(22). The formula (23) is a very convenient one because the expression
+on its right-hand side is easily handled.
+
+As an example of an application of (23) we shall determine the
+average energy of all those states, arising from the unperturbed state
+(16), that belong to one exclusive set. This requires us to calculate
+the average eigenvalue of V for those states (17) for which the y’s
+have specified numerical values x’. Now the average eigenvalue of
+P* for any of these states equals that of P*P%(P%)-1 for arbitrary
+P” and thus equals that of ni > P¢p% P%)-1, which is y‘(P%) or
+
+x'(P,). Hence the average eigenvalue of V is } Vpx'(P). A similar
+P
+
+method could be used for calculating the average eigenvalue of any
+function of V, it being necessary only to replace each P* by x’(P) to
+perform the averaging.
+
+The number of energy-levels in an exclusive set x = x’ that arise
+from a given state of the unperturbed system is equal to the number
+of eigenvalues of the right-hand side of (23) that are consistent with
+the equations y = x’. This number is the number n(x’) introduced
+at the end of the preceding section, and is thus just the degree of
+degeneracy of the states in this set.
+
+We have assumed that the individual kets |o!), {a”),... which deter-
+mine the unperturbed state according to (16) are all orthogonal. The
+theory can easily be extended to the case when some of these kets are
+equal, any two that are not equal being still restricted to be orthogonal.
+We now have some permutations P* such that P*|X> = |X),
+namely those permutations which involve only interchanges of
+equal «’s. Equation (20) will now hold if the summation is extended
+only over those P’s which make-P*|X> different. With this change
+in the meaning of 2 all the previous equations still hold, including
+
+the result (23). For the present |X) there will be restrictions on the
+possible numerical values of the y’s, e.g. they cannot have those
+values corresponding to |X) being antisymmetrical.
+
+58. Application to electrons
+
+Let us consider the case when the similar particles are electrons.
+This requires, according to Pauli’s exclusion principle discussed in
+§ 54, that we take into account only the antisymmetrical states. It
+is now necessary to make explicit reference to the fact that electrons
+have spins, which show themselves through an angular momentum
+﻿220 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 58
+
+and a magnetic moment. The effect of the spin on the motion of
+an electron in an electromagnetic field is not very great. There
+are additional forces on the electron due to its magnetic moment,
+requiring additional terms in the Hamiltonian. The spin angular
+momentum does not have any direct action on the motion, butit comes
+into play when there are forces tending to rotate the magnetic moment,
+since the magnetic moment and angular momentum are constrained
+to be always in the same direction. In the absence of a strong
+magnetic field these effects are all small, of the same order of magni-
+tude as the corrections required by relativistic mechanics, and there
+would be no point in taking them into account in a non-relativistic
+theory. Theimportance of the spin lies not in these small effects on the
+motion of the electron, but in the fact that it gives two internal states
+to the electron, corresponding to the two possible values of the spin
+component in any assigned direction, which causes a doubling in the
+number of independent states of an electron. This fact has far-reaching
+consequences when combined with Pauli’s exclusion principle.
+
+In dealing with an assembly of electrons we have two kinds of
+dynamical variables. The first kind, which we may call the orbital
+variables, consists of the coordinates x, y, z of all the electrons and
+their conjugate momenta p,, p,, p,. The second kind consists of the
+spin variables, the variables o,, o,, o,, a8 introduced in § 37, for all
+the electrons. These two kinds of variables belong to different degrees
+of freedom. According to §§ 20 and 21, a ket fixing the state of the
+whole system may be of the form |.4>|B>, where |A) is a ket referring
+to the orbital variables alone and {B) is a ket referring to the spin
+variables alone, and the general ket fixing a state of the whole system
+is a sum or integral of kets of this form. This way of looking at things
+enables us to introduce two kinds of permutation operators, the first
+kind, P* say, applying to the orbital variables only and operating
+only on the factor |A> and the second kind, P* say, applying only
+to the spin variables and operating only on the factor |B>. The P2’s
+and P?’s can each be applied to any ket for the whole system, not
+merely to certain special kets, like the P®’s of the preceding section.
+The permutations P that we have had up to the present apply to all
+the dynamical variables of the particles concerned, so for electrons
+
+they will apply to both the orbital and the spin variables. This means
+that each P, equals the product
+
+P, = P= Ps, (24)
+﻿§ 58 APPLICATION TO ELECTRONS 221
+
+We can now see the need for taking the spin variables into account
+when applying Pauli’s exclusion principle, even if we neglect the spin
+forces in the Hamiltonian. For any state occurring in nature each
+P, must have the value +1, according to whether it is an even or
+an odd permutation, so from (24)
+
+PtPo = -l. (25)
+The theory of the three preceding sections would become trivial if
+applied directly to electrons, for which each P, = +1. We may,
+
+however, apply it to the P* permutations of electrons. The P®’s are
+constants of the motion if we neglect the terms in the Hamiltonian
+that arise from the spin forces, since this neglect results in the
+Hamiltonian not involving the spin dynamical variables o at all. The
+P’s must then also be constants of the motion. We can now intro-
+duce new x’s, equal to the average of all of the P*’s in each class, and
+assert that for any permissible set of numerical values y’ for these y’s
+there will be one exclusive set of states. Thus there exist exclusive sets
+of states for systems containing many electrons even when we restrict
+ourselves to a consideration of only those states that satisfy Pauli’s
+principle. The exclusiveness of the sets of states is now, of course,
+only approximate, since the y’s are constants only so long as we
+neglect the spin forces. There will actually be a small probability for
+a transition from a state in one set to a state in another.
+
+Equation (25) gives us a simple connexion between the P*’s and
+P°’s, which means that instead of studying the dynamical variables
+P* we can get all the results we want, e.g. the characters y’, by
+studying the dynamical variables P’. The P°’s are much easier to
+study on account of there being only two independent states of spin
+for each electron. This fact results in there being fewer characters x’
+for the group of permutations of the o-variables than for the group
+of general permutations, since it prevents a ket in the spin variables
+from being antisymmetrical in more than two of them.
+
+The study of the P?’s is made specially easy by the fact that we
+can express them as algebraic functions of the dynamical variables ¢.
+Consider the quantity
+
+Org = HI O91 Fag Oy1 Fyn tn Set = ELL + (Gy, Fa)}-
+With the help of equations (50) and (51) of § 37 we find readily that
+(6, G2)? = (Oy Fng+Fya Cyat Fn Fea)” = 3—2(Gy, Gg), (26)
+and hence that
+
+O48 = U1+2(6,, 03) -+(6y 9)"} = 1. (27)
+﻿222 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICLES § 58
+
+Again, we find
+1 . L:
+O12 Ory = NOx + Op. 1024 Oyg Tt yy G9},
+1 Le .
+Ox2 Oy, = HOn2 + n14 WO y1 Fzg— UG zy Oyo}
+
+and hence O12 On1 = Fzq Oy.
+
+Similar relations hold for o,, and o,, so that we have
+O12 5, = 5, Oj,
+
+or Oy. 0, OF = a.
+
+From this we can obtain with the help of (27)
+O19 6, O7G' = 94.
+
+These commutation relations for O,, with o, and o, are precisely the
+same as those for P?,, the permutation consisting of the interchange
+of the spin variables of electrons 1 and 2. Thus we can put
+
+—_ Co
+Or = CPi,
+
+where c is a number. Equation (27) shows that c = +1. To deter-
+mine which of these values for c is the correct one, we observe that
+the eigenvalues of P?, are 1, 1, 1, —1, corresponding to the fact that
+there exist three independent symmetrical and one antisymmetrical
+state in the spin variables of two electrons, namely, with the notation
+of § 37, the states represented by the three symmetrical functions
+Folia) Sa(Fz2)s Selo) fp (22), Sod Oe) fp(C22) theo) fo(oz2), and the one
+antisymmetrical function f,(o24) fg(o22)—fe(G1) fa(ze)- Thus the mean
+of the eigenvalues of Pf, is 4. Now the mean of the eigenvalues of
+(o,, 6.) is evidently zero and hence the mean of the eigenvalues of O,,
+is 3. Thus we must have c = +1, and so we can put
+
+Po, = {14+ (,, 52)}. (28)
+In this way any permutation P? consisting simply of an interchange
+can be expressed as an algebraic function of the o’s. Any other per-
+mutation P? can be éxpressed as a product of interchanges and can
+therefore also be expressed as a function of the o’s. With the help of
+(25) we can now express the P?’s as algebraic functions of the o’s and
+eliminate the P°’s from the discussion. We have, since the — sign
+must be taken in (25) when the permutations are interchanges and
+since the square of an interchange is unity,
+
+Phy = —3{1+(6,, 69)}. (29)
+The formula (29) may conveniently be used for the evaluation of
+﻿§ 58 APPLICATION TO ELECTRONS 223
+
+the characters y’ which define the exclusive sets of states. We have,
+for example, for the permutations consisting of interchanges,
+
+Xue = X(Pe) = 5(? ae (3,, @)
+
+a
+
+If we introduce the dynamical variable s to describe the magnitude of
+the total spin angular momentum, 4 2 s, in units of #, through the
+
+formula
+s(s-+1) = (3 9,4 > @;),
+
+r
+
+in ayreement with (39) of § 36, we have
+
+23 (6,0) = (Yop ¥o)— S(6
+
+= 48(s-+1)—3
+
+1 4s(s+1)—3n n(n—4)-+4s(s+1)
+Xia = 5(! : n(n—1) ~~ 2n(n—1) - (9)
+
+Thus yj. is expressible as a function of the dynamical variable s and
+of n the number of electrons. Any of the other y’s could be evaluated
+on similar lines and would have to be a function of s and only, since
+there are no other symmetrical functions of all the o dynamical
+variables which could be involved. There is therefore one set of
+numerical values x’ for the y’s, and thus one exclusive set of states,
+for each eigenvalue s’ of s. The eigenvalues of s are
+
+Hence
+
+1 1 1
+gn, in—lI, én—2, see
+
+the series terminating with 0 or §.
+
+We see in this way that each of the stationary states of a system
+with several electrons is an eigenstate of s, the magnitude in units of
+hs of the total spin angular momentum } > a,, belonging to a definite
+
+r
+
+eigenvalue s’. For any given s’ there will be 2s’+1 possible values
+for a component of the total spin vector in any direction and these
+will correspond to 2s" 1 independent stationary states with the same
+energy. When we do not neglect the forces due to the spin magnetic
+moments these 2s’+-1 states will in general be split up into 2s’+1
+states with slightly different energies, and will thus form a multiplet
+of multiplicity 2s’+-1. Transitions in which s’ changes, i.e. transitions
+from one multiplicity to another, cannot occur when the spin forces
+are neglected and will have only a small probability of occurrence
+when the spin forces are not neglected.
+﻿224 SYSTEMS CONTAINING SEVERAL SIMILAR PARTICES § 58
+
+We can determine the energy-levels of a system with several
+electrons to the first approximation by applying the theory of the
+preceding section with the kets |a’> referring only to the orbital
+variables and using formula (23). If we consider only the Coulomb
+forces between the electrons, then the interaction energy V will
+consist of a sum of parts each referring to only two electrons, which
+will result in all the matrix elements Vy) vanishing except those for
+which P* is the identical permutation or is simply an interchange of
+two electrons. Thus (23) will reduce to
+
+Vaht DV. Pte (31)
+rcs
+¥,, being the matrix element referring to the interchange of electrons
+ry and s. Since the P*’s have the same properties as the P*’s, any
+function of the P°’s will have the same eigenvalues as the corre-
+sponding function of the P?’s, so that the right-hand side of (31)
+will have the same eigenvalues as
+
+Wt 2d Veo Pres
+
+r<e8
+
+or Y—-4> V,{1+(e,,6,)}} . (32)
+
+r<s
+
+from (29). The eigenvalues of (32) will give the first-order corrections
+in the energy-levels. The form of (32) shows that a model which
+assumes a coupling energy between the spins of the various electrons,
+of magnitude —iV,,(c¢,,6,) for the electrons in the r and s orbital
+states, would meet with a fair amount of success. This coupling
+energy is much greater than that of the spin magnetic moments. Such
+models of the atom were in use before the justification by quantum
+mechanics was obtained.
+
+We may have two of the orbital states of the unperturbed system
+the same, ie. the kets |a*> in the orbital variables for two electrons
+may be the same. Suppose |x and |«?> are the same. Then we must
+take only those eigenvalues of (31) that are consistent with P% = 1,
+or those eigenvalues of (32) that are consistent with P%, = 1 or
+P%, = —1. From (28) this condition gives (¢,,¢,) = —3, so that
+(o,+¢,)? = 0. Thus the resultant of the two spins «, and a, is zero,
+which may be interpreted as the spins o, and «, being antiparallel.
+Thus we may say that two electrons in the same orbital state have
+their spins antiparaliel. More than two electrons cannot be in the
+same orbital state.
+
+</p>
+    </body>
+</html>

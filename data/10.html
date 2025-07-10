@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+        <meta charset="utf-8" />
+        <title>放射線の理論</title>
+        <style type="text/css">
+            p
+            {
+                padding-left: 2em;
+            }
+            .margin-large
+            {
+                margin-left: 30px;
+            }
+           .margin-abstract {
+               margin-left: 60px; /* 左マージンを広くする */
+               margin-right: 60px; /* 右マージンを広くする */
+           }
+        </style>
+    <style>
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 20px; /* 列間のスペース */
+        }
+        .column {
+            flex: 1; /* 各列が均等に幅を取る */
+        }
+    </style>
+<style>
+.three-columns {
+  display: flex;
+  gap: 10px; /* 列間の余白を設定 */
+}
+.column {
+  flex: 1; /* 各列の幅を均等にする */
+  padding: 10px; /* 内側の余白を設定 */
+}
+</style>
+    <style>
+        .styleRef { 
+            text-indent: -40px; /* 最初の行の字下げを逆方向に */
+            margin-left: 10px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 40px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+        .styleBullet { 
+            text-indent: -20px; /* 最初の行の字下げを逆方向に */
+            margin-left: 30px; /* 2行目以降の字下げを調整 */
+            ul {
+                  list-style-type: none; /* 箇条書き記号を非表示 */
+                  padding-left: 0px; /* 全体の左余白 */
+            }
+            li {
+            }
+        }
+    </style>
+    <style>
+            ol
+            {
+                margin-left: 30px;
+            }
+            ul
+            {
+                margin-left: 30px;
+            }
+    </style>
+    <style>
+        .thin-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 1px;
+            background-color: gray;
+        }
+
+        .thick-line {
+            margin: 0; 
+            margin-left:2em;
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+    <style>
+        .blue {
+            color: blue; /* 好きな色に変更してください */
+        }
+    </style>
+    </head>
+    <body>
+        <h1><center>Ⅹ THEORY OF RADIATION<br>放射線の理論</center></h1>
+<h2>59. An assembly of bosons</h2>
+<p>
+We consider a dynamical system composed of w’ similar particles.
+We set up a representation for one of the particles with discrete basic
+kets |a®>, |x, jo >,.... Then, as explained in § 54, we get a sym-
+metrical representation of the assembly of w’ particles by taking as
+basic kets the products
+
+|a#> [a&> lag... lo> == lad of af...0%-> (1)
+in which there is one factor for each particle, the suffixes 1, 2, 3,..., w’
+of the a’s being the labels of the particles and the indices a, b, ¢,...,9
+denoting indices , ®, ®,... in the basic kets for one particle. Tf the
+particles are bosons, so that only symmetrical states occur in nature,
+then we need to work with only the symmetrical kets that can be
+constructed from the kets (1). The states corresponding to these
+symmetrical kets will form a complete set of states for the assembly
+of bosons. We can build up a theory of them as follows.
+
+We introduce the linear operator S defined by
+
+S=w!lt> P, (2)
+the sum being taken over all the wu’! permutations of the w’ particles.
+Then S applied to any ket for the assembly gives a symmetrical ket.
+We may therefore call S the symmetrizing operator. From (8) of § 55
+it is real. Applied to the ket (1) it gives
+
+wl Plot of af...08,> == Sla%a%a®...a%>, (3)
+the labels of the particles being omitted on the right-hand side as
+they are no longer relevant. The ket (3) corresponds to a state for
+the assembly of u’ bosons with a definite distribution of the bosons
+among the various boson states, without any particular boson being
+assigned to any particular state. The distribution of bosons is specl-
+fied if we specify how many bosons are in each boson state. Let
+Ni, Ny, 24,... be the numbers of bosons in the states a, of), of)...
+respectively with this distribution. The n’’s are defined algebraically
+by the equation
+
+attabtott..f-ed = ny of? 4 Ny) } Ny oe (4)
+The sum of the ns is of course u’. The number of n”s is equal to
+the number of basic kets [a ), which in most applications of the
+﻿226 THEORY OF RADIATION § 59
+
+theory is very much greater than u’, so most of the n’’s will be zero.
+If a, «®, of,..., a? are all different, i.e. if the n'’s are all 0 or 1, the
+ket (3) is normalized, since in this case the terms on the left-hand
+side of (3) are all orthogonal to one another and each contributes
+u'!-1 to the squared length of the ket. However, if a4, 0, 0%)..., a7
+are not all different, those terms on the left-hand side of (3) will
+be equal which arise from permutations P which merely interchange
+bosons in the same state. The number of equal terms will be
+m,! ng! ng!..., so the squared length of the ket (3) will be
+Cote? ol,..o9| 8? lataae...o% == ny! ng! ng!..- (5)
+For dealing with a general state of the assembly we can introduce
+the numbers ”,, M», %3,... of bosons in the states o, a, o®),..,
+respectively and treat the n’s as dynamical variables or as observ-
+ables. They have the eigenvalues 0, 1, 2,..., u’. The ket (3) is a
+simultaneous eigenket of all the n’s, belonging to the eigenvalues
+M4, Ny, Ng,.... The various kets (3) form a complete set for the
+dynamical system consisting of u’ bosons, so the n’s all commute
+(see the converse to the theorem of § 13). Further, there is only one
+independent ket (3) belonging to any set of eigenvalues 7}, M9, %3,----
+Hence the n’s form a complete set of commuting observables. If we
+normalize the kets (3) and then label the -resulting kets by the
+eigenvalues of the n’s to which they belong, ie. if we put
+
+(m4! 25! 13!...) “FS fataba®...o8) = [ny ng ng...>, (6)
+we get a set of kets |[n, ,73...>, with the n”s taking on all non-negative
+integral values adding up to wu’, which kets will form the basic kets
+of a representation with the n’s diagonal.
+
+The n’s can be expressed as functions of the observables Oy, Og,
+
+Q%g,.., &y Which define the basic kets of the individual bosons by
+means of the equations
+
+rg = >. 3a, ay? (7)
+or the equations d a flo%) = ¥ f(a) (8)
+
+holding for any function /.
+
+Let us now suppose that the number of bosons in the assembly is
+not given, but is variable. This number is then a dynamical variable
+or observable u, with eigenvalues 0, 1, 2,..., and the ket (3) is an
+eigenket of wu belonging to the eigenvalue u’. To get a complete
+set of kets for our dynamical system we must now take all the
+﻿§ 59 AN ASSEMBLY OF BOSONS 227
+
+symmetrical kets (3) for all values of u’. We may arrange them in
+order thus ty Jaty, Slata®y, Satara”), ..., (9)
+
+where first is written the ket, with no label, corresponding to the
+state with no bosons present, then come the kets corresponding to
+states with one boson present, then those corresponding to states
+with two bosons, and so on. A general state corresponds to a ket
+which is a sum of the various kets (9). The kets (9) are all orthogonal
+to one another, two kets referring to the same number of bosons being
+orthogonal as before, and two referring to different numbers of bosons
+being orthogonal since they are eigenkets of wu belonging to different
+eigenvalues. By normalizing all the kets (9), we get a set of kets like
+(6) with no restriction on the 7’s (i.e. each n’ taking on all non-
+negative integral values) and these kets form the basic kets of a
+representation with the n’s diagonal for the dynamical system con-
+sisting of a variable number of bosons.
+
+If there is no interaction between the bosons and if the basic kets
+lo), |x®,... correspond to stationary states of a boson, the kets (9)
+will correspond to stationary states for the assembly of bosons. The
+number w of bosons is now constant in time, but it need not be a
+specified number, i.e. the general state is a superposition of states
+with various values for uw. If the energy of one boson is H(a), the
+energy of the assembly will be
+
+> (os) = 2 gH" (10)
+
+from (8), H* being short for the number H(a*). This gives the
+Hamiltonian for the assembly as a function of the dynamical
+variables n.
+
+60. The connexion between bosons and oscillators
+
+In § 34 we studied the harmonic oscillator, a dynamical system of
+one degree of freedom describable in terms of a canonical q and p,
+such that the Hamiltonian is a sum of squares of g and p, with
+numerical coefficients. We define a general oscillator mathematically
+as a system of one degree of freedom describable in terms of a
+canonical g and p, such that the Hamiltonian is a power series in ¥
+and p, and remains so if the system is perturbed in any way. We
+shall now study a dynamical system composed of several of these
+oscillators. We can describe each oscillator in terms of, instead of
+q and p, a complex dynamical variable 7, like the y of § 34, and its
+﻿228 THEORY OF RADIATION § 60
+
+conjugate complex 7, satisfying the commutation relation (7) of
+§ 34. We attach labels 1, 2, 3,... to the different oscillators, so that
+the whole set of oscillators is describable in terms of the dynamical
+
+variables 41,° 2, Nase Fi Te a--- Satisfying the commutation
+relations
+Na oN Na = 9;
+Nate Ta = 9, (11)
+Fa Meo Ha = Sab-
+Put Nata = Me (12)
+so that Fate = Mtl. (13)
+
+The n’s are observables which commute with one another and the
+work of § 34 shows that each of them has as eigenvalues all non-
+negative integers. For the ath oscillator there is a standard ket for
+the Fock representation, |0,> say, which is a normalized eigenket of n,
+belonging to the eigenvalue zero. By multiplying all these standard
+kets together we get a standard ket for the Fock representation for
+the set of oscillators, 10, }O,) 10) (14)
+
+which is a simultaneous eigenket of all the n’s belonging to the
+eigenvalues zero. We shall denote it simply by |0>. From (13) of §34
+
+7jql0> = 0 (15)
+for any a. The work of §34 also shows that, if m,, mg, ”5,... are any
+non-negative integers, ott nt nB...|0> (16)
+
+is a simultaneous eigenket of all the n’s belonging to the eigenvalues
+Ny, Ng, My,... respectively. The various kets (16) obtained by taking
+different n’’s form a complete set of kets all orthogonal to one another
+and the square of the length of one of them is, from (16) of § 34,
+n,!ng!ng!.... From this we see, bearing in mind the result (5), that
+the kets (16) have just the same properties as the kets (9), so that
+we can equate each ket (16) to the ket (9) referring to the same n’
+values without getting any inconsistency. This involves putting
+
+S focterPod’....0.7 = NaN Ter Iq|0>- (17)
+
+The standard ket |0> becomes equal to the first of the kets (9), corre-
+sponding to no bosons present.
+
+The effect of equation (17) is to identify the states of an assembly
+of bosons with the states of a set’ of oscillators. This means that the
+﻿§60 CONNEXION BETWEEN BOSONS AND OSCILLATORS = 229
+
+dynamical system consisting of an assembly of similar bosons 18 equiva-
+lent to the dynamical system consisting of a set of oscillators—the two
+systems are just the same system looked at from two different points of
+view, There is one oscillator associated with each independent boson
+state. We have here one of the most fundamental results of quantum
+mechanics, which enables a unification of the wave and corpuscular
+theories of light to be effected.
+
+Our work in the preceding section was built up on a discrete set
+of basic kets |x) for a boson. We could pass to a different discrete
+set of basic kets, [84> say, and build up a similar theory on them.
+The basic kets for the assembly would then be, instead of (9),
+
+I>, IB4>, SIB4B™>, SIB4B3B°, .... (18)
+The first of the kets (18), referring to no bosons present, is the same
+
+as the first of the kets (9). Those kets (18) referring to one boson
+present are linear functions of those kets (9) referring to one boson
+
+present, namely iB = Ss joa? <a2/B45, (19)
+
+and generally those kets (18) referring to «’ bosons present are linear
+functions of those kets (9) referring to u’ bosons present. Associated
+with the new basic states [84> for a boson there will be a new set
+of oscillator variables 7,4, and corresponding to (17) we shall have
+
+S|BAB¥BY...> = 1478 7-0). (20)
+Thus a ket 147 ,...[0> with wu’ factors 44, 7,,... must be a linear func-
+tion of kets 7, 7p...0> with w’ factors 7,, 7),.... It follows that each
+linear operator 74 must be a linear function of the 7,’s. Equation
+
+(19) gives 7.410> = ¥ tall><a" 84>
+and hence na = > NXa|B>. (21)
+
+Thus the 7’s transform according to the same law as the basic kets for
+aboson. The transformed y’s satisfy, with their conjugate complexes,
+the same commutation relations (11) as the original ones. The trans-
+formed 7’s are on just the same footing as the original ones and hence,
+when we look upon our dynamical system as a set of oscillators, the
+different degrees of freedom have no invariant significance.
+
+The 7s transform according to the same law as the basic bras for
+a boson, and thus the same law as the numbers <a*|%> forming the
+
+representative of a state x. This similarity people often describe by
+359557
+. Q
+﻿230 THEORY OF RADIATION § 60
+
+saying that the 7,’s are given by a process of second quantization
+applied to <a*|x>, meaning thereby that, after one has set up a
+quantum theory for a single particle and so introduced the numbers
+<a#|x> representing a state of the particle, one can make these num-
+bers into linear operators satisfying with their conjugate complexes
+the correct commutation relations, like (11), and one then has the .
+appropriate mathematical basis for dealing with an assembly of the
+particles, provided they are bosons. There is a corresponding proce-
+dure for fermions, which will be given in § 65.
+
+Since an assembly of bosons is the same as a set of oscillators, it
+must be possible to express any symmetrical function of the boson
+variables in terms of the oscillator variables 7 and 7. An example
+of this is provided by equation (10) with »,7, substituted for x,.
+Let us see how it goes in general. Take first the case of a function
+of the boson variables of the form
+
+Up = & U, (22)
+
+where each U. is a function only of the dynamical variables of the
+rth boson, so that it has a representative <o“!U,|a2> referring to the
+basic kets |a®> of the rth boson. In order that Up may be symmetrical,
+this representative must be the same for all r, so that it can depend
+only on the two eigenvalues labelled by a and b. We may therefore
+
+waite 1 <aft|U,|ab> = <at|T aby = <a|T16) (28)
+for brevity. We have
+U jog off...) = S loft aifs..ot..)<a]U |,. (24)
+
+a
+Summing this equation for all values of r and applying the sym-
+
+metrizing operator S to both sides, we get
+SU plod off... == 2 3 S |o® of? .0%..><alO |x,>. (25)
+
+Since U, is symmetrical we can replace SU, by U, S and can then
+substitute for the symmetrical kets in (25) their values given by (17).
+We get in this way
+
+Up Nay Neos |0> = 2 2 Na "in Yar Mest |O><a| U |x,»
+= 2a 2 ay Mas ee OP ra,K@1U >, (28)
+
+<
+na meaning that the factor 7, must be cancelled out. Now from
+
+(15) and the commutation relations (11)
+No Neer Qasr |0> = > "a Ne, Veer 10> 802, (27)
+Tr
+﻿§60 CONNEXION BETWEEN BOSONS AND OSCILLATORS — 231
+
+(note that 7, is like the operator of partial differentiation 0/d7,), so
+(26) becomes
+Op Hey Ne|0> = 2 Na Tp Ney Ney |0><a| TO |b». (28)
+
+The kets 7,, 7,,--.|0> form a complete set, and hence we can infer from
+(28) the operator equation
+
+O, = 2 nao] T [b> ip. (29)
+
+'This gives us Up in terms of the 7 and 7 variables and the matrix
+elements <a|U|b>.
+
+Now Jet us take a symmetrical function of the boson variables
+consisting of a sum of terms each referring to two bosons,
+
+Vp = > Veg: (30)
+
+rSer
+
+We do not need to assume ¥, = V,. Corresponding to (23), V, has
+
+matrix elements at ab|Trglagad> = <ab|V od> (31)
+
+for brevity. Proceeding as before we get, corresponding to (25),
+SVpoPoF...> = YY Slofta¥e..cf..08..><ab|V |x, x5> (32)
+
+r,Sezr ap
+
+and corresponding to (26)
+Vor Mee Max |0> = Na 2 1 Ne NaN |9P8on, San 640 |V led>. (33)
+
+aber T,Ser
+
+We can deduce as an extension of (27)
+Fe Fa Des Nee !09 =D Mees Mer Deer [Sen Saas (34)
+so that (33) becomes
+Vor Me, Maye (OY = Na Ae Fa Ney Neo|026a2| Ved,
+
+abe
+giving us the operator equation
+Vo = >> Na 1o<ab|V |ed> A. Fa- (35)
+
+‘The method can readily be extended to give any symmetrical func-
+tion of the boson variables in terms of the y’s and 7’s.
+
+The foregoing theory can easily be generalized to apply to an
+assembly of bosons in interaction with some other dynamical system,
+which we shall call for definiteness the atom. We must introduce a
+set of basic kets, |£ say, for the atom alone. We can then get a set
+of basic kets for the whole system of atom and bosons together by
+multiplying each of the kets |£’> into each of the kets (9). We may
+write these kets
+
+iC, [C'a%, S[Lata®>, S[lata’a®>, o (36)
+﻿232 THEORY OF RADIATION § 60
+
+We may look upon the system as composed of the atom in interaction
+with a set of oscillators, so that it can be described in terms of the
+atom variables and the oscillator variables ,, 7,. Using again the
+standard ket |0> for the set of oscillators, we have
+
+Sl ata° a... = Na My Ne lOD[L>, (37)
+corresponding to (17), as the equation expressing the basic kets
+(36) in terms of the oscillator variables.
+
+Any function of the atom variables and boson variables which is
+symmetrical between all the bosons is expressible as a function of the
+atom variables and the 7’s and 7’s. Consider first a function Up of
+the form (22) with U. a function only of the atom variables and the
+variables of the rth boson, so that it has a representative <£’o2|U,|C"02>.
+This representative must be independent of r in order that Up may
+be symmetrical between all the bosons, so we may write it
+
+CC'at|O|6"aS. Now let us define <a|U|b> to be that function of the
+atom variables whose representative is (C'a?|T7|C’«°>, so that we have
+
+<CraplO| lary = Croat] T1o"ah> = <e'|CalU|b>10">, (38)
+corresponding to (23). The equations (24)—(28) can now be taken over
+
+and applied to the present work if both sides of all these equations
+
+are multiplied by [¢’> on the right, with the result that formula (29)
+still holds. We can deal similarly with a symmetrical function VY of
+the form (30) with V, a function only of the atom variables and the
+variables of the rth and sth bosons. Defining <ab|V|cd> to be that
+function of the atom variables whose representative is
+
+(Colt ab 08 08),
+we find that formula (35) still holds.
+
+61. Emission and absorption of bosons
+
+Let us suppose that the oscillators of the preceding section are
+harmonic oscillators and there is no interaction between them. The
+energy of the ath oscillator is then, from (5) of § 34,
+
+i, = hwy Na Fat tiw,.
+We shall neglect the constant term }iw,, which is the energy of the
+oscillator in its lowest state—the so-called ‘zero-point energy’. This
+neglect does not have any dynamical consequences, as explained at
+
+the beginning of § 30, and merely involves a redefinition of H,. The
+total energy of ail the oscillators is now
+
+Hy = > A, = > hwy a Na = > heog Na (39)
+@ a a
+﻿§ 61 EMISSION AND ABSORPTION OF BOSONS 233
+
+with the help of (12). This is of the same form as (10), with hw, for
+He, Thus a set of harmonic oscillators 1s equivalent to an assembly of
+bosons in stationary states with no interaction between them. If an
+oscillator of the set ts in tis n’th quantum state, there are n’ bosons in
+the associated boson state.
+
+In general the Hamiltonian for the set of oscillators will be a power
+series in the variables 7,, 7,, Say
+
+Hy = Hp+ 2 (OU, Na+ Datta) + > (Ue 1a +Vab Na Mot Van Fah) +--+
+(40)
+where Hp, U,, Ugy, Vy ave numbers, Hp being real and U,, = O,,. If
+the set of oscillators are in interaction with an atom, as we had at
+the end of the preceding section, the total Hamiltonian will still be
+of the form (40), with Hp, U,, U,,, V,, functions of the atom variables,
+Hy, in particular being the Hamiltonian for the atom by itself. A
+general treatment of this dynamical system would be rather compli-
+cated and for practical applications one assumes that the terms
+
+Hp+ > Daa Nata (41)
+
+are large compared with the others and form by themselves an
+unperturbed system, the remaining terms being taken into account
+as a perturbation producing transitions in the unperturbed system,
+according to the theory of § 44. If, further, U,, is independent of the
+atom variables, the unperturbed system with Hamiltonian (41) con-
+sists merely of an atom with Hamiltonian Hp and an assembly of
+bosons in stationary states with Hamiltonian of the form (39), with
+no interaction.
+
+Let us consider what kinds of transitions are produced by the
+various perturbation terms in (40). Take a stationary state of the
+unperturbed system for which the atom is in a stationary state, ¢’ say,
+
+and bosons are present in the stationary boson states, a, 6, ¢,.... This
+stationary state for the unperturbed system corresponds to the ket
+Ta Mo Ner+!9>18°>, (42)
+
+like (37). If the term U,», of (40) is multiplied into this ket, the
+result is a linear combination of kets like :
+
+Nae Qa Nd Nor |OS”, : , (43)
+
+t” denoting any stationary state of the atom. The ket (43) refers to
+one more boson than the ket (42), the extra boson being in the state x.
+﻿234 THEORY OF RADIATION § 61
+
+Thus the perturbation term U, 7, gives rise to transitions in which
+one boson is emitted into state 2 and the atom makes an arbitrary
+jump. If the term U, 4, of (40) is multiplied into (42), the result is
+zero unless (42) contains a factor 7, and is then a linear combination
+
+of Kets like Teta Mo te lO>1E">,
+
+referring to one boson less in state xz. Thus the perturbation term
+U,,9~ gives rise to transitions in which one boson is absorbed from
+state x, the atom again making an arbitrary jump. Similarly, we find
+that a perturbation term U,,, 7,7, ( 4 y) gives rise to processes in
+which a boson is absorbed from state y and one is emitted into state
+x, or, what is the same thing physically, one boson makes a transition
+from state y to state x. This kind of process would be produced by
+a term like the U, of (22) and (29) in the perturbation energy, pro-
+vided the diagonal elements <a|U|a> vanish. Again, the perturbation
+terms Vey "2 Ny» Vey Te Ty give rise to processes in which two bosons are
+emitted or absorbed, and so on for more complicated terms. With
+any of these emission and absorption processes the atom can make.
+an arbitrary jump.
+
+Let us determine how the probability of occurrence of each of these
+. transition processes depends on the numbers of bosons originally
+present in the various boson states. From §§ 44, 46 the transition
+probability is always proportional to the square of the modulus of
+the matrix element of the perturbation energy referring to the two
+states concerned. Thus the probability of a boson being emitted into
+state x with the atom making a jump from state ¢’ to state £” is
+proportional to
+
+1<"| <1 9--(Mip+ 1). [Uy Tel Mo--Mee->10">|?, (44)
+
+the n”s being the numbers of bosons initially present in the various
+boson states. Now from (6) and (17), with reference to (4),
+
+,
+
+[105 My Mg... > == (My! 5! 5...) — Pt a7! 4... 109, (45)
+
+so that Ne |My Mg. Myee > = (1-1)? [24 N9..(n,+1)..>. (46)
+Hence (44) is equal to
+
+(m+ 1)/ CC U,12[?, (47)
+
+showing that the probability of a transition in which a boson is emitted
+into state x 1s proportional to the number of bosons originally in state x
+plus one.
+﻿§ 61 EMISSION AND ABSORPTION OF BOSONS © 235
+
+The probability of a boson being absorbed from state x with the
+atom making a jump from state ¢’ to state ¢” is proportional to
+
+[<0" |< 23.-(M— 1). [Oy ply MaMa 10> [?, (48)
+the ns again being the numbers of bosons initially present in the
+various boson states. Now from (45)
+
+fol, Mya...) = n\n my.(m—1)..>, (49)
+
+so (48) is equal to nJco" 0169/2. (50)
+
+Thus the probability of a transition in which a boson is absorbed from
+state x is proportional to the number of bosons originally in state x.
+
+Similar methods may be applied to more complicated processes,
+
+and show that the probability of a process in which a boson makes
+
+a transition from state y to state x (x + y)is proportional to n,(n,+1).
+
+More generally, the probability of a process in which bosons are
+absorbed from states x, y,... and emitted into states a, b,... is propor-
+
+tional to nn. (Miy A) (myth)... (51)
+the n’’s being in each case the numbers of bosons originally present.
+These results hold both for direct transition processes and transition
+
+processes that take place through one or more intermediate states,
+in accordance with the interpretation given at the end of § 44.
+
+62. Application to photons
+
+Since photons are bosons, the foregoing theory can be applied to
+them. A photon is in a stationary state when it is in an eigenstate
+of momentum. It then has two independent states of polarization,
+which may be taken to be two perpendicular states of linear polariza-
+tion. The dynamical variables needed to describe the stationary
+states are then the momentum p, a vector, and a polarization variable
+1, consisting of a unit vector perpendicular to p. The variables p and
+1 take the place of our previous «’s. The eigenvalues of p consist of
+all numbers from —co to co for each of the three Cartesian com-
+ponents of p, while for each eigenvalue p’ of p, | has just two
+eigenvalues, namely two arbitrarily chosen vectors perpendicular”
+to p’ and to one another. Owing to the eigenvalues of p forming
+a continuous range, there are a continuous range of stationary
+states, giving us the continuous basic kets |p'l’>. However, the fore-
+going theory was built up in terms of discrete basic kets |x’> for a
+boson. There are two formalisms which one may use for getting over
+
+this discrepancy.
+﻿236 THEORY OF RADIATION § 62
+
+The first consists in replacing the continuous three-dimensional
+distribution of eigenvalues for p by a large number of discrete points
+lying very close together, forming a dust spread over the whole three-
+dimensional p-space. Let sp, be the density of the dust (the number
+of points per unit volume) in the neighbourhood of any point p’.
+Then sp must be large and positive, but is otherwise an arbitrary
+function of p’. An integral over the p-space may be replaced by a
+sum over the dust of points, in accordance with the formula
+
+Jf [PW dpi dp, dp, = ¥ fp')sp*, (52)
+
+which formula provides the basis of the passage from continuous p’
+values to discrete ones and vice versa. Any problem can be worked
+out in terms of the discrete p’ values, for which the theory of §§ 59-61
+can be used, and the results can be transformed back to refer to con-
+
+tinuous p’ values. The arbitrary density sp. should then disappear
+from the results.
+
+The second formalism consists in modifying the equations of the
+theory of §§ 59-61 so as to make them apply to the case of a con-
+‘ tinuous range of basic kets |a’>, by replacing sums by integrals and
+replacing the 6 symbol in the commutation relations (11) by & func-
+tions, so far as concerns the variables with continuous eigenvalues.
+Each of these formalisms has some advantages and some disadvan-
+tages. The first is usually more convenient for physical discussion,
+the second for mathematical development. Both will be developed
+here and one or other will be used according to which is more suitable
+at the moment.
+The Hamiltonian describing an assembly of photons interacting
+with an atom will be of the general form (40), with the coefficients
+Hp, Uz, Uy, V,n involving the atom variables. This Hamiltonian may
+
+b :
+e€ written Hp = Hp-+Ho+Hp, (53)
+
+where Hp is the energy of the atom alone, H - is the energy of the
+assembly of photons alone,
+
+Hp = 2,?v op (54)
+
+vp being the frequency of a photon of momentum p’, and Hg is the
+interaction energy, which can be evaluated from analogy with the
+classical theory, as will be shown in the next section. The whole
+system can be treated by a perturbation method as discussed in the
+﻿§ 62 APPLICATION TO PHOTONS 237
+
+preceding section, Hp, and H, providing the energy (41) of the
+unperturbed system and Hg being the perturbation energy, which
+gives rise to transition processes in which photons are emitted and
+absorbed and the atom jumps from one stationary state to another.
+
+We saw in the precéding section that the probability of an absorp-
+tion process is proportional to the number of bosons originally in the
+state from which a boson is absorbed. From this we can infer that
+the probability of a photon being absorbed from a beam of radiation
+incident on an atom is proportional to the intensity of the beam.
+We also saw that the probability of an emission process is propor-
+tional to the number of bosons originally in the state concerned plus
+one. To interpret this result we must make a careful study of the
+relations involved in replacing the continuous range of photon states
+by a discrete set.
+
+Let us neglect for the present the polarization variable 1. Let
+[p’p> be the normalized ket corresponding to the discrete photon
+state p’. Then from (22) of § 16
+
+> |p’D><p’p| = 1,
+which gives from (52)
+
+| [p'D><p'D [sy dp’ = 1, (55)
+
+dp’ being written for dp;,dp,,dp,, for brevity. Now if |p’) is the basic
+ket corresponding to the continuous state p’, we have according to
+
+24) of § 16
+Coens _[ipd<p'i ay’ =1,
+
+which shows, on comparison with (55); that
+
+[p> = [p'D>sp. (56)
+
+The connexion between |p’> and |p’D) is like the connexion between
+the basic kets when one changes the weight function of the representa-
+tion, as shown by (38) of § 16.
+
+With nj, photons in each discrete photon state p’, the Gibbs
+density p for the assembly of photons is, according to (68) of § 33,
+
+p => [p’D>n,<p’p| = | |p’D>n,<p'D|sy dp!
+
+Pp
+= | [pnp <p’) dp’ (57)
+
+with the help of (56). The number of photons per unit volume in the
+﻿238 THEORY OF RADIATION § 62
+
+neighbourhood of any point x’ is then <x’|p|x’>, according to (73)
+of § 33. From (57) this equals
+
+(x'|plx'> = | <x'ip mp <p’ |x’) ap’
+= [ hn, Bp’ (58)
+
+if one puts in the value of the transformation function <¢x’|p’> given
+by (54) of § 23. Equation (58) expresses the number of photons per
+unit volume as an integral over the momentum space, so the inte-
+grand in (58) can be interpreted as the number of photons per unit
+of phase space. We obtain in this way the result that the number of
+photons per unit of phase space is equal to h- times the number of
+photons per discrete state, in other words, @ cell of volume h? in phase
+space is equivalent to a discrete state. This result is a general one,
+holding for any kind of particle. If the polarization variable of the
+photons is not neglected, the result holds for each of the two indepen-
+dent states of polarization.
+
+The momentum of a photon of frequency v is of magnitude hyv/c,
+so the element of momentum space
+
+dp, dp, dp, = Wc-v dvdu,
+
+dw being an element of solid angle for the direction of the vector p.
+Thus a distribution of photons with nj, per discrete state, which is
+equivalent to a distribution of h-nj,d?nd*x photons in an element
+of volume dz and an element of momentum space d°p, equals a
+distribution of nj, c~*v? dvdwd'x photons in an element of volume da
+and a frequency range @v and direction of motion dw. This corre-
+sponds to an energy density n, kc-*)> per unit solid angle per unit
+frequency range, or an intensity per unit frequency range (i.e. an
+energy crossing unit area per unit time per unit frequency range) of
+
+amount L, =n, hvIc2. (59)
+
+The result that the probability of a photon being emitted is pro-
+portional to n,,+1, 2,, being the number of photons initially present
+in the discrete state concerned, can now be interpreted as the proba-
+bility being proportional to £,,+-Av*/c?, where J,, is the intensity of
+the incident radiation per unit frequency range in the neighbourhood
+of the frequency of the emitted photon and having the same polariza-
+tion 1 as the emitted photon. Thus with no incident radiation there
+is still a certain amount of emission, but the emission is increased or
+﻿§ 62 APPLICATION TO PHOTONS 239
+
+stimulated by incident radiation in the same direction and having the
+same frequency and polarization as the emitted radiation. The
+present theory of radiation thus completes the imperfect one of § 45
+by giving both stimulated and spontaneous emission. The ratio it
+gives for the two kinds of emission, namely J,, : hv?/c?, is in agreement
+with that provided by Einstein’s theory of statistical equilibrium
+mentioned in § 45.
+
+The probability of a photon being scattered from the state p’l’ to
+the state p"l’ is proportional to ny1(Myy+1), the n’s being the
+numbers of photons initially in the discrete states concerned. We can
+interpret this result as the probability being proportional to
+
+Dry (Tye bho"9/c*). (60)
+Similarly for a more general radiative process in which several
+photons are emitted and absorbed, the probability is proportional
+to a factor J,, for each absorbed photon and a factor [,+-Av*/c? for
+each emitted photon. Thus the process is stimulated by incident
+
+radiation in the same direction and with the same frequency and
+polarization as any of the emitted photons.
+
+63. The interaction energy between photons and an atom
+
+We shall now determine the interaction energy between an atom
+and an assembly of photons, ie. the Hg of equation (53), from
+analogy with the classical expression for the interaction energy
+between an atom and a field of radiation. For simplicity we shall
+suppose the atom to consist of a single electron moving in an electro-
+static field of force. The field of radiation may be described by a
+scalar and a vector potential. These potentials are to a certain extent
+arbitrary and may be chosen so that the scalar potential vanishes.
+The field is then completely described by the vector potential A,, A,,
+A,, or A. The change that the field. causes in the Hamiltonian
+describing the atom is now, as explained at the beginning of § 41,
+
+1 -&a\7 nol  @
+Hg = 5,-|(p+54) P*| ag (Pe A) +
+
+e2
+
+Qmc* AY (81)
+
+This is the classical interaction energy. The A that occurs here should
+be the value of the vector potential at the point where the electron is
+momentarily situated. It is, however, a good enough approximation
+if we take this A to be the vector potential at some fixed point in the
+atom, such as the nucleus, provided we are dealing with radiation
+whose wavelength is large compared with the dimensions of the atom.
+﻿240 THEORY OF RADIATION § 63
+
+Let us first consider the field of radiation classically and ignore its
+interaction with the atom. The vector potential A satisfies, according
+to Maxwell’s theory, the equations
+
+A = 0, divA = 0, (62)
+
+being short for 6°/c? dt? 0?/éx*— @*/ay?— 6?/éz2, The first of these
+equations shows that A can be resolved into Fourier components in
+the form
+
+A= f fA, etka i2minel 4 A gitkx) nine 3p, (63)
+
+each Fourier component representing a train of waves moving with
+the velocity of light, described by a vector k whose direction gives
+the direction of motion of the waves and whose magnitude |k]| is
+connected with their frequency v, by
+
+Qavy, = c[k]. (64)
+The vector k is just the momentum of a photon which the quantum
+theory would associate with these waves, divided by #. For each
+value of k we have an amplitude A,, which is in general a complex
+vector, and the integral in (63) extends over the whole of the three-
+dimensional k-space. The second of equations (62) gives -
+
+(k, Ay) = 0, (65)
+showing that, for each value of k, A; is perpendicular to k. This
+expresses that the waves are transverse waves. A, 1s determined by
+
+its two components in two directions perpendicular to each other and
+
+to k, these two components corresponding to two independent states
+of linear polarization.
+
+The total energy of the radiation is given by the volume integral]
+Hy == (87)-4 [ (S24 #) Bx (66)
+taken over the whole of space, where the electric field € and the
+
+magnetic field # of the radiation are given by
+
+= Af = curlA. (67)
+
+Using standard formulas of vector analysis, we have
+div[A x Af] = (#, curl A)—(A, curl #) = Jf—(A, curl curl A)
+== A+ (A, VA)
+with the help of the second of equations (62). Thus (66) becomes,
+﻿§63 INTERACTION ENERGY BETWEEN PHOTONS AND AN ATOM 241
+
+with neglect of a term which can be transformed to a surface integral
+at infinity,
+
+(l/aA dA
+
+H. = 8 -i je ——;3 =
+
+= (Bn) } Fal at” Gt
+
+By substituting for A here its value given by (63), we can get the
+
+energy of the radiation in terms of the Fourier amplitudes A,. The
+
+energy of the radiation is constant (since we are now ignoring the
+
+interaction of the radiation and the atom), so in this calculation we
+
+may take ¢ = 0. This means taking
+
+A= | (Ay+A_Jei ah, (69)
+
+J vea)| de, (68)
+
+VA= — [ R( A, +A ,jete9 ask,
+
+@A/at = ic | Iki(A,, —A_, )e-@™ Bh, (70)
+Inserting these expressions in (68), we get
+Hy = (8) | { | (k/2(A, +A, Ay +A_.)—
+—{k||k'|(A,—A_,, Ay —A_, le et) hed dBa:
+=? [[ {k%(A, +A y, Ay tA)
+
+— |k||k’|(A, —A_,, Ay A, )}JS(K-+k') Bhd’,
+
+with the help of formula (49) of §23, 6(k+k’) being the product of
+three factors, one for each component of k. Hence
+
+Hp = 7 f K(A,+A_,, Ady Ay) —(Ay—A_4, A_.—A,)} d*ke
+
+d
+
+== dn? | k(A,, A,,) dk. . (71)
+
+We can replace the continuous distribution of k-values by a dust of
+discrete k-values,, like we did with the p-values in the preceding
+section. The integral (71) then goes over, according to formula (52),
+
+into the sum Hp = Aq? >) k?(A,, A,)sg',
+k
+
+s, being the density of the discrete k-values. We may also write
+this as Hy = 4? 3 WA, Ay sz}, (72)
+kl
+
+A,, being a component of A, in a direction 1 perpendicular to k and
+﻿242 THEORY OF RADIATION § 63
+
+‘the summation with respect to | referring to two directions | perpen-
+
+dicular +o each other, Thus there is one term in (72) for each inde-
+
+pendent stationary state for a photon.
+
+The field quantities € and # at any point x can be looked upon
+as dynamical variables. The quantities
+
+— Qrivyt A xe 4... gD RL
+Aggy = Aggy 87S, Ayy = Ayer
+
+are then dynamical variables at time #, since they are connected with
+& and # at various points x at time ¢ by equations which do not
+involve #, as follows from (63) and (67). A,, is constant, so A, varies
+with ¢ according to the simple harmonic law. Thus A,, is like the 7,
+of a harmonic oscillator, defined by (3) of § 34, the w of the oscillator
+being 27v,. We may take each A,,, to be proportional to the », of
+some harmonic oscillator and then the field of radiation becomes a
+set of harmonic oscillators.
+
+Let us now pass over to the quantum theory and take the A,yy, Ax
+to be dynamical variables in the Heisenberg picture. The expression
+(72) for the energy may be retained unchanged, the order in which
+the factors A,,, Ay, there occur being the correct one to give no zero-
+point energy. The A,, then still vary with time according to the e
+law and may still be taken to be proportional to the 7,’s of harmonic
+oscillators. The factor of proportionality may be obtained by equat-
+ing (72) to the expression (39) for the energy, with the label a replaced
+by the two labels k and I and with Av, for iw,. This gives
+
+de® > KA yy Ayy Se? = 2 hy Meu Tu:
+
+the suffix ¢ being inserted to show that we are dealing with Heisenberg
+dynamical variables (as we should when transferring equations of the
+classical theory to the quantum theory). Hence, using (64),
+
+47? Ay = ch yy Sh, (73)
+
+with neglect of an unimportant arbitrary phase factor. In this way
+the Heisenberg dynamical variables 1,y, which describe the field of
+radiation as a set of oscillators, are introduced. The commutation
+relations between the 7, and 7, are known, being given by (11), so
+equation (73) fixes the commutation relations between the A,, and
+Ay, It thus fixes the commutation relations between the potentials
+A and the field quantities € and # at various points x at the time J.
+(Incidentally, the commutation relations of the Ay, 4 are fixed,
+﻿§63 INTERACTION ENERGY BETWEEN PHOTONS AND AN ATOM 243
+
+so the commutation relation of two potential or field quantities at
+two different times is also fixed.)
+
+We can still use (73) when the interaction between the field of
+radiation and the atom is taken into account. This involves assuming
+that the interaction does not affect the commutation relations .
+between the potentials and field quantities at a given time. The
+interaction causes the 7,,,s to cease to vary according to the simple
+harmonic law and the oscillators to cease to be harmonic. Thus it
+may affect the commutation relation between two potential or field
+quantities at two different times.
+
+We can now take over the interaction energy (61) into the quantum.
+theory, putting p, for p to show it is a Heisenberg dynamical variable.
+Taking the atomic nucleus to be at the origin we get, by substituting
+(63) with x = 0 into (61),
+
+é
+
+if
+on me
+
+al (Bp Aut Ay) ad
+
++503 =f Aut Ags Ay t Ay 1) BhdPk’
+
+e ~ 4, 8 ~ oo
+=> > (Dy Aggy + Ang) 8k t+ ames > (Awt+ Ans Age + Anis set
+E ke
+if we pass from continuous to discrete k-values. Thus
+
+é 7 VK
+Ao, = me > PYWAxut Anus +
+
+>, (Anu Ayy)(A vvit All sg tse,
+
+py being the component of p, in the direction 1. With the help of (73)
+we may express Hp, in terms of the y, and 7,4, and we can then drop
+the suffix ¢ (which means going over.to Schrédinger dynamical
+variables), so that we obtain finally
+
+cht yn pot A,,)eci-
+42m > PMc (Mert Hua) se 4
+i
+
+eh 4
++ 324m Mm Vic"
+
+KEI
+
+With the model of the atom we are using, the interaction energy
+appears as a linear plus a quadratic function in the y’s and 7's. The
+linear terms give rise to emission and absorption processes, the
+
+Hy =
+
+‘mat tha) mert+ ter) Ws tse*. (74)
+﻿244 THEORY OF RADIATION § 63
+
+quadratic ones to scattering processes and processes in which two
+photons are absorbed or emitted simultaneously. The order of the
+factors 7 and 7 in the quadratic terms is not determined by the
+procedure of working from the classical theory, but this order is
+unimportant, since a change in it merely changes Hy by a constant.
+
+The matrix element of Hg referring to the emission of a photon
+into the discrete state KI, or into the discrete state p’l, as it may also
+be labelled, with the atom jumping from state «° to state a’, is
+
+eh é€
+
+’ Ne ee Cy! -%
+4772my't oe [plo >sy — mh(2av' jt Co [p,]o>s5
+
+since s, == s,/%. The p, occurring here, referring to the momentum
+of the electron, is, of course, quite distinct from the other letters p,
+referring to the momentum of the emitted photon. To avoid con-—
+fusion we shall replace the electron momentum p by mx, these two
+dynamical variables being the same for the unperturbed atom. Pass-
+ing over to continuous photon states by means of the conjugate
+imaginary of equation (56), we get
+
+<p'Dle’|Hg|a°> =
+
+é
+h(2zv')!
+
+Similarly, the matrix element of Hy referring to the absorption of a
+photon from the continuous state p% with the atom jumping from
+state «° to state a’ is
+
+<a’ |g |[p%la®> =
+
+¢P'lo’|Hg|0®> =
+
+Coe" |, |X%9>- (75)
+
+é
+A(2av%)t
+and the matrix element referring to the scattering of a photon from
+
+the continuous state p°l® to the continuous state p’l’ with the atom
+jumping from state «” to state a’ is
+
+<a" | |a°>, (76)
+
+nee e ,
+<p'Vo |Hg|p°l°a> = Orhimly't (LT) by-aas (77)
+there being two terms in (74) which contribute to it. These matrix
+elements will be used in the next section. The matrix elements
+referring to the simultaneous absorption or emission of two photons
+may be written down in the same way, but they lead to physical
+
+effects too small to be of practical importance.
+
+64. Emission, absorption, and scattering of radiation
+
+We can now determine directly the coefficients of emission, absorp-
+tion, and scattering of radiation by substituting in the formulas of
+﻿§ 64 EMISSION, ABSORPTION, AND SCATTERING OF RADIATION 245
+
+Chapter VIII the values for the matrix elements given by (75), (76),
+and (77).
+
+For determining the emission probability we can use formula
+(56) of §53. This shows that for an atom in a state a? the proba-
+bility per unit time per unit solid angle of its spontaneously emitting
+a photon and dropping to a state a’ of lower energy is
+
+2 2
+Now the energy and momentum of a photon of frequency v are
+W = hy, P = hy/e.
+Again, from the Heisenberg law (20) of § 29,
+Cot! |e == — 2rrtv(a?a')<ar" |x|,
+v(a%') being the frequency connected with transitions from state «?
+to state «’, which in une present case is just the frequency v of the
+emitted radiation. These results substituted in (78) make the emis-
+sion coefficient reduce to
+(2arv)8
+hes
+To obtain the rate of emission of energy per unit solid angle for a
+specified polarization, we must multiply this by hv. This gives for
+the total rate of emission of energy in all directions
+
+4 (2av)*
+
+3 8
+
+which is in agreement with expression (34) of § 45 and justifies Heisen-
+berg’s assumption for the interpretation of his matrix elements.
+
+In the same way the absorption coefficient, given by formula
+
+(59) of § 58, becomes for photons
+
+4n*h? Wile 1 he 2 8arFp
+
+BP {h Gmye Male) = =
+
+This absorption coefficient refers to an incident beam of one photon
+
+crossing unit area per unit time per unit energy range. if we take
+
+one per unit frequency range instead of energy range, as is usual
+when dealing with radiation, the absorption coefficient becomes
+
+Sry
+
+he ]<cx’ [ea |x |?.
+
+This result is the same as (32) of § 45, if we substitute for the #,
+
+there the energy hy of a single photon. Thus. the elementary theory
+BASS 57 B
+
+| <x Jeary |ox?> |”. (79)
+
+[<a‘|ex|a®|?, (80)
+
+|<ox" Jen |x> |.
+﻿246 THEORY OF RADIATION § 64
+
+of § 45, in which the radiation field is treated as an external perturba-
+ton, gives the correct value for the absorption coefficient.
+
+This agreement between the elementary theory and the present
+theory could be inferred from general arguments. The two theories
+differ only in that the field quantities all commute with one another
+in the elementary theory and satisfy definite commutation relations
+in the present theory, and this difference becomes unimportant for
+strong fields. Thus the two theories must give the same absorption
+and emission when strong fields are concerned. Since both theories
+give the rate of absorption proportional to the intensity of the inci-
+dent beam, the agreement must hold also for weak fields in the case of
+absorption. In the same way the stimulated part of the emission in the
+present theory must agree with the emission in the elementary theory.
+
+Let us now consider scattering. The direct scattering coefficient is
+given by formula (38) of § 50. Such scattering of photons will not be
+accompanied by any change of state of the atom on account of the
+factor 6,0 in the expression for the matrix element (77). Thus the
+final energy W’ of the photon will equal its initial energy W°. The
+scattering coefficient now reduces to
+
+e4/méct. (1/19).
+
+This is the same as that given by classical mechanics for the scattering
+of radiation by a free electron. We thus see that the direct scatter-
+ing of radiation by an electron in an atom is independent of the atom
+and is correctly given by the classical theory. This result, it should
+be remembered, holds only provided the wavelength of the radiation
+is large compared with the dimensions of the atom.
+
+The direct scattering is a mathematical concept and cannot be
+separated out experimentally from the total scattering, given by
+formula (44) of § 51. Let us see what this total scattering is in the
+case of photons. We must be careful in our application of formula
+(44) of §51. The summation > in this formula may be considered as
+
+representing the contribution to the scattering of double transitions
+consisting of transitions firstly from the initial state to state k and
+secondly from state & to the final state. The first transition may be
+an absorption of the incident photon and the second an emission of
+the required scattered photon, but it is also possible for the first
+transition to be the emission and the second the absorption. It is
+clear from the general nature of the method used for deriving formula
+﻿§ 64 EMISSION, ABSORPTION, AND SCATTERING OF RADIATION 247
+
+(44) of § 51 that both these kinds of double transitions must be in-
+cluded in the summation ¥ when this formula is applied to photons,
+i
+
+although only the first of them appears in the actual derivation given
+in § 51, as the possibility of the particle being created or annihilated
+
+was not taken into account there.
+We use zero, single prime, and double prime to refer to the initial,
+
+tinal, and intermediate states of the atom respectively, and zero and
+single prime to refer to the absorbed and emitted photons respec- -
+tively. Then, for the double transition of absorption followed by
+emission, we must take for the matrix elements
+
+<b|V|p%>, — <p’a’|V|k>
+of the formula (44) of § 51
+(k|V |p = <a" |Ho|pla, — <p’a’|V [b> = <p'l’a'| Hale".
+Also EH! —E,, = hv +-Hp(0°)—Ap(«") = hfy°—v(a"o)],
+where hy(e"0®) = Hp(a”)— ‘os
+
+Similarly, for the double transition of emission followed by absorption
+we must take
+(k|V|p%> = <p'V'a"|Ho{a, — <p’a’|Vik> = <a'|Hg|pl’a">
+and
+E' —E, = b+ Hp(«°)—Hp(2")—h hv’ = —hfp' + (00°) ],
+there being now two photons, of frequencies v® and v’, in existence
+for the intermediate state. Substituting in (44) of § 51 the values of
+
+the matrix elements given by (75), (76), and (77), we get for the
+sates coefficient
+
+i aI OD) Barae +
++> fe faa ble ola SIP can
+If we write (81) in terms of x instead of 2, we get
+rey a (l 1) 8rg0 — > voxel” )o( 0” (= ria ae aad
+eel) oy
+
+We can simplify (82) with the help of the quantum conditions.
+
+We have
+Ly Lyo—LyoXy = 0,
+﻿248 THEORY OF RADIATION § 64
+which gives
+> {ox" [ty] <r” |atyo x — Cox" Jara |e” ><” ary fe} = 0, (83)
+and also
+Cy Lyp— Lp y = 1/m. (ty Pp— Pye Ly) = whim. (1h),
+which gives
+> {dcx lay |ae”> . vac") <a" \a0[0°>—v oat” Ken latyo ja” . Lo" [ary [oe >}
+a 90) 8 igo = = (VP) Byrne. (84)
+27m,
+
+Qari m
+Multiplying (83) by v’ and adding to (84), we obtain
+¥ {6a ep.” <o"lye|a>[’ +-v(a"a®)] — Ca ee” a®>[v" + v(a!a")}
+== hf/2am. (V1) by-40-
+
+If we substitute this expression for #/27m.(11°)5,..0 in (82), we
+
+obtain, after a straightforward reduction making use of identical
+relations between the v’s,
+
+(27re)* yee ee ee
+hict v9 —p(a"n®) v’-+v(a"e®)
+This gives the scattering coefficient in the form of the effective
+area that a photon has to hit per unit solid angle of scattering. It is
+
+known as the Kramers-Heisenberg dispersion formula, having been first
+
+obtained by these authors from analogies with the classical theory
+of dispersion.
+
+The fact that the various terms in (82) can be combined to give
+the result (85) justifies the assumption made in deriving formula (44)
+of § 51, that the matrix elements <p’a’|V|p’e”> of the interaction
+energy are of the second order of smallness compared with the
+<p'a’ |V|k> ones, at any rate when the scattered particles are photons.
+
+2
+poy’3 . (85)
+
+a”
+
+65. An assembly of fermions
+
+An assembly of fermions can be treated by a method similar to
+that used in §§ 59 and 60 for bosons. With the kets (1) we may use
+the antisymmetrizing operator A defined by
+
+A=w!4D4P, (2')
+
+summed over all permutations P, the + or — sign being taken
+according to whether P is eyen or odd. Applied to the ket (1) it gives
+
+WIE S + Plot ob o§...09> = AlatoPa®...0%>, (3')
+a ket corresponding to a state for an assembly of u’ fermions. The
+﻿§ 65 AN ASSEMBLY OF FERMIONS 249
+
+ket (3’) is normalized provided the individual fermion kets |a”, |a”,...
+are all different, otherwise it is zero. In this respect the ket (3’) is
+simpler than the ket (3). However, (3’) is more complicated than (3)
+in that (3') depends on the order in which a”, 2, o”,... occur in it,
+being subject to a change of sign if an odd permutation is applied
+to this order.
+
+We can, as before, introduce the numbers 7), No, 3,... of fermions
+in the states ao, o, «,... and treat them as dynamical variables or
+observables. They each have as eigenvalues only 0 and 1. They form
+a complete set of commuting observables for the assembly of fermions.
+The basic kets of a representation with the n’s diagonal may be taken
+to be connected with the kets (3’) by the equation
+
+Alotaboe...a%> = |, ngng...> (6’)
+corresponding to (6), the n’s being connected with the variables
+at, a, of... by equation (4). The -- sign is needed in (6’) since, for
+given n’”’s, the occupied states «%, «”, a°,... are fixed but not their
+order, so that the sign of the left-hand side of (6’) is not fixed. To
+set up a rule which determines the sign in (6’), we must arrange all
+the states « for a fermion arbitrarily in some standard order. The
+a's oceurring in the left-hand side of (6’) form a certain selection from
+all the a’s and the standard order for all the a’s will give a standard
+order for this selection. We now make the rule that the + sign should
+occur in (6’) if the «’s on the left-hand side can be brought into their
+standard order by an even permutation and the — sign if an odd
+permutation is required. Owing to the complexity of this rule,
+the representation with the basic kets |n,ngn3...> is not a very
+useful one.
+
+If the number of fermions in the assembly is variable, we can set
+up the complete set of kets
+
+Id, Ja, Ajatx®>, Alatarae>, (9’)
+corresponding to (9). A general ket is now expressible as a sum of
+the various kets (9’).
+
+To continue with the development we introduce a set of linear
+operators n, 7, one pair 7,, 7, corresponding to each fermion state «*,
+satisfying the commutation relations
+
+Na Not No Na = 9
+Na ot No fa = 0, (11’)
+Dao Qa = Sap:
+﻿250 THEORY OF RADIATION § 65
+
+These relations are like (11) with a -+ sign instead of a — on the left-
+hand side. They show that, for a + 6, 7, and 7, anticommute with
+n» and 7, while, putting b = a, they give
+
+m= 9, = 0,  FaMat Nata = 1. (11’)
+To verify that the relations (11’) are consistent, we note that linear
+operators y, 7 satisfying the conditions (11’) can be constructed in
+the following way. For each state a we take a set of linear operators
+Fxq> Sy Fcq like the o,, o,, o, introduced in § 37 to describe the spin
+of an electron and such that o,,, Gyq; 6,4 commute with 9,,, Op, %»
+for 6 a. We also take an independent set of linear operators €,,
+one for each state «*, which all anticommute with one another and
+have their squares unity, and commute with all the o variables.
+Then, putting
+
+Na = 2$a(Fra—tya)> Na = HalOrattya),
+we have all the conditions (11’) satisfied.
+From (11")
+
+("4 ja)” = Naa Na Ie = Nall—e Na) a = Na Na
+This is an algebraic equation for 7,7,, showing that »,7, is an
+observable with the eigenvalues 0 and 1. Also y, 7, commutes with
+1, i, for 6 4a. These results allow us to put
+
+Nata = Na (12')
+the same as (12). From (11”) we get now
+Na Ve = I—n,, (13)
+
+the equation corresponding to (13),
+Let us write the normalized ket which is an eigenket of all the n’s
+belonging to the eigenvalues zero as |0>. Then
+
+Ng\O> = 0,
+so from (12’) CO| M4 Fg|O> = 0.
+Hence FqlO> = 9, . (15')
+
+like (15). Again
+showing that 7,,|0> is normalized, and
+
+showing that »,|0> is an eigenket of n, belonging to the eigenvalue
+unity. It is an eigenket of the other n’s belonging to the eigenvalues
+zero, since the other n’s commute with »,. By generalizing the
+﻿§ 65 AN ASSEMBLY OF FERMIONS 251
+
+argument we see that 4_ 7p Ne---4y|07 18 normalized and is a simul-
+taneous eigenket of all the n’s, belonging to the eigenvalues unity
+for Mg Nyy Ney, R, and zero for the other n’s. This enables us to put
+
+Alatoal...07> = 14 Ne Mg|O> (17)
+both sides being antisymmetrical in the labels a, 6, c,...,g. We have
+here the analogue of (17).
+
+If we pass over to a different set of basic kets [8+> for a fermion,
+we can introduce a new set of linear operators 74 correspor.ding to
+them. We then find, by the same argument as in the case of bosons,
+that the new 7’s are connected with the original ones by (21). This
+shows that there is a procedure of second quantization for fermions,
+similar to that for bosons, with the only difference that the commu-
+tation relations (11’) must be employed for fermions to replace the
+commutation relations (11) for bosons.
+
+A symmetrical linear operator Up of the form (22) can be expressed
+in terms of the y, 7 variables by a similar method to that used for
+bosons. Equation (24) still holds, and so does (25) with S replaced
+by A. Instead of (26) we now have
+
+Oy Ney Marg (0 = pa 2 (—)9 1 Nes Ney |0><a|U [z>
+= 2 Na 2 (—)’-*n;,* Nay Nag? |O>85x,<4| U\b>, (26’)
+
+nz,i meaning that the factor y,, must be cancelled out, without its
+position among the other 7,’s being changed before the cancellation.
+Instead of (27) we have
+
+Fe Nay Nag LOD =D (ng? Ney Nae |9 Spe, (27')
+
+so (28) holds unchanged and thus (29) holds unchanged. We have
+the same final form (29) for Up in the fermion case as in the boson
+case. Similarly, a symmetrical linear operator Vp of the form (30) can
+
+be expressed as v= Se ny (ab |V led) ua Fes (35"}
+auc
+
+the same as one of the ways of writing (35).
+
+The foregoing work shows that there is a deep-seated analogy
+between the theory of fermions and that of bosons, only slight
+changes having to be made in the general equations of the formalism
+
+when one passes from one to the other.
+There is, however, a development of the theory of fermions that
+
+has no analogue for bosons. For fermions there are only the two
+﻿252 THEORY OF RADIATION § 65
+
+alternatives of a state being occupied or unoccupied and there is
+symmetry between these two alternatives. One can demonstrate the
+symmetry mathematically by making a transformation which inter-
+changes the concepts of ‘occupied’ and ‘unoccupied’, namely
+
+Na = Nas Na = Nar
+
+The creation operators of the unstarred variables are the annihilation
+operators of the starred variables, and vice versa. Thestarred variables
+are now seen to satisfy the same quantum conditions and to have all
+the same properties as the unstarred ones..
+
+If there are only a few unoccupied states, a convenient standard
+ket to work with would be the one for which every state is occupied,
+namely |0*> satisfying
+
+Mq|0*> = [O*).
+It thus satisfies nilo*> = 0,
+or ial0*) = 0.
+
+Other states for the assembly will now be represented by
+
+Ta 1 Ne-|0*),
+in which variables appear referring to the unoccupied fermion states
+a,b,c.... We may look upon these unoccupied fermion states as holes
+among the occupied ones and the 7* variables as the operators of
+creation of such holes. The holes are just as much physical things
+as the original particles and are also fermions.
+
+</p>
+    </body>
+</html>

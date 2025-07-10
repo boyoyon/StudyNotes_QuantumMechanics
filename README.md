@@ -14,7 +14,7 @@
 　で、内容が頭に入ってこない<br>
 　　↓<br>
 『<a href="http://www.stat.ucla.edu/~ywu/Dirac.pdf">The Principles of QUANTIM MECHANICS</a>』を OCR して Mathjax 化して機械翻訳して
- <a href="data/The Principles of Quantum Mechanics.html">学習ノート</a>を作成した<br><br>
+ <a href="https://boyoyon.github.io/StudyNotes_QuantumMechanics/data/The%20Principles%20of%20Quantum%20Mechanics.html">学習ノート</a>を作成した<br><br>
 　(注意)<br>
 　　・OCR＋Mathjax化＋機械翻訳で本来の意味と乖離している可能性あり<br>
 　<br>

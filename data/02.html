@@ -14,6 +14,11 @@
             {
                 margin-left: 30px;
             }
+            .margin-large-blue
+            {
+                margin-left: 30px;
+                color: blue;
+            }
            .margin-abstract {
                margin-left: 60px; /* 左マージンを広くする */
                margin-right: 60px; /* 右マージンを広くする */
@@ -97,8 +102,8 @@
     </style>
     </head>
     <body>
-        <h2><center>Ⅱ DYNAMICAL VARIABLES AND OBSERVABLES<br>力学変数とオブザーバブル</center></h2>
-<h3>7. Linear operators　線形演算子</h3>
+        <h2><center>Ⅱ DYNAMICAL VARIABLES AND OBSERVABLES<br>力学変数とオブザーバブル(観測可能量)</center></h2>
+<h3>7. Linear operators　線形作用素</h3>
 <p>
 In the preceding section we considered a number which is a linear
 function of a ket vector, and this led to the concept of a bra vector.
@@ -106,13 +111,13 @@ We shall now consider a ket vector which is a linear function of a
 ket vector, and this will lead to the concept of a linear operator.
 
 </p><p class="blue">
-前の節では、ケットベクトルの線形関数である数を考え、そこからブラベクトルの概念を導きました。次に、ケットベクトルの線形関数であるケットベクトルを考え、そこから線形演算子の概念を導きます。
+前の節では、ケットベクトルの線形関数である数を考え、そこからブラベクトルの概念を導きました。次に、ケットベクトルの線形関数であるケットベクトルを考え、そこから線形作用素の概念を導きます。
 
 </p><p>
 Suppose we have a ket \(|F\rangle\) which is a function of a ket \(|A\rangle\), i.e. to each ket \(|A\rangle\) there corresponds one ket \(|F\rangle\), and suppose further that the function is a linear one, which means that the \(|F\rangle\) corresponding to \(|A\rangle + |A^\prime\rangle\) is the sum of the \(|F\rangle\)'s corresponding to \(|A\rangle\) and to \(|A^\prime\rangle\), and the \(|F\rangle\) corresponding to \(c|A\rangle\) is \(c\) times the \(|F\rangle\) corresponding to \(|A\rangle\), \(c\) being any numerical factor. Under these conditions, we may look upon the passage from \(|A\rangle\) to \(|F\rangle\) as the application of a linear operator to \(|A\rangle\). Introducing the symbol \(\alpha\) for the linear operator, we may write
 
 </p><p class="blue">
-ケット \(|F\rangle\) がケット \(|A\rangle\) の関数であるとします。つまり、各ケット \(|A\rangle\) には 1 つのケット \(|F\rangle\) が対応します。また、この関数は線形関数であるとします。つまり、\(|A\rangle + |A^\prime\rangle\) に対応する \(|F\rangle\) は、\(|A\rangle\) と \(|A^\prime\rangle\) に対応する \(|F\rangle\) の合計であり、\(c|A\rangle\) に対応する \(|F\rangle\) は、\(|A\rangle\) に対応する \(|F\rangle\) の \(c\) 倍です (\(c\) は任意の数値因数です)。これらの条件下では、\(|A\rangle\)から\(|F\rangle\)への遷移は、\(|A\rangle\) への線形演算子の適用とみなすことができます。線形演算子を表す記号 \(\alpha\) を導入すると、次のように書きます。
+ケット \(|F\rangle\) がケット \(|A\rangle\) の関数であるとします。つまり、各ケット \(|A\rangle\) には 1 つのケット \(|F\rangle\) が対応します。また、この関数は線形関数であるとします。つまり、\(|A\rangle + |A^\prime\rangle\) に対応する \(|F\rangle\) は、\(|A\rangle\) と \(|A^\prime\rangle\) に対応する \(|F\rangle\) の合計であり、\(c|A\rangle\) に対応する \(|F\rangle\) は、\(|A\rangle\) に対応する \(|F\rangle\) の \(c\) 倍です (\(c\) は任意の数値因数です)。これらの条件下では、\(|A\rangle\)から\(|F\rangle\)への遷移は、\(|A\rangle\) への線形作用素の適用とみなすことができます。線形作用素を表す記号 \(\alpha\) を導入すると、次のように書きます。
 </p><p>
 
 \[
@@ -122,7 +127,7 @@ Suppose we have a ket \(|F\rangle\) which is a function of a ket \(|A\rangle\), 
 in which the result of \(\alpha\) operating on \(|A\rangle\) is written like a product of \(\alpha\) with \(|A\rangle\). We make the rule that in such products the ket vector must always be put on the right of the linear operator. The above conditions of linearity may now be expressed by the equations
 
 </p><p class="blue">
-ここで、\(\alpha\) を \(|A\rangle\) に作用させた結果は、\(\alpha\) と \(|A\rangle\) の積のように表される。このような積においては、ケットベクトルは常に線形演算子の右側に置くという規則を定める。上記の線形性の条件は、以下の式で表される。
+ここで、\(\alpha\) を \(|A\rangle\) に作用させた結果は、\(\alpha\) と \(|A\rangle\) の積のように表される。このような積においては、ケットベクトルは常に線形作用素の右側に置くという規則を定める。上記の線形性の条件は、以下の式で表される。
 </p><p>
 
 \[
@@ -157,6 +162,9 @@ for any \(|A\rangle\). Equation (2) and the first of equations (1) show that
 products of linear operators with ket vectors satisfy the distributive
 axiom of multiplication.
 
+</p><p class="blue">
+任意の \(|A\rangle\) に対して。式(2)と式(1)の最初の式は、線形作用素とケットベクトルの積が乗法の分配公理を満たすことを示しています。
+
 </p><p>
 Linear operators can also be multiplied together, the product of
 two linear operators being defined as that linear operator, the appli-
@@ -165,187 +173,158 @@ of the two linear operators successively. Thus the product \(\alpha\beta\) is de
 changes it into that ket which one would get by operating first on
 \(|A\rangle\) with \(\beta\), and then on the result of the first operation with \(\alpha\). In symbols
 
+</p><p class="blue">
+線形作用素は互いに掛け合わせることも可能であり、2つの線形作用素の積は、任意のケットにその積を適用した場合に、2つの線形作用素を順に適用した場合と同じ結果になる線形作用素として定義されます。したがって、積\(\alpha\beta\)は、任意のケット\(|A\rangle\)に作用すると、最初に\(|A\rangle\)に\(\beta\)を作用させ、次に最初の演算結果に\(\alpha\)を作用させた場合に得られるケットに変換する線形作用素として定義されます。記号で表すと
+</p><p>
+
 \[
 \{\alpha\beta\}|A\rangle = \alpha\{\beta|A\rangle\}
 \]
 
-This definition appears as the associative axiom of multiplication for
-the triple product of «, 8, and |A>, and allows us to write this triple
-product as «8|A> without brackets. However, this triple product is
-in general not the same as what we should get if we operated on |A>
-first with « and then with f, i.e. in general «B|A)> differs from Ba|A),
-so that in general of must differ from Ba. The commutative axiom of
-multiplication does not hold for linear operators. It may happen as a
-special case that two linear operators ¢ and y are such that éy and
-nf€ are equal. In this case we say that & commutes with y, or that &
-and » commute. :
+This definition appears as the associative axiom of multiplication for the triple product of \(\alpha,\beta,\) and \(|A\rangle\), and allows us to write this triple product as \(\alpha\beta |A\rangle\) without brackets. However, this triple product is in general not the same as what we should get if we operated on \(|A\rangle\) first with \(\alpha\) and then with \(\beta\), i.e. in general \(\alpha\beta |A\rangle\) differs from \(\beta\alpha |A\rangle\), so that in general \(\alpha\beta\) must differ from \(\beta\alpha\). The commutative axiom of multiplication does not hold for linear operators. It may happen as a special case that two linear operators \(\xi\) and \(\eta\) are such that \(\xi\eta\) and \(\eta\xi\) are equal. In this case we say that \(\xi\) commutes with \(\eta\), or that \(\xi\) and \(\eta\) commute.
+
+</p><p class="blue">
+この定義は、\(\alpha,\beta,\) と \(|A\rangle\) の三重積に対する乗法の結合公理として現れ、この三重積を括弧なしで \(\alpha\beta |A\rangle\) と表記することを可能にします。しかし、この三重積は、一般に、\(|A\rangle\) を最初に \(\alpha\) で、次に \(\beta\) で演算した場合の結果とは異なります。つまり、一般に \(\alpha\beta |A\rangle\) は \(\beta\alpha |A\rangle\) と異なるため、一般に \(\alpha\beta\) は \(\beta\alpha\) と異なる必要があります。乗法の可換公理は線形作用素には当てはまりません。特殊なケースとして、2つの線型作用素 \(\xi\) と \(\eta\) が等しくなることがあります。この場合、\(\xi\) は \(\eta\) と可換である、または \(\xi\) と \(\eta\) は可換であると言います。
 
 </p><p>
-By repeated applications of the above processes of adding and
-multiplying linear operators, one can form sums and products of
-more than two of them, and one can proceed to build up an algebra
-with them. In this algebra the commutative axiom of multiplication
-does not hold, and also the product of two linear operators may
-vanish without either factor vanishing. But all the other axioms of
-ordinary algebra, including the associative and distributive axioms
-of multiplication, are valid, as may easily be verified.
+By repeated applications of the above processes of adding and multiplying linear operators, one can form sums and products of more than two of them, and one can proceed to build up an algebra with them. In this algebra the commutative axiom of multiplication does not hold, and also the product of two linear operators may vanish without either factor vanishing. But all the other axioms of ordinary algebra, including the associative and distributive axioms of multiplication, are valid, as may easily be verified.
+
+</p><p class="blue">
+上記の線形作用素の加法と乗法の手順を繰り返し適用することで、2つ以上の線形作用素の和と積を形成でき、それらを用いた代数を構築することができます。この代数では、乗法の可換公理は成立せず、また、2つの線形作用素の積は、どちらの因数も消滅せずに消滅することがあります。しかし、乗法の結合公理と分配公理を含む、通常の代数の他のすべての公理は有効であり、容易に検証できます。
 
 </p><p>
-If we take a number & and multiply it into ket vectors, it appears
-as a linear operator operating on ket vectors, the conditions (1) being
-fulfilled with k substituted for «. A number is thus a special case of
-a linear operator. It has the property that it commutes with all linear
-operators and this property distinguishes it from a general linear
-operator.
+If we take a number \(k\) and multiply it into ket vectors, it appears as a linear operator operating on ket vectors, the conditions (1) being fulfilled with \(k\) substituted for \(\alpha\). A number is thus a special case of a linear operator. It has the property that it commutes with all linear operators and this property distinguishes it from a general linear operator.
+
+</p><p class="blue">
+数 \(k\) をケットベクトルに掛け合わせると、ケットベクトルに作用する線型作用素として現れ、条件 (1) は \(k\) を \(\alpha\) に置き換えることで満たされます。このように、数は線型作用素の特別なケースです。数はすべての線型作用素と可換であるという性質を持ち、この性質によって一般線型作用素と区別されます。
 
 </p><p>
-So far we have considered linear operators operating only on ket
-vectors. We can give a meaning to their operating also on bra vectors,
-in the following way. Take the scalar product of any bra ¢B| with
-the ket «|A>. This scalar product is a number which depends
-linearly on |A> and therefore, from the definition of bras, it may be
-considered as the scalar product of |A> with some bra. The'bra thus
-defined depends linearly on <B], s0 we may look upon it as the result of
-some linear operator applied to <B|. This linear operator is uniquely
-determined by the original linear operator a and may reasonably be
-called the same linear operator operating on a bra. In this way our
-linear operators are made capable of operating on bra vectors.
+So far we have considered linear operators operating only on ket vectors. We can give a meaning to their operating also on bra vectors, in the following way. Take the scalar product of any bra \(\langle B|\) with the ket \(\alpha |A\rangle\). This scalar product is a number which depends linearly on \(|A\rangle\) and therefore, from the definition of bras, it may be considered as the scalar product of \(|A\rangle\) with some bra. The'bra thus defined depends linearly on \(\langle B|\), so we may look upon it as the result of some linear operator applied to \(\langle B|\). This linear operator is uniquely determined by the original linear operator a and may reasonably be called the same linear operator operating on a bra. In this way our linear operators are made capable of operating on bra vectors.
+
+</p><p class="blue">
+これまで、ケットベクトルに作用する線形作用素についてのみ考察してきました。ブラベクトルにも作用する線形作用素の意味を、以下のように定義することができます。任意のブラベクトル \(\langle B|\) とケットベクトル \(\alpha |A\rangle\) のスカラー積をとります。このスカラー積は \(|A\rangle\) に線形に依存する数であるため、ブラベクトルの定義から、\(|A\rangle\) と何らかのブラベクトルのスカラー積とみなすことができます。このように定義されたブラベクトルは \(\langle B|\) に線形に依存するため、これを \(\langle B|\) に何らかの線形作用素を適用した結果と見なすことができます。この線形作用素は元の線形作用素 a によって一意に決定され、ブラベクトルに作用する線形作用素と同じものと考えることができます。このようにして、線形作用素はブラベクトルにも作用できるようになります。
 
 </p><p>
-A suitable notation to use for the resulting bra when a operates on
-the bra <B| is (Bla, as in this notation the equation which defines
+A suitable notation to use for the resulting bra when \(\alpha\) operates on
+the bra \(\langle B|\) is \(\langle B|\alpha\), as in this notation the equation which defines
 \(\langle B|\) is
+
+</p><p class="blue">
+\(\alpha\) がブラ \(\langle B|\) に作用する場合、結果として得られるブラを表す適切な表記は \(\langle B|\alpha\) である。この表記法では、\(\langle B|\) を定義する式は
+</p><p>
 
 \[
 \{\langle B|\alpha\}|A\rangle = \langle B|\{\alpha|A\rangle\} \tag{3}
 \]
 
-for any |A>, which simply expresses the associative axiom of multi-
-plication for the triple product of <B|, «, and |A>. We therefore
-make the general rule that in a product of a bra and a linear operator,
-the bra must always be put on the left. We can now write the triple
-product of <B|, «, and |A> simply as (Bla|A> without brackets. It
-may easily be verified that the distributive axiom of multiplication
-holds for products of bras and linear operators just as well as for
-products of linear operators and kets. .
+for any \(|A\rangle\), which simply expresses the associative axiom of multiplication for the triple product of \(\langle B|, \alpha,\) and \(|A\rangle\). We therefore make the general rule that in a product of a bra and a linear operator, the bra must always be put on the left. We can now write the triple product of \(\langle B|, \alpha,\) and \(|A\rangle\) simply as \(\langle B|\alpha|A\rangle\) without brackets. It may easily be verified that the distributive axiom of multiplication holds for products of bras and linear operators just as well as for products of linear operators and kets.
+
+</p><p class="blue">
+任意の \(|A\rangle\) に対して、\(\langle B|, \alpha,\) と \(|A\rangle\) の三重積に対する結合法の乗法公理が成り立つことを単純に表しています。したがって、ブラ作用素と線形作用素の積においては、ブラ作用素は常に左側に置くという一般的な規則を定めます。これで、\(\langle B|, \alpha,\) と \(|A\rangle\) の三重積は、括弧なしで単に \(\langle B|\alpha|A\rangle\) と書くことができます。ブラ作用素と線形作用素の積、および線形作用素とケット作用素の積に対して、分配法の乗法公理が成り立つことは簡単に検証できます。
 
 </p><p>
-There is one further kind of product which has a meaning in our
-scheme, namely the product of a ket vector and a bra vector with
-the ket on the left, such as |A><B|. To examine this product, let us
-multiply it into an arbitrary ket |P>, putting the ket on the right,
-and assume the associative axiom of multiplication. The product is
-then |A><B|P)>, which is another ket, namely |A> multiplied by the
-number <B|P>, and this ket depends linearly on the ket |P>. Thus
-|A><B| appears as a linear operator that can operate on kets. It
-can also operate on bras, its product with a bra (Q| on the left being
-<Q|A><B|, which is the number <Q|A> times the bra <¢B]. The
-product |A><B| is to be sharply distinguished from the product
-<B|A)> of the same factors in the reverse order, the latter product
-being, of course, a number.
+There is one further kind of product which has a meaning in our scheme, namely the product of a ket vector and a bra vector with the ket on the left, such as \(|A\rangle\langle B|\). To examine this product, let us multiply it into an arbitrary ket \(|P\rangle\), putting the ket on the right, and assume the associative axiom of multiplication. The product is then \(|A\rangle\langle B|P\rangle\), which is another ket, namely \(|A\rangle\) multiplied by the number \(\langle B|P\rangle\), and this ket depends linearly on the ket \(|P\rangle\). Thus \(|A\rangle\langle B|\) appears as a linear operator that can operate on kets. It can also operate on bras, its product with a bra \(\langle Q|\) on the left being \(\langle Q|A\rangle\langle B|\), which is the number \(\langle Q|A\rangle\) times the bra \(\langle B|\). The product \(|A\rangle\langle B|\) is to be sharply distinguished from the product \(\langle B|A\rangle\) of the same factors in the reverse order, the latter product being, of course, a number.
+
+</p><p class="blue">
+この図式において意味を持つ積の種類がもう1つあります。それは、ケットベクトルと、ケットを左側に持つブラベクトルの積（例えば、\(|A\rangle\langle B|\)）です。この積を調べるために、ケットを右側に置き、任意のケット\(|P\rangle\)に乗じ、乗法の結合公理を仮定します。すると、積は\(|A\rangle\langle B|P\rangle\)となり、これは別のケット、つまり\(|A\rangle\)に数\(\langle B|P\rangle\)を乗じたものであり、このケットはケット\(|P\rangle\)に線形依存します。したがって、\(|A\rangle\langle B|\)はケットに作用する線形作用素として現れます。この法則はブラにも適用でき、左側のブラ \(\langle Q|\) との積は \(\langle Q|A\rangle\langle B|\) となり、これは \(\langle Q|A\rangle\) とブラ \(\langle B|\) の積に相当します。この積 \(|A\rangle\langle B|\) は、同じ因数を逆順に並べた積 \(\langle B|A\rangle\) とは明確に区別されます。後者の積は当然ながら数値です。
 
 </p><p>
-We now have a complete algebraic scheme involving three kinds
-of quantities, bra vectors, ket vectors, and linear operators. They can
-be multiplied together in the various ways discussed above, and the
-associative and distributive axioms of multiplication always hold,
-but the commutative axiom of multiplication does not hold. In this
-general scheme we still have the rules of notation of the preceding
-section, that any complete bracket expression, containing ¢ on the
-left and > on the right, denotes a number, while any incomplete
-bracket expression, containing only < or >, denotes a vector.
+We now have a complete algebraic scheme involving three kinds of quantities, bra vectors, ket vectors, and linear operators. They can be multiplied together in the various ways discussed above, and the associative and distributive axioms of multiplication always hold, but the commutative axiom of multiplication does not hold. In this general scheme we still have the rules of notation of the preceding section, that any complete bracket expression, containing \(\langle\) on the left and \(\rangle\) on the right, denotes a number, while any incomplete bracket expression, containing only \(\langle\) or \(\rangle\), denotes a vector. 
+
+</p><p class="blue">
+これで、ブラベクトル、ケットベクトル、線形作用素という3種類の量を含む完全な代数体系が完成しました。これらは、上で述べた様々な方法で乗算することができ、乗法の結合公理と分配公理は常に成立しますが、乗法の可換公理は成立しません。この一般的な体系においても、前のセクションの表記規則は適用されます。つまり、左辺に \(\langle\)、右辺に \(\rangle\) を含む完全な括弧式は数値を表し、\(\langle\) または \(\rangle\) のいずれか一方のみを含む不完全な括弧式はベクトルを表します。
 
 </p><p>
-With regard to the physical significance of the scheme, we have
-already assumed that the bra vectors and ket vectors, or rather the
-directions of these vectors, correspond to the states of a dynamical
-system at a particular time. We now make the further assumption
-that the linear operators correspond to the dynamical variables at that
-time. By dynamical variables are meant quantities such as the
-coordinates and the components of velocity, momentum and angular
-momentum of particles, and functions of these quantities—in fact
-the variables in terms of which classical mechanics is built up. The
-new assumption requires that these quantities shall occur also in
-quantum mechanics, but with the striking difference that they are
-now subject to an algebra in which the commutative axiom of multiplica-
-tion does not hold.
+With regard to the physical significance of the scheme, we have already assumed that the bra vectors and ket vectors, or rather the directions of these vectors, correspond to the states of a dynamical system at a particular time. We now make the further assumption that the linear operators correspond to the dynamical variables at that time. By dynamical variables are meant quantities such as the coordinates and the components of velocity, momentum and angular momentum of particles, and functions of these quantities—in fact the variables in terms of which classical mechanics is built up. The new assumption requires that these quantities shall occur also in quantum mechanics, but with the striking difference that they are now subject to an algebra in which the commutative axiom of multiplication does not hold.
+
+</p><p class="blue">
+この図式の物理的な意味については、ブラベクトルとケットベクトル、あるいはむしろこれらのベクトルの方向が、ある特定の時点における力学系の状態に対応すると既に仮定した。ここで、線形作用素がその時点における力学変数に対応するというさらなる仮定を立てる。力学変数とは、座標、粒子の速度、運動量、角運動量の成分といった量、そしてこれらの量の関数、つまり実際は古典力学を構成する変数を意味する。この新たな仮定は、これらの量が量子力学にも現れることを要求するが、その際立った違いは、これらの量が乗法の可換公理が成立しない代数に従うということである。
 
 </p><p>
-This different algebra for the dynamical variables is one of the
-most important ways in which quantum mechanics differs from
-classical mechanics. We shall see later on that, in spite of this funda-
-mental difference, the dynamical variables of quantum mechanics
-still have many properties in common with their classical counter-
-parts and it will be possible to build up a theory of them closely
-analogous to the classical theory and forming a beautiful generaliza-
-tion of it.
+This different algebra for the dynamical variables is one of the most important ways in which quantum mechanics differs from classical mechanics. We shall see later on that, in spite of this fundamental difference, the dynamical variables of quantum mechanics still have many properties in common with their classical counterparts and it will be possible to build up a theory of them closely analogous to the classical theory and forming a beautiful generalization of it.
+
+</p><p class="blue">
+力学変数のためのこの異なる代数は、量子力学と古典力学の最も重要な相違点の一つです。この根本的な違いにもかかわらず、量子力学の力学変数は古典力学のものと多くの共通点を持ち、古典力学理論に非常に類似した、そしてその美しい一般化を形成する理論を構築することが可能であることを後ほど見ていきます。
 
 </p><p>
-It is convenient to use the same letter to denote a dynamical
-variable and the corresponding linear operator. In fact, we may con-
-sider a dynamical variable and the corresponding linear operator to
-be both the same thing, without getting into confusion.
+It is convenient to use the same letter to denote a dynamical variable and the corresponding linear operator. In fact, we may consider a dynamical variable and the corresponding linear operator to be both the same thing, without getting into confusion.
+
+</p><p class="blue">
+力学変数とそれに対応する線形作用素を同じ文字で表記するのは便利です。実際、力学変数とそれに対応する線形作用素は、混乱することなく同じものとみなすことができます。
+
 </p><p>
 
-<h3>8. Conjugate relations</h3>
+<h3>8. Conjugate relations　共役関係</h3>
 <p>
-Our linear operators are complex quantities, since one can multiply
-them by complex numbers and get other quantities of the same nature.
-Hence they must correspond in general to complex dynamical vari-
-ables, ie. to complex functions of the coordinates, velocities, etc. We
-need some further development of the theory to see what kind of
-linear operator corresponds to a real dynamical variable.
+Our linear operators are complex quantities, since one can multiply them by complex numbers and get other quantities of the same nature. Hence they must correspond in general to complex dynamical variables, ie. to complex functions of the coordinates, velocities, etc. We need some further development of the theory to see what kind of linear operator corresponds to a real dynamical variable.
+
+</p><p class="blue">
+我々の線形作用素は複素量です。なぜなら、複素数を乗じることで、同じ性質を持つ他の量が得られるからです。したがって、線形作用素は一般に複素力学変数、すなわち座標や速度などの複素関数に対応しているはずです。どのような線形作用素が実在の力学変数に対応するのかを明らかにするには、理論をさらに発展させる必要があります。
 
 </p><p>
-Consider the ket which is the conjugate imaginary of (Pla. This
-ket depends antilinearly on (P| and thus depends linearly on |P).
-It may therefore be considered as the result of some linear operator
-operating on |P>. This linear operator is called the adjoint of « and
-we shall denote it by &. With this notation, the conjugate imaginary
-of (Pl« is a|P>. .
+Consider the ket which is the conjugate imaginary of \(\langle P|\alpha\). This ket depends antilinearly on \(\langle P|\) and thus depends linearly on \(|P\rangle\). It may therefore be considered as the result of some linear operator operating on \(|P\rangle\). This linear operator is called the adjoint of \(\alpha\) and we shall denote it by \(\overline{\alpha}\). With this notation, the conjugate imaginary of \(\langle P|\alpha\) is \(\overline{\alpha}|P\rangle\).
+
+</p><p class="blue">
+\(\langle P|\alpha\) の共役虚数であるケットを考えてみましょう。このケットは \(\langle P|\) に反線型的に依存しており、したがって \(|P\rangle\) に線型的に依存しています。したがって、これは \(|P\rangle\) に作用する何らかの線型作用素の結果と見なすことができます。この線型作用素は \(\alpha\) の随伴作用素と呼ばれ、\(\overline{\alpha}\) と表記します。この表記を用いると、\(\langle P|\alpha\) の共役虚数は \(\overline{\alpha}|P\rangle\) となります。
 
 </p><p>
-In formula (7) of Chapter I put (Pla for <A| and its conjugate
-imaginary «|P) for |A>. The result is
+In formula (7) of Chapter I put \(\langle P|\alpha\) for \(\langle A|\) and its conjugate
+imaginary \(\overline{\alpha}|P\rangle\) for \(|A\rangle\). The result is
 
-<Bla|P> = ¢Pla|B>. (4)
+</p><p class="blue">
+第1章の式(7)において、\(\langle A|\)を\(\langle P|\alpha\)とし、\(|A\rangle\)をその共役虚数\(\overline{\alpha}|P\rangle\)とする。結果は次の通りである。
+</p><p>
 
-This is a general formula holding for any ket vectors |B), |P> and
+\[
+\langle B|\overline{\alpha}|P\rangle = \overline{\langle P|\alpha|B\rangle}  \tag{4}
+\]
 
-any linear operator a, and it expresses one of the most frequently
+This is a general formula holding for any ket vectors \(|B\rangle, |P\rangle\) and any linear operator \(\alpha\), and it expresses one of the most frequently used properties of the adjoint.
 
-used properties of the adjoint.
+</p><p class="blue">
+これは、任意のケットベクトル\(|B\rangle, |P\rangle\)と任意の線形作用素\(\alpha\)に対して成立する一般的な公式であり、随伴作用素の最も頻繁に使用される特性の1つを表現しています。
 
 </p><p>
-Putting & for a in (4), we get
+Putting \(\overline{\alpha}\) for \(\alpha\) in (4), we get
 
-(Ble|P) = <P|é|B> = <Bla|P>,
+</p><p class="blue">
+(4)の\(\alpha\)を\(\overline{\alpha}\)に代入すると、
+</p><p>
 
-by using (4) again with |P> and |B> interchanged. This holds for
-any ket |P>, so we can infer from (4) of Chapter I,
+\[
+\langle B|\overline{\overline{\alpha}}|P\rangle = \overline{\langle P|\overline{\alpha}|B\rangle} = \langle B|\alpha|P\rangle
+\]
 
-(Bla = <Bla,
-and since this holds for any bra vector <B|, we can infer
+by using (4) again with \(|P\rangle\) and \(|B\rangle\) interchanged. This holds for any ket \(|P\rangle\), so we can infer from (4) of Chapter I,
 
-a= a.
+</p><p class="blue">
+(4) を \(|P\rangle\) と \(|B\rangle\) を入れ替えて再び用いると、この式は任意の \(|P\rangle\) に対して成り立つので、第1章の (4) から次のように推論できる。
+</p><p>
 
-Thus the adjoint of the adjoint of a linear operator is the original linear
-operator. This property of the adjoint makes it like the conjugate
-complex of a number, and it is easily verified that in the special case
-when the linear operator is a number, the adjoint linear operator is
-the conjugate complex number. Thus it is reasonable to assume that
-the adjoint of a linear operator corresponds to the conjugate complex of
-a dynamical variable. With this physical significance for the adjoint
-of a linear operator, we may call the adjoint alternatively the con-
-jugate complex linear operator, which conforms with our notation &.
+\[
+\langle B|\overline{\overline{\alpha}} = \langle B|\alpha
+\]
+
+and since this holds for any bra vector \(\langle B|\), we can infer
+
+</p><p class="blue">
+そしてこれは任意のブラベクトル\(\langle B|\)に対して成り立つので、
+</p><p>
+
+\[
+\overline{\overline{\alpha}} = \alpha
+\].
+
+Thus the adjoint of the adjoint of a linear operator is the original linear operator. This property of the adjoint makes it like the conjugate complex of a number, and it is easily verified that in the special case when the linear operator is a number, the adjoint linear operator is the conjugate complex number. Thus it is reasonable to assume that the adjoint of a linear operator corresponds to the conjugate complex of a dynamical variable. With this physical significance for the adjoint of a linear operator, we may call the adjoint alternatively the conjugate complex linear operator, which conforms with our notation \(\overline{\alpha}\).
+
+</p><p class="blue">
+このように、線形作用素の随伴作用素の随伴作用素は、元の線形作用素である。随伴作用素のこの性質は、それを数の共役複素数に似たものにし、線形作用素が数である特別な場合においては、随伴線形作用素が共役複素数であることが容易に検証される。したがって、線形作用素の随伴作用素は、力学変数の共役複素数に対応すると仮定することは合理的である。線形作用素の随伴作用素のこの物理的意味から、随伴作用素を共役複素線形作用素と呼ぶことができ、これは\(\overline{\alpha}\)という表記法に準拠する。
 
 </p><p>
-A linear operator may equal its adjoint, and is then called self-
-adjoint. It corresponds to a real dynamical variable, so it may be
-called alternatively a real linear operator. Any linear operator may
-be split up into a real part and a pure imaginary part. For this
-reason the words 'conjugate complex' are applicable to linear
-operators and not the words 'conjugate imaginary'.
+A linear operator may equal its adjoint, and is then called self-adjoint. It corresponds to a real dynamical variable, so it may be called alternatively a real linear operator. Any linear operator may be split up into a real part and a pure imaginary part. For this reason the words 'conjugate complex' are applicable to linear operators and not the words 'conjugate imaginary'.
+
+</p><p class="blue">
+線型作用素は随伴作用素と等しくなる場合があり、その場合自己随伴作用素と呼ばれます。これは実数力学変数に対応するため、実線型作用素とも呼ばれます。任意の線型作用素は実部と純虚部に分解できます。このため、「共役複素」という言葉は線型作用素に適用され、「共役虚数」という言葉は適用されません。
 
 </p><p>
 The conjugate complex of the sum of two linear operators is
@@ -353,364 +332,686 @@ obviously the sum of their conjugate complexes. To get the conjugate
 complex of the product of two linear operators a and 8, we apply
 formula (7) of Chapter I with
 
-(A| = <Pla, (Bl = <QIB,
-so that |A> == alP), |B> = B|Q>.
+</p><p class="blue">
+二つの線型作用素の和の共役複素数は、明らかにそれらの共役複素数の和である。二つの線型作用素αとβの積の共役複素数を得るには、第1章の式(7)を次のように適用する。
+</p><p>
+
+\[
+\langle A| = \langle P|\alpha,　 \langle B| = \langle Q|\overline{\beta}
+\]
+
+so that
+</p><p class="blue">
+よって
+</p><p>
+
+\[
+|A\rangle = \overline{\alpha}|P\rangle,　|B\rangle = \beta|Q\rangle
+\]
+
 The result is
+</p><p class="blue">
+その結果は
+</p><p>
 
-(Q|Ba|P> = <PloB|Q> = <Q|oB|P>
+\[
+\langle Q|\overline{\beta}\overline{\alpha}|P\rangle = \overline{\langle P|\alpha\beta|Q\rangle} = \langle Q|\overline{\alpha\beta}|P\rangle
+\]
 
+from (4). Since this holds for any \(|P\rangle\) and \(\langle Q|\), we can infer that
 
-from (4). Since this holds for any |P> and <Q], we can infer that
-Bi = of. (5)
+</p><p class="blue">
+(4)より、これは任意の\(|P\rangle\)と\(\langle Q|\)に対して成り立つので、
+</p><p>
 
-Thus the conjugate complex of the product of two linear operators equals
-the product of the conjugate complexes of the factors in the reverse order.
+\[
+\overline{\beta}\overline{\alpha} = \overline{\alpha\beta}  \tag{5}
+\]
+
+Thus the conjugate complex of the product of two linear operators equals the product of the conjugate complexes of the factors in the reverse order.
+
+</p><p class="blue">
+したがって、2 つの線形作用素の積の共役複素数は、逆の順序の因子の共役複素数の積に等しくなります。
 
 </p><p>
-As simple examples of this result, it should be noted that, if € and
-y are real, in general éy is not real. This is an important difference
-from classical mechanics. However, y+ n€ is real, and so is 1(éy— 76).
-Only when é and 7 commute is y itself also real. Further, if € is real,
-then so is £7 and, more generally, €" with n any positive integer.
+As simple examples of this result, it should be noted that, if \(\xi\) and \(\eta\) are real, in general \(\xi\eta\) is not real. This is an important difference from classical mechanics. However, \(\xi\eta + \eta\xi\) is real, and so is \(i(\xi\eta - \eta\xi)\). Only when \(\xi\) and \(\eta\) commute is \(\xi\eta\) itself also real. Further, if \(\xi\) is real, then so is \(\xi^2\) and, more generally, \(\xi^n\) with \(n\) any positive integer.
+
+</p><p class="blue">
+この結果の簡単な例として、\(\xi\) と \(\eta\) が実数である場合、一般に \(\xi\eta\) は実数ではないことに注意する必要があります。これは古典力学との重要な違いです。しかし、\(\xi\eta + \eta\xi\) は実数であり、\(i(\xi\eta - \eta\xi)\) も実数です。\(\xi\) と \(\eta\) が可換である場合にのみ、\(\xi\eta\) 自体も実数となります。さらに、\(\xi\) が実数である場合、\(\xi^2\) も実数であり、より一般的には、\(n\) が任意の正の整数である \(\xi^n\) も実数です。
 
 </p><p>
-We may get the conjugate complex of the product of three linear
-operators by successive applications of the rule (5) for the conjugate
-complex of the product of two of them. We have
+We may get the conjugate complex of the product of three linear operators by successive applications of the rule (5) for the conjugate complex of the product of two of them. We have
 
-oy = a(By) = Bye = 7B a, (8)
-so the conjugate complex of the product of three linear operators
-equals the product of the conjugate complexes of the factors in the
-reverse order. The rule may easily be extended to the product of any
-number of linear operators.
+</p><p class="blue">
+3つの線形作用素の積の共役複素数は、2つの線形作用素の積の共役複素数に対する規則(5)を順に適用することで得られる。
+</p><p>
+
+\[
+\overline{\alpha\beta\gamma} = \overline{\alpha(\beta\gamma)} = \overline{\beta\gamma}\overline{\alpha} = \overline{\gamma}\overline{\beta}\overline{\alpha} \tag{8}
+\]
+
+so the conjugate complex of the product of three linear operators equals the product of the conjugate complexes of the factors in the reverse order. The rule may easily be extended to the product of any number of linear operators.
+
+</p><p class="blue">
+したがって、3つの線型作用素の積の共役複素数は、逆順に並べた因子の共役複素数の積に等しい。この規則は、任意の数の線型作用素の積にも簡単に拡張できる。
 
 </p><p>
-In the preceding section we saw that the product |A><B| is a linear
-operator. We may get its conjugate complex by referring directly to
-the definition of the adjoint. Multiplying |A><B| into a general bra
-<P| we get <P|A><B|, whose conjugate imaginary ket is
+In the preceding section we saw that the product \(|A\rangle\langle B|\) is a linear operator. We may get its conjugate complex by referring directly to the definition of the adjoint. Multiplying \(|A\rangle\langle B|\) into a general bra \(\langle P|\) we get \(\langle P|A\rangle\langle B|\), whose conjugate imaginary ket is
 
-(P\|A>|B> = (A|P>|B> = |B><A|P).-
-Hence |JAS<B| = [B><A]. (7)
+</p><p class="blue">
+前の節で、積 \(|A\rangle\langle B|\) は線型作用素であることを見ました。その共役複素数は、随伴作用素の定義を直接参照することで得ることができます。\(|A\rangle\langle B|\) を一般のブラ \(\langle P|\) に掛け合わせると \(\langle P|A\rangle\langle B|\) が得られ、その共役虚数ケットは
+</p><p>
+
+\[
+\overline{\langle P|A\rangle}|B\rangle = \langle A|P\rangle|B\rangle = |B\rangle\langle A|P\rangle
+\]
+
+Hence
+</p><p class="blue">
+したがって
+</p><p>
+
+\[
+\overline{|A\rangle\langle B|} = |B\rangle\langle A|  \tag{7}
+\]
 
 </p><p>
-We now have several rules concerning conjugate complexes and
-conjugate imaginaries of products, namely equation (7) of Chapter I,
-equations (4), (5), (6), (7) of this chapter, and the rule that the
-conjugate imaginary of (P|«is &|P>. These rules can all be summed
-up in a single comprehensive rule, the conjugate complex or conjugate
-imaginary of any product of bra vectors, ket vectors, and linear operators
-is obtained by taking the conjugate complex or conjugate imaginary of
-each factor and reversing the order of all the factors. The rule is easily
+We now have several rules concerning conjugate complexes and conjugate imaginaries of products, namely equation (7) of Chapter I, equations (4), (5), (6), (7) of this chapter, and the rule that the conjugate imaginary of \(\langle P|\alpha\) is \(\overline{\alpha}|P\rangle\). These rules can all be summed up in a single comprehensive rule, the conjugate complex or conjugate imaginary of any product of bra vectors, ket vectors, and linear operators is obtained by taking the conjugate complex or conjugate imaginary of each factor and reversing the order of all the factors. The rule is easily verified to hold quite generally, also for the cases not explicitly given above.
 
-verified to hold quite generally, also for the cases not explicitly given |
-above.
+</p><p class="blue">
+共役複素数と積の共役虚数に関するいくつかの規則、すなわち第1章の式(7)、本章の式(4)、(5)、(6)、(7)、そして\(\langle P|\alpha\)の共役虚数は\(\overline{\alpha}|P\rangle\)であるという規則が得られた。これらの規則はすべて、ブラベクトル、ケットベクトル、線形作用素の任意の積の共役複素数または共役虚数は、各因子の共役複素数または共役虚数を取り、すべての因子の順序を逆にすることで得られるという、1つの包括的な規則にまとめることができる。この規則は、上記で明示的に示されていないケースについても、非常に一般的に成立することが簡単に検証できる。
 
 </p><p>
-THEOREM. If € ts a real linear operator and
-ém|P> = 0 (8)
-jor a particular ket |P>, m being a positive integer, then
-é|P) = 0.
+THEOREM. If \(\xi\) is a real linear operator and
+
+</p><p class="blue">
+定理　\(\xi\) が実線型作用素であり、
+</p><p>
+
+\[
+\xi^m|P\rangle = 0 \tag{8}
+\]
+
+for a particular ket \(|P\rangle\), \(m\) being a positive integer, then
+
+</p><p class="blue">
+特定のケット\(|P\rangle\)（\(m\)は正の整数）に対して、
+</p><p>
+
+\[
+\xi|P\rangle = 0
+\]
 
 </p><p>
-To prove the theorem, take first the case when m = 2. Equation
-(8) then gives <Pig|P) = 0,
+To prove the theorem, take first the case when \(m = 2\). Equation (8) then gives 
 
-showing that the ket €|P> multiplied by the conjugate imaginary bra
-<P\éis zero. From the assumption (8) of Chapter I with ¢|P) for |A),
-we see that €|P> must be zero. Thus the theorem is proved form = 2.
+</p><p class="blue">
+定理を証明するために、まず\(m = 2\)の場合を考えます。すると式(8)は次のように表されます。
+</p><p>
+
+\[
+\langle P|\xi^2|P\rangle = 0
+\]
+
+showing that the ket \(\xi|P\rangle\) multiplied by the conjugate imaginary bra \(\langle P|\xi\) is zero. From the assumption (8) of Chapter I with \(\xi|P\rangle\) for \(|A\rangle\), we see that \(\xi|P\rangle\) must be zero. Thus the theorem is proved for \(m = 2\).
+
+</p><p class="blue">
+ケット\(\xi|P\rangle\)に共役虚数ブラ\(\langle P|\xi\)を乗じるとゼロになることを示しています。第1章の仮定(8)において\(|A\rangle\)に対して\(\xi|P\rangle\)と仮定すると、\(\xi|P\rangle\)はゼロでなければならないことがわかります。したがって、定理は\(m = 2\)に対して証明されます。
 
 </p><p>
-Now take m > 2 and put
-gm?|P> = 1Q).
-Equation (8) now gives 21Q> = 0.
-Applying the theorem for m = 2, we get
+Now take \(m > 2\) and put
 
-E|Q> = 0
-or EM-1| PY = 0, (9)
+</p><p class="blue">
+ここで\(m > 2\)を取り、
+</p><p>
 
-By repeating the process by which equation (9) is obtained from
-(8), we obtain successively
+\[
+\xi^{m-2}|P\rangle = |Q\rangle
+\]
+
+Equation (8) now gives 
+
+</p><p class="blue">
+式(8)は次のように表される。
+</p><p>
+
+\[
+\xi^2|Q\rangle = 0
+\]
+
+Applying the theorem for \(m = 2\), we get
+
+</p><p class="blue">
+\(m = 2\)の定理を適用すると、
+</p><p>
+
+\[
+\xi|Q\rangle = 0
+\]
+
+or 
+
+</p><p class="blue">
+または
+</p><p>
+
+\[
+\xi^{m-1}|P\rangle = 0  \tag{9}
+\]
+
+By repeating the process by which equation (9) is obtained from (8), we obtain successively
+
+</p><p class="blue">
+(8)から(9)式を得る過程を繰り返すと、次式が得られる。
+</p><p>
+
+\[
+\xi^{m-2}|P\rangle = 0,　\xi^{m-3}|P\rangle = 0,　\cdots,　\xi|P\rangle = 0
+\]
 
 and so the theorem is proved generally.
+
+</p><p class="blue">
+そして定理は一般に証明された。
+
 </p><p>
 
-<h3>9. Eigenvalues and eigenvectors</h3>
+<h3>9. Eigenvalues and eigenvectors　固有値と固有ベクトル</h3>
 <p>
-We must make a further development of the theory of linear
-operators, consisting in studying the equation
+We must make a further development of the theory of linear operators, consisting in studying the equation
 
-alP> = a|P», (10)
+</p><p class="blue">
+我々は線形作用素の理論をさらに発展させ、次の方程式を研究する必要がある。
+</p><p>
 
-where « is a linear operator and a is a number. This equation usually
-presents itself in the form that « is a known linear operator and the
-number @ and the ket |P> are unknowns, which we have to try to
-choose so as to satisfy (10), ignoring the trivial solution |P> = 0.
+\[
+\alpha |P\rangle = a|P\rangle  \tag{10}
+\]
+
+where \(\alpha\) is a linear operator and \(a\) is a number. This equation usually presents itself in the form that \(alpha\) is a known linear operator and the number \(a\) and the ket \(|P\rangle\) are unknowns, which we have to try to choose so as to satisfy (10), ignoring the trivial solution \(|P\rangle = 0\).
+
+</p><p class="blue">
+ここで、\(\alpha\) は線形作用素、\(a\) は数です。この式は通常、\(alpha\) が既知の線形作用素、数 \(a\) とケット \(|P\rangle\) が未知数という形で表されます。これらの未知数は、自明解 \(|P\rangle = 0\) を無視して、(10) を満たすように選択する必要があります。
 
 </p><p>
-Equation (10) means that the linear operator « applied to the ket
-|P> just multiplies this ket by a numerical factor without changing
-its direction, or else multiplies it by the factor zero, so that it ceases
-to have a direction. This same « applied to other kets will, of course,
-in general change both their lengths and their directions. It should
-be noticed that only the direction of |P> is of importance in equation
-(10). If one multiplies |P> by any number not zero, it will not affect
-the question of whether (10) is satisfied or not.
+Equation (10) means that the linear operator \(\alpha\) applied to the ket \(|P\rangle\) just multiplies this ket by a numerical factor without changing its direction, or else multiplies it by the factor zero, so that it ceases to have a direction. This same « applied to other kets will, of course, in general change both their lengths and their directions. It should be noticed that only the direction of \(|P\rangle\) is of importance in equation (10). If one multiplies \(|P\rangle\) by any number not zero, it will not affect the question of whether (10) is satisfied or not.
+
+</p><p class="blue">
+式(10)は、線形作用素\(\alpha\)をケット\(|P\rangle\)に適用すると、ケットの方向を変えずに数値係数を乗じるか、係数0を乗じて方向を失わせることを意味します。もちろん、他のケットに同じ「«」を適用すると、一般に長さと方向の両方が変化します。式(10)では、\(|P\rangle\)の方向のみが重要であることに注意する必要があります。\(|P\rangle\)に0以外の数値を乗じても、式(10)が満たされるかどうかには影響しません。
 
 </p><p>
-Together with equation (10), we should consider also the conjugate
-imaginary form of equation
+Together with equation (10), we should consider also the conjugate imaginary form of equation
 
-(Qla = b<¢QI, ' (11)
-
-where 5 is a number. Here the unknowns are the number 6 and the
-non-zero bra <Q]. Equations (10) and (11) are of such fundamental
-importance in the theory that it is desirable to have some special
-words to describe the relationships between the quantities involved.
-If (10) is satisfied, we shall call a an eigenvaluet of the linear operator
-«, or of the corresponding dynamical variable, and we shall call | P>
-an. eigenket of the linear operator or dynamical variable. Further, we
-shall say that the eigenket |P> belongs to the eigenvalue a. Similarly,
-if (11) is satisfied, we shall call 6 an eigenvalue of « and <Q| an
-eigenbra belonging to this eigenvalue. The words eigenvalue, eigen-
-ket, eigenbra have a meaning, of course, only with reference to a linear
-operator or dynamical variable.
-
+</p><p class="blue">
+(10)式とともに、共役虚数形式である
 </p><p>
-Using this terminology, we can assert that, if an eigenket of « is
-multiplied by any number not zero, the resulting ket is also an
-eigenket and belongs to the same eigenvalue as the original one.
-It is possible to have two or more independent eigenkets of a linear
-operator belonging to the same eigenvalue of that linear operator,
-e.g. equation (10) may have several solutions, |P1>, |P2>, |P3),... say,
-all holding for the same value of a, with the various eigenkets |P1),
-|P2>, |P3>,... independent. In this case it is evident that any linear
-combination of the eigenkets is another eigenket belonging to the
-same eigenvalue of the linear operator, e.g.
 
-Cy |P1) +6 | P2>+65 | P3>+...
+\[
+\langle Q|\alpha = b\langle Q|  \tag{11}
+\]
 
-is another solution of (10), where ¢,, C2, ¢3,... are any numbers.
+where \(b\) is a number. Here the unknowns are the number \(b\) and the non-zero bra \(\langle Q|\). Equations (10) and (11) are of such fundamental importance in the theory that it is desirable to have some special words to describe the relationships between the quantities involved. If (10) is satisfied, we shall call a an igenvalue<sup>†</sup> of the linear operator \(\alpha\), or of the corresponding dynamical variable, and we shall call \(|P\rangle\) an. eigenket of the linear operator or dynamical variable. Further, we shall say that the eigenket \(|P\rangle\) belongs to the eigenvalue \(a\). Similarly, if (11) is satisfied, we shall call \(b\) an eigenvalue of \(\alpha\) and \(\langle Q|\) an eigenbra belonging to this eigenvalue. The words eigenvalue, eigen-ket, eigenbra have a meaning, of course, only with reference to a linear operator or dynamical variable.
 
-</p><p>
-In the special case when the linear operator « of equations (10) and
-(11) is a number, & say, it is obvious that any ket |P> and bra <Q|
-will satisfy these equations provided a and b equal k. Thus a number
-considered as a linear operator has just one eigenvalue, and any ket
-is an eigenket and any bra is an eigenbra, belonging to this eigenvalue.
-
-The theory of eigenvalues and eigenvectors of a linear operator «
-which is not real is not of much use for quantum mechanics. We
-shall therefore confine ourselves to real linear operators for the further
-development of the theory. Putting for « the real linear operator &,
-we have instead of equations (10) and (11)
-
-E|P> = a|P), (12)
-(QE = 1KQI. (13)
-
-† The word 'proper' is sometimes used instead of 'eigen', but this is not satisfactory
+</p><p class="margin-large">
+<sup>†</sup> The word 'proper' is sometimes used instead of 'eigen', but this is not satisfactory
 as the words 'proper' and 'improper' are often used with other meanings. For example,
 in §15 and §46 the words 'improper function' and 'proper-energy' are used.
 
+</p><p class="blue">
+ここで \(b\) は数である。ここで未知数は数 \(b\) と非零のブラ \(\langle Q|\) である。式 (10) と (11) は理論において非常に重要であるため、関係する量間の関係を記述するために特別な用語を用いることが望ましい。(10) が満たされる場合、a を線形作用素 \(\alpha\) または対応する力学変数の固有値<sup>†</sup> と呼び、\(|P\rangle\) を線形作用素または力学変数の固有ケットと呼ぶ。さらに、固有ケット \(|P\rangle\) は固有値 \(a\) に属すると言う。同様に、(11) が満たされる場合、\(b\) を \(\alpha\) の固有値、\(\langle Q|\) をこの固有値に属する固有ブラと呼ぶ。固有値、固有ケット、固有角運動量という言葉は、もちろん、線形作用素または力学変数に関してのみ意味を持ちます。
+
+</p><p class="margin-large-blue">
+<sup>†</sup> 『proper（固有の）』という語が『eigen（固有の）』の代わりに使われることがあるが、これは適切とは言えない。なぜなら、『proper』や『improper』は他の意味でも頻繁に使われるからである。例えば、第15節や第46節では、『improper function（非正則関数）』や『proper-energy（固有エネルギー）』といった表現が用いられている。
+
+</p><p>
+Using this terminology, we can assert that, if an eigenket of \(\alpha\) is multiplied by any number not zero, the resulting ket is also an eigenket and belongs to the same eigenvalue as the original one. It is possible to have two or more independent eigenkets of a linear operator belonging to the same eigenvalue of that linear operator, e.g. equation (10) may have several solutions, \(|P1\rangle,|P2\rangle, |P3\rangle,...\) say, all holding for the same value of \(a\), with the various eigenkets \(|P1\rangle, |P2\rangle,|P3\rangle,...\) independent. In this case it is evident that any linear combination of the eigenkets is another eigenket belonging to the same eigenvalue of the linear operator, e.g.
+
+</p><p class="blue">
+この用語を用いると、\(\alpha\) の固有ケットにゼロ以外の任意の数を掛けた場合、その結果のケットも固有ケットであり、元の固有値と同じ固有値に属すると断言できます。線形作用素の同じ固有値に属する、2 つ以上の独立した固有ケットを持つことが可能です。たとえば、式 (10) には、\(a\) の値が同じ場合にすべて成り立つ複数の解、\(|P1\rangle,|P2\rangle,|P3\rangle,...\) があり、各固有ケット \(|P1\rangle, |P2\rangle,|P3\rangle,...\) は独立しているとします。この場合、固有ケットの任意の線形結合は、線形作用素の同じ固有値に属する別の固有ケットであることは明らかです。たとえば、
+</p><p>
+
+\[
+c_1|P1\rangle + c_2|P2\rangle + c_3|P3\rangle+\cdots
+\]
+
+is another solution of (10), where \(c_1,c_2,c_3,...\) are any numbers.
+
+</p><p class="blue">
+は（10）の別の解であり、\(c_1,c_2,c_3,...\)は任意の数である。
+
+</p><p>
+In the special case when the linear operator \(\alpha\) of equations (10) and (11) is a number, \(k\) say, it is obvious that any ket \(|P\rangle\) and bra \(\langle Q|\) will satisfy these equations provided \(a\) and \(b\) equal \(k\). Thus a number considered as a linear operator has just one eigenvalue, and any ket is an eigenket and any bra is an eigenbra, belonging to this eigenvalue.
+
+</p><p class="blue">
+式(10)および式(11)の線型作用素\(\alpha\)が数\(k\)のような特別な場合、\(a\)と\(b\)が\(k\)と等しい限り、任意のケット\(|P\rangle\)とブラ\(\langle Q|\)はこれらの式を満たすことは明らかである。したがって、線型作用素として考えられる数はただ1つの固有値を持ち、任意のケットは固有ケットであり、任意のブラは固有ブラであり、この固有値に属する。
+
+</p><p>
+The theory of eigenvalues and eigenvectors of a linear operator \(\alpha\)
+which is not real is not of much use for quantum mechanics. We
+shall therefore confine ourselves to real linear operators for the further
+development of the theory. Putting for \(\alpha\) the real linear operator \(\xi\),
+we have instead of equations (10) and (11)
+
+</p><p class="blue">
+実数でない線型作用素 \(\alpha\) の固有値と固有ベクトルの理論は、量子力学ではあまり役に立ちません。したがって、理論のさらなる発展のためには、実線型作用素に限定することにします。\(\alpha\) を実線型作用素 \(\xi\) と置くと、式(10)と式(11)の代わりに、
+</p><p>
+
+\[
+\begin{align}
+\xi|P\rangle &= a|P\rangle   \tag{12} \\
+\\
+\langle Q|\xi &= b\langle Q|  \tag{13}
+\end{align}
+\]
 
 Three important results can now be readily deduced.
 
-(i) 
+</p><p class="blue">
+3つの重要な結果が容易に導かれる。
+</p><p>
 
-The eigenvalues are all real numbers. 'To prove that a satisfying
-(12) is real, we multiply (12) by the bra ¢Pj| on the left, obtaining
+(i) The eigenvalues are all real numbers. To prove that \(a\) satisfying (12) is real, we multiply (12) by the bra \(\langle P|\) on the left, obtaining
 
-(P\E|P> = ac P|P).
+</p><p class="blue">
+(i) 固有値はすべて実数である。(12)を満たす\(a\)が実数であることを証明するために、(12)に左辺のブラ\(\langle P|\)を乗じて、
+</p><p>
 
-Now from equation (4) with <B| replaced by ¢Pj| and « replaced by
-the real linear operator €, we see that the number ¢P|é|P> must be
-real, and from (8) of § 6, <P|P> must be real and not zero. Hence a
-is real. Similarly, by multiplying (13) by [Q@> on the right, we can
-prove that 0 is real.
+\[
+\langle P|\xi|P\rangle = a\langle P|P\rangle
+\]
+
+Now from equation (4) with \(\langle B|\) replaced by \(\langle P|\) and \(\alpha\) replaced by the real linear operator \(\xi\), we see that the number \(\langle P|\xi|P\rangle\) must be real, and from (8) of §6, \(\langle P|P\rangle\) must be real and not zero. Hence \(a\) is real. Similarly, by multiplying (13) by \(|Q\rangle\) on the right, we can prove that \(b\) is real.
+
+</p><p class="blue">
+ここで、式(4)において、\(\langle B|\)を\(\langle P|\)に、\(\alpha\)を実線型作用素\(\xi\)に置き換えると、\(\langle P|\xi|P\rangle\)は実数でなければならないことが分かります。また、§6の(8)から、\(\langle P|P\rangle\)は実数であり、0であってはなりません。したがって、\(a\)は実数です。同様に、(13)の右側に\(|Q\rangle\)を掛けると、\(b\)が実数であることが証明できます。
 
 </p><p>
-Suppose we have a solution of (12) and we form the conjugate
+Suppose we have a solution of (12) and we form the conjugate imaginary equation, which will read
 
-imaginary equation, which will read
-(P|f = a¢P|
+</p><p class="blue">
+(12)の解があり、共役虚数方程式を立てると、
+</p><p>
 
-in view of the reality of € anda. This conjugate imaginary equation
-now provides a solution of (13), with <Q| = <P| and 6=a. Thus
-we can infer
+\[
+\langle P|\xi = a\langle P|
+\]
+
+in view of the reality of \(\xi\) and \(a\). This conjugate imaginary equation now provides a solution of (13), with \(\langle Q|=\langle P|\) and \(b = a\). Thus we can infer
+
+</p><p class="blue">
+\(\xi\)と\(a\)の現実性を考慮すると、この共役虚数方程式は\(\langle Q|=\langle P|\)かつ\(b = a\)の条件で(13)の解を与える。したがって、
 
 </p><p>
 (ii) The eigenvalues associated with eigenkets are the same as the
 eigenvalues associated with eigenbras.
 
-</p><p>
-(iii) The conjugate imaginary of any eigenket is an eigenbra belonging
-to the same eigenvalue, and conversely. This last result makes it reason-
-able to call the state corresponding to any eigenket or to the conjugate
-imaginary eigenbra an eigenstate of the real dynamical variable €.
+</p><p class="blue">
+(ii) 固有ケットに関連付けられた固有値は、固有ブラに関連付けられた固有値と同じです。
 
 </p><p>
-Eigenvalues and eigenvectors of various real dynamical variables
-are used very extensively in quantum mechanics, so it is desirable
-to have some systematic notation for labelling them. The following
-is suitable for most purposes. If é is a real dynamical variable, we-
-call its eigenvalues é', é”, &, etc. Thus we have a letter by itself
-denoting a real dynamical variable or a real linear operator, and the
-same letter with primes or an index attached denoting a number,
-namely an eigenvalue of what the letter by itself denotes. An eigen-
-vector may now be labelled by the eigenvalue to which it belongs.
-Thus |') denotes an eigenket belonging to the eigenvalue £' of the
-dynamical variable €. If in a piece of work we deal with more than
-one eigenket belonging to the same eigenvalue ofa dynamical variable,
-we may distinguish them one from another by means of a further
-label, or possibly of more than one further labels. Thus, if we are
-dealing with two eigenkets belonging to the same eigenvalue of £',
+(iii) The conjugate imaginary of any eigenket is an eigenbra belonging to the same eigenvalue, and conversely. This last result makes it reasonable to call the state corresponding to any eigenket or to the conjugate imaginary eigenbra an eigenstate of the real dynamical variable \(\xi\).
 
-we may call them [€'1> and |£'2).
+</p><p class="blue">
+(iii) 任意の固有ケットの共役虚数部は、同じ固有値に属する固有集合であり、逆もまた同様である。この最後の結果から、任意の固有ケットまたは共役虚数固有集合に対応する状態を、実数力学変数 \(\xi\) の固有状態と呼ぶことが合理的となる。
 
+</p><p>
+Eigenvalues and eigenvectors of various real dynamical variables are used very extensively in quantum mechanics, so it is desirable to have some systematic notation for labelling them. The following is suitable for most purposes. If \(\xi\) is a real dynamical variable, we  call its eigenvalues \(\xi^\prime, \xi^{\prime\prime},\xi^r,\) etc. Thus we have a letter by itself denoting a real dynamical variable or a real linear operator, and the same letter with primes or an index attached denoting a number, namely an eigenvalue of what the letter by itself denotes. An eigen-vector may now be labelled by the eigenvalue to which it belongs. Thus \(|\xi^\prime\rangle\) denotes an eigenket belonging to the eigenvalue \(\xi^\prime\) of the dynamical variable \(\xi\). If in a piece of work we deal with more than one eigenket belonging to the same eigenvalue ofa dynamical variable, we may distinguish them one from another by means of a further label, or possibly of more than one further labels. Thus, if we are dealing with two eigenkets belonging to the same eigenvalue of \(\xi^\prime\), we may call them \(|\xi^\prime 1\rangle\) and \(|\xi^\prime 2\rangle\).
 
-the algebraic expression y,(€). Since the c's are all different, x,(¢,)
-cannot vanish. Consider now the expression
+</p><p class="blue">
+量子力学では、様々な実数力学変数の固有値と固有ベクトルが広く用いられているため、それらを体系的にラベル付けする表記法が望ましい。以下はほとんどの用途に適している。\(\xi\) が実数力学変数である場合、その固有値は \(\xi^\prime, \xi^{\prime\prime},\xi^r,\) などと呼ばれる。したがって、文字自体は実数力学変数または実線形作用素を表し、同じ文字にプライムまたは添え字を付けることにより、その文字自体が表す固有値を表すことができる。固有ベクトルは、それが属する固有値でラベル付けすることができる。したがって、\(|\xi^\prime\rangle\) は、力学変数 \(\xi\) の固有値 \(\xi^\prime\) に属する固有ケットを表す。ある研究において、ある力学変数の同じ固有値に属する複数の固有ケットを扱う場合、それらを別のラベル、あるいは場合によっては複数のラベルを用いて区別することがあります。例えば、\(\xi^\prime\) の同じ固有値に属する2つの固有ケットを扱う場合、それらを \(|\xi^\prime 1\rangle\) および \(|\xi^\prime 2\rangle\) と呼ぶことがあります。
 
-2 Oe (21)
+</p><p>
+※ 第4版の PDF では p.32, p.33 が抜けていたので第3版から持ってきた<br>
+<br>
 
-If c, is substituted for ¢ here, every term in the sum vanishes except
-the one for which r = s, since x,(€) contains (—c,) as a factor when
-r % 8, and the term for which r = s is unity, so the whole expression
-vanishes. Thus the expression (21) vanishes when é is put equal to
-any of the m numbers ¢;,¢9,...,¢,- Since, however, the expression
-is only of degree n—1 in é, it must vanish identically. If we now
-apply the linear operator (21) to an arbitrary ket |P> and equate —
+THEOREM. Two eigenvectors of a real dynamical variable belonging
+to different eigenvalues are orthogonal.
+
+</p><p class="blue">
+定理　異なる固有値に属する実数力学変数の2つの固有ベクトルは直交する。
+
+</p><p>
+
+To prove the theorem, let \(|\xi^\prime\rangle\) and \(|\xi^{\prime\prime}\rangle\) be two eigenkets of the real
+dynamical variable \(\xi\), belonging to the eigenvalues \(\xi^\prime\) and \(\xi^{\prime\prime}\) respectively. Then we have the equations
+
+</p><p class="blue">
+定理を証明するために、\(|\xi^\prime\rangle\) と \(|\xi^{\prime\prime}\rangle\) を、それぞれ固有値 \(\xi^\prime\) と \(\xi^{\prime\prime}\) に属する実力学変数 \(\xi\) の2つの固有ケットとします。すると、以下の式が得られます。
+</p><p>
+
+\[
+\begin{align}
+\xi|\xi^\prime\rangle &= \xi^\prime |\xi^\prime\rangle  \tag{14} \\
+\\
+\xi|\xi^{\prime\prime}\rangle &= \xi^{\prime\prime}|\xi^{\prime\prime}\rangle  \tag{15}
+\end{align}
+\]
+
+Taking the conjugate imaginary of (14), we get
+
+</p><p class="blue">
+(14)の共役虚数をとると、
+</p><p>
+
+\[
+\langle \xi^\prime|\xi = \xi^\prime\langle \xi^\prime |
+\]
+
+Multiplying this by \(|\xi^{\prime\prime}\rangle\) on the right gives
+
+</p><p class="blue">
+これに右側から\(|\xi^{\prime\prime}\rangle\)を掛けると、以下になる。
+</p><p>
+
+\[
+\langle \xi^\prime|\xi|\xi^{\prime\prime}\rangle = \xi^\prime\langle \xi^\prime|\xi^{\prime\prime}\rangle
+\]
+
+and multiplying (15) by \(\langle \xi^\prime|\) on the left gives
+
+</p><p class="blue">
+そして(15)の左側に\(\langle \xi^\prime|\)を掛けると
+</p><p>
+
+\[
+\langle \xi^\prime|\xi|\xi^{\prime\prime}\rangle = \xi^{\prime\prime}\langle\xi^\prime|\xi^{\prime\prime}\rangle
+\]
+
+Hence, subtracting,
+
+</p><p class="blue">
+したがって、減算すると、
+</p><p>
+
+\[
+(\xi^\prime - \xi^{\prime\prime}) \langle \xi^\prime|\xi^{\prime\prime}\rangle= 0  \tag{16}
+\]
+
+showing that, if \(\xi^\prime \neq \xi^{\prime\prime},\langle \xi^\prime|\xi^{\prime\prime}\rangle = 0\) and the two eigenvectors \(|\xi^\prime\rangle\)
+and \(|\xi^{\prime\prime}\rangle\) are orthogonal. This theorem will be referred to as the orthogonality theorem.
+
+</p><p class="blue">
+\(\xi^\prime \neq \xi^{\prime\prime},\langle \xi^\prime|\xi^{\prime\prime}\rangle = 0\) のとき、2つの固有ベクトル \(|\xi^\prime\rangle\)
+と \(|\xi^{\prime\prime}\rangle\) は直交することを示しています。この定理は直交性定理と呼ばれます。
+
+</p><p>
+
+We have been discussing properties of the eigenvalues and eigen-
+vectors of a real linear Operator, but hsve not yet considered the
+question of whether, for a given real linear Operator, any eigenvalues
+and eigenvectors exist, and if so, how to find them. This question
+is in general very difficult to answer. There is one useful special case,
+however, which is quite tractable, namely when the real linear
+Operator, \(\xi\) say, satisfies an algebraic equation
+
+</p><p class="blue">
+実線型作用素の固有値と固有ベクトルの性質について議論してきましたが、与えられた実線型作用素に対して固有値と固有ベクトルが存在するかどうか、そして存在するとしたらどのように見つけるかという問題についてはまだ検討していません。この問題は一般に非常に難しいものです。しかし、非常に扱いやすい特殊なケースが1つあります。それは、例えば実線型作用素 \(\xi\) が代数方程式を満たす場合です。
+</p><p>
+
+\[
+\phi(\xi) \equiv \xi^n + a_1\xi^{n-1}+a_2\xi^{n-2}+\cdots+a_n = 0  \tag{17}
+\]
+
+the coefficients a being numbers. This equation means, of course,
+that the linear Operator \(\phi(\xi)\) produces the result zero when applied
+to any ket vector or to any bra vector.
+
+</p><p class="blue">
+係数aは数値です。この式は、もちろん、線形作用素\(\phi(\xi)\)を任意のケットベクトルまたは任意のブラベクトルに適用すると、結果がゼロになることを意味します。
+
+</p><p>
+Let (17) be the simplest algebraic equation that \(\xi\) satisfies. Then
+it will be shown that 
+
+</p><p class="blue">
+(17) を \(\xi\) が満たす最も単純な代数方程式とする。すると、
+
+<div class="styleBullet">
+<ul><li>
+(\(\alpha\)) The number of eigenvalues of \(\xi\) is \(n\).
+<br>
+<span style="color: blue;">
+　\(\xi\) の固有値の数は \(n\) です。
+</span>
+
+</li><br><li>
+
+(\(\beta\)) There are so many eigenkets of \(\xi\) that any ket whatever can
+be expressed as a sum of such eigenkets.
+<br><span style="color: blue;">
+　\(\xi\) の固有ケットは非常に多く存在するので、どんなケットでもそのような固有ケットの和として表すことができます。
+</span>
+</li></ul></div>
+</p><p>
+
+The algebraic form \(\phi(\xi)\) can be factorized into \(n\) linear factors, the
+result being
+
+</p><p class="blue">
+代数形式\(\phi(\xi)\)は \(n\) 個の線形因数に分解することができ、その結果は
+</p><p>
+
+\[
+\phi(\xi) \equiv (\xi-c_1))\xi - c_2)(\xi - c_3)\cdots(\xi - c_n)  \tag{18}
+\]
+
+say, the \(c\)'s being numbers, not assumed to be all different. This
+factorization can be performed with \(\xi\) a linear Operator just as well
+as with \(\xi\) an ordinary algebraic variable, since there is nothing
+occurring in (18) that does not commute with \(\xi\). Let the quotient
+when \(\phi(\xi)\) is divided by \((\xi - c_r)\) be \(\chi_r(\xi)\), so that
+
+</p><p class="blue">
+例えば、\(c\) は数値であり、すべて異なるとは仮定されない。この因数分解は、\(\xi\) を線型作用素として用いても、通常の代数変数として用いても同様に実行できる。なぜなら、(18) 式には \(\xi\) と交換しないものは何も存在しないからである。\(\phi(\xi)\) を \((\xi - c_r)\) で割ったときの商を \(\chi_r(\xi)\) とすると、
+</p><p>
+
+\[
+\phi(\xi) \equiv (\xi - c_r)\chi_r(\xi)\; (r=1,2,3,...,n)
+\]
+
+Then, for any ket \(|P\rangle\),
+
+</p><p class="blue">
+そして、任意のケット\(|P\rangle\)に対して、
+</p><p>
+
+\[
+(\xi - c_r)\chi_r(\xi)|P\rangle = \phi(\xi)|P\rangle = 0  \tag{19}
+\]
+
+Now \(\chi_r(\xi)|P\rangle\) cannot vanish for every ket \(|P\rangle\), as otherwise \(\chi_r(\xi)\) itself would vanish and we should have \(\xi\) satisfying an algebraic
+equation of degree \(n-1\), which would contradict the assumption that
+(17) is the simplest equation that \(\xi\) satisfies. If we choose \(|P\rangle\) so that
+\(\chi_r(\xi)|P\rangle\) does not vanish, then equation (19) shows that \(\chi_r(\xi)|P\rangle\) is
+an eigenket of \(\xi\), belonging to the eigenvalue \(c_r\). The argument holds
+for each value of \(r\) from 1 to \(n\), and hence each of the \(c\)'s is an eigen-
+value of \(\xi\). No other number can be an eigenvalue of \(\xi\), since if \(\xi\)' is
+any eigenvalue, belonging to an eigenket \(|\xi^\prime\rangle\),
+
+</p><p class="blue">
+ここで、\(\chi_r(\xi)|P\rangle\) はすべてのケット \(|P\rangle\) に対してゼロになるわけではありません。ゼロになると、\(\chi_r(\xi)\) 自体がゼロになり、\(\xi\) は次数 \(n-1\) の代数方程式を満たすことになります。これは、(17) が \(\xi\) が満たす最も単純な方程式であるという仮定に矛盾します。\(|P\rangle\) を、\(\chi_r(\xi)|P\rangle\) がゼロにならないように選択すると、式 (19) は、\(\chi_r(\xi)|P\rangle\) が \(\xi\) の固有ケットであり、固有値 \(c_r\) に属することを示します。この議論は、\(r\) の 1 から \(n\) までの各値に対して成り立ち、したがって各 \(c\) は \(\xi\) の固有値となる。\(\xi\)' が固有ケット \(|\xi^\prime\rangle\) に属する任意の固有値である場合、他の数は \(\xi\) の固有値にはなり得ない。
+</p><p>
+
+\[
+\xi|\xi^\prime\rangle = \xi^\prime|\xi^\prime\rangle
+\]
+
+and we can deduce
+
+</p><p class="blue">
+そして以下の様に推測できる
+</p><p>
+
+\[
+\phi(\xi)|\xi^\prime\rangle = \phi(\xi^\prime)|\xi^\prime\rangle
+\]
+
+and since the left-hand side vanishes we must have \(\phi(\xi^\prime) = 0\).
+
+</p><p class="blue">
+そして左辺がゼロになるので、\(\phi(\xi^\prime) = 0\) となる。
+
+</p><p>
+To complete the proof of \((\alpha)\) we must verify that the \(c\)'s are all different. Suppose the \(c\)'s are not all different and \(c_s\) occurs \(m\) firnes
+say, with \(m > 1\). Then \(\phi(\xi)\) is of the form
+
+</p><p class="blue">
+\((\alpha)\) の証明を完了するには、\(c\) がすべて異なることを検証する必要があります。\(c\) がすべて異なるわけではなく、\(c_s\) が \(m\)回 \((m > 1)\) 発生するとします。すると、\(\phi(\xi)\) は次のようになります。
+</p><p>
+
+\[
+\phi(\xi) \equiv (\xi - c_s)^m \theta(\xi)
+\]
+
+with \(\theta(\xi)\) a rational integral function of \(\xi\) Equation (17) now gives us
+
+</p><p class="blue">
+\(\theta(\xi)\) は \(\xi\) の有理積分関数であるので、式(17)から次の式が得られる。
+</p><p>
+
+\[
+(\xi - c_s)^m \theta(\xi)|A\rangle = 0  \tag{20}
+\]
+
+for any ket \(|A\rangle\). Since \(c_s\) is an eigenvalue of \(\xi\) it must be real, so that \(\xi - c_s\) is a real linear Operator. Equation (20) is now of the same form as equation (8) with \(\xi - c_s\) for \(\xi\) and \(\theta(\xi)|A\rangle\) for \(|P\rangle\). From the theorem
+connected with equation (8) we can infer that
+
+</p><p class="blue">
+任意のケット \(|A\rangle\) に対して成り立つ。\(c_s\) は \(\xi\) の固有値なので実数でなければならない。したがって、\(\xi - c_s\) は実線型作用素である。式 (20) は、\(\xi\) に対して \(\xi - c_s\)、\(|P\rangle\) に対して \(\theta(\xi)|A\rangle\) となる式 (8) と同じ形になる。式 (8) に関連する定理から、次のことが推論できる。
+</p><p>
+
+\[
+(\xi - c_s)\theta(\xi)|A\rangle = 0
+\]
+
+Since the ket \(|A\rangle\) is arbitrary,
+
+</p><p class="blue">
+ケット\(|A\rangle\)は任意なので、
+</p><p>
+
+\[
+(\xi - c_s)\theta(\xi) = 0
+\]
+
+which contradicts the assumption that (17) is the simplest equation
+that \(\xi\) satisfies. Hence the \(c\)'s are all different and (\(\alpha\)) is proved.
+
+</p><p class="blue">
+これは、(17) が \(\xi\) が満たす最も単純な方程式であるという仮定に矛盾します。したがって、\(c\) はすべて異なり、(\(\alpha\)) が証明されます。
+
+</p><p>
+Let \(\chi_r(c_r)\) be the number obtained when \(c_r\) is substituted for \(\xi\) in the algebraic expression \(\chi_r(\xi)\). Since the \(c\)'s are all different, \(\chi_r(c_r)\) cannot vanish. Consider now the expression 
+
+</p><p class="blue">
+代数式\(\chi_r(\xi)\)において\(c_r\)を\(\xi\)に代入した数を\(\chi_r(c_r)\)とします。\(c\)はすべて異なるので、\(\chi_r(c_r)\)はゼロになりません。ここで、次の式を考えます。
+</p><p>
+
+\[
+\sum_r \frac{\chi_r(\xi)}{\chi_r(c_r)}-1 \tag{21}
+\]
+
+If \(c_s\) is substituted for \(\xi\) here, every term in the sum vanishes except the one for which \(r = s\), since \(\chi_r(\xi)\) contains \((\xi ^ c_s)\) as a factor when \(r \neq s\), and the term for which \(r = s\) is unity, so the whole expression
+vanishes. Thus the expression (21) vanishes when \(\xi\) is put equal to
+any of the \(n\) numbers \(c_1,c_2,...,c_n\). Since, however, the expression
+is only of degree \(n—1\) in \(\xi\), it must vanish identically. If we now
+apply the linear operator (21) to an arbitrary ket \(|P\rangle\) and equate 
 the result to zero, we get
 
-IP> = Day wllP>- (22)
+</p><p class="blue">
+ここで \(c_s\) を \(\xi\) に代入すると、\(r = s\) の項を除くすべての項が消えます。\(\chi_r(\xi)\) は、\(r \neq s\) のときに \((\xi ^ c_s)\) を因子として含み、\(r = s\) の項は 1 なので、式全体が消えます。したがって、式 (21) は、\(\xi\) を \(n\) 個の数 \(c_1,c_2,...,c_n\) のいずれかに等しくすると消えます。しかし、式は \(\xi\) において次数 \(n-1\) のみであるため、同じように消えなければなりません。ここで、線形作用素(21)を任意のケット\(|P\rangle\)に適用し、その結果をゼロとすると、
+</p><p>
+
+\[
+|P\rangle = \sum_r \frac{1}{\chi_r(c_r)}\chi_r(\xi)|P\rangle  \tag{22}
+\]
 
 Each term in the sum on the right here is, according to (19), an
-eigenket of &, if it does not vanish. Equation (22) thus expresses the
-arbitrary ket |P> as a sum of eigenkets of €, and thus (8) is proved.
+eigenket of \(\xi\), if it does not vanish. Equation (22) thus expresses the
+arbitrary ket \(|P\rangle\) as a sum of eigenkets of \(\xi\), and thus (\(\beta\)) is proved.
+
+</p><p class="blue">
+ここで、右辺の和の各項は、(19)によれば、零でない場合、\(\xi\)の固有ケットである。したがって、式(22)は任意のケット\(|P\rangle\)を\(\xi\)の固有ケットの和として表し、したがって(\(\beta\))が証明される。
 
 </p><p>
-As a simple example we may consider a real linear operator o that
-satisfies the equation =. (23)
+As a simple example we may consider a real linear operator \(\sigma\) that
+satisfies the equation
 
-r
+</p><p class="blue">
+簡単な例として、次の式を満たす実線型作用素\(\sigma\)を考えてみましょう。
+</p><p>
 
-Then o has the two eigenvalues 1 and —1. Any ket |P> can be
-expressed as \P) = 4(1+o)|P)+4h(1—o)|P).
+\[
+\sigma^2 = 1 \tag{23}
+\]
+
+Then \(\sigma\) has the two eigenvalues 1 and —1. Any ket \(|P\rangle\) can be expressed as 
+
+</p><p class="blue">
+このとき、\(\sigma\) は2つの固有値 1 と -1 を持ちます。任意のケット \(|P\rangle\) は次のように表すことができます。
+</p><p>
+
+\[
+|P\rangle = \frac{1}{2}(1+\sigma)|P\rangle + \frac{1}{2}(1—\sigma)|P\rangle
+\]
 
 It is easily verified that the two terms on the right here are eigenkets
-of o, belonging to the eigenvalues 1 and —1 respectively, when they
+of \(\sigma\), belonging to the eigenvalues 1 and —1 respectively, when they
 do not vanish.
+
+</p><p class="blue">
+ここで、右辺の2つの項が\(\sigma\)の固有ケットであり、それぞれ固有値1と-1に属し、かつ0にならないことは簡単に確認できます。
+
 </p><p>
 
-<h3>10. Observables</h3>
+<h3>10. Observables　オブザーバブル</h3>
 <p>
-We have made a number of assumptions about the way in which
-states and dynamical variables are to be represented mathematically
-in the theory. These assumptions are not, by themselves, laws of
-nature, but become laws of nature when we make some further
-assumptions that provide a physical interpretation of the theory.
-Such further assumptions must take the form of establishing con-
-nexions between the results of observations, on one hand, and the
-equations of the mathematical formalism-on the other.
+We have made a number of assumptions about the way in which states and dynamical variables are to be represented mathematically in the theory. These assumptions are not, by themselves, laws of nature, but become laws of nature when we make some further assumptions that provide a physical interpretation of the theory. Such further assumptions must take the form of establishing connexions between the results of observations, on one hand, and the equations of the mathematical formalism-on the other.
+
+</p><p class="blue">
+状態と力学変数を理論において数学的に表現する方法について、我々はいくつかの仮定を立てた。これらの仮定はそれ自体では自然法則ではないが、理論の物理的解釈を与える更なる仮定を置いた場合に自然法則となる。こうした更なる仮定は、観測結果と数学的形式主義の方程式との間の関係を確立するという形を取らなければならない。
 
 </p><p>
-When we make an observation we measure some dynamical variable.
-Tt is obvious physically that the result of such a measurement must
-always be a real number, so we should expect that any dynamical
-variable that we can measure must be a real dynamical variable.
-One might think one could measure a complex dynamical variable
-by measuring separately its real and pure imaginary parts. But this
-would involve two measurements or two observations, which would
-be all right in classical mechanics, but would not do in quantum
-mechanics, where two observations in general interfere with one
-another—it is not in general permissible to consider that two observa-
-tions can be made exactly simultaneously, and if they are made in
-quick succession the first will usually disturb the state of the system
-and introduce an indeterminacy that will affect the second. We
-therefore have to restrict the dynamical variables that we can
-measure to be real, the condition for this in quantum mechanics
-being as given in § 8. Not every real dynamical variable can be
-measured, however. A further restriction is needed, as we shall see
-later.
+When we make an observation we measure some dynamical variable. It is obvious physically that the result of such a measurement must always be a real number, so we should expect that any dynamical variable that we can measure must be a real dynamical variable. One might think one could measure a complex dynamical variable by measuring separately its real and pure imaginary parts. But this would involve two measurements or two observations, which would be all right in classical mechanics, but would not do in quantum mechanics, where two observations in general interfere with one another—it is not in general permissible to consider that two observations can be made exactly simultaneously, and if they are made in quick succession the first will usually disturb the state of the system and introduce an indeterminacy that will affect the second. We therefore have to restrict the dynamical variables that we can measure to be real, the condition for this in quantum mechanics being as given in § 8. Not every real dynamical variable can be measured, however. A further restriction is needed, as we shall see later.
+
+</p><p class="blue">
+観測を行う際、私たちは何らかの力学変数を測定します。そのような測定の結果は常に実数でなければならないことは物理的に明らかであるため、測定可能な力学変数はすべて実力学変数であると考えられます。複素力学変数の実部と純虚部を別々に測定すれば測定できると考える人もいるかもしれません。しかし、これは2回の測定、あるいは2回の観測を必要とします。これは古典力学では問題ありませんが、量子力学では一般的に2つの観測が互いに干渉し合うため、一般的には許容されません。2つの観測が正確に同時に行われると考えることは一般には許されず、もし2つの観測が短い間隔で行われた場合、最初の観測は通常系の状態を乱し、2番目の観測に影響を与える不確定性をもたらします。したがって、測定可能な力学変数は実数に限定する必要があります。量子力学におけるこの条件は§8で与えられています。しかし、すべての実力学変数が測定できるわけではありません。後述するように、さらなる制限が必要です。
 
 </p><p>
-We now make some assumptions for the physical interpretation of
-the theory. Jf the dynamical system is in an eigenstate of a real
-dynamical variable €, belonging to the eigenvalue £', then a measurement
-of € will certainly give as result the number €'. Conversely, if the system
-is in a@ state such that a measurement of a real dynamical variable € is
-certain to give one particular result (instead of giving one or other of
-several possible results according to a probability law, as is in general
-the case), then the state is an eigenstate of E and the result of the measure-
-ment is the eigenvalue of € to which this eigenstate belongs. These
-assumptions are reasonable on account of the eigenvalues of real
-linear operators being always real numbers. :
+We now make some assumptions for the physical interpretation of the theory. If the dynamical system is in an eigenstate of a real dynamical variable \(\xi\), belonging to the eigenvalue \(\xi^\prime\), then a measurement of \(\xi\) will certainly give as result the number \(\xi^\prime\). Conversely, if the system is in a state such that a measurement of a real dynamical variable \(\xi\) is certain to give one particular result (instead of giving one or other of several possible results according to a probability law, as is in general the case), then the state is an eigenstate of \(\xi\) and the result of the easurement is the eigenvalue of \(\xi\) to which this eigenstate belongs. These assumptions are reasonable on account of the eigenvalues of real linear operators being always real numbers.
+
+</p><p class="blue">
+ここで、理論の物理的解釈のためにいくつかの仮定を立てます。力学系が実力学変数 \(\xi\) の固有状態にあり、固有値 \(\xi^\prime\) に属している場合、\(\xi\) の測定結果は必ず \(\xi^\prime\) となります。逆に、実力学変数 \(\xi\) の測定結果が必ず特定の値になるような状態（一般的には確率法則に従って複数の可能な結果のいずれかが与えられるのに対し）にある場合、その状態は \(\xi\) の固有状態であり、測定結果はこの固有状態が属する \(\xi\) の固有値となります。これらの仮定は、実線形作用素の固有値が常に実数であることから妥当です。
 
 </p><p>
-Some of the immediate consequences of the assumptions will be
-noted. If we have two or more eigenstates of a real dynamical
-variable € belonging to the same eigenvalue €', then any state
-formed by superposition of them will also be an eigenstate of &
-belonging to the eigenvalue £'. We can infer that if we have two or
-more states for which a measurement of ¢ is certain to give the result
-é", then for any state formed by superposition of them a measurement
-of & will still be certain to give the result ¢'. This gives us some insight
-into the physical significance of superposition of states. Again, two
-eigenstates of € belonging to different eigenvalues are orthogonal.
-We can infer that two states for which a measurement of £ is certain
-to give two different results are orthogonal. This gives us some
-insight into the physical significance of orthogonal states.
+Some of the immediate consequences of the assumptions will be noted. If we have two or more eigenstates of a real dynamical variable \(\xi\) belonging to the same eigenvalue \(\xi^\prime\), then any state formed by superposition of them will also be an eigenstate of \(\xi\) belonging to the eigenvalue \(\xi^\prime\). We can infer that if we have two or more states for which a measurement of \(\xi\) is certain to give the result \(\xi^\prime\), then for any state formed by superposition of them a measurement of \(\xi\) will still be certain to give the result \(\xi^\prime\). This gives us some insight into the physical significance of superposition of states. Again, two eigenstates of \(\xi\) belonging to different eigenvalues are orthogonal.We can infer that two states for which a measurement of \(\xi\) is certain to give two different results are orthogonal. This gives us some insight into the physical significance of orthogonal states.
+
+</p><p class="blue">
+これらの仮定の直接的な帰結をいくつか述べます。実数力学変数 \(\xi\) の固有状態が2つ以上存在し、それらが同じ固有値 \(\xi^\prime\) に属する場合、それらの重ね合わせによって形成される状態も、\(\xi\) の固有状態であり、固有値 \(\xi^\prime\) に属します。\(\xi\) の測定によって結果が \(\xi^\prime\) となることが確実な状態が2つ以上存在する場合、それらの重ね合わせによって形成される状態についても、\(\xi\) の測定によって結果が \(\xi^\prime\) となることが確実であると推論できます。これは、状態の重ね合わせの物理的な意味について、ある程度の洞察を与えてくれます。繰り返しますが、異なる固有値に属する \(\xi\) の2つの固有状態は直交しています。\(\xi\) の測定で必ず異なる結果が得られる2つの状態は直交していると推論できます。これは、直交状態の物理的意味についてある程度の洞察を与えてくれます。
 
 </p><p>
-When we measure a real dynamical variable ¢, the disturbance
-involved in the act of measurement causes a jump in the state of the
-dynamical system. From physical continuity, if we make a second
-measurement of the same dynamical variable £ immediately after
-the first, the result of the second measurement must be the same as
-that of the first. Thus after the first measurement has been made,
-there is no indeterminacy in the result of the second. Hence, after
-the first measurement has been made, the system is in an eigenstate
-of the dyriamical variable é, the eigenvalue it belongs to being equal
-to the result of the first measurement. This conclusion must still hold
-if the second measurement is not actually made. In this way we see
-that a measurement always causes the system to jump into an eigen-
-state of the dynamical variable that is being measured, the eigenvalue
-this eigenstate belongs to being equal to the result of the measure-
-ment.
+When we measure a real dynamical variable \(\xi\), the disturbance involved in the act of measurement causes a jump in the state of the dynamical system. From physical continuity, if we make a second measurement of the same dynamical variable \(\xi\) immediately after the first, the result of the second measurement must be the same as that of the first. Thus after the first measurement has been made, there is no indeterminacy in the result of the second. Hence, after the first measurement has been made, the system is in an eigenstate of the dyriamical variable \(\xi\), the eigenvalue it belongs to being equal to the result of the first measurement. This conclusion must still hold if the second measurement is not actually made. In this way we see that a measurement always causes the system to jump into an eigenstate of the dynamical variable that is being measured, the eigenvalue this eigenstate belongs to being equal to the result of the measurement.
+
+</p><p class="blue">
+実数力学変数 \(\xi\) を測定すると、測定行為に伴う擾乱によって動的システムの状態にジャンプが生じます。物理的な連続性から、同じ力学変数 \(\xi\) を最初の測定直後に2度目に測定した場合、2度目の測定結果は最初の測定結果と同じになるはずです。つまり、最初の測定が行われた後には、2度目の測定結果に不確定性はありません。したがって、最初の測定が行われた後には、システムは力学変数 \(\xi\) の固有状態にあり、その固有値は最初の測定結果に等しくなります。この結論は、2度目の測定が実際に行われない場合でも成り立ちます。このように、測定は常にシステムを測定対象の力学変数の固有状態にジャンプさせ、その固有状態が属する固有値は測定結果に等しくなります。
 
 </p><p>
-We can infer that, with the dynamical system in any state, any
-result of a measurement of a real dynamical variable is one of its ewgen-
-values. Conversely, every eigenvalue is a possible result of a measure-
-ment of the dynamical variable for some state of the system, since it is
-certainly the result if the state is an eigenstate belonging to this
-eigenvalue. This gives us the physical significance of eigenvalues.
-The set of eigenvalues of a real dynamical variable are just the
-possible results of measurements of that dynamical variable and the
-calculation. of eigenvalues is for this reason an important problem.
+We can infer that, with the dynamical system in any state, any result of a measurement of a real dynamical variable is one of its ewgenvalues. Conversely, every eigenvalue is a possible result of a measurement of the dynamical variable for some state of the system, since it is certainly the result if the state is an eigenstate belonging to this eigenvalue. This gives us the physical significance of eigenvalues. The set of eigenvalues of a real dynamical variable are just the possible results of measurements of that dynamical variable and the calculation. of eigenvalues is for this reason an important problem.
+
+</p><p class="blue">
+力学系がどのような状態にあるとしても、実力学変数の測定結果は、その固有値の一つであると推論できます。逆に、あらゆる固有値は、系のある状態における力学変数の測定結果の可能性があるといえます。なぜなら、ある状態がその固有値に属する固有状態であれば、その固有値は必ず結果となるからです。これが固有値の物理的な意味を示します。実力学変数の固有値の集合は、まさにその力学変数の測定結果の可能性があるものであり、このため、固有値の計算は重要な問題となります。
 
 </p><p>
-Another assumption we make connected with the physical inter-
-pretation of the theory is that, if a certain real dynamical variable
-é is measured with the system in a particular state, the states into which
-the system may jump on account of the measurement are such that the
-original state is dependent on them. Now these states into which
-the system may jump are all eigenstates of €, and hence the original
-state is dependent on eigenstates of £. But the original state may be
-any state, so we can conclude that any state is dependent on eigen-
-states of &. If we define a complete set of states to be a set such that
-any state is dependent on them, then our conclusion can be formu-
-lated—the eigenstates of € form a complete set.
+Another assumption we make connected with the physical interpretation of the theory is that, if a certain real dynamical variable \(\xi\) is measured with the system in a particular state, the states into which the system may jump on account of the measurement are such that the original state is dependent on them. Now these states into which the system may jump are all eigenstates of €, and hence the original state is dependent on eigenstates of \(\xi\). But the original state may be any state, so we can conclude that any state is dependent on eigenstates of \(\xi\). If we define a complete set of states to be a set such that any state is dependent on them, then our conclusion can be formulated—the eigenstates of \(\xi\) form a complete set.
+
+</p><p class="blue">
+理論の物理的解釈に関連して私たちが立てるもう一つの仮定は、ある実数力学変数 \(\xi\) が特定の状態にある系で測定された場合、測定によって系が遷移する可能性のある状態は、元の状態がそれらに依存する状態であるというものです。ここで、系が遷移する可能性のあるこれらの状態はすべて € の固有状態であり、したがって元の状態は \(\xi\) の固有状態に依存します。しかし、元の状態は任意の状態である可能性があるため、任意の状態が \(\xi\) の固有状態に依存していると結論付けることができます。状態の完全な集合を、任意の状態がそれらに依存する集合と定義すれば、\(\xi\) の固有状態は完全な集合を形成するという結論を定式化できます。
 
 </p><p>
-Not every real dynamical variable has sufficient eigenstates to form
-a complete set. Those whose eigenstates do not form complete sets
-are not quantities that can be measured. We obtain in this way a
-further condition that a dynamical variable has to satisfy in order
-that it shall be susceptible to measurement, in addition to the con-
-dition that it shall be real. We call a real dynamical variable whose
-eigenstates form a complete set an observable. Thus any quantity
-that can be measured is an observable.
+Not every real dynamical variable has sufficient eigenstates to form a complete set. Those whose eigenstates do not form complete sets are not quantities that can be measured. We obtain in this way a further condition that a dynamical variable has to satisfy in order that it shall be susceptible to measurement, in addition to the condition that it shall be real. We call a real dynamical variable whose eigenstates form a complete set an observable. Thus any quantity that can be measured is an observable.
+
+</p><p class="blue">
+すべての実数力学変数が、完全な集合を形成するのに十分な固有状態を持つわけではありません。固有状態が完全な集合を形成しない変数は、測定可能な量ではありません。このようにして、力学変数が測定可能であるためには、実数であるという条件に加えて、さらに満たさなければならない条件が得られます。固有状態が完全な集合を形成する実数力学変数を観測可能量と呼びます。したがって、測定可能なあらゆる量は観測可能量です。
 
 </p><p>
 The question now presents itself—Can every observable be
@@ -720,58 +1021,62 @@ menter, to devise an apparatus which could measure some particular
 observable, but the theory always allows one to imagine that the
 measurement can be made.
 
+</p><p class="blue">
+ここで疑問が浮かびます。「すべての観測可能量は測定可能か？」理論的には答えは「はい」です。実際には、特定の観測可能量を測定できる装置を考案するのは非常に困難、あるいは実験者の創意工夫の限界を超えることさえあるかもしれません。しかし、理論上は常に、測定が可能であると想像することができます。
+
 </p><p>
 Let us examine mathematically the condition for a real dynamical
-variable & to be an observable. Its eigenvalues may consist of a
+variable \(\xi\) to be an observable. Its eigenvalues may consist of a
 (finite or infinite) discrete set of numbers, or alternatively, they
 may consist of all numbers in a certain range, such as all numbers
-lying between a and 6. In the former case, the condition that
-any state is dependent on eigenstates of € is that any ket can
-be expressed as a sum of eigenkets of €. In the latter case the
+lying between \(a\) and \(b\). In the former case, the condition that
+any state is dependent on eigenstates of \(\xi\) is that any ket can
+be expressed as a sum of eigenkets of \(\xi\). In the latter case the
 condition needs modification, since one may have an integral instead
-of a sum, i.e. a ket |P> may be expressible as an integral of eigen-
+of a sum, i.e. a ket \(|P\rangle\) may be expressible as an integral of eigen-
+kets of \(\xi\), 
 
-ets of IP) = fie>ae' , (24)
+</p><p class="blue">
+実数力学変数 \(\xi\) が観測可能となる条件を数学的に考察してみましょう。その固有値は、（有限または無限の）離散的な数の集合から構成される場合もあれば、\(a\) と \(b\) の間にあるすべての数など、特定の範囲内のすべての数から構成される場合もあります。前者の場合、任意の状態が \(\xi\) の固有状態に依存する条件は、任意のケットが \(\xi\) の固有ケットの和として表せることです。後者の場合、和ではなく積分で表される場合があるため、条件を修正する必要があります。つまり、ケット \(|P\rangle\) は \(\xi\) の固有ケットの積分として表せる場合があります。
+</p><p>
 
-|é'> being an eigenket of € belonging to the eigenvalue ¢' and the
+\[
+|P\rangle = \int |\xi^\prime\rangle d\xi^\prime \tag{24}
+\]
+
+\(|\xi^\prime\rangle\) being an eigenket of \(\xi\) belonging to the eigenvalue \(\xi^\prime\) and the
 range of integration being the range of eigenvalues, as such a ket is
-dependent on eigenkets of €. Not every ket dependent on eigenkets
-of € can be expressed in the form of the right-hand side of (24), since
+dependent on eigenkets of \(\xi\). Not every ket dependent on eigenkets
+of \(\xi\) can be expressed in the form of the right-hand side of (24), since
 one of the eigenkets itself cannot, and more generally any sum of
-eigenkets cannot. The condition for the eigenstates of € to form a
-complete set must thus be formulated, that any ket |P> can be
-expressed as an integral plus a sum of eigenkets of €, ie.
+eigenkets cannot. The condition for the eigenstates of \(\xi\) to form a
+complete set must thus be formulated, that any ket \(|P\rangle\) can be
+expressed as an integral plus a sum of eigenkets of \(\xi\), i.e.
 
-IP> = | le'e> dé'+ 3 led, (25)
+</p><p class="blue">
+\(|\xi^\prime\rangle\) は \(\xi\) の固有ケットであり、固有値 \(\xi^\prime\) に属し、積分域は固有値域である。したがって、このようなケットは \(\xi\) の固有ケットに依存する。\(\xi\) の固有ケットに依存するすべてのケットが (24) の右辺の形で表現できるわけではない。なぜなら、固有ケットの 1 つ自体は表現できず、より一般的には固有ケットの任意の和も表現できないからである。したがって、\(\xi\) の固有状態が完全な集合を形成するための条件は、任意のケット \(|P\rangle\) が \(\xi\) の固有ケットの積分と和として表現できること、すなわち、
+</p><p>
 
-where the |é'e>, |d) are all eigenkets of €, the labels ¢ and d being
-inserted to distinguish them when the eigenvalues ¢' and £" are equal,
-and where the integral is taken over the whole range of eigenvalues
-and the sum is taken over any selection of them. If this condition
-is satisfied in the case when the eigenvalues of € consist of a range
-of numbers, then € is an observable.
+\[
+|P\rangle = \int |\xi^\prime c\rangle d\xi^\prime + \sum_r |\xi^r d\rangle  \tag{25}
+\]
+
+where the \(|\xi^\prime c\rangle, |\xi^r d\rangle\) are all eigenkets of \(\xi\), the labels \(c\) and \(d\) being inserted to distinguish them when the eigenvalues \(\xi^\prime\) and \(\xi^r\) are equal, and where the integral is taken over the whole range of eigenvalues and the sum is taken over any selection of them. If this condition is satisfied in the case when the eigenvalues of \(\xi\) consist of a range of numbers, then \(\xi\) is an observable.
+
+</p><p class="blue">
+ここで、\(|\xi^\prime c\rangle, |\xi^r d\rangle\) はすべて \(\xi\) の固有ケットであり、\(c\) と \(d\) というラベルは、固有値 \(\xi^\prime\) と \(\xi^r\) が等しい場合にそれらを区別するために挿入されます。また、積分は固有値の全範囲にわたって行われ、和は任意の固有値を選択して行われます。\(\xi\) の固有値が数値の範囲で構成される場合にこの条件が満たされる場合、\(\xi\) は観測可能量です。
 
 </p><p>
-There is a more general case that sometimes occurs, namely the
-eigenvalues of € may consist of a range of numbers together with a
-discrete set of numbers lying outside the range. In this case the
-condition that shall be an observable is still that any ket shall be
-expressible in the form of the right-hand side of (25), but the sum
-over 7 is now a sum over the discrete set of eigenvalues as well as a
-selection of those in the range.
+There is a more general case that sometimes occurs, namely the eigenvalues of \(\xi\) may consist of a range of numbers together with a discrete set of numbers lying outside the range. In this case the condition that \(\xi\) shall be an observable is still that any ket shall be expressible in the form of the right-hand side of (25), but the sum over \(r\) is now a sum over the discrete set of eigenvalues as well as a selection of those in the range.
+
+</p><p class="blue">
+より一般的なケースが時々発生します。つまり、\(\xi\) の固有値は、ある範囲の数と、その範囲外にある離散的な数の集合から構成されることがあります。この場合、\(\xi\) が観測可能となる条件は、任意のケットが(25)の右辺の形で表現可能であることと同じですが、\(r\) の和は、離散的な固有値の集合と、範囲内の選択された固有値の和になります。
 
 </p><p>
-It is often very difficult to decide mathematically whether a par-
-ticular real dynamical variable satisfies the condition for being an
-observable or not, because the whole problem of finding eigenvalues
-and eigenvectors is in general very difficult. However, we may have
-good reason on experimental grounds for believing that the dynamical
-variable can be measured and then we may reasonably assume that it
-is an observable even though the mathematical proofis missing. This is
-a thing we shall frequently do during the course of development of the
-theory, e.g. we shall assume the energy of any dynamical system to be
-always an observable, even though it is beyond the power of present-
-day mathematical analysis to prove it so except in simple cases.
+It is often very difficult to decide mathematically whether a particular real dynamical variable satisfies the condition for being an observable or not, because the whole problem of finding eigenvalues and eigenvectors is in general very difficult. However, we may have good reason on experimental grounds for believing that the dynamical variable can be measured and then we may reasonably assume that it is an observable even though the mathematical proofis missing. This is a thing we shall frequently do during the course of development of the theory, e.g. we shall assume the energy of any dynamical system to be always an observable, even though it is beyond the power of presentday mathematical analysis to prove it so except in simple cases.
+
+</p><p class="blue">
+特定の実数力学変数が観測可能となる条件を満たすかどうかを数学的に判断することは、しばしば非常に困難です。なぜなら、固有値と固有ベクトルを求める問題自体が一般に非常に困難だからです。しかし、実験的根拠に基づいて、その力学変数が測定可能であると信じる十分な理由がある場合、数学的証明がなくても、それが観測可能だと合理的に仮定することができます。これは、理論構築の過程で頻繁に行われることです。例えば、単純な場合を除いて、現在の数学的解析ではそれを証明することは不可能ですが、あらゆる力学系のエネルギーは常に観測可能だと仮定します。
 
 </p><p>
 In the special case when the real dynamical variable is a number,
@@ -782,255 +1087,391 @@ A physical constant in quantum mechanics may thus be looked upon
 either as an observable with a single eigenvalue or as a mere number
 appearing in the equations, the two points of view being equivalent.
 
+</p><p class="blue">
+実数力学変数が数値である特殊なケースでは、
+あらゆる状態は固有状態であり、力学変数は明らかに観測量である。その測定は常に同じ結果を与えるため、それは単なる物理定数、例えば電子の電荷のようなものとみなされる。
+量子力学における物理定数は、単一の固有値を持つ観測量として、あるいは方程式に現れる単なる数値として捉えることができ、どちらの見方も同等である。
+
 </p><p>
 If the real dynamical variable satisfies an algebraic equation, then
-the result (8) of the preceding section shows that the dynamical
+the result (\(\beta\)) of the preceding section shows that the dynamical
 variable is an observable. Such an observable has a finite number
 of eigenvalues. Conversely, any observable with a finite number of
-eigenvalues satisfies an algebraic equation, since if the obsérvable ¢
-has as its eigenvalues ¢', é”,...,é", then
+eigenvalues satisfies an algebraic equation, since if the obsérvable \(\xi\)
+has as its eigenvalues \(\xi^\prime, \xi^{\prime\prime},...,\xi^n\), then
 
-(E—€')(E-£")... (E—&) |P> = 0
-holds for |P> any eigenket of €, and thus it holds for any |P) what-
+</p><p class="blue">
+実数力学変数が代数方程式を満たす場合、前節の結果 (\(\beta\)) は、その力学変数が観測可能量であることを示しています。そのような観測可能量は有限個の固有値を持ちます。逆に、有限個の固有値を持つ任意の観測可能量は代数方程式を満たします。なぜなら、観測可能量 \(\xi\) が固有値として \(\xi^\prime, \xi^{\prime\prime},...,\xi^n\) を持つ場合、
+</p><p>
 
-ever, because any ket can be expressed as a sum of eigenkets of €
-on account of € being an observable. Hence
+\[
+(\xi - \xi^\prime)(\xi - \xi^{\prime\prime})...(\xi - \xi^n)|P\rangle = 0
+\]
 
-(E—£')(E—8")... E—8") = 0. (26)
+holds for \(|P\rangle\) any eigenket of \(\xi\), and thus it holds for any \(|P\rangle\) whatever, because any ket can be expressed as a sum of eigenkets of \(\xi\) on account of \(\xi\) being an observable. Hence
+
+</p><p class="blue">
+は\(\xi\)の任意の固有ケット\(|P\rangle\)に対して成り立ち、したがって任意の\(|P\rangle\)に対しても成り立つ。なぜなら、\(\xi\)が観測量であるため、任意のケットは\(\xi\)の固有ケットの和として表すことができるからである。したがって、
+</p><p>
+
+\[
+(\xi - \xi^\prime)(\xi - \xi^{\prime\prime})...(\xi - \xi^n) = 0  \tag{26}
+\]
 
 </p><p>
-As an example we may consider the linear operator |A)<A|, where
+As an example we may consider the linear operator \(|A\rangle\langle A|\), where \(|A\rangle\) is a normalized ket. This linear operator is real according to (7),and its square is
 
-|A> is a normalized ket. This linear operator is real according to (7),
-and its square is
+</p><p class="blue">
+例として、線型作用素\(|A\rangle\langle A|\)を考える。ここで、\(|A\rangle\)は正規化されたケットである。この線型作用素は(7)によれば実数であり、その平方は
+</p><p>
 
-HADCAIP = |A><A|AD<A| = |A><A| (27)
+\[
+\{|A\rangle\langle A|\}^2 = |A\rangle\langle A|A\rangle\langle A| = |A\rangle\langle A| \tag{27}
+\]
 
-since (A|A> = 1. Thus its square equals itself and so it satisfies an
-algebraic equation and is an observable. Its eigenvalues are 1 and 0,
-with |A> as the eigenket belonging to the eigenvalue I and all kets
-orthogonal to |A> as eigenkets belonging to the eigenvalue 0. A
-measurement of the observable thus certainly gives the result 1 if
-the dynamical system is in the state corresponding to [A> and the
-result 0 if the system is in any orthogonal state, so the observable
-may be described as the quantity which determines whether the
-system is in the state |A> or not.
+since \(\langle A|A\rangle = 1\). Thus its square equals itself and so it satisfies an algebraic equation and is an observable. Its eigenvalues are 1 and 0, with \(|A\rangle\) as the eigenket belonging to the eigenvalue I and all kets orthogonal to \(|A\rangle\) as eigenkets belonging to the eigenvalue 0. A measurement of the observable thus certainly gives the result 1 if the dynamical system is in the state corresponding to \(|A\rangle\) and the result 0 if the system is in any orthogonal state, so the observable may be described as the quantity which determines whether the system is in the state \(|A\rangle\) or not.
+
+</p><p class="blue">
+\(\langle A|A\rangle = 1\) であるため、その平方はそれ自身に等しく、代数方程式を満たし、観測量となります。その固有値は 1 と 0 で、\(|A\rangle\) は固有値 I に属する固有ケット、\(|A\rangle\) に直交するすべてのケットは固有値 0 に属する固有ケットとなります。したがって、観測量の測定は、力学系が \(|A\rangle\) に対応する状態にある場合は必ず 1 を、それ以外の直交状態にある場合は必ず 0 を返します。したがって、観測量は、系が状態 \(|A\rangle\) にあるかどうかを決定する量として記述できます。
 
 </p><p>
 Before concluding this section we should examine the conditions
-for an integral such as occurs in (24) to be significant. Suppose |X)
-and | Y> are two kets which can be expressed as integrals of eigenkets
-of the observable €, :
+for an integral such as occurs in (24) to be significant. Suppose \(|X\rangle\) and \(|Y\rangle\) are two kets which can be expressed as integrals of eigenkets of the observable \(\xi\),
 
-IX> = [lem de, [Y= f ley ae",
+</p><p class="blue">
+この節を締めくくる前に、(24)式で生じるような積分が有意となるための条件を検討する必要がある。\(|X\rangle\)と\(|Y\rangle\)が観測量\(\xi\)の固有ケットの積分として表せる2つのケットであるとする。
+</p><p>
 
-x and y being used as labels to distinguish the two integrands. Then
-we have, taking the conjugate imaginary of the first equation and
+\[
+|X\rangle = \int |\xi^\prime x\rangle d\xi^\prime,　|Y\rangle = \int |\xi^{\prime\prime}y\rangle d\xi^{\prime\prime}
+\]
+
+\(x\) and \(y\) being used as labels to distinguish the two integrands. Then we have, taking the conjugate imaginary of the first equation and
 multiplying by the second
 
-<E|¥)> = ff e'ale'y> ae'ae". (28)
+</p><p class="blue">
+\(x\) と \(y\) は、2つの被積分関数を区別するためのラベルとして使用されています。そして、最初の式の共役虚数を取り、2番目の式を掛けると、
+</p><p>
+
+\[
+\langle X|Y \rangle = \int \int \langle \xi^\prime x|\xi^{\prime\prime} y\rangle d\xi^\prime d\xi^{\prime\prime}  \tag{28}
+\]
+
 Consider now the single integral
-f <exlery> de”. (29)
 
-From the orthogonality theorem, the integrand here must vanish
-over the whole range of integration except the one point é” = £'
-If the integrand is finite at this point, the integral (29) vanishes, and
-if this holds for all €', we get from (28) that <X|Y> vanishes. Now
-in general ¢X|Y) does not vanish, so in general <é'x|é'y> must be
-infinitely great in such a way as to make (29) non-vanishing and
-finite. The form of infinity required for this will be discussed in § 15.
+</p><p class="blue">
+ここで、単一の積分を考えてみましょう
+</p><p>
+
+\[
+\int \langle \xi^\prime x|\xi^{\prime\prime} y\rangle d\xi^{\prime\prime} \tag{29}
+\]
+
+From the orthogonality theorem, the integrand here must vanish over the whole range of integration except the one point \(\xi^{\prime\prime} = \xi^\prime\). If the integrand is finite at this point, the integral (29) vanishes, and if this holds for all \(\xi^\prime\), we get from (28) that \(\langle X|Y\rangle\) vanishes. Now in general \(\langle X|Y\rangle\) does not vanish, so in general \(\langle\xi^\prime x|\xi^\prime y\rangle\) must be infinitely great in such a way as to make (29) non-vanishing and finite. The form of infinity required for this will be discussed in §15.
+
+</p><p class="blue">
+直交定理より、ここでの積分関数は、\(\xi^{\prime\prime} = \xi^\prime\) という一点を除く積分範囲全体にわたってゼロでなければならない。この点で積分関数が有限であれば、積分(29)はゼロとなり、これがすべての \(\xi^\prime\) に対して成り立つならば、(28)から \(\langle X|Y\rangle\) がゼロとなることがわかる。一般に \(\langle X|Y\rangle\) はゼロにならないので、一般に \(\langle\xi^\prime x|\xi^\prime y\rangle\) は無限大でなければならず、(29) はゼロではなく有限となる。このために必要な無限大の形については、§15で議論する。
 
 </p><p>
-In our work up to the present it has been implied that our bra and
-ket vectors are of finite length and their scalar products are finite.
-We see now the need for relaxing this condition when we are dealing
-with eigenvectors of an observable whose eigenvalues form a range.
-If we did not relax it, the phenomenon of ranges of eigenvalues could
-not occur and our theory would be too weak for most practical
-problems.
+In our work up to the present it has been implied that our bra and ket vectors are of finite length and their scalar products are finite. We see now the need for relaxing this condition when we are dealing with eigenvectors of an observable whose eigenvalues form a range. If we did not relax it, the phenomenon of ranges of eigenvalues could not occur and our theory would be too weak for most practical problems.
+
+</p><p class="blue">
+これまでの研究において、ブラベクトルとケットベクトルは有限長であり、それらのスカラー積は有限であることが示唆されてきました。しかし、固有値が値域を形成する観測量の固有ベクトルを扱う場合、この条件を緩和する必要があることが分かりました。もしこの条件を緩和しなければ、固有値の値域現象は発生せず、私たちの理論はほとんどの実用的な問題に対して弱すぎるものとなるでしょう。
 
 </p><p>
-Taking | Y> = |X> above, we get the result that in general <é'x|£'x)
-is infinitely great. We shall assume that if |£'2> 4 0
+Taking \(|Y\rangle = |X\rangle\) above, we get the result that in general \(\langle \xi^\prime x|\xi^\prime x\rangle\)
+is infinitely great. We shall assume that if \(|\xi^\prime x\rangle \neq 0\)
 
-[ <enle"e de" > 0, (30)
+</p><p class="blue">
+上記の\(|Y\rangle = |X\rangle\)をとれば、一般に\(\langle \xi^\prime x|\xi^\prime x\rangle\)
+は無限大であるという結果が得られます。\(|\xi^\prime x\rangle \neq 0\)の場合、
+</p><p>
 
-as the axiom corresponding to (8) of §6 for vectors of infinite
-length.
+\[
+\int \langle \xi^\prime x|\xi^{\prime\prime} x\rangle d\xi^{\prime\prime} \gt 0 \tag{30}
+\]
+
+as the axiom corresponding to (8) of §6 for vectors of infinite length.
+
+</p><p class="blue">
+無限長のベクトルに対する§6の(8)に対応する公理として。
 
 </p><p>
-The space of bra or ket vectors when the vectors are restricted to
-be of finite length and to have finite scalar products is called by
-mathematicians a Hilbert space. The bra and ket vectors that we
-now use form a more general space than a Hilbert space.
+The space of bra or ket vectors when the vectors are restricted to be of finite length and to have finite scalar products is called by mathematicians a Hilbert space. The bra and ket vectors that we now use form a more general space than a Hilbert space.
 
-We can now see that the expansion of a ket |P) in the form of the
+</p><p class="blue">
+ブラベクトルまたはケットベクトルが有限長かつ有限スカラー積を持つように制限された空間は、数学者によってヒルベルト空間と呼ばれます。現在私たちが用いるブラベクトルとケットベクトルは、ヒルベルト空間よりもより一般的な空間を形成します。
+
+</p><p>
+
+※ \(\xi\) のべきが \(i\) なのか、\(l\) なのか、\(t\) なのか判読できず･･･\(i\) とした。
+<br><br>
+
+We can now see that the expansion of a ket \(|P\rangle\) in the form of the
 right-hand side of (25) is unique, provided there are not two or more
 terms in the sum referring to the same eigenvalue. To prove this
-result, let us suppose that two different expansions of |P> are pos-
+result, let us suppose that two different expansions of \(|P\rangle\) are pos-
 sible. Then by subtracting one from the other, we get an equation
+of the form
 
-of the form 0 =x f ea de' + & \eby, (31)
-
-a and 6 being used as new labels for the eigenvectors, and the sum
-over s including all terms left after the subtraction of one sum from
-the other. If there is a term in the sum in (31) referring to an eigen-
-value € not in the range, we get, by multiplying (31) on the left by
-<@b| and using the orthogonality theorem, ,
-
-0 = ¢£|&>,
-which contradicts (8) of § 6. Again, if the integrand in (31) does not
-vanish for some eigenvalue &” not equal to any £* occurring in the
-sum, we get, by multiplying (31) on the left by <é'a| and using the
-orthogonality theorem,
-
-Oo = [ <e'ale'ay dé',
-
-which contradicts (30). Finally, if there is a term in the sum in (31)
-referring to an eigenvalue & in the range, we get, multiplying (31) on
-the left by <&b|,
-
-0 = | <b|é'ay dé” +-<£b |g (32)
-and multiplying (31) on the left by <éa]
-O= { <Calg'a> de' +<galeb>. (33)
-
-Now the integral in (33) is finite, so <@a|&b) is finite and <b|&a> is
-finite. The integral in (32) must then be zero, so <éb|Eb> is zero and
-
-
-we again have a contradiction. Thus every term in (31) must vanish
-and the expansion of a ket |P)> in the form of the right-hand side of
-(25) must be unique.
+</p><p class="blue">
+ケット \(|P\rangle\) の展開は、(25) の右辺の形に一意であることが分かる。ただし、和の中に同じ固有値を指す項が 2 つ以上含まれていてはならない。この結果を証明するために、\(|P\rangle\) の 2 つの異なる展開が可能であるとする。一方から他方を引くと、次の式が得られる。
 </p><p>
 
-<h3>11. Functions of observables</h3>
+\[
+0 = \int |\xi^\prime a\rangle d\xi^\prime + \sum_s |\xi^s b\rangle \tag{31}
+\]
+
+\(a\) and \(b\) being used as new labels for the eigenvectors, and the sum
+over \(s\) including all terms left after the subtraction of one sum from
+the other. If there is a term in the sum in (31) referring to an eigen-
+value \(\xi^i\) not in the range, we get, by multiplying (31) on the left by
+\(\langle\xi^i|\) and using the orthogonality theorem, 
+
+</p><p class="blue">
+\(a\) と \(b\) は固有ベクトルの新しいラベルとして用いられ、\(s\) 上の和は、一方の和からもう一方の和を引いた後に残るすべての項を含む。(31) の和の中に、範囲外の固有値 \(\xi^i\) を参照する項がある場合、(31) の左側に
+\(\langle\xi^i|\) を乗じ、直交定理を用いると、次の式が得られる。
+</p><p>
+
+\[
+0 = \langle \xi^i b|\xi^i b \rangle
+\]
+
+which contradicts (8) of §6. Again, if the integrand in (31) does not
+vanish for some eigenvalue \(\xi^{\prime\prime}\) not equal to any \(\xi^s\) occurring in the
+sum, we get, by multiplying (31) on the left by \(\langle \xi^{\prime\prime} a|\) and using the
+orthogonality theorem,
+
+</p><p class="blue">
+これは§6の(8)と矛盾する。さらに、(31)の積分関数が、和に含まれるどの\(\xi^s\)とも等しくないある固有値\(\xi^{\prime\prime}\)に対しても消滅しない場合、(31)の左側に\(\langle \xi^{\prime\prime} a|\)を乗じて直交性定理を用いると、
+</p><p>
+
+\[
+0 = \int \langle \xi^{\prime\prime} a|\xi^\prime a\rangle d\xi^\prime
+\]
+
+which contradicts (30). Finally, if there is a term in the sum in (31)
+referring to an eigenvalue \(\xi^i\) in the range, we get, multiplying (31) on
+the left by \(\langle\xi^i b|\),
+
+</p><p class="blue">
+これは(30)と矛盾する。最後に、(31)の和の中に、範囲内の固有値\(\xi^i\)を参照する項がある場合、(31)の左側に\(\langle\xi^i b|\)を乗じると、
+</p><p>
+
+\[
+0 = \int \langle \xi^i b|\xi^\prime a\rangle d\xi^\prime + \langle \xi^i b|\xi^i b \rangle \tag{32}
+\]
+
+and multiplying (31) on the left by \(\langle \xi^i a|\)
+
+</p><p class="blue">
+そして、(31)の左辺に \(\langle \xi^i a|\)を掛けると、
+</p><p>
+
+\[
+0 = \int \langle \xi^i a|\xi^\prime a\rangle d\xi^\prime + \langle \xi^i a|\xi^i b \rangle \tag{33}
+\]
+
+Now the integral in (33) is finite, so \(\langle \xi^i a|\xi^i b\rangle\) is finite and \(\xi^i b|\xi^i a\rangle\) is finite. The integral in (32) must then be zero, so \(\langle \xi^i b|\xi^i b\rangle\) is zero and we again have a contradiction. Thus every term in (31) must vanish and the expansion of a ket \(|P\rangle\) in the form of the right-hand side of (25) must be unique.
+
+</p><p class="blue">
+ここで、(33) の積分は有限なので、\(\langle \xi^i a|\xi^i b\rangle\) は有限であり、\(\xi^i b|\xi^i a\rangle\) も有限である。すると、(32) の積分はゼロになるはずなので、\(\langle \xi^i b|\xi^i b\rangle\) はゼロとなり、再び矛盾が生じる。したがって、(31) のすべての項は必ずゼロとなり、(25) の右辺の形で表されるケット展開 \(|P\rangle\) は一意となる。
+
+</p><p>
+
+<h3>11. Functions of observables　オブザーバブルの関数</h3>
 <p>
 
-Let € be an observable. We can multiply it by any real number k
-and get another observable ké. In order that our theory may be
+Let \(\xi\) be an observable. We can multiply it by any real number \(k\) 
+and get another observable \(k\xi\). In order that our theory may be
 self-consistent it is necessary that, when the system is in a state such
-that a measurement of the observable é certainly gives the result ¢',
-a measurement of the observable £é shall certainly give the result x£é'.
+that a measurement of the observable \(\xi\) certainly gives the result \(\xi^\prime\),
+a measurement of the observable \(k\xi\) shall certainly give the result \(k\xi^\prime\).
 It is easily verified that this condition is fulfilled. The ket correspond-
-ing to a state for which a measurement of é certainly gives the result
-é' is an eigenket of €, |€ say, satisfying
+ing to a state for which a measurement of \(\xi\) certainly gives the result
+\(\xi^\prime\) is an eigenket of \(\xi\), \(|\xi^\prime\rangle\) say, satisfying
 
-51> = EE.
+</p><p class="blue">
+\(\xi\) を観測量とする。これを任意の実数 \(k\) で乗じると、別の観測量 \(k\xi\) が得られる。この理論が自己無矛盾であるためには、観測量 \(\xi\) の測定が確実に結果 \(\xi^\prime\) を与える状態にあるとき、観測量 \(k\xi\) の測定も確実に結果 \(k\xi^\prime\) を与えることが必要である。この条件が満たされていることは容易に検証できる。\(\xi\) の測定が確実に結果 \(\xi^\prime\) を与える状態に対応するケットは、\(\xi\) の固有ケット、つまり \(|\xi^\prime\rangle\) であり、これは次を満たす。
+</p><p>
+
+\[
+\xi|\xi^\prime\rangle = \xi^\prime|\xi^\prime\rangle
+\]
 
 This equation leads to
 
-hE|E") = hg" \&'),
+</p><p class="blue">
+この式から次式が導かれる
+</p><p>
 
-showing that |é'> is an eigenket of ké belonging to the eigenvalue ké',
-and thus that a measurement of ké will certainly give the result ké'.
+\[
+k\xi|\xi^\prime\rangle = k\xi^\prime|\xi^\prime\rangle
+\]
+
+showing that \(|\xi^\prime\rangle\) is an eigenket of \(k\xi\) belonging to the eigenvalue \(k\xi^\prime\), and thus that a measurement of \(k\xi\) will certainly give the result \(k\xi^\prime\).
+
+</p><p class="blue">
+\(|\xi^\prime\rangle\) は \(k\xi\) の固有ケットであり、固有値 \(k\xi^\prime\) に属していることを示しており、したがって \(k\xi\) の測定では必ず結果 \(k\xi^\prime\) が得られることを示しています。
 
 </p><p>
-More generally, we may take any real function of €, fle) say, and
+More generally, we may take any real function of \(\xi,f(\xi)\) say, and
 consider it as a new observable which is automatically measured
-whenever € is measured, since an experimental determination of the
-value of € also provides the value of f(£). We need not restrict f(£) to
+whenever \(\xi\) is measured, since an experimental determination of the
+value of \(\xi\) also provides the value of \(f(\xi)\). We need not restrict \(f(\xi)\) to
 be real, and then its real and pure imaginary parts are two observables
-which are automatically measured when ¢ is measured. For the theory
+which are automatically measured when \(\xi\) is measured. For the theory
 to be consistent it is necessary that, when the system is in a state
-such that a measurement of € certainly gives the result é', a measure-
-ment of the real and pure imaginary parts of f(€) shall certainly give
-for results the real and pure imaginary parts of f(¢'). In the case when
-f(€) is expressible as a power series
+such that a measurement of \(\xi\) certainly gives the result \(\xi^\prime\), a measure-
+ment of the real and pure imaginary parts of \(f(\xi)\) shall certainly give
+for results the real and pure imaginary parts of \(f(\xi^\prime)\). In the case when
+\(f(\xi)\) is expressible as a power series
 
-F(E) = Cote, E+ 62 +03 F+...,
-the c's being numbers, this condition can again be verified by elemen-
-tary algebra. In the case of more general functions f it may not be
-possible to verify the condition. The condition may then be used to
-define f(£), which we have not yet defined mathematically. In this
+</p><p class="blue">
+より一般的には、例えば \(\xi,f(\xi)\) の任意の実関数を取り上げ、それを \(\xi\) が測定されるたびに自動的に測定される新しい観測量とみなすことができます。なぜなら、\(\xi\) の値を実験的に決定すれば、\(f(\xi)\) の値も得られるからです。\(f(\xi)\) を実数に制限する必要はなく、その実部と純虚部は、\(\xi\) が測定されるたびに自動的に測定される2つの観測量となります。理論が整合するためには、\(\xi\) を測定すると確実に結果 \(\xi^\prime\) が得られるような状態にあるとき、\(f(\xi)\) の実部と純虚部を測定すると、必ず \(f(\xi)^\prime)\) の実部と純虚部が得られることが必要です。 \(f(\xi)\) がべき級数として表現できる場合
+</p><p>
 
-way we can get a more general definition of a function of an observ-
-able than is provided by power series.
+\[
+f(\xi) = c_0 + c_1 \xi + c_2 \xi^2 + c_3 \xi^3 + \cdots
+\]
+
+the \(c\)'s being numbers, this condition can again be verified by elementary algebra. In the case of more general functions \(f\) it may not be possible to verify the condition. The condition may then be used to define \(f(\xi)\), which we have not yet defined mathematically. In this way we can get a more general definition of a function of an observable than is provided by power series.
+
+</p><p class="blue">
+\(c\) が数であるため、この条件は初等代数によって再び検証できます。より一般的な関数 \(f\) の場合、この条件を検証できない可能性があります。その場合、この条件を用いて、まだ数学的に定義されていない \(f(\xi)\) を定義できます。このようにして、冪級数によって提供されるよりも一般的な観測可能な関数の定義を得ることができます。
 
 </p><p>
-We define f(€) in general to be that linear operator which satisfies
-FONED = FEED (34)
+We define \(f(\xi)\) in general to be that linear operator which satisfies
 
-for every eigenket |é'> of €, f(€') being a number for each eigenvalue &'.
+</p><p class="blue">
+\(f(\xi)\)を一般に次の式を満たす線型作用素と定義する。
+</p><p>
+
+\[
+f(\xi)|\xi^\prime\rangle = f(\xi^\prime)|\xi^\prime\rangle  \tag{34}
+\]
+
+for every eigenket \(|\xi^\prime\rangle\) of \(\xi,f(\xi^\prime)\) being a number for each eigenvalue \(\xi^\prime\).
 It is easily seen that this definition is self-consistent when applied to
-eigenkets |é'> that are not independent. If we have an eigenket |£'A>
-dependent on other eigenkets of £, these other eigenkets must all
-belong to the same eigenvalue €', otherwise we should have an equa-
+eigenkets \(|\xi^\prime\rangle\) that are not independent. If we have an eigenket \(|\xi^\prime A\rangle\)
+dependent on other eigenkets of \(\xi\), these other eigenkets must all
+belong to the same eigenvalue \(\xi^\prime\), otherwise we should have an equa-
 tion of the type (31), which we have seen is impossible. On multiplying
-the equation which expresses |é'A> linearly in terms of the other
-eigenkets of £ by f(é) on the left, we merely multiply each term in it
-by the number f(é'), so we obviously get a consistent equation.
-Further, equation (34) is sufficient to define the linear operator f(&)
-completely, since to get the result of f(€) multiplied into an arbitrary
-ket |P), we have only to expand |P> in the form of the right-hand
+the equation which expresses \(|\xi^\prime A\rangle\) linearly in terms of the other
+eigenkets of \(\xi\) by \(f(\xi)\) on the left, we merely multiply each term in it
+by the number \(f(\xi^\prime)\), so we obviously get a consistent equation.
+Further, equation (34) is sufficient to define the linear operator \(f(\xi)\)
+completely, since to get the result of \(f(\xi)\) multiplied into an arbitrary
+ket \(|P\rangle\), we have only to expand \(|P\rangle\) in the form of the right-hand
 side of (25) and take
 
-FE) P> = [feo dé' + ZAE)8 a>. (35)
+</p><p class="blue">
+\(\xi,f(\xi^\prime)\) のあらゆる固有ケット \(|\xi^\prime\rangle\) は各固有値 \(\xi^\prime\) の数である。
+この定義は、独立でない固有ケット \(|\xi^\prime\rangle\) に適用した場合に自己無矛盾であることが容易にわかる。\(\xi\) の他の固有ケットに依存する固有ケット \(|\xi^\prime A\rangle\) がある場合、これらの他の固有ケットはすべて同じ固有値 \(\xi^\prime\) に属していなければならない。そうでなければ、(31) のような方程式になるはずであるが、これは不可能であることがわかった。 \(|\xi^\prime A\rangle\) を \(\xi\) の他の固有ケットを用いて線形に表現する式を左辺の \(f(\xi)\) で乗じる場合、各項に数 \(f(\xi^\prime)\) を乗じるだけでよいので、明らかに矛盾のない式が得られる。さらに、式 (34) は線形作用素 \(f(\xi)\) を完全に定義するのに十分である。なぜなら、\(f(\xi)\) を任意のケット \(|P\rangle\) に乗じた結果を得るには、\(|P\rangle\) を (25) の右辺の形で展開し、
+</p><p>
+
+\[
+f(\xi)|P\rangle = \int f(\xi^\prime)|\xi^\prime c\rangle d\xi^\prime + \sum_r f(\xi^r)|\xi^r d\rangle  \tag{35}
+\]
 
 </p><p>
-The conjugate complex f(é) of f(é) is defined by the conjugate
-imaginary equation to (34), namely
+The conjugate complex \(\overline{f(\xi)}\) of \(f(\xi)\) is defined by the conjugate imaginary equation to (34), namely
 
-ENF) = FEEL,
+</p><p class="blue">
+\(f(\xi)\)の共役複素数\(\overline{f(\xi)}\)は、(34)の共役虚数方程式によって定義され、
+</p><p>
 
-holding for any eigenbra <é'|, f(é') being the conjugate complex
-function to f(é'). Let us replace é' here by é” and multiply the
-equation on the right by the arbitrary ket |P>. Then we get, using
-the expansion (25) for |P>,
+\[
+\langle \xi^\prime|\overline{f(\xi)} = \overline{f}(\xi^\prime)\langle\xi^\prime|
+\]
 
-E"FOIP> = FEE PY
-= | FEE EoD de + HEME EdD
+holding for any eigenbra \(\langle\xi^\prime|,\overline{f}(\xi^\prime)\) being the conjugate complex
+function to \(f(\xi^\prime)\). Let us replace \(xi^\prime\) here by \(\xi^{\prime\prime}\) and multiply the
+equation on the right by the arbitrary ket \(|P\rangle\). Then we get, using
+the expansion (25) for \(|P\rangle\),
 
-= { FEE NE CD dg! + FEED (36)
+</p><p class="blue">
+任意の固有関数 \(\langle\xi^\prime|,\overline{f}(\xi^\prime)\) は \(f(\xi^\prime)\) の共役複素関数である。ここで \(xi^\prime\) を \(\xi^{\prime\prime}\) に置き換え、右辺の式に任意のケット \(|P\rangle\) を乗じる。すると、(25) 式の \(|P\rangle\) に対する展開を用いて、次式を得る。
+</p><p>
 
-with the help of the orthogonality theorem, <é"|&"d> being under-
+\[
+\begin{align}
+\langle\xi^{\prime\prime}|\overline{f(\xi)}|P\rangle &= \overline{f}(\xi^{\prime\prime})\langle\xi^{\prime\prime}|P\rangle \\
+\\
+&= \int \overline{f}(\xi^{\prime\prime})\langle\xi^{\prime\prime}|\xi^\prime c\rangle d\xi^\prime + \sum_r \overline{f}(\xi^{\prime\prime})\langle\xi^{\prime\prime}|\xi^r d\rangle \\
+\\
+&= \int \overline{f}(\xi^{\prime\prime})\langle\xi^{\prime\prime}|\xi^\prime c\rangle+\overline{f}(\xi^{\prime\prime})\langle\xi^{\prime\prime}|\xi^{\prime\prime} d\rangle \tag{36}
+\end{align}
+\]
+
+with the help of the orthogonality theorem, \(\langle\xi^{\prime\prime}|\xi^{\prime\prime} d\rangle\) being under-
 stood to be zero if €” is not one of the eigenvalues to which the terms
 in the sum in (25) refer. Again, putting the conjugate complex
-function f(é') for f(é') in (35) and multiplying on the left by <é”|,
+function \(\overline{f}(\xi^\prime)\) for \(f(\xi^\prime)\) in (35) and multiplying on the left by \(\langle\xi^{\prime\prime}|\),
 we get
 
-ENFEIPY = [Fees dé! +fe")E"l ed).
+</p><p class="blue">
+直交性定理を用いると、\(\langle\xi^{\prime\prime}|\xi^{\prime\prime} d\rangle\) は、(25) の和の項が参照する固有値の 1 つでない場合、ゼロであると理解される。再び、(35) の \(f(\xi^\prime)\) に共役複素関数 \(\overline{f}(\xi^\prime)\) を代入し、左辺に \(\langle\xi^{\prime\prime}|\) を乗じると、
+</p><p>
+
+\[
+\langle\xi^{\prime\prime}|\overline{f}(\xi)|P\rangle = \int \overline{f}(\xi^\prime)\langle\xi^{\prime\prime}|\xi^\prime c\rangle d\xi^\prime + \overline{f}(\xi^{\prime\prime})\langle\xi^{\prime\prime}|\xi^{\prime\prime} d\rangle
+\]
 
 The right-hand side here equals that of (36), since the integrands
-vanish for & + &", and hence
+vanish for \(\xi^\prime \neq \xi^{\prime\prime}\), and hence
 
-E"fOIP> = "FOP.
+</p><p class="blue">
+ここでの右辺は(36)の右辺と等しい。なぜなら、積分関数は\(\xi^\prime \neq \xi^{\prime\prime}\)でゼロとなるためである。したがって、
+</p><p>
 
-This holds for <&”| any eigenbra and |P> any ket, so
+\[
+\langle\xi^{\prime\prime}|\overline{f(\xi)}|P\rangle = \langle\xi^{\prime\prime}|\overline{f}(\xi)|P\rangle
+\]
 
-fe) =f. (37)
+This holds for \(\langle\xi^{\prime\prime}|\) any eigenbra and \(|P\rangle\) any ket, so
 
-Thus the conjugate complex of the linear operator f(£) is the conjugate
-complex function f of &.
+</p><p class="blue">
+これは任意の固有集合\(\langle\xi^{\prime\prime}|\)と任意のケット\(|P\rangle\)に対して成り立つので、
+</p><p>
+
+\[
+\overline{f(\xi)} = \overline{f}(\xi)  \tag{37}
+\]
+
+Thus the conjugate complex of the linear operator \(f(\xi)\) is the conjugate complex function \(\overline{f}\) of \(\xi\).
+
+</p><p class="blue">
+したがって、線形作用素 \(f(\xi)\) の共役複素数は、\(\xi\) の共役複素関数 \(\overline{f}\) です。
 
 </p><p>
-It follows as a corollary that if f(é') is a real function of &', f(&) is
-a real linear operator. f(&) is then also an observable, since its
-eigenstates form a complete set, every eigenstate of € being also an
-eigenstate of f(£).
+It follows as a corollary that if \(f(\xi^\prime)\) is a real function of \(\xi^\prime, f(\xi)\) is a real linear operator. \(f(\xi)\) is then also an observable, since its eigenstates form a complete set, every eigenstate of € being also an eigenstate of \(f(\xi)\).
+
+</p><p class="blue">
+当然の帰結として、\(f(\xi^\prime)\) が \(\xi^\prime) の実関数であれば、f(\xi)\) は実線形作用素となります。\(f(\xi)\) も観測可能となります。なぜなら、その固有状態は完全な集合を形成し、€ のすべての固有状態は \(f(\xi)\) の固有状態でもあるからです。
 
 </p><p>
-With the above definition we are able to give a meaning to any
-function f of an observable, provided only that the domain of existence
-of the function of a real variable f(x) includes all the eigenvalues of the
-observable. If the domain of existence contains other points besides
-these eigenvalues, then the values of f(x) for these other points will
-not affect the function of the observable. The function need not be
-analytic or continuous. The eigenvalues of a function f of an observ-
-able are just the function f of the eigenvalues of the. observable.
+With the above definition we are able to give a meaning to any function \(f\) of an observable, provided only that the domain of existence of the function of a real variable \(f(x)\) includes all the eigenvalues of the observable. If the domain of existence contains other points besides these eigenvalues, then the values of \(f(x)\) for these other points will not affect the function of the observable. The function need not be analytic or continuous. The eigenvalues of a function \(f\) of an observable are just the function \(f\) of the eigenvalues of the. observable.
+
+</p><p class="blue">
+上記の定義により、実変数の関数 \(f(x)\) の存在域に観測量のすべての固有値が含まれる限り、観測量の任意の関数 \(f\) に意味を与えることができます。存在域にこれらの固有値以外の点が含まれる場合、それらの点の \(f(x)\) の値は観測量の関数に影響を与えません。関数は解析的または連続的である必要はありません。観測量の関数 \(f\) の固有値は、観測量の固有値の関数 \(f\) そのものに他なりません。
 
 </p><p>
 It is important to observe that the possibility of defining a function
-f of an observable requires the existence of a unique number f(x) for
-each value of « which is an eigenvalue of the observable. Thus the
-function f(z) must be single-valued. This may be illustrated by con-
-sidering the question: When we have an observable f(A) which is a
-real function of the observable A, is the observable A a function of
-the observable f(4)? The answer to this is yes, if different eigenvalues
-A' of A always lead to different values of f(A'). If, however, there
-exist two different eigenvalues of A, A' and A” say, such that
-f(A') = f(A"), then, corresponding to the eigenvalue f(A') of the
-observable f(A), there will not be a unique eigenvalue of the observ-
-able A and the latter will not be a function of the observable f(A).
+\(f\) of an observable requires the existence of a unique number \(f(x)\) for
+each value of \(x\) which is an eigenvalue of the observable. Thus the
+function \(f(x)\) must be single-valued. This may be illustrated by con-
+sidering the question: When we have an observable \(f(A)\) which is a
+real function of the observable \(A\), is the observable \(A\) a function of
+the observable \(f(A)\)? The answer to this is yes, if different eigenvalues
+\(A^\prime\) of \(A\) always lead to different values of \(f(A^\prime)\). If, however, there
+exist two different eigenvalues of \(A, A^\prime\) and \(A^{\prime\prime}\) say, such that
+\(f(A^\prime) = f(A^{\prime\prime})\), then, corresponding to the eigenvalue \(f(A^\prime)\) of the
+observable \(f(A)\), there will not be a unique eigenvalue of the observ-
+able \(A\) and the latter will not be a function of the observable \(f(A)\).
+
+</p><p class="blue">
+観測量の関数 \(f\) を定義するには、\(x\) の各値に対して、その観測量の固有値である一意な数 \(f(x)\) が存在する必要があることに注意することが重要です。したがって、関数 \(f(x)\) は単値でなければなりません。これは、次の質問を考えることで説明できます。観測量 \(f(A)\) が観測量 \(A\) の実関数である場合、観測量 \(A\) は観測量 \(f(A)\) の関数でしょうか？この質問に対する答えは、\(A\) の異なる固有値 \(A^\prime\) が常に \(f(A^\prime)\) の異なる値につながる場合、はいです。しかし、例えば、\(A, A^\prime\) と \(A^{\prime\prime}\) の異なる2つの固有値が存在し、\(f(A^\prime) = f(A^{\prime\prime})\) である場合、観測量 \(f(A)\) の固有値 \(f(A^\prime)\) に対応する観測量 \(A\) の一意の固有値は存在せず、後者は観測量 \(f(A)\) の関数にはなりません。
 
 </p><p>
 It may easily be verified mathematically, from the definition, that
@@ -1038,151 +1479,269 @@ the sum or product of two functions of an observable is a function
 of that observable and that a function of a function of an observable
 is a function of that observable. Also it is easily seen that the whole
 theory of functions of an observable is symmetrical between bras and
-kets and that we could equally well work from the equation -
+kets and that we could equally well work from the equation 
 
-OTF) = FENKE' (38)
+</p><p class="blue">
+定義から、ある観測量の2つの関数の和または積はその観測量の関数であり、観測量の関数の関数はその観測量の関数であることが数学的に容易に証明できる。また、観測量の関数の理論全体がブラとケットで対称的であることも容易にわかる。そして、次の式から同様に作業を進めることができる。
+</p><p>
+
+\[
+\langle\xi^\prime|f(\xi) = f(\xi^\prime)\langle\xi^\prime| \tag{38}
+\]
+
 instead of from (34).
+
+</p><p class="blue">
+34）の代わりに。
 
 </p><p>
 We shall conclude this section with a discussion of two examples
 which are of great practical importance, namely the reciprocal and
 the square root. The reciprocal of an observable exists if the observ-
-able does not have the eigenvalue zero. If the observable « does not
-have the eigenvalue zero, the reciprocal observable, which we call a
-or 1/x, will satisfy
+able does not have the eigenvalue zero. If the observable \(\alpha\) does not
+have the eigenvalue zero, the reciprocal observable, which we call \(\alpha^{-1}\) or \(1/\alpha\), will satisfy
 
-ate') = oa"), , (39)
-where |«'> is an eigenket of « belonging to the eigenvalue a'. Hence
-aa o!> == aa' la"> = |o'>.
+</p><p class="blue">
+この節の最後に、実用上非常に重要な2つの例、すなわち逆数と平方根について議論します。観測量の逆数は、その観測量が固有値零を持たない場合に存在します。観測量\(\alpha\)が固有値零を持たない場合、逆数観測量（\(\alpha^{-1}\)または\(1/\alpha\)と呼びます）は、
+</p><p>
 
-Since this holds for any eigenket |«'>, we must have
-aon = J, (40)
-Similarly, atte = 1. (41)
+\[
+\alpha^{-1}|\alpha^\prime\rangle = \alpha^{\prime -1}|\alpha^\prime\rangle  \tag{39}
+\]
 
-Hither of these equations is sufficient to determine «~! completely,
-provided « does not have the eigenvalue zero. To prove this in the
-case of (40), let x be any linear operator satisfying the equation
+where \(|\alpha^\prime\rangle\) is an eigenket of \(\alpha\) belonging to the eigenvalue \(\alpha^\prime\). Hence
 
-ot = 1]
+</p><p class="blue">
+ここで、\(|\alpha^\prime\rangle\)は、固有値\(\alpha^\prime\)に属する\(\alpha\)の固有ケットである。したがって、
+</p><p>
 
-and multiply both sides on the left by the «-1 defined by (39). The
+\[
+\alpha\alpha^{-1}|\alpha^\prime\rangle = \alpha\alpha^{\prime -1}|\alpha^\prime\rangle = |\alpha^\prime\rangle
+\]
 
-result is 1
+Since this holds for any eigenket \(|\alpha^\prime\rangle\), we must have
 
-ante = a
-and hence from (41) ez oot,
+</p><p class="blue">
+これは任意の固有ケット\(|\alpha^\prime\rangle\)に当てはまるので、
+</p><p>
+
+\[
+\alpha\alpha^{-1} = 1 \tag{40}
+\]
+
+Similarly, 
+
+</p><p class="blue">
+同様に
+</p><p>
+
+\[
+\alpha^{-1}\alpha = 1  \tag{41}
+\]
+
+Either of these equations is sufficient to determine \(\alpha^{-1}\) completely,
+provided \(\alpha\) does not have the eigenvalue zero. To prove this in the
+case of (40), let \(x\) be any linear operator satisfying the equation
+
+</p><p class="blue">
+これらの式のどちらでも、\(\alpha^{-1}\) を完全に決定するのに十分である。ただし、\(\alpha\) が固有値零を持たないことを条件とする。(40) の場合にこれを証明するために、\(x\) を次の式を満たす任意の線型作用素とする。
+</p><p>
+
+\[
+\alpha x = 1
+\]
+
+and multiply both sides on the left by the \(\alpha^{-1}\) defined by (39). The
+result is 
+
+</p><p class="blue">
+左辺の両辺に(39)で定義される\(\alpha^{-1}\)を掛ける。結果は
+</p><p>
+
+\[
+\alpha^{-1}\alpha x = \alpha^{-1}
+\]
+
+and hence from (41)
+
+</p><p class="blue">
+そして（41）から
+</p><p>
+
+\[
+x = \alpha^{-1}
+\]
 
 </p><p>
 Equations (40) and (41) can be used to define the reciprocal, when
-it exists, of a general linear operator «, which need not even be real.
+it exists, of a general linear operator \(\alpha\), which need not even be real.
 One of these equations by itself is then not necessarily sufficient. If
-any two linear operators « and f have reciprocals, their product of
-has the reciprocal (oB)-2 = Bto-2, (42)
+any two linear operators \(\alpha\) and \(\beta\) have reciprocals, their product \(\alpha\beta\)
+has the reciprocal
+
+</p><p class="blue">
+式(40)および式(41)は、実数である必要のない一般線型作用素\(\alpha\)の逆数が存在する場合に、その逆数を定義するのに使用できる。
+これらの式のいずれか一方だけでは必ずしも十分ではない。
+任意の2つの線型作用素\(\alpha\)と\(\beta\)が逆数を持つ場合、それらの積\(\alpha\beta\)は逆数を持つ。
+</p><p>
+
+\[
+(\alpha\beta)^{-1} = \beta^{-1}\alpha^{-1}  \tag{42}
+\]
 
 obtained by taking the reciprocal of each factor and reversing their
 order. We verify (42) by noting that its right-hand sidé gives unity
-when multiplied by of, either on the right or on the left. This reci-
+when multiplied by \(\alpha\beta\), either on the right or on the left. This reci-
 procal law for products can be immediately extended to more than
+two factors, i.e.,
 
-two factors, i.e., (oBy...)-b == wy Blan},
+</p><p class="blue">
+各因数の逆数を取り、順序を逆にすることで得られる。(42)の右辺は、右辺でも左辺でも\(\alpha\beta\)を乗じると1になることに注目することで検証する。積の逆数法則は、2つ以上の因数にも直ちに拡張でき、すなわち、
+</p><p>
+
+\[
+(\alpha\beta\gamma\cdots)^{-1} = \cdots \gamma^{-1} \beta^{-1} \alpha^{-1}
+\]
 
 </p><p>
-The square root of an observable « always exists, and is real if «
-has no negative eigenvalues. We write it va or a}. It satisfies
+The square root of an observable « always exists, and is real if \(\alpha\)
+has no negative eigenvalues. We write it \(\sqrt{\alpha}\) or \(\alpha^{\frac{1}{2}}\). It satisfies
 
-Vola”> = ve' |a'>, (43)
-'x'> being an eigenket of « belonging to the eigenvalue «'. Hence
-Mowrloclor'> == Vee' Vox' fou” == cea' = ala',
-and since this holds for any eigenket |x'> we must have
+</p><p class="blue">
+観測可能な量の平方根は常に存在し、\(\alpha\) が負の固有値を持たないとき実数となる。\(\sqrt{\alpha}\) または \(\alpha^{\frac{1}{2}}\) と表記する。これは次式を満たす。
+</p><p>
 
-Nao = a. (44)
+\[
+\sqrt{\alpha}|\alpha^\prime\rangle = \pm\sqrt{\alpha^\prime}|\alpha^\prime\rangle  \tag{43}
+\]
+
+\(|\alpha^\prime\rangle\) being an eigenket of \(\alpha\) belonging to the eigenvalue \(\alpha^\prime\). Hence
+
+</p><p class="blue">
+\(|\alpha^\prime\rangle\)は\(\alpha\)の固有ケットであり、固有値\(\alpha^\prime\)に属する。したがって、
+</p><p>
+
+\[
+\sqrt{\alpha}\sqrt{\alpha}|\alpha^\prime\rangle = \sqrt{\alpha^\prime}\sqrt{\alpha^\prime}|\alpha^\prime\rangle = \alpha^\prime|\alpha^\prime\rangle = \alpha|\alpha^\prime\rangle
+\]
+
+and since this holds for any eigenket \(|\alpha^\prime\rangle\) we must have
+
+</p><p class="blue">
+そしてこれは任意の固有ケット\(|\alpha^\prime\rangle\)に対して成り立つので、
+</p><p>
+
+\[
+\sqrt{\alpha}\sqrt{\alpha} = \alpha  \tag{44}
+\]
 
 </p><p>
 On account of the ambiguity of sign in (43) there will be several
 square roots. To fix one of them we must specify a particular sign
 in (43) for each eigenvalue. This sign may vary irregularly from one
 eigenvalue to the next and equation (43) will always define a linear
-operator Va satisfying (44) and forming a square-root function of a.
-If there is an eigenvalue of « with two or more independent eigenkets
+operator \(\sqrt{\alpha}\) satisfying (44) and forming a square-root function of \(\alpha\).
+If there is an eigenvalue of \(\alpha\) with two or more independent eigenkets
 belonging to it, then we must, according to our definition of a func-
 tion, have the same sign in (43) for each of these eigenkets. If we
 took different signs, however, equation (44) would still hold, and hence
-equation (44) by itself is not sufficient to define Va, except in the
-special case when there is only one independent eigenket of « belong-
+equation (44) by itself is not sufficient to define \(\sqrt{\alpha}\), except in the
+special case when there is only one independent eigenket of \(\alpha\) belong-
 ing to any eigenvalue.
 
+</p><p class="blue">
+(43) の符号の曖昧さのため、複数の平方根が存在する。そのうちの1つを固定するために、各固有値に対して (43) の特定の符号を指定しなければならない。この符号は固有値ごとに不規則に変化する可能性があり、式 (43) は常に (44) を満たし、\(\alpha\) の平方根関数を形成する線形作用素 \(\sqrt{\alpha}\) を定義する。
+\(\alpha\) の固有値に2つ以上の独立した固有ケットが属する場合、関数の定義によれば、これらの各固有ケットに対して (43) の符号は同じでなければならない。しかしながら、異なる符号を取った場合でも式(44)は成立するため、式(44)だけでは\(\sqrt{\alpha}\)を定義するのに十分ではありません。ただし、任意の固有値に属する\(\alpha\)の独立した固有ケットが1つだけ存在するという特別な場合を除いてはそうです。
+
 </p><p>
-The number of different square roots of an observable is 2", where
-n is the total number of eigenvalues not zero. In practice the square-
+The number of different square roots of an observable is \(2^n\), where
+\(n\) is the total number of eigenvalues not zero. In practice the square-
 root function is used only for observables without negative eigen-
 values and the particular square root that is useful is the one for
 which the positive sign is always taken in (43). This one will be called
 the positive square root.
-</p><p>
 
-<h3>12. The general physical interpretation</h3>
+</p><p class="blue">
+観測量の異なる平方根の数は \(2^n\) であり、\(n\) は 0 でない固有値の総数である。実際には、平方根関数は負の固有値を持たない観測量に対してのみ用いられ、有用な平方根は (43) において常に正の符号が取られる平方根である。これを正の平方根と呼ぶ。
+
+</p>
+
+<h3>12. The general physical interpretation　一般的な物理的解釈</h3>
 <p>
-The assumptions that we made at the beginning of § 10 to get a
+The assumptions that we made at the beginning of §10 to get a
 physical interpretation of the mathematical theory are of a rather
 special kind, since they can be used only in connexion with eigen-
 states. We need some more general assumption which will enable us
 to extract physical information from the mathematics even when we
 are not dealing with eigenstates.
 
+</p><p class="blue">
+数学理論の物理的解釈を得るために§10の冒頭で行った仮定は、固有状態との関連でのみ使用できるため、かなり特殊な種類のものである。固有状態を扱っていない場合でも、数学から物理的情報を抽出できるようにするには、より一般的な仮定が必要である。
+
 </p><p>
 In classical mechanics an observable always, as we say, 'has a
 value' for any particular state of the system. What is there in quan-
-tum mechanics corresponding to this? If we take any observable €
-and any two states x and y, corresponding to the vectors <| and |y>,
-then we can form the number <z/é|y>. This number is not very
+tum mechanics corresponding to this? If we take any observable \(\xi\)
+and any two states \(x\) and \(y\), corresponding to the vectors \(\langle x|\) and \(|y\rangle\),
+then we can form the number \(\langle x|\xi|y\rangle\). This number is not very
 closely analogous to the value which an observable can 'have' in the
 classical theory, for three reasons, namely, (i) it refers to two states
 of the system, while the classical value always refers to one, (ii) it is
 in general not a real number, and (iii) it is not uniquely determined
-by the observable and the states, since the vectors <x| and |y> contain
-arbitrary numerical factors. Even if we impose on <x] and |y> the
+by the observable and the states, since the vectors \(\langle x|\) and \(|y\rangle\) contain
+arbitrary numerical factors. Even if we impose on \(\langle x|\) and \(|y\rangle\) the
 condition that they shall be normalized, there will still be an undeter-
+mined factor of modulus unity in \(\langle x|\xi|y\rangle\). These three reasons cease
+to apply, however, if we take the two states to be identical and \(|y\rangle\)
+to be the conjugate imaginary vector to \(\langle x|\). The number that we
+then get, namely \(\langle x|\xi|x\rangle\), is necessarily real, and also it is uniquely
+determined when \(\langle x|\) is normalized, since if we multiply \(\langle x|\) by the
+numerical factor \(e^{ic},c\) being some real number, we must multiply
+\(|x\rangle\) by \(e^{-ic}\) and \(\langle x|\xi|x\rangle\) will be unaltered.
 
-mined factor of modulus unity in <x|€|y>. These three reasons cease
-to apply, however, if we take the two states to be identical and |y>
-to be the conjugate imaginary vector to <z|. The number that we
-then get, namely <x/élxz>, is necessarily real, and also it is uniquely
-determined when <x| is normalized, since if we multiply <x] by the
-numerical factor e”, c being some real number, we must multiply
-\x> by e-* and <x[E|a> will be unaltered.
+</p><p class="blue">
+古典力学では、観測可能なものは常に、いわゆる「系の特定の状態に対して値を持つ」とされています。量子力学にはこれに相当するものがあるでしょうか？任意の観測可能量 \(\xi\)
+と任意の2つの状態 \(x\) と \(y\) （それぞれベクトル \(\langle x|\) と \(|y\rangle\) に対応）をとると、数 \(\langle x|\xi|y\rangle\) を形成できます。この数は、古典理論において観測量が「持つ」ことができる値とあまり類似していません。その理由は3つあります。(i) この数は系の2つの状態を指すのに対し、古典理論の値は常に1つの状態を指す、(ii) この数は一般に実数ではない、(iii) ベクトル \(\langle x|\) と \(|y\rangle\) には任意の数値因子が含まれるため、観測量と状態によって一意に決定されない、という点です。\(\langle x|\) と \(|y\rangle\) に正規化という条件を課したとしても、\(\langle x|\xi|y\rangle\) には係数1という未決定の因子が依然として存在します。しかし、2つの状態が同一であり、\(|y\rangle\) が \(\langle x|\) の共役虚数ベクトルであるとすると、これら3つの理由は当てはまらなくなります。その場合得られる数、すなわち \(\langle x|\xi|x\rangle\) は必然的に実数であり、また \(\langle x|\) が正規化されるときに一意に決定されます。なぜなら、\(\langle x|\) に数値係数 \(e^{ic},c\) を乗じる場合、\(|x\rangle\) に \(e^{-ic}\) を乗じなければならず、\(\langle x|\xi|x\rangle\) は変化しないからです。
 
 </p><p>
 One might thus be inclined to make the tentative assumption that
-the observable & 'has the value' <a|£|2> for the state z, in a sense
+the observable & 'has the value' \(\langle x|\xi|x\rangle\) for the state \(x\), in a sense
 analogous to the classical sense. This would not be satisfactory,
 though, for the following reason. Let us take a second observable 7»,
-which would have by the above assumption the value <a|n|x> for
+which would have by the above assumption the value \(\langle x|\eta|x\rangle\) for
 this same state. We should then expect, from classical analogy, that
 for this state the sum of the two observables would have a value
 equal to the sum of the values of the two observables separately and
 the product of the two observables would have a value equal to the
 product of the values of the two observables separately. Actually, the
 tentative assumption would give for the sum of the two observables
-the value <z|f+y|2>, which is, in fact, equal to the sum of <2|£|x>
-and <x|y|">, but for the product it would give the value <a|éy|x>
-or <2|né|x>, neither of which is connected in any simple way with
-<a|éle> and <2x|q|2). :
+the value \(\langle x|\xi+\eta|x\rangle\), which is, in fact, equal to the sum of \(\langle x|\xi|x\rangle\)
+and \(\langle x|\eta|x\rangle\), but for the product it would give the value \(\langle x|\xi\eta|x\rangle\)
+or \(\langle x|\eta\xi|x\rangle\), neither of which is connected in any simple way with
+\(\langle x|\xi|x\rangle\) and \(\langle x|\eta|x\rangle\).
+
+</p><p class="blue">
+したがって、観測量 & は状態 \(x\) に対して、古典的な意味では「値 \(\langle x|\xi|x\rangle\) を持つ」という暫定的な仮定を立てたくなるかもしれません。しかし、これは以下の理由から満足のいくものではありません。2つ目の観測量 7'' を取り上げましょう。この観測量は、上記の仮定によれば、この同じ状態において \(\langle x|\eta|x\rangle\) という値を持ちます。すると、古典的な類推から、この状態において、2つの観測量の合計は、2つの観測量の個別の値の合計に等しく、2つの観測量の積は、2つの観測量の個別の値の積に等しいことが予想されます。実際には、この仮の仮定では、2つの観測量の和は\(\langle x|\xi+\eta|x\rangle\)という値となり、これは実際には\(\langle x|\xi|x\rangle\)と\(\langle x|\eta|x\rangle\)の和に等しくなります。しかし、積の値は\(\langle x|\xi\eta|x\rangle\)または\(\langle x|\eta\xi|x\rangle\)となり、どちらも\(\langle x|\xi|x\rangle\)と\(\langle x|\eta|x\rangle\)とは単純には結びつきません。
 
 </p><p>
 However, since things go wrong only with the product and not with
-the sum, it would be reasonable to call <a|E|z> the average value of
-the observable € for the state x. This is because the average of the
+the sum, it would be reasonable to call \(\langle x|\xi|x\rangle\) the average value of
+the observable \(\xi\) for the state \(x\). This is because the average of the
 sum of two quantities must equal the sum of their averages, but the
 average of their product need not equal the product of their averages.
 We therefore make the general assumption that if the measurement
-of the observable & for the system tn the state corresponding to |x» is
+of the observable \(\xi\) for the system tn the state corresponding to \(|x\rangle\) is
 made a large number of times, the average of all the results obtained will
-be <x\|E\x>, provided |x> is normalized. If |a> is not normalized, as is
+be \(\langle x|\xi|x\rangle\), provided \(|x\rangle\) is normalized. If \(|x\rangle\) is not normalized, as is
 necessarily the case if the state z is an eigenstate of some observable
 belonging to an eigenvalue in a range, the assumption becomes that
-the average result of a measurement of € is proportional to <z/é|2>.
+the average result of a measurement of € is proportional to \(\langle x|\xi|x\rangle\).
 This general assumption provides a basis for a general physical inter-
 pretation of the theory.
+
+</p><p class="blue">
+しかし、積にのみ問題があり、和には問題がないため、\(\langle x|\xi|x\rangle\) を状態 \(x\) における観測量 \(\xi\) の平均値と呼ぶのが妥当でしょう。これは、2つの量の和の平均はそれらの平均値の和と等しくなければなりませんが、それらの積の平均はそれらの平均値の積と等しくなくてもよいためです。したがって、\(|x\rangle\) に対応する状態のシステムにおける観測量 \(\xi\) の測定を多数回行う場合、\(|x\rangle\) が正規化されている限り、得られたすべての結果の平均は \(\langle x|\xi|x\rangle\) になるという一般的な仮定を立てます。 \(|x\rangle\) が正規化されていない場合（状態 z が、ある範囲内の固有値に属する何らかの観測量の固有状態である場合は必然的にそうなる）、€ の測定結果の平均は \(\langle x|\xi|x\rangle\) に比例するという仮定が成り立つ。
+この一般的な仮定は、理論の一般的な物理的解釈の基礎となる。
 
 </p><p>
 The expression that an observable 'has a particular value' for a
@@ -1200,76 +1759,127 @@ equal to the product of the values of the two observables separately.
 </p><p class="margin-large">
 <sup>†</sup> This is not obviously so, since the sum may not have sufficient eigenstates to form a complete set, in which case the sum, considered as a single quantity, would not be measurable.<br>
 <br>
-‡ Here the reality condition may fail, as well as the condition for the eigenstates
+<sup>‡</sup> Here the reality condition may fail, as well as the condition for the eigenstates
 to form a complete set.
+
+</p><p class="blue">
+観測可能なものが特定の状態に対して「特定の値を持つ」という表現は、観測可能なものの測定が特定の値に確実につながる特別な場合、すなわちその状態が観測可能なものの固有状態である場合に、量子力学において許容される。観測可能なものが「値を持つ」というこの限定された意味において、2つの観測可能なものが特定の状態に対して値を持つ場合、この状態において、2つの観測可能なものの和（この和が共観測可能量<sup>†</sup>である場合）は、2つの観測可能なものの個別の値の和に等しく、2つの観測可能なものの積（この積が観測可能量<sup>‡</sup>である場合）は、2つの観測可能なものの個別の値の積に等しいことが、代数から容易に検証できる。
+
+
+</p><p class="margin-large-blue">
+<sup>†</sup> これは明らかにそうではありません。なぜなら、和が完全な集合を形成するのに十分な固有状態を持たない可能性があり、その場合、和を単一の量と見なすと測定できなくなるからです。<br>
+<br>
+<sup>‡</sup> ここで、現実条件が満たされない可能性があり、また、固有状態が完全な集合を形成するための条件も満たされない可能性があります。
+
+
 </p><p>
 In the general case we cannot speak of an observable having a value
 for a particular state, but we can speak of its having an average value
-for the state.' We can go further and speak of the probability of its
+for the state. We can go further and speak of the probability of its
 having any specified value for the state, meaning the probability of
 this specified value being obtained when one makes a measurement of
 the observable. This probability can be obtained from the general
 assumption in the following way.
 
+</p><p class="blue">
+一般的なケースでは、観測量が特定の状態に対して値を持つとは言えませんが、その状態に対する平均値を持つことは言えます。さらに、観測量が特定の状態に対して任意の特定の値を持つ確率、つまり観測量を測定したときにその特定の値が得られる確率について話すことができます。この確率は、一般的な仮定から次のように導き出されます。
+
 </p><p>
-Let the observable be é and let the state correspond to the normal-
-ized ket |z). Then the general assumption tells us, not only that the
-average value of € is <x|f/x>, but also that the average value of any
-function of , f(£) say, is <x|f(é)|z>. Take f(£) to be that function of &
-which is equal to unity when ¢ = a, a being some real number, and
-zero otherwise. This function of € has a meaning according to our
+Let the observable be \(\xi\) and let the state correspond to the normal-
+ized ket \(|x\rangle\). Then the general assumption tells us, not only that the
+average value of \(\xi\) is \(\langle x|\xi|x\rangle\), but also that the average value of any
+function of \(\xi, f(\xi)\) say, is \(\langle x|f(\xi)|x\rangle\). Take \(f(\xi)\) to be that function of \(\xi\)
+which is equal to unity when \(\xi = a\), \(a\) being some real number, and
+zero otherwise. This function of \(\xi\) has a meaning according to our
 general theory of functions of an observable, and it may be denoted
-by 8, in conformity with the general notation of the symbol 6 with
-two suffixes given on p. 62 (equation (17)). The average value of
-this function of € is just the probability, P, say, of € having the value
+by \(\delta_{\xi a}\) in conformity with the general notation of the symbol \(\delta\) with
+two suffixes given on p.62 (equation (17)). The average value of
+this function of \(\xi\) is just the probability, \(P_a\) say, of \(\xi\) having the value
+\(a\). Thus
 
-a. Thus > == Ca|Seq|>. (45)
+</p><p class="blue">
+観測量を \(\xi\) とし、状態を正規化されたケット \(|x\rangle\) に対応するものとしましょう。すると、一般的な仮定から、\(\xi\) の平均値が \(\langle x|\xi|x\rangle\) であるだけでなく、\(\xi, f(\xi)\) の任意の関数の平均値が、例えば \(\langle x|f(\xi)|x\rangle\) であることが分かります。\(f(\xi)\) を \(\xi\) の関数とします。\(\xi = a\) のとき 1 に等しく、\(a\) が何らかの実数で、それ以外のときは 0 です。この\(\xi\)の関数は、観測量の関数の一般理論に従った意味を持ち、p.62（式(17)）に示されている2つの接尾辞を伴う記号\(\delta\)の一般的な表記に従って\(\delta_{\xi a}\)と表記される。この\(\xi\)の関数の平均値は、\(\xi\)が値\(a\)を持つ確率、例えば\(P_a\)である。したがって、
+</p><p>
 
-If a is not an eigenvalue of &, 6;, multiplied into any eigenket of € is
-zero, and hence 6g, = 0 and F, = 0. This agrees with a conclusion
-of § 10, that any result of a measurement of an observable must be
+\[
+P_a = \langle x|\delta_{\xi a}|x\rangle  \tag{45}
+\]
+
+If \(a\) is not an eigenvalue of \(\xi\), \(\delta_{\xi a}\) multiplied into any eigenket of \(\xi\) is
+zero, and hence \(\delta_{\xi a}= 0\) and \(P_a = 0\). This agrees with a conclusion
+of §10, that any result of a measurement of an observable must be
 one of its eigenvalues.
 
+</p><p class="blue">
+\(a\) が \(\xi\) の固有値でない場合、\(\xi\) の任意の固有ケットに \(\delta_{\xi a}\) を乗じてもゼロになり、したがって \(\delta_{\xi a}= 0\) かつ \(P_a = 0\) となる。これは、観測量の測定結果はすべてその固有値のいずれかになるという、§10 の結論と一致する。
+
 </p><p>
-If the possible results of a measurement of ¢ form a range of num-
-bers, the probability of € having exactly a particular value will be
+If the possible results of a measurement of \(\xi\) form a range of num-
+bers, the probability of \(\xi\) having exactly a particular value will be
 zero in most physical problems. The quantity of physical importance
-is then the probability of € having a value within a small range, say
-from a to a+da. This probability, which we may call P(a) da, is
-equal to the average value of that function of & which is equal to
-unity for € lying within the range a to a+da and zero otherwise.
-This function of € has a meaning according to our general theory of
-functions of an observable. Denoting it by x(&), we have
+is then the probability of \(\xi\) having a value within a small range, say
+from \(a\) to \(a+da\). This probability, which we may call \(P(a)da\), is
+equal to the average value of that function of \(\xi\) which is equal to
+unity for \(\xi\) lying within the range \(a\) to \(a+da\) and zero otherwise.
+This function of \(\xi\) has a meaning according to our general theory of
+functions of an observable. Denoting it by \(\chi(\xi)\), we have
 
-P(a) da = <a\|x(€)|z>. (46)
-If the range a to a+da does not include any eigenvalues of £, we
-have as above y(¢) = 0 and P(a) = 0. If |x> is not normalized, the
+</p><p class="blue">
+\(\xi\) の測定結果が数値の範囲を形成する場合、\(\xi\) が特定の値を正確に取る確率は、ほとんどの物理的問題においてゼロになります。したがって、物理的に重要な量は、\(\xi\) が狭い範囲、例えば \(a\) から \(a+da\) までの値を取る確率です。この確率は \(P(a)da\) と呼び、\(\xi\) の関数の平均値に等しく、\(\xi\) が \(a\) から \(a+da\) の範囲内にある場合は 1、それ以外の場合は 0 となります。この \(\xi\) の関数は、観測可能な関数の一般理論に従って意味を持ちます。これを \(\chi(\xi)\) と表記すると、次のようになります。
+</p><p>
+
+\[
+P(a)da = \langle x|\chi(\xi)|x\rangle  \tag{46}
+\]
+
+If the range \(a\) to \(a+da\) does not include any eigenvalues of \(\xi\), we
+have as above \(\chi(\xi) = 0\) and \(P(a) = 0\). If \(|x\rangle\) is not normalized, the
 right-hand sides of (45) and (46) will still be proportional to the
-probability of having the value a and lying within the range a to
-a+da respectively.
+probability of \(\xi\) having the value \(a\) and lying within the range \(a\) to
+\(a+da\) respectively.
+
+</p><p class="blue">
+\(a\) から \(a+da\) の範囲に \(\xi\) の固有値が含まれない場合、上記のように \(\chi(\xi) = 0\) および \(P(a) = 0\) となります。\(|x\rangle\) が正規化されていない場合でも、(45) と (46) の右辺は、それぞれ \(\xi\) が値 \(a\) を持つ確率と \(a\) から \(a+da\) の範囲にある確率に比例します。
 
 </p><p>
-The assumption of §10, that a measurement of £ is certain to give
-the result ¢' if the system is in an eigenstate of € belonging to the
-eigenvalue £', is consistent with the general assumption for physical
+The assumption of §10, that a measurement of \(\xi\) is certain to give
+the result \(\xi^\prime\) if the system is in an eigenstate of \(\xi\) belonging to the
+eigenvalue \(\xi^\prime\), is consistent with the general assumption for physical
 interpretation and can in fact be deduced from it. Working from the
-general assumption we see that, if |é'> is an eigenket of € belonging
-to the eigenvalue é', then, in the case of discrete eigenvalues of &,
+general assumption we see that, if \(\xi^\prime\rangle\) is an eigenket of \(\xi\) belonging
+to the eigenvalue \(\xi^\prime\), then, in the case of discrete eigenvalues of \(\xi\),
 
-Sea lf> = 0 unless a= &,
-and in the case of a range of eigenvalues of €
-x(é)\é> = 0 unless the range a to a+da includes é'.
+</p><p class="blue">
+§10の仮定、すなわち、系が固有値\(\xi^\prime\)に属する\(\xi\)の固有状態にある場合、\(\xi\)の測定は必ず結果\(\xi^\prime\)を与えるという仮定は、物理的解釈の一般仮定と整合しており、実際にそこから導かれる。一般仮定から、\(\xi^\prime\rangle\)が固有値\(\xi^\prime\)に属する\(\xi\)の固有ケットである場合、\(\xi\)の離散的固有値の場合、
+</p><p>
 
-In either case, for the state corresponding to |é">, the probability of
-é having any value other than ' is zero.
+\[
+\delta_{\xi a}|\xi^\prime\rangle = 0\; unless\; a = \xi^\prime
+\]
+
+and in the case of a range of eigenvalues of \(\xi\)
+
+</p><p class="blue">
+そして\(\xi\)の固有値の範囲の場合
+</p><p>
+
+\[
+\chi(\xi)|\xi^\prime\rangle = 0\; unless\; the\; range\; a\; to\; a+da\; includes\; \xi^\prime
+\]
+
+In either case, for the state corresponding to \(|\xi^\prime\rangle\), the probability of
+\(\xi\) having any value other than \(\xi^\prime\) is zero.
+
+</p><p class="blue">
+どちらの場合でも、\(|\xi^\prime\rangle\)に対応する状態について、\(\xi\)が\(\xi^\prime\)以外の値を持つ確率はゼロです。
 
 </p><p>
-An eigenstate of £ belonging to an eigenvalue &' lying in a range
+An eigenstate of \(\xi\) belonging to an eigenvalue \(\xi^\prime\) lying in a range
 is a state which cannot strictly be realized in practice, since it would
-need an infinite amount of precision to get € to equal exactly ¢'.
-The most that could be attained in practice would be to get & to lie
-within a narrow range about the value é'. The system would then
-be in a state approximating to an eigenstate of €. Thus an eigenstate
+need an infinite amount of precision to get \(\xi\) to equal exactly \(\xi^\prime\).
+The most that could be attained in practice would be to get \(\xi\) to lie
+within a narrow range about the value \(\xi^\prime\). The system would then
+be in a state approximating to an eigenstate of \(\xi\). Thus an eigenstate
 belonging to an eigenvalue in a range is a mathematical idealization
 of what can be attained in practice. All the same such eigenstates
 play a very useful role in the theory and one could not very well do
@@ -1281,77 +1891,151 @@ be that the infinite length of the ket vectors corresponding to these
 eigenstates is connected with their unrealizability, and that all realiz-
 able states correspond to ket vectors that can be normalized and that
 form a Hilbert space.
+
+</p><p class="blue">
+ある範囲内の固有値 \(\xi^\prime\) に属する \(\xi\) の固有状態は、厳密には実際には実現できない状態です。なぜなら、\(\xi\) を \(\xi^\prime\) と正確に一致させるには、無限の精度が必要になるからです。
+実際に達成できるのは、\(\xi\) を値 \(\xi^\prime\) の周りの狭い範囲内に収めることくらいでしょう。その場合、系は \(\xi\) の固有状態に近似する状態になります。したがって、ある範囲内の固有値に属する固有状態は、実際に達成できるものの数学的な理想化です。それでもなお、このような固有状態は理論において非常に有用な役割を果たしており、それなしではうまく機能しません。科学には、実験的には実現不可能ではあるものの、実践で遭遇する事物の限界であり、自然法則の正確な定式化に役立つ理論的概念の例が数多く存在し、これはそのうちの一つに過ぎない。これらの固有状態に対応するケットベクトルの無限長は、それらの実現不可能性と関連しており、実現可能な状態はすべて、正規化可能でヒルベルト空間を形成するケットベクトルに対応するのかもしれない。
+
 </p><p>
 
-<h3>13. Commutability and compatibility</h3>
+<h3>13. Commutability and compatibility　可換性と互換性</h3>
 <p>
 A state may be simultaneously an eigenstate of two observables.
-If the state corresponds to the ket vector |A> and the observables are
-& and 7, we should then have the equations
+If the state corresponds to the ket vector \(|A\rangle\) and the observables are
+\(\xi\) and \(\eta\), we should then have the equations
 
-E|A> = &|AD,
-nl|A> = 7'|A),
+</p><p class="blue">
+ある状態は、同時に2つの観測量の固有状態となることがある。
+状態がケットベクトル \(|A\rangle\) に対応し、観測量が
+\(\xi\) と \(\eta\) である場合、以下の式が成り立つ。
+</p><p>
 
-where £' and 7' are eigenvalues of € and 7 respectively. We can now
+\[
+\begin{align}
+\xi|A\rangle &= \xi^\prime|A\rangle \\
+\\
+\eta|A\rangle &= \eta^\prime|A\rangle
+\end{align}
+\]
+
+where \(\xi^\prime\) and \(\eta^\prime\) are eigenvalues of \(\xi\) and \(\eta\) respectively. We can now
 deduce
 
-En|A> = &9'|A> = €'7)'|A> = &'n|A> = n€"|A> = nf 14),
+</p><p class="blue">
+ここで\(\xi^\prime\)と\(\eta^\prime\)はそれぞれ\(\xi\)と\(\eta\)の固有値である。したがって、
+</p><p>
 
-or (én—ng)|4> = 0.
+\[
+\xi\eta|A\rangle = \xi\eta^\prime|A\rangle = \xi^\prime\eta^\prime|A\rangle = \xi^\prime\eta|A\rangle = \eta\xi^\prime|A\rangle = \eta\xi|A\rangle
+\]
+
+or
+
+</p><p class="blue">
+または
+</p><p>
+
+\[
+(\xi\eta - \eta\xi)|A\rangle = 0
+\]
+
 This suggests that the chances for the existence of a simultaneous
-eigenstate are most favourable if &£y7—-y€é = 0 and the two observables
+eigenstate are most favourable if \(\xi\eta - \eta\xi = 0\) and the two observables
 commute. If they do not commute a simultaneous eigenstate is not
 impossible, but is rather exceptional. On the other hand, if they do
 commute there exist so many simultaneous eigenstates that they form a
 complete set, as will now be proved.
 
+</p><p class="blue">
+これは、\(\xi\eta - \eta\xi = 0\) かつ2つの観測量が可換である場合に、同時固有状態が存在する可能性が最も高いことを示唆しています。可換でない場合、同時固有状態は不可能ではありませんが、むしろ例外的なケースです。一方、可換である場合、同時固有状態は非常に多く存在し、それらは完全な集合を形成します。これは以下で証明されます。
+
 </p><p>
-Let £ and 7 be two commuting observables. Take an eigenket of -
-n, |n'> say, belonging to the eigenvalue 7', and expand it in terms
-of eigenkets of € in the form of the right-hand side of (25), thus —
+Let \(\xi\) and \(\eta\) be two commuting observables. Take an eigenket of -
+\(\eta,|\eta^\prime\rangle\) say, belonging to the eigenvalue \(\eta^\prime\), and expand it in terms
+of eigenkets of \(\xi\) in the form of the right-hand side of (25), thus
 
-In'> = | lé'n'c> ae" + & len'. (47)
+</p><p class="blue">
+\(\xi\) と \(\eta\) を二つの可換な観測量とする。例えば、固有値 \(\eta^\prime\) に属する -
+\(\eta,|\eta^\prime\rangle\) の固有ケットを取り、それを (25) の右辺の形で \(\xi\) の固有ケットを用いて展開すると、
+</p><p>
 
-The eigenkets of € on the right-hand side here have y' inserted in
+\[
+|\eta^\prime\rangle = \int |\xi^\prime\eta^\prime c\rangle d\xi^\prime + \sum_r |\xi^r \eta^\prime d\rangle  \tag{47}
+\]
+
+The eigenkets of \(\xi\) on the right-hand side here have \(\eta^\prime\) inserted in
 them as an extra label, in order to remind us that they come from
-the expansion of a special ket vector, namely |y'>, and not a general
+the expansion of a special ket vector, namely \(|\eta^\prime\rangle\), and not a general
 one as in equation (25). We can now show that each of these eigen-
-kets of € is also an eigenket of y belonging to the eigenvalue 7'. We
+kets of \(\xi\) is also an eigenket of \(\eta\) belonging to the eigenvalue \(\eta^\prime\). We
 have
 
-0 = (n—7')|9> = | (ra ViE'n'e> de" + (nn )ern'd>. (48)
-Now the ket (7—7')|&"n'd> satisfies
-E(n—')|é'n'd> = (n—a NE lé'n'd> = (g—7')"|é"n'd>
-= &(n—7')\en'd>,
-showing that it is an eigenket of € belonging to the eigenvalue é',
-and similarly the ket (7—7')|é'n'c> is an eigenket of € belonging to
+</p><p class="blue">
+ここで、右辺の \(\xi\) の固有ケットには、\(\eta^\prime\) というラベルが追加で挿入されています。これは、これらが式 (25) のような一般的なケットベクトルではなく、特殊なケットベクトル、つまり \(|\eta^\prime\rangle\) の展開から来ていることを思い起こさせるためです。ここで、これらの \(\xi\) の固有ケットのそれぞれが、固有値 \(\eta^\prime\) に属する \(\eta\) の固有ケットでもあることが示せます。
+</p><p>
 
-the eigenvalue é'. Equation (48) thus gives an integral plus a sum
-of eigenkets of & equal to zero, which, as we have seen with equation
+\[
+0 = (\eta - \eta^\prime)|\eta^\prime\rangle = \int (\eta - \eta^\prime)| \xi^\prime\eta^\prime c\rangle d\xi^\prime+\sum_r (\eta - \eta^\prime)|\xi^r \eta^\prime d\rangle  \tag{48}
+\]
+
+Now the ket \((\eta - \eta^\prime)|\xi^r \eta^\prime d\rangle\) satisfies
+
+</p><p class="blue">
+ここで、ケット\((\eta - \eta^\prime)|\xi^r \eta^\prime d\rangle\)は次式を満たす。
+</p><p>
+
+\[
+\begin{align}
+\xi(\eta - \eta^\prime)|\xi^r \eta^\prime d\rangle = (\eta - \eta^\prime)\xi|\xi^r\eta^\prime d\rangle &= (\eta - \eta^\prime)\xi^r|\xi^r\eta^\prime d\rangle \\
+\\
+&= \xi^r(\eta - \eta^\prime)|\xi^r\eta^\prime d\rangle
+\end{align}
+\]
+
+showing that it is an eigenket of \(\xi\) belonging to the eigenvalue \(\xi^r\),
+and similarly the ket \((\eta - \eta^\prime)|\xi^\prime\eta^\prime c\rangle\) is an eigenket of \(\xi\) belonging to
+the eigenvalue \(\xi^\prime\). Equation (48) thus gives an integral plus a sum
+of eigenkets of \(\xi\) equal to zero, which, as we have seen with equation
 (31), is impossible unless the integrand and every term in the sum
 vanishes. Hence
-(n—')lE'n'c>) = 0, (n—9')|Ern'd> = 0,
+
+</p><p class="blue">
+は、\(\xi\) の固有ケットであり、固有値 \(\xi^r\) に属していることを示しています。同様に、ケット \((\eta - \eta^\prime)|\xi^\prime\eta^\prime c\rangle\) は、\(\xi\) の固有ケットであり、固有値 \(\xi^\prime\) に属しています。したがって、式 (48) は、積分と \(\xi\) の固有ケットの和がゼロになることを与えますが、式 (31) で見たように、積分関数と和のすべての項がゼロにならない限り、これは不可能です。したがって、
+</p><p>
+
+\[
+(\eta - \eta^\prime)|\xi^\prime\eta^\prime c\rangle = 0,　(\eta - \eta^\prime)|\xi^r\eta^\prime d\rangle = 0
+\]
 
 so that all the kets appearing on the right-hand side of (47) are
-eigenkets of 7 as well as of £. Equation (47) now gives |y'> expanded
-in terms of simultaneous eigenkets of € and 7. Since any ket can be
-expanded in terms of eigenkets |7y'> of 7, it follows that any ket can
-be expanded in terms of simultaneous eigenkets of € and 7, and thus
+eigenkets of \(\eta\) as well as of £. Equation (47) now gives \(|\eta^\prime\rangle\) expanded
+in terms of simultaneous eigenkets of \(\xi\) and \(\eta\). Since any ket can be
+expanded in terms of eigenkets \(|\eta^\prime\rangle\) of \(\eta\), it follows that any ket can
+be expanded in terms of simultaneous eigenkets of \(\xi\) and \(\eta\), and thus
 the simultaneous eigenstates form a complete set.
+
+</p><p class="blue">
+となるので、(47) の右辺に現れるすべてのケットは、\(\eta\) の固有ケットであると同時に £ の固有ケットでもある。式 (47) は、\(\xi\) と \(\eta\) の同時固有ケットで展開された \(|\eta^\prime\rangle\) を与える。任意のケットは \(\eta\) の固有ケット \(|\eta^\prime\rangle\) で展開できるため、任意のケットは \(\xi\) と \(\eta\) の同時固有ケットで展開でき、したがって同時固有状態は完全な集合を形成する。
 
 </p><p>
 The above simultaneous eigenkets of \(\xi\) and \(\eta, |\xi^\prime\eta^\prime c\rangle\) and \(|\xi^r\eta^\prime d\rangle\),
-are labelled by the eigenvalues €' and 7', or €* and 7', to which they
+are labelled by the eigenvalues \(\xi^\prime\) and \(\eta^\prime\), or \(\xi^r\) and \(\eta^\prime\), to which they
 belong, together with the labels ¢ and d which may also be necessary.
 The procedure of using eigenvalues as labels for simultaneous eigen-
 vectors will be generally followed in the future, just as it has been
 followed in the past for eigenvectors of single observables.
 
+</p><p class="blue">
+上記の同時固有ベクトル \(\xi\) と \(\eta, |\xi^\prime\eta^\prime c\rangle\) および \(|\xi^r\eta^\prime d\rangle\) には、それらが属する固有値 \(\xi^\prime\) と \(\eta^\prime\)、または \(\xi^r\) と \(\eta^\prime\) がラベル付けされ、必要に応じてラベル ¢ および d も付与されます。同時固有ベクトルのラベルとして固有値を使用する手順は、単一観測量の固有ベクトルに対して過去に行われてきたのと同様に、将来も一般的に採用されるでしょう。
+
 </p><p>
 The converse to the above theorem says that, if \(\xi\) and \(\eta\) are two
 observables such that their simultaneous eigenstates form a complete set,
-then \(\xi\) and \(\eta\) commute. To prove this, we note that, if \(|xi^\prime\eta^\prime\rangle\) is a
-simultaneous eigenket belonging to the eigenvalues \(xi^\prime\) and \(\eta^\prime\),
+then \(\xi\) and \(\eta\) commute. To prove this, we note that, if \(|\xi^\prime\eta^\prime\rangle\) is a simultaneous eigenket belonging to the eigenvalues \(\xi^\prime\) and \(\eta^\prime\),
+
+</p><p class="blue">
+上記の定理の逆は、\(\xi\) と \(\eta\) が2つの観測量で、それらの同時固有状態が完全な集合を形成する場合、\(\xi\) と \(\eta\) は可換である、というものです。これを証明するために、\(|\xi^\prime\eta^\prime\rangle\) が固有値 \(\xi^\prime\) と \(\eta^\prime\) に属する同時固有ケットである場合、
+</p><p>
 
 \[
 (\xi\eta—\eta\xi)|\xi^\prime\eta^\prime\rangle = (\xi^\prime\eta^\prime - \eta^\prime\xi^\prime)|\xi^\prime\eta^\prime\rangle = 0  \tag{49}
@@ -1361,11 +2045,19 @@ Since the simultaneous eigenstates form a complete set, an arbitrary
 ket \(|P\rangle\) can be expanded in terms of simultaneous eigenkets \(|\xi^\prime\eta^\prime\rangle\),
 for each of which (49) holds, and hence
 
+</p><p class="blue">
+同時固有状態は完全な集合を形成するので、任意のケット\(|P\rangle\)は同時固有ケット\(|\xi^\prime\eta^\prime\rangle\)で展開することができ、それぞれのケットに対して(49)が成り立ち、したがって
+</p><p>
+
 \[
 (\xi\eta - \eta\xi)|P\rangle = 0
 \]
 
 and so 
+
+</p><p class="blue">
+そうすると
+</p><p>
 
 \[
 \xi\eta - \eta\xi = 0
@@ -1386,17 +2078,27 @@ of \(\xi,\eta,\) and \(\zeta\), and since any ket can be expanded in terms of si
 taneous eigenkets of \(\xi\) and \(\eta\), it can also be expanded in terms of
 simultaneous eigenkets of \(\xi,\eta,\) and \(\zeta\).
 
+</p><p class="blue">
+同時固有状態の概念は2つ以上の観測量に拡張することができ、上記の定理とその逆は依然として成立する。すなわち、任意の観測量の集合がそれぞれ他のすべての観測量と可換である場合、それらの同時固有状態は完全な集合を形成し、その逆もまた同様である。2つの観測量を用いた証明に用いられたのと同じ議論が一般の場合にも妥当する。例えば、3つの可換な観測量 \(\xi,\eta,\zeta,\) がある場合、\(\xi\) と \(\eta\) の任意の同時固有ケットを \(\zeta\) の固有ケットで展開し、これらの \(\zeta\) の固有ケットのそれぞれが \(\xi\) と \(\eta\) の固有ケットでもあることを示すことができる。このように、\(\xi\) と \(\eta\) の同時固有ケットは、\(\xi,\eta,\) と \(\zeta\) の同時固有ケットで展開されます。また、任意のケットは \(\xi\) と \(\eta\) の同時固有ケットで展開できるため、\(\xi,\eta,\) と \(\zeta\) の同時固有ケットで展開することもできます。
+
 </p><p>
 The orthogonality theorem applied to simultaneous eigenkets tells
 us that two simultaneous eigenvectors of a set of commuting observ-
 ables are orthogonal if the sets of eigenvalues to which they belong
 differ in any way.
 
+</p><p class="blue">
+同時固有ベクトルに適用される直交性定理は、可換な観測量の集合の2つの同時固有ベクトルは、それらが属する固有値の集合が何らかの形で異なる場合、直交することを示しています。
+
 </p><p>
 Owing to the simultaneous eigenstates of two or more commuting
 observables forming a complete set, we can set up a theory of func-
 tions of two or more commuting observables on the same lines as the
 theory of functions of a single observable given in §11. If \(\xi, \eta, \zeta, ...\) are commuting observables, we define a general function \(f\) of them to be that linear operator \(f(\xi, \eta, \zeta,...)\) which satisfies
+
+</p><p class="blue">
+2つ以上の可換な観測量の同時固有状態が完全な集合を形成することから、§11で示した単一の観測量の関数理論と同様の考え方で、2つ以上の可換な観測量の関数理論を構築することができる。\(\xi, \eta, \zeta, ...\)が可換な観測量であるとき、それらの一般関数\(f\)を、次式を満たす線型作用素\(f(\xi, \eta, \zeta, ...)\)として定義する。
+</p><p>
 
 \[
 f(\xi, \eta, \zeta, ...)|\xi^\prime \eta^\prime \zeta^\prime ...\rangle = f(\xi^\prime,\eta^\prime,\zeta^\prime,...)|\xi^\prime \eta^\prime \zeta^\prime...\rangle  \tag{50}
@@ -1406,12 +2108,19 @@ where \(|\xi^\prime\eta^\prime\zeta^\prime ...\rangle\) is any simultaneous eige
 to the eigenvalues \(\xi^\prime,\eta^\prime,\zeta^\prime,...\). Here \(f\) is any function such that \(f(a,b,c,...)\) is defined for all values of \(a,b,c,...\) which are eigenvalues of \(\xi,\eta,\zeta,...\) respectively. As with a function of a single observable
 defined by (34), we can show that \(f(\xi,\eta,\zeta,...)\) is completely determined by (50), that
 
+</p><p class="blue">
+ここで、\(|\xi^\prime\eta^\prime\zeta^\prime ...\rangle\) は、\(\xi,\eta,\zeta,...\) の同時固有ケットで、\(\xi^\prime,\eta^\prime,\zeta^\prime,...\) の固有値に属する任意の関数である。ここで、\(f\) は、\(\xi,\eta,\zeta,...\) の固有値である \(a,b,c,...\) のすべての値に対して \(f(a,b,c,...)\) が定義されるような任意の関数である。(34) で定義される単一観測量の関数と同様に、\(f(\xi,\eta,\zeta,...)\) は (50) によって完全に決定される。
+</p><p>
+
 \[
 \overline{f(\xi,\eta,\zeta,...)}=\overline{f}(\xi,\eta,\zeta,...)
 \]
 
 corresponding to (37), and that if \(f(a,b,c,...)\) is a real function,
 \(f(\xi,\eta,\zeta,...)\) is real and is an observable.
+
+</p><p class="blue">
+(37)に対応し、\(f(a,b,c,...)\)が実関数であれば、\(f(\xi,\eta,\zeta,...)\)は実数であり観測可能となる。
 
 </p><p>
 We can now proceed to generalize the results (45) and (46). Given
@@ -1423,7 +2132,11 @@ product for \(f(\xi, \eta, \zeta)\) in the left-hand side of (50). The average
 value of this function for any state is the probability, \(P_{abc...}\) say, of
 \(\xi,\eta,\zeta,...\) having the values \(a,b,c,...\) respectively for that state. Thus
 if the state corresponds to the normalized ket vector \(|x\rangle\), we get from
-our general assumption for physical interpretation .
+our general assumption for physical interpretation.
+
+</p><p class="blue">
+ここで、結果(45)と(46)を一般化してみましょう。可換な観測量の集合\(\xi,\eta,\zeta,...\)が与えられたとき、\(\xi=a,\eta=b,\zeta=c,...,a,b,c,..\)が実数のときに1に等しく、これらの条件のいずれかが満たされないときには0に等しい関数を形成することができる。この関数は \(\delta_{\xi a}\delta_{\eta b}\delta_{\zeta c},...\) と表記され、実際には、(50) の左辺の \(f(\xi, \eta, \zeta)\) にこの積を代入すればわかるように、単一観測量の関数として定義された因子 \(\delta_{\xi a},\delta_{\eta b},\delta_{\zeta c},...\) の任意の順序での積に過ぎない。任意の状態におけるこの関数の平均値は、例えば、その状態において \(\xi,\eta,\zeta,...\) がそれぞれ値 \(a,b,c,...\) を持つ確率 \(P_{abc...}\) である。したがって、状態が正規化されたケットベクトル \(|x\rangle\) に対応する場合、物理的解釈の一般的な仮定から次の式が得られます。
+</p><p>
 
 \[
 P_{abc...} = \langle x|\delta_{\xi a}\delta_{\eta b}\delta_{\zeta c}\cdots|x\rangle \tag{51}
@@ -1440,6 +2153,9 @@ the \(\chi(\xi)\) of equation (46). On carrying out such a replacement for
 each of the observables \(\xi, \eta, \zeta,...\), whose corresponding numerical
 value \(a,b,c,...\) lies in a range of eigenvalues, we shall get a proba-
 bility which does not in general vanish.
+
+</p><p class="blue">
+\(P_{abc...}\) は、\(a,b,c,...\) のそれぞれが対応する観測量の固有値でない限りゼロになります。\(a,b,c,...\) のいずれかが、対応する観測量の固有値の範囲内の固有値である場合、\(P_{abc...}\) は通常再びゼロになりますが、この場合、この観測量が正確に1つの値を持つという要件を、狭い範囲内の値を持つという要件に置き換える必要があります。これには、(51) の \(\delta\) 因子の1つを、式 (46) の \(\chi(\xi)\) のような因子に置き換えることが含まれます。このような置き換えを、対応する数値 \(a,b,c,...\) が固有値の範囲内にある観測量 \(\xi, \eta, \zeta,...\) のそれぞれに対して実行すると、一般にはゼロにならない確率が得られます。
 
 </p><p>
 If certain observables commute, there exist states for which they all
@@ -1465,6 +2181,9 @@ theory, any two or more commuting observables may be counted as a
 single observable, the result of a measurement of which consists of two or
 more numbers. The states for which this measurement is certain to
 lead to one particular result are the simultaneous eigenstates.
+
+</p><p class="blue">
+ある観測量が可換であるならば、それらすべてが特定の値を持つ状態、すなわち同時固有状態が存在する。これは46ページの下部で説明されている意味である。したがって、複数の可換な観測量が同時に値を持つことに意味を与えることができる。さらに、(51)から、任意の状態について、複数の可換な観測量の同時測定で特定の結果が得られる確率に意味を与えることができることがわかる。この結論は重要な新展開である。一般に、ある特定の状態にある系を観測すると、その状態を乱し、2回目の観測のためにその状態を台無しにしてしまう。そのため、同時に行われる2つの観測に意味を与えることはできない。しかしながら、上記の結論は、2つの観測量が共存するという特別なケースにおいては、観測は非干渉的、すなわち両立すると考えられるべきであり、その場合、同時に行われた2つの観測に意味を与え、特定の結果が得られる確率について議論することができることを示しています。実際には、2つの観測は、より複雑なタイプの単一の観測と見なすことができ、その結果は単一の数ではなく2つの数で表現できます。生成理論の観点からは、2つ以上の可換な観測量は、測定結果が2つ以上の数で構成される単一の観測量として数えることができます。この測定が確実に1つの特定の結果につながる状態は、同時固有状態です。
 
 </p>
     </body>

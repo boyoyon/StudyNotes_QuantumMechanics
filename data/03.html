@@ -128,46 +128,45 @@ ties occurring in that problem are as simple as possible.
 
 </p><p>
 To set up a representation in a general way, we take a complete
-set of bra vectors, ic. a set such that any bra can be expressed
+set of bra vectors, i.e. a set such that any bra can be expressed
 linearly in terms of them (as a sum or an integral or possibly an
 integral plus a sum). These bras we call the basic bras of the repre-
 sentation. They are sufficient, as we shall see, to fix the representation
 completely.
 
 </p><p>
-Take any ket |a> and form its scalar product with each of the basic
-bras. The numbers so obtained constitute the representative of |a).
-They are sufficient to determine the ket {a> completely, since if there
-is a second ket, |a,> say, for which these numbers are the same, the
-
-difference |a>—|a,> will have its scalar product with any basic bra
-3595.57 B
-﻿54 REPRESENTATIONS § 14
-
+Take any ket \(|a\rangle\) and form its scalar product with each of the basic
+bras. The numbers so obtained constitute the representative of \(|a\rangle\).
+They are sufficient to determine the ket \(|a\rangle\) completely, since if there
+is a second ket, \(|a_1\rangle\) say, for which these numbers are the same, the
+difference \(|a\rangle-|a_1\rangle\) will have its scalar product with any basic bra
 vanishing, and hence its scalar product with any bra whatever will
-vanish and |@>—|a,> itself will vanish.
+vanish and \(|a\rangle-|a_1\rangle\) itself will vanish.
 
+</p><p>
 We may suppose the basic bras to be labelled by one or more
-parameters, A,, A ,...,A,,, each of which may take on certain numerical
-values. The basic bras will then be written <A, A,...A,,| and the repre-
-sentative of a) will be written <A, Ag...A,|@>. This representative will
+parameters, \(\lambda_1,\lambda_2,...,\lambda_u,\) each of which may take on certain numerical
+values. The basic bras will then be written \(\langle\lambda_1,\lambda_2...\lambda_u|\) and the repre-
+sentative of \(|a\rangle\) will be written \(\langle\lambda_1\lambda_2...\lambda_u|a\rangle\). This representative will
 now consist of a set of numbers, one for each set. of values that
-Ay, Ag, A, naay have in their respective domains. Such a set of
-numbers just forms a function of the variables A,,Ag,...,A,. Thus the
+\(\lambda_1,\lambda_2,...,\lambda_u\) may have in their respective domains. Such a set of
+numbers just forms a function of the variables \(\lambda_1,\lambda_2,...,\lambda_u\). Thus the
 representative of a ket may be looked upon either as a set of numbers
 or as a function of the variables used to label the basic bras.
 
+</p><p>
 If the number of independent states of our dynamical system is
-finite, equal to n say, it is sufficient to take n basic bras, which may
-be labelled by a single parameter A taking on the values I, 2, 3,..., 7.
-The representative of any ket |a> now consists of the set of m numbers
-<lla>, <2|a>, <8]a>,..., (n|a>, which are precisely the coordinates of
-the vector |a) referred to a system of coordinates in the usual way.
+finite, equal to \(n\) say, it is sufficient to take n basic bras, which may
+be labelled by a single parameter \(\lambda\) taking on the values \(1,2,3,...,n\).
+The representative of any ket \(|a\rangle\) now consists of the set of \(n\) numbers
+\(\langle 1|a\rangle,\langle 2|a\rangle,\langle 3|a\rangle,...,\langle n|a\rangle\), which are precisely the coordinates of
+the vector \(|a\rangle\) referred to a system of coordinates in the usual way.
 The idea of the representative of a ket vector is just a generalization
 of the idea of the coordinates of an ordinary vector and reduces to
 the latter when the number of dimensions of the space of the ket
 vectors is finite.
 
+</p><p>
 In a general representation there is no need for the basic bras to
 be all independent. In most representations used in practice, how-
 ever, they are all independent, and also satisfy the more stringent
@@ -175,127 +174,141 @@ ever, they are all independent, and also satisfy the more stringent
 condition that any two of them are orthogonal. The representation
 is then called an orthogonal representation.
 
-Take an orthogonal representation with basic bras <A,A,..-A,|;
-labelled by parameters Aj, Aq,...,A,, whose domains are all real. Take
-a ket |a> and form its representative <A, A,...,|@>. Now form the
-numbers A,<A,Aq...A,,|@> and consider them as the representative of
-a new ket |b>. This is permissible since the numbers forming the
+</p><p>
+Take an orthogonal representation with basic bras \(\langle\lambda_1\lambda_2...\lambda_u|\), labelled by parameters \(\lambda_1,\lambda_2,...,\lambda_u\) whose domains are all real. Take
+a ket \(|a\rangle\) and form its representative \(\langle\lambda_1\lambda_2...\lambda_u|a\rangle\). Now form the
+numbers \(\lambda_1\langle\lambda_1\lambda_2...\lambda_u|a\rangle\) and consider them as the representative of
+a new ket \(|b\rangle\). This is permissible since the numbers forming the
 representative of a ket are independent, on account of the basic bras
-being independent. The ket (b> is defined by the equation
+being independent. The ket \(|b\rangle\) is defined by the equation
 
-(Aq AgeeAy [b> = AyCAy Ape -A,,|@>-
+\[
+\langle\lambda_1\lambda_2...\lambda_u|b\rangle = \lambda_1\langle\lambda_1\lambda_2...\lambda_u|a\rangle
+\]
 
-The ket |b> is evidently a linear function of the ket |a>, so it may
-be considered as the result of a linear operator applied to |a>. Calling
-this linear operator L,, we have
+The ket \(|b\rangle\) is evidently a linear function of the ket \(|a\rangle\), so it may
+be considered as the result of a linear operator applied to \(|a\rangle\). Calling
+this linear operator \(L_1\), we have
 
-[b> = LZ, |a>
-﻿§ 14 BASIC VECTORS 55
+\[
+|b\rangle = L_1|a\rangle
+\]
 
-and hence Ay Ag.--Ay [Ly [a> = AYA Ag...A,, [@D-
-This equation holds for any ket |a>, so we get
-Aq Agee Ay (Ly = ALCAL Ag. Ay, | (1)
+and hence 
+
+\[
+\langle\lambda_1\lambda_2...\lambda_u|L_1|a\rangle = \lambda_1\langle\lambda_1\lambda_2...\lambda_u|a\rangle
+\]
+
+This equation holds for any ket \(|a\rangle\), so we get
+
+\[
+\langle\lambda_1\lambda_2...\lambda_u|L_1 = \lambda_1\langle\lambda_1\lambda_2...\lambda_u|  \tag{1}
+\]
 
 Equation (1) may be looked upon as the definition of the linear
-operator [,. It shows that each basic bra is an etgenbra of L,, the
-value of the parameter r, being the eigenvalue belonging to tt.
+operator \(L_1\). It shows that each basic bra is an etgenbra of \(L_1\), the
+value of the parameter \(\lambda_1\) being the eigenvalue belonging to it.
 
+</p><p>
 From the condition that the basic bras are orthogonal we can
-deduce that Z, is real and is an observable. Let Aj,Aj,...,A;, and
-Ap Ag, be two sets of values for the parameters Aj, A9,...,A,-
-We have, putting \’’s for the A’s in (1) and multiplying on the right
-by [Az A3-..A;>, the conjugate imaginary of the basic bra <AjAj...Ag];
+deduce that \(L_1\), is real and is an observable. Let \(\lambda_1^\prime,\lambda_2^\prime,...,\lambda_u^\prime\) and
+\(\lambda_1^{\prime\prime},\lambda_2^{\prime\prime},...,\lambda_u^{\prime\prime}\) be two sets of values for the parameters \(\lambda_1,\lambda_2,...,\lambda_u\). We have, putting \(\lambda^\prime\)'s for the \(\lambda^\prime\)'s in (1) and multiplying on the right
+by \(|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle\), the conjugate imaginary of the basic bra \(\langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|\),
 
-Ay Ag. Ay Ly [Ap Ag. A> == ALKA Ag. AAT Ag AR.
-Interchanging A’’s and ”’s,
+\[
+\langle\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime|L_1|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle = \lambda_1^\prime\langle\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle
+\]
 
-Aq Ag. AG] Ly [Ay Ag. ALD == ALATA. ARIAL AR. AD.
+Interchanging \(\lambda^\prime\)'s and \(\lambda^{\prime\prime}\)'s,
+
+\[
+\langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|L_1|\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime\rangle = \lambda_1^{\prime\prime}\langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime\rangle
+\]
+
 On account of the basic bras being orthogonal, the right-hand sides
-here vanish unless A? = A, for all r from 1 to w, in which case the
+here vanish unless \(\lambda_r^{\prime\prime} = \lambda_r^\prime\) for all \(r\) from 1 to \(u\), in which case the
+right-hand sides are equal, and they are also real, \(\lambda_1^\prime\) being real. Thus,
+whether the \(\lambda^{\prime\prime}\)'s are equal to the \(\lambda^\prime\)'s or not,
 
-right-hand sides are equal, and they are also real, A, being real. Thus,
-whether the 4”’s are equal to the A’’s or not,
+\[
+\begin{align}
+\langle\lambda_1^\prime\lambda_2^\prime...\lambda_i^\prime|L_1|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle &= \overline{\langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|L_1|\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime\rangle} \\
+\\
+&=\langle\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime|\overline{L}_1|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle
+\end{align}
+\]
 
-ON Nye Ny] Ly EAS = CREATE, IN gk
-
-= (NAG. Ay | Ey [AT Ag AD
-from equation (4) of § 8. Since the <A, Aj...41,|’s form a complete set
-of bras and the [Aj A3...A,>’s form a complete set of kets, we can
-infer that L, = £,. The further condition required for L, to be an
+from equation (4) of §8. Since the \(\langle\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime|\)'s form a complete set
+of bras and the \(|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|a\rangle\)'s form a complete set of kets, we can infer that \(L_1 = \overline{L}_1\). The further condition required for \(L_1\) to be an
 observable, namely that its eigenstates shall form a complete set, is
 obviously satisfied since it has as eigenbras the basic bras, which
 form a complete set.
 
-We can similarly introduce linear operators L,, Ls,..., £,, by multi-
-plying <A,A,...4,|@> by the factors Ag, Ag,...,A,, in turn and considering
+</p><p>
+We can similarly introduce linear operators \(L_2,L_3,...,L_u\) by multi-
+plying \(\langle\lambda_1\lambda_2...\lambda_u|a\rangle\) by the factors \(\lambda_2,\lambda_3,...,\lambda_u\) in turn and considering
 the resulting sets of numbers as representatives of kets. Each of these
-L’s can be shown in the same way to have the basic bras as eigenbras
+\(L\)'s can be shown in the same way to have the basic bras as eigenbras
 and to be real and an observable. The basic bras are simultaneous
-eigenbras of all the L’s. Since these simultaneous eigenbras form a
-complete set, it follows from a theorem of § 13 that any two of the
-L’s commute.
+eigenbras of all the \(L\)'s. Since these simultaneous eigenbras form a
+complete set, it follows from a theorem of §13 that any two of the
+\(L\)'s commute.
 
-It will now be shown that, if &, &,,...,&, are any set of commuting
+</p><p>
+It will now be shown that, if \(\xi_1,\xi_2,...,\xi_u\) are any set of commuting
 observables, we can set up an orthogonal representation in which the basic
-
-bras are simultaneous eigenbras of €,, €5,...,€,. Let us suppose first that
-﻿56 REPRESENTATIONS § 14
-
-there is only one independent simultaneous eigenbra of &, £5,...,é,
-belonging to any set of eigenvalues £1, ,...,¢,. Then we may take
+bras are simultaneous eigenbras of \(\xi_1,\xi_2,...,\xi_u\). Let us suppose first that
+there is only one independent simultaneous eigenbra of \(\xi_1,\xi_2,...,\xi_u\)
+belonging to any set of eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\). Then we may take
 these simultaneous eigenbras, with arbitrary numerical coefficients, as
 our basic bras. They are all orthogonal on account of the orthogonality
 theorem (any two of them will have at least one eigenvalue different,
 which is sufficient to make them orthogonal) and there are sufficient
-of them to form a complete set, from a result of § 13. They may
-conveniently be labelled by the eigenvalues ¢}, &.,..., & to which they
-belong, so that one of them is written ¢é, &...€;].
+of them to form a complete set, from a result of §13. They may
+conveniently be labelled by the eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) to which they
+belong, so that one of them is written \(\langle\xi_1^\prime\xi_2^\prime...\xi_u^\prime|\).
 
+</p><p>
 Passing now to the general case when there are several independent
-simultaneous eigenbras of €,, £5,..., ¢,, belonging to some sets of eigen-
+simultaneous eigenbras of \(\xi_1,\xi_2,...,\xi_u\) belonging to some sets of eigen-
 values, we must pick out from all the simultaneous eigenbras belong-
-
-ing to a set of eigenvalues €;, &,..., €, a complete subset, the members
+ing to a set of eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) a complete subset, the members
 of which are all orthogonal to one another. (The condition of com-
-pleteness here means that any simultaneous eigenbra belonging to the
-
-. eigenvalues &, &,...,€, can be expressed linearly in terms of the
-
-members of the subset.) We must do this for each set of eigenvalues
-1, &,..-,& and then put all the members of all the subsets together
+pleteness here means that any simultaneous eigenbra belonging to the eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) can be expressed linearly in terms of the members of the subset.) We must do this for each set of eigenvalues
+\(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) and then put all the members of all the subsets together
 and take them as the basic bras of the representation. These bras
 are all orthogonal, two of them being orthogonal from the orthogona-
 lity theorem if they belong to different sets of eigenvalues and from
 the special way in which they were chosen if they belong to the same
 set of eigenvalues, and they form altogether a complete set of bras,
 as any bra can be expressed linearly in terms of simultaneous eigen-
-bras and’ each simultaneous eigenbra can then be expressed linearly
+bras and' each simultaneous eigenbra can then be expressed linearly
 in terms of the members of a subset. There are infinitely many ways
 of choosing the subsets, and each way provides one orthogonal
-representation. —
+representation.
 
+</p><p>
 For labelling the basic bras in this general case, we may use the
-eigenvalues £4, &3,...,&, to which they belong, together with certain
-additional real variables A,, A,,...,A, say, which must be introduced to
+eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) to which they belong, together with certain
+additional real variables \(\lambda_1,\lambda_2,...,\lambda_v\) say, which must be introduced to
 distinguish basic vectors belonging to the same set of eigenvalues
-from one another. A basic bra is then written (& &...£/,A4A,--- Ay].
-Corresponding to the variables ,,9,...,A, we can define linear
-operators L,, L,,...,L, by equations like (1) and can show that these
+from one another. A basic bra is then written \(\langle\xi_1^\prime\xi_2^\prime...\xi_u^\prime\lambda_1\lambda_2...\lambda_v|\).
+Corresponding to the variables \(\lambda_1,\lambda_2,...,\lambda_v\) we can define linear
+operators \(L_1,L_2,...,L_v\) by equations like (1) and can show that these
 linear operators have the basic bras as eigenbras, and that they are
 real and observables, and that they commute with one another and
+with the \(\xi\)'s. The basic bras are now simultaneous eigenbras of all
+the commuting observables \(\xi_1,\xi_2,...,\xi_u,L_1,L_2,...,L_v\).
 
-with the ¢’s. The basic bras are now simultaneous eigenbras of all
-the commuting observables €,, £,,...,€,,, D4, Loses Dy.
-﻿§ 14 BASIC VECTORS 37
-
+</p><p>
 Let us define a complete set of commuting observables to be a set of
 observables which all commute with one another and for which there
 is only one simultaneous eigenstate belonging to any set of eigen-
-values. Then the observables &,, &,...,€,, 44, L,..., L, form a complete
+values. Then the observables \(\xi_1,\xi_2,...,\xi_u,L_1,L_2,...,L_v\) form a complete
 set of commuting observables, there being only one independent simul-
-taneous eigenbra belonging to the eigenvalues £1, £,..-, Eas Aqs Agse+es Ags
-namely the corresponding basic bra. Similarly the observables
-L,, £,,.... £, defined by equation (1) and the following work form
+taneous eigenbra belonging to the eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime,\lambda_1,\lambda_2,...,\lambda_v\), namely the corresponding basic bra. Similarly the observables
+\(L_1,L_2,...,L_u\) defined by equation (1) and the following work form
 a complete set of commuting observables. With the help of this
 definition the main results of the present section can be concisely
 formulated thus:
@@ -316,26 +329,28 @@ representation is by means of the eigenvalues of the complete
 set of commuting observables of which the basic bras are
 simultaneous eigenbras.
 
+</p><p>
 The conjugate imaginaries of the basic bras of a representation we
 call the basic kets of the representation. Thus, if the basic bras are
-denoted by <A, Ag...A,,|, the basic kets will be denoted by [A,4¢...A,>.
-The representative of a bra <b| is given by its scalar product with
-each of the basic kets, ie. by <b|A,A,...A,>. It may, like the repre-
+denoted by \(\langle\lambda_1\lambda_2...\lambda_u|\), the basic kets will be denoted by \(|\lambda_1\lambda_2...\lambda_u\rangle\).
+The representative of a bra \(\langle b|\) is given by its scalar product with
+each of the basic kets, i.e. by \(\langle b|\lambda_1\lambda_2...\lambda_u\rangle\). It may, like the repre-
 sentative of a ket, be looked upon either as a set of numbers or as a
-function of the variables A,, Aq,...,A,,. We have
+function of the variables \(\lambda_1,\lambda_2,...,\lambda_u\). We have
 
-CBIAyAgeA,,> == CA Age Ay |b),
+\[
+\langle b|\lambda_1\lambda_2...\lambda_u\rangle = \overline{\langle\lambda_1\lambda_2...\lambda_u|b\rangle}
+\]
 
 showing that the representative of a bra is the conjugate complex of the
 representative of the conjugate imaginary ket. In an orthogonal repre-
 sentation, where the basic bras are simultaneous eigenbras of a com-
-plete set of commuting observables, ¢,, é,...,&, say, the basic kets
-will be simultaneous eigenkets of £,, &,...,&.
+plete set of commuting observables, \(\xi_1,\xi_2,...,\xi_u\) say, the basic kets
+will be simultaneous eigenkets of \(\xi_1,\xi_2,...,\xi_u\).
 
+</p><p>
 We have not yet considered the lengths of the basic vectors. With
 an orthogonal representation, the natural thing to do is to normalize
-﻿58 REPRESENTATIONS § 14
-
 the basic vectors, rather than leave their lengths arbitrary, and so
 introduce a further stage of simplification into the representation.
 However, it is possible to normalize them only if the parameters
@@ -343,69 +358,85 @@ which label them all take on discrete values. If any of these para-
 meters are continuous variables that can take on all values in a range,
 the basic vectors are eigenvectors of some observable belonging to
 eigenvalues in a range and are of infinite length, from the discussion
-in § 10 (see p. 39 and top of p. 40). Some-other procedure is then
+in §10 (see p.39 and top of p.40). Some-other procedure is then
 needed to fix the numerical factors by which the basic vectors may
 be multiplied. To get a convenient method of handling this question
 anew mathematical notation is required, which will be given in the
 next section.
+</p><p>
 
-15. The 6 function
-Our work in § 10 led us to consider quantities involving a certain
+<h3>15.The \(\delta\) function</h3>
+<p>
+Our work in §10 led us to consider quantities involving a certain
 
 kind of infinity. To get a precise notation for dealing with these
-infinities, we introduce a quantity 6(7) depending on a parameter x
+infinities, we introduce a quantity \(\delta(x)\) depending on a parameter \(x\)
 satisfying the conditions
 
-J3) dx = 1 (2)
+\[
+\left.
+\begin{align}
+\int_{-\infty}^\infty \delta(x)\;dx &= 1 \\
+\\
+\delta(x) &= 0\;for\; x \neq 0
+\end{align}
+\right\}
+\tag{2}
+\]
 
-d(x) = 0 forz 40.
-
-To get a picture of 8(z), take a function of the real variable x which
-vanishes everywhere except inside a small domain, of length « say,
-surrounding the origin z = 0, and which is so large inside this domain
+To get a picture of \(\delta(x)\), take a function of the real variable \(x\) which
+vanishes everywhere except inside a small domain, of length \(\epsilon\) say,
+surrounding the origin \(x = 0\), and which is so large inside this domain
 . that its integral over this domain is unity. The exact shape of the
 function inside this domain does not matter, provided there are no
 unnecessarily wild variations (for example provided the function
-is always of order e~1). Then in the limit ¢ -> 0 this function will go
-over into (zx).
+is always of order \(\epsilon^{-1}\)). Then in the limit \(\epsilon \rightarrow 0\) this function will go
+over into \(\delta(x)\).
 
-5(z) is not a function of x according to the usual mathematical
+</p><p>
+\(\delta(x)\) is not a function of \(x\) according to the usual mathematical
 definition of a function, which requires a function to have a definite
 value for each point in its domain, but is something more general,
-which we may call an ‘improper function’ to show up its difference
-from a function defined by the usual definition. Thus 6(z) is not a
+which we may call an ‘improper function' to show up its difference
+from a function defined by the usual definition. Thus \(\delta(x)\) is not a
 quantity which can be generally used in mathematical analysis like
 an ordinary function, but its use must be confined to certain simple
 types of expression for which it is obvious that no inconsistency
 can arise.
-﻿§ 15 THE 8 FUNCTION 59
 
-The most important property of 8(x) is exemplified by the follow-
+</p><p>
+The most important property of \(\delta(x)\) is exemplified by the follow-
 ing equation,
 
-| f@8(a) de = f(0), (3)
+\[
+\int_{-\infty}^\infty f(x)\delta(x) dx=f(0) \tag{3}
+\]
 
-where f(z) is any continuous function of x. We can easily see the
-validity of this equation from the above picture of 8(z). The left-
-hand side of (3) can depend only on the values of f(z) very close
-to the origin, so that we may replace f(x) by its value at the origin,
-f(0), without essential error. Equation (3) then follows from the
+where \(f(x)\) is any continuous function of \(x\). We can easily see the
+validity of this equation from the above picture of \(\delta(x)\). The left-
+hand side of (3) can depend only on the values of \(f(x)\) very close
+to the origin, so that we may replace \(f(x)\) by its value at the origin,
+\(f(0)\), without essential error. Equation (3) then follows from the
 first of equations (2). By making a change of origin in (3), we can
-deduce the formula ,
+deduce the formula 
 
-| f@)8(e—a) de = fl@), (4)
+\[
+\int_{-\infty}^\infty f(x)\delta(x-a)dx=f(a)  \tag{4}
+\]
 
-where a is any real number. Thus the process of multiplying a function
-of x by 8(a—-a) and integrating over all x is equivalent to the process of
-substituting a for z. This general result holds also if the function of z is
-not a numerical one, but is a vector or linear operator depending on x.
+where \(a\) is any real number. Thus the process of multiplying a function
+of \(x\) by \(\delta(x-a)\) and integrating over all \(x\) is equivalent to the process of
+substituting \(a\) for \(x\). This general result holds also if the function of \(x\) is
+not a numerical one, but is a vector or linear operator depending on \(x\).
 
-The range of integration in (3) and (4) need not be from —co to 00,
+</p><p>
+The range of integration in (3) and (4) need not be from \(-\infty\) to \(\infty\),
 but may be over any domain surrounding the critical point at which
-the 8 function does not vanish. In future the limits of integration
+the \(\delta\) function does not vanish. In future the limits of integration
 will usually be omitted in such equations, it being understood that
 the domain of integration is a suitable one.
 
+</p><p>
 Equations (3) and (4) show that, although an improper function
 does not itself have a well-defined value, when it occurs as a factor
 in an integrand the integral has a well-defined value. In quantum
@@ -420,75 +451,99 @@ certain relations which we could, if necessary, rewrite in a form not
 involving improper functions, but only in a cumbersome way which
 would tend to obscure the argument.
 
-An alternative way of defining the 5 function is as the differential
-coefficient «’(x) of the function <(x) given by
+</p><p>
+An alternative way of defining the \(\delta\) function is as the differential
+coefficient \(\epsilon^\prime(x)\) of the function \(\epsilon(x)\) given by
 
-ez) = 0 (x <0) |)
-=I1 @> 0).
-﻿60 REPRESENTATIONS § 15
+\[
+\left.
+\begin{align}
+\epsilon(x) &= 0\; (x < 0) \\
+\\
+&= 1\; (x \gt 0)
+\end{align}
+\right\}
+\tag{5}
+\]
 
 We may verify that this is equivalent to the previous definition by
-substituting ¢’(x) for 8(x) in the left-hand side of (3) and integrating
-by parts. We find, for g, and g, two positive numbers,
+substituting \(\epsilon^\prime(x)\) for \(\delta(x)\) in the left-hand side of (3) and integrating
+by parts. We find, for \(g_1\) and \(g_2\) two positive numbers,
 
-gt
+\[
+\begin{align}
+\int_{-g_2}^{g_1} f(x)\epsilon^\prime(x)dx &= \Big[f(x)\epsilon(x)\Big]_{-g_2}^{g_1}-\int_{-g_2}^{g_1} f^\prime(x)\epsilon(x)dx \\
+\\
+&= f(g_1) - \int_0^{g_1} f^\prime(x)dx \\
+\\
+&= f(0)
+\end{align}
+\]
 
-[fere'@) de = [fede(ay,— | Fela) de
-
-Ge ~ 9s :
-
-=Sg)— | fe) de
-
-in agreement with (3). The 5 function appears whenever one differen-
+in agreement with (3). The \(\delta\) function appears whenever one differen-
 tiates a discontinuous function.
 
+</p><p>
 There are a number of elementary equations which one can write
-down about § functions. These equations are essentially rules of
+down about \(\delta\) functions. These equations are essentially rules of
 manipulation for algebraic work involving 5 functions. The meaning
 of any of these equations is that its two sides give equivalent results
 as factors in an integrand.
 
+</p><p>
 Examples of such equations are
 
-5(—x) = 8(zx) (6)
+\[
+\begin{align}
+\delta(-x) &= \delta(x) \tag{6} \\
+\\
+x\delta(x) &= 0  \tag{7} \\
+\\
+\delta(ax) &= a^{-1}\delta(x)\; (a > 0)  \tag{8} \\
+\\
+\delta(x^2—a^2) &= \frac{1}{2}a^{-1}\{\delta(x—a)+\delta(x+a)\}\; (a > 0)  \tag{9} \\
+\\
+\int \delta(a—x)\, dx\, \delta(x—b) &= \delta(a—b)  \tag{10} \\
+\\
+f(x)\delta(x—a) &= f(a)\delta(x—a)  \tag{11}
+\end{align}
+\]
 
-xd(x) = 0, (7)
+Equation (6), which merely states that \(\delta(x)\) is an even function of its
+variable \(x\) is trivial. To verify (7) take any continuous function of
+\(x, f(x)\). Then
 
-S(ax) = a-18(z) (a > 0), (8)
+\[
+\int f(x)x\delta(x)dx = 0
+\]
 
-S(u®—a2) = Ja-8(w—a)+8(a-+a)} (a > 0), (9)
-
-| 8(a—a) dx 8(a—b) = 5(a—d), (10)
-f(x)8(x—a) = f(a)3(x—a). (11)
-
-Equation (6), which merely states that 5(x) is an even function of its
-variable x is trivial. To verify (7) take any continuous function of
-
-x, f(x). Then ~ :
-[fee 8(x) dx = 0,
-
-from (3). Thus 28(x) as a factor in an integrand is equivalent to
+from (3). Thus \(x\delta(x)\) as a factor in an integrand is equivalent to
 zero, which is just the meaning of (7). (8) and (9) may be verified
 by similar elementary arguments. To verify (10) take any continuous
-function of a, f(a). Then
+function of \(a,f(a)\). Then
 
-i) fla) da | 8(a—ax) da 8(z—b) = | 8(x—b) dx f f(a) da 8(a—z)
-es i 8(x—b) da f(x) = f(a) da 5(a—b).
+\[
+\begin{align}
+\int f(a)da \int \delta(a-x)dx\delta(x-b) &= \int \delta(x-b)dx\int f(a)da\delta(a-x) \\
+\\
+&= \int \delta(x-b)dx f(x) = \int f(a) da \delta(a-b)
+\end{align}
+\]
 
 Thus the two sides of (10) are equivalent as factors in an integrand
 with a as variable of integration. It may be shown in the same way
-﻿§ 15 THE 6 FUNCTION 61
-
 that they are equivalent also as factors in an integrand with 6 as
 variable of integration, so that equation (10) is justified from either
 of these points of view. Equation (11) is also easily justified, with
 the help of (4), from two points of view.
 
+</p><p>
 Equation (10) would be given by an application of (4) with
 f(x) = 8(v—b). We have here an illustration of the fact that we may
 often use an improper function as though it were an ordinary con-
 tinuous function, without getting a wrong result.
 
+</p><p>
 Equation (7) shows that, whenever one divides both sides of an
 equation by a variable x which can take on the value zero, one
 should add on to one side an arbitrary multiple of 5(x), ie. from an
@@ -498,6 +553,8 @@ one cannot infer Aja = B/z,
 but only Af = B/e+cd(x), (13)
 
 where ¢ is unknown. ©
+
+</p><p>
 As an illustration of work with the 6 function, we may consider the
 differentiation of log x. The usual formula
 
@@ -523,17 +580,18 @@ e
 The particular combination of reciprocal function and 6 function
 appearing in (15) plays an important part in the quantum theory of
 collision processes (see § 50).
-﻿62 REPRESENTATIONS § 16
+</p><p>
 
-16. Properties of the basic vectors
-
+<h3>16.Properties of the basic vectors</h3>
+<p>
 Using the notation of the 6 function, we can proceed with the theory
 of representations. Let us suppose first that we have a single observ-
 able £ forming by itself a complete commuting set, the condition for
 this being that there is only one eigenstate of € belonging to any
-eigenvalue £’, and let us set up an orthogonal representation in which
+eigenvalue £', and let us set up an orthogonal representation in which
 the basic vectors are eigenvectors of € and are written <£"|, |£‘>.
 
+</p><p>
 In the case when the eigenvalues of é are discrete, we can normalize
 the basic vectors, and we then have
 
@@ -550,17 +608,19 @@ future, has the meaning
 = 1 when r=s.
 
 } an
+
+</p><p>
 In the case when the eigenvalues of € are continuous we cannot
 
 normalize the basic vectors. If we now consider the quantity ¢é"|€">”
-with €’ fixed and é” varying, we see from the work connected with
-expression (29) of § 10 that this quantity vanishes for £” 4 é’ and
-that its integral over a range of é” extending through the value ¢’
+with €' fixed and é” varying, we see from the work connected with
+expression (29) of § 10 that this quantity vanishes for £” 4 é' and
+that its integral over a range of é” extending through the value ¢'
 is finite, equal to c say. Thus
 
 CEE") = 0 8(E—2").
-From (30) of § 10, ¢ is a positive number. It may vary with €’, so
-we should write it c(é’) or c’ for brevity, and thus we have
+From (30) of § 10, ¢ is a positive number. It may vary with €', so
+we should write it c(é') or c' for brevity, and thus we have
 
 <E'|E") = 0 3(E— 8"). (18)
 Alternatively, we have
@@ -569,34 +629,36 @@ E18") = 0 8(E'—8"), (19)
 where c” is short for c(€é”), the right-hand sides of (18) and (19) being
 equal on account of (11).
 
+</p><p>
 Let us pass to another representation whose basic vectors are
 eigenvectors of £, the new basic vectors being numerical multiples of
-the previous ones. Calling the new basic vectors <é’*|, |E’*>, with the
+the previous ones. Calling the new basic vectors <é'*|, |E'*>, with the
 - additional label * to distinguish them from the previous ones, we have
 
 E*[ = WEI, ED = BED,
-﻿$16 PROPERTIES OF THE BASIC VECTORS 63
-where &’ is short for &(é’) and is a number depending on £’. We get
+
+where &' is short for &(é') and is a number depending on £'. We get
 CEE — WENGE") = Mie! 5(e'—2")
 
 with the help of (18). This may be written
-(EME) = W’k'c’ BE" —£")
+(EME) = W'k'c' BE" —£")
 
-from (11). By choosing &’ so that its modulus is c’~?, which is possible
-since c’ is positive, we arrange to have
+from (11). By choosing &' so that its modulus is c'~?, which is possible
+since c' is positive, we arrange to have
 
 KEEN == O(E' — 6"). (20)
 
 The lengths of the new basic vectors are now fixed so as to make the
 representation as simple as possible. The way these lengths were
 fixed is in some respects analogous to the normalizing of the basic
-vectors in the case of discrete €’, equation (20) being of the form of
-(16) with the 3 function 6(¢’—€") replacing the 6 symbol dz, of
+vectors in the case of discrete €', equation (20) being of the form of
+(16) with the 3 function 6(¢'—€") replacing the 6 symbol dz, of
 equation (16). We shall continue to work with the new representation
 and shall drop the * labels in it to save writing. Thus (20) will now
 
-be written <e/|é") = 8(€’—£"). (21)
+be written <e/|é") = 8(€'—£"). (21)
 
+</p><p>
 We can develop the theory on closely parallel lines for the discrete
 and continuous cases. For the discrete case we have, using (16),
 
@@ -607,14 +669,16 @@ any basic ket |£"> and hence, since the basic kets form a complete set,
 
 2 Ie><o"] = 1 (22)
 This is a useful equation expressing an important property of the
-basic vectors, namely, of [£’> is multiplied on the right by <é'| the
+basic vectors, namely, of [£'> is multiplied on the right by <é'| the
 resulting linear operator, summed for all &', equals the unit operator.
 Equations (16) and (22) give the fundamental properties of the basic
 
 vectors for the discrete case.
+
+</p><p>
 Similarly, for the continuous case we have, using (21),
 
-| Ig") df’ EE) = | If") dg’ (g’—&") = |£" (23)
+| Ig") df' EE) = | If") dg' (g'—&") = |£" (23)
 
 from (4) applied with a ket vector for f(x), the range of integration
 being the range of eigenvalues. This holds for any basic ket |£”)>
@@ -627,19 +691,20 @@ This is of the same form as (22) with an integral replacing the sum.
 Equations (21) and (24) give the fundamental properties of the basic
 vectors for the continuous case.
 
+</p><p>
 Equations (22) and (24) enable one to expand any bra or ket in
 terms of the basic vectors. For example, we get for the ket |P> in the
 discrete case, by multiplying (22) on the right by |P>,
 
 [P> = 2 le><E|P>, (25)
 
-which gives |P> expanded in terms of the |£’>’s and shows that the
-coefficients in the expansion are <£’|P)>, which are just the numbers
+which gives |P> expanded in terms of the |£'>'s and shows that the
+coefficients in the expansion are <£'|P)>, which are just the numbers
 forming the representative of |P)>. Similarly, in the continuous case,
 
-[P> = { le’ de" <€'1P>, (26)
+[P> = { le' de" <€'1P>, (26)
 
-giving |P) as an integral over the |£">’s, with the coefficient in the
+giving |P) as an integral over the |£">'s, with the coefficient in the
 integrand again just the representative <¢'|P) of |P>. The conjugate
 imaginary equations to (25) and (26) would give the bra vector <P|
 expanded in terms of the basic bras.
@@ -657,22 +722,22 @@ If (Q| is any bra and |P> any ket we get, by further applications
 
 &
 
-for discrete é’ and
+for discrete é' and
 
 <QIP> = [ <Qle' dé" <e|P> (28)
 
-for continuous £’. These equations express the scalar product of (Q|
-and |P» in terms of their representatives (Q|é’> and <é"|P>. Equa-
+for continuous £'. These equations express the scalar product of (Q|
+and |P» in terms of their representatives (Q|é'> and <é"|P>. Equa-
 tion (27) is just the usual formula for the scalar product of two
 vectors in terms of the coordinates of the vectors, and (28) is the
-natural modification of this formula for the case of continuous &’,
+natural modification of this formula for the case of continuous &',
 with an integral instead of a sum.
 
 The generalization of the foregoing work to the case when é has
 both discrete and continuous eigenvalues is quite straightforward.
 ﻿§ 16 PROPERTIES OF THE BASIC VECTORS 65
 
-Using & and & to denote discrete eigenvalues and ¢’ and £” to denote
+Using & and & to denote discrete eigenvalues and ¢' and £” to denote
 continuous eigenvalues, we have the set of equations
 
 KEE = See, EE D = 0, EE") = OEE") (29)
@@ -687,13 +752,13 @@ FOE L+ [eae l= 1 (30)
 the range of integration being the range of continuous eigenvalues.
 With the help of (30), we get immediately
 
-IP> = Ble <elPy+ J |e> dé’ <e'1P> (31)
+IP> = Ble <elPy+ J |e> dé' <e'1P> (31)
 as the generalization of (25) or (26), and
-COIP) = 3 CQL IP>-+ f <@lg> de’ <e'1P> (82)
+COIP) = 3 CQL IP>-+ f <@lg> de' <e'1P> (82)
 
 as the generalization of (27) or (28).
 
-’ Let us now pass to the general case when we have several commuting
+' Let us now pass to the general case when we have several commuting
 observables &,, &,,..., €,, forming a complete commuting set and set up
 an orthogonal representation in which the basic vectors are simul-
 taneous eigenvectors of all of them, and are written <&...€)|, |&..-&)-
@@ -707,7 +772,7 @@ s=v-+l,..,u. By extending the work connected with expression
 observables and extending also the axiom (30), we find that the
 (u—v)-fold integral of this quantity with respect to each & over
 @ range extending through the value €, is a finite positive number.
-Calling this number c’, the ’ denoting that it is a function of
+Calling this number c', the ' denoting that it is a function of
 E500) os Costes Ses WE CaN express our results by the equation
 
 <E4--b0 Sosa Slot So Sos Sar = 6 8(Sosr— S41) S(Eu— Ea)» (33)
@@ -716,7 +781,7 @@ with one 8 factor on the right-hand side for each value of s from
 v-+1 tou. We now change the lengths of our basic vectors so as to
 ﻿66 REPRESENTATIONS § 16
 
-make c’ unity, by a procedure similar to that which led to (20). By
+make c' unity, by a procedure similar to that which led to (20). By
 a further use of the orthogonality theorem, we get finally
 
 Cie bul€i---Sa> = beer 86 8(So41— Soar) O(a &), (84)
@@ -733,20 +798,20 @@ From (34) we can derive, as the generalization of (22) or (24)
 XS fof Gd dea dl Gal = 1 (35)
 
 the integral being a (u-—v)-fold one over all the és with continuous
-eigenvalues and the summation being over all the €’s with discrete
+eigenvalues and the summation being over all the €'s with discrete
 eigenvalues. Equations (34) and (35) give the fundamental properties
 of the basic vectors in the present case. From (35) we can imme-
 diately write down the generalization of (25) or (26) and of (27) or (28).
 
 The case we have just considered can be further generalized by
-allowing some of the é’s to have both discrete and continuous eigen-
+allowing some of the é's to have both discrete and continuous eigen-
 values. The modifications required in the equations are quite straight-
 forward, but will not be given here as they are rather cumbersome to
 write down in general form.
 
 There are some problems in which it is convenient not to make the
-c’ of equation (33) equal unity, but to make it equal to some definite
-function of the £'’s instead. Calling this function of the €’s p’~1 we
+c' of equation (33) equal unity, but to make it equal to some definite
+function of the £''s instead. Calling this function of the €'s p'~1 we
 then have, instead of (34)
 
 (ba bl ad = pS er Seces 8(Sora Eoaa)8(Eu— Su), (38)
@@ -754,15 +819,15 @@ and instead of (35) we get
 
 Sfp kd 0” ear de, Ei bul = Le (37)
 
-p’ is called the weight function of the representation, p’ df,,,..d&,
-being the ‘weight’ attached to a small volume element of the space
+p' is called the weight function of the representation, p' df,,,..d&,
+being the ‘weight' attached to a small volume element of the space
 of the variables &,,1,.., &,
 
 The representations we considered previously all had the weight
 function unity. The introduction of a weight function not unity is
 entirely a matter of convenience and does not add anything to the
 mathematical power of the representation. The basic bras (...),*|
-of a representation with the weight function p’ are connected with
+of a representation with the weight function p' are connected with
 ﻿§ 16 PROPERTIES OF THE BASIC VECTORS 67
 
 the basic bras <&,...¢;,| of the corresponding representation with the
@@ -770,10 +835,10 @@ weight function unity by
 
 (Ea bu] = pK EL Sul, (38)
 as is easily verified. An example of a useful representation with
-non-unit weight function occurs when one has two é’s which are
+non-unit weight function occurs when one has two é's which are
 the polar and azimuthal angles 6 and ¢ giving a direction in three-
-dimensional space and one takes p’ = sin 6’. One then has the element
-of solid angle sin @’ d6’dé’ occurring in (37).
+dimensional space and one takes p' = sin 6'. One then has the element
+of solid angle sin @' d6'dé' occurring in (37).
 
 17. The representation of linear operators
 
@@ -800,8 +865,8 @@ instead of one.
 
 Let us examine the form of these numbers in simple cases. Take
 first the case when there is only one £, forming a complete commuting
-set by itself, and suppose that it has discrete eigenvalues ¢’. The
-representative of « is then the discrete set of numbers <é’|alé”>. If
+set by itself, and suppose that it has discrete eigenvalues ¢'. The
+representative of « is then the discrete set of numbers <é'|alé”>. If
 one had to write out these numbers explicitly, the natural way of
 arranging them would be as a two-dimensional array, thus:
 
@@ -816,7 +881,7 @@ make the convention that the elements must always be arranged so
 that those in the same row refer to the same basic bra vector and
 those in the same column refer to the same basic ket vector.
 
-An element <¢’la|£’> referring to two basic vectors with the same
+An element <¢'la|£'> referring to two basic vectors with the same
 label is called a diagonal element of the matrix, as all such elements
 lie on a diagonal. If we put « equal to unity, we have from (16) ail
 the diagonal elements equal to unity and all the other elements equal
@@ -847,13 +912,13 @@ and the matrix is again a diagonal matrix.
 Let us determine the representative of a product af of two linear
 
 operators a and f in terms of the representatives of the factors.
-From equation (22) with £” substituted for é’ we obtain
+From equation (22) with £” substituted for é' we obtain
 
 = » CE" JoelE”><o" BIE", (44)
 
 which gives us the required result. Equation (44) shows that the
-matrix formed by the elements <£’|o8|£”> equals the product of the
-matrices formed by the elements <£’|«|£”> and <é'|B|£"> respectively,
+matrix formed by the elements <£'|o8|£”> equals the product of the
+matrices formed by the elements <£'|«|£”> and <é'|B|£"> respectively,
 according to the usual mathematical rule for multiplying matrices.
 This rule gives for the element in the rth row and sth column of the
 product matrix the sum of the product of each element in the rth
@@ -879,7 +944,7 @@ product of the matrices representing the two factors.
 Let us now consider the case when there is only one é and it has
 continuous eigenvalues. The representative of « is now <é"|a|é, a
 function of two variables £ and é” which can vary continuously. It
-is convenient to call such a function a ‘matrix’, using this word in
+is convenient to call such a function a ‘matrix', using this word in
 a generalized sense, in order that we may be able to use the same
 terminology for the discrete and continuous cases. One of these
 generalized matrices cannot, of course, be written out as a two-
@@ -892,17 +957,17 @@ We arrange our definitions concerning these generalized matrices
 
 so that the rules (i)-(v) which we had above for the discrete case
 hold also for the continuous case. The unit operator is represented
-by 6(é’—&’) and the generalized matrix formed by these elements
+by 6(é'—&') and the generalized matrix formed by these elements
 we define to be the unit matrix. We still have equation (41) as the
 condition for a to be real and we define the generalized matrix formed
 by the elements <&'|a|é"> to be Hermitian when it satisfies this
 condition. € is represented by
 
-Ce’e|E"> = £'8('—£") (45)
+Ce'e|E"> = £'8('—£") (45)
 and f(£) by SAIED = FEV 5(E—€"), (46)
 and the generalized matrices formed by these elements we define to be
 diagonal matrices. From (11), we could equally well have é" and f(é”)
-as the coefficients of 8(é’—€”) on the right-hand sides of (45) and (46)
+as the coefficients of 8(é'—€”) on the right-hand sides of (45) and (46)
 respectively. Corresponding to equation (44) we now have, from (24)
 
 é'lople"> = [ <é'lale”> dé” <E"iBIE">, (47)
@@ -913,7 +978,7 @@ matrix formed by the elements on the right-hand side here to be the
  3695,57 a)
 ﻿70 REPRESENTATIONS §17
 
-product of the matrices formed by <€’Ja/é”> and <é’|B{Eé">. With
+product of the matrices formed by <€'Ja/é”> and <é'|B{Eé">. With
 these definitions we secure complete parallelism between the discrete
 and continuous cases and we have the rules (i)-(v) holding for both.
 
@@ -921,7 +986,7 @@ The question arises how a general diagonal matrix is to be defined
 in the continuous case, as so far we have only defined the right-hand
 sides of (45) and (46) to be examples of diagonal matrices. One
 might.be inclined to define as diagonal any matrix whose (€', €”)
-elements all vanish except when €’ differs infinitely little from &’,
+elements all vanish except when €' differs infinitely little from &',
 but this would not be satisfactory, because an important property
 of diagonal matrices in the discrete case is that they always commute
 with one another and we want this property to hold also in the
@@ -930,28 +995,28 @@ continuous case. In order that the matrix formed by the elements ~
 the elements on the right-hand side of (45) we must have, using the
 multiplication rule (47),
 
-i <e' jw \e"> ag” £78 (€"—£") = | ’ &(E —&") dé” cE" lw |é">.
+i <e' jw \e"> ag” £78 (€"—£") = | ' &(E —&") dé” cE" lw |é">.
 With the help of formula (4), this reduces to
 CE OEE” = ECE ew |E" (48)
 
 This gives, according to the rule by which (13) follows from (12),
 
-CE |wig"> = 0 B(E’ —€")
+CE |wig"> = 0 B(E' —€")
 
-where c’ is a number that may depend on ¢’. Thus <€’|w/E”) is of the
+where c' is a number that may depend on ¢'. Thus <€'|w/E”) is of the
 form of the right-hand side of (46). For this reason we define only
 matrices whose elements are of the form of the right-hand side of (46) to
 be diagonal mairices. It is easily verified that these matrices all
 commute with one another. One can form other matrices whose
-(&’, €”) elements all vanish when €' differs appreciably from £” and
-have a different form of singularity when é’ equals £” [we shall later
-introduce the derivative 8’(x) of the 5 function and 8’(é’—&”) will
+(&', €”) elements all vanish when €' differs appreciably from £” and
+have a different form of singularity when é' equals £” [we shall later
+introduce the derivative 8'(x) of the 5 function and 8'(é'—&”) will
 then be an example, see § 22 equation (19)], but these other matrices
 are not diagonal according to the definition.
 
 Let us now pass on to the case when there is only one £ and it has
 both discrete and continuous eigenvalues. Using é7,& to denote
-discrete eigenvalues and €’,é” to denote continuous eigenvalues, we
+discrete eigenvalues and €',é” to denote continuous eigenvalues, we
 now have the representative of « consisting of four kinds of quanti-
 
 ties, <E7la|E >, (E"la |, <E"lalE, <Efalé">. These quantities can all
@@ -965,16 +1030,16 @@ general kind of matrix so as to make the rules (i)-(v) still hold. The
 details are a straightforward generalization of what has gone before
 and need not be given explicitly.
 
-Let us now go back to the general case of several é’s, &,, &,...,&,.
+Let us now go back to the general case of several é's, &,, &,...,&,.
 The representative of «, expression (39), may still be looked upon as
 forming a matrix, with rows corresponding to different values of
 &,..,&, and columns corresponding to different values of &...., &%.
-Unless ail the £’s have discrete eigenvalues, this matrix will be of the
+Unless ail the £'s have discrete eigenvalues, this matrix will be of the
 generalized kind with continuous ranges of rows and columns. We
 again arrange our definitions so that the rules (i)-(v) hold, with rule
 (iv) generalized to:
 
-(iv’) Hach &,, (m = 1,2,...,u) and any function of them is repre-
+(iv') Hach &,, (m = 1,2,...,u) and any function of them is repre-
 sented by a diagonal matrix.
 
 A diagonal matrix is now defined as one whose general element
@@ -983,7 +1048,7 @@ A diagonal matrix is now defined as one whose general element
 (bh Sloe Ftd = 6" 84, ¢1--Be, 223 (ou— Sou) H(E,— Ea) (49)
 
 in the case when £,,..,&, have discrete eigenvalues and é,.,,..,€,, have
-continuous eigenvalues, c’ being any function of the £’s. This defini-
+continuous eigenvalues, c' being any function of the £'s. This defini-
 tion is the generalization of what we had with one é and makes
 diagonal matrices always commute with one another. The other
 definitions are straightforward and need not be given explicitly.
@@ -1040,14 +1105,14 @@ fied value for a given state and in § 13 we generalized this result
 and obtained the probability of a set of commuting observables
 simultaneously having specified values for a given state. Let us now
 apply this result to a complete set of commuting observables, say the
-set of ¢’s which we have been dealing with already. According to
+set of ¢'s which we have been dealing with already. According to
 formula (51) of § 13, the probability of each &, having the value &
 for the state corresponding to the normalized ket vector |x) is
 
 Pre, = St |8 eg, 5g, 5---8e,e,10- (50)
 ﻿§18 PROBABILITY AMPLITUDES 73
 
-If the ¢’s all have discrete eigenvalues, we can use (35) with v = u
+If the ¢'s all have discrete eigenvalues, we can use (35) with v = u
 and no integrals, and get
 
 Pee, = 2, <x |8¢, 2, 82, 250-5246, 184--Su> Sh Sar
@@ -1062,7 +1127,7 @@ We thus get the simple result that the probability of the €'s having the
 values €' is just the square of the modulus of the appropriate coordinate
 of the normalized ket vector corresponding to the state concerned.
 
-Tf the é’s do not all have discrete eigenvalues, but if, say, &,.., ,
+Tf the é's do not all have discrete eigenvalues, but if, say, &,.., ,
 have discrete eigenvalues and &,,1,..,€, have continuous eigenvalues,
 then to get something physically significant we must obtain the
 probability of each , (r = 1,..,v) having a specified value ¢, and each
@@ -1088,32 +1153,32 @@ We may be interested in a state whose corresponding ket |x> cannot
 be normalized. This occurs, for example, if the state is an eigenstate
 of some observable belonging to an eigenvalue lying in a range of
 eigenvalues. The formula (51) or (52) can then still be used to give
-the relative probability of the é’s having specified values or having
+the relative probability of the é's having specified values or having
 values lying in specified small ranges, i.e. it will give correctly the
-ratios of the probabilities for different £’s. The numbers <&...&,|%>
+ratios of the probabilities for different £'s. The numbers <&...&,|%>
 may then be called relative probability amplitudes.
 ﻿74 REPRESENTATIONS § 18
 
 The representation for which the above results hold is characterized
-by the basic vectors being simultaneous eigenvectors of all the é’s.
-It may also be characterized by the requirement that each of the é’s
+by the basic vectors being simultaneous eigenvectors of all the é's.
+It may also be characterized by the requirement that each of the é's
 shall be represented by a diagonal matrix, this condition being easily
 seen to be equivalent to the previous one. The latter characterization
 is usually the more convenient one. For brevity, we shall formulate
-it as each of the é’s “being diagonal in the representation’.
+it as each of the é's “being diagonal in the representation'.
 
-Provided the é’s form a complete set of commuting observables,
+Provided the é's form a complete set of commuting observables,
 the representation is completely determined by the characterization,
 apart from arbitrary phase factors in the basic vectors. Each basic bra
-<&...€,| may be multiplied by e%”’, where y’ is any real function of
+<&...€,| may be multiplied by e%”', where y' is any real function of
 the variables ¢},..., &, without changing any of the conditions which
-the representation has to satisfy, i.c. the condition that the é’s are
+the representation has to satisfy, i.c. the condition that the é's are
 diagonal or that the basic vectors are simultaneous eigenvectors of
-the £’s, and the fundamental properties of the basic vectors (34) and
+the £'s, and the fundamental properties of the basic vectors (34) and
 (35). With the basic bras changed in this way, the representative
-(&...€,|P> of a ket |P> gets multiplied by e*’, the representative
-(Q1g...€,> of a bra <Q} gets multiplied by e~%”’ and the representa-
-tive <&)...€,,|a|&]...6> of a linear operator « gets multiplied by e’-7”.
+(&...€,|P> of a ket |P> gets multiplied by e*', the representative
+(Q1g...€,> of a bra <Q} gets multiplied by e~%”' and the representa-
+tive <&)...€,,|a|&]...6> of a linear operator « gets multiplied by e'-7”.
 The probabilities or relative probabilities (51), (52) are, of course,
 unaltered.
 
@@ -1167,7 +1232,7 @@ continuous eigenvalues and if 7,,..,7, have discrete eigenvalues and
 Ne+19+ Ny have continuous eigenvalues, we get from (35)
 
 Theol) = B fof titel fa> Board EnkulP>, (58)
-and interchanging é’s and 7’s
+and interchanging é's and 7's
 (y--ul P> =>) Si Ealt te? Insane (Ii--Mw|P>. (54)
 
 These are the transformation equations which give one representative
@@ -1189,35 +1254,35 @@ they satisfy the conditions
 x, fof <t--ntol fad Moar db, Er Gilttte to?
 
 = Sint Oyen (Meta Mesa) No— Mo) (58)
-and the corresponding conditions with é’s and 7’s interchanged, as
+and the corresponding conditions with é's and 7's interchanged, as
 may be verified from (35) and (34) and the corresponding equations
-for the 7’s.
+for the 7's.
 
 Transformation functions are examples of probability amplitudes
 or relative probability amplitudes. Let us take the case when all the
-é’s and all the y’s have discrete eigenvalues. Then the basic ket
+é's and all the y's have discrete eigenvalues. Then the basic ket
 |y4---7}y> is normalized, so that its representative in the €-representa-
 tion, <€)...£4,|71---Mp>, is a probability amplitude for each set of values
-for the £’s. The state to which these probability amplitudes refer,
+for the £'s. The state to which these probability amplitudes refer,
 namely the state corresponding to |7}...71,>, is characterized by the
 condition that a simultaneous measurement of 7,,...,7,, is certain to
 lead to the results 7j,...,M%- Thus [<€)...€,|71.--mo> ? is the proba-
-bility of the é’s having the values ¢...¢;, for the state for which the
-n’s certainly have the values 7}...7,,. Since
+bility of the é's having the values ¢...¢;, for the state for which the
+n's certainly have the values 7}...7,,. Since
 
 So Seel me me? = [om MlStSw Ps
 we have the theorem of reciprocity—the probability of the és having
-the values £’ for the state for which the n’s certainly have the values 1’
-is equal to the probability of the ’s having the values x’ for the state for
+the values £' for the state for which the n's certainly have the values 1'
+is equal to the probability of the 's having the values x' for the state for
 which the &s certainly have the values £'. :
 
-If all the 7’s have discrete eigenvalues and some of the é’s have
+If all the 7's have discrete eigenvalues and some of the é's have
 continuous eigenvalues, |<&;...,,|71---7,> |? still gives the probability
-distribution of values for the é’s for the state for which the »’s cer-
-tainly have the values y’. If some of the y’s have continuous eigen-
+distribution of values for the é's for the state for which the »'s cer-
+tainly have the values y'. If some of the y's have continuous eigen-
 values, |7}...7,,> is not normalized and [(&...d,|y,-..4y>[? then gives
-only the relative probability distribution of values for the é’s for the
-state for which the y’s certainly have the values 7’.
+only the relative probability distribution of values for the é's for the
+state for which the y's certainly have the values 7'.
 
 19. Theorems about functions of observables
 
@@ -1238,25 +1303,25 @@ fw—wk = 0. (57)
 Let us introduce a representation in which é is diagonal. If € by
 itself does not form a complete commuting set of observables, we must
 make it into a complete commuting set by adding certain observables,
-B say, to it, and then take the representation in which € and the f’s
+B say, to it, and then take the representation in which € and the f's
 are diagonal. (The case when £ does form a complete commuting set
 by itself can be looked upon as a special case of the preceding one
 with the number of f variables zero.) In this representation equation
 
 (57) becomes <E'B" geo —wwé|£"B") = 0,
 which reduces to
-EB a | E"B") — CEB’ ew |E"BE” = 0.
+EB a | E"B") — CEB' ew |E"BE” = 0.
 In the case when the eigenvalues of € are discrete, this equation
-shows that all the matrix elements <&’’|w|é”B"> of w vanish except
+shows that all the matrix elements <&''|w|é”B"> of w vanish except
 
-those for which ¢’ = €”. In the case when the eigenvalues of & are
-continuous it shows, like equation (48), that <é’B’[w|é"B”> is of the
+those for which ¢' = €”. In the case when the eigenvalues of & are
+continuous it shows, like equation (48), that <é'B'[w|é"B”> is of the
 
 form EB lole"B"> = o5(e'—£"),
 
-where c is some function of €’ and the §’’s and 6’’s. In either case
+where c is some function of €' and the §''s and 6''s. In either case
 we may say that the matrix representing w ‘is diagonal with respect
-to é’. Tf f(é) denotes any function of ¢ in accordance with the general
+to é'. Tf f(é) denotes any function of ¢ in accordance with the general
 theory of § 11, which requires f(£”) to be defined for £” any eigenvalue
 of £, we can deduce in either case
 
@@ -1282,12 +1347,12 @@ set of commuting observables is a function of those observables.
 
 Let w be the linear operator and ¢,,&,...,6, the complete set of
 commuting observables, and set up a representation with these
-observables diagonal. Since w commutes with each of the &’s, the
-matrix representing it is diagonal with respect to each of the £’s,
+observables diagonal. Since w commutes with each of the &'s, the
+matrix representing it is diagonal with respect to each of the £'s,
 by the argument we had above. This matrix is therefore a diagonal
-matrix and is of the form (49), involving a number c’ which is a
-function of the £’s. It thus represents the function of the £’s that
-c' is of the é”s, and hence w equals this function of the €’s.
+matrix and is of the form (49), involving a number c' which is a
+function of the £'s. It thus represents the function of the £'s that
+c' is of the é”s, and hence w equals this function of the €'s.
 
 THEOREM 3. If an observable € and a linear operator g are such that
 any linear operator that commutes with € also commutes with g, then g
@@ -1299,32 +1364,32 @@ place, we see that g must commute with € itself, and hence the
 representative of g must be diagonal with respect to €, i.e. it must
 be of the form
 
-<EB'IGIE’B’> = a(E'B'B' Bee or a(€'B'B")3(E’—&"),
+<EB'IGIE'B'> = a(E'B'B' Bee or a(€'B'B")3(E'—&"),
 according to whether & has discrete or continuous eigenvalues. Now
 let w be any linear operator that commutes with €, so that its
 representative is of the form
-EB lwle”B"> = BEBB Beg or B(E'B'B")3E’—2").
+EB lwle”B"> = BEBB Beg or B(E'B'B")3E'—2").
 By hypothesis w» must also commute with g, so that
 <E'B' gu —eog |E"B"> = 0. (58)
-If we suppose for definiteness that the f’s have discrete eigenvalues,
+If we suppose for definiteness that the f's have discrete eigenvalues,
 (58) leads, with the help of the law of matrix multiplication, to
-> {ale’B'B")O(E'B"B") — B(E’B'B" al E’B"B')} = 0, (59)
+> {ale'B'B")O(E'B"B") — B(E'B'B" al E'B"B')} = 0, (59)
 
 per
 the left-hand side of (58) being equal to the left-hand side of (59)
 
-multiplied by 8¢2 or 5(¢’—§"). Equation (59) must hold for all
-functions b(é’B’B"). We can deduce that
+multiplied by 8¢2 or 5(¢'—§"). Equation (59) must hold for all
+functions b(é'B'B"). We can deduce that
 
-a(g'B'B") = 0 for Bp’ # B",
-ate’ p'p’) = ale'B"B").
+a(g'B'B") = 0 for Bp' # B",
+ate' p'p') = ale'B"B").
 The first of these results shows that the matrix representing g is
 
-diagonal and the second shows that a(é’B’f’) is a function of €' only.
-We can now infer that g is that function of € which a(é’B’f’) is of €,
+diagonal and the second shows that a(é'B'f') is a function of €' only.
+We can now infer that g is that function of € which a(é'B'f') is of €,
 ﻿$19 THEOREMS ABOUT FUNCTIONS OF OBSERVABLES 79
 
-so the theorem is proved. The proof is analogous if some of the §’s
+so the theorem is proved. The proof is analogous if some of the §'s
 
 have continuous eigenvalues.
 Theorems I and 3 are still valid if we replace the observable € by
@@ -1338,15 +1403,15 @@ The theory of representations that we have developed provides a
 general system for labelling kets and bras. Ina representation in which
 the complete set of commuting observables &,,...,&, are diagonal any
 ket | P > will have a representative <&...6,|P>, or (é'|P> for brevity.
-This representative is a definite function of the variables £’, say (£’).
+This representative is a definite function of the variables £', say (£').
 The function % then determines the ket |P> completely, so it may be
 used to label this ket, to replace the arbitrary label P. In symbols,
 
 if a
 we put |P> = [(€)>.
-We must put |P> equal to [b(é)> and not [b(é’)>, since it does not
+We must put |P> equal to [b(é)> and not [b(é')>, since it does not
 
-depend on a particular set of eigenvalues for the £’s, but only on the
+depend on a particular set of eigenvalues for the £'s, but only on the
 
 form of the function y.
 With f(é) any function of the observables &,...,&,, f(6)|P> will
@@ -1373,37 +1438,37 @@ operator %(¢) with a ket which is denoted simply by > without a
 label. We call the ket > the standard ket. Any ket whatever can be
 ﻿80 REPRESENTATIONS § 20
 
-expressed as a function of the é’s multiplied into the standard ket.
+expressed as a function of the é's multiplied into the standard ket.
 For example, taking |P) in (62) to be the basic ket |¢">, we find
 
 1E”> == 84, ¢7--Se,¢7 5(Eps1— Soa) S(Eu— Su)? (63)
 
 in the case when ¢,,.., €, have discrete eigenvalues and €,,1,..,&,, have
 continuous eigenvalues. The standard ket is characterized by the
-condition that its representative <é’|> is unity over the whole domain
-of the variable ¢’, as may be seen by putting = 1 in (62).
+condition that its representative <é'|> is unity over the whole domain
+of the variable ¢', as may be seen by putting = 1 in (62).
 
 A further contraction may be made in the notation, namely to
 leave the symbol > for the standard ket understood. A ket is then
 written simply as ¥4(é), a function of the observables €. A function
-of the é’s used in this way to denote a ket is called a wave function.}
+of the é's used in this way to denote a ket is called a wave function.}
 The system of notation provided by wave functions is the one usually
 used by most authors for calculations in quantum mechanics. In
 using it one should remember that each wave function is understood
 to have the standard ket multiplied into it on the right, which
 prevents one from multiplying the wave function by any operator
 on the right. Wave functions can be multiplied by operators only on
-the left. This distinguishes them from ordinary functions of the &’s,
+the left. This distinguishes them from ordinary functions of the &'s,
 which are operators and can be multiplied by operators on either the
 left or the right. A wave function is just the representative of a ket
-expressed as a function of the observables é, instead of eigenvalues &’
+expressed as a function of the observables é, instead of eigenvalues &'
 for those observables. The square of its modulus gives the proba-
 bility (or the relative probability, if it is not normalized) of the és
 having specified values, or lying in specified small ranges, for the
 corresponding state.
 
 The new notation for bras may be developed in the same way as
-for kets. A bra <Q| whose representative <Q|é’> is o(&’) we write
+for kets. A bra <Q| whose representative <Q|é'> is o(&') we write
 <¢(€)|. With this notation the conjugate imaginary to |¢(£)> is
 <b(€)|. Thus the rule that we have used hitherto, that a ket and
 its conjugate imaginary bra are both specified by the same label,
@@ -1427,7 +1492,7 @@ of a wave function can be multiplied by any linear operator on the
 right, but cannot be multiplied by a linear operator on the left. We
 can construct triple products of the form <f(€)>. Such a triple product
 is a number, equal to f(€) summed or integrated over the whole
-domain of eigenvalues for the €’s,
+domain of eigenvalues for the €'s,
 
 fe = ff ME) Bor db (64)
 
@@ -1438,7 +1503,7 @@ The standard ket and bra are defined with respect to a representa-
 tion. If we carried through the above work with a different repre-
 sentation in which the complete set of commuting observables 7 are
 diagonal, or if we merely changed the phase factors in the representa-
-tion with the £’s diagonal, we should get a different standard ket and
+tion with the £'s diagonal, we should get a different standard ket and
 bra. In a piece of work in which more than one standard ket or bra
 appears one must, of course, distinguish them by giving them labels.
 
@@ -1471,7 +1536,7 @@ the commutative and distributive axioms of multiplication hold, ie.
 
 82 REPRESENTATIONS § 20
 
-the c’s being numbers. We can give a meaning to any A-variable
+the c's being numbers. We can give a meaning to any A-variable
 operating on the product |a>|b> by assuming that it operates only
 on the |a> factor and commutes with the |6> factor, and similarly
 we can give a meaning to any B-variable operating on this product
@@ -1502,9 +1567,9 @@ we shall have the basic bras <£,| for the B-system. The products
 
 Eales] = <E4Es! (66)
 will then provide the basic bras for a representation for the original
-system, in which representation the ¢,’s and the €,’s will be diagonal.
+system, in which representation the ¢,'s and the €,'s will be diagonal.
 
-The €,’s and €,’s will together form a complete set of commuting
+The €,'s and €,'s will together form a complete set of commuting
 observables for the original system. From (65) and (66) we get
 
 <E4l>Eplb> = <E4 Ep lab), (67)
@@ -1512,19 +1577,19 @@ showing that the representative of |ab> equals the product of the
 representatives of |a> and of {b> in their respective representations.
 
 We can introduce the standard ket, >, say, for the A-system,
-with respect to the representation with the €,’s diagonal, and also
+with respect to the representation with the €,'s diagonal, and also
 the standard ket >, for the B-system, with respect to the repre-
-sentation with the €,’s diagonal. Their product >, >, is then the
+sentation with the €,'s diagonal. Their product >, >, is then the
 ﻿§ 20 DEVELOPMENTS IN NOTATION 83
 
 standard ket for the original system, with respect to the representa-
-tion with the €,’s and ,’s diagonal. Any ket for the original system
+tion with the €,'s and ,'s diagonal. Any ket for the original system
 
 may be expressed as WEs En) ab (68)
 
 It may be that in a certain calculation we wish to use a particular
 representation for the B-system, say the above representation with
-the £,’s diagonal, but do not wish to introduce any particular
+the £,'s diagonal, but do not wish to introduce any particular
 representation for the A-system. It would then be convenient to
 use the standard ket >, for the B-system and no standard ket for
 the A-system. Under these circumstances we could write any ket
@@ -1532,8 +1597,8 @@ the A-system. Under these circumstances we could write any ket
 for the original system as ‘Eee (69)
 
 in which |&,> is a ket for the A-system and is also a function of the
-E,’s, ie. it is a ket for the A-system for each set of values for the
-£,’s—in fact (69) equals (68) if we take
+E,'s, ie. it is a ket for the A-system for each set of values for the
+£,'s—in fact (69) equals (68) if we take
 
 \Em> = HE s Ep) a:
 

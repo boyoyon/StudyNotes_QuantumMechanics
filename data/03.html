@@ -14,6 +14,11 @@
             {
                 margin-left: 30px;
             }
+            .margin-large-blue
+            {
+                margin-left: 30px;
+                color: blue;
+            }
            .margin-abstract {
                margin-left: 60px; /* 左マージンを広くする */
                margin-right: 60px; /* 右マージンを広くする */
@@ -98,7 +103,7 @@
     </head>
     <body>
         <h1><center>Ⅲ REPRESENTATIONS<br>表現</center></h1>
-<h2>14. Basic vectors</h2>
+<h2>14. Basic vectors 基本ベクトル</h2>
 <p>
 In the preceding chapters we set up an algebraic scheme involving
 certain abstract quantities of three kinds, namely bra vectors, ket
@@ -113,6 +118,9 @@ dure is similar to using coordinates in geometry, and has the advan-
 tage of giving one greater mathematical power for the solving of
 particular problems.
 
+</p><p class="blue">
+これまでの章では、ブラベクトル、ケットベクトル、線型作用素という3種類の抽象量を含む代数的枠組みを構築し、それらを用いて量子力学の基本法則のいくつかを表現した。これらの抽象量を用いて理論をさらに発展させ、特定の問題への応用に用いることも可能である。しかし、目的によっては、抽象量を類似の数学的性質を持つ数の集合に置き換え、それらの数の集合を用いて作業する方が便利な場合がある。この手順は幾何学における座標の使用に似ており、特定の問題を解くための数学的能力をより高めるという利点がある。
+
 </p><p>
 The way in which the abstract quantities are to be replaced by
 numbers is not unique, there being many possible ways corresponding
@@ -126,6 +134,9 @@ mechanics, one can minimize the labour by using a representation
 in which the representatives of the more important abstract quanti-
 ties occurring in that problem are as simple as possible.
 
+</p><p class="blue">
+抽象量を数値に置き換える方法は一義的ではなく、幾何学で取り得る多くの座標系に対応する多くの方法が考えられます。これらの方法のそれぞれは表現と呼ばれ、抽象量を置き換える数値の集合は、その表現におけるその抽象量の代表値と呼ばれます。したがって、抽象量の代表値は、幾何学的オブジェクトの座標に対応します。量子力学において特定の問題を解く場合、その問題で発生するより重要な抽象量の代表値が可能な限り単純になる表現を用いることで、労力を最小限に抑えることができます。
+
 </p><p>
 To set up a representation in a general way, we take a complete
 set of bra vectors, i.e. a set such that any bra can be expressed
@@ -133,6 +144,9 @@ linearly in terms of them (as a sum or an integral or possibly an
 integral plus a sum). These bras we call the basic bras of the repre-
 sentation. They are sufficient, as we shall see, to fix the representation
 completely.
+
+</p><p class="blue">
+一般的な方法で表現を設定するために、ブラベクトルの完全な集合、すなわち、任意のブラベクトルがそれらを用いて線形に（和、積分、あるいは積分と和の組み合わせとして）表現できるような集合を取ります。これらのブラベクトルを、表現の基本ブラベクトルと呼びます。これらは、後述するように、表現を完全に固定するのに十分です。
 
 </p><p>
 Take any ket \(|a\rangle\) and form its scalar product with each of the basic
@@ -142,6 +156,10 @@ is a second ket, \(|a_1\rangle\) say, for which these numbers are the same, the
 difference \(|a\rangle-|a_1\rangle\) will have its scalar product with any basic bra
 vanishing, and hence its scalar product with any bra whatever will
 vanish and \(|a\rangle-|a_1\rangle\) itself will vanish.
+
+</p><p class="blue">
+任意のケット \(|a\rangle\) を取り、各基本ブラとのスカラー積を求めます。こうして得られた数値は \(|a\rangle\) の代表値となります。
+これらの数値はケット \(|a\rangle\) を完全に決定するのに十分です。なぜなら、もしこれらの数値が同じである別のケット \(|a_1\rangle\) があるとすると、差 \(|a\rangle-|a_1\rangle\) は任意の基本ブラとのスカラー積が消滅し、したがって任意のブラとのスカラー積も消滅し、\(|a\rangle-|a_1\rangle\) 自体も消滅するからです。
 
 </p><p>
 We may suppose the basic bras to be labelled by one or more
@@ -153,6 +171,9 @@ now consist of a set of numbers, one for each set. of values that
 numbers just forms a function of the variables \(\lambda_1,\lambda_2,...,\lambda_u\). Thus the
 representative of a ket may be looked upon either as a set of numbers
 or as a function of the variables used to label the basic bras.
+
+</p><p class="blue">
+基本ブラは、それぞれが特定の数値を取る可能性のある1つ以上のパラメータ\(\lambda_1,\lambda_2,...,\lambda_u,\)でラベル付けされていると仮定します。基本ブラは\(\langle\lambda_1,\lambda_2...\lambda_u|\)と表記され、\(|a\rangle\)の代表は\(\langle\lambda_1\lambda_2...\lambda_u|a\rangle\)と表記されます。この代表は、\(\lambda_1,\lambda_2,...,\lambda_u\)がそれぞれの定義域で取り得る値の集合ごとに1つずつ、数値の集合から構成されます。このような数の集合は、変数 \(\lambda_1,\lambda_2,...,\lambda_u\) の関数を形成するだけです。したがって、ケットの代表値は、数の集合として、または基本ブラにラベルを付けるために使用される変数の関数として見ることができます。
 
 </p><p>
 If the number of independent states of our dynamical system is
@@ -166,13 +187,20 @@ of the idea of the coordinates of an ordinary vector and reduces to
 the latter when the number of dimensions of the space of the ket
 vectors is finite.
 
+</p><p class="blue">
+もし我々の力学系の独立状態の数が有限、例えば \(n\) とすれば、n 個の基本ブラを取れば十分であり、それらは \(1,2,3,...,n\) という値をとる単一のパラメータ \(\lambda\) でラベル付けされる。
+任意の ket ベクトルの代表値 \(|a\rangle\) は、\(n\) 個の数値の集合 \(\langle 1|a\rangle,\langle 2|a\rangle,\langle 3|a\rangle,...,\langle n|a\rangle\) から構成され、これらはまさに通常の方法で座標系に参照されるベクトル \(|a\rangle\) の座標である。
+ket ベクトルの代表値という概念は、通常のベクトルの座標の概念を一般化したものであり、ket ベクトル空間の次元数が有限である場合に、後者の概念に帰着する。
+
 </p><p>
 In a general representation there is no need for the basic bras to
 be all independent. In most representations used in practice, how-
 ever, they are all independent, and also satisfy the more stringent
-
 condition that any two of them are orthogonal. The representation
 is then called an orthogonal representation.
+
+</p><p class="blue">
+一般的な表現では、基本ブラがすべて独立である必要はありません。しかし、実際に用いられるほとんどの表現では、基本ブラはすべて独立であり、さらに、それらの任意の2つが直交するというより厳しい条件も満たします。このような表現は直交表現と呼ばれます。
 
 </p><p>
 Take an orthogonal representation with basic bras \(\langle\lambda_1\lambda_2...\lambda_u|\), labelled by parameters \(\lambda_1,\lambda_2,...,\lambda_u\) whose domains are all real. Take
@@ -182,6 +210,10 @@ a new ket \(|b\rangle\). This is permissible since the numbers forming the
 representative of a ket are independent, on account of the basic bras
 being independent. The ket \(|b\rangle\) is defined by the equation
 
+</p><p class="blue">
+パラメータ \(\lambda_1,\lambda_2,...,\lambda_u\) でラベル付けされた基本ブラス \(\langle\lambda_1\lambda_2...\lambda_u|\) による直交表現を取り、その定義域はすべて実数です。ケット \(|a\rangle\) を取り、その代表値 \(\langle\lambda_1\lambda_2...\lambda_u|a\rangle\) を形成します。次に、数 \(\lambda_1\langle\lambda_1\lambda_2...\lambda_u|a\rangle\) を形成し、それらを新しいケット \(|b\rangle\) の代表値とみなします。これは、基本ブラスが独立しているため、ケットの代表値を形成する数が独立しているために許容されます。ケット\(|b\rangle\)は次の式で定義される。
+</p><p>
+
 \[
 \langle\lambda_1\lambda_2...\lambda_u|b\rangle = \lambda_1\langle\lambda_1\lambda_2...\lambda_u|a\rangle
 \]
@@ -190,11 +222,18 @@ The ket \(|b\rangle\) is evidently a linear function of the ket \(|a\rangle\), s
 be considered as the result of a linear operator applied to \(|a\rangle\). Calling
 this linear operator \(L_1\), we have
 
+</p><p class="blue">
+ケット\(|b\rangle\)は明らかにケット\(|a\rangle\)の線形関数なので、\(|a\rangle\)に線形演算子を適用した結果とみなすことができます。この線形演算子を\(L_1\)とすると、
+</p><p>
+
 \[
 |b\rangle = L_1|a\rangle
 \]
 
 and hence 
+</p><p class="blue">
+そしてそれゆえ
+</p><p>
 
 \[
 \langle\lambda_1\lambda_2...\lambda_u|L_1|a\rangle = \lambda_1\langle\lambda_1\lambda_2...\lambda_u|a\rangle
@@ -202,13 +241,20 @@ and hence
 
 This equation holds for any ket \(|a\rangle\), so we get
 
+</p><p class="blue">
+この式は任意のケット\(|a\rangle\)に対して成り立つので、
+</p><p>
+
 \[
 \langle\lambda_1\lambda_2...\lambda_u|L_1 = \lambda_1\langle\lambda_1\lambda_2...\lambda_u|  \tag{1}
 \]
 
 Equation (1) may be looked upon as the definition of the linear
-operator \(L_1\). It shows that each basic bra is an etgenbra of \(L_1\), the
+operator \(L_1\). It shows that each basic bra is an eigenbra of \(L_1\), the
 value of the parameter \(\lambda_1\) being the eigenvalue belonging to it.
+
+</p><p class="blue">
+式(1)は線型作用素 \(L_1\) の定義と見なすことができます。これは、各基本ブラが \(L_1\) の固有ブラであり、パラメータ \(\lambda_1\) の値がそれに属する固有値であることを示しています。
 
 </p><p>
 From the condition that the basic bras are orthogonal we can
@@ -216,11 +262,20 @@ deduce that \(L_1\), is real and is an observable. Let \(\lambda_1^\prime,\lambd
 \(\lambda_1^{\prime\prime},\lambda_2^{\prime\prime},...,\lambda_u^{\prime\prime}\) be two sets of values for the parameters \(\lambda_1,\lambda_2,...,\lambda_u\). We have, putting \(\lambda^\prime\)'s for the \(\lambda^\prime\)'s in (1) and multiplying on the right
 by \(|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle\), the conjugate imaginary of the basic bra \(\langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|\),
 
+</p><p class="blue">
+基本ブラが直交するという条件から、\(L_1\) は実数であり、観測可能値であることが分かります。\(\lambda_1^\prime,\lambda_2^\prime,...,\lambda_u^\prime\) と
+\(\lambda_1^{\prime\prime},\lambda_2^{\prime\prime},...,\lambda_u^{\prime\prime}\) を、パラメータ \(\lambda_1,\lambda_2,...,\lambda_u\) の2つの値集合とします。 (1) の \(\lambda^\prime\) に \(\lambda^\prime\) を代入し、右側に \(|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle\) を掛けると、基本ブラの共役虚数 \(\langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|\) が得られます。
+</p><p>
+
 \[
 \langle\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime|L_1|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle = \lambda_1^\prime\langle\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}\rangle
 \]
 
 Interchanging \(\lambda^\prime\)'s and \(\lambda^{\prime\prime}\)'s,
+
+</p><p class="blue">
+\(\lambda^\prime\)と\(\lambda^{\prime\prime}\)を入れ替えると、
+</p><p>
 
 \[
 \langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|L_1|\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime\rangle = \lambda_1^{\prime\prime}\langle\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime\rangle
@@ -230,6 +285,10 @@ On account of the basic bras being orthogonal, the right-hand sides
 here vanish unless \(\lambda_r^{\prime\prime} = \lambda_r^\prime\) for all \(r\) from 1 to \(u\), in which case the
 right-hand sides are equal, and they are also real, \(\lambda_1^\prime\) being real. Thus,
 whether the \(\lambda^{\prime\prime}\)'s are equal to the \(\lambda^\prime\)'s or not,
+
+</p><p class="blue">
+基本ブラは直交しているため、\(r\) が 1 から \(u\) までのすべての場合において \(\lambda_r^{\prime\prime} = \lambda_r^\prime\) が成立しない限り、右辺は消滅する。この場合、右辺は等しく、また実数でもある（\(\lambda_1^\prime\) は実数である）。したがって、\(\lambda^{\prime\prime}\) が \(\lambda^\prime\) と等しいかどうかは、
+</p><p>
 
 \[
 \begin{align}
@@ -245,6 +304,9 @@ observable, namely that its eigenstates shall form a complete set, is
 obviously satisfied since it has as eigenbras the basic bras, which
 form a complete set.
 
+</p><p class="blue">
+§8の式(4)より。\(\langle\lambda_1^\prime\lambda_2^\prime...\lambda_u^\prime|\)はブラ群の完全な集合を形成し、\(|\lambda_1^{\prime\prime}\lambda_2^{\prime\prime}...\lambda_u^{\prime\prime}|a\rangle\)はケットの完全な集合を形成するので、\(L_1 = \overline{L}_1\)と推論できる。\(L_1\)が観測可能量であるために必要なさらなる条件、すなわちその固有状態が完全な集合を形成することは、\(L_1\)が基本ブラ群を固有ブラ群として持ち、基本ブラ群が完全集合を形成するので、明らかに満たされている。
+
 </p><p>
 We can similarly introduce linear operators \(L_2,L_3,...,L_u\) by multi-
 plying \(\langle\lambda_1\lambda_2...\lambda_u|a\rangle\) by the factors \(\lambda_2,\lambda_3,...,\lambda_u\) in turn and considering
@@ -254,6 +316,9 @@ and to be real and an observable. The basic bras are simultaneous
 eigenbras of all the \(L\)'s. Since these simultaneous eigenbras form a
 complete set, it follows from a theorem of §13 that any two of the
 \(L\)'s commute.
+
+</p><p class="blue">
+同様に、\(\langle\lambda_1\lambda_2...\lambda_u|a\rangle\) に因子 \(\lambda_2,\lambda_3,...,\lambda_u\) を順に掛け合わせ、結果として得られる数の集合をケットの代表として考えることで、線型作用素 \(L_2,L_3,...,L_u\) を導入することができます。これらの各 \(L\) は、同様の方法で、基本ブラを固有ブラとして持ち、実数かつ観測可能であることが示されます。基本ブラは、すべての \(L\) の同時固有ブラです。これらの同時固有ブラは完全な集合を形成するため、§13 の定理から、任意の 2 つの \(L\) は可換であることが示されます。
 
 </p><p>
 It will now be shown that, if \(\xi_1,\xi_2,...,\xi_u\) are any set of commuting
@@ -268,6 +333,9 @@ which is sufficient to make them orthogonal) and there are sufficient
 of them to form a complete set, from a result of §13. They may
 conveniently be labelled by the eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) to which they
 belong, so that one of them is written \(\langle\xi_1^\prime\xi_2^\prime...\xi_u^\prime|\).
+
+</p><p class="blue">
+ここで、\(\xi_1,\xi_2,...,\xi_u\) が任意の可換な観測量の集合であるとき、基本ブラが \(\xi_1,\xi_2,...,\xi_u\) の同時固有ブラとなる直交表現を設定できることを示します。まず、任意の固有値集合 \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) に属する \(\xi_1,\xi_2,...,\xi_u\) の独立な同時固有ブラが1つだけ存在すると仮定します。そして、任意の数値係数を持つこれらの同時固有ブラを基本ブラとして採用することができます。これらはすべて直交定理（いずれの2つも少なくとも1つの固有値が異なり、それによって直交となる）により直交しており、§13の結果から、完全な集合を形成するのに十分な数だけ存在する。これらは便宜上、属する固有値 \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) でラベル付けすることができ、そのうちの1つは \(\langle\xi_1^\prime\xi_2^\prime...\xi_u^\prime|\) と表記される。
 
 </p><p>
 Passing now to the general case when there are several independent
@@ -288,6 +356,9 @@ in terms of the members of a subset. There are infinitely many ways
 of choosing the subsets, and each way provides one orthogonal
 representation.
 
+</p><p class="blue">
+さて、一般的なケースに移って、\(\xi_1,\xi_2,...,\xi_u\) のいくつかの独立な同時固有角部が、ある固有値の集合に属しているとき、\(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) の固有値の集合に属するすべての同時固有角部から、そのメンバーがすべて互いに直交する完全な部分集合を選び出さなければなりません。 （ここでの完全性の条件とは、固有値 \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) に属する任意の同時固有ブラが、その部分集合の要素を用いて線形表現できることを意味します。）これを各固有値集合 \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) に対して行い、次にすべての部分集合のすべての要素をまとめて、それらを表現の基本ブラとして取ります。これらのブラはすべて直交しており、そのうち2つは、異なる固有値の集合に属する場合は直交定理から、同じ固有値の集合に属する場合は特別な選択方法から、それぞれ直交しています。そして、それらは全体としてブラの完全な集合を形成します。なぜなら、任意のブラは同時固有ブラで線形表現でき、各同時固有ブラは部分集合の要素で線形表現できるからです。部分集合の選択方法は無限にあり、それぞれの方法は1つの直交表現を提供します。
+
 </p><p>
 For labelling the basic bras in this general case, we may use the
 eigenvalues \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) to which they belong, together with certain
@@ -301,6 +372,9 @@ real and observables, and that they commute with one another and
 with the \(\xi\)'s. The basic bras are now simultaneous eigenbras of all
 the commuting observables \(\xi_1,\xi_2,...,\xi_u,L_1,L_2,...,L_v\).
 
+</p><p class="blue">
+この一般的なケースにおいて、基本ブラ群にラベルを付けるには、それらが属する固有値 \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime\) と、同じ固有値集合に属する基本ベクトルを区別するために導入する必要がある追加の実変数 \(\lambda_1,\lambda_2,...,\lambda_v\) を用いることができる。基本ブラ群は \(\langle\xi_1^\prime\xi_2^\prime...\xi_u^\prime\lambda_1\lambda_2...\lambda_v|\) と表記される。変数 \(\lambda_1,\lambda_2,...,\lambda_v\) に対応して、(1) のような式によって線型作用素 \(L_1,L_2,...,L_v\) を定義することができ、これらの線型作用素は基本ブラを固有ブラとして持ち、それらは実数かつ観測可能であり、互いに可換であり、\(\xi\) とも可換であることを示すことができる。基本ブラは、可換なすべての観測可能値 \(\xi_1,\xi_2,...,\xi_u,L_1,L_2,...,L_v\) の同時固有ブラとなる。
+
 </p><p>
 Let us define a complete set of commuting observables to be a set of
 observables which all commute with one another and for which there
@@ -313,21 +387,36 @@ a complete set of commuting observables. With the help of this
 definition the main results of the present section can be concisely
 formulated thus:
 
+</p><p class="blue">
+可換観測量の完全集合とは、互いに可換であり、かつ任意の固有値集合に属する同時固有状態が1つだけ存在する観測量の集合であると定義する。すると、観測量 \(\xi_1,\xi_2,...,\xi_u,L_1,L_2,...,L_v\) は可換観測量の完全集合を形成し、固有値 \(\xi_1^\prime,\xi_2^\prime,...,\xi_u^\prime,\lambda_1,\lambda_2,...,\lambda_v\) に属する独立な同時固有ブラ、すなわち対応する基本ブラが1つだけ存在する。同様に、式(1)と以下の式で定義される観測量\(L_1,L_2,...,L_u\)は、可換観測量の完全な集合を形成する。この定義を用いて、本節の主な結果は簡潔に次のように定式化できる。
+
 (i) The basic bras of an orthogonal representation are simul-
 taneous eigenbras of a complete set of commuting observ-
 ables.
+
+</p><p class="blue">
+(i) 直交表現の基本ブラは、可換な観測量の完全な集合の同時固有基底である。
 
 (ii) Given a complete set of commuting observables, we can set
 up an orthogonal representation in which the basic bras are
 simultaneous eigenbras of this complete set.
 
+</p><p class="blue">
+(ii) 可換な観測量の完全な集合が与えられたとき、基本ブラがこの完全な集合の同時固有ブラとなるような直交表現を設定できる。
+
 (iii) Any set of commuting observables can be made into a com-
 plete commuting set by adding certain observables to it.
+
+</p><p class="blue">
+(iii) 任意の可換観測可能量の集合は、特定の観測可能量を加えることによって完全な可換集合にすることができる。
 
 (iv) A convenient way of labelling the basic bras of an orthogonal
 representation is by means of the eigenvalues of the complete
 set of commuting observables of which the basic bras are
 simultaneous eigenbras.
+
+</p><p class="blue">
+(iv) 直交表現の基本ブラをラベル付けする便利な方法は、基本ブラが同時固有ブラである可換観測量の完全な集合の固有値を用いることである。
 
 </p><p>
 The conjugate imaginaries of the basic bras of a representation we
@@ -338,6 +427,11 @@ each of the basic kets, i.e. by \(\langle b|\lambda_1\lambda_2...\lambda_u\rangl
 sentative of a ket, be looked upon either as a set of numbers or as a
 function of the variables \(\lambda_1,\lambda_2,...,\lambda_u\). We have
 
+</p><p class="blue">
+表現の基本ブラの共役虚数を、表現の基本ケットと呼びます。つまり、基本ブラが \(\langle\lambda_1\lambda_2...\lambda_u|\) で表される場合、基本ケットは \(|\lambda_1\lambda_2...\lambda_u\rangle\) と表されます。
+ブラの代表 \(\langle b|\) は、各基本ケットとのスカラー積、つまり \(\langle b|\lambda_1\lambda_2...\lambda_u\rangle\) で与えられます。これは、ケットの代表と同様に、数の集合として、または変数 \(\lambda_1,\lambda_2,...,\lambda_u\) の関数として見ることができます。
+</p><p>
+
 \[
 \langle b|\lambda_1\lambda_2...\lambda_u\rangle = \overline{\langle\lambda_1\lambda_2...\lambda_u|b\rangle}
 \]
@@ -347,6 +441,9 @@ representative of the conjugate imaginary ket. In an orthogonal repre-
 sentation, where the basic bras are simultaneous eigenbras of a com-
 plete set of commuting observables, \(\xi_1,\xi_2,...,\xi_u\) say, the basic kets
 will be simultaneous eigenkets of \(\xi_1,\xi_2,...,\xi_u\).
+
+</p><p class="blue">
+ブラの代表は、共役虚数ケットの代表の共役複体であることを示しています。直交表現において、基本ブラが可換観測量の完全な集合、例えば\(\xi_1,\xi_2,...,\xi_u\)の同時固有ブラである場合、基本ケットは\(\xi_1,\xi_2,...,\xi_u\)の同時固有ケットになります。
 
 </p><p>
 We have not yet considered the lengths of the basic vectors. With
@@ -363,15 +460,22 @@ needed to fix the numerical factors by which the basic vectors may
 be multiplied. To get a convenient method of handling this question
 anew mathematical notation is required, which will be given in the
 next section.
+
+</p><p class="blue">
+基礎ベクトルの長さについてはまだ考慮していません。直交表現の場合、自然な方法は、基礎ベクトルの長さを任意にしておくのではなく、正規化することです。こうすることで、表現にさらなる簡略化の段階を導入することになります。しかし、それらを正規化できるのは、それらすべてをラベル付けするパラメータが離散値を取る場合のみです。これらのパラメータのいずれかが、ある範囲内のすべての値をとることができる連続変数である場合、基礎ベクトルは、ある範囲の固有値に属する観測量の固有ベクトルであり、§10での議論（39ページと40ページ冒頭を参照）から、無限長になります。その場合、基礎ベクトルに乗じる数値係数を決定するための別の手順が必要になります。この問題を簡便に扱うには、新たな数学的表記法が必要であり、それは次のセクションで示されます。
+
 </p><p>
 
-<h3>15.The \(\delta\) function</h3>
+<h3>15.The \(\delta\) function　デルタ関数</h3>
 <p>
 Our work in §10 led us to consider quantities involving a certain
-
 kind of infinity. To get a precise notation for dealing with these
 infinities, we introduce a quantity \(\delta(x)\) depending on a parameter \(x\)
 satisfying the conditions
+
+</p><p class="blue">
+§10での研究により、ある種の無限大を含む量について考察することになった。これらの無限大を扱うための正確な表記法を得るために、以下の条件を満たすパラメータ\(x\)に依存する量\(\delta(x)\)を導入する。
+</p><p>
 
 \[
 \left.
@@ -393,6 +497,9 @@ unnecessarily wild variations (for example provided the function
 is always of order \(\epsilon^{-1}\)). Then in the limit \(\epsilon \rightarrow 0\) this function will go
 over into \(\delta(x)\).
 
+</p><p class="blue">
+\(\delta(x)\) の図式を掴むには、実変数 \(x\) の関数を取り上げます。この関数は、例えば長さ \(\epsilon\) の、原点 \(x = 0\) を囲む小さな領域以外では零であり、この領域内では非常に大きいため、この領域での積分は 1 となります。この領域内での関数の正確な形状は、不必要に大きな変化がない限り（例えば、関数が常に \(\epsilon^{-1}\) の位数である場合）、重要ではありません。そうすると、極限 \(\epsilon \rightarrow 0\) において、この関数は \(\delta(x)\) になります。
+
 </p><p>
 \(\delta(x)\) is not a function of \(x\) according to the usual mathematical
 definition of a function, which requires a function to have a definite
@@ -404,9 +511,16 @@ an ordinary function, but its use must be confined to certain simple
 types of expression for which it is obvious that no inconsistency
 can arise.
 
+</p><p class="blue">
+\(\delta(x)\) は、関数がその定義域内の各点に対して明確な値を持つことを要求する通常の数学的定義によれば、\(x\) の関数ではありません。これはより一般的なものであり、通常の定義によって定義された関数との違いを示すために「不適正関数」と呼ぶことができます。したがって、\(\delta(x)\) は、通常の関数のように数学的解析で一般的に使用できる量ではなく、矛盾が生じないことが明らかな特定の単純なタイプの表現に限定して使用する必要があります。
+
 </p><p>
 The most important property of \(\delta(x)\) is exemplified by the follow-
 ing equation,
+
+</p><p class="blue">
+\(\delta(x)\) の最も重要な性質は次の式で例示される。
+</p><p>
 
 \[
 \int_{-\infty}^\infty f(x)\delta(x) dx=f(0) \tag{3}
@@ -420,6 +534,10 @@ to the origin, so that we may replace \(f(x)\) by its value at the origin,
 first of equations (2). By making a change of origin in (3), we can
 deduce the formula 
 
+</p><p class="blue">
+ここで、\(f(x)\) は \(x\) の任意の連続関数である。この式の妥当性は、上に示した \(\delta(x)\) の図から容易に確認できる。(3) の左辺は、\(f(x)\) の原点に非常に近い値にのみ依存するため、\(f(x)\) を原点におけるその値 \(f(0)\) に置き換えても本質的な誤りはない。したがって、式 (3) は式 (2) の最初の式から導かれる。(3) において原点を置き換えることで、次の式が導かれる。
+</p><p>
+
 \[
 \int_{-\infty}^\infty f(x)\delta(x-a)dx=f(a)  \tag{4}
 \]
@@ -429,12 +547,18 @@ of \(x\) by \(\delta(x-a)\) and integrating over all \(x\) is equivalent to the 
 substituting \(a\) for \(x\). This general result holds also if the function of \(x\) is
 not a numerical one, but is a vector or linear operator depending on \(x\).
 
+</p><p class="blue">
+ここで、\(a\) は任意の実数です。したがって、\(x\) の関数に \(\delta(x-a)\) を掛けて \(x\) 全体にわたって積分する処理は、\(x\) を \(a\) に置き換える処理と等価です。この一般的な結果は、\(x\) の関数が数値関数ではなく、\(x\) に依存するベクトルまたは線形関数である場合にも当てはまります。
+
 </p><p>
 The range of integration in (3) and (4) need not be from \(-\infty\) to \(\infty\),
 but may be over any domain surrounding the critical point at which
 the \(\delta\) function does not vanish. In future the limits of integration
 will usually be omitted in such equations, it being understood that
 the domain of integration is a suitable one.
+
+</p><p class="blue">
+(3) および (4) における積分範囲は、\(-\infty\) から \(\infty\) までである必要はなく、\(\delta\) 関数がゼロにならない臨界点を囲む任意の領域でよい。将来的には、積分領域が適切な範囲であると理解されることから、このような式では積分の極限は通常省略される。
 
 </p><p>
 Equations (3) and (4) show that, although an improper function
@@ -451,9 +575,16 @@ certain relations which we could, if necessary, rewrite in a form not
 involving improper functions, but only in a cumbersome way which
 would tend to obscure the argument.
 
+</p><p class="blue">
+(3)式と(4)式は、非固有関数自体は明確な値を持たないものの、積分関数の因子として現れる場合、その積分値は明確な値を持つことを示しています。量子論では、非固有関数が現れる場合は常に、最終的には積分関数で用いられるものとなります。したがって、非固有関数が全体を通して積分関数にのみ現れるように理論を書き直すことが可能であるはずです。そうすれば、非固有関数を完全に除去することができます。したがって、非固有関数の使用は理論の厳密さを欠くものではなく、単に便利な表記法であり、特定の関係を簡潔な形で表現することを可能にします。必要であれば、非固有関数を含まない形で書き直すこともできますが、その場合、議論をわかりにくくするだけの面倒な方法になります。
+
 </p><p>
 An alternative way of defining the \(\delta\) function is as the differential
 coefficient \(\epsilon^\prime(x)\) of the function \(\epsilon(x)\) given by
+
+</p><p class="blue">
+\(\delta\)関数を定義する別の方法は、\(\epsilon(x)\)関数の微分係数\(\epsilon^\prime(x)\)として次のように定義される。
+</p><p>
 
 \[
 \left.
@@ -470,6 +601,10 @@ We may verify that this is equivalent to the previous definition by
 substituting \(\epsilon^\prime(x)\) for \(\delta(x)\) in the left-hand side of (3) and integrating
 by parts. We find, for \(g_1\) and \(g_2\) two positive numbers,
 
+</p><p class="blue">
+これは、(3) の左辺の \(\delta(x)\) を \(\epsilon^\prime(x)\) に代入して部分積分することで、前の定義と等価であることが確認できます。\(g_1\) と \(g_2\) という 2 つの正の数について、
+</p><p>
+
 \[
 \begin{align}
 \int_{-g_2}^{g_1} f(x)\epsilon^\prime(x)dx &= \Big[f(x)\epsilon(x)\Big]_{-g_2}^{g_1}-\int_{-g_2}^{g_1} f^\prime(x)\epsilon(x)dx \\
@@ -483,6 +618,9 @@ by parts. We find, for \(g_1\) and \(g_2\) two positive numbers,
 in agreement with (3). The \(\delta\) function appears whenever one differen-
 tiates a discontinuous function.
 
+</p><p class="blue">
+(3)と一致する。\(\delta\)関数は不連続関数を微分するときに必ず現れる。
+
 </p><p>
 There are a number of elementary equations which one can write
 down about \(\delta\) functions. These equations are essentially rules of
@@ -490,8 +628,15 @@ manipulation for algebraic work involving 5 functions. The meaning
 of any of these equations is that its two sides give equivalent results
 as factors in an integrand.
 
+</p><p class="blue">
+\(\delta\)関数について書ける基本方程式は数多くあります。これらの方程式は、本質的には5つの関数を含む代数的処理の操作規則です。これらの方程式のいずれの意味も、その両辺が積分関数の因子として等価な結果を与えるということです。
+
 </p><p>
 Examples of such equations are
+
+</p><p class="blue">
+このような方程式の例としては、
+</p><p>
 
 \[
 \begin{align}
@@ -513,6 +658,10 @@ Equation (6), which merely states that \(\delta(x)\) is an even function of its
 variable \(x\) is trivial. To verify (7) take any continuous function of
 \(x, f(x)\). Then
 
+</p><p class="blue">
+式(6)は、\(\delta(x)\)がその変数\(x\)の偶関数であることを単に述べているだけであり、自明である。式(7)を検証するには、任意の連続関数\(x, f(x)\)をとる。すると、
+</p><p>
+
 \[
 \int f(x)x\delta(x)dx = 0
 \]
@@ -521,6 +670,10 @@ from (3). Thus \(x\delta(x)\) as a factor in an integrand is equivalent to
 zero, which is just the meaning of (7). (8) and (9) may be verified
 by similar elementary arguments. To verify (10) take any continuous
 function of \(a,f(a)\). Then
+
+</p><p class="blue">
+(3)より、\(x\delta(x)\) は被積分関数の因子としてゼロと等価であり、これはまさに(7)の意味である。(8)と(9)は同様の基本的な議論によって検証できる。(10)を検証するには、任意の連続関数 \(a,f(a)\) を取る。すると、
+</p><p>
 
 \[
 \begin{align}
@@ -537,413 +690,699 @@ variable of integration, so that equation (10) is justified from either
 of these points of view. Equation (11) is also easily justified, with
 the help of (4), from two points of view.
 
+</p><p class="blue">
+このように、(10)式の両辺は、積分変数としてαを持つ被積分関数の因子として同値である。同様に、αを積分変数としてαを持つ被積分関数の因子としても同値であることが示され、したがって、式(10)はこれらのどちらの観点からも正当化される。式(11)もまた、式(4)の助けを借りて、2つの観点から容易に正当化される。
+
 </p><p>
 Equation (10) would be given by an application of (4) with
-f(x) = 8(v—b). We have here an illustration of the fact that we may
+\(f(x) = \delta(x—b)\). We have here an illustration of the fact that we may
 often use an improper function as though it were an ordinary con-
 tinuous function, without getting a wrong result.
 
+</p><p class="blue">
+式(10)は、式(4)に\(f(x) = \delta(x—b)\)を適用することで得られる。これは、誤った結果を得ることなく、不定関数をあたかも通常の連続関数であるかのように用いることがよくあることを示す例である。
+
 </p><p>
 Equation (7) shows that, whenever one divides both sides of an
-equation by a variable x which can take on the value zero, one
-should add on to one side an arbitrary multiple of 5(x), ie. from an
+equation by a variable \(x\) which can take on the value zero, one
+should add on to one side an arbitrary multiple of \(\delta(x)\), i.e. from an
+equation
 
-equation A=B (12)
-one cannot infer Aja = B/z,
-but only Af = B/e+cd(x), (13)
+</p><p class="blue">
+式(7)は、方程式の両辺を、値がゼロになり得る変数\(x\)で割る場合、片辺に\(\delta(x)\)の任意の倍数を加算する必要があることを示している。つまり、
+</p><p>
 
-where ¢ is unknown. ©
+\[
+A=B \tag{12}
+\]
+
+one cannot infer 
+
+</p><p class="blue">
+推測することはできない
+</p><p>
+
+\[
+A/x = B/x
+\]
+
+but only 
+
+</p><p class="blue">
+しかし、
+</p><p>
+
+\[
+A/x = B/x + c\delta(x)  \tag{13}
+\]
+
+where \(c\) is unknown.
+
+</p><p class="blue">
+ここで\(c\)は未知数である。
 
 </p><p>
-As an illustration of work with the 6 function, we may consider the
-differentiation of log x. The usual formula
+As an illustration of work with the \(\delta\) function, we may consider the
+differentiation of log \(x\). The usual formula
 
-toga = - (14)
-requires examination for the neighbourhood of z = 0. In order to
-make the reciprocal function 1/z well defined in the neighbourhood
-of « = 0 (in the sense of an improper function) we must impose on
-it an extra condition, such as that its integral from —e to ¢ vanishes.
+</p><p class="blue">
+\(\delta\)関数の例として、log \(x\)の微分を考えてみましょう。通常の式は
+</p><p>
+
+\[
+\frac{d}{dx}\log x = \frac{1}{x}  \tag{14}
+\]
+
+requires examination for the neighbourhood of \(x = 0\). In order to
+make the reciprocal function \(1/x\) well defined in the neighbourhood
+of \(x = 0\) (in the sense of an improper function) we must impose on
+it an extra condition, such as that its integral from \(-\epsilon\) to \(\epsilon\) vanishes.
 With this extra condition, the integral of the right-hand side of (14)
-from —e to ¢ vanishes, while that of the left-hand side of (14) equals
-log (—1), so that (14) is not a correct equation. To correct it, we must
-remember that, taking principal values, loga has a pure imaginary
-term iz for negative values of x. As x passes through the value zero
+from \(-\epsilon\) to \(\epsilon\) vanishes, while that of the left-hand side of (14) equals
+\(\log(-1)\), so that (14) is not a correct equation. To correct it, we must
+remember that, taking principal values, \(\log x\) has a pure imaginary
+term \(i\pi\) for negative values of \(x\). As x passes through the value zero
 this pure imaginary term vanishes discontinuously. The differen-
-tiation of this pure imaginary term gives us the result —i7 (x), so
+tiation of this pure imaginary term gives us the result \(-i\pi\delta(x)\), so
 that (14) should read
 
-d 1,
-ag oe = 5 in 8x). (15)
+</p><p class="blue">
+\(x = 0\) の近傍について調べる必要がある。逆関数 \(1/x\) を \(x = 0\) の近傍で（非固有関数の意味で）明確に定義するためには、\(-\epsilon\) から \(\epsilon\) までの積分がゼロになるといった追加の条件を課す必要がある。この追加の条件により、(14) の右辺の \(-\epsilon\) から \(\epsilon\) までの積分はゼロになるが、(14) の左辺の積分は \(\log(-1)\) となるので、(14) は正しい方程式ではない。これを修正するには、主値をとると、\(\log x\) は \(x\) が負の値であるときに純虚数項 \(i\pi\) を持つことを覚えておく必要があります。x が値 0 を通過すると、この純虚数項は不連続に消滅します。この純虚数項を微分すると \(-i\pi\delta(x)\) が得られるので、(14) は次のように読み替えられます。
+</p><p>
 
-e
+\[
+\frac{d}{dx}\log x = \frac{1}{x}-i\pi\delta(x)  \tag{15}
+\]
 
-The particular combination of reciprocal function and 6 function
+The particular combination of reciprocal function and \(\delta\) function
 appearing in (15) plays an important part in the quantum theory of
-collision processes (see § 50).
+collision processes (see §50).
+
+</p><p class="blue">
+(15)式に現れる逆関数と\(\delta\)関数の特定の組み合わせは、衝突過程の量子論において重要な役割を果たす（§50参照）。
+
 </p><p>
 
-<h3>16.Properties of the basic vectors</h3>
+<h3>16.Properties of the basic vectors　基本ベクトルの性質</h3>　
 <p>
-Using the notation of the 6 function, we can proceed with the theory
+Using the notation of the \(\delta\) function, we can proceed with the theory
 of representations. Let us suppose first that we have a single observ-
-able £ forming by itself a complete commuting set, the condition for
-this being that there is only one eigenstate of € belonging to any
-eigenvalue £', and let us set up an orthogonal representation in which
-the basic vectors are eigenvectors of € and are written <£"|, |£‘>.
+able \(\xi\) forming by itself a complete commuting set, the condition for
+this being that there is only one eigenstate of \(\xi\) belonging to any
+eigenvalue \(\xi^\prime\), and let us set up an orthogonal representation in which
+the basic vectors are eigenvectors of \(\xi\) and are written \(\langle\xi^\prime|,|\xi^\prime\rangle\).
+
+</p><p class="blue">
+\(\delta\) 関数の表記法を用いて、表現理論を進めることができます。まず、単一の観測量 \(\xi\) がそれ自体で完全可換集合を形成すると仮定します。この条件として、任意の固有値 \(\xi^\prime\) に属する \(\xi\) の固有状態は 1 つだけ存在します。そして、基礎ベクトルが \(\xi\) の固有ベクトルであり、\(\langle\xi^\prime|,|\xi^\prime\rangle\) と表記される直交表現を設定します。
 
 </p><p>
-In the case when the eigenvalues of é are discrete, we can normalize
+In the case when the eigenvalues of \(\xi\) are discrete, we can normalize
 the basic vectors, and we then have
 
-ElED =O EAE),
+</p><p class="blue">
+\(\xi\) の固有値が離散的な場合、基本ベクトルを正規化することができ、
+</p><p>
 
-ele) = 1
+\[
+\begin{align}
+\langle\xi^\prime|\xi^{\prime\prime}\rangle &= 0\;(\xi^\prime \neq \xi^{\prime\prime}) \\
+\langle\xi^\prime|\xi^\prime\rangle &= 1
+\end{align}
+\]
+ 
 These equations can be combined into the single equation
-EE") = Beer, (16)
 
-where the symbol 8 with two suffixes, which we shall often use in the
+</p><p class="blue">
+これらの方程式は、1つの方程式にまとめることができる。
+</p><p>
+
+\[
+\langle\xi^\prime|\xi^{\prime\prime}\rangle = \delta_{\xi^\prime \xi^{\prime\prime}} \tag{16}
+\]
+
+where the symbol \(\delta\) with two suffixes, which we shall often use in the
 future, has the meaning
 
-§,,= 0 when rs
-= 1 when r=s.
+</p><p class="blue">
+ここで、2つの接尾辞を持つ記号\(\delta\)は、将来よく使うことになるが、意味は以下の通りである。
+</p><p>
 
-} an
+\[
+\left.
+\begin{array}{r c c}
+\delta_{rs} = 0 & when & r \neq s \\
+= 1 & when & r=s
+\end{array}
+\right\}
+\tag{17}
+\]
 
 </p><p>
-In the case when the eigenvalues of € are continuous we cannot
+In the case when the eigenvalues of \(\xi\) are continuous we cannot
+normalize the basic vectors. If we now consider the quantity \(\langle\xi^\prime|\xi^{\prime\prime}\rangle\)
+with \(\xi^\prime\) fixed and \(\xi^{\prime\prime}\) varying, we see from the work connected with
+expression (29) of §10 that this quantity vanishes for \(\xi^{\prime\prime} \neq \xi^\prime\) and
+that its integral over a range of \(\xi^{\prime\prime}\) extending through the value \(\xi^\prime\)
+is finite, equal to \(c\) say. Thus
 
-normalize the basic vectors. If we now consider the quantity ¢é"|€">”
-with €' fixed and é” varying, we see from the work connected with
-expression (29) of § 10 that this quantity vanishes for £” 4 é' and
-that its integral over a range of é” extending through the value ¢'
-is finite, equal to c say. Thus
+</p><p class="blue">
+\(\xi\) の固有値が連続である場合、基本ベクトルを正規化することはできません。\(\xi^\prime\) が固定で \(\xi^{\prime\prime}\) が変化する量 \(\langle\xi^\prime|\xi^{\prime\prime}\rangle\) を考えると、§10 の式 (29) に関連する作業から、この量は \(\xi^{\prime\prime} \neq \xi^\prime\) に対してゼロとなり、\(\xi^\prime\) を通る \(\xi^{\prime\prime}\) の範囲での積分は有限であり、例えば \(c\) に等しいことがわかります。したがって
+</p><p>
 
-CEE") = 0 8(E—2").
-From (30) of § 10, ¢ is a positive number. It may vary with €', so
-we should write it c(é') or c' for brevity, and thus we have
+\[
+\langle\xi^\prime|\xi^{\prime\prime}\rangle = c\delta(\xi^\prime-\xi^{\prime\prime})
+\]
 
-<E'|E") = 0 3(E— 8"). (18)
+From (30) of §10, \(c\) is a positive number. It may vary with \(\xi^\prime\), so
+we should write it \(c(\xi^\prime)\) or \(c\)' for brevity, and thus we have
+
+</p><p class="blue">
+§10の(30)より、\(c\)は正の数である。\(\xi^\prime\)に応じて変化するので、簡潔にするために\(c(\xi^\prime)\)または\(c\)'と書き、
+</p><p>
+
+\[
+\langle\xi^\prime|\xi^{prime\prime}\rangle = c^\prime\delta(\xi^\prime - \xi^{\prime\prime})  \tag{18}
+\]
+
 Alternatively, we have
 
-E18") = 0 8(E'—8"), (19)
-where c” is short for c(€é”), the right-hand sides of (18) and (19) being
+</p><p class="blue">
+あるいは、
+</p><p>
+
+\[
+\langle\xi^\prime|\xi^{\prime\prime}\rangle = c^{\prime\prime}\delta(\xi^\prime - \xi^{\prime\prime})  \tag{19}
+\]
+
+where \(c^{\prime\prime}\) is short for \(c(\xi^{\prime\prime})\), the right-hand sides of (18) and (19) being
 equal on account of (11).
+
+</p><p class="blue">
+ここで\(c^{\prime\prime}\)は\(c(\xi^{\prime\prime})\)の略であり、(18)と(19)の右辺は(11)により等しい。
 
 </p><p>
 Let us pass to another representation whose basic vectors are
-eigenvectors of £, the new basic vectors being numerical multiples of
-the previous ones. Calling the new basic vectors <é'*|, |E'*>, with the
-- additional label * to distinguish them from the previous ones, we have
+eigenvectors of \(\xi\), the new basic vectors being numerical multiples of
+the previous ones. Calling the new basic vectors \(\langle\xi^{\prime *}|,|\xi^{\prime *}\rangle\), with the
+additional label * to distinguish them from the previous ones, we have
 
-E*[ = WEI, ED = BED,
+</p><p class="blue">
+\(\xi\) の固有ベクトルを基礎ベクトルとする別の表現に移りましょう。新しい基礎ベクトルは以前のものの数値倍です。新しい基礎ベクトルを \(\langle\xi^{\prime *}|,|\xi^{\prime *}\rangle\) と呼び、以前のものと区別するために * というラベルを付けると、
+</p><p>
 
-where &' is short for &(é') and is a number depending on £'. We get
-CEE — WENGE") = Mie! 5(e'—2")
+\[
+\langle\xi^{\prime *}| = k^\prime\langle\xi^\prime|,　|\xi^{\prime *}\rangle = \overline{k^\prime}|\xi^\prime\rangle
+\]
+
+where \(k^\prime\) is short for \(k(\xi^\prime)\) and is a number depending on \(\xi^\prime\). We get
+
+</p><p class="blue">
+ここで\(k^\prime\)は\(k(\xi^\prime)\)の略で、\(\xi^\prime\)に依存する数である。
+</p><p>
+
+\[
+\langle\xi^{\prime *}|\xi^{\prime\prime *}\rangle = k^\prime\overline{k^{\prime\prime}}\langle\xi^\prime|\xi^{\prime\prime}\rangle = k^\prime\overline{k^{\prime\prime}}c^\prime\delta(\xi^\prime - \xi^{\prime\prime})
+\]
+
 
 with the help of (18). This may be written
-(EME) = W'k'c' BE" —£")
 
-from (11). By choosing &' so that its modulus is c'~?, which is possible
-since c' is positive, we arrange to have
+</p><p class="blue">
+（18）の助けを借りて、これは次のように書ける。
+</p><p>
 
-KEEN == O(E' — 6"). (20)
+\[
+\langle\xi^{\prime *}|\xi^{\prime\prime *}\rangle = k^\prime\overline{k^\prime}c^\prime\delta(\xi^\prime - \xi^{\prime\prime})
+\]
+
+from (11). By choosing \(k^\prime\) so that its modulus is \(c^{\prime \frac{1}{2}}\), which is possible since \(c^\prime\) is positive, we arrange to have
+
+</p><p class="blue">
+(11)より、\(k^\prime\)をその絶対値\(c^{\prime \frac{1}{2}}\)となるように選ぶと、\(c^\prime\)が正であるので、次のように整理できる。
+</p><p>
+
+\[
+\langle\xi^{\prime *}|\xi^{\prime\prime *}\rangle = \delta(\xi^\prime - \xi^{\prime\prime})  \tag{20}
+\]
 
 The lengths of the new basic vectors are now fixed so as to make the
 representation as simple as possible. The way these lengths were
 fixed is in some respects analogous to the normalizing of the basic
-vectors in the case of discrete €', equation (20) being of the form of
-(16) with the 3 function 6(¢'—€") replacing the 6 symbol dz, of
+vectors in the case of discrete \(\xi^\prime\), equation (20) being of the form of
+(16) with the \(\delta\) function \(\delta(\xi^\prime - \xi^{\prime\prime})\) replacing the \(\delta\) symbol \(\delta_{xi^\prime\xi^{\prime\prime}}\) of
 equation (16). We shall continue to work with the new representation
-and shall drop the * labels in it to save writing. Thus (20) will now
+and shall drop the * labels in it to save writing. Thus (20) will now be written
 
-be written <e/|é") = 8(€'—£"). (21)
+</p><p class="blue">
+新しい基本ベクトルの長さは、表現を可能な限り単純にするために固定されています。これらの長さの固定方法は、離散\(\xi^\prime\)の場合の基本ベクトルの正規化といくつかの点で類似しており、式(20)は式(16)の\(\delta\)記号\(\delta_{xi^\prime\xi^{\prime\prime}}\)を\(\delta\)関数\(\delta(\xi^\prime - \xi^{\prime\prime})\)に置き換えた形になります。この新しい表現を用いて作業を続け、記述を簡略化するために*ラベルを削除します。したがって、式(20)は次のように書きます。
+</p><p>
+
+\[
+\langle\xi^\prime|\xi^{\prime\prime}\rangle = \delta(\xi^\prime - \xi^{\prime\prime})  \tag{21}
+\]
 
 </p><p>
 We can develop the theory on closely parallel lines for the discrete
 and continuous cases. For the discrete case we have, using (16),
 
-2 IEEE") = 2 Edger = 12",
+</p><p class="blue">
+離散ケースと連続ケースの両方において、理論はほぼ平行線上に展開できる。離散ケースについては、(16)を用いて、
+</p><p>
+
+\[
+\sum_{\xi^\prime} |\xi^\prime\rangle\langle\xi^\prime|\xi^{\prime\prime}\rangle = \sum_{\xi^\prime} |\xi^\prime\rangle\delta_{\xi^\prime\xi^{\prime\prime}} = |\xi^{\prime\prime}\rangle
+\]
 
 the sum being taken over all eigenvalues. This equation holds for
-any basic ket |£"> and hence, since the basic kets form a complete set,
+any basic ket \(|\xi^{\prime\prime}\rangle\) and hence, since the basic kets form a complete set,
 
-2 Ie><o"] = 1 (22)
+</p><p class="blue">
+この式は、すべての固有値について和をとる。この式は、任意の基本ケット\(|\xi^{\prime\prime}\rangle\)に対して成立し、したがって、基本ケットは完全な集合を形成するので、
+</p><p>
+
+\[
+\sum_{\xi^\prime} |\xi^\prime\rangle\langle\xi^\prime| = 1  \tag{22}
+\]
+
 This is a useful equation expressing an important property of the
-basic vectors, namely, of [£'> is multiplied on the right by <é'| the
-resulting linear operator, summed for all &', equals the unit operator.
+basic vectors, namely, of \(|\xi^\prime\rangle\) is multiplied on the right by \(\langle\xi^\prime|\) the
+resulting linear operator, summed for all \(xi^\prime\), equals the unit operator.
 Equations (16) and (22) give the fundamental properties of the basic
-
 vectors for the discrete case.
+
+</p><p class="blue">
+これは基本ベクトルの重要な性質を表す便利な式である。すなわち、\(|\xi^\prime\rangle\) の右側に \(\langle\xi^\prime|\) を乗じると、結果として得られる線形演算子をすべての \(xi^\prime\) について加算すると単位演算子になる。
+式(16)と式(22)は離散的な場合の基本ベクトルの基本的な性質を与えている。
 
 </p><p>
 Similarly, for the continuous case we have, using (21),
 
-| Ig") df' EE) = | If") dg' (g'—&") = |£" (23)
+</p><p class="blue">
+同様に連続体の場合、(21)を用いると、
+</p><p>
 
-from (4) applied with a ket vector for f(x), the range of integration
-being the range of eigenvalues. This holds for any basic ket |£”)>
+\[
+\int |\xi^\prime\rangle d\xi^\prime\langle\xi^\prime|\xi^{\prime\prime}\rangle = \int |\xi^\prime\rangle d\xi^\prime\delta(\xi^\prime - \xi^{\prime\prime}) = |\xi^{\prime\prime}\rangle  \tag{23}
+\]
 
+from (4) applied with a ket vector for \(f(x)\), the range of integration
+being the range of eigenvalues. This holds for any basic ket \(|\xi^{\prime\prime}\rangle\)
 and hence
-flé>ae ei =1. (24)
-﻿64 REPRESENTATIONS § 16
+
+</p><p class="blue">
+(4)式に\(f(x)\)のケットベクトルを適用した場合、積分範囲は固有値の範囲となる。これは任意の基本ケット\(|\xi^{\prime\prime}\rangle\)に対して成り立ち、したがって
+</p><p>
+
+\[
+\int |\xi^\prime\rangle d\xi^\prime\langle\xi^\prime| = 1  \tag{24}
+\]
 
 This is of the same form as (22) with an integral replacing the sum.
 Equations (21) and (24) give the fundamental properties of the basic
 vectors for the continuous case.
 
+</p><p class="blue">
+これは(22)式と同じ形で、和を積分に置き換えたものである。
+式(21)と式(24)は連続の場合の基本ベクトルの基本的な性質を与える。
+
 </p><p>
 Equations (22) and (24) enable one to expand any bra or ket in
-terms of the basic vectors. For example, we get for the ket |P> in the
-discrete case, by multiplying (22) on the right by |P>,
+terms of the basic vectors. For example, we get for the ket \(|P\rangle\) in the
+discrete case, by multiplying (22) on the right by \(|P\rangle\),
 
-[P> = 2 le><E|P>, (25)
+</p><p class="blue">
+式(22)と式(24)は、任意のブラまたはケットを基本ベクトルを用いて展開することを可能にする。例えば、離散的なケースにおけるケット\(|P\rangle\)については、右側の式(22)に\(|P\rangle\)を乗じることで、
+</p><p>
 
-which gives |P> expanded in terms of the |£'>'s and shows that the
-coefficients in the expansion are <£'|P)>, which are just the numbers
-forming the representative of |P)>. Similarly, in the continuous case,
+\[
+|P\rangle = \sum_{xi^\prime} |\xi^\prime\rangle\langle\xi^\prime|P\rangle  \tag{25}
+\]
 
-[P> = { le' de" <€'1P>, (26)
+which gives \(|P\rangle\) expanded in terms of the \(|\xi^\prime\rangle\)'s and shows that the
+coefficients in the expansion are \(\langle\xi^\prime|P\rangle\), which are just the numbers
+forming the representative of \(|P\rangle\). Similarly, in the continuous case,
 
-giving |P) as an integral over the |£">'s, with the coefficient in the
-integrand again just the representative <¢'|P) of |P>. The conjugate
-imaginary equations to (25) and (26) would give the bra vector <P|
+</p><p class="blue">
+これは\(|P\rangle\)を\(|\xi^\prime\rangle\)で展開したもので、展開における係数は\(\langle\xi^\prime|P\rangle\)であり、これは\(|P\rangle\)の代表となる数であることを示しています。同様に、連続の場合、
+</p><p>
+
+\[
+|P\rangle = \int |\xi^\prime\rangle d\xi^\prime\langle\xi^\prime|P\rangle  \tag{26}
+\]
+
+giving \(|P\rangle\) as an integral over the \(|\xi^\prime\rangle\)'s, with the coefficient in the integrand again just the representative \(\langle\xi^\prime|P\rangle\) of \(|P\rangle\). The conjugate imaginary equations to (25) and (26) would give the bra vector \(\langle P|\)
 expanded in terms of the basic bras.
 
+</p><p class="blue">
+\(|P\rangle\) を \(|\xi^\prime\rangle\) の積分として与え、積分関数の係数は再び \(|P\rangle\) の代表 \(\langle\xi^\prime|P\rangle\) となる。(25) と (26) の共役虚数方程式は、基本ブラ群で展開されたブラベクトル \(\langle P|\) を与える。
+
+</p><p>
 Our present mathematical methods enable us in the continuous
 case to expand any ket as an integral of eigenkets of £. If we do not
-use the 8 function notation, the expansion ofa general ket will consist
-of an integral plus a sum, as in equation (25) of § 10, but the 6 function
+use the \(\delta\) function notation, the expansion ofa general ket will consist
+of an integral plus a sum, as in equation (25) of §10, but the \(\delta\) function
 enables us to replace the sum by an integral in which the integrand
-consists of terms each containing a 6 function as a factor. For
-example, the eigenket |¢”> may be replaced by an integral of eigen-
+consists of terms each containing a \(\delta\) function as a factor. For
+example, the eigenket \(|\xi^{\prime\prime}\rangle\) may be replaced by an integral of eigen-
 kets, as is shown by the second of equations (23).
 
-If (Q| is any bra and |P> any ket we get, by further applications
+</p><p class="blue">
+現在の数学的手法により、連続の場合、任意のケットを£の固有ケットの積分として展開することができます。\(\delta\)関数表記を使用しない場合、一般ケットの展開は§10の式(25)のように積分と和で構成されますが、\(\delta\)関数を使用すると、その和を、それぞれ\(\delta\)関数を因子として含む項からなる積分で置き換えることができます。例えば、固有ケット\(|\xi^{\prime\prime}\rangle\)は、式(23)の2番目に示すように、固有ケットの積分で置き換えることができます。
 
-&
+</p><p>
+If \(\langle Q|\) is any bra and \(|P\rangle\) any ket we get, by further applications
+of (22) and (24),
 
-for discrete é' and
+</p><p class="blue">
+\(\langle Q|\) が任意のブラであり、\(|P\rangle\) が任意のケットであるとすると、(22) と (24) をさらに適用すると、
+</p><p>
 
-<QIP> = [ <Qle' dé" <e|P> (28)
+\[
+\langle Q|P \rangle = \sum_{\xi^\prime} \langle Q|\xi^\prime \rangle\langle \xi^\prime|P\rangle  \tag{27}
+\]
 
-for continuous £'. These equations express the scalar product of (Q|
-and |P» in terms of their representatives (Q|é'> and <é"|P>. Equa-
-tion (27) is just the usual formula for the scalar product of two
-vectors in terms of the coordinates of the vectors, and (28) is the
-natural modification of this formula for the case of continuous &',
+for discrete \(\xi^\prime\) and
+
+</p><p class="blue">
+離散\(\xi^\prime\)と
+</p><p>
+
+\[
+\langle Q|P \rangle = \int \langle Q|\xi^\prime \rangle d\xi^\prime \langle \xi^\prime|P\rangle \tag{28}
+\]
+
+for continuous \(\xi^\prime\). These equations express the scalar product of \(\langle Q|\)
+and \(|P\rangle\) in terms of their representatives \(\langle Q|\xi^\prime\rangle\) and \(\langle\xi^\prime|P\rangle\). Equation (27) is just the usual formula for the scalar product of two vectors in terms of the coordinates of the vectors, and (28) is the
+natural modification of this formula for the case of continuous \(\xi^\prime\),
 with an integral instead of a sum.
 
-The generalization of the foregoing work to the case when é has
+</p><p class="blue">
+連続ベクトル \(\xi^\prime\) に対して。これらの式は、ベクトル \(\langle Q|\) と \(|P\rangle\) のスカラー積を、それらの代表値 \(\langle Q|\xi^\prime\rangle\) と \(\langle\xi^\prime|P\rangle\) で表しています。式 (27) は、ベクトルの座標を用いた2つのベクトルのスカラー積を表す通常の式であり、式 (28) は、連続ベクトル \(\xi^\prime\) の場合に、この式を和の代わりに積分を用いて自然に修正したものです。
+
+</p><p>
+The generalization of the foregoing work to the case when \(\xi\) has
 both discrete and continuous eigenvalues is quite straightforward.
-﻿§ 16 PROPERTIES OF THE BASIC VECTORS 65
+Using \(\xi^r\) and \(\xi^s\) to denote discrete eigenvalues and \(\xi^\prime\) and \(\xi^{\prime\prime}\) to denote continuous eigenvalues, we have the set of equations
 
-Using & and & to denote discrete eigenvalues and ¢' and £” to denote
-continuous eigenvalues, we have the set of equations
+</p><p class="blue">
+これまでの研究を、\(\xi\) が離散固有値と連続固有値の両方を持つ場合へと一般化するのは非常に簡単です。離散固有値を \(\xi^r\) と \(\xi^s\) で表し、連続固有値を \(\xi^\prime\) と \(\xi^{\prime\prime}\) で表すと、以下の方程式が得られます。
+</p><p>
 
-KEE = See, EE D = 0, EE") = OEE") (29)
+\[
+\langle\xi^r|\xi^s\rangle = \delta_{\xi^r\xi^s},　\langle\xi^r|\xi^\prime\rangle = 0,　\langle\xi^\prime|\xi^{\prime\prime}\rangle = \delta(\xi^\prime - \xi^{\prime\prime})  \tag{29}
+\]
+
 as the generalization of (16) or (21). These equations express that
 the basic vectors are all orthogonal, that those belonging to discrete
 eigenvalues are normalized and those belonging to continuous eigen-
 values have their lengths fixed by the same rule as led to (20). From
 (29) we can derive, as the generalization of (22) or (24),
 
-FOE L+ [eae l= 1 (30)
+</p><p class="blue">
+(16) または (21) の一般化として、これらの式は、基礎ベクトルがすべて直交していること、離散固有値に属するものは正規化されていること、連続固有値に属するものはその長さが (20) で導かれたのと同じ規則で固定されていることを表現している。(29) からは、(22) または (24) の一般化として、
+</p><p>
+
+\[
+\sum_{xi^r} |\xi^r\rangle\langle\xi^r|+\int |\xi^\prime\rangle d\xi^\prime\langle\xi^\prime| = 1  \tag{30}
+\]
 
 the range of integration being the range of continuous eigenvalues.
 With the help of (30), we get immediately
 
-IP> = Ble <elPy+ J |e> dé' <e'1P> (31)
+</p><p class="blue">
+積分範囲は連続する固有値の範囲である。
+(30) の助けを借りれば、直ちに
+</p><p>
+
+\[
+|P\rangle = \sum_{xi^r} |\xi^r\rangle\langle\xi^r|P\rangle + \int |xi^\prime\rangle d\xi^\prime\langle\xi^\prime|P\rangle  \tag{31}
+\]
+
 as the generalization of (25) or (26), and
-COIP) = 3 CQL IP>-+ f <@lg> de' <e'1P> (82)
+
+</p><p class="blue">
+（25）または（26）の一般化として、そして
+</p><p>
+
+\[
+\langle Q|P \rangle = \sum_{xi^r} \langle Q|\xi^r\rangle\langle\xi^r|P\rangle + \int \langle Q|\xi^\prime\rangle d\xi^\prime\langle\xi^\prime|P\rangle  \tag{32}
+\]
 
 as the generalization of (27) or (28).
 
-' Let us now pass to the general case when we have several commuting
-observables &,, &,,..., €,, forming a complete commuting set and set up
-an orthogonal representation in which the basic vectors are simul-
-taneous eigenvectors of all of them, and are written <&...€)|, |&..-&)-
-Let us suppose §,,&,...,€, (v <u) have discrete eigenvalues and
-Evite» &y, have continuous eigenvalues.
+</p><p class="blue">
+(27) または (28) の一般化として。
 
-Consider the quantity <£)..6,6541.-4416.-6) 6541-62. From the
-orthogonality theorem, it must vanish unless each £3 = & for
-s=v-+l,..,u. By extending the work connected with expression
+</p><p>
+Let us now pass to the general case when we have several commuting
+observables \(xi_1,\xi_2,...,\xi_u\) forming a complete commuting set and set up
+an orthogonal representation in which the basic vectors are simul-
+taneous eigenvectors of all of them, and are written \(\langle\xi_1^\prime...\xi_u^\prime|,|\xi_1^\prime...\xi_u^\prime\rangle\).
+Let us suppose \(\xi_1,\xi_2,...,\xi_u (v \leq u)\) have discrete eigenvalues and
+\(\xi_{v+1},...,\xi_u\) have continuous eigenvalues.
+
+</p><p class="blue">
+ここで、複数の可換な観測量 \(xi_1,\xi_2,...,\xi_u\) が完全可換集合を形成する一般的なケースに移り、それらの同時固有ベクトルを基礎ベクトルとする直交表現を設定し、\(\langle\xi_1^\prime...\xi_u^\prime|,|\xi_1^\prime...\xi_u^\prime\rangle\) と書きます。
+\(\xi_1,\xi_2,...,\xi_u (v \leq u)\) が離散固有値を持ち、\(\xi_{v+1},...,\xi_u\) が連続固有値を持つと仮定します。
+
+</p><p>
+Consider the quantity \(\langle\xi_1^\prime..\xi_v^\prime\xi_{v+1}^\prime..\xi_u^\prime|\xi_1^\prime..\xi_v^\prime\xi_{v+1}^{\prime\prime}..\xi_u^{\prime\prime}\rangle\). From the
+orthogonality theorem, it must vanish unless each \(\xi_s^{\prime\prime} = \xi_s^\prime\) for
+\(s=v+1,..,u\). By extending the work connected with expression
 (29) of §10 to simultaneous eigenvectors of several commuting
 observables and extending also the axiom (30), we find that the
-(u—v)-fold integral of this quantity with respect to each & over
-@ range extending through the value €, is a finite positive number.
-Calling this number c', the ' denoting that it is a function of
-E500) os Costes Ses WE CaN express our results by the equation
+\((u—v)\)-fold integral of this quantity with respect to each \(\xi_s^{\prime\prime}\) over
+a range extending through the value \(\xi_s^\prime\) is a finite positive number.
+Calling this number \(c^\prime\), the \(\prime\) denoting that it is a function of
+\(\xi_1^\prime,..,\xi_v^\prime,\xi_{v+1}^\prime,..,\xi_u^\prime\), we can express our results by the equation
 
-<E4--b0 Sosa Slot So Sos Sar = 6 8(Sosr— S41) S(Eu— Ea)» (33)
+</p><p class="blue">
+量 \(\langle\xi_1^\prime..\xi_v^\prime\xi_{v+1}^\prime..\xi_u^\prime|\xi_1^\prime..\xi_v^\prime\xi_{v+1}^{\prime\prime}..\xi_u^{\prime\prime}\rangle\) を考えます。
+直交性定理より、\(s=v+1,..,u\) の各 \(\xi_s^{\prime\prime} = \xi_s^\prime\) が成立しない限り、この量はゼロになります。 §10の式(29)に関連する作業を、複数の可換な観測量の同時固有ベクトルに拡張し、公理(30)も拡張することにより、この量の各\(\xi_s^{\prime\prime}\)に関する\((u—v)\)回積分は、\(\xi_s^\prime\)の値を通る範囲で有限の正の数となることがわかる。
+この数を\(c^\prime\)と呼び、\(\prime\)は\(\xi_1^\prime,..,\xi_v^\prime,\xi_{v+1}^\prime,..,\xi_u^\prime\)の関数であることを表す。この式は、
+</p><p>
 
-with one 8 factor on the right-hand side for each value of s from
-v-+1 tou. We now change the lengths of our basic vectors so as to
-﻿66 REPRESENTATIONS § 16
+\[
+\langle\xi_1^\prime..\xi_v^\prime\xi_{v+1}^\prime..\xi_u^\prime|\xi_1^\prime..\xi_v^\prime\xi_{v+1}^{\prime\prime}..\xi_u^{\prime\prime}\rangle = c^\prime\delta(\xi_{v+1}^\prime-\xi_{v+1}^{\prime\prime})..\delta(\xi_u^\prime - \xi_u^{\prime\prime})  \tag{33}
+\]
 
-make c' unity, by a procedure similar to that which led to (20). By
+with one \(delta\) factor on the right-hand side for each value of \(s\) from
+\(v+1\) to \(u\). We now change the lengths of our basic vectors so as to
+make \(c^\prime\) unity, by a procedure similar to that which led to (20). By
 a further use of the orthogonality theorem, we get finally
 
-Cie bul€i---Sa> = beer 86 8(So41— Soar) O(a &), (84)
+</p><p class="blue">
+\(v+1\)から\(u\)までの各\(s\)の値に対して、右辺に1つの\(デルタ\)因子が存在します。ここで、(20)を導いたのと同様の手順で、\(c^\prime\)が1となるように基本ベクトルの長さを変更します。
+さらに直交性定理を用いると、最終的に
+</p><p>
 
-~
+\[
+\langle\xi_1^\prime...\xi_u^\prime|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle =
+\delta_{\xi_1^\prime\xi_1^{\prime\prime}}..\delta_{\xi_v^\prime\xi_v^{\prime\prime}}\delta(\xi_{v+1}^\prime - \xi_{v+1}^{\prime\prime})..\delta(\xi_u^\prime - \xi_u^{\prime\prime})  \tag{34}
+\]
 
-with a two-suffix 6 symbol on the rigut-hand side for each £ with
-discrete eigenvalues and a 8 function for each € with continuous
+with a two-suffix \(\delta\) symbol on the right-hand side for each \(\xi\) with
+discrete eigenvalues and a \(\delta\) function for each \(\xi\) with continuous
 eigenvalues. This is the generalization of (16) or (21) to the case when
 there are several commuting observables in the complete set.
 
+</p><p class="blue">
+離散固有値を持つ各\(\xi\)に対して右辺に2つの接尾辞\(\delta\)記号が付き、連続固有値を持つ各\(\xi\)に対して\(\delta\)関数が付く。これは、(16)式または(21)式を、完全な集合の中に複数の可換観測量がある場合に一般化したものである。
+
+</p><p>
 From (34) we can derive, as the generalization of (22) or (24)
 
-XS fof Gd dea dl Gal = 1 (35)
+</p><p class="blue">
+(34)から、(22)または（24）の一般化として、
+</p><p>
 
-the integral being a (u-—v)-fold one over all the és with continuous
-eigenvalues and the summation being over all the €'s with discrete
+\[
+\sum_{\xi_1^\prime..\xi_v^\prime} \int \cdots \int |\xi_1^\prime...\xi_u^\prime\rangle d\xi_{v+1}^\prime..d\xi_u^\prime\langle\xi_1^\prime...\xi_u^\prime| = 1 \tag{35}
+\]
+
+the integral being a \((u-—v)\)-fold one over all the \(\xi^\prime\)'s with continuous
+eigenvalues and the summation being over all the \(xi^\prime\)'s with discrete
 eigenvalues. Equations (34) and (35) give the fundamental properties
 of the basic vectors in the present case. From (35) we can imme-
 diately write down the generalization of (25) or (26) and of (27) or (28).
 
+</p><p>
 The case we have just considered can be further generalized by
-allowing some of the é's to have both discrete and continuous eigen-
+allowing some of the \(\xi\)'s to have both discrete and continuous eigen-
 values. The modifications required in the equations are quite straight-
 forward, but will not be given here as they are rather cumbersome to
 write down in general form.
 
+</p><p>
 There are some problems in which it is convenient not to make the
-c' of equation (33) equal unity, but to make it equal to some definite
-function of the £''s instead. Calling this function of the €'s p'~1 we
+\(c^\prime\) of equation (33) equal unity, but to make it equal to some definite
+function of the \(\xi^\prime\)'s instead. Calling this function of the \(\xi^\prime\)'s \(\rho^{\prime -1}\) we
 then have, instead of (34)
 
-(ba bl ad = pS er Seces 8(Sora Eoaa)8(Eu— Su), (38)
+\[
+\langle\xi_1^\prime...\xi_u^\prime|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle = 
+\rho^{\prime -1}\delta_{\xi_1^\prime\xi_1^{\prime\prime}}..\delta_{\xi_v^\prime\xi_v^{\prime\prime}}\delta(\xi_{v+1}^\prime - \xi_{v+1}^{\prime\prime})..\delta(\xi_u^\prime - \xi_u^{\prime\prime}) \tag{36}
+\]
+}
+
 and instead of (35) we get
 
-Sfp kd 0” ear de, Ei bul = Le (37)
+\[
+\sum_{\xi_1^\prime..\xi_v^\prime} \int \cdots \int |\xi_1^\prime...\xi_u^\prime\rangle\rho^\prime d\xi_{v+1}^\prime..d\xi_u^\prime \langle\xi_1^\prime...\xi_u^\prime| = 1 \tag{37}
+\]
 
-p' is called the weight function of the representation, p' df,,,..d&,
-being the ‘weight' attached to a small volume element of the space
-of the variables &,,1,.., &,
+\(\rho^\prime\) is called the weight function of the representation, \8\rho^\prime d\xi_{v+1}^\prime..d\xi_u^\prime\) being the ‘weight' attached to a small volume element of the space of the variables \(\xi_{v+1}^\prime,...,\xi_u^\prime\).
 
+</p><p>
 The representations we considered previously all had the weight
 function unity. The introduction of a weight function not unity is
 entirely a matter of convenience and does not add anything to the
-mathematical power of the representation. The basic bras (...),*|
-of a representation with the weight function p' are connected with
-﻿§ 16 PROPERTIES OF THE BASIC VECTORS 67
+mathematical power of the representation. The basic bras \(\langle\xi_1^\prime...\xi_u^{\prime *}|\) of a representation with the weight function \(\rho^\prime\) are connected with
+the basic bras \(\langle\xi_1^\prime...\xi_u^\prime|\) of the corresponding representation with the weight function unity by
 
-the basic bras <&,...¢;,| of the corresponding representation with the
-weight function unity by
+\[
+\langle\xi_1^\prime...\xi_u^{\prime *}|=\rho^{\prime -\frac{1}{2}}\langle\xi_1^\prime...\xi_u^\prime|  \tag{38}
+\]
 
-(Ea bu] = pK EL Sul, (38)
 as is easily verified. An example of a useful representation with
-non-unit weight function occurs when one has two é's which are
-the polar and azimuthal angles 6 and ¢ giving a direction in three-
-dimensional space and one takes p' = sin 6'. One then has the element
-of solid angle sin @' d6'dé' occurring in (37).
+non-unit weight function occurs when one has two \(xi\)'s which are
+the polar and azimuthal angles \(\theta\) and \(\phi\) giving a direction in three-
+dimensional space and one takes \(\rho^\prime = \sin \theta^\prime\). One then has the element
+of solid angle \(\sin \theta^\prime d\phi^\prime\) occurring in (37).
+</p><p>
 
-17. The representation of linear operators
+<h3>17. The representation of linear operators</h3>
+<p>
 
-In § 14 we saw how to represent ket and bra vectors by sets of
+In §14 we saw how to represent ket and bra vectors by sets of
 numbers. We now have to do the same for linear operators, in order
 to have a complete scheme for representing all our abstract quantities
-by sets of numbers. The same basic vectors that we had in § 14 can
+by sets of numbers. The same basic vectors that we had in §14 can
 be used again for this purpose.
 
+</p><p>
 Let us suppose the basic vectors are simultaneous eigenvectors of
-a complete set of commuting observables €,,é,...,¢,. If a is any
-linear operator, we take a general basic bra <&...€,/ and a general
-basic ket |€]...6,> and form the numbers
+a complete set of commuting observables \(\xi_1,\xi_2,...,\xi_u\). If \(\alpha\) is any
+linear operator, we take a general basic bra \(\langle\xi_1^\prime,...\xi_u^\prime|\) and a general basic ket \(|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\) and form the numbers
 
-(Ey. Eglalel..€2>. (39)
+\[
+\langle\xi_1^\prime...\xi_u^\prime|\alpha|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle  \tag{39}
+\]
+
 These numbers are sufficient to determine a completely, since in the
-' first place they determine the ket «|&...€%> (as they provide the
+' first place they determine the ket \(\alpha|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\) (as they provide the
 representative of this ket), and the value of this ket for all the basic
-kets [£%...€”) determines a. The numbers (39) are called the repre-
-sentative of the linear operator « or of the dynamical variable «. They
-are more complicated than the representative of a ket or bra vector
+kets \(|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\) determines \(\alpha\). The numbers (39) are called the representative of the linear operator « or of the dynamical variable \(\alpha\). They are more complicated than the representative of a ket or bra vector
 in that they involve the parameters that label two basic vectors
 instead of one.
 
+</p><p>
 Let us examine the form of these numbers in simple cases. Take
-first the case when there is only one £, forming a complete commuting
-set by itself, and suppose that it has discrete eigenvalues ¢'. The
-representative of « is then the discrete set of numbers <é'|alé”>. If
+first the case when there is only one \(\xi\), forming a complete commuting
+set by itself, and suppose that it has discrete eigenvalues \(\xi^\prime\). The
+representative of \(\alpha\) is then the discrete set of numbers \(\langle\xi^\prime|\alpha|\xi^{\prime\prime}\rangle\). If
 one had to write out these numbers explicitly, the natural way of
 arranging them would be as a two-dimensional array, thus:
 
-Erol  <EtalE*™> — <S*] ax E>
-Cole EPSP) <P lal E>
-EPloelE> <ePlwlE> << HalE> (40)
-﻿68 REPRESENTATIONS §17
+\[
+\begin{pmatrix}
+\langle\xi^1|\alpha|\xi^1\rangle & \langle\xi^1|\alpha|\xi^2\rangle & \langle\xi^1|\alpha|\xi^3\rangle & \cdots \\
+\langle\xi^2|\alpha|\xi^1\rangle & \langle\xi^2|\alpha|\xi^2\rangle & \langle\xi^2|\alpha|\xi^3\rangle & \cdots \\
+\langle\xi^3|\alpha|\xi^1\rangle & \langle\xi^3|\alpha|\xi^2\rangle & \langle\xi^3|\alpha|\xi^3\rangle & \cdots \\
+\cdots & \cdots & \cdots & \cdots \\
+\cdots & \cdots & \cdots & \cdots \\
+\end{pmatrix}
+\tag{40}
+\]
 
-where £1, £, &,.. are all the eigenvalues of €&. Such an array is called
+where \(\xi^1,\xi^2,\xi^3,..\) are all the eigenvalues of \(\xi\). Such an array is called
 a matrix and the numbers are called the clements of the matrix. We
 make the convention that the elements must always be arranged so
 that those in the same row refer to the same basic bra vector and
 those in the same column refer to the same basic ket vector.
 
-An element <¢'la|£'> referring to two basic vectors with the same
+</p><p>
+An element \(\langle\xi^\prime|\alpha|\xi^\prime\rangle\) referring to two basic vectors with the same
 label is called a diagonal element of the matrix, as all such elements
-lie on a diagonal. If we put « equal to unity, we have from (16) ail
+lie on a diagonal. If we put \(\alpha\) equal to unity, we have from (16) ail
 the diagonal elements equal to unity and all the other elements equal
 to zero. The matrix is then called the unit matrix.
 
-If « is real, we have
+</p><p>
+If \(\alpha\) is real, we have
 
-CE" lol") = <e" lal E>. (41)
+\[
+\langle\xi^\prime|\alpha|\xi^{\prime\prime}\rangle = \overline{\langle\xi^{\prime\prime}|\alpha|\xi^\prime\rangle}  \tag{41}
+\]
+
 
 The effect of these conditions on the matrix (40) is to make the
-
 diagonal elements all real and each of the other elements equal the
-
 conjugate complex ofits mirror reflection in the diagonal. ‘The matrix
 is then called a Hermitian matrix.
 
-If we put « equal to &, we get for a general element of the matrix
+</p><p>
+If we put \(\alpha\) equal to \(\xi\), we get for a general element of the matrix
 
-CE EE = ENED = EF Oper. (42)
+\[
+\langle\xi^\prime|\xi|\xi^{\prime\prime}\rangle = \xi^\prime\langle\xi^\prime|\xi^{\prime\prime}\rangle = \xi^\prime\delta_{\xi^\prime\xi^{\prime\prime}}  \tag{42}
+\]
+
 Thus all the elements not on the diagonal are zero. The matrix is
-then called a diagonal matriz. Its diagonal elements are just equal
+then called a diagonal matrix. Its diagonal elements are just equal
+to the eigenvalues of \(\xi\). More generally, if we put \(\alpha\) equal to \(f(\xi)\), a
+function of \(\xi\), we get
 
-to the eigenvalues of €. More generally, if we put a equal to f(£), a
-function of £, we get
+\[
+\langle\xi^\prime|f(\xi)|\xi^{\prime\prime}\rangle = f(\xi^\prime)\delta_{\xi^\prime\xi^{\prime\prime}}  \tag{43}
+\]
 
-ETF ENED = LE) Bee, (43)
 and the matrix is again a diagonal matrix.
-Let us determine the representative of a product af of two linear
 
-operators a and f in terms of the representatives of the factors.
-From equation (22) with £” substituted for é' we obtain
+</p><p>
+Let us determine the representative of a product \(\alpha\beta\) of two linear
+operators \(\alpha\) and \(\beta\) in terms of the representatives of the factors.
+From equation (22) with \(\xi^{\prime\prime}\) substituted for \(\xi^\prime\) we obtain
 
-= » CE" JoelE”><o" BIE", (44)
+\[
+\begin{align}
+\langle\xi^\prime|\alpha\beta|\xi^{\prime\prime}\rangle &= \langle\xi^\prime|\alpha\sum_{\xi^{\prime\prime\prime}} |\xi^{\prime\prime\prime}\rangle\langle\xi^{\prime\prime\prime}|\beta|\xi^{\prime\prime}\rangle \\
+\\
+&=\sum_{\xi^{\prime\prime\prime}}\langle\xi^\prime|\alpha|\xi^{\prime\prime\prime}\rangle\langle\xi^{\prime\prime\prime}|\beta|\xi^{\prime\prime}\rangle  \tag{44}
+\end{align}
+\]
 
 which gives us the required result. Equation (44) shows that the
-matrix formed by the elements <£'|o8|£”> equals the product of the
-matrices formed by the elements <£'|«|£”> and <é'|B|£"> respectively,
+matrix formed by the elements \(\langle\xi^\prime|\alpha\beta|\xi^{\prime\prime}\rangle\) equals the product of the
+matrices formed by the elements \(\langle\xi^\prime|\alpha|\xi^{\prime\prime}\rangle\) and \(\langle\xi^\prime|\beta|\xi^{\prime\prime}\rangle\) respectively,
 according to the usual mathematical rule for multiplying matrices.
 This rule gives for the element in the rth row and sth column of the
-product matrix the sum of the product of each element in the rth
-row of the first factor matrix with the corresponding element in the sth
-﻿$17 THE REPRESENTATION OF LINEAR OPERATORS 69
-
+product matrix the sum of the product of each element in the \(r\)-th
+row of the first factor matrix with the corresponding element in the \(s\)-th
 column of the second factor matrix. The multiplication of matrices
 is non-commutative, like the multiplication of linear operators.
 
+</p><p>
 We can summarize our results for the case when there is only one
 é and it has discrete eigenvalues as follows:
 
+<div class="styleBullet">
+<ul><li>
 (i) Any linear operator is represented by a matrix.
-
+</li><li>
 (ii) The unit operator is represented by the umt matrix.
-
+</li><li>
 (iii) A real linear operator is represented by a Hermitian matrix.
-(iv) € and functions of & are represented by diagonal matrices.
-
+</li><li>
+(iv) \(\xi\) and functions of \(\xi\) are represented by diagonal matrices.
+</li><li>
 (v) The mairiz representing the product of two linear operators 1s the
 product of the matrices representing the two factors.
-
-Let us now consider the case when there is only one é and it has
-continuous eigenvalues. The representative of « is now <é"|a|é, a
-function of two variables £ and é” which can vary continuously. It
+</li></ul></div>
+</p><p>
+Let us now consider the case when there is only one \(\xi\) and it has
+continuous eigenvalues. The representative of \(\alpha\) is now \(\langle\xi^\prime|\alpha|\xi^{\prime\prime}\rangle\), a
+function of two variables \(\xi^\prime\) and \(\xi^{\prime\prime}\) which can vary continuously. It
 is convenient to call such a function a ‘matrix', using this word in
 a generalized sense, in order that we may be able to use the same
 terminology for the discrete and continuous cases. One of these
@@ -951,77 +1390,93 @@ generalized matrices cannot, of course, be written out as a two-
 dimensional array like an ordinary matrix, since the number of its
 rows and columns is an infinity equal to the number of points on a
 line, and the number of its elements is an infinity equal to the
-
 number of points in an area.
-We arrange our definitions concerning these generalized matrices
+</p><p>
 
+We arrange our definitions concerning these generalized matrices
 so that the rules (i)-(v) which we had above for the discrete case
 hold also for the continuous case. The unit operator is represented
-by 6(é'—&') and the generalized matrix formed by these elements
+by \(\delta(\xi^\prime - \xi^{\prime\prime})\) and the generalized matrix formed by these elements
 we define to be the unit matrix. We still have equation (41) as the
 condition for a to be real and we define the generalized matrix formed
-by the elements <&'|a|é"> to be Hermitian when it satisfies this
-condition. € is represented by
+by the elements \(\langle\xi^\prime|\alpha|\xi^{\prime\prime}\rangle\) to be Hermitian when it satisfies this
+condition. \(\xi\) is represented by
 
-Ce'e|E"> = £'8('—£") (45)
-and f(£) by SAIED = FEV 5(E—€"), (46)
+\[
+\langle\xi^\prime|\xi|\xi^{\prime\prime}\rangle = \xi^\prime\delta(\xi^\prime - \xi^{\prime\prime})  \tag{45}
+\]
+
+and \(f(\xi)\) by
+
+\[
+\langle\xi^\prime|f(\xi)|\xi^{\prime\prime}\rangle = f(\xi^\prime)\delta(\xi^\prime - \xi^{\prime\prime})  \tag{46}
+\]
+
 and the generalized matrices formed by these elements we define to be
-diagonal matrices. From (11), we could equally well have é" and f(é”)
-as the coefficients of 8(é'—€”) on the right-hand sides of (45) and (46)
+diagonal matrices. From (11), we could equally well have \(\xi^{\prime\prime}\) and \(f(\xi^{\prime\prime})\) as the coefficients of \(\delta(\xi^\prime - \xi^{\prime\prime})\)  on the right-hand sides of (45) and (46)
 respectively. Corresponding to equation (44) we now have, from (24)
 
-é'lople"> = [ <é'lale”> dé” <E"iBIE">, (47)
+\[
+\langle\xi^\prime|\alpha\beta|\xi^{\prime\prime}\rangle = \int \langle\xi^\prime|\alpha|\xi^{\prime\prime\prime}\rangle d\xi^{\prime\prime\prime}\langle\xi^{\prime\prime\prime}|\beta|\xi^{\prime\prime}\rangle  \tag{47}
+\]
 
 with an integral instead of a sum, and we define the generalized
-
 matrix formed by the elements on the right-hand side here to be the
- 3695,57 a)
-﻿70 REPRESENTATIONS §17
-
-product of the matrices formed by <€'Ja/é”> and <é'|B{Eé">. With
+product of the matrices formed by \(\langle\xi^\prime|\alpha|\xi^{\prime\prime}\rangle\) and \(\langle\xi^\prime|\beta|\xi^{\prime\prime}\rangle\). With
 these definitions we secure complete parallelism between the discrete
 and continuous cases and we have the rules (i)-(v) holding for both.
 
+</p><p>
 The question arises how a general diagonal matrix is to be defined
 in the continuous case, as so far we have only defined the right-hand
 sides of (45) and (46) to be examples of diagonal matrices. One
-might.be inclined to define as diagonal any matrix whose (€', €”)
-elements all vanish except when €' differs infinitely little from &',
+might be inclined to define as diagonal any matrix whose \((\xi^\prime,\xi^{\prime\prime})\)
+elements all vanish except when \(\xi^\prime\) differs infinitely little from \(\xi^{\prime\prime}\),
 but this would not be satisfactory, because an important property
 of diagonal matrices in the discrete case is that they always commute
 with one another and we want this property to hold also in the
-continuous case. In order that the matrix formed by the elements ~
-<€'|w|é") in the continuous case may commute with that formed by
+continuous case. In order that the matrix formed by the elements 
+\(\langle\xi^\prime|\omega|\xi^{\prime\prime}\rangle\) in the continuous case may commute with that formed by
 the elements on the right-hand side of (45) we must have, using the
 multiplication rule (47),
 
-i <e' jw \e"> ag” £78 (€"—£") = | ' &(E —&") dé” cE" lw |é">.
+\[
+\int\langle\xi^\prime|\omega|\xi^{\prime\prime\prime}\rangle d\xi^{\prime\prime\prime}\xi^{\prime\prime\prime}\delta(\xi^{\prime\prime\prime} - \xi^{\prime\prime})=\int\xi^\prime\delta(\xi^\prime - \xi^{\prime\prime\prime}) d\xi^{\prime\prime\prime}\langle\xi^{\prime\prime\prime}|\omega|\xi^{\prime\prime}\rangle
+\]
+
 With the help of formula (4), this reduces to
-CE OEE” = ECE ew |E" (48)
+
+\[
+\langle\xi^\prime|\omega|\xi^{\prime\prime\prime}\rangle d\xi^{\prime\prime\prime} \xi^{\prime\prime\prime} = \xi^\prime\langle\xi^\prime|\omega|\xi^{\prime\prime}\rangle  \tag{48}
+\]
+
+or
+
+\[
+(\xi^\prime - \xi^{\prime\prime})\langle\xi^\prime|\omega|\xi^{\prime\prime}\rangle = 0
+\]
 
 This gives, according to the rule by which (13) follows from (12),
 
-CE |wig"> = 0 B(E' —€")
+\[
+\langle\xi^\prime|\omega|\xi^{\prime\prime}\rangle = c^\prime\delta(\xi^\prime - \xi^{\prime\prime})
+\]
 
-where c' is a number that may depend on ¢'. Thus <€'|w/E”) is of the
+where \(c^\prime\) is a number that may depend on \(\xi^\prime\). Thus \(\langle\xi^\prime|\omega|\xi^{\prime\prime}\rangle\) is of the
 form of the right-hand side of (46). For this reason we define only
 matrices whose elements are of the form of the right-hand side of (46) to
 be diagonal mairices. It is easily verified that these matrices all
 commute with one another. One can form other matrices whose
-(&', €”) elements all vanish when €' differs appreciably from £” and
-have a different form of singularity when é' equals £” [we shall later
-introduce the derivative 8'(x) of the 5 function and 8'(é'—&”) will
-then be an example, see § 22 equation (19)], but these other matrices
+\((\xi^\prime,\xi^{\prime\prime})\) elements all vanish when \(\xi^\prime\) differs appreciably from \(\xi^{\prime\prime}\) and
+have a different form of singularity when \(\xi^\prime\) equals \(\xi^{\prime\prime}\) [we shall later
+introduce the derivative \(\delta^\prime(x)\) of the \(\delta\) function and \(\delta^\prime(\xi^\prime - \xi^{\prime\prime})\) will
+then be an example, see §22 equation (19)], but these other matrices
 are not diagonal according to the definition.
 
+</p><p>
 Let us now pass on to the case when there is only one £ and it has
-both discrete and continuous eigenvalues. Using é7,& to denote
-discrete eigenvalues and €',é” to denote continuous eigenvalues, we
-now have the representative of « consisting of four kinds of quanti-
-
-ties, <E7la|E >, (E"la |, <E"lalE, <Efalé">. These quantities can all
-﻿§17 THE REPRESENTATION OF LINEAR OPERATORS 71
-
+both discrete and continuous eigenvalues. Using \(\xi^r,\xi^s\) to denote
+discrete eigenvalues and \(\xi^\prime,\xi^{\prime\prime}\) to denote continuous eigenvalues, we now have the representative of \(\alpha\) consisting of four kinds of quantities, \(\langle\xi^r|\alpha|\xi^s\rangle, \langle\xi^r|\alpha|\xi^\prime\rangle, \langle\xi^\prime|\alpha|\xi^r\rangle, \langle\xi^\prime|\alpha|\xi^{\prime\prime}\rangle\). These quantities can all
 be put together and considered to form a more general kind of matrix
 having some discrete rows and columns and also a continuous range
 of rows and columns. We define unit matrix, Hermitian matrix,
@@ -1030,30 +1485,37 @@ general kind of matrix so as to make the rules (i)-(v) still hold. The
 details are a straightforward generalization of what has gone before
 and need not be given explicitly.
 
-Let us now go back to the general case of several é's, &,, &,...,&,.
-The representative of «, expression (39), may still be looked upon as
+</p><p>
+Let us now go back to the general case of several \(\xi\)'s, \(\xi_1,\xi_2,...,\xi_u\).
+The representative of \(\alpha\), expression (39), may still be looked upon as
 forming a matrix, with rows corresponding to different values of
-&,..,&, and columns corresponding to different values of &...., &%.
-Unless ail the £'s have discrete eigenvalues, this matrix will be of the
+\(\xi_1^\prime,...,\xi_u^\prime\) and columns corresponding to different values of \(\xi_1^{\prime\prime},...,\xi_u^{\prime\prime}\).
+Unless all the \(\xi\)'s have discrete eigenvalues, this matrix will be of the
 generalized kind with continuous ranges of rows and columns. We
 again arrange our definitions so that the rules (i)-(v) hold, with rule
 (iv) generalized to:
 
-(iv') Hach &,, (m = 1,2,...,u) and any function of them is repre-
+</p><p>
+(iv') Each \(\xi_m\;(m = 1,2,...,u)\) and any function of them is repre-
 sented by a diagonal matrix.
 
+</p><p>
 A diagonal matrix is now defined as one whose general element
-(€;.-€,/al€]...€2> is of the form
+\(\xi_1^\prime...\xi_u^\prime|\omega|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\) is of the form
 
-(bh Sloe Ftd = 6" 84, ¢1--Be, 223 (ou— Sou) H(E,— Ea) (49)
+\[
+\langle\xi_1^\prime...\xi_u^\prime|\omega|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle =
+c^\prime\delta_{\xi_1^\prime\xi_1^{\prime\prime}}..\delta_{\xi_v^\prime\xi_v^{\prime\prime}}\delta(\xi_{v+1}^\prime - \xi_{v+1}^{\prime\prime}..\delta(\xi_u^\prime - \xi_u^{\prime\prime})  \tag{49}
+\]
 
-in the case when £,,..,&, have discrete eigenvalues and é,.,,..,€,, have
-continuous eigenvalues, c' being any function of the £'s. This defini-
-tion is the generalization of what we had with one é and makes
+in the case when \(xi_1,...,\xi_v\) have discrete eigenvalues and \(\xi_{v+1},...,\xi?u\) have
+continuous eigenvalues, \(c^\prime\) being any function of the \(\xi^\prime\)'s. This defini-
+tion is the generalization of what we had with one \(\xi\) and makes
 diagonal matrices always commute with one another. The other
 definitions are straightforward and need not be given explicitly.
 
-* We now have a linear operator always represented by a matrix.
+</p><p>
+We now have a linear operator always represented by a matrix.
 The sum of two linear operators is represented by the sum of the
 matrices representing the operators and this, together with rule (v),
 means that the matrices are subject to the same algebraic relations as
@@ -1061,127 +1523,137 @@ the linear operators. If any algebraic equation holds between certain
 linear operators, the same equation must hold between the matrices
 representing those operators.
 
+</p><p>
 The scheme of matrices can be extended to bring in the repre-
 sentatives of ket and bra vectors. The matrices representing linear
 operators are all square matrices with the same number of rows and
 columns, and with, in fact, a one-one correspondence between their
 rows and columns. We may look upon the representative of a ket
-|P> as a matrix with a single column by setting all the numbers
-﻿72 REPRESENTATIONS §17
-
-<é..€4|P> which form this representative one below the other. The
-number of rows in this matrix will be the same as the number of
+\(|P\rangle\) as a matrix with a single column by setting all the numbers
+\(\langle\xi_1^\prime...\xi_u^\prime|P\rangle\) which form this representative one below the other. The number of rows in this matrix will be the same as the number of
 rows or columns in the square matrices representing linear operators.
 Such a single-column matrix can be multiplied on the left by a square
-matrix ¢&...€,|o|€]..¢2> representing a linear operator, by a rule
+matrix \(\langle\xi_1^\prime...\xi_u^\prime|\alpha|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\) representing a linear operator, by a rule
 similar to that for the multiplication of two square matrices. The
 product is another single-column matrix with elements given by
 
-Dede] Ge Gulall-BO dia dE ESP).
+\[
+\sum_{\xi_1^{\prime\prime}..\xi_v^{\prime\prime}} \int \cdots \int \langle\xi_1^\prime...\xi_u^\prime|\alpha|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle d\xi_{v+1}^{\prime\prime}..d\xi_u^{\prime\prime}\langle\xi_1^{\prime\prime}...\xi_u^{\prime\prime}|P\rangle
+\]
 
-From (35) this is just equal to <&...€,|«|P>, the. representative of
-«|P>. Similarly we may look upon the representative of a bra ¢Q|
-as a matrix with a single row by setting all the numbers <Q|£)...6)
-side by side. Such a single-row matrix may be multiplied on the
-right by a square matrix <£)...¢,,/a/£7...4>, the product being another
-single-row matrix, which is just the representative of <Qla. The
-single-row matrix representing <Q| may be multiplied on the right
-by the single-column matrix representing |P>, the product being a
-matrix with just a single element, which is equal to <Q|P>. Finally,
-the single-row matrix representing (Q| may be multiplied on the left
-by the single-column matrix representing |P>, the product being a
-square matrix, which is just the representative of |P><@Q|. In this
+From (35) this is just equal to \(\langle\xi_1^\prime...\xi_u^\prime|\alpha|P\rangle\), the. representative of \(\alpha|P\rangle\). Similarly we may look upon the representative of a bra \(\langle Q|\) as a matrix with a single row by setting all the numbers \(\langle Q|\xi_1^\prime...\xi_u^\prime\rangle\) side by side. Such a single-row matrix may be multiplied on the
+right by a square matrix \(\langle\xi_1^\prime...\xi_u^\prime|\alpha|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\), the product being another
+single-row matrix, which is just the representative of \(\langle Q|\alpha\). The
+single-row matrix representing \(\langle Q|\) may be multiplied on the right
+by the single-column matrix representing \(|P\rangle\), the product being a
+matrix with just a single element, which is equal to \(\langle Q|P\rangle\). Finally,
+the single-row matrix representing \(\langle Q|\) may be multiplied on the left
+by the single-column matrix representing \(|P\rangle\), the product being a
+square matrix, which is just the representative of \(|P\rangle\langle Q|\). In this
 way all our abstract symbols, linear operators, bra vectors, and ket
 vectors, can be represented by matrices, which are subject to the
 same algebraic relations as the abstract symbols themselves.
+</p><p>
 
-18. Probability amplitudes
-
+<h3>18. Probability amplitudes</h3>
+<p>
 Representations are of great importance in the physical interpreta-
 tion of quantum mechanics as they provide a convenient method for
 obtaining the probabilities of observables having given values. In
-§ 12 we obtained the probability of an observable having any speci-
-fied value for a given state and in § 13 we generalized this result
+§12 we obtained the probability of an observable having any speci-
+fied value for a given state and in §13 we generalized this result
 and obtained the probability of a set of commuting observables
 simultaneously having specified values for a given state. Let us now
 apply this result to a complete set of commuting observables, say the
-set of ¢'s which we have been dealing with already. According to
-formula (51) of § 13, the probability of each &, having the value &
-for the state corresponding to the normalized ket vector |x) is
+set of \(xi\)'s which we have been dealing with already. According to
+formula (51) of §13, the probability of each \(xi_r\) having the value \(\xi_r^\prime\)
+for the state corresponding to the normalized ket vector \(|x\rangle\) is
 
-Pre, = St |8 eg, 5g, 5---8e,e,10- (50)
-﻿§18 PROBABILITY AMPLITUDES 73
+\[
+P_{\xi_1^\prime...\xi_u^\prime} = \langle x|\delta_{\xi_1\xi_1^\prime}\delta_{\xi_2\xi_2^\prime}...\delta_{\xi_u\xi_u^\prime}|x\rangle  \tag{50}
+\]
 
-If the ¢'s all have discrete eigenvalues, we can use (35) with v = u
+If the \(xi\)'s all have discrete eigenvalues, we can use (35) with \(v = u\)
 and no integrals, and get
 
-Pee, = 2, <x |8¢, 2, 82, 250-5246, 184--Su> Sh Sar
-Lead gg
+\[
+\begin{align}
+P_{\xi_1^\prime...\xi_u^\prime} &= \sum_{xi_1^{\prime\prime}...\xi_u^{\prime\prime}} \langle x|\delta_{\xi_1\xi_1^\prime}\delta_{\xi_2\xi_2^\prime}...\delta_{xi_u\xi_u^\prime}|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\langle\xi_1^{\prime\prime}...\xi_u^{\prime\prime}|x\rangle \\
+\\
+&=\sum_{\xi_1^{\prime\prime}...\xi_u^{\prime\prime}} \langle x|\delta_{x_1^{\prime\prime}\xi_1^\prime}\delta_{x_2^{\prime\prime}\xi_2^\prime}...\delta_{\xi_u^{\prime\prime}\xi_u^\prime}|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\langle\xi_1^{\prime\prime}...\xi_u^{\prime\prime}|x\rangle \\
+\\
+&= \langle x|\xi_1^\prime...\xi_u^\prime\rangle\langle\xi_1^\prime...\xi_u^\prime|x\rangle \\
+\\
+&= |\langle\xi_1^\prime...\xi_u^\prime|x\rangle|^2  \tag{51}
+\end{align}
+\]
 
-= 2, Cac |Ser es Sez es. See en 1ST St <r Se. /@
-
-= (elf Sd Sr Sul2>
-= |6r--ule>?. (51)
-
-We thus get the simple result that the probability of the €'s having the
-values €' is just the square of the modulus of the appropriate coordinate
+We thus get the simple result that the probability of the \(\xi\)'s having the
+values \(\xi^\prime\) is just the square of the modulus of the appropriate coordinate
 of the normalized ket vector corresponding to the state concerned.
 
-Tf the é's do not all have discrete eigenvalues, but if, say, &,.., ,
-have discrete eigenvalues and &,,1,..,€, have continuous eigenvalues,
+</p><p>
+If the \(\xi\)'s do not all have discrete eigenvalues, but if, say, \(\xi_1,...,\xi_v\)
+have discrete eigenvalues and \(\xi_{v+1},...,\xi_u\) have continuous eigenvalues,
 then to get something physically significant we must obtain the
-probability of each , (r = 1,..,v) having a specified value ¢, and each
-é, (s = v-+1,..,u) lying in a specified small range & to &+dé,. For
-this purpose we must replace each factor 8, ¢, in (50) by a factor x;,
-which is that function of the observable ¢, which is equal to unity
-for £, within the range &, to £,+-d£, and zero otherwise. Proceeding
+probability of each \(\xi_r\;(r = 1,..,v)\) having a specified value \(\xi_r^\prime\) and each
+\(\xi_s\; (s = v+1,..,u)\) lying in a specified small range \(\xi_s^\prime\) to \(\xi_s^\prime+d\xi_s^\prime\). For
+this purpose we must replace each factor \(delta_{\xi_s\xi_s^\prime}\) in (50) by a factor \(\chi_s\),
+which is that function of the observable \(\xi_s\) which is equal to unity
+for \(\xi_s\) within the range \(\xi_s^\prime\) to \(\xi_s+d\xi_s^\prime\) and zero otherwise. Proceeding
 as before with the help of (35), we obtain for this probability .
 
-Pee dear dE, = 1G Sule>? doar dba (52)
+\[
+P_{\xi_1^\prime..\xi_u^\prime}d\xi_{v+1}^\prime..d\xi_u^\prime = |\langle\xi_1^\prime...\xi_u^\prime|x\rangle|^2d\xi_{v+1}^\prime..d\xi_u^\prime \tag{52}
+\]
 
-Thus in every case the probability distribution of values for the €s ts
+Thus in every case the probability distribution of values for the \(\xi\)'s is
 given by the square of the modulus of the representative of the norma-
 lized ket vector corresponding to the state concerned.
 
+</p><p>
 The numbers which form the representative of a normalized ket
 (or bra) may for this reason be called probability amplitudes. ‘The
 square of the modulus of a probability amplitude is an ordinary
 probability, or a probability per unit range for those variables that
 have continuous ranges of values.
 
-We may be interested in a state whose corresponding ket |x> cannot
+</p><p>
+We may be interested in a state whose corresponding ket \(|x\rangle\) cannot
 be normalized. This occurs, for example, if the state is an eigenstate
 of some observable belonging to an eigenvalue lying in a range of
 eigenvalues. The formula (51) or (52) can then still be used to give
-the relative probability of the é's having specified values or having
+the relative probability of the \(\xi\)'s having specified values or having
 values lying in specified small ranges, i.e. it will give correctly the
-ratios of the probabilities for different £'s. The numbers <&...&,|%>
+ratios of the probabilities for different \(\xi^\prime\)'s. The numbers \(\langle\xi_1^\prime...\xi_u^\prime|x\rangle\)
 may then be called relative probability amplitudes.
-﻿74 REPRESENTATIONS § 18
 
+</p><p>
 The representation for which the above results hold is characterized
-by the basic vectors being simultaneous eigenvectors of all the é's.
-It may also be characterized by the requirement that each of the é's
+by the basic vectors being simultaneous eigenvectors of all the \(\xi\)'s.
+It may also be characterized by the requirement that each of the \(\xi\)'s
 shall be represented by a diagonal matrix, this condition being easily
 seen to be equivalent to the previous one. The latter characterization
 is usually the more convenient one. For brevity, we shall formulate
-it as each of the é's “being diagonal in the representation'.
+it as each of the (\xi\)'s “being diagonal in the representation".
 
-Provided the é's form a complete set of commuting observables,
+</p><p>
+Provided the \(\xi\)'s form a complete set of commuting observables,
 the representation is completely determined by the characterization,
 apart from arbitrary phase factors in the basic vectors. Each basic bra
-<&...€,| may be multiplied by e%”', where y' is any real function of
-the variables ¢},..., &, without changing any of the conditions which
-the representation has to satisfy, i.c. the condition that the é's are
+\(\langle\xi_1^\prime...\xi_u^\prime|\) may be multiplied by \(e^{i\gamma^\prime}\), where \(\gamma^\prime\) is any real function of
+the variables \(\xi_1^\prime,...,\xi_u^\prime\), without changing any of the conditions which
+the representation has to satisfy, i.e. the condition that the \(\xi\)'s are
 diagonal or that the basic vectors are simultaneous eigenvectors of
-the £'s, and the fundamental properties of the basic vectors (34) and
+the \(\xi\)'s, and the fundamental properties of the basic vectors (34) and
 (35). With the basic bras changed in this way, the representative
-(&...€,|P> of a ket |P> gets multiplied by e*', the representative
-(Q1g...€,> of a bra <Q} gets multiplied by e~%”' and the representa-
-tive <&)...€,,|a|&]...6> of a linear operator « gets multiplied by e'-7”.
+\(\langle\xi_1^\prime...\xi_u^\prime|P\rangle\) of a ket \(|P\rangle\) gets multiplied by \(e^{i\gamma^\prime}\), the representative
+\(\langle Q|\xi_1^\prime...\xi_u^\prime\rangle\) of a bra \(\langle Q|\) gets multiplied by \(e^{-i\gamma^\prime}\) and the representa-
+tive \(\langle\xi_1^\prime...\xi_u^\prime|\alpha|\xi_1^{\prime\prime}...\xi_u^{\prime\prime}\rangle\) of a linear operator \(\alpha\) gets multiplied by \(e^{i(\gamma^\prime-\gamma^{\prime\prime})}\).
 The probabilities or relative probabilities (51), (52) are, of course,
 unaltered.
 
+</p><p>
 The probabilities that one calculates in practical problems in
 quantum mechanics are nearly always obtained from the squares
 of the moduli of probability amplitudes or relative probability ampli-
@@ -1195,23 +1667,31 @@ or integrate over all possible values of the extra observables. A
 more direct application of formula (51) of §13 is usually not
 practicable.
 
+</p><p>
 To introduce a representation in practice
 
+<div class="styleBullet">
+<ul><li>
 (i) We look for observables which we would like to have diagonal,
 either because we are interested in their probabilities or for
 reasons of mathematical simplicity ;
 
+</li><br><li>
 (ii) We must see that they all commute—a necessary condition
 since diagonal matrices always commute;
-﻿§ 18 PROBABILITY AMPLITUDES 715
+﻿§18 PROBABILITY AMPLITUDES 715
 
+</li><br><li>
 (iii) We then see that they form a complete commuting set, and
 if not we add some more commuting observables to them to
 make them into a complete commuting set;
 
+</li><br><li>
 (iv) We set up an orthogonal representation with this complete
 commuting set diagonal.
 
+</li></ul></div>
+</p><p>
 The representation is then completely determined except for the
 arbitrary phase factors. For most purposes the arbitrary phase
 factors are unimportant and trivial, so that we may count the
@@ -1221,237 +1701,323 @@ since the only indication in a representative of the representation to
 which it belongs are the letters denoting the observables that are
 diagonal.
 
+</p><p>
 It may be that we are interested in two representations for the
 same dynamical system. Suppose that in one of them the complete
-set of commuting observables &,,...,é, are diagonal and the basic
-bras are ¢€;...€,| and in the other the complete set of commuting
-observables 7,...,7,, are diagonal and the basic bras are <7}...7%)|-
-A ket |P> will now have the two representatives <&...&,|P> and
-<n Mw|P>. Tf &,..,é, have discrete eigenvalues and &,,,,.., é,, have
-continuous eigenvalues and if 7,,..,7, have discrete eigenvalues and
-Ne+19+ Ny have continuous eigenvalues, we get from (35)
+set of commuting observables \(\xi_1,...,\xi_u\) are diagonal and the basic
+bras are \(\langle\xi_1^\prime...\xi_u^\prime|\) and in the other the complete set of commuting
+observables \(\eta_1,...,\eta_w\) are diagonal and the basic bras are \(\langle\eta_1^\prime...\eta_w^\prime|\).
+A ket \(|P\rangle\) will now have the two representatives \(\langle\xi_1^\prime...\xi_u^\prime|P\rangle\) and
+\(\langle\eta_1^\prime...\eta_w^\prime|P\rangle\). If \(\xi_1,...,\xi_v\) have discrete eigenvalues and \(\xi_{v+1},...,\xi_u\) have
+continuous eigenvalues and if \(\eta_1,...,\eta_x\) have discrete eigenvalues and
+\(\eta_{x+1},...,\eta_w\) have continuous eigenvalues, we get from (35)
 
-Theol) = B fof titel fa> Board EnkulP>, (58)
-and interchanging é's and 7's
-(y--ul P> =>) Si Ealt te? Insane (Ii--Mw|P>. (54)
+\[
+\langle\eta_1^\prime...\eta_w^\prime|P\rangle = \sum_{\xi_1^\prime..\xi_v^\prime} \int \cdots \int \langle\eta_1^\prime...\eta_w^\prime|\xi_1^\prime...\xi_u^\prime\rangle d\xi_{v+1}^\prime..d\xi_u^\prime\langle\xi_1^\prime..\xi_u^\prime|P\rangle  \tag{53}
+\]
+
+and interchanging \(\xi\)'s and \(\eta\)'s
+
+\[
+\langle\xi_1^\prime...\xi_u^\prime|P\rangle = \sum_{\eta_1^\prime..\eta_x^\prime} \int \cdots \int \langle\xi_1^\prime...\xi_u^\prime|\eta_1^\prime...\eta_w^\prime\rangle d\eta_{x+1}^\prime..d\eta_w^\prime\langle\eta_1^\prime..\eta_w^\prime|P\rangle  \tag{54}
+\]
 
 These are the transformation equations which give one representative
-- of |P> in terms of the other. They show that either representative
+of \(|P\rangle\) in terms of the other. They show that either representative
 is expressible linearly in terms of the other, with the quantities
 
-Cm ule Eo, <n lam (55)
+\[
+\langle\eta_1^\prime...\eta_w^\prime|\xi_1^\prime...\xi_u^\prime\rangle,　\langle\xi_1^\prime...\xi_u^\prime|\eta_1^\prime...\eta_w^\prime\rangle  \tag{55}
+\]
 
 as coefficients. These quantities are called the transformation func-
 tions. Similar equations may be written down to connect the two
 representatives of a bra vector or of a linear operator. The trans-
 formation functions (55) are in every case the means which enable
 one to pass from one representative to the other. Each of the
-﻿76 REPRESENTATIONS § 18
-
 transformation functions is the conjugate complex of the other, and
 they satisfy the conditions
 
-x, fof <t--ntol fad Moar db, Er Gilttte to?
+\[
+\sum_{\xi_1^\prime..\xi_v^\prime} \int \cdots \int \langle\eta_1^\prime...\eta_w^\prime|\xi_1^\prime...\xi_u^\prime\rangle d\xi_{v+1}^\prime..d\xi_u^\prime \langle\xi_1^\prime...\xi_u^\prime|\eta_1^{\prime\prime}...\eta_w^{\prime\prime}\rangle
+\]
 
-= Sint Oyen (Meta Mesa) No— Mo) (58)
-and the corresponding conditions with é's and 7's interchanged, as
+\[
+=\delta_{\eta_1^\prime\eta_1^{\prime\prime}}..\delta_{\eta_x^\prime\eta_x^{\prime\prime}}\delta(\eta_{x+1}^\prime - \eta_{x+1}^{\prime\prime})..\delta(\eta_w^\prime - \eta_w^{\prime\prime})  \tag{56}
+\]
+
+and the corresponding conditions with \(\xi\)'s and \(\eta\)'s interchanged, as
 may be verified from (35) and (34) and the corresponding equations
-for the 7's.
+for the \(\eta\)'s.
 
+</p><p>
 Transformation functions are examples of probability amplitudes
 or relative probability amplitudes. Let us take the case when all the
-é's and all the y's have discrete eigenvalues. Then the basic ket
-|y4---7}y> is normalized, so that its representative in the €-representa-
-tion, <€)...£4,|71---Mp>, is a probability amplitude for each set of values
-for the £'s. The state to which these probability amplitudes refer,
-namely the state corresponding to |7}...71,>, is characterized by the
-condition that a simultaneous measurement of 7,,...,7,, is certain to
-lead to the results 7j,...,M%- Thus [<€)...€,|71.--mo> ? is the proba-
-bility of the é's having the values ¢...¢;, for the state for which the
-n's certainly have the values 7}...7,,. Since
+\(\xi\)'s and all the \(\eta\)'s have discrete eigenvalues. Then the basic ket
+\(|\eta_1^\prime...\eta_w^\prime\rangle\) is normalized, so that its representative in the \(\xi\)-representation, \(\langle\xi_1^\prime...\xi_u^\prime|\eta_1^\prime...\eta_w^\prime\rangle\), is a probability amplitude for each set of values
+for the \(\xi^\prime\)'s. The state to which these probability amplitudes refer,
+namely the state corresponding to \|\eta_1^\prime...\eta_w^\prime\rangle\), is characterized by the
+condition that a simultaneous measurement of \(\eta_1,...,\eta_w\) is certain to
+lead to the results \(\eta_1^\prime,...,\eta_w^\prime\). Thus \(|\langle\xi_1^\prime...\xi_i^\prime|\eta_1^\prime...\eta_w^\prime\rangle|^2\) is the proba-
+bility of the \(\xi\)'s having the values \(\xi_1^\prime...\xi_u^\prime\) for the state for which the
+\(\eta\)'s certainly have the values \(\eta_1^\prime...\eta_w^\prime\). Since
 
-So Seel me me? = [om MlStSw Ps
-we have the theorem of reciprocity—the probability of the és having
-the values £' for the state for which the n's certainly have the values 1'
-is equal to the probability of the 's having the values x' for the state for
-which the &s certainly have the values £'. :
+\[
+|\langle\xi_1^\prime...\xi_u^\prime|\eta_1^\prime...\eta_w^\prime\rangle|^2 = |\langle\eta_1^\prime...\eta_w^\prime|\xi_1^\prime...\xi_u^\prime\rangle|^2
+\]
 
-If all the 7's have discrete eigenvalues and some of the é's have
-continuous eigenvalues, |<&;...,,|71---7,> |? still gives the probability
-distribution of values for the é's for the state for which the »'s cer-
-tainly have the values y'. If some of the y's have continuous eigen-
-values, |7}...7,,> is not normalized and [(&...d,|y,-..4y>[? then gives
-only the relative probability distribution of values for the é's for the
-state for which the y's certainly have the values 7'.
+we have the theorem of reciprocity—the probability of the \(\xi\)'s having
+the values \(\xi^\prime\) for the state for which the \(\eta\)'s certainly have the values \(\eta^\prime\)
+is equal to the probability of the \(\eta\)'s having the values \(\eta^\prime\) for the state for
+which the \(\xi\)'s certainly have the values \(\xi^\prime\).
 
-19. Theorems about functions of observables
+</p><p>
+If all the \(\eta\)'s have discrete eigenvalues and some of the \(\xi\)'s have
+continuous eigenvalues, \(|\langle\xi_1^\prime...\xi_u^\prime|\eta_1^\prime...\eta_w^\prime\rangle|^2\) still gives the probability
+distribution of values for the \(\xi\)'s for the state for which the \(\eta\)'s cer-
+tainly have the values \(\eta^\prime\). If some of the \(\eta\)'s have continuous eigen-
+values, \(|\eta_1^\prime...\eta_w^\prime\rangle\) is not normalized and \(|\langle\xi_1^\prime...\xi_u^\prime|\eta_1^\prime...\eta_w^\prime\rangle|^2\) then gives
+only the relative probability distribution of values for the \(\xi\)'s for the
+state for which the \(\eta\)'s certainly have the values \(\eta^\prime\).
+</p><p>
 
+<h3>19. Theorems about functions of observables</h3>
+<p>
 We shall illustrate the mathematical value of representations by
 using them to prove some theorems.
 
-THEOREM 1, A linear operator that commutes with an observable €
-commutes also with any function of €.
+</p><p>
+THEOREM 1, A linear operator that commutes with an observable \(\xi\)
+commutes also with any function of \(\xi\).
 
+</p><p>
 The theorem is obviously true when the function is expressible as
-﻿§19 THEOREMS ABOUT FUNCTIONS OF OBSERVABLES 77
-
-a power series. To prove it generally, let w be the linear operator,
+a power series. To prove it generally, let \(\omega\) be the linear operator,
 so that we have the equation
 
-fw—wk = 0. (57)
+\[
+\xi\omega - \omega\xi = 0  \tag{57}
+\]
 
-Let us introduce a representation in which é is diagonal. If € by
+Let us introduce a representation in which \(\xi\) is diagonal. If \(\xi\) by
 itself does not form a complete commuting set of observables, we must
 make it into a complete commuting set by adding certain observables,
-B say, to it, and then take the representation in which € and the f's
-are diagonal. (The case when £ does form a complete commuting set
+\(\beta\) say, to it, and then take the representation in which \(\xi\) and the \(\beta\)'s
+are diagonal. (The case when \(\xi\) does form a complete commuting set
 by itself can be looked upon as a special case of the preceding one
-with the number of f variables zero.) In this representation equation
+with the number of \(\beta\) variables zero.) In this representation equation
+(57) becomes
 
-(57) becomes <E'B" geo —wwé|£"B") = 0,
+\[
+\langle\xi^\prime\beta^\prime|\xi\omega - \omega\xi|\xi^{\prime\prime}\beta^{\prime\prime}\rangle = 0
+\]
+
 which reduces to
-EB a | E"B") — CEB' ew |E"BE” = 0.
-In the case when the eigenvalues of € are discrete, this equation
-shows that all the matrix elements <&''|w|é”B"> of w vanish except
 
-those for which ¢' = €”. In the case when the eigenvalues of & are
-continuous it shows, like equation (48), that <é'B'[w|é"B”> is of the
+\[
+\xi^\prime\langle\xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle-\langle\xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle\xi^{\prime\prime} = 0
+\]
 
-form EB lole"B"> = o5(e'—£"),
+In the case when the eigenvalues of \(\xi\) are discrete, this equation
+shows that all the matrix elements \(\langle\xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle\) of \(\omega\) vanish except
+those for which \(\xi^\prime = \xi^{\prime\prime}\). In the case when the eigenvalues of \(\xi\) are
+continuous it shows, like equation (48), that \(\langle\xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle\) is of the form
 
-where c is some function of €' and the §''s and 6''s. In either case
-we may say that the matrix representing w ‘is diagonal with respect
-to é'. Tf f(é) denotes any function of ¢ in accordance with the general
-theory of § 11, which requires f(£”) to be defined for £” any eigenvalue
-of £, we can deduce in either case
+\[
+\langle\xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle = c\delta(\xi^\prime - \xi^{\prime\prime})
+\]
 
-FEVER 021 E"B — CEB eo |E"B FE") = 0.
-This gives CEB P(E) o—wf(E) EB = 0,
-so that f()e—af(é) = 0
+where \(c\) is some function of \(\xi^\prime\) and the \(\beta^\prime\)'s and \(\beta^{\prime\prime}\)'s. In either case
+we may say that the matrix representing \(\omega\)is diagonal with respect
+to \(\xi^\prime\). Tf \(f(\xi)\) denotes any function of \(\xi\) in accordance with the general
+theory of §11, which requires \(f(\xi^{\prime\prime\prime})\) to be defined for \(\xi^{\prime\prime\prime}\) any eigenvalue
+of \(\xi\), we can deduce in either case
+
+\[
+f(\xi^\prime)\langle\xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle-\langle\xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle f(\xi^{\prime\prime})=0
+\]
+
+This gives 
+
+\[
+\langle\xi^\prime\beta^\prime|f(\xi)\omega-\omega f(\xi)|\xi^{\prime\prime}\beta^{\prime\prime}\rangle = 0
+\]
+
+so that
+
+\[
+f(\xi)\omega-\omega f(\xi) = 0
+\]
 
 and the theorem is proved.
 
+</p><p>
 As a special case of the theorem, we have the result that any
-observable that commutes with an observable € also commutes with
-any function of €. This result appears as a physical necessity when
+observable that commutes with an observable \(\xi\) also commutes with
+any function of \(\xi\). This result appears as a physical necessity when
 we identify, as in §13, the condition of commutability of two
 observables with the condition of compatibility of the correspond-
 ing observations. Any observation that is compatible with the
-measurement of an observable € must also be compatible with the
-measurement of f(é), since any measurement of & includes in itself
-a measurement of /(é).
-﻿78 REPRESENTATIONS § 19
-
-TuHroreM 2. A linear operator that commutes with each of a complete
+measurement of an observable \(\xi\) must also be compatible with the
+measurement of \(f(\xi)\), since any measurement of \(\xi\) includes in itself
+a measurement of \(f(\xi)\).
+﻿
+</p><p>
+THEOREM 2. A linear operator that commutes with each of a complete
 set of commuting observables is a function of those observables.
 
-Let w be the linear operator and ¢,,&,...,6, the complete set of
+</p><p>
+Let \(\omega\) be the linear operator and \(\xi_1,\xi_2,...,\xi_u\) the complete set of
 commuting observables, and set up a representation with these
-observables diagonal. Since w commutes with each of the &'s, the
-matrix representing it is diagonal with respect to each of the £'s,
+observables diagonal. Since \(\omega\) commutes with each of the &'s, the
+matrix representing it is diagonal with respect to each of the \(\xi\)'s,
 by the argument we had above. This matrix is therefore a diagonal
-matrix and is of the form (49), involving a number c' which is a
-function of the £'s. It thus represents the function of the £'s that
-c' is of the é”s, and hence w equals this function of the €'s.
+matrix and is of the form (49), involving a number \(c^\prime\) which is a
+function of the \(\xi^\prime\)'s. It thus represents the function of the £'s that
+\(c^\prime\) is of the \(\xi^\prime\)'s, and hence w equals this function of the \(\xi\)'s.
 
-THEOREM 3. If an observable € and a linear operator g are such that
-any linear operator that commutes with € also commutes with g, then g
-ais a function of €.
+</p><p>
+THEOREM 3. If an observable \(\xi\) and a linear operator \(g\) are such that
+any linear operator that commutes with \(\xi\) also commutes with \(g\), then \(g\)
+is a function of \(\xi\).
 
+</p><p>
 This is the converse of Theorem 1. To prove it, we use the same
-representation with ¢ diagonal as we had for Theorem 1. In the first
-place, we see that g must commute with € itself, and hence the
-representative of g must be diagonal with respect to €, i.e. it must
+representation with \(\xi\) diagonal as we had for Theorem 1. In the first
+place, we see that \(g\) must commute with \(\xi\) itself, and hence the
+representative of \(g\) must be diagonal with respect to \(\xi\), i.e. it must
 be of the form
 
-<EB'IGIE'B'> = a(E'B'B' Bee or a(€'B'B")3(E'—&"),
-according to whether & has discrete or continuous eigenvalues. Now
-let w be any linear operator that commutes with €, so that its
+\[
+\langle\xi^\prime\beta^\prime|g|\xi^{\prime\prime}\beta^{\prime\prime}\rangle = a(\xi^\prime\beta^\prime\beta^{\prime\prime})\delta_{\xi^\prime\xi^{\prime\prime}}　or　a(\xi^\prime\beta^\prime\beta^{\prime\prime})\delta(\xi^\prime - \xi^{\prime\prime})
+\]
+
+according to whether \(\xi\) has discrete or continuous eigenvalues. Now
+let \(\omega\) be any linear operator that commutes with \(\xi\), so that its
 representative is of the form
-EB lwle”B"> = BEBB Beg or B(E'B'B")3E'—2").
-By hypothesis w» must also commute with g, so that
-<E'B' gu —eog |E"B"> = 0. (58)
-If we suppose for definiteness that the f's have discrete eigenvalues,
+
+\[
+\langle^xi^\prime\beta^\prime|\omega|\xi^{\prime\prime}\beta^{\prime\prime}\rangle = b(\xi^\prime\beta^\prime\beta^{\prime\prime})\delta_{\xi^\prime\xi^{\prime\prime}}　or　b(\xi^\prime\beta^\prime\beta^{\prime\prime})\delta(\xi^\prime - \xi^{\prime\prime})
+\]
+
+By hypothesis \(\omega\) must also commute with \(g\), so that
+
+\[
+\langle\xi^\prime\beta^\prime|g\omega - \omega g|\xi^{\prime\prime}\beta^{\prime\prime}\rangle = 0  \tag{58}
+\]
+
+If we suppose for definiteness that the \(\beta\)'s have discrete eigenvalues,
 (58) leads, with the help of the law of matrix multiplication, to
-> {ale'B'B")O(E'B"B") — B(E'B'B" al E'B"B')} = 0, (59)
 
-per
+\[
+\sum_{\beta^{\prime\prime\prime}} \{a(\xi^\prime\beta^\prime\beta^{\prime\prime\prime})b(\xi^\prime\beta^{\prime\prime\prime}\beta^{\prime\prime})-b(\xi^\prime\beta^\prime\beta^{\prime\prime\prime}a(\xi^\prime\beta^{\prime\prime\prime}\beta^{\prime\prime})\}=0  \tag{59}
+\]
+
 the left-hand side of (58) being equal to the left-hand side of (59)
+multiplied by \(\delta_{\xi^\prime\xi^{\prime\prime}}\) or \(\delta(\xi^\prime - \xi^{\prime\prime})\). Equation (59) must hold for all
+functions \(b(\xi^\prime\beta^\prime\beta^{\prime\prime})\). We can deduce that
 
-multiplied by 8¢2 or 5(¢'—§"). Equation (59) must hold for all
-functions b(é'B'B"). We can deduce that
+\[
+\begin{align}
+a(\xi^\prime\beta^\prime\beta^{\prime\prime} &= 0\;for\; \beta^\prime \neq \beta^{\prime\prime} \\
+\\
+a(\xi^\prime\beta^\prime\beta^\prime) &= a(\xi^\prime\beta^{\prime\prime}\beta^{\prime\prime})
+\end{align}
+\]
 
-a(g'B'B") = 0 for Bp' # B",
-ate' p'p') = ale'B"B").
-The first of these results shows that the matrix representing g is
-
-diagonal and the second shows that a(é'B'f') is a function of €' only.
-We can now infer that g is that function of € which a(é'B'f') is of €,
-﻿$19 THEOREMS ABOUT FUNCTIONS OF OBSERVABLES 79
-
-so the theorem is proved. The proof is analogous if some of the §'s
-
+The first of these results shows that the matrix representing \(g\) is
+diagonal and the second shows that \(a(\xi^\prime\beta^\prime\beta^\prime)\) is a function of \(\xi^\prime\) only.
+We can now infer that \(g\) is that function of \(\xi\) which \(a(\xi^\prime\beta^\prime\beta^\prime)\) is of \(\xi^\prime\),so the theorem is proved. The proof is analogous if some of the \(\beta\)'s
 have continuous eigenvalues.
-Theorems I and 3 are still valid if we replace the observable € by
 
-any set of commuting observables €,, €,,..,€, only formal changes
+</p><p>
+THEOREM 1 and 3 are still valid if we replace the observable \(\xi\) by
+any set of commuting observables \(\xi_1,\xi_2,...,\xi_r,\) only formal changes
 being needed in the proofs.
+</p><p>
 
-20. Developments in notation
-
+<h3>20. Developments in notation</h3>
+<p>
 The theory of representations that we have developed provides a
 general system for labelling kets and bras. Ina representation in which
-the complete set of commuting observables &,,...,&, are diagonal any
-ket | P > will have a representative <&...6,|P>, or (é'|P> for brevity.
-This representative is a definite function of the variables £', say (£').
-The function % then determines the ket |P> completely, so it may be
-used to label this ket, to replace the arbitrary label P. In symbols,
+the complete set of commuting observables \(\xi_1,...,\xi_u\) are diagonal any
+ket \(|P\rangle\) will have a representative \(\langle\xi_1^\prime...\xi_n^\prime|P\rangle\), or \(\langle\xi^\prime|P\rangle\) for brevity.
+This representative is a definite function of the variables \(\xi^\prime\), say \(\psi(\xi^\prime)\).
+The function \(\psi\) then determines the ket \(|P\rangle\) completely, so it may be
+used to label this ket, to replace the arbitrary label \(P\). In symbols,
 
-if a
-we put |P> = [(€)>.
-We must put |P> equal to [b(é)> and not [b(é')>, since it does not
+\[
+\left.
+\begin{align}
+if　　　 　　\langle\xi^\prime|P\rangle &= \psi(\xi^\prime) \\
+\\
+we\; put　　　　 |P\rangle &= |\psi(\xi)\rangle
+\end{align}
+\right\} \tag{60}
+\]
 
-depend on a particular set of eigenvalues for the £'s, but only on the
+We must put \(|P\rangle\) equal to \(|\psi(\xi)\rangle\) and not \(|\psi(\xi^\prime)\rangle\), since it does not depend on a particular set of eigenvalues for the \(\xi\)'s, but only on the
+form of the function \(\psi\).
 
-form of the function y.
-With f(é) any function of the observables &,...,&,, f(6)|P> will
+</p><p>
+With \(f(\xi)\) any function of the observables \(\xi_1,...,\xi_u\) f(\xi)|P\rangle\) will
 have as its representative
 
-CEE PD = FEVWME').
+\[
+\langle\xi^\prime|f(\xi)|P\rangle = f(\xi^\prime)\psi(\xi^\prime)
+\]
+
 Thus according to (60) we put
 
-FS)P> = FOYE).
+\[
+f(\xi|P\rangle = |f(\xi)\psi(\xi)\rangle
+\]
+
 With the help of the second of equations (60) we now get
 
-FE)NEE) = FEME)>.- (61)
+\[
+f(\xi)|\psi(\xi)\rangle = |f(\xi)\psi(\xi)\rangle  \tag{61}
+\]
 
-This is a general result holding for any functions f and ¢ of the s,
-and it shows that the vertical line | is not necessary with the new
-notation for a ket—either side of (61) may be written simply as
-f(£)4(6)>. Thus the rule for the new notation becomes :—
-we put [P> = $(é)>.
-We may further shorten %(£)> to 4, leaving the variables ¢ under-
+This is a general result holding for any functions \(f\) and \(\psi\) of the \(\xi\)'s,
+and it shows that the vertical line \(|\) is not necessary with the new
+notation for a ket — either side of (61) may be written simply as
+\(f(\xi)\psi(\xi)\rangle\). Thus the rule for the new notation becomes :—
+
+\[
+\left.
+\begin{align}
+if　　　 　　\langle\xi^\prime|P\rangle &= \psi(\xi^\prime) \\
+\\
+we\; put　　　　 |P\rangle &= \psi(\xi)\rangle
+\end{align}
+\right\} \tag{62}
+\]
+
+We may further shorten \(\psi(\xi)\rangle\) to \(\psi\rangle\), leaving the variables \(\xi\) under-
 stood, if no ambiguity arises thereby.
 
-The ket %(£)> may be considered as the product of the linear
-operator %(¢) with a ket which is denoted simply by > without a
-label. We call the ket > the standard ket. Any ket whatever can be
-﻿80 REPRESENTATIONS § 20
+</p><p>
+The ket \(\psi(\xi)\rangle\) may be considered as the product of the linear
+operator \(\psi(\xi\) with a ket which is denoted simply by \(\rangle\) without a
+label. We call the ket \(\rangle\) the standard ket. Any ket whatever can be
+expressed as a function of the \(\xi\)'s multiplied into the standard ket.
+For example, taking \(|P\rangle\) in (62) to be the basic ket \(|\xi^{\prime\prime}\rangle\), we find
 
-expressed as a function of the é's multiplied into the standard ket.
-For example, taking |P) in (62) to be the basic ket |¢">, we find
+\[
+|\xi^{\prime\prime}\rangle = \delta_{\xi_1\xi^{\prime\prime}}..\delta_{\xi_v\xi_v^{\prime\prime}}\delta(\xi_{v+1} - \xi_{v+1}^{\prime\prime})..\delta(\xi_u - \xi_u^{\prime\prime})\rangle  \tag{63}
+\]
 
-1E”> == 84, ¢7--Se,¢7 5(Eps1— Soa) S(Eu— Su)? (63)
-
-in the case when ¢,,.., €, have discrete eigenvalues and €,,1,..,&,, have
+in the case when \(\xi_1,..,\xi_v\) have discrete eigenvalues and \(\xi_{v+1},..,\xi_u\) have
 continuous eigenvalues. The standard ket is characterized by the
-condition that its representative <é'|> is unity over the whole domain
-of the variable ¢', as may be seen by putting = 1 in (62).
+condition that its representative \(\langle\xi^\prime|\rangle\) is unity over the whole domain
+of the variable \(\xi^\prime\), as may be seen by putting \(\psi = 1\) in (62).
 
+</p><p>
 A further contraction may be made in the notation, namely to
-leave the symbol > for the standard ket understood. A ket is then
-written simply as ¥4(é), a function of the observables €. A function
-of the é's used in this way to denote a ket is called a wave function.}
+leave the symbol \(\rangle\) for the standard ket understood. A ket is then
+written simply as \(\psi(\xi)\), a function of the observables \(\xi\). A function
+of the \(\xi\)'s used in this way to denote a ket is called a wave function.<sup>†</sup>
 The system of notation provided by wave functions is the one usually
 used by most authors for calculations in quantum mechanics. In
 using it one should remember that each wave function is understood
@@ -1461,97 +2027,101 @@ on the right. Wave functions can be multiplied by operators only on
 the left. This distinguishes them from ordinary functions of the &'s,
 which are operators and can be multiplied by operators on either the
 left or the right. A wave function is just the representative of a ket
-expressed as a function of the observables é, instead of eigenvalues &'
+expressed as a function of the observables \(\xi\), instead of eigenvalues \(\xi^\prime\)
 for those observables. The square of its modulus gives the proba-
-bility (or the relative probability, if it is not normalized) of the és
+bility (or the relative probability, if it is not normalized) of the \(\xi\)'s
 having specified values, or lying in specified small ranges, for the
 corresponding state.
 
+</p><p class="margin-large">
+<sup>†</sup> The reason for this name is that in the early days of quantum mechanics all the
+examples of these functions were of the form of waves. The name is not a descriptive
+one from the point of view of the modern general theory.
+
+</p><p>
 The new notation for bras may be developed in the same way as
-for kets. A bra <Q| whose representative <Q|é'> is o(&') we write
-<¢(€)|. With this notation the conjugate imaginary to |¢(£)> is
-<b(€)|. Thus the rule that we have used hitherto, that a ket and
+for kets. A bra \(\langle Q|\) whose representative \(\langle Q|\xi^\prime\rangle\) is \(\phi(\xi^\prime)\) we write \(\langle\phi(\xi)|\). With this notation the conjugate imaginary to \(|\psi(\xi)\rangle\) is
+\(\langle\overline{\psi}(\xi)|\). Thus the rule that we have used hitherto, that a ket and
 its conjugate imaginary bra are both specified by the same label,
 must be extended to read—if the labels of a ket involve complex
 numbers or complex functions, the labels of the conjugate imaginary
 bra involve the conjugate complex numbers or functions. As in the
-case of kets we can show that <4(€)|f(€) and <(é)f(é)| are the same,
-so that the vertical line can be omitted. We can consider <(£) as
-the product of the linear operator ¢(£) into the standard bra <, which
-
-} The reason for this name is that in the early days of quantum mechanics all the
-
-examples of these functions were of the form of waves. The name is not a descriptive
-one from the point of view of the modern general theory.
-﻿§ 20 DEVELOPMENTS IN NOTATION 81
-
-is the conjugate imaginary of the standard ket >. We may leave
-the standard bra understood, so that a general bra is written as $(€),
+case of kets we can show that \(\langle\phi(\xi)|f(\xi)\) and \(\langle\phi(\xi)f(\xi)|\) are the same,
+so that the vertical line can be omitted. We can consider \(\langle\phi(xi)\) as
+the product of the linear operator \(\phi(\xi)\) into the standard bra \(\langle\), which
+is the conjugate imaginary of the standard ket \(\rangle\). We may leave
+the standard bra understood, so that a general bra is written as \(\phi(\xi)\),
 the conjugate complex of a wave function. The conjugate complex
 of a wave function can be multiplied by any linear operator on the
 right, but cannot be multiplied by a linear operator on the left. We
-can construct triple products of the form <f(€)>. Such a triple product
-is a number, equal to f(€) summed or integrated over the whole
-domain of eigenvalues for the €'s,
+can construct triple products of the form \(\langle f(\xi)\rangle\). Such a triple product
+is a number, equal to \(f(\xi)\) summed or integrated over the whole
+domain of eigenvalues for the \(\xi\)'s,
 
-fe = ff ME) Bor db (64)
+\[
+\langle f(\xi)\rangle = \sum_{\xi_1^\prime..\xi_v^\prime} \int \cdots \int f(\xi^\prime) d\xi_{v+1}^\prime..d\xi_u^\prime  \tag{64}
+\]
 
-in the case when €,,.., €, have discrete eigenvalues and €,,,,...,£, have
+in the case when \(\xi_1,...,\xi_u\) have discrete eigenvalues and \(\xi_{v+1},...,\xi_u\) have
 continuous eigenvalues.
 
+</p><p>
 The standard ket and bra are defined with respect to a representa-
 tion. If we carried through the above work with a different repre-
-sentation in which the complete set of commuting observables 7 are
+sentation in which the complete set of commuting observables \(\eta\) are
 diagonal, or if we merely changed the phase factors in the representa-
-tion with the £'s diagonal, we should get a different standard ket and
+tion with the \(\xi\)'s diagonal, we should get a different standard ket and
 bra. In a piece of work in which more than one standard ket or bra
 appears one must, of course, distinguish them by giving them labels.
 
+</p><p>
 A further development of the notation which is of great importance
 for dealing with complicated dynamical systems will now be discussed.
 Suppose we have a dynamical system describable in terms of dynami-
-cal variables which can all be divided into two sets, set A and set B
-say, such that any member of set A commutes with any member of
-set B. A general dynamical variable must be expressible as a function
-of the A-variables and B-variables together. We may consider
+cal variables which can all be divided into two sets, set \(A\) and set \(B\)
+say, such that any member of set \(A\) commutes with any member of
+set \(B\). A general dynamical variable must be expressible as a function
+of the \(A\)-variables and \(B\)-variables together. We may consider
 another dynamical system in which the dynamical variables are the
-A-variables only—let us call it the A-system. Similarly we may
+\(A\)-variables only—let us call it the \(A\)-system. Similarly we may
 consider a third dynamical system in which the dynamical variables
-are the B-variables only—the B-system. The original system can
-then be looked upon as a combination of the A-system and the
-B-system in accordance with the mathematical scheme given below.
+are the \(B\)-variables only—the \(B\)-system. The original system can
+then be looked upon as a combination of the \(A\)-system and the
+\(B\)-system in accordance with the mathematical scheme given below.
 
-Let us take any ket |a> for the A-system and any ket |b> for the
-B-system. We assume that they have a product |a>|b> for which
-the commutative and distributive axioms of multiplication hold, ie.
+</p><p>
+Let us take any ket \(|a\rangle\) for the \(A\)-system and any ket \(|b\rangle\) for the
+\(B\)-system. We assume that they have a product \(|a\rangle |b\rangle\) for which
+the commutative and distributive axioms of multiplication hold, i.e.
 
-|a>|B> = |b>|a>,
-{cy |@,>-+ Cg|@g>}|D> = €y]ay>[b>++¢g|@2>[B>,
-|a>{e, |by> +e2|b,>} = ¢,|a>|b,>+¢,|a>|be>,
-﻿|
-}
-{
-|
-|
+\[
+\begin{align}
+|a\rangle|B\rangle &= |b\rangle|a\rangle \\
+\\
+\{c_1|a_1\rangle + c_2|a_2\rangle\}|b\rangle &= c_1|a_1\rangle|b\rangle+c_2|a_2\rangle|b\rangle \\
+\\
+|a\rangle\{c_1|b_1\rangle+c_2|b_2\rangle\} &= c_1|a\rangle|b_1\rangle+c_2|a\rangle|b_2\rangle
+\end{align}
+\]
 
-82 REPRESENTATIONS § 20
-
-the c's being numbers. We can give a meaning to any A-variable
-operating on the product |a>|b> by assuming that it operates only
-on the |a> factor and commutes with the |6> factor, and similarly
-we can give a meaning to any B-variable operating on this product
-by assuming that it operates only on the [b> factor and commutes
-with the |a> factor. (This makes every A-variable commute with
-every B-variable.) Thus any dynamical variable of the original
-system can operate on the product |a@>|b>, so this product can be
+the \(c\)'s being numbers. We can give a meaning to any \(A\)-variable
+operating on the product \(|a\rangle|b\rangle\) by assuming that it operates only
+on the \(|a\rangle\) factor and commutes with the \(|b\rangle\) factor, and similarly
+we can give a meaning to any \(B\)-variable operating on this product
+by assuming that it operates only on the \(|b\rangle\) factor and commutes
+with the \(|a\rangle\) factor. (This makes every \(A\)-variable commute with
+every \(B\)-variable.) Thus any dynamical variable of the original
+system can operate on the product \(|a\rangle|b\rangle\), so this product can be
 looked upon as a ket for the original system, and may then be
-written |ab>, the two labels a and 6b being sufficient to specify it.
+written \(|ab\rangle\), the two labels a and 6b being sufficient to specify it.
 In this way we get the fundamental equations
 
-|a>|b> = |b>|a> = |ab>. (65)
+\[
+|a\rangle|b\rangle = |b\rangle|a\rangle = |ab\rangle  \tag{65}
+\]
 
 The multiplication here is of quite a different kind from any that
-occurs earlier in the theory. The ket vectors |a@> and |b> are in two
+occurs earlier in the theory. The ket vectors \(|a\rangle\) and \(|b\rangle\) are in two
 different vector spaces and their product is in a third vector space,
 which may be called the product of the two previous vector spaces.
 The number of dimensions of the product space is equal to the
@@ -1559,60 +2129,77 @@ product of the number of dimensions of each of the factor spaces.
 A general ket vector of the product space is not of the form (65), but
 is a sum or integral of kets of this form.
 
-Let us take a representation for the A-system in which a complete
-set of commuting observables ¢, of the A-system are diagonal. We
-shall then have the basic-bras <€!,| for the A-system. Similarly, taking
-a representation for the B-system with the observables é, diagonal,
-we shall have the basic bras <£,| for the B-system. The products
+</p><p>
+Let us take a representation for the \(A\)-system in which a complete
+set of commuting observables \(\xi_A\) of the \(A\)-system are diagonal. We
+shall then have the basic-bras \(\langle\xi_A^\prime|\) for the \(A\)-system. Similarly, taking
+a representation for the \(B\)-system with the observables \(\xi_B\) diagonal,
+we shall have the basic bras \(\langle\xi_B^\prime|\) for the \(B\)-system. The products
 
-Eales] = <E4Es! (66)
+\[
+\langle\xi_A^\prime|\langle\xi_B^\prime| = \langle\xi_A^\prime\xi_B^\prime|  \tag{66}
+\]
+
 will then provide the basic bras for a representation for the original
-system, in which representation the ¢,'s and the €,'s will be diagonal.
-
-The €,'s and €,'s will together form a complete set of commuting
+system, in which representation the \(\xi_A^\prime\)'s and the \(\xi_B^\prime\)'s will be diagonal.The \(\xi_A\)'s and \(\xi_B\)'s will together form a complete set of commuting
 observables for the original system. From (65) and (66) we get
 
-<E4l>Eplb> = <E4 Ep lab), (67)
-showing that the representative of |ab> equals the product of the
-representatives of |a> and of {b> in their respective representations.
+\[
+\langle\xi_A^\prime|a\rangle\langle\xi_B^\prime|b\rangle = \langle\xi_A^\prime\xi_B^\prime|ab\rangle  \tag{67}
+\]
 
-We can introduce the standard ket, >, say, for the A-system,
-with respect to the representation with the €,'s diagonal, and also
-the standard ket >, for the B-system, with respect to the repre-
-sentation with the €,'s diagonal. Their product >, >, is then the
-﻿§ 20 DEVELOPMENTS IN NOTATION 83
+showing that the representative of \(|ab\rangle\) equals the product of the
+representatives of \(a\rangle\) and of \(|b\rangle\) in their respective representations.
 
+</p><p>
+We can introduce the standard ket, \(\rangle_A\) say, for the \(A\)-system,
+with respect to the representation with the \(\xi_A\)'s diagonal, and also
+the standard ket \(\rangle_B\) for the \(B\)-system, with respect to the repre-
+sentation with the \(\xi_B\)'s diagonal. Their product \(\rangle_A\rangle_B\) is then the
 standard ket for the original system, with respect to the representa-
-tion with the €,'s and ,'s diagonal. Any ket for the original system
+tion with the \(\xi_A\)'s and \(\xi_B\)'s diagonal. Any ket for the original system
+may be expressed as 
 
-may be expressed as WEs En) ab (68)
+\[
+\psi(\xi_A\xi_B)\rangle_A\rangle_B  \tag{68}
+\]
 
+</p><p>
 It may be that in a certain calculation we wish to use a particular
-representation for the B-system, say the above representation with
-the £,'s diagonal, but do not wish to introduce any particular
-representation for the A-system. It would then be convenient to
-use the standard ket >, for the B-system and no standard ket for
+representation for the \(B\)-system, say the above representation with
+the \(\xi_B\)'s diagonal, but do not wish to introduce any particular
+representation for the \(A\)-system. It would then be convenient to
+use the standard ket \(\rangle_B\) for the \(B\)-system and no standard ket for
 the A-system. Under these circumstances we could write any ket
+for the original system as
 
-for the original system as ‘Eee (69)
+\[
+|\xi_B\rangle\rangle_B  \tag{69}
+\]
 
-in which |&,> is a ket for the A-system and is also a function of the
-E,'s, ie. it is a ket for the A-system for each set of values for the
-£,'s—in fact (69) equals (68) if we take
+in which \(|\xi_B\rangle\) is a ket for the \(A\)-system and is also a function of the
+\(\xi_B\)'s, i.e. it is a ket for the \(A\)-system for each set of values for the
+\(\xi_B\)'s—in fact (69) equals (68) if we take
 
-\Em> = HE s Ep) a:
+\[
+|\xi_B\rangle ~ \psi(\xi_A\xi_B)\rangle_A
+\]
 
-We may leave the standard ket >, in (69) understood, and then we
-have the general ket for the original system appearing as |f;,>, a ket
-for the A-system and a wave function in the variables €, of the
-B-system. An example of this notation will be used in § 66.
+We may leave the standard ket \(\rangle_B\) in (69) understood, and then we
+have the general ket for the original system appearing as \(|\xi_B\rangle\), a ket
+for the \(A\)-system and a wave function in the variables \(\xi_B\) of the
+\(B\)-system. An example of this notation will be used in §66.
 
+</p><p>
 The above work can be immediately extended to a dynamical
 system describable in terms of dynamical variables which can be
-divided into three or more sets A,B, C,... such that any member of
+divided into three or more sets \(A,B,C,...\) such that any member of
 one set commutes with any member of another. Equation (65) gets
+generalized to 
 
-generalized to la>|b>|e>... = labe...>,
+\[
+|a\rangle|b\rangle|c\rangle... = |abc...\rangle
+\]
 
 the factors on the left being kets for the component systems and
 the ket on the right being a ket for the original system. Equations

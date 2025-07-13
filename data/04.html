@@ -14,6 +14,11 @@
             {
                 margin-left: 30px;
             }
+            .margin-large-blue
+            {
+                margin-left: 30px;
+                color: blue;
+            }
            .margin-abstract {
                margin-left: 60px; /* 左マージンを広くする */
                margin-right: 60px; /* 右マージンを広くする */
@@ -106,13 +111,15 @@ One of the dominant features of this scheme is that observables, and
 dynamical variables in general, appear in it as quantities which do
 not obey the commutative law of multiplication. It now becomes
 necessary for us to obtain equations to replace the commutative law
-of multiplication, equations that will tell us the value of 7 —§ when
-éand 7 are any two observables or dynamical variables. Only when
+of multiplication, equations that will tell us the value of \(\xi\eta - \eta\xi\) when
+\(\xi\) and \(\eta\) are any two observables or dynamical variables. Only when
 such equations are known shall we have a complete scheme of
 mechanics with which to replace classical mechanics. These new
 equations are called quantum conditions or commutation relations.
+
+</p><p>
 The problem of finding quantum conditions is not of such a general
-character as those we have been concerned with up to the present. Tt
+character as those we have been concerned with up to the present. It
 is instead a special problem which presents itself with each particular
 dynamical system one is called upon to study. There is, however,
 a fairly general method of obtaining quantum conditions, applicable
@@ -120,7 +127,9 @@ to a very large class of dynamical systems. This is the method of
 classical analogy and will form the main theme of the present chapter.
 Those dynamical systems to which this method is not applicable
 must be treated individually and special considerations used in each
-case. .
+case.
+
+<p><p>
 The value of classical analogy in the development of quantum
 mechanics depends on the fact that classical mechanics provides a
 valid description of dynamical systems under certain conditions,
@@ -134,126 +143,164 @@ nature of the analogy between classical and quantum mechanics, we
 may hope to get laws and theorems in quantum mechanies appearing
 as simple generalizations of well-known results in classical mechanics;
 in particular we may hope to get the quantum conditions appearing
-﻿§ 21 POISSON BRACKETS 85
-
 as a simple generalization of the classical law that all dynamical
 variables commute.
 
+</p><p>
 Let us take a dynamical system composed of a number of particles
 in interaction. As independent dynamical variables for dealing with
 the system we may use the Cartesian coordinates of all the particles
 and the corresponding Cartesian components of velocity of the par-
 ticles. It is, however, more convenient to work with the momentum
 components instead of the velocity components. Let us call the
-coordinates q,, 7 going from 1 to three times the number of particles,
-and the corresponding momentum components p,. The q’s and p's
+coordinates \(q_r,r\) going from 1 to three times the number of particles,
+and the corresponding momentum components \(p_r\). The \(q\)'s and \(p\)'s
 are called canonical coordinates and momenta.
 
-The method of Lagrange’s equations of motion involves introdu-
-cing coordinates g, and momenta p, in a more general way, applicable
+</p><p>
+The method of Lagrange's equations of motion involves introdu-
+cing coordinates \(q_r\) and momenta \(p_r\) in a more general way, applicable
 also for a system not composed of particles (e.g. a system containing
-rigid bodies). These more general q’s and p’s are also called canonical
+rigid bodies). These more general \(q\)'s and \(p\)'s are also called canonical
 coordinates and momenta. Any dynamical variable is expressible in
 terms of a set of canonical coordinates and momenta.
 
-An important concept in general dynamical theory is the Powsson
+</p><p>
+An important concept in general dynamical theory is the Poisson
+Bracket. Any two dynamical variables \(u\) and \(v\) have a P.B.(Poisson
+Bracket) which we shall denote by \([u,v]\), defined by
 
-Bracket. Any two dynamical variables u and v have a P.B. (Poisson
-Bracket) which we shall denote by [u,v], defined by
+\[
+[u,v] = \sum_r \left\{\frac{\partial u}{\partial q_r}\frac{\partial v}{\partial p_r} - \frac{\partial u}{\partial p_r}\frac{\partial v}{\partial q_r}\right\}  \tag{1}
+\]
 
-du Ov ou dv
-1
-lw] Ea 6p, ep, 4,’ ”)
-
-u and v being regarded as functions of a set of canonical coordinates
-and momenta g, and :, for the purpose of the differentiations. The
+\(u\) and \(v\) being regarded as functions of a set of canonical coordinates
+and momenta \(q_r\) and \(p_r\) for the purpose of the differentiations. The
 right-hand side of (1) is independent of which set of canonical
 coordinates and momenta are used, this being a consequence of the
 general definition of canonical coordinates and momenta, so the
+P.B. \([u,v]\) is well defined.
 
-P.B. [u,v] is well defined.
+</p><p>
 The main properties of P.B.s, which follow at once from their
-
 detinition (1), are
 
-[vo] = —[», a], (2)
-[u,¢] = 9, (3)
+\[
+\begin{align}
+[u,v] &= —[v,u]  \tag{2} \\
+\\
+[u,c] &= 0  \tag{3}
+\end{align}
+\]
 
-where c is a number (which may be considered as a special case of a
+where \(c\) is a number (which may be considered as a special case of a
 dynamical variable),
 
-[ea-+ ete, 2] = [uy 0] + [tao (4)
-[u, vy-+v,] = [eu o]+[e, v2],
+\[
+\left.
+\begin{align}
+[u_1+u_2, v] &= [u_1,v] + [u_2,v] \\
+\\ 
+[u, v_1+v_2] &= [u,v_1] + [u,v_2]
+\end{align}
+\right\}
+\tag{4}
+\]
 
-3595.57 re
-﻿86 THE QUANTUM CONDITIONS § 21
+\[
+[u_1 u_2, v] = \sum_r \left\{\left(\frac{\partial u_1}{\partial q_r}u_2+u_1\frac{\partial u_2}{\partial q_r}\right)\frac{\partial v}{\partial p_r}
+-\left(\frac{\partial u_1}{\partial p_r}u_2+u_1\frac{\partial u_2}{\partial p_r}\right)\frac{\partial u}{\partial q_e}\right\} \\
+\]
 
-aol Oly OUbg\ Ov OU, Oky al
-Lame, 0| pales aS a0 Jap, \op, 2’ dp, /2q,
-
-= [2,, v]Ug+u[ Us, v], 5
-
-(5)
-[u, % v2] = [w, Xoo +v,[u, v9].
+\[
+\left.
+\begin{align}
+&=[u_1,v]u_2+u_1[u_2,v] \\
+\\
+[u,v_1 v_2] &= [u,v_1]v_2+v_1[u,v_2]
+\end{align}
+\right\} \tag{5}
+\]
 
 Also the identity
 
-[us fo, w]} +L fo, w]]+[w, fu, of] = 0 (6)
-is easily verified. Equations (4) express that the P.B. [u,v] involves
-u and v linearly, while equations (5) correspond to the ordinary rules
+\[
+[u,[v,w]] + [v,[w,u]] + [w,[u,v]] = 0 \tag{6}
+\]
+
+is easily verified. Equations (4) express that the P.B. \([u,v]\) involves
+\(u\) and \(v\) linearly, while equations (5) correspond to the ordinary rules
 for differentiating a product.
 
+</p><p>
 Let us try to introduce a quantum P.B. which shall be the analogtie
 of the classical one. We assume the quantum P.B. to satisfy all the
 conditions (2) to (6), it being now necessary that the order of the
-factors u, and wu, in the first of equations (5) should be preserved
+factors \(u_1\) and \(u_2\) in the first of equations (5) should be preserved
 throughout the equation, as in the way we have here written it, and
-similarly for the v, and v, in the second of equations (5). These condi-
+similarly for the \(v_1\) and \(v_2\) in the second of equations (5). These condi-
 tions are already sufficient to determine the form of the quantum
 P.B. uniquely, as may be seen from the following argument. We can
-
-evaluate the P.B. [u, ug, v v,| in two different ways, since we can use
+evaluate the P.B. \([u_1, u_2, v_1 v_2]\) in two different ways, since we can use
 either of the two formulas (5) first, thus,
 
-[24g Uy, % Vy] = [ey ry Vp jeg + Uy[ Mg, Vy Vo |
-= {[ uy, Myre 0,[ 4, Y2]}4.-+ Uy{[ Ug, ¥ Vg +r[Ue, Vel}
-
-= (2p, Uy [9 Uy +, [ Uy, Vy [Ug-+ Uy[ Uy, Vy Vg Uy Yy[ Ug, V2]
+\[
+\begin{align}
+[u_1 u_2,v_1 v_2] &= [u_1,v_1 v_2]u_2+u_1[u_2,v_1 v_2] \\
+\\
+&= \{[u_1,v_1]v_2+v_1[u_1,v_2]\}u_2+u_1\{[u_2,v_1]v_2+v_1[u_2,v_2]\} \\
+\\
+&=[u_1,v_1]v_2u_2+v_1[u_1,v_2]u_2+u_1[u_2,v_1]v_2+u_1v_1[u_1,v_2]
+\end{align}
+\]
 
 and
-[2y Wy, Vy Vp] = [20 My, % [Ue + 0,[ ey Up, Vy]
 
-== (Uy, Oy Jy Vet tye, Vy Uo +0 [Uy, Ve }lo +, Uy[ ty, Ve].
+\[
+\begin{align}
+[u_1 u_2, v_1 v_2] &= [u_1 u_2,v_1]v_2+v_1[u_1 u_2,v_2] \\
+\\
+&=[u_1,v_1]u_2v_2+u_1[u_2,v_1]v_2+v_1[u_1,v_2]u_2+v_1u_1[u_2,v_2]
+\end{align}
+\]
 
 Equating these two results, we obtain
 
-[Uys Vy](ty Va— Uy Uy) == (Uy p01 Uy) [ Ue, Ve].
-Since this condition holds with u, and v, quite independent of u, and
+\[
+[u_1,v_1](u_2v_2-v_2u_2) = (u_1v_1 - v_1u_1)[u_2,v_2]
+\]
 
-Ve, we must have . ,
-, Uy 01-0, Uy = tL Uy, v4],
+Since this condition holds with \(u_1\) and \(v_1\) quite independent of \(u_2\) and
+\(v_2\), we must have
 
-Uy Vg— Vy Uy = til Uy, Ve],
-where % must not depend on w, and v,, nor on uw and v%, and also
-must commute with (u,v,—v,%,). It follows that 4 must be simply
+\[
+\begin{align}
+u_1v_1 - v_1u_1 &= i\hbar[u_1,v_1] \\
+\\
+u_2v_2 - v_2u_2 &= i\hbar[u_2,v_2]
+\end{align}
+\]
+
+where \(\hbar\) must not depend on \(u_1\) and \(v_1\) nor on \(u_2\) and \(v_2\) and also
+must commute with \((u_1v_1 - v_1u_1)\). It follows that \(\hbar\) must be simply
 a number. We want the P.B. of two real variables to be real, as in
+the classical theory, which requires, from the work at the top of p.28,
+that \(\hbar\) shall be a real number when introduced, as here, with the
+coefficient \(i\). We are thus led to the following definition for the
+quanium P.B.\([u,v]\) of any two variables \(u\) and \(v\),
 
-the classical theory, which requires, from the work at the top of p. 28,
-that % shall be a real number when introduced, as here, with the
-﻿§ 2] POISSON BRACKETS 87
+\[
+uv—vu = i\hbar[u,v]  \tag{7}
+\]
 
-coefficient i. We are thus led to the following definition for the
-quanium P.B. [u,v] of any two variables u and »,
-
-uv—vu = thu, v], (7)
-
-in which #% is a new universal constant. It has the dimensions of
+in which \(\hbar\) is a new universal constant. It has the dimensions of
 action. In order that the theory may agree with experiment, we
-must take 4 equal to h/2:, where h is the universal constant that
-was introduced by Planck, known as Planck’s constant. It is easily
+must take \(\hbar\) equal to \(h/2\pi\), where \(h\) is the universal constant that
+was introduced by Planck, known as Planck's constant. It is easily
 verified that the quantum P.B. satisfies all the conditions (2), (3), (4),
-(5), and (6). :
+(5), and (6).
 
+</p><p>
 The problem of finding quantum conditions now reduces to the
 problem of determining P.B.s in quantum mechanics. The strong
 analogy between the quantum P.B. defined by (7) and the classical
@@ -261,13 +308,33 @@ P.B. defined by (1) leads us to make the assumption that the quantum
 P.B.s, or at any rate the simpler ones of them, have the same values
 ag the corresponding classical P.B.s. The simplest P.B.s are those
 involving the canonical coordinates and momenta themselves and
-have the following values in the classical theory :
+have the following values in the classical theory:
 
-[dr Ps] == Sy.
+\[
+\left.
+\begin{align}
+&[q_r,q_s] = 0,　[p_r,r_s]=0 \\
+\\
+&[q_r,p_s] = \delta_{rs}
+\end{align}
+\right\}
+\tag{8}
+\]
+
 We therefore assume that the corresponding quantum P.B.s also
-
 have the values given by (8). By eliminating the quantum P.B.s
 with the help of (7), we obtain the equations
+
+\[
+\left.
+\begin{align}
+&q_rq_s - q_sq_r = 0,　p_rp_s - p_sp_r = 0 \\
+\\
+&q_rp_s - p_sq_r = i\hbar\delta_{rs}
+\end{align}
+\right\}
+\tag{9}
+\]
 
 Vr Is — Fs Vr =F 0, PrPs—P3Py = 0, (9)
 VPs Ps Ir = 8,5,
@@ -276,27 +343,27 @@ which are the fundamental quantum conditions. They show us where
 the lack of commutability among the canonical coordinates and
 momenta lies. They also provide us with a basis for calculating com-
 mutation relations between other dynamical variables. For instance,
-if € and y are any two functions of the q’s and »’s expressible as
-power series, we may express én—né or [£,], by repeated applica-
+if \(\xi\) and \(\eta\) are any two functions of the \(q\)'s and \(p\)'s expressible as
+power series, we may express \(\xi\eta - \eta\xi\) or \([\xi,\eta]\), by repeated applica-
 tions of the laws (2), (3), (4), and (5), in terms of the elementary
 P.B.s given in (8) and so evaluate it. The result is often, in simple
 cases, the same as the classical result, or departs from the classical
 result only through requiring a special order for factors in a product,
 this order being, of course, unimportant in the classical theory. Even
-when é and 7 are more general functions of the q’s and p’s not ex-
+when \(\xi\) and \(\eta\) are more general functions of the \(q\)'s and \(p\)'s not ex-
 pressible as power series, equations (9) are still sufficient to fix the
-﻿88 THE QUANTUM CONDITIONS § 21
-
-value of £y—7n&, as will become clear from the following work.
+value of \(\xi\eta - \eta\xi\), as will become clear from the following work.
 Equations (9) thus give the solution of the problem of finding the
 quantum conditions, for all those dynamical systems which have a
 classical analogue and which are describable in terms of canonical
 coordinates and momenta. This does not include all possible systems
-in quantum mechanics. ;
+in quantum mechanics.
+
+</p><p>
 Equations (7) and (9) provide the foundation for the analogy
 between quantum mechanics and classical mechanics. They show
 that classical mechanics may be regarded as the limiting case of quantum
-mechanics when fi tends to zero. A P.B. in quantum mechanics is a
+mechanics when \(\hbar\) tends to zero. A P.B. in quantum mechanics is a
 purely algebraic notion and is thus a rather more fundamental con-
 cept than a classical P.B., which can be defined only with reference to
 a set of canonical coordinates and momenta. For this reason canonical
@@ -306,9 +373,11 @@ tum mechanics for which canonical coordinates and momenta do
 not exist and we can still give a meaning to P.B.s. Such a system
 would be one without a classical analogue and we should not be able
 to obtain its quantum conditions by the method here described.
+
+</p><p>
 From equations (9) we see that two variables with different suffixes
-rand s always commute. It follows that any function of q, and p,
-will commute with any function of g, and p, when s differs from r.
+\(r\) and \(s\) always commute. It follows that any function of \(q_r\) and \(p_s\)
+will commute with any function of \(q_s\) and \(p_s\) when \(s\) differs from \(r\).
 Different values of r correspond to different degrees of freedom of the
 dynamical system, so we get the result that dynamical variables
 referring to different degrees of freedom commute. This law, as we have
@@ -318,6 +387,8 @@ we can make a start on the problem of finding quantum conditions
 for dynamical systems for which canonical coordinates and momenta
 do not exist, provided we can give a meaning to different degrees of
 freedom, as we may be able to do with the help of physical insight.
+
+</p><p>
 We can now see the physical meaning of the division, which was
 discussed in the preceding section, of the dynamical variables into
 sets, any member of one set commuting with any member of another.
@@ -326,8 +397,6 @@ one degree of freedom. The division may correspond to the physical
 process of resolving the dynamical system into its constituent parts,
 each constituent being capable of existing by itself as a physical
 system, and the various constituents having to be brought into
-﻿§ 21 POISSON BRACKETS 89
-
 interaction with one another to produce the original system. Alterna-
 tively the division may be merely a mathematical procedure of
 resolving the dynamical system into degrees of freedom which cannot
@@ -335,69 +404,87 @@ be separated physically, e.g. the system consisting of a particle with
 internal structure may be divided into the degrees of freedom deserib-
 ing the motion of the centre of the particle and those describing the
 internal structure.
+</p><p>
 
-22. Schrédinger’s representation
+<h3>22. Schr&ouml;dinger's representation</h3>
+<p>
 
 Let us consider a dynamical system with n degrees of freedom
 having a classical analogue, and thus describable in terms of canonical
-coordinates and momenta q,,p, (r = 1,2,...,.2). We assume that the
-coordinates q, are all observables and have continuous ranges of egen-
+coordinates and momenta \(q_r,p_r (r = 1,2,...,n)\). We assume that the
+coordinates \(q_r\) are all observables and have continuous ranges of egen-
 values, these assumptions being reasonable from the physical signifi-
-cance of the q’s. Let us set up a representation with the q’s diagonal.
-The question arises whether the q’s form a complete commuting set
+cance of the \(q\)'s. Let us set up a representation with the \(q\)'s diagonal.
+The question arises whether the \(q\)'s form a complete commuting set
 for this dynamical system. It seems pretty obvious from inspection
 that they do. We shall here assume that they do, and the assumption
-will be justified later (see top of p. 92). With the q’s forming a
+will be justified later (see top of p. 92). With the \(q\)'s forming a
 complete commuting set, the representation is fixed except for the
 arbitrary phase factors in it.
 
-Let us consider first the case of n = 1, so that there is only one ¢
+</p><p>
+Let us consider first the case of \(n = 1\), so that there is only one \(q\)
+and \(p\), satisfying
 
-and p, satisfying - gp—pq = th. (10)
+\[
+qp—pq = i\hbar  \tag{10}
+\]
 
-Any ket may be written in the standard ket notation $(q)>. From it
-we can form another ket di/dq>, whose representative is the deriva-
+Any ket may be written in the standard ket notation \(\psi(q)\rangle\). From it
+we can form another ket \(d\psi/dq\rangle\), whose representative is the deriva-
 tive of the original one. This new ket is a linear function of the
 original one and is thus the result of some linear operator applied to
-the original one. Calling this linear operator d/dq, we have
+the original one. Calling this linear operator \(d/dq\), we have
 
-ad ds
+\[
+\frac{d}{dq}\psi\rangle = \frac{d\psi}{dq}\rangle  \tag{11}
+\]
 
-—ub> =. 1
+Equation (11) holding for all functions \(\psi\) defines the linear operator
+\(d/dq\). We have
 
-ib =e (qy
-Equation (11) holding for all functions ¢ defines the linear operator
+\[
+\frac{d}{dq}\rangle = 0  \tag{12}
+\]
 
-djdq. We have d
-ip = ° (12)
+</p><p>
+Let us treat the linear operator \(d/dq\) according to the general theory
+of linear operators of §7. We should then be able to apply it to a bra
+\(\langle\phi(q)\), the product \(\langle\phi d/dq\) being defined, according to (3) of §7, by
 
-Let us treat the linear operator d/dq according to the general theory
-of linear operators of § 7. We should then be able to apply it to a bra
-<d(q), the product <¢d/dq being defined, according to (3) of § 7, by
+\[
+\left\{\langle\phi\frac{d}{dq}\right\}\psi\rangle = \langle\phi\left\{\frac{d}{dq}\psi\rangle\right\}  \tag{13}
+\]
 
-(oz \i> = <#fs.99| (13)
-﻿90 THE QUANTUM CONDITIONS § 22
+for all functions \(\psi(q)\). Taking representatives, we get
 
-for all functions 4(q). Taking representatives, we get
+\[
+\int \langle\phi\frac{d}{dq}|q^\prime\rangle dq^\prime\psi(q^\prime) = \int \phi(q^\prime)dq^\prime\frac{d\psi(q^\prime)}{dq^\prime}  \tag{14}
+\]
 
-a, iy, ad
-| egglan ar va) = | a ag BO. (14)
 We can transform the right-hand side by partial ‘steeation and get
-d ‘ ’ ’ .
 
-[#s lg’> dq’ Hq’ ~ (a2 dq’ 41a’), (15)
+\[
+\int \langle\phi\frac{d}{dq}|q^\prime\rangle dq^\prime\psi(q^\prime) = - \int \frac{d\phi(q^\prime)}{dq^\prime}dq^\prime\psi(q^\prime)  \tag{15}
+\]
+
 provided the contributions from the limits of integration vanish.
 This gives '
 
-d
-gs = ie ),
-, _ ib. .
-showing that - <p-— (16)
-g on dg Gig’
+\[
+\langle\phi\frac{d}{dq}|q^\prime\rangle = -\frac{d\phi(q^\prime)}{dq^\prime}
+\]
 
-Thus d/dg operating to the left on the conjugate complex of a wave
-function has the meaning of minus differentiation with respect to q.
+showing that
 
+\[
+\langle\phi\frac{d}{dq} = -\langle\frac{d\phi}{d1}  \tag{16}
+\]
+
+Thus \(d/dq\) operating to the left on the conjugate complex of a wave
+function has the meaning of minus differentiation with respect to \(q\).
+
+</p><p>
 The validity of this result depends on our being able to make the
 passage from (14) to (15), which requires that we must restrict our-
 selves to bras and kets corresponding to wave functions that satisfy
@@ -406,189 +493,275 @@ practice are that they vanish at the boundaries. (Somewhat more
 general conditions will be given in the next section.) These conditions
 do not limit the physical applicability of the theory, but, on the con-
 trary, are usually required also on physical grounds. For example,
-if g is a Cartesian coordinate of a particle, its eigenvalues run from
-—oo to oo, and the physical requirement that the particle has zero
+if \(q\) is a Cartesian coordinate of a particle, its eigenvalues run from
+\(-\infty\) to \(\infty\), and the physical requirement that the particle has zero
 probability of being at infinity leads to the condition that the wave
-function vanishes for g == -Loo.
+function vanishes for \(q = \pm\infty\).
 
-The conjugate complex of the linear operator d/dg can be evaluated
-by noting that the conjugate imaginary of d/dg.%> or dit/dg> is
-<dij/dq, or —<hd/dq from (16). Thus the conjugate complex of d/dq
-is —d/dg, so d/dg is a pure imaginary linear operator.
+</p><p>
+The conjugate complex of the linear operator \(d/dq\) can be evaluated
+by noting that the conjugate imaginary of \(d/dq\).\(\psi\rangle\) or \(d\psi/dq\rangle\) is
+\(\langle d\overline{\psi}d/dq\), or \(-\langle\overline{\psi}d/dq\) from (16). Thus the conjugate complex of \(d/dq\) is \(—d/dq\), so \(d/dq\) is a pure imaginary linear operator.
 
-To get the representative of d/dg we note that, from an application
-of formula (63) of § 20,
+</p><p>
+To get the representative of \(d/dq\) we note that, from an application
+of formula (63) of §20,
 
-I> = — g")>, (17)
+\[
+|q^{\prime\prime}\rangle = \delta(q - q^{\prime\prime})\rangle  \tag{17}
+\]
 
-so that =a" = sla q’)>; (18)
-1
+so that
 
-dh ‘|s-|9"> = =58(q'—9"). 18
+\[
+\frac{d}{dq}|q^{\prime\prime}\rangle = \frac{d}{dq}\delta(q - q^{\prime\prime})\rangle  \tag{18}
+\]
 
-and hence izle aig (q’—q") (19)
+and hence
 
-The representative of d/dq involves the derivative of the 5 function.
-﻿§ 22 SCHRODINGER’S REPRESENTATION 91
+\[
+\langle q^\prime|\frac{d}{dq}|q^{\prime\prime}\rangle = \frac{d}{dq^\prime}\delta(q^\prime - q^{\prime\prime})  \tag{19}
+\]
 
-Let us work out the commutation relation connecting d/dg with q.
+The representative of \(d/dq\) involves the derivative of the \(\delta\) function.
+
+</p><p>
+Let us work out the commutation relation connecting \(d/dq\) with \(q\).
 We have
 
-dS = “ae _
-aq = ag’ az rh. (20)
-Since this holds for any ket i we have
-ad fe
+\[
+\frac{d}{d1}q\psi\rangle = \frac{dq\psi}{dq}\rangle = q\frac{d}{dq}\psi\rangle+\psi\rangle  \tag{20}
+\]
 
-Comparing this result with aoe we see that —iid/dq satisfies the
-same commutation relation with q that p does.
-To extend the foregoing work to the case of arbitrary n, we write
+Since this holds for any ket \(\psi\rangle\), we have
 
-the general ket as $(q,...¢,)> = ~> and introduce the n linear opera-
-tors 8/éq, (r = 1,...,.), which can operate on it in accordance with
+\[
+\frac{d}{dq}q-q\frac{d}{dq}=1  \tag{21}
+\]
 
-the formula aby
-ag; = 7 aq,” 22)
+Comparing this result with aoe we see that \(-i\hbar d/dq\) satisfies the
+same commutation relation with \(q\) that \(p\) does.
+
+</p><p>
+To extend the foregoing work to the case of arbitrary \(n\), we write
+the general ket as \(\psi(q1...q_n)\rangle=\psi\rangle\) and introduce the \(n\) linear opera-
+tors \(\partial/\partial q_r (r = 1,...,n)\), which can operate on it in accordance with
+the formula
+
+\[
+\frac{\partial}{\partial q_r}\psi\rangle = \frac{\partial \psi}{\partial q_r}\rangle  \tag{22}
+\]
+
 corresponding to (11). We have
-a =0 (28)
+
+\[
+\frac{\partial}{\partial q_r}\rangle = 0  \tag{23}
+\]
 
 corresponding to (12). Provided we restrict ourselves to bras and
 kets corresponding to wave functions satisfying suitable boundary
 conditions, these linear menos can operate also on bras, in accor-
-dance with the formula ag
+dance with the formula
 
-$5 aq, ~ eq,
+\[
+\langle\phi\frac{\partial}{\partial q_r} = -\langle\frac{\partial \phi}{\partial q_r}  \tag{24}
+\]
 
-corresponding to (16). Thus @/ég, can operate to the left on the
+corresponding to (16). Thus \(\partial/\partial q_r\) can operate to the left on the
 conjugate complex of a wave function, when it has the meaning of
-minus partial differentiation with respect to g,. We find as before
-that each 0/ég, is a pure imaginary linear operator. Corresponding
+minus partial differentiation with respect to \(q_r\). We find as before
+that each \(\partial/\partial q_r\) is a pure imaginary linear operator. Corresponding
 to (21) we have the commutation relations
 
-a Q
+\[
+\frac{\partial}{\partial q_r} q_s - q_s\frac{\partial}{\partial q_r} = \delta_{rs}  \tag{25}
+\]
 
-(24)
-
-—= 6, 25
-aq "ag, 8,6 (25)
 We have further
-ap a a
->= = > (26)
-(64, cant oq, oq, a4, iq,”
-showing that a? 2 @ (27)
 
-Oq, 9s 245 Ody
-Comparing (25) and (27) with (9), we see that the linear operators
-— ih 8/éq, satisfy the same commutation relations with the qs and with
-each other that the p’s do.
-﻿92 THE QUANTUM CONDITIONS § 22
-
-It would be possible to take
-p, = —iha leq, (28)
-without getting any inconsistency. This possibility enables us to see
-that the q’s must form a complete commuting set of observables,
-
-since it means that any function of the q’s and p’s could be taken
-to be a function of the q’s and —7# 0/éq’s and then could not commute
-
-‘with all the q’s unless it is a function of the q’s only.
-
-The equations (28) do not necessarily hold. But in any case the
-quantities p,-+ 1% 0/éq, each commute with all the q’s, so each of them
-is a function of the q’s, from Theorem 2 of § 19. Thus
-
-Since p, and —72%/éq, are both real, f(g) must be real. For any
-function f of the g’s we have
-
-a 72, Of
-glb =fep+eM,
-a ee (30)
-
-aq, "6g, 8,”
-With the help of (29) we can now deduce the general formula
+\[
+\frac{\partial}{\partial q_r} \frac{\partial}{\partial q_s}\psi\rangle = \frac{\partial^2\psi}{\partial q_r\partial q_s}\rangle = \frac{\partial}{\partial q_s}\frac{\partial}{\partial q_r}\psi\rangle  \tag{26}
+\]
 
 showing that
 
+\[
+\frac{\partial}{\partial q_r}\frac{\partial}{\partial q_s}=\frac{\partial}{\partial q_s}\frac{\partial}{\partial q_r}  \tag{27}
+\]
+ 
+Comparing (25) and (27) with (9), we see that the linear operators
+\(-\hbar\partial/\partial q_r\) satisfy the same commutation relations with the \(q\)'s and with
+each other that the \(p\)'s do.
+
+</p><p>
+It would be possible to take
+
+\[
+p_r = —i\hbar\partial/\partial q_r  \tag{28}
+\]
+
+without getting any inconsistency. This possibility enables us to see
+that the \(q\)'s must form a complete commuting set of observables,
+since it means that any function of the \(q\)'s and \(p\)'s could be taken
+to be a function of the \(q\)'s and \(-i\hbar\partial/\partial q\)'s and then could not commute
+with all the \(q\)'s unless it is a function of the \(q\)'s only.
+
+</p><p>
+The equations (28) do not necessarily hold. But in any case the
+quantities \(p_r+i\hbar\partial/\partial q_r\) each commute with all the \(q\)'s, so each of them
+is a function of the \(q\)'s, from Theorem 2 of §19. Thus
+
+\[
+p_r = -i\hbar \partial / \partial q_r + f_r(q)  \tag{29}
+\]
+
+Since \(p_r\) and \(-i\hbar\partial/\partial q_r\) are both real, \(f_r(q)\) must be real. For any
+function \(f\) of the \(q\)'s we have
+
+\[
+\frac{\partial}{\partial q_r}f\psi\rangle = f\frac{\partial}{\partial q_r}\psi\rangle+\frac{\partial}{\partial q_r}\psi\rangle
+\]
+ 
+showing that
+
+\[
+\frac{\partial}{\partial q_r}f-f\frac{\partial}{\partial q_r}=\frac{\partial f}{\partial q_r}  \tag{30}
+\] 
+
+With the help of (29) we can now deduce the general formula
+
+\[
+p_rf-fp_r = -i\hbar\partial f/\partial q_r  \tag{31}
+\]
+
 This formula may be written in P.B. notation
 
+\[
+[f,p_r] = \partial f/\partial q_r  \tag{32}
+\]
+
 when it is the same as in the classical theory, as follows from (1).
-Multiplying (27) by (—2h)? and substituting for —2h d/ag, and — itt 0/dq,
-their values given by (29), we get
+Multiplying (27) by \((-i\hbar)^2\) and substituting for \(-i\hbar\partial/\partial q_r\) and \(-i\hbar\partial/\partial q_s\) their values given by (29), we get
 
-which reduces, with the help of the quantum condition p,p, = ,P,, to
+\[
+(p_r-f_r)(p_s-f_s)=(p_s-f_s)(p_r-f_r)
+\]
 
-Pritt Ps = Dba tts Pe
+which reduces, with the help of the quantum condition \(p_rp_s = p_sp_r\), to
+
+\[
+p_rf_s+f_rp_s = p_sf_r+f_sp_r
+\]
+
 This reduces further, with the help of (31), to
 
-af.lea, = afl 2de (33)
-showing that the functions f. are all of the form
-J, = &F /6q, (34)
-with F independent of r. Equation (29) now becomes
-Dy, = —1h 0/0q,+0F /Gq,. (35)
+\[
+\partial f_s/\partial q_r = \partial f_r/\partial q_s  \tag{33}
+\]
 
+showing that the functions \(f_r\) are all of the form
+
+\[
+f_r = \partial F/\partial q_r  \tag{34}
+\]
+
+with \(F\) independent of \(r\). Equation (29) now becomes
+
+\[
+p_r = -i\hbar\partial/\partial q_r+\partial F/\partial q_r  \tag{35}
+\]
+
+</p><p>
 We have been working with a representation which is fixed to the
-extent that the g’s must be diagonal in it, but which contains arbitrary
-﻿§ 22 SCHRODINGER’S REPRESENTATION 93
-
-phase factors. If the phase factors are changed, the operators 0/dq,
+extent that the \(q\)'s must be diagonal in it, but which contains arbitrary
+phase factors. If the phase factors are changed, the operators \(\partial/\partial q_r\)
 get changed. It will now be shown that, by a suitable change in the
-phase factors, the function £ in (35) can be made to vanish, so that
+phase factors, the function \(F\) in (35) can be made to vanish, so that
 equations (28) are made to hold.
 
+</p><p>
 Using stars to distinguish quantities referring to the new repre-
 sentation with the new phase factors, we shall have the new basic
 bras connected with the previous ones by
 
-ee Tn* | = OCG Gal (36)
-where y’ = y(q') is a real function of the g’’s. The new representa-
-tive of a ket is ev’ times the old one, showing that e”s>* = J), so
-we get * — ¢-iy) (37)
-as the connexion between the new standard ket and the original one.
-The new linear operator (0/0g,)* satisfies, corresponding to (22),
+\[
+{\langle q_1^\prime...q_n^\prime}^*|=e^{i\gamma^\prime}\langle q_1^\prime...q_n^\prime|  \tag{36}
+\]
 
-a \* eb ., Oxf
-— SH ee EN ety
-(er og, aq,”
+where \(\gamma^\prime = \gamma(q^\prime)\) is a real function of the \(q^\prime\)'s. The new representa-
+tive of a ket is \(e^{i\gamma^\prime}\) times the old one, showing that \(e^{i\gamma}\psi\rangle^* = \psi\rangle\) so we get
+
+\[
+\rangle^* = e^{-i\gamma}\rangle  \tag{37}
+\]
+
+as the connexion between the new standard ket and the original one.
+The new linear operator \((\partial/\partial q_r)^*\) satisfies, corresponding to (22),
+
+\[
+\left(\frac{\partial}{\partial q_r}\right)^*\psi\rangle^* =
+\frac{\partial \psi}{\partial q_r}\rangle^* = e^{-i\gamma}\frac{\partial\psi}{\partial q_r}\rangle
+\]
+
 with the help of (37). Using (22), this gives
 
-( Q \"w _ ow —_ ctr opy",
+\[
+\left(\frac{\partial}{\partial q_r}\right)^*\psi\rangle^* = e^{-i\gamma}\frac{\partial}{\partial q_r}\psi\rangle = e^{-i\gamma}\frac{\partial}{\partial q_r}e^{i\gamma}\psi\rangle^*
+\]
 
-24, q
-showing that (=) = enity2_ ety, (38)
+showing that
+
+\[
+\left(\frac{\partial}{\partial q_r}\right)^*=e^{-i\gamma}\frac{\partial}{\partial q_r}e^{i\gamma}  \tag{38}
+\]
+
 or, with the help of (30),
-(=) -3 im, (39)
-éq,} ~ &q,-" a,
-By choosing y so that F = fiy+ a constant, (40)
-(35) becomes , = —th(d/aq,)*. (41)
 
-Equation (40) fixes y except for an arbitrary constant, so the repre-
+\[
+\left(\frac{\partial}{\partial q_r}\right)^*=\frac{\partial}{\partial q_r}+i\frac{\partial\gamma}{\partial q_r}  \tag{39}
+\]
+
+By choosing \(\gamma\) so that
+
+\[
+F = \hbar\gamma+ a\; constant  \tag{40}
+\]
+
+(35) becomes
+
+\[
+p_r = -i\hbar(\partial/\partial q_r)^*  \tag{41}
+\]
+
+Equation (40) fixes \(\gamma\) except for an arbitrary constant, so the repre-
 sentation is fixed except for an arbitrary constant phase factor.
 
+</p><p>
 In this way we see that a representation can be set up in which
-the q’s are diagonal and equations (28) hold. This representation is
-a very useful one for many problems. It will be called Schrédinger’s
-representation, as it was the representation in terms of which Schro-
-dinger gave his original formulation of quantum mechanics in 1926.
-Schrédinger’s representation exists whenever one has canonical q’s
-and p’s, and is completely determined by these q’s and p’s except for
+the \(q\)'s are diagonal and equations (28) hold. This representation is
+a very useful one for many problems. It will be called Schr&ouml;dinger's
+representation, as it was the representation in terms of which Schr&ouml;dinger gave his original formulation of quantum mechanics in 1926.
+Schr&ouml;dinger's representation exists whenever one has canonical \(q\)'s
+and \(p\)'s, and is completely determined by these \(q\)'s and \(p\)'s except for
 an arbitrary constant phase factor. It owes its great convenience to
 its allowing one to express immediately any algebraic function of the
-﻿94 THE QUANTUM CONDITIONS § 22
+\(q\)'s and \(p\)'s of the form of a power series in the \(p\)'s as an operator of
+differentiation, e.g. if \(f(q_1,...,q_n,p_1,...p_n)\) is such a function, we have
 
-q’s and p’s of the form of a power series in the p’s as an operator of
-differentiation, e.g. if f(q;.---.¢ns Di---» Pn) is such a function, we have
-
-FQaves Une Pres Pn) = AQ Uns — 4 2/8Qq —ih d/éq,,), (42)
+\[
+f(q_1,...,q_n,p_1,...,p_n) = f(q_1,...,q_n,-i\hbar\partial/\partial q_1,...,-i\hbar\partial/\partial q_n)  \tag{42}
+\]
 
 provided we preserve the order of the factors in a product on substi-
-tuting the —ih 0/d9’s for the p’s.
+tuting the —ih 0/d9's for the p's.
 From (23) and (28), we have
 
 Dry == 0. | (43)
 
-Thus the standard ket in Schrédinger’s representation is characterized
+Thus the standard ket in Schr&omul;dinger's representation is characterized
 by the condition that it is a simultaneous eigenket of all the momenta
 belonging to the eigenvalues zero. Some properties of the basic
-vectors of Schrédinger’s representation may also be noted. Equation
+vectors of Schr&ouml;dinger's representation may also be noted. Equation
 (22) gives ,
 
 Oh WG dn) ecg al by.
@@ -608,45 +781,44 @@ Pride Ir? = thee 91-+-Gn>- (46)
 
 Let us take a system with one degree of freedom, describable in
 terms of a g and p with the eigenvalues of g running from —oco to 00,
-and let us take an eigenket |p’> of p. Its representative in the Schré-
-dinger representation, <q'jp’>, satisfies
+and let us take an eigenket |p'> of p. Its representative in the Schr&ouml;dinger representation, <q'jp'>, satisfies
 
 f f t ‘ t 7 d , t
-Pip) = @'\plp> = ear Ip’?
+Pip) = @'\plp> = ear Ip'?
 with the help of (45) applied to the case of one degree of freedom.
-The solution of this differential equation for <q'|p’> is
-<q |p’) = o erat, (47)
-where c’ = c(p’) is independent of g’, but may involve 7’.
+The solution of this differential equation for <q'|p'> is
+<q |p') = o erat, (47)
+where c' = c(p') is independent of g', but may involve 7'.
 
-The representative <q'|p’> does not satisfy the boundary conditions
-of vanishing at g’ = -.oo. This gives rise to some difficulty, which
-﻿§ 23 THE MOMENTUM REPRESENTATION 95
+The representative <q'|p'> does not satisfy the boundary conditions
+of vanishing at g' = -.oo. This gives rise to some difficulty, which
+﻿§23 THE MOMENTUM REPRESENTATION 95
 
 shows itself up most directly in the failure of the orthogonality
 theorem. If we take a second eigenket |p”) of p with representative
 
 q'lp"> =e" alt,
 
-belonging to a different eigenvalue p’, we shall have
+belonging to a different eigenvalue p', we shall have
 
-<p'lp"> = [ <p'la’> da’ <a'ip"> = ce" | etw'-77H da’. (48)
+<p'lp"> = [ <p'la'> da' <a'ip"> = ce" | etw'-77H da'. (48)
 This integral does not converge according to the usual definition of
 convergence. To bring the theory into order, we adopt a new defini-
 tion of convergence of an integral whose domain extends to infinity,
 analogous to the Cesaro definition of the sum of an infinite series.
 With this new definition, an integral whose value to the upper limit
-q7’ is of the form cosaq’ or sinag’, with a a real number not zero, is
-counted as zero when q’ tends to infinity, i.e. we take the mean value
-of the oscillations, and similarly for the lower limit of gq’ tending to
+q7' is of the form cosaq' or sinag', with a a real number not zero, is
+counted as zero when q' tends to infinity, i.e. we take the mean value
+of the oscillations, and similarly for the lower limit of gq' tending to
 minus infinity. This makes the right-hand side of (48) vanish for
-p” # p’, 30 that the orthogonality theorem is restored. Also it makes
+p” # p', 30 that the orthogonality theorem is restored. Also it makes
 the right-hand sides of (13) and (14) equal when <¢ and > are eigen-
 vectors of p, so that eigenvectors of p become permissible vectors to
 use with the operator d/dg. Thus the boundary conditions that the
 representative of a permissible bra or ket has to satisfy become
-extended to allow the representative to oscillate like cos.aq’ or sin.aq’
-as q’ goes to infinity or minus infinity.
-For p” very close to p’, the right-hand side of (48) involves a 6
+extended to allow the representative to oscillate like cos.aq' or sin.aq'
+as q' goes to infinity or minus infinity.
+For p” very close to p', the right-hand side of (48) involves a 6
 function. To evaluate it, we need the formula
 
 J eter dg = Ir 8(a) (49)
@@ -662,10 +834,10 @@ shows that we get the same result if instead of the limits g and —g
 we put g, and —g,, and then let g, and g, tend to infinity in different
 ways (not too widely different). This shows the equivalence of both
 sides of (49) as factors in an integrand, which proves the formula.
-﻿96 THE QUANTUM CONDITIONS § 23
+﻿96 THE QUANTUM CONDITIONS §23
 With the help of (49), (48) becomes
 
-= |c’|?h8(p'—p"). (50)
+= |c'|?h8(p'—p"). (50)
 
 We have obtained an eigenket of p belonging to any real eigenvalue
 p', its representative being given by (47). Any ket |X) can be ex-
@@ -687,107 +859,107 @@ q = thdjdp, (51)
 
 the operator d/dp being defined by a procedure similar to that used
 for d/dg. This representation will be called the momentum representa-
-tion. It is less useful than the previous Schrédinger representation
-because, while the Schrédinger representation enables one to express
+tion. It is less useful than the previous Schr&ouml;dinger representation
+because, while the Schr&ouml;dinger representation enables one to express
 as an operator of differentiation any function of g and p that is a
 power series in p, the momentum representation enables one so to
 express any function of g and » that is a power series in g, and the
 important quantities in dynamics are almost always power series in
 gp but are often not power series in g. All the same the momentum
-representation is of value for certain problems (see § 50).
+representation is of value for certain problems (see §50).
 
-Let us calculate the transformation function <q’ |p’> connecting the
-two representations. The basic kets |’) of the momentum representa-
-tion are eigenkets of p and their Schrédinger representatives <q'|p’>
-are given by (47) with the coefficients c’ suitably chosen. The phase
+Let us calculate the transformation function <q' |p'> connecting the
+two representations. The basic kets |') of the momentum representa-
+tion are eigenkets of p and their Schr&ouml;dinger representatives <q'|p'>
+are given by (47) with the coefficients c' suitably chosen. The phase
 factors of these basic kets must be chosen so as to make (51) hold.
 The easiest way to bring in this condition is to use the symmetry
-between g and p referred to above, according to which <q‘|p’> must
-go over into <p’lq’> if we interchange q’ and yp’ and write —2 for 7.
-Now <q'|p’> is equal to the right-hand side of (47) and <p’|q’> to the
-﻿§ 23 THE MOMENTUM REPRESENTATION 97
+between g and p referred to above, according to which <q‘|p'> must
+go over into <p'lq'> if we interchange q' and yp' and write —2 for 7.
+Now <q'|p'> is equal to the right-hand side of (47) and <p'|q'> to the
+﻿§23 THE MOMENTUM REPRESENTATION 97
 
-conjugate complex expression, and hence c’ must be independent of
-p'. Thus c’ is just a number c. Further, we must have
+conjugate complex expression, and hence c' must be independent of
+p'. Thus c' is just a number c. Further, we must have
 
 <p'|p"> = 8(p'—p"),
 which shows, on comparison with (50), that |c] = A-?. We can choose
 the arbitrary constant phase factor in either representation so as to
 make c = h-?, and we then get
-<q' ip’) = h-tetpain (52)
+<q' ip') = h-tetpain (52)
 for the transformation function. .
 
 The foregoing work may easily be generalized to a system with
-n degrees of freedom, describable in terms of n q’s and p’s, with the
+n degrees of freedom, describable in terms of n q's and p's, with the
 eigenvalues of each g running from —co to oo. Each p will then be
 an observable with eigenvalues running from —co to oo, and there
-will be symmetry between the set of q’s and the set of p’s, the
+will be symmetry between the set of q's and the set of p's, the
 
 - commutation relations remaining invariant if we interchange each q,
 
 with the corresponding p, and write —z for 7. A momentum repre-
-sentation can be set up in which the p’s are diagonal and each
+sentation can be set up in which the p's are diagonal and each
 
-The transformation function connecting it with the Schrédinger
+The transformation function connecting it with the Schr&ouml;dinger
 representation will be given by the product of the transformation
 
 functions for each degree of freedom separately, as is shown by
-formula (67) of § 20, and will thus be
+formula (67) of §20, and will thus be
 
 Ti Ga--Un| Pt PoP = GIP Ga P2>+- Gn Pn
 a= A 2hP +P htt PG Hh, (54)
 
-24. Heisenberg’s principle of uncertainty
-For a system with one degree of freedom, the Schrédinger and the
+24. Heisenberg's principle of uncertainty
+For a system with one degree of freedom, the Schr&ouml;dinger and the
 momentum representatives of a ket |X> are connected by
 
 oO
 
-<p'|X> = he# | eth dg’ <q'|X),
+<p'|X> = he# | eth dg' <q'|X),
 | “: | (55)
-<q'|X> = b+ [ ef? dp’ (p'|X).
+<q'|X> = b+ [ ef? dp' (p'|X).
 
 These formulas have an elementary significance. They show that
 either of the representatives is given, apart from numerical coefficients,
 by the amplitudes of the Fourier components of the other.
 
-It is interesting to apply (55) to a ket whose Schrédinger repre-
+It is interesting to apply (55) to a ket whose Schr&ouml;dinger repre-
 sentative consists of what is called a wave packet. This is a function
-﻿98 THE QUANTUM CONDITIONS § 24
+﻿98 THE QUANTUM CONDITIONS §24
 
 whose value is very small everywhere outside a certain domain, of
-width Aq’ say, and inside this domain is approximately periodic with
+width Aq' say, and inside this domain is approximately periodic with
 a definite frequency.t Ifa Fourier analysis is made of such a wave
 packet, the amplitude of all the Fourier components will be small,
 except those in the neighbourhood of the definite frequency. The
 components whose amplitudes are not small will fill up a frequencyt
-band whose width is of the order 1/Ag’, since two components whose
+band whose width is of the order 1/Ag', since two components whose
 frequencies differ by this amount, if in phase in the middle of the
-domain Aq’, will be just out of phase and interfering at the ends of
+domain Aq', will be just out of phase and interfering at the ends of
 this domain. Now in the first of equations (55) the variable
-(2:r)-1'/% = p'/h plays the part of frequency. Thus with <q’ |X of the
-form of a wave packet, the function <p’|X>, being composed of the
+(2:r)-1'/% = p'/h plays the part of frequency. Thus with <q' |X of the
+form of a wave packet, the function <p'|X>, being composed of the
 amplitudes of the Fourier components of the wave packet, will be
-small everywhere in the p’-space outside a certain domain of width
-Ap’ = h/Aq'.
+small everywhere in the p'-space outside a certain domain of width
+Ap' = h/Aq'.
 
 Let us now apply the physical interpretation of the square of the
 modulus of the representative of a ket as a probability. We find that
 our wave packet represents a state for which a measurement of ¢ is
-almost certain to lead to a result lying in a domain of width Ag’ and
+almost certain to lead to a result lying in a domain of width Ag' and
 a measurement of p is almost certain to lead to a result lying in a
-domain of width Ap’. We may say that for this state ¢ has a definite
-value with an error of order Ag’ and p: has a definite value with an
-error of order Ap’. The product of these two errors is
+domain of width Ap'. We may say that for this state ¢ has a definite
+value with an error of order Ag' and p: has a definite value with an
+error of order Ap'. The product of these two errors is
 
-Aq'Ap’ = h. (56)
+Aq'Ap' = h. (56)
 
 Thus the more accurately one of the variables g,p has a definite
 value, the less accurately the other has a definite value. For a system
 with several degrees of freedom, equation (56) applies to each degree
 of freedom separately.
 
-Equation (56) is known as Hetsenberg’s Principle of Uncertainty.
+Equation (56) is known as Hetsenberg's Principle of Uncertainty.
 It shows clearly the limitations in the possibility of simultaneously
 assigning numerical values, for any particular state, to two non-
 commuting observables, when those observables are a canonical co-
@@ -798,30 +970,30 @@ can be assigned simultaneously to all observables, may be a valid
 approximation when h can be considered as small enough to be
 
 { Frequency here means reciprocal of wave-length.
-﻿§ 24 HEISENBERG’S PRINCIPLE OF UNCERTAINTY 99
+﻿§24 HEISENBERG'S PRINCIPLE OF UNCERTAINTY 99
 
 negligible. Hquation (56) holds only in the most favourable case,
 which oceurs when the representative of the state is of the form of a
-wave packet. Other forms of representative would lead to a Aq’ and
-Ap’ whose product is larger than h.
+wave packet. Other forms of representative would lead to a Aq' and
+Ap' whose product is larger than h.
 
-Heisenberg’s principle of uncertainty shows that, in the limit when
+Heisenberg's principle of uncertainty shows that, in the limit when
 either q or p is completely determined, the other is completely
 undetermined. This result can also be obtained directly from the
-transformation function <q'\p’>. According to the end of § 18,
-l<q’|p’> |? dq’ is proportional to the probability of g having a value in
-the small range from q’ to q’+-dq' for the state for which p certainly
-has the value p’, and from (52) this probability is independent of q‘
-for a given dq’. Thus if p certainly has a definite value p’, all values
+transformation function <q'\p'>. According to the end of §18,
+l<q'|p'> |? dq' is proportional to the probability of g having a value in
+the small range from q' to q'+-dq' for the state for which p certainly
+has the value p', and from (52) this probability is independent of q‘
+for a given dq'. Thus if p certainly has a definite value p', all values
 of q are equally probable. Similarly, if g certainly has a definite value
-q’, all values of » are equally probable.
+q', all values of » are equally probable.
 
 It is evident physically that a state for which all values of g are
 equally probable, or one for which all values of p are equally probable,
 cannot be attained in practice, in the first case because of limitations
 of size and in the second because of limitations of energy. Thus an
 eigenstate of p or an eigenstate of g cannot be attained in practice.
-The argument at the end of § 12 already showed that such eigenstates
+The argument at the end of §12 already showed that such eigenstates
 are unattainable, because of the infinite precision that would be
 needed to set them up, and we now have another argument leading
 to the same conclusicn.
@@ -843,7 +1015,7 @@ The displacement of a state or observable is a perfectly definite
 process physically. Thus to displace a state or observable through a
 distance 6x in the direction of the z-axis, we should merely have to
 displace all the apparatus used in preparing the state, or all the
-﻿100 THE QUANTUM CONDITIONS § 25
+﻿100 THE QUANTUM CONDITIONS §25
 
 apparatus required to measure the observable, through the distance
 5z in the direction of the z-axis, and the displaced apparatus would
@@ -889,7 +1061,7 @@ arbitrary phase factor to be multiplied into all of them.
 The condition that linear equations between the kets remain in-
 variant under the displacement and that an equation such as (58)
 holds whenever the corresponding (57) holds, means that the dis-
-﻿§ 25 DISPLACEMENT OPERATORS 101
+﻿§25 DISPLACEMENT OPERATORS 101
 
 placed kets are linear functions of the undisplaced kets and thus each
 displaced ket | Pd) is the result of some linear operator applied to the
@@ -934,7 +1106,7 @@ Since |Pd> can be any ket, we must have
 vg = DvD-, (63)
 
 3895-57 H
-﻿192 THE QUANTUM CONDITIONS § 25
+﻿192 THE QUANTUM CONDITIONS §25
 
 which shows that the linear operator ) determines the displacement
 of dynamical variables as well as that of kets and bras. Note that
@@ -954,7 +1126,7 @@ jim (D—1)/8x (64)
 
 shall exist. This limit is a linear operator which we shall call the
 displacement operator for the x-direction and denote by d,. The
-arbitrary numerical factor e’” with y real which we may multiply
+arbitrary numerical factor e'” with y real which we may multiply
 into D must be made to tend to unity as da — 0 and then introduces
 an arbitrariness in d,, namely, d, may be replaced by
 
@@ -982,7 +1154,7 @@ dynamical variables: the Cartesian coordinates x, y,z of the centre of
 mass of the system, the components p,, p,, p, of the total momentum
 of the system, which are the canonical momenta conjugate to x,y,z
 respectively, and any dynamical variables needed for describing
-﻿§ 25 DISPLACEMENT OPERATORS 103
+﻿§25 DISPLACEMENT OPERATORS 103
 
 internal degrees of freedom of the system. If we suppose a piece
 of apparatus which has been set up to measure z, to be displaced a
@@ -1025,18 +1197,18 @@ sider the equation ot = Ua-1, (70)
 as expressing a transformation from any linear operator « to a
 corresponding linear operator «*, and as such it has rather remarkable
 properties. In the first place it should be noted that each a* has the
-same eigenvalues as the corresponding q; since, if a’ is any eigenvalue
-of « and |«’> is an eigenket belonging to it, we have
-ala”> = a’ la"
+same eigenvalues as the corresponding q; since, if a' is any eigenvalue
+of « and |«'> is an eigenket belonging to it, we have
+ala”> = a' la"
 and hence
-a*U la’) = UxUU la’) = Uala’> = a'U |’),
-﻿104 THE QUANTUM CONDITIONS § 26
+a*U la') = UxUU la') = Uala'> = a'U |'),
+﻿104 THE QUANTUM CONDITIONS §26
 
-showing that U|a’> is an eigenket of «* belonging to the same eigen-
-value a’, and similarly any eigenvalue of «* may be shown to be also
-an eigenvalue of «. Further, if we take several «’s that are connected
+showing that U|a'> is an eigenket of «* belonging to the same eigen-
+value a', and similarly any eigenvalue of «* may be shown to be also
+an eigenvalue of «. Further, if we take several «'s that are connected
 by algebraic equations and transform them all according to (70), the
-corresponding a*’s will be connected by the same algebraic equations.
+corresponding a*'s will be connected by the same algebraic equations.
 This result follows from the fact that the fundamental algebraic pro-
 cesses of addition and multiplication are left invariant by the trans-
 formation (70), as is shown. by the following equations:
@@ -1051,7 +1223,7 @@ requirement that any real « transforms into a real «*. Equation
 (70) may be written wt = Una. (71)
 
 Taking the conjugate complex of both sides in accordance with
-(5) of § 8 we find, if « and «* are both real,
+(5) of §8 we find, if « and «* are both real,
 
 Oa* = aU. (72)
 Equation (71) givesus  UatU = TUa
@@ -1076,7 +1248,7 @@ A matrix or linear operator U that satisfies (73) and (74) is said
 to be unitary and a transformation (70) with unitary U is called a
 unitary transformation. A unitary transformation transforms real
 linear operators into real linear operators and leaves invariant any
-﻿§ 26 UNITARY TRANSFORMATIONS 105
+﻿§26 UNITARY TRANSFORMATIONS 105
 
 algebraic equation between linear operators. It may be considered
 as applying also to kets and bras, in accordance with the equations
@@ -1087,7 +1259,7 @@ operators, kets, and bras. It transforms eigenvectors of « into eigen-
 vectors of «*. From this one can easily deduce that it transforms an
 observable into an observable and that it leaves invariant any func-
 tional relation between observables based on the general definition
-of a function given in § 11.
+of a function given in §11.
 
 The inverse of a unitary transformation is also a unitary trans-
 formation, since from (74), if U is unitary, U-1 is also unitary.
@@ -1111,17 +1283,17 @@ is shown by equations (62), (63), corresponding to equations (73),
 In classical mechanics one can make a transformation from the
 canonical coordinates and momenta q,, p, (r = 1,..,”) to a new set of
 variables g*, p* (r = 1,..,”) satisfying the same P.B. relations as the
-q’s and p’s, i.e. equations (8) of § 21 with g*’s and p*’s replacing the
-g’sand p’s, and can express all dynamical variables in terms of the g*’s
-and p*’s. The g*’s and p*’s are then also called canonical coordinates
+q's and p's, i.e. equations (8) of §21 with g*'s and p*'s replacing the
+g'sand p's, and can express all dynamical variables in terms of the g*'s
+and p*'s. The g*'s and p*'s are then also called canonical coordinates
 and momenta and the transformation is called a contact transforma-
 tion. One can easily verify that the P.B. of any two dynamical
-variables u and v is correctly given by formula (1) of § 21 with g*’s and
-p*’s instead of q’s and p’s, so that the P.B. relationship is invariant
+variables u and v is correctly given by formula (1) of §21 with g*'s and
+p*'s instead of q's and p's, so that the P.B. relationship is invariant
 under a contact transformation. This results in the new canonical
 coordinates and momenta being on the same footing as the original
 ones for many purposes of general dynamical theory, even though the
-﻿106 THE QUANTUM CONDITIONS § 26
+﻿106 THE QUANTUM CONDITIONS §26
 
 new coordinates g* may not be a set of Lagrangian coordinates but
 may be functions of the Lagrangian coordinates and velocities.
@@ -1137,43 +1309,43 @@ coordinates and momenta, the analogy between the two kinds of
 transformation holds. To establish it, we note that a unitary trans-
 formation applied to the quantum variables g,, p, gives new variables .
 g*, p* satisfying the same P.B. relations, since the P.B. relations are
-equivalent to the algebraic relations (9) of § 21 and algebraic relations
+equivalent to the algebraic relations (9) of §21 and algebraic relations
 are left invariant by a unitary transformation. Conversely, any real
 variables 9*, p* satisfying the P.B. relations for canonical coordinates
 and momenta are connected with the q,,p, by a unitary transforma-
 tion, as is shown by the following argument.
-| We use the Schrédinger representation, and write the basic ket
-l0---Gn> a8 |g’> for brevity. Since we are assuming that the g*, p*
+| We use the Schr&ouml;dinger representation, and write the basic ket
+l0---Gn> a8 |g'> for brevity. Since we are assuming that the g*, p*
 satisfy the P.B. relations for canonical coordinates and momenta,
 we can set up a Schrodinger representation referring to them, with
 the g* diagonal and each p* equal to —ik /ég*. The basic kets in
-this second Schrédinger representation will be |g#’...¢%>, which we
+this second Schr&ouml;dinger representation will be |g#'...¢%>, which we
 write |q*'> for brevity. Now introduce the linear operator U defined by
 
-<q*'|U|q’> = 8(g*’—4’), (77)
+<q*'|U|q'> = 8(g*'—4'), (77)
 
-where 5(¢*’—g’) is short for
-8(q*—9') = 8a’ —91)8(GF — 9)... 8(Gh' — Ga) (78)
+where 5(¢*'—g') is short for
+8(q*—9') = 8a' —91)8(GF — 9)... 8(Gh' — Ga) (78)
 
 The conjugate complex of (77) is
-<q |Tlg*’> = 8" —q'),
+<q |Tlg*'> = 8" —q'),
 
 and hencet
 | <7 TU 9"> = | <@'ITlg*"> dg® <g*"|Ulg">
-| = ii 8(g*’—q') dq*’ 8(g*’—4"')
+| = ii 8(g*'—q') dq*' 8(g*'—4"')
 = 8(q'—9"),
 so that UU = 1.
 
-+ We use the notation of a single integral sign and dg*’ to denote an integral over
-all the variables gi’, qi’,..., g%’.. This abbreviation will be used also in future work.
-﻿§ 26 UNITARY TRANSFORMATIONS 107
++ We use the notation of a single integral sign and dg*' to denote an integral over
+all the variables gi', qi',..., g%'.. This abbreviation will be used also in future work.
+﻿§26 UNITARY TRANSFORMATIONS 107
 
 Thus U is a unitary operator. We have further
-<a gr U |g’) = aF'5(q*'—9')
+<a gr U |g') = aF'5(q*'—9')
 and <q Ug, ig'> = 8(q*—9')4,-
 
 The right-hand sides of these two equations are equal on account of -
-the property of the 5 function (11) of § 15, and hence
+the property of the 5 function (11) of §15, and hence
 
 qr U = Ug,
 or g* = Ug, U-1.
@@ -1203,7 +1375,7 @@ a® = (ltteF )a(1—teF),
 
 which gives a*—a = te(Fa—at). (79)
 It may be written in P.B. notation
-a*—a = efifa, F’]. (80)
+a*—a = efifa, F']. (80)
 
 If « is a canonical coordinate or momentum, this is formally the same
 as a Classical infinitesimal contact transformation.

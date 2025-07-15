@@ -102,8 +102,8 @@
     </style>
     </head>
     <body>
-        <h1><center>IV THE QUANTUM CONDITIONS<br>量子条件</center></h1>
-<h2>21. Poisson brackets　ポアソン括弧式</h2>
+        <h1><center>IV THE QUANTUM CONDITIONS<br><span style="color: blue;">量子条件</span></center></h1>
+<h2>21. Poisson brackets　<span style="color: blue;">ポアソン括弧式</span></h2>
 <p>
 Our work so far has consisted in setting up a general mathematical
 scheme connecting states and observables in quantum mechanics.
@@ -117,6 +117,9 @@ such equations are known shall we have a complete scheme of
 mechanics with which to replace classical mechanics. These new
 equations are called quantum conditions or commutation relations.
 
+<br><span style="color: blue;">
+これまでの我々の研究は、量子力学における状態と観測量を結びつける一般的な数学的枠組みを構築することであった。この枠組みの主要な特徴の一つは、観測量、そして一般的な力学変数が、乗法の交換法則に従わない量として現れることである。そこで、乗法の交換法則に代わる方程式、すなわち、\(\xi\) と \(\eta\) が任意の2つの観測量または力学変数であるときに、\(\xi\eta - \eta\xi\) の値を与える方程式を得ることが必要となる。このような方程式が得られた時に初めて、古典力学に代わる完全な力学枠組みが得られる。これらの新しい方程式は、量子条件または交換関係と呼ばれる。
+</span>
 </p><p>
 The problem of finding quantum conditions is not of such a general
 character as those we have been concerned with up to the present. It
@@ -129,6 +132,9 @@ Those dynamical systems to which this method is not applicable
 must be treated individually and special considerations used in each
 case.
 
+<br><span style="color: blue;">
+量子条件を見つける問題は、これまで我々が扱ってきたような一般的な性質のものではありません。むしろ、研究対象となる個々の力学系に特有の問題です。しかしながら、非常に多くの種類の力学系に適用可能な、量子条件を得るためのかなり一般的な方法があります。これが古典的アナロジー法であり、本章の主題となります。この方法が適用できない力学系については、個別に扱い、それぞれのケースに特別な考慮を払う必要があります。
+</span>
 <p><p>
 The value of classical analogy in the development of quantum
 mechanics depends on the fact that classical mechanics provides a
@@ -146,6 +152,9 @@ in particular we may hope to get the quantum conditions appearing
 as a simple generalization of the classical law that all dynamical
 variables commute.
 
+<br><span style="color: blue;">
+量子力学の発展における古典力学の類推の価値は、ある条件下において、力学系を構成する粒子や物体の質量が観測に伴う擾乱を無視できるほど十分大きい場合、古典力学が力学系の有効な記述を与えるという事実に依存している。したがって、古典力学は量子力学の極限ケースでなければならない。したがって、古典力学の重要な概念は量子力学の重要な概念に対応することが期待され、古典力学と量子力学の類推の一般的な性質を理解することで、量子力学の法則や定理が古典力学のよく知られた結果の単純な一般化として現れることが期待できる。特に、量子条件が、すべての力学変数が可換であるという古典力学の法則の単純な一般化として現れることが期待できる。
+</span>
 </p><p>
 Let us take a dynamical system composed of a number of particles
 in interaction. As independent dynamical variables for dealing with
@@ -157,6 +166,9 @@ coordinates \(q_r,r\) going from 1 to three times the number of particles,
 and the corresponding momentum components \(p_r\). The \(q\)'s and \(p\)'s
 are called canonical coordinates and momenta.
 
+<br><span style="color: blue;">
+相互作用する多数の粒子からなる力学系を考えてみましょう。この系を扱うための独立した力学変数として、すべての粒子の直交座標と、それに対応する粒子の速度の直交座標成分を使用することができます。しかし、速度成分ではなく運動量成分を扱う方が便利です。粒子数の1倍から3倍までの座標を \(q_r,r\) と呼び、それに対応する運動量成分を \(p_r\) と呼びましょう。\(q\) と \(p\) はそれぞれ正準座標と運動量と呼ばれます。
+</span>
 </p><p>
 The method of Lagrange's equations of motion involves introdu-
 cing coordinates \(q_r\) and momenta \(p_r\) in a more general way, applicable
@@ -165,10 +177,17 @@ rigid bodies). These more general \(q\)'s and \(p\)'s are also called canonical
 coordinates and momenta. Any dynamical variable is expressible in
 terms of a set of canonical coordinates and momenta.
 
+<br><span style="color: blue;">
+ラグランジュの運動方程式法では、より一般的な方法で座標 \(q_r\) と運動量 \(p_r\) を導入し、粒子を含まない系（例えば剛体を含む系）にも適用できます。これらのより一般的な \(q\) と \(p\) は、正準座標と運動量とも呼ばれます。あらゆる力学変数は、正準座標と運動量の集合で表現できます。
+</span>
 </p><p>
 An important concept in general dynamical theory is the Poisson
 Bracket. Any two dynamical variables \(u\) and \(v\) have a P.B.(Poisson
 Bracket) which we shall denote by \([u,v]\), defined by
+
+<br><span style="color: blue;">
+一般力学理論における重要な概念にポアソン括弧があります。任意の2つの力学変数 \(u\) と \(v\) には、\([u,v]\) と表記されるポアソン括弧 (P.B.) があり、次のように定義されます。
+</span>
 
 \[
 [u,v] = \sum_r \left\{\frac{\partial u}{\partial q_r}\frac{\partial v}{\partial p_r} - \frac{\partial u}{\partial p_r}\frac{\partial v}{\partial q_r}\right\}  \tag{1}
@@ -181,9 +200,16 @@ coordinates and momenta are used, this being a consequence of the
 general definition of canonical coordinates and momenta, so the
 P.B. \([u,v]\) is well defined.
 
+<br><span style="color: blue;">
+微分のために、\(u\) と \(v\) は、正準座標と運動量 \(q_r\) と \(p_r\) の関数とみなされます。(1) の右辺は、どの正準座標と運動量の組が使用されるかに依存しません。これは、正準座標と運動量の一般的な定義の帰結であり、したがって、P.B. \([u,v]\) は明確に定義されます。
+</span>
 </p><p>
 The main properties of P.B.s, which follow at once from their
 detinition (1), are
+
+<br><span style="color: blue;">
+P.B.の主な特性は、定義(1)からすぐにわかるように、
+</span>
 
 \[
 \begin{align}
@@ -195,6 +221,10 @@ detinition (1), are
 
 where \(c\) is a number (which may be considered as a special case of a
 dynamical variable),
+
+<br><span style="color: blue;">
+ここで \(c\) は数値（力学変数の特別なケースとみなされる）であり、
+</span>
 
 \[
 \left.
@@ -224,6 +254,10 @@ dynamical variable),
 
 Also the identity
 
+<br><span style="color: blue;">
+恒等式
+</span>
+
 \[
 [u,[v,w]] + [v,[w,u]] + [w,[u,v]] = 0 \tag{6}
 \]
@@ -232,6 +266,9 @@ is easily verified. Equations (4) express that the P.B. \([u,v]\) involves
 \(u\) and \(v\) linearly, while equations (5) correspond to the ordinary rules
 for differentiating a product.
 
+<br><span style="color: blue;">
+も簡単に検証できる。式(4)は、P.B. \([u,v]\)が\(u\)と\(v\)を線形に含むことを表しており、式(5)は積を微分するための通常の規則に対応している。
+</span>
 </p><p>
 Let us try to introduce a quantum P.B. which shall be the analogtie
 of the classical one. We assume the quantum P.B. to satisfy all the
@@ -243,6 +280,10 @@ tions are already sufficient to determine the form of the quantum
 P.B. uniquely, as may be seen from the following argument. We can
 evaluate the P.B. \([u_1, u_2, v_1 v_2]\) in two different ways, since we can use
 either of the two formulas (5) first, thus,
+
+<br><span style="color: blue;">
+古典力学モデルに類似した量子力学モデルを導入してみよう。量子力学モデルは条件(2)から(6)までをすべて満たすものと仮定する。ここで、式(5)の最初の式における因子\(u_1\)と\(u_2\)の順序は、ここで示したように式全体を通して維持される必要がある。また、式(5)の2番目の式における\(v_1\)と\(v_2\)についても同様である。これらの条件は、以下の議論からわかるように、量子力学モデルの形を一意に決定するのに十分である。\([u_1, u_2, v_1 v_2]\)は、2つの異なる方法で評価することができる。なぜなら、2つの式(5)のどちらかを最初に使用できるからである。
+</span>
 
 \[
 \begin{align}
@@ -256,6 +297,10 @@ either of the two formulas (5) first, thus,
 
 and
 
+<br><span style="color: blue;">
+および
+</span>
+
 \[
 \begin{align}
 [u_1 u_2, v_1 v_2] &= [u_1 u_2,v_1]v_2+v_1[u_1 u_2,v_2] \\
@@ -266,12 +311,20 @@ and
 
 Equating these two results, we obtain
 
+<br><span style="color: blue;">
+これら2つの結果を等しくすると、
+</span>
+
 \[
 [u_1,v_1](u_2v_2-v_2u_2) = (u_1v_1 - v_1u_1)[u_2,v_2]
 \]
 
 Since this condition holds with \(u_1\) and \(v_1\) quite independent of \(u_2\) and
 \(v_2\), we must have
+
+<br><span style="color: blue;">
+この条件は \(u_1\) と \(v_1\) については \(u_2\) と \(v_2\) とは全く独立して成り立つので、
+</span>
 
 \[
 \begin{align}
@@ -287,7 +340,11 @@ a number. We want the P.B. of two real variables to be real, as in
 the classical theory, which requires, from the work at the top of p.28,
 that \(\hbar\) shall be a real number when introduced, as here, with the
 coefficient \(i\). We are thus led to the following definition for the
-quanium P.B.\([u,v]\) of any two variables \(u\) and \(v\),
+quantum P.B.\([u,v]\) of any two variables \(u\) and \(v\),
+
+<br><span style="color: blue;">
+ここで、\(\hbar\) は \(u_1\) と \(v_1\) にも \(u_2\) と \(v_2\) にも依存せず、また \((u_1v_1 - v_1u_1)\) と可換でなければならない。したがって、\(\hbar\) は単なる数でなければならない。古典理論では、28ページ冒頭の研究によれば、\(\hbar\) は、ここでのように係数 \(i\) を用いて導入される場合には実数となることが必要であるが、2つの実変数の P.B. は実数となるべきである。したがって、任意の2つの変数 \(u\) と \(v\) の量子 P.B..\([u,v]\) は次のように定義される。
+</span>
 
 \[
 uv—vu = i\hbar[u,v]  \tag{7}
@@ -300,6 +357,9 @@ was introduced by Planck, known as Planck's constant. It is easily
 verified that the quantum P.B. satisfies all the conditions (2), (3), (4),
 (5), and (6).
 
+<br><span style="color: blue;">
+ここで、\(\hbar\) は新しい普遍定数です。これは作用の次元を持ちます。理論が実験と一致するためには、\(\hbar\) を \(h/2\pi\) と等しくする必要があります。ここで、\(h\) はプランクによって導入された普遍定数で、プランク定数として知られています。量子 P.B. が条件 (2)、(3)、(4)、(5)、(6) をすべて満たすことは簡単に検証できます。
+</span>
 </p><p>
 The problem of finding quantum conditions now reduces to the
 problem of determining P.B.s in quantum mechanics. The strong
@@ -309,6 +369,10 @@ P.B.s, or at any rate the simpler ones of them, have the same values
 ag the corresponding classical P.B.s. The simplest P.B.s are those
 involving the canonical coordinates and momenta themselves and
 have the following values in the classical theory:
+
+<br><span style="color: blue;">
+量子条件を見つける問題は、量子力学におけるP.B.を決定する問題へと帰着する。(7)で定義される量子P.B.と(1)で定義される古典P.B.との間の強い類似性から、量子P.B.、あるいは少なくともその中でより単純なものは、対応する古典P.B.と同じ値を持つという仮定が導かれる。最も単純なP.B.は、正準座標と運動量自身を含むものであり、古典理論において以下の値を持つ。
+</span>
 
 \[
 \left.
@@ -325,6 +389,10 @@ We therefore assume that the corresponding quantum P.B.s also
 have the values given by (8). By eliminating the quantum P.B.s
 with the help of (7), we obtain the equations
 
+<br><span style="color: blue;">
+したがって、対応する量子P.B.も(8)で与えられた値を持つと仮定する。(7)を用いて量子P.B.を消去すると、以下の式が得られる。
+</span>
+
 \[
 \left.
 \begin{align}
@@ -336,8 +404,6 @@ with the help of (7), we obtain the equations
 \tag{9}
 \]
 
-Vr Is — Fs Vr =F 0, PrPs—P3Py = 0, (9)
-VPs Ps Ir = 8,5,
 
 which are the fundamental quantum conditions. They show us where
 the lack of commutability among the canonical coordinates and
@@ -359,6 +425,10 @@ classical analogue and which are describable in terms of canonical
 coordinates and momenta. This does not include all possible systems
 in quantum mechanics.
 
+<br><span style="color: blue;">
+これらは基本的な量子条件である。これらは、正準座標と運動量の間の可換性の欠如がどこにあるのかを教えてくれる。また、他の力学変数間の交換関係を計算するための基礎も提供する。例えば、\(\xi\) と \(\eta\) が \(q\) と \(p\) のべき級数として表現可能な任意の2つの関数である場合、(2)、(3)、(4)、および(5)の法則を(8)で与えられた基本的なP.B.を用いて繰り返し適用することにより、\(\xi\eta - \eta\xi\) または \([\xi,\eta]\) を表現することができ、それを評価することができる。単純なケースでは、結果は古典的な結果と同じになることが多いが、積の因数に特別な順序を要求するという点のみで古典的な結果から逸脱する。もちろん、この順序は古典理論では重要ではない。 \(\xi\) と \(\eta\) が \(q\) と \(p\) のより一般的な関数であり、冪級数として表せない場合でも、式 (9) は \(\xi\eta - \eta\xi\) の値を確定するのに十分であり、これは以下の研究で明らかになる。
+したがって、式 (9) は、古典的な類似体を持ち、正準座標と運動量で記述可能なすべての力学系に対して、量子条件を求める問題の解を与える。これは量子力学におけるすべての可能な系を網羅しているわけではない。
+</span>
 </p><p>
 Equations (7) and (9) provide the foundation for the analogy
 between quantum mechanics and classical mechanics. They show
@@ -374,6 +444,9 @@ not exist and we can still give a meaning to P.B.s. Such a system
 would be one without a classical analogue and we should not be able
 to obtain its quantum conditions by the method here described.
 
+<br><span style="color: blue;">
+式(7)および式(9)は、量子力学と古典力学の類似性の基礎を提供する。これらは、\(\hbar\)がゼロに近づくとき、古典力学は量子力学の極限ケースとみなせることを示している。量子力学におけるP.B.は純粋に代数的な概念であり、したがって、一連の正準座標と運動量を参照してのみ定義できる古典的なP.B.よりもかなり基本的な概念である。このため、正準座標と運動量は、古典力学よりも量子力学において重要度が低い。実際、量子力学には正準座標と運動量が存在しない系が存在する可能性があり、それでもP.B.に意味を与えることができる。このような系は古典的な類似系を持たない系であり、ここで述べた方法ではその量子条件を得ることはできないはずである。
+</span>
 </p><p>
 From equations (9) we see that two variables with different suffixes
 \(r\) and \(s\) always commute. It follows that any function of \(q_r\) and \(p_s\)
@@ -388,6 +461,10 @@ for dynamical systems for which canonical coordinates and momenta
 do not exist, provided we can give a meaning to different degrees of
 freedom, as we may be able to do with the help of physical insight.
 
+<br><span style="color: blue;">
+式(9)から、異なる接尾辞を持つ2つの変数\(r\)と\(s\)は常に可換であることがわかる。したがって、\(q_r\)と\(p_s\)の任意の関数は、\(s\)が\(r\)と異なる場合、\(q_s\)と\(p_s\)の任意の関数と可換である。
+異なるrの値は力学系の異なる自由度に対応するため、異なる自由度を参照する力学変数は可換であるという結果が得られる。(9)から導出したこの法則は、古典的な類似体を持つ力学系についてのみ証明されているが、一般に成立すると仮定する。このようにして、物理的洞察の助けを借りて異なる自由度に意味を与えることができれば、正準座標と運動量が存在しない力学系に対する量子条件を見つける問題に取り組むことができる。
+</span>
 </p><p>
 We can now see the physical meaning of the division, which was
 discussed in the preceding section, of the dynamical variables into
@@ -404,12 +481,16 @@ be separated physically, e.g. the system consisting of a particle with
 internal structure may be divided into the degrees of freedom deserib-
 ing the motion of the centre of the particle and those describing the
 internal structure.
+
+<br><span style="color: blue;">
+前の節で論じた、力学変数を集合に分割し、ある集合の任意の要素が他の集合の任意の要素と可換となることの物理的な意味が、これで理解できる。各集合は特定の自由度、あるいはおそらくは1つの自由度に対応する。この分割は、力学系を構成要素に分解する物理的プロセスに対応するのかもしれない。この場合、各構成要素は単独で物理系として存在することができ、元の系を形成するためには、様々な構成要素が互いに相互作用する必要がある。あるいは、この分割は、力学系を物理的に分離できない自由度に分解する単なる数学的手順であるのかもしれない。例えば、内部構造を持つ粒子からなる系は、粒子中心の運動を表す自由度と内部構造を記述する自由度に分割される。
+</span>
 </p><p>
 
-<h3>22. Schr&ouml;dinger's representation</h3>
+<h3>22. Schr&ouml;dinger's representation　<span style="color: blue;">シュレーディンガーの表現</span></h3>
 <p>
 
-Let us consider a dynamical system with n degrees of freedom
+Let us consider a dynamical system with \(n\) degrees of freedom
 having a classical analogue, and thus describable in terms of canonical
 coordinates and momenta \(q_r,p_r (r = 1,2,...,n)\). We assume that the
 coordinates \(q_r\) are all observables and have continuous ranges of egen-
@@ -422,9 +503,16 @@ will be justified later (see top of p. 92). With the \(q\)'s forming a
 complete commuting set, the representation is fixed except for the
 arbitrary phase factors in it.
 
+<br><span style="color: blue;">
+\(n\) 自由度の力学系を考えてみましょう。この力学系は古典的な類似系を持ち、したがって正準座標と運動量 \(q_r,p_r (r = 1,2,...,n)\) で記述可能です。座標 \(q_r\) はすべて観測可能で、自乗値の連続的な範囲を持つと仮定します。これらの仮定は、\(q\) の物理的な意味から妥当です。\(q\) の対角線を用いた表現を設定してみましょう。この力学系において、\(q\) が完全な可換集合を形成するかどうかという疑問が生じます。一見すると、そうであることは明らかです。ここではそうであると仮定しますが、この仮定は後で正当化されます (92ページ冒頭を参照)。 \(q\) が完全な可換集合を形成する場合、その表現は任意の位相因子を除いて固定されます。
+</span>
 </p><p>
 Let us consider first the case of \(n = 1\), so that there is only one \(q\)
 and \(p\), satisfying
+
+<br><span style="color: blue;">
+まず \(n = 1\) の場合を考えてみましょう。この場合、\(q\) と \(p\) は 1 つしか存在せず、
+</span>
 
 \[
 qp—pq = i\hbar  \tag{10}
@@ -436,12 +524,20 @@ tive of the original one. This new ket is a linear function of the
 original one and is thus the result of some linear operator applied to
 the original one. Calling this linear operator \(d/dq\), we have
 
+<br><span style="color: blue;">
+任意のケットは標準的なケット記法\(\psi(q)\rangle\)で表記できる。そこから別のケット\(d\psi/dq\rangle\)を形成でき、その代表は元のケットの微分となる。この新しいケットは元のケットの線形関数であり、したがって、元のケットに何らかの線形演算子を適用した結果である。この線形演算子を\(d/dq\)と呼ぶと、
+</span>
+
 \[
 \frac{d}{dq}\psi\rangle = \frac{d\psi}{dq}\rangle  \tag{11}
 \]
 
 Equation (11) holding for all functions \(\psi\) defines the linear operator
 \(d/dq\). We have
+
+<br><span style="color: blue;">
+式(11)はすべての関数\(\psi\)に対して成り立ち、線形演算子\(d/dq\)を定義する。
+</span>
 
 \[
 \frac{d}{dq}\rangle = 0  \tag{12}
@@ -452,30 +548,52 @@ Let us treat the linear operator \(d/dq\) according to the general theory
 of linear operators of §7. We should then be able to apply it to a bra
 \(\langle\phi(q)\), the product \(\langle\phi d/dq\) being defined, according to (3) of §7, by
 
+<br><span style="color: blue;">
+線型作用素 \(d/dq\) を §7 の線型作用素の一般理論に従って扱う。すると、それをブラ
+\(\langle\phi(q)\) に適用できる。積 \(\langle\phi d/dq\) は、§7 の (3) に従って、次のように定義される。
+</span>
+
 \[
 \left\{\langle\phi\frac{d}{dq}\right\}\psi\rangle = \langle\phi\left\{\frac{d}{dq}\psi\rangle\right\}  \tag{13}
 \]
 
 for all functions \(\psi(q)\). Taking representatives, we get
 
+<br><span style="color: blue;">
+すべての関数\(\psi(q)\)に対して、代表値をとると、
+</span>
+
 \[
 \int \langle\phi\frac{d}{dq}|q^\prime\rangle dq^\prime\psi(q^\prime) = \int \phi(q^\prime)dq^\prime\frac{d\psi(q^\prime)}{dq^\prime}  \tag{14}
 \]
 
-We can transform the right-hand side by partial ‘steeation and get
+We can transform the right-hand side by partial integration and get
+
+<br><span style="color: blue;">
+右辺を部分積分で変形すると、
+</span>
 
 \[
 \int \langle\phi\frac{d}{dq}|q^\prime\rangle dq^\prime\psi(q^\prime) = - \int \frac{d\phi(q^\prime)}{dq^\prime}dq^\prime\psi(q^\prime)  \tag{15}
 \]
 
 provided the contributions from the limits of integration vanish.
-This gives '
+This gives
+
+<br><span style="color: blue;">
+積分の極限からの寄与がゼロであると仮定する。
+これは
+</span>
 
 \[
 \langle\phi\frac{d}{dq}|q^\prime\rangle = -\frac{d\phi(q^\prime)}{dq^\prime}
 \]
 
 showing that
+
+<br><span style="color: blue;">
+以下になる
+</span>
 
 \[
 \langle\phi\frac{d}{dq} = -\langle\frac{d\phi}{d1}  \tag{16}
@@ -484,6 +602,9 @@ showing that
 Thus \(d/dq\) operating to the left on the conjugate complex of a wave
 function has the meaning of minus differentiation with respect to \(q\).
 
+<br><span style="color: blue;">
+したがって、波動関数の共役複素数上で左に作用する \(d/dq\) は \(q\) に関してマイナス微分の意味を持ちます。
+</span>
 </p><p>
 The validity of this result depends on our being able to make the
 passage from (14) to (15), which requires that we must restrict our-
@@ -498,14 +619,24 @@ if \(q\) is a Cartesian coordinate of a particle, its eigenvalues run from
 probability of being at infinity leads to the condition that the wave
 function vanishes for \(q = \pm\infty\).
 
+<br><span style="color: blue;">
+この結果の妥当性は、(14) から (15) へ移行できるかどうかに依存しており、そのためには、適切な境界条件を満たす波動関数に対応するブラ関数とケット関数に限定する必要があります。実際に通常成立する条件は、境界で波動関数が消滅することです。(より一般的な条件は次のセクションで示します。) これらの条件は理論の物理的な適用性を制限するものではなく、むしろ物理的な根拠からも通常は要求されます。例えば、粒子の直交座標を \(q\) とすると、その固有値は \(-\infty\) から \(\infty\) までの範囲をとり、粒子が無限遠に存在する確率がゼロであるという物理的要求から、波動関数が \(q = \pm\infty\) に対して消滅するという条件が導かれます。
+</span>
 </p><p>
 The conjugate complex of the linear operator \(d/dq\) can be evaluated
 by noting that the conjugate imaginary of \(d/dq\).\(\psi\rangle\) or \(d\psi/dq\rangle\) is
 \(\langle d\overline{\psi}d/dq\), or \(-\langle\overline{\psi}d/dq\) from (16). Thus the conjugate complex of \(d/dq\) is \(—d/dq\), so \(d/dq\) is a pure imaginary linear operator.
 
+<br><span style="color: blue;">
+線型演算子 \(d/dq\) の共役複素数は、\(d/dq\).\(\psi\rangle\) または \(d\psi/dq\rangle\) の共役虚数が (16) より \(\langle d\overline{\psi}d/dq\) または \(-\langle\overline{\psi}d/dq\) となることに着目することで評価できます。したがって、\(d/dq\) の共役複素数は \(—d/dq\) となり、\(d/dq\) は純虚線型演算子となります。
+</span>
 </p><p>
 To get the representative of \(d/dq\) we note that, from an application
 of formula (63) of §20,
+
+<br><span style="color: blue;">
+\(d/dq\) の代表値を得るために、§20の式(63)を適用して、
+</span>
 
 \[
 |q^{\prime\prime}\rangle = \delta(q - q^{\prime\prime})\rangle  \tag{17}
@@ -513,11 +644,19 @@ of formula (63) of §20,
 
 so that
 
+<br><span style="color: blue;">
+よって
+</span>
+
 \[
 \frac{d}{dq}|q^{\prime\prime}\rangle = \frac{d}{dq}\delta(q - q^{\prime\prime})\rangle  \tag{18}
 \]
 
 and hence
+
+<br><span style="color: blue;">
+そしてそれゆえ
+</span>
 
 \[
 \langle q^\prime|\frac{d}{dq}|q^{\prime\prime}\rangle = \frac{d}{dq^\prime}\delta(q^\prime - q^{\prime\prime})  \tag{19}
@@ -525,15 +664,26 @@ and hence
 
 The representative of \(d/dq\) involves the derivative of the \(\delta\) function.
 
+<br><span style="color: blue;">
+\(d/dq\) の代表には \(\delta\) 関数の微分が含まれます。
+</span>
 </p><p>
 Let us work out the commutation relation connecting \(d/dq\) with \(q\).
 We have
+
+<br><span style="color: blue;">
+\(d/dq\) と \(q\) を結びつける交換関係を解いてみましょう。
+</span>
 
 \[
 \frac{d}{d1}q\psi\rangle = \frac{dq\psi}{dq}\rangle = q\frac{d}{dq}\psi\rangle+\psi\rangle  \tag{20}
 \]
 
 Since this holds for any ket \(\psi\rangle\), we have
+
+<br><span style="color: blue;">
+これは任意のケット\(\psi\rangle\)に当てはまるので、
+</span>
 
 \[
 \frac{d}{dq}q-q\frac{d}{dq}=1  \tag{21}
@@ -542,17 +692,28 @@ Since this holds for any ket \(\psi\rangle\), we have
 Comparing this result with aoe we see that \(-i\hbar d/dq\) satisfies the
 same commutation relation with \(q\) that \(p\) does.
 
+<br><span style="color: blue;">
+この結果をaoeと比較すると、\(-i\hbar d/dq\)は\(p\)と同じように\(q\)との交換関係を満たすことがわかります。
+</span>
 </p><p>
 To extend the foregoing work to the case of arbitrary \(n\), we write
 the general ket as \(\psi(q1...q_n)\rangle=\psi\rangle\) and introduce the \(n\) linear opera-
 tors \(\partial/\partial q_r (r = 1,...,n)\), which can operate on it in accordance with
 the formula
 
+<br><span style="color: blue;">
+これまでの研究を任意の \(n\) の場合に拡張するために、一般ケットを \(\psi(q1...q_n)\rangle=\psi\rangle\) と書き、\(n\) 個の線形演算子 \(\partial/\partial q_r (r = 1,...,n)\) を導入し、次の式に従って作用させる。
+</span>
+
 \[
 \frac{\partial}{\partial q_r}\psi\rangle = \frac{\partial \psi}{\partial q_r}\rangle  \tag{22}
 \]
 
 corresponding to (11). We have
+
+<br><span style="color: blue;">
+(11)に対応する。
+</span>
 
 \[
 \frac{\partial}{\partial q_r}\rangle = 0  \tag{23}
@@ -562,6 +723,10 @@ corresponding to (12). Provided we restrict ourselves to bras and
 kets corresponding to wave functions satisfying suitable boundary
 conditions, these linear menos can operate also on bras, in accor-
 dance with the formula
+
+<br><span style="color: blue;">
+(12) に対応する。適切な境界条件を満たす波動関数に対応するブラとケットに限定すれば、これらの線型メノはブラにも作用し、次の式が成り立つ。
+</span>
 
 \[
 \langle\phi\frac{\partial}{\partial q_r} = -\langle\frac{\partial \phi}{\partial q_r}  \tag{24}
@@ -573,17 +738,29 @@ minus partial differentiation with respect to \(q_r\). We find as before
 that each \(\partial/\partial q_r\) is a pure imaginary linear operator. Corresponding
 to (21) we have the commutation relations
 
+<br><span style="color: blue;">
+(16) に対応する。したがって、\(\partial/\partial q_r\) は、\(q_r\) に関する負の偏微分の意味を持つ場合、波動関数の共役複素数に対して左方向に作用することができる。前と同様に、各 \(\partial/\partial q_r\) は純虚線型作用素であることがわかる。(21) に対応する交換関係が成り立つ。
+</span>
+
 \[
 \frac{\partial}{\partial q_r} q_s - q_s\frac{\partial}{\partial q_r} = \delta_{rs}  \tag{25}
 \]
 
 We have further
 
+<br><span style="color: blue;">
+さらに
+</span>
+
 \[
 \frac{\partial}{\partial q_r} \frac{\partial}{\partial q_s}\psi\rangle = \frac{\partial^2\psi}{\partial q_r\partial q_s}\rangle = \frac{\partial}{\partial q_s}\frac{\partial}{\partial q_r}\psi\rangle  \tag{26}
 \]
 
 showing that
+
+<br><span style="color: blue;">
+以下になる
+</span>
 
 \[
 \frac{\partial}{\partial q_r}\frac{\partial}{\partial q_s}=\frac{\partial}{\partial q_s}\frac{\partial}{\partial q_r}  \tag{27}
@@ -593,8 +770,16 @@ Comparing (25) and (27) with (9), we see that the linear operators
 \(-\hbar\partial/\partial q_r\) satisfy the same commutation relations with the \(q\)'s and with
 each other that the \(p\)'s do.
 
+<br><span style="color: blue;">
+(25) と (27) を (9) と比較すると、線型作用素
+\(-\hbar\partial/\partial q_r\) は、\(p\) と同様に、\(q\) と、また互いに同じ交換関係を満たすことがわかる。
+</span>
 </p><p>
 It would be possible to take
+
+<br><span style="color: blue;">
+以下を取ることも可能だろう
+</span>
 
 \[
 p_r = —i\hbar\partial/\partial q_r  \tag{28}
@@ -606,10 +791,18 @@ since it means that any function of the \(q\)'s and \(p\)'s could be taken
 to be a function of the \(q\)'s and \(-i\hbar\partial/\partial q\)'s and then could not commute
 with all the \(q\)'s unless it is a function of the \(q\)'s only.
 
+<br><span style="color: blue;">
+矛盾が生じることなく。この可能性から、\(q\) は観測可能な量の完全な可換集合を形成しなければならないことがわかります。
+なぜなら、\(q\) と \(p\) の任意の関数は、\(q\) と \(-i\hbar\partial/\partial q\) の関数と見なすことができ、\(q\) のみの関数でない限り、すべての \(q\) と可換になることはできないからです。
+</span>
 </p><p>
 The equations (28) do not necessarily hold. But in any case the
 quantities \(p_r+i\hbar\partial/\partial q_r\) each commute with all the \(q\)'s, so each of them
 is a function of the \(q\)'s, from Theorem 2 of §19. Thus
+
+<br><span style="color: blue;">
+(28)式は必ずしも成立するわけではない。しかしいずれにせよ、\(p_r+i\hbar\partial/\partial q_r\)の各量はすべての\(q\)と可換であり、したがって、§19の定理2より、それぞれは\(q\)の関数となる。したがって、
+</span>
 
 \[
 p_r = -i\hbar \partial / \partial q_r + f_r(q)  \tag{29}
@@ -618,11 +811,19 @@ p_r = -i\hbar \partial / \partial q_r + f_r(q)  \tag{29}
 Since \(p_r\) and \(-i\hbar\partial/\partial q_r\) are both real, \(f_r(q)\) must be real. For any
 function \(f\) of the \(q\)'s we have
 
+<br><span style="color: blue;">
+\(p_r\) と \(-i\hbar\partial/\partial q_r\) はどちらも実数なので、\(f_r(q)\) も実数でなければならない。\(q\) の任意の関数 \(f\) に対して、
+</span>
+
 \[
 \frac{\partial}{\partial q_r}f\psi\rangle = f\frac{\partial}{\partial q_r}\psi\rangle+\frac{\partial}{\partial q_r}\psi\rangle
 \]
  
 showing that
+
+<br><span style="color: blue;">
+以下になる
+</span>
 
 \[
 \frac{\partial}{\partial q_r}f-f\frac{\partial}{\partial q_r}=\frac{\partial f}{\partial q_r}  \tag{30}
@@ -630,11 +831,19 @@ showing that
 
 With the help of (29) we can now deduce the general formula
 
+<br><span style="color: blue;">
+(29) の助けを借りて、我々は一般式を導くことができる。
+</span>
+
 \[
 p_rf-fp_r = -i\hbar\partial f/\partial q_r  \tag{31}
 \]
 
 This formula may be written in P.B. notation
+
+<br><span style="color: blue;">
+この式はP.B.記法で書くことができる。
+</span>
 
 \[
 [f,p_r] = \partial f/\partial q_r  \tag{32}
@@ -643,11 +852,20 @@ This formula may be written in P.B. notation
 when it is the same as in the classical theory, as follows from (1).
 Multiplying (27) by \((-i\hbar)^2\) and substituting for \(-i\hbar\partial/\partial q_r\) and \(-i\hbar\partial/\partial q_s\) their values given by (29), we get
 
+<br><span style="color: blue;">
+古典理論の場合と同じ場合、(1)から次の式が得られる。
+(27)式に\((-i\hbar)^2\)を掛け、\(-i\hbar\partial/\partial q_r\)と\(-i\hbar\partial/\partial q_s\)に(29)式で与えられた値を代入すると、次式が得られる。
+</span>
+
 \[
 (p_r-f_r)(p_s-f_s)=(p_s-f_s)(p_r-f_r)
 \]
 
 which reduces, with the help of the quantum condition \(p_rp_s = p_sp_r\), to
+
+<br><span style="color: blue;">
+これは量子条件\(p_rp_s = p_sp_r\)の助けを借りて、次のように帰着する。
+</span>
 
 \[
 p_rf_s+f_rp_s = p_sf_r+f_sp_r
@@ -655,17 +873,29 @@ p_rf_s+f_rp_s = p_sf_r+f_sp_r
 
 This reduces further, with the help of (31), to
 
+<br><span style="color: blue;">
+これを（31）の助けを借りてさらに簡約すると、
+</span>
+
 \[
 \partial f_s/\partial q_r = \partial f_r/\partial q_s  \tag{33}
 \]
 
 showing that the functions \(f_r\) are all of the form
 
+<br><span style="color: blue;">
+関数\(f_r\)はすべて次の形式であることを示す
+</span>
+
 \[
 f_r = \partial F/\partial q_r  \tag{34}
 \]
 
 with \(F\) independent of \(r\). Equation (29) now becomes
+
+<br><span style="color: blue;">
+ここで、\(F\)は\(r\)に依存しない。式(29)は
+</span>
 
 \[
 p_r = -i\hbar\partial/\partial q_r+\partial F/\partial q_r  \tag{35}
@@ -679,10 +909,17 @@ get changed. It will now be shown that, by a suitable change in the
 phase factors, the function \(F\) in (35) can be made to vanish, so that
 equations (28) are made to hold.
 
+<br><span style="color: blue;">
+これまで、\(q\) が対角行列となる程度には固定されているものの、任意の位相因子を含む表現を扱ってきました。位相因子が変更されると、演算子 \(\partial/\partial q_r\) も変更されます。ここで、位相因子を適切に変更することで、(35) の関数 \(F\) をゼロにすることができ、その結果、式 (28) が成立することを示します。
+</span>
 </p><p>
 Using stars to distinguish quantities referring to the new repre-
 sentation with the new phase factors, we shall have the new basic
 bras connected with the previous ones by
+
+<br><span style="color: blue;">
+新しい位相因子を用いた新しい表現を参照する量を区別するために星印を使用することで、新しい基本ブラを以前のものと次のように結び付けることができる。
+</span>
 
 \[
 {\langle q_1^\prime...q_n^\prime}^*|=e^{i\gamma^\prime}\langle q_1^\prime...q_n^\prime|  \tag{36}
@@ -691,12 +928,21 @@ bras connected with the previous ones by
 where \(\gamma^\prime = \gamma(q^\prime)\) is a real function of the \(q^\prime\)'s. The new representa-
 tive of a ket is \(e^{i\gamma^\prime}\) times the old one, showing that \(e^{i\gamma}\psi\rangle^* = \psi\rangle\) so we get
 
+<br><span style="color: blue;">
+ここで\(\gamma^\prime = \gamma(q^\prime)\)は\(q^\prime\)の実関数である。ケットの新しい代表値は\(e^{i\gamma^\prime}\)×古い値となり、\(e^{i\gamma}\psi\rangle^* = \psi\rangle\)となるので、
+</span>
+
 \[
 \rangle^* = e^{-i\gamma}\rangle  \tag{37}
 \]
 
 as the connexion between the new standard ket and the original one.
 The new linear operator \((\partial/\partial q_r)^*\) satisfies, corresponding to (22),
+
+<br><span style="color: blue;">
+新しい標準ケットと元のケットの間の接続として。
+新しい線形演算子 \((\partial/\partial q_r)^*\) は、(22) に対応して、
+</span>
 
 \[
 \left(\frac{\partial}{\partial q_r}\right)^*\psi\rangle^* =
@@ -705,11 +951,19 @@ The new linear operator \((\partial/\partial q_r)^*\) satisfies, corresponding t
 
 with the help of (37). Using (22), this gives
 
+<br><span style="color: blue;">
+(37) の助けを借りて、(22) を用いると、
+</span>
+
 \[
 \left(\frac{\partial}{\partial q_r}\right)^*\psi\rangle^* = e^{-i\gamma}\frac{\partial}{\partial q_r}\psi\rangle = e^{-i\gamma}\frac{\partial}{\partial q_r}e^{i\gamma}\psi\rangle^*
 \]
 
 showing that
+
+<br><span style="color: blue;">
+以下になる
+</span>
 
 \[
 \left(\frac{\partial}{\partial q_r}\right)^*=e^{-i\gamma}\frac{\partial}{\partial q_r}e^{i\gamma}  \tag{38}
@@ -717,17 +971,29 @@ showing that
 
 or, with the help of (30),
 
+<br><span style="color: blue;">
+あるいは、(30) の助けを借りて、
+</span>
+
 \[
 \left(\frac{\partial}{\partial q_r}\right)^*=\frac{\partial}{\partial q_r}+i\frac{\partial\gamma}{\partial q_r}  \tag{39}
 \]
 
 By choosing \(\gamma\) so that
 
+<br><span style="color: blue;">
+\(\gamma\) を選択して
+</span>
+
 \[
 F = \hbar\gamma+ a\; constant  \tag{40}
 \]
 
 (35) becomes
+
+<br><span style="color: blue;">
+(35) は 以下のようになる
+</span>
 
 \[
 p_r = -i\hbar(\partial/\partial q_r)^*  \tag{41}
@@ -736,6 +1002,9 @@ p_r = -i\hbar(\partial/\partial q_r)^*  \tag{41}
 Equation (40) fixes \(\gamma\) except for an arbitrary constant, so the repre-
 sentation is fixed except for an arbitrary constant phase factor.
 
+<br><span style="color: blue;">
+式(40)は、任意の定数を除いて\(\gamma\)を固定しているので、任意の定数位相係数を除いて表現は固定されています。
+</span>
 </p><p>
 In this way we see that a representation can be set up in which
 the \(q\)'s are diagonal and equations (28) hold. This representation is
@@ -748,217 +1017,413 @@ its allowing one to express immediately any algebraic function of the
 \(q\)'s and \(p\)'s of the form of a power series in the \(p\)'s as an operator of
 differentiation, e.g. if \(f(q_1,...,q_n,p_1,...p_n)\) is such a function, we have
 
+<br><span style="color: blue;">
+このようにして、\(q\) が対角で式 (28) が成り立つような表現を設定できることがわかります。この表現は多くの問題で非常に有用です。1926 年にシュレーディンガーが量子力学の最初の定式化を与えた際に用いた表現であるため、シュレーディンガー表現と呼ばれます。
+シュレーディンガー表現は、標準的な \(q\) と \(p\) がある場合に必ず存在し、任意の定数位相係数を除いて、これらの \(q\) と \(p\) によって完全に決定されます。この表現が非常に便利なのは、\(p\) のべき級数の形の \(q\) と \(p\) の任意の代数関数を、例えば \(p\) の微分演算子として直ちに表すことができるからです。もし\(f(q_1,...,q_n,p_1,...p_n)\)がそのような関数であるならば、
+</span>
+
 \[
 f(q_1,...,q_n,p_1,...,p_n) = f(q_1,...,q_n,-i\hbar\partial/\partial q_1,...,-i\hbar\partial/\partial q_n)  \tag{42}
 \]
 
 provided we preserve the order of the factors in a product on substi-
-tuting the —ih 0/d9's for the p's.
+tuting the \(-i\hbar\partial/\partial q\)'s for the \(p\)'s.
+
+<br><span style="color: blue;">
+ただし、\(p\) を \(-i\bar\partial/\partial q\) に置き換える際に、積の因数の順序を維持するものとします。
+</span>
+</p><p>
 From (23) and (28), we have
 
-Dry == 0. | (43)
+<br><span style="color: blue;">
+(23) と (28) から、
+</span>
+
+\[
+p_r\rangle = 0  \tag{43}
+\]
 
 Thus the standard ket in Schr&omul;dinger's representation is characterized
 by the condition that it is a simultaneous eigenket of all the momenta
 belonging to the eigenvalues zero. Some properties of the basic
 vectors of Schr&ouml;dinger's representation may also be noted. Equation
-(22) gives ,
+(22) gives 
 
-Oh WG dn) ecg al by.
+<br><span style="color: blue;">
+このように、シュレーディンガー表示における標準ケットは、固有値零に属するすべての運動量の同時固有ケットであるという条件によって特徴付けられる。シュレーディンガー表示の基本ベクトルのいくつかの性質についても言及しておく。式(22)は、
+</span>
 
-, f (s) , i
-Gi nl a = (1 Gn!
+\[
+\langle q_1^\prime...q_n^\prime|\frac{\partial}{\partial q_r}\psi\rangle =
+\langle q_1^\prime...q_n^\prime|\frac{\partial\psi}{\partial q_r}=
+\frac{\partial\psi(q_1^\prime...q_n^\prime)}{\partial q_r^\prime}=
+\frac{\partial}{\partial q_r^\prime}\langle q_1^\prime...q_n^\prime|\psi\rangle
+\]
 
-24, o of,
-Hence <4; ioe e eg | (44)
-Gi Gn ég, aq) G-Inl>
-so that £Q4--AnlPr = i OM (45)
+Hence
+
+<br><span style="color: blue;">
+したがって
+</span>
+
+\[
+\langle q_1^\prime...q_n^\prime|\frac{\partial}{\partial q_r}=
+\frac{\partial}{\partial q_r^\prime}\langle q_1^\prime...q_n^\prime|  \tag{44}
+\]
+
+so that
+
+<br><span style="color: blue;">
+よって
+</span>
+
+\[
+\langle q_1^\prime...q_n^\prime|p_r = -i\hbar\frac{\partial}{\partial q_r^\prime}\langle q_1^\prime...q_n^\prime|  \tag{45}
+\]
+
 Similarly, equation (24) leads to
-i f ha ie d v , >
-Pride Ir? = thee 91-+-Gn>- (46)
 
-23. The momentum representation
+<br><span style="color: blue;">
+同様に式(24)から次の式が得られる。
+</span>
+
+\[
+p_r|q_1^\prime...q_n^\prime\rangle = i\hbar\frac{\partial}{\partial q_r^\prime}|q_1^\prime...q_n^\prime\rangle  \tag{46}
+\]
+</p><p>
+
+<h3>23. The momentum representation　<span style="color: blue;">運動量表現</span></h3>
+<p>
 
 Let us take a system with one degree of freedom, describable in
-terms of a g and p with the eigenvalues of g running from —oco to 00,
-and let us take an eigenket |p'> of p. Its representative in the Schr&ouml;dinger representation, <q'jp'>, satisfies
+terms of a \(q\) and \(p\) with the eigenvalues of \(q\) running from \(-\infty\) to \(\infty\),
+and let us take an eigenket \(|p^\prime\rangle\) of \(p\). Its representative in the Schr&ouml;dinger representation, \(\langle q^\prime|p^\prime\rangle\), satisfies
 
-f f t ‘ t 7 d , t
-Pip) = @'\plp> = ear Ip'?
+<br><span style="color: blue;">
+自由度1のシステムを、\(q\)と\(p\)で記述可能とし、\(q\)の固有値は\(-\infty\)から\(\infty\)までの範囲にあるとする。そして、\(p\)の固有角\(|p^\prime\rangle\)をとろう。そのシュレーディンガー表現における表現\(\langle q^\prime|p^\prime\rangle\)は、次式を満たす。
+</span>
+
+\[
+p^\prime\langle q^\prime|p^\prime\rangle = \langle q^\prime|p|p^\prime\rangle =
+-i\hbar\frac{d}{dq^\prime}\langle q^\prime|p^\prime\rangle
+\]
+
 with the help of (45) applied to the case of one degree of freedom.
-The solution of this differential equation for <q'|p'> is
-<q |p') = o erat, (47)
-where c' = c(p') is independent of g', but may involve 7'.
+The solution of this differential equation for \(\langle q^\prime|p^\prime\rangle\) is
 
-The representative <q'|p'> does not satisfy the boundary conditions
-of vanishing at g' = -.oo. This gives rise to some difficulty, which
-﻿§23 THE MOMENTUM REPRESENTATION 95
+<br><span style="color: blue;">
+(45) を自由度1の場合に適用すると、この微分方程式の \(\langle q^\prime|p^\prime\rangle\) に対する解は
+</span>
 
+\[
+\langle q^\prime|p^\prime\rangle = c^\prime e^{ip^\prime q^\prime/\hbar}  \tag{47}
+\]
+
+where \(c^\prime = c(p^\prime)\) is independent of \(q^\prime\), but may involve \(p^\prime\).
+
+<br><span style="color: blue;">
+ここで、\(c^\prime = c(p^\prime)\) は \(q^\prime\) とは独立ですが、\(p^\prime\) が関与する可能性があります。
+</span>
+</p><p>
+The representative \langle q^\prime|p^\prime\rangle\) does not satisfy the boundary conditions
+of vanishing at \(q^\prime = \pm\infty\). This gives rise to some difficulty, which
 shows itself up most directly in the failure of the orthogonality
-theorem. If we take a second eigenket |p”) of p with representative
+theorem. If we take a second eigenket \(|p^{\prime\prime}\rangle\) of \(p\) with representative
 
-q'lp"> =e" alt,
+<br><span style="color: blue;">
+代表\langle q^\prime|p^\prime\rangle\)は、\(q^\prime = \pm\infty\)で消滅するという境界条件を満たしません。これによりいくつかの困難が生じ、直交性定理の破綻として最も直接的に現れます。\(p\)の2番目の固有ケット\(|p^{\prime\prime}\rangle\)を代表\(q^\prime|p^\prime\rangle\)でとると、
+</span>
 
-belonging to a different eigenvalue p', we shall have
+\[
+\langle q^\prime|p^{\prime\prime}\rangle = c^{\prime\prime}e^{ip^{\prime\prime}q^\prime/\hbar}
+\]
 
-<p'lp"> = [ <p'la'> da' <a'ip"> = ce" | etw'-77H da'. (48)
+belonging to a different eigenvalue \(p^{\prime\prime}\), we shall have
+
+<br><span style="color: blue;">
+異なる固有値\(p^{\prime\prime}\)に属する場合、
+</span>
+
+\[
+\langle p^\prime|p^{\prime\prime}\rangle =
+\int_{-\infty}^\infty \langle p^\prime|q^\prime\rangle dq^\prime\langle q^\prime|p^{\prime\prime}\rangle=
+\overline{c^\prime}c^{\prime\prime}\int_{-\infty}^\infty e^{-ip(p^\prime - p^{\prime\prime})q^\prime/\hbar} dq^\prime  \tag{48}
+\]
+
 This integral does not converge according to the usual definition of
 convergence. To bring the theory into order, we adopt a new defini-
 tion of convergence of an integral whose domain extends to infinity,
 analogous to the Cesaro definition of the sum of an infinite series.
 With this new definition, an integral whose value to the upper limit
-q7' is of the form cosaq' or sinag', with a a real number not zero, is
-counted as zero when q' tends to infinity, i.e. we take the mean value
-of the oscillations, and similarly for the lower limit of gq' tending to
+\(q^\prime\) is of the form \(\cos aq^\prime\) or \(\sin aq^\prime\), with a a real number not zero, is
+counted as zero when \(q^\prime\) tends to infinity, i.e. we take the mean value
+of the oscillations, and similarly for the lower limit of \(q^\prime\) tending to
 minus infinity. This makes the right-hand side of (48) vanish for
-p” # p', 30 that the orthogonality theorem is restored. Also it makes
-the right-hand sides of (13) and (14) equal when <¢ and > are eigen-
-vectors of p, so that eigenvectors of p become permissible vectors to
-use with the operator d/dg. Thus the boundary conditions that the
+\(p^{\prime\prime} \neq p^\prime\), so that the orthogonality theorem is restored. Also it makes
+the right-hand sides of (13) and (14) equal when \(\langle\phi\) \(\psi\rangle\) are eigen-
+vectors of \(p\), so that eigenvectors of \(p\) become permissible vectors to
+use with the operator \(d/dq\). Thus the boundary conditions that the
 representative of a permissible bra or ket has to satisfy become
-extended to allow the representative to oscillate like cos.aq' or sin.aq'
-as q' goes to infinity or minus infinity.
-For p” very close to p', the right-hand side of (48) involves a 6
+extended to allow the representative to oscillate like \(\cos.aq^\prime\) or \(\sin.aq^\prime\)
+as \(q^\prime\) goes to infinity or minus infinity.
+
+<br><span style="color: blue;">
+この積分は、通常の収束の定義によれば収束しません。理論を整理するために、定義域が無限大に及ぶ積分の収束について、チェーザロの無限級数の和の定義に類似した新しい定義を採用します。この新しい定義によれば、上限\(q^\prime\) までの値が \(\cos aq^\prime\) または \(\sin aq^\prime\) の形をとり、かつ a がゼロでない実数である積分は、\(q^\prime\) が無限大に向かうとき、すなわち振動の平均値をとるとき、ゼロとみなされます。同様に、\(q^\prime\) がマイナス無限大に向かうときの下限についても、同様に扱われます。これにより、(48) の右辺は \(p^{\prime\prime} \neq p^\prime\) に対してゼロとなり、直交性定理が回復されます。また、\(\langle\phi\) \(\psi\rangle\) が \(p\) の固有ベクトルのとき、(13) と (14) の右辺が等しくなり、\(p\) の固有ベクトルは演算子 \(d/dq\) で使用できる許容ベクトルになります。したがって、許容ブラまたはケットの代表が満たさなければならない境界条件は、\(q^\prime\) が無限大または負の無限大になるにつれて、代表が \(\cos.aq^\prime\) または \(\sin.aq^\prime\) のように振動することを許容するように拡張されます。
+</span>
+</p><p>
+For \(p^{\prime\prime}\) very close to \(p^\prime\), the right-hand side of (48) involves a \(\delta\)
 function. To evaluate it, we need the formula
 
-J eter dg = Ir 8(a) (49)
-for real a, which may be proved as follows. The formula evidently
-holds for a different from zero, as both sides are then zero. Further
+<br><span style="color: blue;">
+\(p^{\prime\prime}\) が \(p^\prime\) に非常に近い場合、(48) の右辺には \(\delta\) 関数が含まれる。これを評価するには、次の式が必要である。
+</span>
 
-we have, for any continuous function j(a),
+\[
+\int_{-\infty}^\infty e^{iax} dx = 2\pi\delta(a)  \tag{49}
+\]
 
-no  @ a «©
-| f(a) da | eiar day = | f(a) da 2a-1 sinag = 2nf(0) ,
-in the limit when g tends to infinity. A more complicated argument
-shows that we get the same result if instead of the limits g and —g
-we put g, and —g,, and then let g, and g, tend to infinity in different
+for real \(a\), which may be proved as follows. The formula evidently
+holds for \(a\) different from zero, as both sides are then zero. Further
+we have, for any continuous function \(f(a)\),
+
+<br><span style="color: blue;">
+実数 \(a\) に対して成り立つことは、以下のように証明できる。この式は明らかに \(a\) がゼロでない場合に成立する。なぜなら、その場合両辺はゼロだからである。さらに、任意の連続関数 \(f(a)\) に対して、
+</span>
+
+\[
+\int_{-\infty}^\infty f(a) da \int_{-g}^g e^{iax} dx = \int_{-\infty}^\infty f(a)da 2a^{-1}\sin ag = 2\pi f(0)
+\]
+
+in the limit when \(g\) tends to infinity. A more complicated argument
+shows that we get the same result if instead of the limits \(g\) and \(—g\)
+we put \(g_1\) and \(—g_2\), and then let \(g_1\) and \(g_2\) tend to infinity in different
 ways (not too widely different). This shows the equivalence of both
 sides of (49) as factors in an integrand, which proves the formula.
-﻿96 THE QUANTUM CONDITIONS §23
+
+<br><span style="color: blue;">
+\(g\) が無限大に向かう極限において、\(g\) と \(—g\) の極限の代わりに \(g_1\) と \(—g_2\) を置き、\(g_1\) と \(g_2\) が異なる方法で（あまり大きくは違わずに）無限大に向かうと仮定しても同じ結果が得られます。これは、(49) の両辺が被積分関数の因子として同値であることを示しており、公式の証明となります。
+</span>
+</p><p>
 With the help of (49), (48) becomes
 
-= |c'|?h8(p'—p"). (50)
+<br><span style="color: blue;">
+(49)の助けを借りれば、(48)は
+</span>
 
-We have obtained an eigenket of p belonging to any real eigenvalue
-p', its representative being given by (47). Any ket |X) can be ex-
-panded in terms of these eigenkets of p, since its representative
-<q'|X> can be expanded in terms of the representatives (47) by
-Fourier analysis. It follows that the momentum p is an observable,
+\[
+\begin{align}
+\langle p^\prime|p^{\prime\prime}\rangle = \overline{c^\prime}c^{\prime\prime}2\pi\delta[(p^\prime - p^{\prime\prime})/\hbar]
+&= \overline{c^\prime}c^{\prime\prime}h\delta(p^\prime - p^{\prime\prime}) \\
+\\
+&=|c^\prime|^2h\delta(p^\prime - p^{\prime\prime}) \tag{50}
+\end{align}
+\]
+
+</p><p>
+We have obtained an eigenket of \(p\) belonging to any real eigenvalue
+\(p^\prime\), its representative being given by (47). Any ket \(|X\rangle\) can be ex-
+panded in terms of these eigenkets of \(p\), since its representative
+\(\langle q^\prime|X\rangle\) can be expanded in terms of the representatives (47) by
+Fourier analysis. It follows that the momentum \(p\) is an observable,
 in agreement with the experimental result that momenta can be
 observed.
 
-A symmetry now appears between q and p. Hach of them is an
-observable with eigenvalues extending from --co to o, and the
-commutation relation connecting g and p, equation (10), remains
-invariant if we interchange q and p and write —i for 7. We have set
-up @ representation in which q is diagonal and p = —zid/dg. It
+<br><span style="color: blue;">
+任意の実固有値\(p\)に属する固有ケット\(p^\prime\)が得られ、その代表は(47)で与えられる。任意のケット\(|X\rangle\)は、その代表である\(\langle q^\prime|X\rangle\)がフーリエ解析によって(47)の代表で展開できるため、\(p\)のこれらの固有ケットで展開できる。したがって、運動量\(p\)は観測可能であり、運動量が観測可能であるという実験結果と一致する。
+</span>
+</p><p>
+A symmetry now appears between \(q\) and \(p\). Each of them is an
+observable with eigenvalues extending from \(-\infty\) to \(\infty\), and the
+commutation relation connecting \(q\) and \(p\), equation (10), remains
+invariant if we interchange \(q\) and \(p\) and write \(—i\) for \(i\). We have set
+up @ representation in which \(q\) is diagonal and \(p = —i\hbar d/dq\). It
 follows from the symmetry that we can also set up a representation
-in which » is diagonal and
+in which \(p\) is diagonal and
 
-q = thdjdp, (51)
+<br><span style="color: blue;">
+ここで、\(q\) と \(p\) の間に対称性が現れる。これらはいずれも、\(-\infty\) から \(\infty\) まで広がる固有値を持つ観測量であり、\(q\) と \(p\) を結び付ける交換関係（式 (10)）は、\(q\) と \(p\) を入れ替えて \(i\) を \(—i\) と書いても不変である。\(q\) が対角で \(p = —i\hbar d/dq\) となる表現を設定した。この対称性から、\(p\) が対角で
+</span>
 
-the operator d/dp being defined by a procedure similar to that used
-for d/dg. This representation will be called the momentum representa-
+\[
+q = i\hbar d/dp  \tag{51}
+\]
+
+the operator \(d/dp\) being defined by a procedure similar to that used
+for \(d/dq\). This representation will be called the momentum representa-
 tion. It is less useful than the previous Schr&ouml;dinger representation
 because, while the Schr&ouml;dinger representation enables one to express
-as an operator of differentiation any function of g and p that is a
-power series in p, the momentum representation enables one so to
-express any function of g and » that is a power series in g, and the
+as an operator of differentiation any function of \(q\) and \(p\) that is a
+power series in \(p\), the momentum representation enables one so to
+express any function of \(q\) and \(p\) that is a power series in \(q\), and the
 important quantities in dynamics are almost always power series in
-gp but are often not power series in g. All the same the momentum
+\(p\) but are often not power series in \(q\). All the same the momentum
 representation is of value for certain problems (see §50).
 
-Let us calculate the transformation function <q' |p'> connecting the
-two representations. The basic kets |') of the momentum representa-
-tion are eigenkets of p and their Schr&ouml;dinger representatives <q'|p'>
+<br><span style="color: blue;">
+演算子 \(d/dp\) は、\(d/dq\) の場合と同様の手順で定義されます。この表現を運動量表現と呼びます。これは前述のシュレーディンガー表現ほど有用ではありません。なぜなら、シュレーディンガー表現では、\(p\) のべき級数である \(q\) と \(p\) の任意の関数を微分演算子として表すことができますが、運動量表現では、\(q\) と \(p\) の任意の関数を微分演算子として表すことができます。また、力学における重要な量は、ほとんどの場合 \(p\) のべき級数ですが、\(q\) のべき級数ではないことがよくあるからです。それでもなお、運動量表現は特定の問題では有用です (§50 を参照)。
+</span>
+</p><p>
+Let us calculate the transformation function \(\langle q^\prime|p^\prime\rangle\) connecting the
+two representations. The basic kets \(|p^\prime\rangle\) of the momentum representa-
+tion are eigenkets of p and their Schr&ouml;dinger representatives \(\langle q^\prime|p^\prime\rangle\)
 are given by (47) with the coefficients c' suitably chosen. The phase
 factors of these basic kets must be chosen so as to make (51) hold.
 The easiest way to bring in this condition is to use the symmetry
-between g and p referred to above, according to which <q‘|p'> must
-go over into <p'lq'> if we interchange q' and yp' and write —2 for 7.
-Now <q'|p'> is equal to the right-hand side of (47) and <p'|q'> to the
-﻿§23 THE MOMENTUM REPRESENTATION 97
+between g and p referred to above, according to which \(\langle q^\prime|p^\prime\rangle\) must
+go over into \(\langle p^\prime|q^\prime\rangle\) if we interchange q' and yp' and write —2 for 7.
+Now \(\langle q^\prime|p^\prime\rangle\) is equal to the right-hand side of (47) and \(\langle p^\prime|q^\prime\rangle\) to the
+conjugate complex expression, and hence \(c^\prime\) must be independent of
+\(p^\prime\). Thus \(c^\prime\) is just a number \(c\). Further, we must have
 
-conjugate complex expression, and hence c' must be independent of
-p'. Thus c' is just a number c. Further, we must have
+<br><span style="color: blue;">
+2つの表現を結び付ける変換関数 \(\langle q^\prime|p^\prime\rangle\) を計算しよう。運動量表現の基本ケット \(|p^\prime\rangle\) は p の固有ケットであり、そのシュレーディンガー表現 \(\langle q^\prime|p^\prime\rangle\) は係数 c' を適切に選べば(47)式で与えられる。これらの基本ケットの位相因子は(51)式が成立するように選ばなければならない。この条件を導入する最も簡単な方法は、上で述べた g と p の対称性を利用することです。これによれば、q' と yp' を入れ替えて 7 を -2 と書くと、\(\langle q^\prime|p^\prime\rangle\) は \(\langle p^\prime|q^\prime\rangle\) に必ず変換されます。
+ここで、\(\langle q^\prime|p^\prime\rangle\) は (47) の右辺に等しく、\(\langle p^\prime|q^\prime\rangle\) は共役複素数表現に等しくなります。したがって、\(c^\prime\) は \(p^\prime\) とは独立でなければなりません。したがって、\(c^\prime\) は単なる数 \(c\) です。さらに、
+</span>
 
-<p'|p"> = 8(p'—p"),
-which shows, on comparison with (50), that |c] = A-?. We can choose
+\[
+\langle p^\prime|p^{\prime\prime}\rangle = \delta(p^\prime - p^{\prime\prime}")
+\]
+
+which shows, on comparison with (50), that \(|c| = \hbar-{-\frac{1}{2}}\). We can choose
 the arbitrary constant phase factor in either representation so as to
-make c = h-?, and we then get
-<q' ip') = h-tetpain (52)
-for the transformation function. .
+make \(c = h-{-\frac{1}{2}}\), and we then get
 
+<br><span style="color: blue;">
+これを(50)と比較すると、\(|c| = \hbar-{-\frac{1}{2}}\)であることがわかる。どちらの表現においても、\(c = h-{-\frac{1}{2}}\)となるように任意の定数位相係数を選ぶことができ、その場合、
+</span>
+
+\[
+\langle q^\prime|p^\prime\rangle = h^{-\frac{1}{2}}e^{ip^\prime q^\prime/\hbar}  \tag{52}
+\]
+
+for the transformation function.
+
+<br><span style="color: blue;">
+変換関数用
+</span>
+</p><p>
 The foregoing work may easily be generalized to a system with
-n degrees of freedom, describable in terms of n q's and p's, with the
-eigenvalues of each g running from —co to oo. Each p will then be
-an observable with eigenvalues running from —co to oo, and there
-will be symmetry between the set of q's and the set of p's, the
+\(n\) degrees of freedom, describable in terms of \(n\) \(q\)'s and \(p\)'s, with the
+eigenvalues of each \(q\) running from \(-\infty\) to \(\infty\). Each \(p\) will then be
+an observable with eigenvalues running from \(-\infty\) to \(\infty\), and there
+will be symmetry between the set of \(q\)'s and the set of \(p\)'s, the
+commutation relations remaining invariant if we interchange each \(q_r\)
+with the corresponding \(p_r\) and write \(-i\) for \(i\). A momentum repre-
+sentation can be set up in which the \(p\('s are diagonal and each
 
-- commutation relations remaining invariant if we interchange each q,
+<br><span style="color: blue;">
+以上の研究は、\(n\) 個の \(q\) と \(p\) で記述可能な、\(n\) 個の自由度を持つシステムに容易に一般化できます。各 \(q\) の固有値は \(-\infty\) から \(\infty\) の範囲をとります。各 \(p\) は、\(-\infty\) から \(\infty\) の範囲の固有値を持つ観測量となり、\(q\) の集合と \(p\) の集合の間には対称性が生じます。各 \(q_r\) を対応する \(p_r\) と交換し、\(i\) を \(-i\) と書けば、交換関係は不変のままです。運動量表現は\(p\(が対角で、各
+</span>
 
-with the corresponding p, and write —z for 7. A momentum repre-
-sentation can be set up in which the p's are diagonal and each
+\[
+q_r = i\hbar\partial/\partial p_r  \tag{53}
+\]
 
 The transformation function connecting it with the Schr&ouml;dinger
 representation will be given by the product of the transformation
-
 functions for each degree of freedom separately, as is shown by
 formula (67) of §20, and will thus be
 
-Ti Ga--Un| Pt PoP = GIP Ga P2>+- Gn Pn
-a= A 2hP +P htt PG Hh, (54)
+<br><span style="color: blue;">
+これをシュレーディンガー表現と結び付ける変換関数は、§20の式(67)に示されているように、各自由度に対する変換関数の積で与えられ、したがって、
+</span>
 
-24. Heisenberg's principle of uncertainty
+\[
+\begin{align}
+\langle q_1^\prime q_2^\prime...q_n^\prime|p_1^\prime p_2^\prime ...p_n^\prime\rangle &=
+\langle q_1^\prime|p_1^\prime\rangle\langle q_2^\prime|p_2^\prime\rangle ...\langle q_n^\prime|p_n^\prime\rangle \\
+\\
+&= h^{-n/2}e^{i(p_1^\prime q_1^\prime+p_2^\prime q_2^\prime+...+p_n^\prime q_n^\prime)/\hbar}  \tag{54}
+\end{align}
+\]
+
+</p><p>
+
+<h3>24. Heisenberg's principle of uncertainty　ハイゼンベルクの不確定性原理</h3>
+<p>
 For a system with one degree of freedom, the Schr&ouml;dinger and the
-momentum representatives of a ket |X> are connected by
+momentum representatives of a ket \(|X\rangle\) are connected by
 
-oO
+<br><span style="color: blue;">
+自由度が1の系の場合、シュレーディンガー方程式とケット\(|X\rangle\)の運動量表現は次のように結びついています。
+</span>
 
-<p'|X> = he# | eth dg' <q'|X),
-| “: | (55)
-<q'|X> = b+ [ ef? dp' (p'|X).
+\[
+\left.
+\begin{align}
+\langle p^\prime|X\rangle &= h^{-\frac{1}{2}} \int_{-\infty}^\infty e^{-iq^\prime p^\prime/\hbar} dq^\prime\langle q^\prime|X\rangle \\
+\\
+\langle q^\prime|X\rangle &= h^{-\frac{1}{2}} \int_{-\infty}^\infty e^{iq^\prime p^\prime/\hbar} dq^\prime\langle p^\prime|X\rangle
+\end{align}
+\right\}
+\tag{55}
+\]
 
 These formulas have an elementary significance. They show that
 either of the representatives is given, apart from numerical coefficients,
 by the amplitudes of the Fourier components of the other.
 
+<br><span style="color: blue;">
+これらの式は基本的な意味を持ちます。これらの式は、どちらかの代表値が、数値係数とは別に、もう一方のフーリエ成分の振幅によって与えられることを示しています。
+</span>
+</p><p>
 It is interesting to apply (55) to a ket whose Schr&ouml;dinger repre-
 sentative consists of what is called a wave packet. This is a function
-﻿98 THE QUANTUM CONDITIONS §24
-
 whose value is very small everywhere outside a certain domain, of
-width Aq' say, and inside this domain is approximately periodic with
-a definite frequency.t Ifa Fourier analysis is made of such a wave
+width \(\Delta q^\prime\) say, and inside this domain is approximately periodic with
+a definite frequency.<sup>†</sup> If a Fourier analysis is made of such a wave
 packet, the amplitude of all the Fourier components will be small,
 except those in the neighbourhood of the definite frequency. The
-components whose amplitudes are not small will fill up a frequencyt
-band whose width is of the order 1/Ag', since two components whose
+components whose amplitudes are not small will fill up a frequency<sup>†</sup>
+band whose width is of the order \(1/\Delta q^\prime\), since two components whose
 frequencies differ by this amount, if in phase in the middle of the
-domain Aq', will be just out of phase and interfering at the ends of
+domain \(\Delta q^\prime\), will be just out of phase and interfering at the ends of
 this domain. Now in the first of equations (55) the variable
-(2:r)-1'/% = p'/h plays the part of frequency. Thus with <q' |X of the
-form of a wave packet, the function <p'|X>, being composed of the
+\((2\pi)^{-1}p^\prime/\hbar=p^\prime/h\) plays the part of frequency. Thus with \(\langle q^\prime|X\rangle\) of the
+form of a wave packet, the function \(\langle p^\prime|X\rangle\), being composed of the
 amplitudes of the Fourier components of the wave packet, will be
-small everywhere in the p'-space outside a certain domain of width
-Ap' = h/Aq'.
+small everywhere in the \(p^\prime\)-space outside a certain domain of width
+\(\Delta p^\prime=h/\Delta q^\prime\).
 
+</p><p class="margin-large">
+<sup>†</sup> Frequency here means reciprocal of wave-length.
+</p><p>
+
+<br><span style="color: blue;">
+(55)式を、シュレーディンガー表現がいわゆる波束からなるケットに適用することは興味深い。これは、例えば幅\(\Delta q^\prime\)のある領域の外では値が極めて小さく、この領域内では一定の周波数で近似的に周期的な関数である。<sup>†</sup> このような波束のフーリエ解析を行うと、一定の周波数近傍の成分を除いて、すべてのフーリエ成分の振幅は小さくなる。振幅が小さくない成分は、幅が \(1/\Delta q^\prime\) のオーダーの周波数帯域を埋め尽くします。これは、周波数がこの量だけ異なる2つの成分が、領域の中央 \(\Delta q^\prime\) で同位相である場合、この領域の両端では位相がわずかにずれて干渉するためです。さて、式(55)の最初の式では、変数 \((2\pi)^{-1}p^\prime/\hbar=p^\prime/h\) が周波数の役割を果たしています。このように、波束の形の \(\langle q^\prime|X\rangle\) では、波束のフーリエ成分の振幅から構成される関数 \(\langle p^\prime|X\rangle\) は、特定の幅の領域 \(\Delta p^\prime=h/\Delta q^\prime\) の外側の \(p^\prime\) 空間のどこでも小さくなります。
+</span>
+
+
+</p><p class="margin-large-blue">
+<sup>†</sup> ここでの周波数は波長の逆数を意味します。
+
+</p><p>
 Let us now apply the physical interpretation of the square of the
 modulus of the representative of a ket as a probability. We find that
-our wave packet represents a state for which a measurement of ¢ is
-almost certain to lead to a result lying in a domain of width Ag' and
-a measurement of p is almost certain to lead to a result lying in a
-domain of width Ap'. We may say that for this state ¢ has a definite
-value with an error of order Ag' and p: has a definite value with an
-error of order Ap'. The product of these two errors is
+our wave packet represents a state for which a measurement of \(q\) is
+almost certain to lead to a result lying in a domain of width \(\Delta q^\prime\) and
+a measurement of \(p\) is almost certain to lead to a result lying in a
+domain of width \(\Delta p^\prime\). We may say that for this state \(q\) has a definite
+value with an error of order \(\Delta q^\prime\) and \(p\) has a definite value with an
+error of order \(\Delta p^\prime\). The product of these two errors is
 
-Aq'Ap' = h. (56)
+<br><span style="color: blue;">
+ケットの代表値の係数の2乗を確率として物理的に解釈してみましょう。この波束は、\(q\) の測定がほぼ確実に幅 \(\Delta q^\prime\) の領域にある結果をもたらし、\(p\) の測定がほぼ確実に幅 \(\Delta p^\prime\) の領域にある結果をもたらす状態を表しています。この状態において、\(q\) は \(\Delta q^\prime\) のオーダーの誤差を持つ確定値を持ち、\(p\) は \(\Delta p^\prime\) のオーダーの誤差を持つ確定値を持つと言えます。これら2つの誤差の積は
+</span>
 
-Thus the more accurately one of the variables g,p has a definite
+\[
+\Delta q^\prime\Delta p^\prime = h  \tag{56}
+\]
+
+Thus the more accurately one of the variables \(q,p\) has a definite
 value, the less accurately the other has a definite value. For a system
 with several degrees of freedom, equation (56) applies to each degree
 of freedom separately.
 
+<br><span style="color: blue;">
+したがって、変数\(q,p\)の一方の値がより正確に確定値を持つほど、もう一方の値が確定値を持つ精度は低くなります。複数の自由度を持つシステムの場合、式(56)はそれぞれの自由度に個別に適用されます。
+</span>
+</p><p>
 Equation (56) is known as Hetsenberg's Principle of Uncertainty.
 It shows clearly the limitations in the possibility of simultaneously
 assigning numerical values, for any particular state, to two non-
@@ -967,39 +1432,51 @@ ordinate and momentum, and provides a plain illustration of how
 observations in quantum mechanics may be incompatible. It also
 shows how classical mechanics, which assumes that numerical values
 can be assigned simultaneously to all observables, may be a valid
-approximation when h can be considered as small enough to be
-
-{ Frequency here means reciprocal of wave-length.
-﻿§24 HEISENBERG'S PRINCIPLE OF UNCERTAINTY 99
-
+approximation when \(h\) can be considered as small enough to be
 negligible. Hquation (56) holds only in the most favourable case,
 which oceurs when the representative of the state is of the form of a
-wave packet. Other forms of representative would lead to a Aq' and
-Ap' whose product is larger than h.
+wave packet. Other forms of representative would lead to a \(\Delta q^\prime\) and
+\(\Delta p^\prime\) whose product is larger than \(h\).
 
+<br><span style="color: blue;">
+式(56)はヘッツェンベルクの不確定性原理として知られている。
+この式は、正準座標と運動量という二つの非可換な観測量に対して、任意の特定の状態について同時に数値を割り当てることの可能性の限界を明確に示しており、量子力学における観測がいかに両立しないかを分かりやすく示している。また、すべての観測量に同時に数値を割り当てることができると仮定する古典力学が、\(h\)が無視できるほど小さいと考えられる場合には有効な近似となり得ることも示している。式(56)は、状態の代表が波束の形をとる最も有利な場合にのみ成立する。他の形式の代表値では、積が \(h\) よりも大きい \(\Delta q^\prime\) と
+\(\Delta p^\prime\) になります。
+</span>
+</p><p>
 Heisenberg's principle of uncertainty shows that, in the limit when
-either q or p is completely determined, the other is completely
+either \(q\) or \(p\) is completely determined, the other is completely
 undetermined. This result can also be obtained directly from the
-transformation function <q'\p'>. According to the end of §18,
-l<q'|p'> |? dq' is proportional to the probability of g having a value in
-the small range from q' to q'+-dq' for the state for which p certainly
-has the value p', and from (52) this probability is independent of q‘
-for a given dq'. Thus if p certainly has a definite value p', all values
-of q are equally probable. Similarly, if g certainly has a definite value
-q', all values of » are equally probable.
+transformation function \(\langle q^\prime|p^\prime\rangle\). According to the end of §18,
+\(|\langle q^\prime|p^\prime\rangle|^2dq^\prime\) is proportional to the probability of g having a value in
+the small range from \(q^\prime\) to \(q^\prime+dq^\prime\) for the state for which \(p\) certainly
+has the value \(p^\prime\), and from (52) this probability is independent of \(q^\prime\)
+for a given \(dq^\prime\). Thus if \(p\) certainly has a definite value \(p^\prime\), all values
+of \(q\) are equally probable. Similarly, if \(q\) certainly has a definite value
+\(q^\prime\), all values of \(p\) are equally probable.
 
-It is evident physically that a state for which all values of g are
-equally probable, or one for which all values of p are equally probable,
+<br><span style="color: blue;">
+ハイゼンベルクの不確定性原理によれば、\(q\) または \(p\) のいずれか一方が完全に決定されている極限において、他方は完全に不確定である。この結果は、変換関数 \(\langle q^\prime|p^\prime\rangle\) からも直接得られる。§18の末尾によれば、\(|\langle q^\prime|p^\prime\rangle|^2dq^\prime\) は、\(p\) が確実に \(p^\prime\) の値をとる状態において、g が \(q^\prime\) から \(q^\prime+dq^\prime\) までの狭い範囲の値をとる確率に比例し、(52) から、この確率は与えられた \(dq^\prime\) に対して \(q^\prime\) とは独立である。したがって、\(p\) が確かに確定値 \(p^\prime\) を持つ場合、\(q\) のすべての値は等確率となります。同様に、\(q\) が確かに確定値 \(q^\prime\) を持つ場合、\(p\) のすべての値は等確率となります。
+</span>
+</p><p>
+It is evident physically that a state for which all values of \(q\) are
+equally probable, or one for which all values of \(p\) are equally probable,
 cannot be attained in practice, in the first case because of limitations
 of size and in the second because of limitations of energy. Thus an
-eigenstate of p or an eigenstate of g cannot be attained in practice.
+eigenstate of \(p\) or an eigenstate of \(q\) cannot be attained in practice.
 The argument at the end of §12 already showed that such eigenstates
 are unattainable, because of the infinite precision that would be
 needed to set them up, and we now have another argument leading
 to the same conclusicn.
 
-25. Displacement operators
+<br><span style="color: blue;">
+\(q\) のすべての値が等確率である状態、あるいは \(p\) のすべての値が等確率である状態は、実際には実現不可能であることは物理的に明らかである。前者の場合はサイズの制限のため、後者の場合はエネルギーの制限のためである。したがって、\(p\) の固有状態や \(q\) の固有状態は実際には実現できない。
+§12 の末尾の議論で、そのような固有状態は、それを設定するには無限の精度が必要となるため、実現不可能であることがすでに示されている。そして今、同じ結論に至る別の議論を示す。
+</span>
+</p><p>
 
+<h3>25. Displacement operators　<span style="color: blue;">変位作用素</span></h3>
+<p>
 We get a new insight into the meaning of some of the quantum con-
 ditions by making a study of displacement operators. These appear
 in the theory when we take into consideration that the scheme of
@@ -1011,14 +1488,16 @@ in a definite way (for example, displacing them all through a distance
 states and dynamical variables would have to be connected by the
 same relation.
 
+<br><span style="color: blue;">
+変位演算子の研究によって、いくつかの量子条件の意味について新たな知見が得られる。第2章で示した状態と力学変数の関係図式が本質的に物理的な図式であることを考慮すると、これらの関係は理論に現れる。つまり、ある状態と力学変数が何らかの関係で結びついている場合、それらをすべて特定の方法で（例えば、すべてを直交座標のZ軸方向に距離6xだけ）変位させると、新しい状態と力学変数も同じ関係で結びつくはずである。
+</span>
+</p><p>
 The displacement of a state or observable is a perfectly definite
 process physically. Thus to displace a state or observable through a
-distance 6x in the direction of the z-axis, we should merely have to
+distance \(\delta x\) in the direction of the \(x\)-axis, we should merely have to
 displace all the apparatus used in preparing the state, or all the
-﻿100 THE QUANTUM CONDITIONS §25
-
 apparatus required to measure the observable, through the distance
-5z in the direction of the z-axis, and the displaced apparatus would
+\(\delta x\) in the direction of the \(x\)-axis, and the displaced apparatus would
 define the displaced state or observable. The displacement of a
 dynamical variable must be just as definite as the displacement of
 an observable, because of the close mathematical connexion between
@@ -1027,6 +1506,10 @@ variable is uniquely determined by the undisplaced state or dynami-
 eal variable together with the direction and magnitude of the dis-
 placement.
 
+<br><span style="color: blue;">
+状態または観測量の変位は、物理的には完全に明確な過程である。したがって、状態または観測量を\(x\)軸方向に距離\(\delta x\)変位させるには、状態を準備するために用いられるすべての装置、あるいは観測量の測定に必要なすべての装置を\(x\)軸方向に距離\(\delta x\)変位させるだけでよく、変位させた装置が変位後の状態または観測量を定義する。力学変数と観測量の間には密接な数学的関係があるため、力学変数の変位は観測量の変位と同様に明確でなければならない。変位した状態または力学変数は、変位していない状態または力学変数と、変位の方向および大きさによって一意に決定される。
+</span>
+</p><p>
 The displacement of a ket vector is not such a definite thing though.
 If we take a certain ket vector, it will represent a certain state and we
 may displace this state and get a perfectly definite new state, but this
@@ -1041,38 +1524,64 @@ the same for them all. We make use of the law that superposition
 relationships between states remain invariant under the displace-
 ment. A superposition relationship between states is expressed
 mathematically by a linear equation between the kets corresponding
-to those states, for example ,
+to those states, for example 
 
-[RY = %|A)-+6,|B), (57)
-where c, and c, are numbers, and the invariance of the superposition
+<br><span style="color: blue;">
+しかし、ケットベクトルの変位はそれほど明確なものではありません。
+あるケットベクトルをとると、それは特定の状態を表します。そして、この状態を変位させることで、完全に明確な新しい状態を得ることができます。しかし、この新しい状態は変位したケットを決定するのではなく、変位したケットの方向を決定するだけです。変位したケットの長さを、変位していないケットと同じ長さにすることで固定しますが、それでも完全には決定されず、任意の位相係数を掛けることができます。一見すると、変位するケットごとに異なる任意の位相係数を持つと思われますが、以下の議論の助けを借りれば、すべてのケットで同じであることがわかります。状態間の重ね合わせ関係は変位に対して不変であるという法則を利用します。状態間の重ね合わせ関係は、例えば、それらの状態に対応するケット間の線形方程式によって数学的に表現されます。
+</span>
+
+\[
+|R\rangle = c_1|A\rangle + c_2|B\rangle \tag{57}
+\]
+
+where \(c_1\) and \(c_2\) are numbers, and the invariance of the superposition
 relationship requires that the displaced states correspond to kets
-
 with the same linear equation between them-—in our example they
-would correspond to |Rd>, |Ad>, | Bd> say, satisfying
+would correspond to \(|Rd\rangle,|Ad\rangle,|Bd\rangle\) say, satisfying
 
-|Rd> = c,|Ad>-+e,| Bd). (58)
+<br><span style="color: blue;">
+ここで、\(c_1\) と \(c_2\) は数値であり、重ね合わせ関係の不変性は、変位した状態が、それらの間に同じ線形方程式を持つケットに対応することを必要とする。この例では、それらは、\(|Rd\rangle,|Ad\rangle,|Bd\rangle\) に対応し、次の式を満たす。
+</span>
+
+\[
+|Rd\rangle = c_1|Ad\rangle + c_2|Bd\rangle  \tag{58}
+\]
 
 We take these kets to be our displaced kets, rather than these kets
 multiplied by arbitrary independent phase factors, which latter
-kets would satisfy a linear equation with different coefficients ¢,, ¢,.
+kets would satisfy a linear equation with different coefficients \(c_1,c_2\).
 The only arbitrariness now left in the displaced kets is that of a single
 arbitrary phase factor to be multiplied into all of them.
 
+<br><span style="color: blue;">
+これらのケットを、任意の独立した位相因子を乗じたケットではなく、変位ケットとみなします。後者のケットは、異なる係数 \(c_1,c_2\) を持つ線形方程式を満たします。
+変位ケットに残された唯一の任意性は、それらすべてに単一の任意の位相因子を乗じることができるという任意性です。
+</span>
+</p><p>
 The condition that linear equations between the kets remain in-
 variant under the displacement and that an equation such as (58)
-holds whenever the corresponding (57) holds, means that the dis-
-﻿§25 DISPLACEMENT OPERATORS 101
+holds whenever the corresponding (57) holds, means that the displaced kets are linear functions of the undisplaced kets and thus each
+displaced ket \(|Pd\rangle\) is the result of some linear operator applied to the
+corresponding undisplaced ket \(|P\rangle\). In symbols,
 
-placed kets are linear functions of the undisplaced kets and thus each
-displaced ket | Pd) is the result of some linear operator applied to the
-corresponding undisplaced ket |P>. In symbols,
+<br><span style="color: blue;">
+ケット間の線型方程式が変位に対して不変であり、かつ対応する(57)が成立する場合には(58)のような方程式が成立するという条件は、変位したケットが変位していないケットの線型関数であり、したがって各変位したケット\(|Pd\rangle\)は対応する変位していないケット\(|P\rangle\)に何らかの線型演算子を適用した結果であることを意味する。記号で表すと、
+</span>
 
-|Pd> = D|P>, (59)
+\[
+|Pd\rangle = D|P\rangle  \tag{59}
+\]
 
-where D is a linear operator independent of |P> and depending only
+where \(D\) is a linear operator independent of \(|P\rangle\) and depending only
 on the displacement. The arbitrary phase factor by which all the
-displaced kets may be multiplied results in D being undetermined
+displaced kets may be multiplied results in \(D\) being undetermined
 to the extent of an arbitrary numerical factor of modulus unity.
+
+<br><span style="color: blue;">
+ここで、\(D\) は \(|P\rangle\) とは独立で、変位のみに依存する線型演算子です。変位したすべてのケットに任意の位相係数を掛け合わせると、\(D\) は任意の数値係数（係数1）の範囲で不定になります。
+</span>
+</p><p>
 With the displacement of kets made definite in the above manner
 and the displacement of bras, of course, made equally definite,
 through their being the conjugate imaginaries of the kets, we can
@@ -1080,224 +1589,518 @@ now assert that any symbolic equation between kets, bras, and
 dynamical variables must remain invariant under the displacement
 of every symbol occurring in it, on account of such an equation
 having some physical significance which will not get changed by the
-
 displacement.
-Take as an example the equation
-<Q|P> = 6,
-e being a number. Then we must have
-<Qd|Pdy = ¢ = (Q|P>. (60)
-From the conjugate imaginary of (59) with Q instead of P,
-<Qd| = <Q|D. (61)
-Hence (60) gives (Q|DD|P> = <Q|P)>.
-Since this holds for arbitrary <Q| and |P>, we must have
-DD = 1, (62)
 
-giving us a general condition which D has to satisfy.
+<br><span style="color: blue;">
+上記のようにケットの変位が明確にされ、そしてもちろんブラの変位も、ケットの共役虚数であることによって同様に明確にされたので、ケット、ブラ、そして力学変数の間の任意の記号方程式は、その中に現れるすべての記号の変位に対して不変でなければならないと断言できる。なぜなら、そのような方程式は、変位によって変化しない何らかの物理的意味を持つからである。
+</span>
+</p><p>
+Take as an example the equation
+
+<br><span style="color: blue;">
+次の式を例に挙げましょう
+</span>
+
+\[
+\langle Q|P\rangle = c
+\]
+
+\(c\) being a number. Then we must have
+
+<br><span style="color: blue;">
+\(c\) は数である。すると、
+</span>
+
+\[
+\langle Qs|Pd\rangle = c = \langle Q|P\rangle  \tag{60}
+\]
+
+From the conjugate imaginary of (59) with \(Q\) instead of \(P\),
+
+<br><span style="color: blue;">
+(59)式の共役虚数から\(P\)の代わりに\(Q\)を用いると、
+</span>
+
+\[
+\langle Qd| = \langle Q|\overline{D}  \tag{61}
+\]
+
+Hence (60) gives 
+
+<br><span style="color: blue;">
+したがって（60）は
+</span>
+
+\[
+\langle Q|\overline{D}D|P\rangle = \langle Q|P\rangle
+\]
+
+Since this holds for arbitrary \(\langle Q|\) and \(|P\rangle\), we must have
+
+<br><span style="color: blue;">
+これは任意の\(\langle Q|\)と\(|P\rangle\)に対して成り立つので、
+</span>
+
+\[
+\overline{D}D = 1  \tag{62}
+\]
+
+giving us a general condition which \(D\) has to satisfy.
+
+<br><span style="color: blue;">
+\(D\) が満たすべき一般的な条件を与えます。
+</span>
+</p><p>
 Take as a second example the equation
 
-v[P> = |),
-where v is any dynamical variable. Then, using vz to denote the
+<br><span style="color: blue;">
+2つ目の例として、次の式を挙げます。
+</span>
+
+\[
+v|P\rangle = |R\rangle
+\]
+
+where \(v\) is any dynamical variable. Then, using \(v_d\) to denote the
 displaced dynamical variable, we must have
 
-vg|Pd> = |Rd).
+<br><span style="color: blue;">
+ここで、\(v\)は任意の力学変数である。そして、\(v_d\)を変位された力学変数を表すために用いると、
+</span>
+
+\[
+v_d|Pd\rangle = |Rd\rangle
+\]
+
 With the help of (59) we get
-vq|Pd> = D|R> = Dv|P> = DvD-|Pdy.
-Since |Pd> can be any ket, we must have
-vg = DvD-, (63)
 
-3895-57 H
-﻿192 THE QUANTUM CONDITIONS §25
+<br><span style="color: blue;">
+（59）の助けを借りて、
+</span>
 
-which shows that the linear operator ) determines the displacement
+\[
+v_d|Pd\rangle = D|R\rangle = Dv|P\rangle = DvD^{-1}|Pd\rangle
+\]
+
+Since \(|Pd\rangle\) can be any ket, we must have
+
+<br><span style="color: blue;">
+\(|Pd\rangle\)は任意のケットなので、
+</span>
+
+\[
+v_d = DvD^{-1}  \tag{63}
+\]
+
+
+which shows that the linear operator \(D\) determines the displacement
 of dynamical variables as well as that of kets and bras. Note that
-the arbitrary numerical factor of modulus unity in D does not affect
-vq, and also it does not affect the validity of (62).
+the arbitrary numerical factor of modulus unity in \(D\) does not affect
+\(v_d\), and also it does not affect the validity of (62).
 
-Let us now pass to an infinitesimal displacement, ie. taking the
-displacement through the distance 5x in the direction of the z-axis,
-let us make 8x0. From physical continuity we should expect
-a displaced ket |Pd> to tend to the original |P> and we may further
+<br><span style="color: blue;">
+これは、線型演算子 \(D\) が、ケットとブラの変位だけでなく、力学変数の変位も決定することを示しています。\(D\) における係数 1 という任意の数値因子は、\(v_d\) に影響を与えず、(62) の妥当性にも影響を与えないことに注意してください。
+</span>
+</p><p>
+Let us now pass to an infinitesimal displacement, i.e. taking the
+displacement through the distance \(\delta x\) in the direction of the \(x\)-axis,
+let us make \(\delta x\rightarrow 0\). From physical continuity we should expect
+a displaced ket \(|Pd\rangle\) to tend to the original \(|P\rangle\) and we may further
 expect the limit
 
-_ |Pd)—|P> ,.. D—1,
+<br><span style="color: blue;">
+さて、微小変位、つまり\(x\)軸方向に距離\(\delta x\)だけ変位することを考えてみましょう。\(\delta x\rightarrow 0\)とします。物理的な連続性から、変位したケット\(|Pd\rangle\)は元の\(|P\rangle\)に近づくことが予想され、さらに次の極限が期待できます。
+</span>
+
+\[
+\lim\limits_{\delta x\rightarrow 0} \frac{|Pd\rangle - |P\rangle}{\delta x} =
+\lim\limits_{\delta x\rightarrow 0} \frac{D-1}{\delta x}|P\rangle
+\]
+
 to exist. This requires that the limit
-jim (D—1)/8x (64)
-+O .
+
+<br><span style="color: blue;">
+存在するためには限界が
+</span>
+
+\[
+\lim\limits_{\delta x\rightarrow 0} (D-1)/\delta x  \tag{64}
+\]
 
 shall exist. This limit is a linear operator which we shall call the
-displacement operator for the x-direction and denote by d,. The
-arbitrary numerical factor e'” with y real which we may multiply
-into D must be made to tend to unity as da — 0 and then introduces
-an arbitrariness in d,, namely, d, may be replaced by
+displacement operator for the \(x\)-direction and denote by \(d_x\). The
+arbitrary numerical factor \(e^{i\gamma}\) with \(\gamma\) real which we may multiply
+into \(D\) must be made to tend to unity as \(\delta x\rightarrow 0\) and then introduces
+an arbitrariness in \(d_x\), namely, \(d_x\) may be replaced by
 
-lim (De*”¥—1)/8a = jim (D—l+iy)/ie = d,+14,,
+<br><span style="color: blue;">
+が存在する。この極限は線型作用素であり、\(x\)方向の変位作用素と呼び、\(d_x\)と表記する。\(D\)に乗じることができる、\(\gamma\)実数の任意の数値因子\(e^{i\gamma}\)は、\(\delta x\rightarrow 0\)として1に近づくようにする必要があり、\(d_x\)に任意性をもたらす。つまり、\(d_x\)は次のように置き換えられる。
+</span>
 
-b2—>0 +0
-where a, is the limit of y/8z. Thus d, contains an arbitrary additive
-pure imaginary number. ~
-For dx small D = 1+62zd,. (65)
+\[
+\lim\limits_{\delta x\rightarrow 0} (De^{i\gamma}-1)/\delta x = \lim\limits_{\delta x\rightarrow 0} (D-1+i\gamma)/\delta x=d_x+ia_x
+\]
+
+where \(a_x\) is the limit of \(\gamma/\delta x\). Thus \(d_x\) contains an arbitrary additive
+pure imaginary number.
+
+<br><span style="color: blue;">
+ここで \(a_x\) は \(\gamma/\delta x\) の極限です。したがって \(d_x\) には任意の加法的な純虚数が含まれます。
+</span>
+
+\[
+For\; \delta x\; small　　D = 1+\delta x d_x  \tag{65}
+\]
 
 Substituting this into (62), we get
-(1+$2d,)(1+6ard,) = 1,
-which reduces, with neglect of 5z*, to
-da(d,+d,) = 0.
 
-Thus d,, is a pure imaginary linear operator. Substituting (65) into
-(63) we get, with neglect of 62? again,
+<br><span style="color: blue;">
+これを（62）に代入すると、
+</span>
 
-vg = (1+8ed,)u(1—sad,) = v+S2(d,v—v d,), (66)
-showing that jim (vg—v) [bu = d,v—vd,. (67)
-+0
+\[
+(1+\delta x\overline{d}_x)(1+\delta xd_x) = 1
+\]
 
+which reduces, with neglect of \(\delta x^2\), to
+
+<br><span style="color: blue;">
+これは\(\delta x^2\)を無視すると、
+</span>
+
+\[
+\delta x(\overline{d}_x + d_x) = 0.
+\]
+
+Thus \(d_x\) is a pure imaginary linear operator. Substituting (65) into
+(63) we get, with neglect of \(\delta x^2\) again,
+
+<br><span style="color: blue;">
+したがって、\(d_x\)は純虚線型作用素である。(65)を(63)に代入すると、\(\delta x^2\)を無視すれば、次の式が得られる。
+</span>
+
+\[
+v_d = (1+\delta x d_x)v(1—\delta x d_x) = v + \delta x(d_x v - v d_x)  \tag{66}
+\]
+
+showing that
+
+<br><span style="color: blue;">
+以下になる
+</span>
+
+\[
+\lim\limits_{\delta x\rightarrow 0} (v_d - v)/\delta x = d_x v - v d_x \tag{67}
+\]
+
+</p><p>
 We may describe any dynamical system in terms of the following
-dynamical variables: the Cartesian coordinates x, y,z of the centre of
-mass of the system, the components p,, p,, p, of the total momentum
-of the system, which are the canonical momenta conjugate to x,y,z
+dynamical variables: the Cartesian coordinates \(x,y,z\) of the centre of
+mass of the system, the components \(p_x,p_y,p_z\) of the total momentum
+of the system, which are the canonical momenta conjugate to \(x,y,z\)
 respectively, and any dynamical variables needed for describing
-﻿§25 DISPLACEMENT OPERATORS 103
-
 internal degrees of freedom of the system. If we suppose a piece
-of apparatus which has been set up to measure z, to be displaced a
-distance dx in the direction of the z-axis, it will measure e—6z, hence
+of apparatus which has been set up to measure \(x\), to be displaced a
+distance \(\delta x\) in the direction of the \(x\)-axis, it will measure \(x-delta x\), hence
 
-Lq = E—S8e.
-Comparing this with (66) for v = x, we obtain
-d,c—ad, = —1. (68)
+<br><span style="color: blue;">
+あらゆる力学系は、以下の力学変数を用いて記述することができます。系の質量中心の直交座標 \(x,y,z\)、系の全運動量の成分 \(p_x,p_y,p_z\)（それぞれ \(x,y,z\) に共役な標準運動量）、そして系の内部自由度を記述するために必要な力学変数です。\(x\) を測定するように設定された装置が、\(x\) 軸方向に距離 \(\delta x\) だけ変位すると、\(x-delta x\) を測定することになります。したがって、
+</span>
 
-This is the quantum condition connecting d, with x. From similar
-arguments we find that y,z,p,,p,, p, and the internal dynamical vari-
+\[
+x_d = x - \delta x
+\]
+
+Comparing this with (66) for \(v = x\), we obtain
+
+<br><span style="color: blue;">
+これを(66)の\(v = x\)と比較すると、
+</span>
+
+\[
+d_x x - x d_x = —1  \tag{68}
+\]
+
+This is the quantum condition connecting \(d_x\) with \(x\). From similar
+arguments we find that \(y,z,p_x,p_y,p_z\) and the internal dynamical vari-
 ables, which are unaffected by the displacement, must commute with
-d,,. Comparing these results with (9), we see that iid, satisfies just
-the same quantum conditions as p,. Their difference, p,—ihd,,
+\(d_x\). Comparing these results with (9), we see that \(i\hbar d_x\) satisfies just
+the same quantum conditions as \(p_x\). Their difference, \(p_x-i\hbar d_x\),
 commutes with all the dynamical variables and must therefore be a
-number. This number, which is necessarily real since p, and iid, are
+number. This number, which is necessarily real since \(p_x\) and \(i\hbar d_x\), are
 both real, may be made zero by a suitable choice of the arbitrary,
-pure imaginary number that can be added to d,. We then have the
+pure imaginary number that can be added to \(d_x\). We then have the
+result
 
-result p, = thd, (69)
+<br><span style="color: blue;">
+これは、\(d_x\) と \(x\) を結び付ける量子条件です。同様の議論から、\(y,z,p_x,p_y,p_z\) と、変位の影響を受けない内部の力学変数は、\(d_x\) と交換する必要があることがわかります。これらの結果を (9) と比較すると、\(i\hbar d_x\) は \(p_x\) と全く同じ量子条件を満たすことがわかります。それらの差 \(p_x-i\hbar d_x\) は、すべての力学変数と交換するため、必ず数になります。\(p_x\) と \(i\hbar d_x\) はどちらも実数であるため、この数は必然的に実数ですが、\(d_x\) に加えられる任意の純虚数を適切に選ぶことでゼロにすることができます。すると、次のようになります。
+</span>
+
+\[
+p_x = i\hbar d_x  \tag{69}
+\]
 
 or the x-component of the total momentum of the system is ih tomes the
+displacement operator \(d_x\).
 
-displacement operator d,,.
+<br><span style="color: blue;">
+あるいは、系の全運動量のx成分は変位演算子\(dx\)のi倍である。
+</span>
+</p><p>
 This is a fundamental result, which gives a new significance to
-
 displacement operators. There is a corresponding result, of course,
-also for the y and z displacement operators d, and d,, The quantum
-conditions which state that p,, p, and p, commute with each other
+also for the \(y\) and \(z\) displacement operators \(d_y\) and \(d_z\), The quantum
+conditions which state that \(p_x, p_y\) and \(p_z\) commute with each other
 are now seen to be connected with the fact that displacements in
-
 different directions are commutable operations.
 
-26. Unitary transformations
-Let U be any linear operator that has a reciprocal U~! and con-
+<br><span style="color: blue;">
+これは基本的な結果であり、変位演算子に新たな意味を与えます。もちろん、\(y\) および \(z\) 変位演算子 \(d_y\) および \(d_z\) についても同様の結果が得られます。\(p_x, p_y\) と \(p_z\) が互いに可換であるという量子条件は、異なる方向への変位が可換な演算であるという事実と関連していることが示されました。
+</span>
+</p><p>
 
-sider the equation ot = Ua-1, (70)
+<h3>26. Unitary transformations　<span style="color: blue;">ユニタリ変換</span></h3>
+<p>
+Let \(U\) be any linear operator that has a reciprocal \(U^{\-1}\) and con-
+sider the equation
 
-« being an arbitrary linear operator. This equation may be regarded
-as expressing a transformation from any linear operator « to a
-corresponding linear operator «*, and as such it has rather remarkable
-properties. In the first place it should be noted that each a* has the
-same eigenvalues as the corresponding q; since, if a' is any eigenvalue
-of « and |«'> is an eigenket belonging to it, we have
-ala”> = a' la"
+<br><span style="color: blue;">
+\(U\) を任意の線型作用素でその逆数 \(U^{\-1}\) を持つものとし、次の式を考える。
+</span>
+
+\[
+\alpha^* = U\alpha U^{-1}  \tag{70}
+\]
+
+\(\alpha\) being an arbitrary linear operator. This equation may be regarded
+as expressing a transformation from any linear operator \(\alpha\) to a
+corresponding linear operator \(\alpha^*\), and as such it has rather remarkable
+properties. In the first place it should be noted that each \(\alpha^*\) has the
+same eigenvalues as the corresponding \(\alpha\); since, if \(\alpha^\prime\) is any eigenvalue
+of \(\alpha\) and \(|\alpha^\prime\rangle\) is an eigenket belonging to it, we have
+
+<br><span style="color: blue;">
+\(\alpha\) は任意の線型演算子である。この式は、任意の線型演算子 \(\alpha\) から対応する線型演算子 \(\alpha^*\) への変換を表すものとみなされ、それ自体が注目すべき性質を持つ。まず第一に、各 \(\alpha^*\) は対応する \(\alpha\) と同じ固有値を持つことに留意すべきである。\(\alpha^\prime\) が \(\alpha\) の任意の固有値であり、\(|\alpha^\prime\rangle\) がそれに属する固有ケットである場合、次式が成り立つ。
+</span>
+
+\[
+\alpha|\alpha^\prime\rangle = \alpha^\prime|\alpha^\prime\rangle
+\]
+
 and hence
-a*U la') = UxUU la') = Uala'> = a'U |'),
-﻿104 THE QUANTUM CONDITIONS §26
 
-showing that U|a'> is an eigenket of «* belonging to the same eigen-
-value a', and similarly any eigenvalue of «* may be shown to be also
-an eigenvalue of «. Further, if we take several «'s that are connected
+<br><span style="color: blue;">
+そしてそれゆえ
+</span>
+
+\[
+\alpha^*U|\alpha^\prime\rangle = U\alpha U^{-1}|\alpha^\prime\rangle = U\alpha|\alpha^\prime\rangle = \alpha^\prime U|\alpha^\prime\rangle
+\]
+
+showing that \(U|\alpha^\prime\rangle\) is an eigenket of \(\alpha^*\) belonging to the same eigenvalue \(\alpha^\prime\), and similarly any eigenvalue of \(\alpha^*\) may be shown to be also
+an eigenvalue of \(\alpha\). Further, if we take several \(\alpha\)'s that are connected
 by algebraic equations and transform them all according to (70), the
-corresponding a*'s will be connected by the same algebraic equations.
+corresponding \(\alpha^*\)'s will be connected by the same algebraic equations.
 This result follows from the fact that the fundamental algebraic pro-
 cesses of addition and multiplication are left invariant by the trans-
 formation (70), as is shown. by the following equations:
 
-(af og)* = Uloy+a,)U-? = Ua,0-1+ Vay 0-1 = of 40%,
+<br><span style="color: blue;">
+\(U|\alpha^\prime\rangle\) は \(\alpha^*\) の固有ケットであり、同じ固有値 \(\alpha^\prime\) に属していることを示しており、同様に \(\alpha^*\) の任意の固有値は \(\alpha\) の固有値でもあることが示されています。さらに、代数方程式で結ばれた複数の \(\alpha\) を取り、それらすべてを (70) に従って変換すると、対応する \(\alpha^*\) は同じ代数方程式で結ばれます。
+この結果は、加算と乗算という基本的な代数的処理が変換 (70) によって不変のままであるという事実から導かれ、次の式がそれを示しています。
+</span>
 
-(ay ofg)* = Joy ag U-? = Ua U-U ag U-1 = ao,
+\[
+\begin{align}
+(\alpha_1+\alpha_2)^* &= U(\alpha_1 + \alpha_2)U^{-1} = U\alpha_1U^{-1}+U\alpha_2U^{-1}=\alpha_1^* + \alpha_2^* \\
+\\
+(\alpha_1 \alpha_2)^* &= U\alpha_1 \alpha_2U^{-1} = U\alpha_1U^{-1}U\alpha_2U^{-1} = \alpha_1^* \alpha_2^*
+\end{align}
+\]
 
-Let us now see what condition would be imposed on U by the
-requirement that any real « transforms into a real «*. Equation
+</p><p>
+Let us now see what condition would be imposed on \(U\) by the
+requirement that any real \(\alpha\) transforms into a real \(\alpha^*\). Equation
+(70) may be written
 
-(70) may be written wt = Una. (71)
+<br><span style="color: blue;">
+ここで、任意の実数\(\alpha\)が実数\(\alpha^*\)に変換されるという要件によって\(U\)にどのような条件が課されるかを見てみましょう。式(70)は次のように書き表されます。
+</span>
+
+\[
+\alpha^*U=U\alpha  \tag{71}
+\]
 
 Taking the conjugate complex of both sides in accordance with
-(5) of §8 we find, if « and «* are both real,
+(5) of §8 we find, if \(\alpha\) and \(\alpha^*\) are both real,
 
-Oa* = aU. (72)
-Equation (71) givesus  UatU = TUa
+<br><span style="color: blue;">
+§8の(5)に従って両辺の共役複素数をとると、\(\alpha\)と\(\alpha^*\)がともに実数であれば、
+</span>
+
+\[
+\overline{U}\alpha^* = \alpha\overline{U}  \tag{72}
+\]
+
+Equation (71) gives us
+
+<br><span style="color: blue;">
+式(71)から
+</span>
+
+\[
+\overline{U}\alpha^*U = \overline{U}U\alpha
+\]
+
 and equation (72) gives us
-Oa*U = aU.
-Hence Ux = aU.
 
-Thus UU commutes with any real linear operator and therefore also
+<br><span style="color: blue;">
+そして式(72)から
+</span>
+
+\[
+\overline{U}\alpha^*U = \alpha\overline{U}U
+\]
+
+Hence
+
+<br><span style="color: blue;">
+したがって
+</span>
+
+\[
+\overline{U}U\alpha = \alpha\overline{U}U
+\]
+
+Thus \(\overline{U}U\) commutes with any real linear operator and therefore also
 with any lmear operator whatever, since any linear operator can be
-expressed as one real one plus z times another. Hence UU is:a
+expressed as one real one plus \(i\) times another. Hence \(\overline{U}U\) is a
 number. It is obviously real, its conjugate complex according to (5)
 of §8 being the same as itself, and further it must be a positive
-number, since for any ket |P>, <P|UU|P) is positive as well as
-<P|\P>. We can suppose it to be unity without any loss of generality
+number, since for any ket \(|P\rangle, \langle P|\overline{U}U|P\rangle\) is positive as well as
+\(\langle P|P\rangle\). We can suppose it to be unity without any loss of generality
 in the transformation (70). We then have
 
-UU =1. (73)
-Equation (73) is equivalent to any of the following
-U = 0-3, U = U-3, U-10-1 = 1, (74)
+<br><span style="color: blue;">
+したがって、\(\overline{U}U\) は任意の実線型作用素と可換であり、したがって任意の線形作用素とも可換である。なぜなら、任意の線型作用素は、実数 1 個と別の実数 \(i\) 倍として表せるからである。したがって、\(\overline{U}U\) は数である。これは明らかに実数であり、§8 の (5) による共役複素数はそれ自身と同じである。さらに、任意のケットに対して \(|P\rangle, \langle P|\overline{U}U|P\rangle\) は \(\langle P|P\rangle\) と同様に正であるため、正の数でなければならない。変換 (70) において、一般性を失うことなくこれを 1 と仮定することができる。すると、
+</span>
 
-A matrix or linear operator U that satisfies (73) and (74) is said
-to be unitary and a transformation (70) with unitary U is called a
+\[
+\overline{U}U = 1  \tag{73}
+\]
+
+Equation (73) is equivalent to any of the following
+
+<br><span style="color: blue;">
+式(73)は次のいずれかと同等である。
+</span>
+
+\[
+U = \overline{U}^{-1},　\overline{U} = U^{-1},　U^{-1}\overline{U}^{-1} = 1  \tag{74}
+\]
+
+</p><p>
+A matrix or linear operator \(U\) that satisfies (73) and (74) is said
+to be unitary and a transformation (70) with unitary \(U\) is called a
 unitary transformation. A unitary transformation transforms real
 linear operators into real linear operators and leaves invariant any
-﻿§26 UNITARY TRANSFORMATIONS 105
-
 algebraic equation between linear operators. It may be considered
 as applying also to kets and bras, in accordance with the equations
 
-[P*) = U|P>, << P*| = <P|U = (P|U4, (75)
+<br><span style="color: blue;">
+(73) および (74) を満たす行列または線型作用素 \(U\) はユニタリであるとされ、ユニタリ \(U\) を持つ変換 (70) はユニタリ変換と呼ばれる。ユニタリ変換は、実線型作用素を実線型作用素に変換し、線型作用素間の代数方程式を不変にする。これは、以下の式に従って、ケットおよびブラにも適用できると考えられる。
+</span>
+
+\[
+|P^*\rangle = U|P\rangle,　\langle P^*| = \langle P|\overline{U} = \langle P|U^{-1}  \tag{75}
+\]
+
 and then it leaves invariant any algebraic equation between linear
-operators, kets, and bras. It transforms eigenvectors of « into eigen-
-vectors of «*. From this one can easily deduce that it transforms an
+operators, kets, and bras. It transforms eigenvectors of \(\alpha\) into eigen-
+vectors of \(\alpha^*\). From this one can easily deduce that it transforms an
 observable into an observable and that it leaves invariant any func-
 tional relation between observables based on the general definition
 of a function given in §11.
 
+<br><span style="color: blue;">
+そして、線型作用素、ケット、ブラス関数間の代数方程式は不変のままである。\(\alpha\) の固有ベクトルを \(\alpha^*\) の固有ベクトルに変換する。このことから、観測可能なものを観測可能なものに変換すること、そして §11 で与えられた関数の一般定義に基づく観測可能なもの間の関数関係は不変のままであることが容易に分かる。
+</span>
+</p><p>
 The inverse of a unitary transformation is also a unitary trans-
-formation, since from (74), if U is unitary, U-1 is also unitary.
+formation, since from (74), if \(U\) is unitary, \(U^{-1}\) is also unitary.
 Further, if two unitary transformations are applied in succession,
 the result is a third unitary transformation, as may be verified in
-the following way. Let the two unitary transformations be (70) and ©
+the following way. Let the two unitary transformations be (70) and 
 
-ot = Va*V-1,
-The connexion between a! and a is then
-at = VUoU-4V-4
-= (VU )a(VU)4 (76)
-from (42) of §11. Now VU is unitary since
-VUVU = UVVU = UU = 1,
+<br><span style="color: blue;">
+ユニタリ変換の逆変換もまたユニタリ変換である。なぜなら、(74) より、\(U\) がユニタリならば、\(U^{-1}\) もユニタリであるからである。
+さらに、2 つのユニタリ変換を連続して適用すると、
+結果は 3 番目のユニタリ変換となり、これは次のように検証できる。2 つのユニタリ変換を (70) とすると、
+</span>
+
+\[
+\alpha^\dagger = V\alpha^*V^{-1}
+\]
+
+The connection between \(\alpha^\dagger\) and \(\alpha\) is then
+
+<br><span style="color: blue;">
+\(\alpha^\dagger\)と\(\alpha\)の関係は
+</span>
+
+\[
+\begin{align}
+\alpha^\dagger &= VU\alpha U^{-1}V^{-1} \\
+\\
+&= (VU)\alpha(VU)-{-1}  \tag{76}
+\end{align}
+\]
+
+from (42) of §11. Now \(VU\) is unitary since
+
+<br><span style="color: blue;">
+§11の(42)より。\(VU\)はユニタリである。なぜなら、
+</span>
+
+\[
+\overline{VU}VU = \overline{U}\overline{V}VU = \overline{U}U = 1
+\]
+
 and hence (76) is a unitary transformation.
 
+<br><span style="color: blue;">
+したがって(76)はユニタリ変換である。
+</span>
+</p><p>
 The transformation given in the preceding section from undisplaced
 to displaced quantities is an example of a unitary transformation, as
 is shown by equations (62), (63), corresponding to equations (73),
-(70), and equations (59), (61), corresponding to equations (75). -
+(70), and equations (59), (61), corresponding to equations (75).
 
+<br><span style="color: blue;">
+前の節で示した変位していない量から変位した量への変換はユニタリー変換の例であり、式(73)、(70)に対応する式(62)、(63)、および式(75)に対応する式(59)、(61)によって示されている。
+</span>
+</p><p>
 In classical mechanics one can make a transformation from the
-canonical coordinates and momenta q,, p, (r = 1,..,”) to a new set of
-variables g*, p* (r = 1,..,”) satisfying the same P.B. relations as the
-q's and p's, i.e. equations (8) of §21 with g*'s and p*'s replacing the
-g'sand p's, and can express all dynamical variables in terms of the g*'s
-and p*'s. The g*'s and p*'s are then also called canonical coordinates
+canonical coordinates and momenta \(q_r, p_r\;(r = ,...,n)\) to a new set of
+variables \(q_r^*,p_r^*\;(r = 1,...,n)\) satisfying the same P.B. relations as the
+\(q\)'s and \(p\)'s, i.e. equations (8) of §21 with \(q^*\)'s and \(p^*\)'s replacing the
+\(q\)'s and \(p\)'s, and can express all dynamical variables in terms of the \(q^*\)'s
+and \(p^*\)'s. The \(q^*\)'s and \(p^*\)'s are then also called canonical coordinates
 and momenta and the transformation is called a contact transforma-
 tion. One can easily verify that the P.B. of any two dynamical
-variables u and v is correctly given by formula (1) of §21 with g*'s and
-p*'s instead of q's and p's, so that the P.B. relationship is invariant
+variables \(u\) and \(v\) is correctly given by formula (1) of §21 with \(q^*\)'s and
+\(p^*\)'s instead of \(q\)'s and \(p\)'s, so that the P.B. relationship is invariant
 under a contact transformation. This results in the new canonical
 coordinates and momenta being on the same footing as the original
 ones for many purposes of general dynamical theory, even though the
-﻿106 THE QUANTUM CONDITIONS §26
-
-new coordinates g* may not be a set of Lagrangian coordinates but
+new coordinates \(q_r^*\) may not be a set of Lagrangian coordinates but
 may be functions of the Lagrangian coordinates and velocities.
 
+<br><span style="color: blue;">
+古典力学では、正準座標と運動量 \(q_r, p_r\;(r = ,...,n)\) から、\(q\) と \(p\) と同じ P.B. 関係を満たす新しい変数の集合 \(q_r^*,p_r^*\;(r = 1,...,n)\) への変換を行うことができます。つまり、§21 の式 (8) で \(q\) と \(p\) を \(q^*\) と \(p^*\) に置き換え、すべての力学変数を \(q^*\) と \(p^*\) で表現することができます。 \(q^*\) と \(p^*\) は、正準座標と運動量とも呼ばれ、この変換は接触変換と呼ばれます。任意の2つの力学変数 \(u\) と \(v\) の P.B. は、\(q\) と \(p\) の代わりに \(q^*\) と \(p^*\) を用いた §21 の式 (1) によって正しく与えられ、P.B. 関係は接触変換に対して不変であることは容易に検証できます。この結果、新しい座標 \(q_r^*\) がラグランジュ座標の集合ではなく、ラグランジュ座標と速度の関数である場合でも、一般力学理論の多くの目的において、新しい正準座標と運動量は元のものと同じ立場になります。
+</span>
+</p><p>
 It will now be shown that, for a quantum dynamical system that
 has a classical analogue, unitary transformations in the quantum theory
 are the analogue of contact transformations in the classical theory.
@@ -1307,79 +2110,229 @@ mechanics that have no classical analogue, but for those systems in
 quantum mechanics which are describable in terms of canonical
 coordinates and momenta, the analogy between the two kinds of
 transformation holds. To establish it, we note that a unitary trans-
-formation applied to the quantum variables g,, p, gives new variables .
-g*, p* satisfying the same P.B. relations, since the P.B. relations are
+formation applied to the quantum variables \(q_r,p_r\) gives new variables .
+\(q_r^*,p_r^*\) satisfying the same P.B. relations, since the P.B. relations are
 equivalent to the algebraic relations (9) of §21 and algebraic relations
 are left invariant by a unitary transformation. Conversely, any real
-variables 9*, p* satisfying the P.B. relations for canonical coordinates
-and momenta are connected with the q,,p, by a unitary transforma-
+variables \(q_r^*, p_r^*\) satisfying the P.B. relations for canonical coordinates
+and momenta are connected with the \(q_r,p_r\) by a unitary transforma-
 tion, as is shown by the following argument.
-| We use the Schr&ouml;dinger representation, and write the basic ket
-l0---Gn> a8 |g'> for brevity. Since we are assuming that the g*, p*
+
+<br><span style="color: blue;">
+古典力学系に類似する量子力学系に対して、量子論におけるユニタリー変換は古典力学における接触変換の類似であることが示される。ユニタリー変換は接触変換よりも一般性が高い。なぜなら、ユニタリー変換は古典力学系に類似する系がない量子力学系にも適用できるからである。しかし、量子力学系が正準座標と運動量で記述できる場合、これら2種類の変換の類似性は成立する。これを証明するために、量子変数 \(q_r,p_r\) にユニタリー変換を適用すると、同じ P.B. 関係を満たす新しい変数 . \(q_r^*,p_r^*\) が得られることを指摘する。なぜなら、P.B. 関係は §21 の代数関係 (9) と同値であり、代数関係はユニタリー変換によって不変となるからである。逆に、正準座標と運動量に関して P.B. 関係を満たす任意の実変数 \(q_r^*, p_r^*\) は、以下の議論で示されるように、ユニタリ変換によって \(q_r,p_r\) と結びついています。
+</span>
+</p><p>
+We use the Schr&ouml;dinger representation, and write the basic ket
+\(|q_1^\prime...q_n^\prime\rangle\) as \(|q^\prime\rangle\) for brevity. Since we are assuming that the \(q_r^*, p_r^*\)
 satisfy the P.B. relations for canonical coordinates and momenta,
-we can set up a Schrodinger representation referring to them, with
-the g* diagonal and each p* equal to —ik /ég*. The basic kets in
-this second Schr&ouml;dinger representation will be |g#'...¢%>, which we
-write |q*'> for brevity. Now introduce the linear operator U defined by
+we can set up a Schr&ouml;dinger representation referring to them, with
+the \(q_r^*\) diagonal and each \(p_r^*\) equal to \(—i\hbar\partial/\partial q_r^*\). The basic kets in
+this second Schr&ouml;dinger representation will be\(|q_1^{*\prime}...q_n^{*\prime\rangle\), which we
+write \(|q^{*\prime}\rangle\) for brevity. Now introduce the linear operator \(U\) defined by
 
-<q*'|U|q'> = 8(g*'—4'), (77)
+<br><span style="color: blue;">
+シュレーディンガー表現を用い、簡潔にするために基本ケット\(|q_1^\prime...q_n^\prime\rangle\)を\(|q^\prime\rangle\)と書きます。\(q_r^*, p_r^*\)が正準座標と運動量のP.B.関係を満たすと仮定しているので、それらを参照してシュレーディンガー表現を設定できます。\(q_r^*\)対角線と各\(p_r^*\)は\(—i\hbar\partial/\partial q_r^*\)に等しくなります。この第二シュレーディンガー表現における基本的なケットは\(|q_1^{*\prime}...q_n^{*\prime\rangle\)となり、簡潔にするために\(|q^{*\prime}\rangle\)と記す。ここで、次のように定義される線型演算子\(U\)を導入する。
+</span>
 
-where 5(¢*'—g') is short for
-8(q*—9') = 8a' —91)8(GF — 9)... 8(Gh' — Ga) (78)
+\[
+\langle q^{*\prime}|U|q^\prime\rangle = \delta(q^{*\prime} - q^\prime)  \tag{77}
+\]
+
+where \(\delta(q^{*\prime} - q^\prime)\) is short for
+
+<br><span style="color: blue;">
+ここで\(\delta(q^{*\prime} - q^\prime)\)は
+</span>
+
+\[
+\delta(q^{*\prime} - q^\prime) = \delta(q_1^{*\prime} - q_1^\prime)\delta(q_2^{*\prime} - q_2^\prime)...\delta(q_n^{*\prime} - q_n^\prime)  \tag{78}
+\]
 
 The conjugate complex of (77) is
-<q |Tlg*'> = 8" —q'),
 
-and hencet
-| <7 TU 9"> = | <@'ITlg*"> dg® <g*"|Ulg">
-| = ii 8(g*'—q') dq*' 8(g*'—4"')
-= 8(q'—9"),
-so that UU = 1.
+<br><span style="color: blue;">
+(77) の共役複素数は
+</span>
 
-+ We use the notation of a single integral sign and dg*' to denote an integral over
-all the variables gi', qi',..., g%'.. This abbreviation will be used also in future work.
-﻿§26 UNITARY TRANSFORMATIONS 107
+\[
+\langle q^\prime|\overline{U}|q^{*\prime}\rangle = \delta(q^{*\prime} - q^\prime)
+\]
 
-Thus U is a unitary operator. We have further
-<a gr U |g') = aF'5(q*'—9')
-and <q Ug, ig'> = 8(q*—9')4,-
+and hence <sup>†</sup>
 
-The right-hand sides of these two equations are equal on account of -
-the property of the 5 function (11) of §15, and hence
+<br><span style="color: blue;">
+そしてそれゆえ<sup>†</sup>
+</span>
 
-qr U = Ug,
-or g* = Ug, U-1.
+</p><p class="margin-large">
+<sup>†</sup> We use the notation of a single integral sign and \(dq^{*\prime}\) to denote an integral over
+all the variables \(q_1^{*\prime},q_2^{*\prime},...,q_n^{*\prime}\). This abbreviation will be used also in future work.
+</p><p>
+
+</p><p class="margin-large">
+<sup>†</sup> 積分記号 1 つと \(dq^{*\prime}\) の表記を用いて、すべての変数 \(q_1^{*\prime},q_2^{*\prime},...,q_n^{*\prime}\) にわたる積分を表します。この略語は今後の研究でも使用されます。
+</p><p>
+
+\[
+\begin{align}
+\langle q^\prime|\overline{U}U|q^{\prime\prime}\rangle &= \int \langle q^\prime|\overline{U}q^{*\prime}\rangle dq^{*\prime}\langle q^{*\prime}|U|q^{\prime\prime}\rangle \\
+\\
+&=\int \delta(q^{*\prime} - q^\prime)dq^{*\prime}\delta(q^{*\prime} - q^\prime) \\
+\\
+&=\delta(q^\prime - q^{\prime\prime})
+\end{align}
+\]
+
+so that 
+
+<br><span style="color: blue;">
+よって
+</span>
+
+\[
+\overline{U}U = 1
+\]
+
+Thus \(U\) is a unitary operator. We have further
+
+<br><span style="color: blue;">
+したがって\(U\)はユニタリ演算子である。さらに
+</span>
+
+\[
+\langle q^{*\prime}|q_r^*U|q^\prime\rangle = q_r^{*\prime}\delta(q^{*\prime} - q^\prime)
+\]
+
+and 
+
+<br><span style="color: blue;">
+および
+</span>
+
+\[
+\langle q^{*\prime}|Uq_r|q^\prime\rangle = \delta(q^{*\prime} - q^\prime)q_r^\prime
+\]
+
+The right-hand sides of these two equations are equal on account of
+the property of the \(\delta\) function (11) of §15, and hence
+
+<br><span style="color: blue;">
+これら2つの式の右辺は、§15の\(\delta\)関数(11)の性質により等しいので、
+</span>
+
+\[
+q_r^*U = Uq_r
+\]
+
+or 
+
+<br><span style="color: blue;">
+または
+</span>
+
+\[
+q_r^* = Uq_rU^{-1}
+\]
+
 Again, from (45) and (46),
 
-, ‘ Mg a , ,
-<Q pr U lg"> = — th 8g" —9'),
-Tr
-é i , a , i
-UP I> = he Bg" 4).
+<br><span style="color: blue;">
+また、(45) と(46) から、
+</span>
+
+\[
+\begin{align}
+\langle q^{*\prime}|p_r^*U|q^\prime\rangle &= -i\hbar\frac{\partial}{\partial q_r^{*\prime}}\delta(q^{*\prime} - q^\prime) \\
+\\
+\langle q^{*\prime}|Up_r|q^\prime\rangle &= -\hbar\frac{\partial}{\partial q_r^\prime}\delta(q^{*\prime} - q^\prime)
+\end{align}
+\]
+
 The right-hand sides of these two equations are obviously equal, and
-hence ptU = Up,
-or p* = Up, U-.
+hence 
+
+<br><span style="color: blue;">
+これら2つの式の右辺は明らかに等しいので、
+</span>
+
+\[
+p_r^*U = Up_r
+\]
+
+or 
+
+<br><span style="color: blue;">
+または
+</span>
+
+\[
+p_r^* = Up_rU^{-1}
+\]
 
 Thus all the conditions for a unitary transformation are verified.
-We get an infinitesimal unitary transformation by taking U in (70)
+
+<br><span style="color: blue;">
+したがって、ユニタリ変換のすべての条件が検証されます。
+</span>
+</p><p>
+We get an infinitesimal unitary transformation by taking \(U\) in (70)
 to differ by an infinitesimal from unity. Put
 
-U = 1+ieF,
-where ¢ is infinitesimal, so that its square can be neglected. Then
-O-+ = 1—ieF,
+<br><span style="color: blue;">
+(70) の \(U\) を 1 から無限小だけ異なるようにすることで、無限小ユニタリ変換が得られる。
+</span>
 
-The unitary condition (73) or (74) requires that F' shall be real. The
+\[
+U = 1+i\epsilon F
+\]
+
+where \(\epsilon\) is infinitesimal, so that its square can be neglected. Then
+
+<br><span style="color: blue;">
+ここで\(\epsilon\)は無限小なので、その平方は無視できる。すると
+</span>
+
+\[
+U^{-1} = 1 - i\epsilon F
+\]
+
+The unitary condition (73) or (74) requires that \(F\) shall be real. The
 transformation equation (70) now takes the form
 
-a® = (ltteF )a(1—teF),
+<br><span style="color: blue;">
+ユニタリ条件(73)または(74)は\(F\)が実数であることを要求する。変換方程式(70)は次の形をとる。
+</span>
 
-which gives a*—a = te(Fa—at). (79)
+\[
+\alpha^* = (1+i\epsilon F)\alpha(1-i\epsilon F)
+\]
+
+which gives 
+
+<br><span style="color: blue;">
+これにより
+</span>
+
+\[
+\alpha^* - \alpha = i\epsilon(F\alpha - \alpha F)  \tag{79}
+\]
+
 It may be written in P.B. notation
-a*—a = efifa, F']. (80)
 
-If « is a canonical coordinate or momentum, this is formally the same
+<br><span style="color: blue;">
+P.B.記法で書かれることもある
+</span>
+
+\[
+\alpha^* — \alpha = \epsilon\hbar[\alpha, F]  \tag{80}
+\]
+
+If \(\alpha\) is a canonical coordinate or momentum, this is formally the same
 as a Classical infinitesimal contact transformation.
 
+<br><span style="color: blue;">
+\(\alpha\) が正準座標または運動量である場合、これは形式的には古典的な無限小接触変換と同じになります。
+</span>
 </p>
     </body>
 </html>

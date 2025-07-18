@@ -14,6 +14,11 @@
             {
                 margin-left: 30px;
             }
+            .margin-large-blue
+            {
+                margin-left: 30px;
+                color: blue;
+            }
            .margin-abstract {
                margin-left: 60px; /* 左マージンを広くする */
                margin-right: 60px; /* 右マージンを広くする */
@@ -97,10 +102,10 @@
     </style>
     </head>
     <body>
-        <h1><center>V THE EQUATIONS OF MOTION<br>運動方程式</center></h1>
-<h2>27. Schr&ouml;dinger’s form for the equations of motion</h2>
+        <h1><center>V. THE EQUATIONS OF MOTION<br><span style="color:blue;">運動方程式</span></center></h1>
+<h2>27. Schr&ouml;dinger's form for the equations of motion　<span style="color:blue;">運動方程式のシュレーディンガー形式</span></h2>
 <p>
-Our work from § 5 onwards has all been concerned with one instant
+Our work from §5 onwards has all been concerned with one instant
 of time. It gave the general scheme of relations between states and
 dynamical variables for a dynamical system at one instant of time.
 To get a complete theory of dynamics we must consider also the
@@ -112,294 +117,505 @@ and the system is governed by equations of motion which make the
 state at one time determine the state at a later time. These equations
 of motion we now proceed to study. They will apply so long as the
 dynamical system is left undisturbed by any observation or similar
-process.t Their general form can be deduced from the principle of
+process.<sup>†</sup> Their general form can be deduced from the principle of
 superposition of Chapter I.
+
+<br><span style="color:blue;">
+第5章以降の我々の研究はすべて、ある瞬間の力学系について扱ってきました。それは、ある瞬間の力学系の状態と力学変数の関係の一般的な枠組みを与えました。力学の完全な理論を得るためには、異なる瞬間間のつながりも考慮しなければなりません。力学系を観測すると、系の状態は予測できない形で変化しますが、観測と観測の間は、量子力学でも古典力学でも因果律が適用され、系は運動方程式によって支配され、ある瞬間の状態が後の瞬間の状態を決定します。これから、これらの運動方程式について考察していきます。これらの方程式は、力学系がいかなる観測や類似の過程によっても乱されない限り適用されます。<sup>†</sup> これらの一般的な形は、第1章の重ね合わせの原理から導き出されます。
+</span>
+
+</p><p class = "margin-large">
+<sup>†</sup>
+The preparation of a state is a process of this kind. It often takes the form of
+making an observation and selecting the system when the result of the observation
+turns out to be a cortain pre-assigned number.
+
+<br><span style="color:blue;">
+状態の準備とは、このようなプロセスです。多くの場合、観察を行い、その結果が事前に割り当てられた数値と一致する場合にシステムを選択するという形をとります。
+</span>
+
+</p><p>
 
 Let us consider a particular state of motion throughout the time
 during which the system is left undisturbed. We shall have the state
-at any time t corresponding to a certain ket which depends on ¢ and
-which may be written |f>. If we deal with several of these states of
-motion we distinguish them by giving them labels such as A, and we
-then write the ket which corresponds to the state at time ¢ for one
-of them |At>. The requirement that the state at one time determines
-the state at another time means that |At,> determines |At> except
+at any time \(t\) corresponding to a certain ket which depends on \(t\) and
+which may be written \(|t\rangle\). If we deal with several of these states of
+motion we distinguish them by giving them labels such as \(A\), and we
+then write the ket which corresponds to the state at time \(t\) for one
+of them \(|At\rangle\). The requirement that the state at one time determines
+the state at another time means that \(|At_0\rangle\) determines \(|At\rangle\) except
 for a numerical factor. The principle of superposition applies to these
 states of motion throughout the time during which the system is
 undisturbed, and means that if we take a superposition relation
-holding for certain states at time f, and giving rise to a linear equation
+holding for certain states at time \(t_0\) and giving rise to a linear equation
 between the corresponding kets, e.g. the equation
 
-| Rty> = ¢y|Aty>+¢q|Bto>,
-the same superposition relation must hold between the states of
+<br><span style="color:blue;">
+系が静置されている時間を通して、ある特定の運動状態を考えてみましょう。任意の時刻 \(t\) における状態は、\(t\) に依存する特定のケットに対応し、\(|t\rangle\) と表記されます。このような運動状態を複数扱う場合は、\(A\) などのラベルを付けて区別し、そのうちの 1 つについて時刻 \(t\) における状態に対応するケットを \(|At\rangle\) と表記します。ある時刻の状態が別の時刻の状態を決定するという要件は、数値的な要因を除いて、\(|At_0\rangle\) が \(|At\rangle\) を決定することを意味します。重ね合わせの原理は、系が撹乱されていない時間全体にわたってこれらの運動状態に適用され、時刻 \(t_0\) における特定の状態について重ね合わせ関係が成り立ち、対応するケット間に線型方程式が生じると仮定すると、例えば次の式が得られる。
+</span>
 
+\[
+|Rt_0\rangle = c_1|At_0\rangle + c_2|Bt_0\rangle
+\]
+
+the same superposition relation must hold between the states of
 motion throughout the time during which the system is undisturbed
 and must lead to the same equation between the kets corresponding
-+ The preparation of a state is a process of this kind. It often takes the form of
+to these states at any time \(t\) (in the undisturbed time interval), ie.
+he equation
 
-making an observation and selecting the system when the result of the observation
-turns out to be a cortain pre-assigned number.
-﻿$27 SCHRODINGER’S FORM FOR THE EQUATIONS OF MOTION 109
+<br><span style="color:blue;">
+系が撹乱されていない時間を通して、運動状態間に同じ重ね合わせ関係が成り立ち、任意の時刻 \(t\) (撹乱されていない時間間隔内) におけるこれらの状態に対応するケット間に同じ方程式が成立する必要がある。すなわち、方程式
+</span>
 
-to these states at any time ¢ (in the undisturbed time interval), ie.
-he equation | Re = ¢y|Aty-+e4| Bt),
+\[
+|Rt\rangle = c_1|At\rangle + c_2|Bt\rangle
+\]
 
 provided the arbitrary numerical factors by which these kets may be
-multiplied are suitably chosen. It follows that the |Pt>’s are linear
-functions of the |Pé,>’s and each [Pf is the result of some linear
-operator applied to |Pt)>. In symbols
-|Pi> = T|Pig), (1)
-where 7 is a linear operator independent of P and depending only
-on é (and fp).
+multiplied are suitably chosen. It follows that the \(|Pt\rangle\)'s are linear
+functions of the \(|Pt_0\rangle\)'s and each \(|Pt\rangle\) is the result of some linear
+operator applied to \(|Pt_0\rangle\). In symbols
 
-We now assume that each | Pé> has the same length as the corre-
-sponding |Pt >. It is not necessarily possible to choose the arbitrary
-numerical factors by which the |Pt>’s may be multiplied so as to
-make this so without destroying the linear dependence of the [P#>’s
-on the | Pt,>’s, so the new assumption is a physical one and not just
+<br><span style="color:blue;">
+これらのケットに掛けられる任意の数値係数が適切に選ばれている限り、\(|Pt\rangle\)は\(|Pt_0\rangle\)の線形関数となり、各\(|Pt\rangle\)は\(|Pt_0\rangle\)に何らかの線形演算子を適用した結果となる。記号で表すと
+</span>
+
+\[
+|Pt\rangle = T|Pt_0\rangle  \tag{1}
+\]
+
+where \(T\) is a linear operator independent of \(P\) and depending only
+on \(t\) (and \(t_0\)).
+
+<br><span style="color:blue;">
+ここで、\(T\)は\(P\)とは独立で、\(t\)（および\(t_0\)）のみに依存する線形演算子である。
+</span>
+
+</p><p>
+We now assume that each \(|Pt\rangle\) has the same length as the corre-
+sponding \(|Pt_0\rangle\). It is not necessarily possible to choose the arbitrary
+numerical factors by which the \(|Pt\rangle\)'s may be multiplied so as to
+make this so without destroying the linear dependence of the \(|Pt\rangle\)'s
+on the \(|Pt_0\rangle\)'s, so the new assumption is a physical one and not just
 a question of notation. It involves a kind of sharpening of the
-principle of superposition. The arbitrariness in |Pt>) now becomes
-merely a phase factor, which must be independent of P in order that
-the linear dependence of the |Pt>’s on the |Pt)>’s may be preserved.
-From the condition that the length of c,|Pi>-++c,|Qi equals that of
-¢,|Ptp>+¢,|Qéy> for any complex numbers ¢,, c,, we can deduce that
+principle of superposition. The arbitrariness in \(|Pt\rangle\) now becomes
+merely a phase factor, which must be independent of \(P\) in order that
+the linear dependence of the \(|Pt\rangle\)'s on the \(|Pt_0\rangle\)'s may be preserved.
+From the condition that the length of \(c_1|Pt\rangle+c_2|Qt\rangle\) equals that of
+\(c_1|Pt_0\rangle+c_2|Qt_0\rangle\) for any complex numbers \(c_1,c_2,\) we can deduce that
 
-(QE Pt> = (Qty) Pty. . (2)
-The connexion between the |Pé>’s and |Pt,>’s is formally similar
-to the connexion we had in § 25 between the displaced and undisplaced
+<br><span style="color:blue;">
+ここで、各 \(|Pt\rangle\) は対応する \(|Pt_0\rangle\) と同じ長さであると仮定します。\(|Pt\rangle\) に掛ける任意の数値係数を、\(|Pt_0\rangle\) への \(|Pt\rangle\) の線形依存性を崩さずにこれを実現するように選択することは必ずしも可能ではありません。したがって、この新しい仮定は単なる表記の問題ではなく、物理的な問題です。これは重ね合わせの原理をある種の明確化を伴います。 \(|Pt\rangle\) の任意性は、\(|Pt\rangle\) の \(|Pt_0\rangle\) への線形依存性を維持するためには、\(P\) とは独立でなければならない位相因子に過ぎなくなります。
+任意の複素数 \(c_1,c_2,\) に対して \(c_1|Pt\rangle+c_2|Qt\rangle\) の長さが \(c_1|Pt_0\rangle+c_2|Qt_0\rangle\) の長さに等しいという条件から、次の式が成り立ちます。
+</span>
+
+\[
+\langle Qt|Pt\rangle = \langle Qt_0|Pt_0\rangle  \tag{2}
+\]
+
+</p><p>
+The connexion between the \(|Pt\rangle\)'s and \(|Pt_0\rangle\)'s is formally similar
+to the connexion we had in §25 between the displaced and undisplaced
 kets, with a process of time displacement instead of the space displace-
-ment of § 25. Equations (1) and (2) play the part of equations (59)
-and (60) of § 25. We can develop the consequences of these equations
-as in § 25 and can deduce that 7 contains an arbitrary numerical
+ment of §25. Equations (1) and (2) play the part of equations (59)
+and (60) of §25. We can develop the consequences of these equations
+as in §25 and can deduce that \(T\) contains an arbitrary numerical
 factor of modulus unity and satisfies
 
-TT = 1, (3)
-corresponding to (62) of § 25, so T ts unitary. We pass to the infinitesi-
-mal case by making ¢ > é, and assure from physical continuity that
+<br><span style="color:blue;">
+\(|Pt\rangle\) と \(|Pt_0\rangle\) の関係は、§25 で示した変位ケットと非変位ケットの関係と形式的には同様であるが、§25 の空間変位の代わりに時間変位の過程が用いられる。式 (1) と (2) は、§25 の式 (59) と (60) の役割を果たす。これらの式の結果は、§25 と同様に展開することができ、\(T\) には係数 1 の任意の数値因子が含まれ、次式を満たすことがわかる。
+</span>
 
+\[
+\overline{T}T = 1  \tag{3}
+\]
+
+corresponding to (62) of §25, so \(T\) ts unitary. We pass to the infinitesi-
+mal case by making \(t\rightarrow t_0\) and assure from physical continuity that
 the limit
-im PO—IP 4)
-tot, i—ty
-exists. This limit is just the derivative of | Pt,> with respect to fy.
 
+<br><span style="color:blue;">
+§25の(62)に対応するので、\(T\) tsはユニタリとなる。\(t\rightarrow t_0\)とすることで無限小の場合に移り、物理的な連続性から次のことが保証される。
+</span>
+
+\[
+\lim\limits_{t\rightarrow t_0} \frac{|Pt\rangle - |Pt_0\rangle}{t - t_0}
+\]
+
+exists. This limit is just the derivative of \(|Pt_0\rangle\) with respect to \(t_0\).
 From (1) it equals
 
-d| Pty» . £1
-—) ii S. 4
-dty rs t—ty Plo (#)
-﻿110 THE EQUATIONS OF MOTION § 27
+<br><span style="color:blue;">
+が存在する。この極限は、\(|Pt_0\rangle\) の \(t_0\) に関する微分に等しい。
+(1) から、これは
+</span>
 
-The limit operator occurring here is, like (64) of § 25, a pure imaginary
+\[
+\frac{d|Pt_0\rangle}{dt_0} = \left\{\lim\limits_{t\rightarrow t_0} \frac{T-1}{t - t_0}\right\}|Pt_0\rangle  \tag{4}
+\]
+
+The limit operator occurring here is, like (64) of §25, a pure imaginary
 linear operator and is undetermined to the extent of an arbitrary
 additive pure imaginary number. Putting this limit operator multi-
-plied by 1% equal to H, or rather H(f)) since it may depend on ft),
-equation (4) becomes, when written for a general f,
+plied by \(i\hbar\) equal to \(H\), or rather \(H(t_0)\) since it may depend on \(t_0\),
+equation (4) becomes, when written for a general \(t\),
 
-d|Pty
-dt
+<br><span style="color:blue;">
+ここで現れる極限演算子は、§25の(64)と同様に、純虚線型演算子であり、任意の加法的な純虚数の範囲では未定である。この極限演算子を\(i\hbar\)で乗じて\(H\)、あるいは\(t_0\)に依存する可能性があるため\(H(t_0)\)とすると、式(4)は一般の\(t\)について次のように書き表される。
+</span>
 
+\[
+i\hbar\frac{d|Pt\rangle}{dt} = H(t)|Pt\rangle  \tag{5}
+\]
+
+</p><p>
 Equation (5) gives the general law for the variation with time of
-the ket corresponding to the state at any time. It is Schrédinger’s
+the ket corresponding to the state at any time. It is Schr&ouml;dinger's
 form for the equations of motion. It involves just one real linear
-operator H(¢), which must be characteristic of the dynamical system
-under consideration. We assume that H(t) is the total energy of
+operator \(H(t)\), which must be characteristic of the dynamical system
+under consideration. We assume that \(H(t)\) is the total energy of
 the system. There are two justifications for this assumption, (i) the
 analogy with classical mechanics, which will be developed in the
-next section, and (ii) we have H(t) appearing as i% times an operator
+next section, and (ii) we have \(H(t)\) appearing as \(i\hbar\) times an operator
 of displacement in time similar to the operators of displacement in
-the x, y, and z directions of § 25, so corresponding to (69) of § 25
-we should have H(t) equal to the total energy, since the theory of
+the \(x, y,\) and \(z\) directions of §25, so corresponding to (69) of §25
+we should have \(H(t)\) equal to the total energy, since the theory of
 relativity puts energy in the same relation to time as momentum to
 distance.
 
+<br><span style="color:blue;">
+式(5)は、任意の時点の状態に対応するケットの時間変化に関する一般法則を与える。これは運動方程式のシュレーディンガー形式である。これにはただ1つの実線型演算子\(H(t)\)が含まれ、これは考察対象の力学系の特性でなければならない。\(H(t)\)は系の全エネルギーであると仮定する。この仮定には2つの根拠がある。(i) 古典力学との類似性（これは次の節で展開する）、(ii) \(H(t)\) は \(i\hbar\) 倍の時間変位演算子として現れるため、§25 の \(x, y,\) および \(z\) 方向の変位演算子と同様に、§25 の (69) に対応して、\(H(t)\) は全エネルギーに等しくなるはずである。これは、相対性理論においてエネルギーと時間は運動量と距離の関係と同じであるとされているからである。
+</span>
+
+</p><p>
 We assume on physical grounds that the total energy of a system
 is always an observable. For an isolated system it is a constant, and
-may then be written H. Even when it is not a constant we shall often
-write it simply H, leaving its dependence on ¢ understood. If the
-energy depends on #, it means the system is acted on by external
+may then be written \(H\). Even when it is not a constant we shall often
+write it simply \(H\), leaving its dependence on \(t\) understood. If the
+energy depends on \(t\), it means the system is acted on by external
 forces. An action of this kind is to be distinguished from a distur-
 bance caused by a process of observation, as the former is compatible
 with causality and equations of motion while the latter is not.
 
-We can get a connexion between H(t) and the T of equation (1)
-by substituting for |Pé> in (5) its value given by equation (1). This
+<br><span style="color:blue;">
+物理的な根拠に基づき、系の全エネルギーは常に観測可能値であると仮定する。孤立系の場合、それは定数であり、\(H\) と表記される。定数でない場合でも、\(t\) への依存性を理解した上で、単に \(H\) と表記することが多い。エネルギーが \(t\) に依存する場合、系は外力によって作用されていることを意味する。この種の作用は、観測過程によって引き起こされる擾乱とは区別する必要がある。前者は因果律や運動方程式と両立するが、後者は両立しないからである。
+</span>
 
+</p><p>
+We can get a connexion between \(H(t)\) and the \(T\) of equation (1)
+by substituting for \(|Pt\rangle\) in (5) its value given by equation (1). This
 gives
-ine |Pig> = HQ)T| Pty.
 
-ih
+<br><span style="color:blue;">
+\(H(t)\) と式 (1) の \(T\) の関係は、(5) の \(|Pt\rangle\) に式 (1) で与えられた値を代入することによって得られる。これにより、次の式が得られる。
+</span>
 
-H(t)|Pty. . (5)
+\[
+i\hbar\frac{dT}{dt}|Pt_0\rangle = H(t)T|Pt_0\rangle
+\]
 
-Since |Pt,> may be any ket, we have
+Since \(|Pt_0\rangle\) may be any ket, we have
 
-aT
-ih = HOT. (6)
+<br><span style="color:blue;">
+\(|Pt_0\rangle\)は任意のケットである可能性があるので、
+</span>
 
+\[
+i\hbar\frac{dT}{dt} = H(t)T  \tag{6}
+\]
+
+</p><p>
 Equation (5) is very important for practical problems, where it is
 usually used in conjunction with a representation. Introducing a
-﻿§ 27 SCHRODINGER’S FORM FOR THE EQUATIONS OF MOTION 111
+representation with a complete set of commuting observables \(\xi\)
+diagonal and putting \(\langle\xi^\prime|Pt\rangle\) equal to \(\psi(\xi^\prime t)\), we have, passing to the |
+standard ket notation, 
 
-representation with a complete set of commuting observables
-diagonal and putting <é’| Pt> equal to (€'t), we have, passing to the |
-standard ket notation, [Pty = (éi)).
+<br><span style="color:blue;">
+式(5)は実用的な問題において非常に重要であり、通常は表現と組み合わせて用いられます。可換な観測量の完全な集合\(\xi\)対角線を持つ表現を導入し、\(\langle\xi^\prime|Pt\rangle\)を\(\psi(\xi^\prime t)\)と等しくすると、標準的なケット表記法に移ると、次のようになります。
+</span>
+
+\[
+|Pt\rangle = \psi(\xi t)\rangle
+\]
 
 Equation (5) now becomes
-nS et) = Hye). (7
 
-Equation (7) is known as Schrédinger’s wave equation and its solutions
-(Et) are time-dependent wave functions. Each solution corresponds to
+<br><span style="color:blue;">
+式(5)は
+</span>
+
+\[
+i\hbar\frac{\partial}{\partial t}\psi(\xi t)\rangle  \tag{7}
+\]
+
+Equation (7) is known as Schr&ouml;dinger's wave equation and its solutions
+\(\psi(\xi t)\) are time-dependent wave functions. Each solution corresponds to
 a state of motion of the system and the square of its modulus gives ‘
-the probability of the é’s having specified values at any time ¢. For
+the probability of the \(\xi\)'s having specified values at any time \(t\). For
 a system describable in terms of canonical coordinates and momenta
-we may use Schrédinger’s representation and can then take H to be
-an operator of differentiation in accordance with (42) of § 22.
+we may use Schr&ouml;dinger's representation and can then take \(H\) to be
+an operator of differentiation in accordance with (42) of §22.
 
-28. Heisenbers’s form for the equations of motion
+<br><span style="color:blue;">
+式(7)はシュレーディンガーの波動方程式として知られており、その解\(\psi(\xi t)\)は時間依存の波動関数である。各解は系の運動状態に対応し、その係数の2乗は、任意の時刻\(t\)において\(\xi\)が特定の値をとる確率を与える。標準座標と運動量で記述可能な系の場合、シュレーディンガー表現を用いることができ、§22の(42)に従って\(H\)を微分演算子とすることができる。
+</span>
 
+</p><p>
+
+<h3>28. Heisenbers's form for the equations of motion　<span style="color:blue;">運動方程式のハイゼンベルグ形式</span></h3>
+
+<p>
 In the preceding section we set up a picture of the states of
 undisturbed motion by making each of them correspond to a moving
 ket, the state at any time corresponding to the ket at that time. We
+shall call this the Schr&ouml;dinger picture. Let us apply to our kets the
+unitary transformation which makes each ket \(|a\rangle\) go over into
 
-shall call this the Schrodinger picture. Let us apply to our kets the
-unitary transformation which makes each ket |a> go over into
+<br><span style="color:blue;">
+前の節では、動いているケットに各状態を対応させることで、静運動の状態の描像を構築しました。任意の時点の状態は、その時点のケットに対応します。これをシュレーディンガー描像と呼びます。このケットに、各ケット\(|a\rangle\)が\(|a\rangle\)から\(|a\rangle\)へと変化するユニタリー変換を適用してみましょう。
+</span>
 
-ja*> = Ta). (8)
-This transformation is of the form given by (75) of § 26 with 7'-! for
-U, but it depends on the tume t since T depends on t. It is thus to be
+\[
+|a^*\rangle = T^{-1}|a\rangle  \tag{8}
+\]
+
+This transformation is of the form given by (75) of §26 with \(T^{-1}\) for
+\(U\), but it depends on the tume \(t\) since \(T\) depends on \(t\). It is thus to be
 pictured as the application of a continuous motion (consisting of
 rotations and uniform deformations) to the whole ket vector space.
 A ket which is originally fixed becomes a moving one, its motion being
-given by (8) with |a> independent of #. On the other hand, a ket
+given by (8) with \(|a\rangle\) independent of \(t\). On the other hand, a ket
 which is originally moving to correspond to a state of undisturbed
 motion, i.e. in accordance with equation (1), becomes fixed, since on
-substituting |Pt for |a> in (8) we get ja*> independent of t. Thus
+substituting \(|Pt\rangle\) for \(|a\rangle\) in (8) we get \(|a^*\rangle\) independent of \(t\). Thus
 the transformation brings the kets corresponding to states of undisturbed
 motion to rest.
 
+<br><span style="color:blue;">
+この変換は、§26の(75)式で\(T^{-1}\)を\(U\)として与えた形をとるが、\(T\)が\(t\)に依存するため、時間\(t\)に依存する。したがって、これはケットベクトル空間全体への連続運動（回転と一様変形からなる）の適用として描ける。
+もともと固定されていたケットは動くケットとなり、その運動は(8)式で与えられ、\(|a\rangle\)は\(t\)に依存しない。一方、もともと不撹乱運動の状態に対応するように、すなわち式(1)に従って動いていたケットは、(8)式で\(|a\rangle\)を\(|Pt\rangle\)に代入すると、\(t\)に依存しない\(|a^*\rangle\)が得られるため、固定される。このように、変換により、乱されていない運動の状態に対応するケットは静止状態になります。
+</span>
+
+</p><p>
 The unitary transformation must be applied also to bras and linear
 operators, in order that equations between the various quantities may
 remain invariant. The transformation applied to bras is given by the
 conjugate imaginary of (8) and applied to linear operators it is given
-by (70) of § 26 with 7’! for U, i.e.
+by (70) of §26 with \(T^{-1}\) for \(U\), i.e.
 
-a*¥ = TolyT, (9)
-﻿112 THE EQUATIONS OF MOTION § 28
+<br><span style="color:blue;">
+ユニタリー変換は、ブラス関数と線型作用素にも適用されなければならない。これは、様々な量の間の方程式が不変であるようにするためである。ブラス関数に適用される変換は、(8)式の共役虚数によって与えられ、線型作用素に適用される変換は、§26の(70)式で\(U\)に対して\(T^{-1}\)として与えられる。すなわち、
+</span>
+
+\[
+\alpha^* = T^{-1}\alpha T  \tag{9}
+\]
 
 A linear operator which is originally fixed transforms into a moving
 linear operator in general. Now a dynamical variable corresponds to
 a linear operator which is originally fixed (because it does not refer
-to t at all), so after the transformation it corresponds to a moving
+to \(t\) at all), so after the transformation it corresponds to a moving
 linear operator. The transformation thus leads us to a new picture
 of the motion, in which the states correspond to fixed vectors and
 the dynamical variables to moving linear operators. We shall call
 this the Heisenberg picture.
 
+<br><span style="color:blue;">
+一般に、もともと固定されていた線型作用素は、動く線型作用素へと変換されます。ここで、力学変数は、もともと固定されていた線型作用素（\(t\)を全く参照しないため）に対応するため、変換後は動く線型作用素に対応することになります。このように、変換によって運動の新しい描像が導かれます。そこでは、状態は固定されたベクトルに対応し、力学変数は動く線型作用素に対応します。これをハイゼンベルク描像と呼ぶことにします。
+</span>
+
+</p><p>
 The physical condition of the dynamical system at any time
 inyolves the relation of the dynamical variables to the state, and
 the change of the physical condition with time may be ascribed
 either to a change in the state, with the dynamical variables kept
-fixed, which gives us the Schrédinger picture, or to a change in the
+fixed, which gives us the Schr&ouml;dinger picture, or to a change in the
 dynamical variables, with the state kept fixed, which gives us the
 Heisenberg picture.
 
+<br><span style="color:blue;">
+任意の時点における力学系の物理的状態は、力学変数と状態の関係を包含し、時間に伴う物理的状態の変化は、力学変数を固定した状態の変化（シュレーディンガー描像）と、力学変数を固定した状態の変化（ハイゼンベルク描像）のいずれかに帰属できる。
+</span>
+
+</p><p>
 In the Heisenberg picture there are equations of motion for the
 dynamical variables. Take a dynamical variable corresponding to
-the fixed linear operator v in the Schrédinger picture. In the Heisen-
+the fixed linear operator \(v\) in the Schr&ouml;dinger picture. In the Heisen-
 berg picture it corresponds to a moving linear operator, which we
-write as v, instead of v*, to bring out its dependence on t, and which
+write as \(v_i\) instead of \(v^*\), to bring out its dependence on \(t\), and which
+is given by
 
-is given by v= TT (10)
-or Tou, = vt.
-Differentiating with respect to ¢, we get
+<br><span style="color:blue;">
+ハイゼンベルク描像では、力学変数の運動方程式が成り立ちます。シュレーディンガー描像における固定線型作用素 \(v\) に対応する力学変数を一つ取ります。ハイゼンベルク描像では、これは移動する線型作用素に相当し、\(t\) への依存性を示すため、\(v^*\) ではなく \(v_i\) と書きます。これは次のように与えられます。
+</span>
 
-dT du, aT
+\[
+v_t = T^{-1}vT  \tag{10}
+\]
 
-| =
-det ae
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+Tv_t = vT
+\]
+
+Differentiating with respect to \(t\), we get
+
+<br><span style="color:blue;">
+\(t\)について微分すると、
+</span>
+
+\[
+\frac{dT}{dt}v_t+T\frac{dv_t}{dt} = v\frac{dT}{dt}
+\]
+
 With the help of (6), this gives
-HT ob ine = HT
 
-. AY; _
+<br><span style="color:blue;">
+(6)の助けを借りれば、
+</span>
 
-or he = TwHT—TOHHAT»,
-= v,H— Hv, (11)
-where A,= TAT. (12)
+\[
+HTv_t+i\hbar T\frac{dv_t}{dt} = vHT
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\begin{align}
+i\hbar\frac{dv_t}{dt} &= T^{-1}vHT-T^{-1}HTv_t \\
+\\
+&= v_tH_t - H_tv_t  \tag{11}
+\end{align}
+\]
+
+where
+
+<br><span style="color:blue;">
+ここで
+</span>
+
+\[
+H_t = T^{-1}HT  \tag{12}
+\]
+
 Equation (11) may be written in P.B. notation
-dw
-﻿§28 HEISENBERG’S FORM FOR THE EQUATIONS OF MOTION 113
 
+<br><span style="color:blue;">
+式（11）はP.B.記法で書くことができる。
+</span>
+
+\[
+\frac{dv_t}{dt} ~ [v_t, H_t]  \tag{13}
+\]
+
+</p><p>
 Equation (11) or (13) shows how any dynamical variable varies
-with time in the Heisenberg picture and gives us Hetsenberg’s form
+with time in the Heisenberg picture and gives us Hetsenberg's form
 for the equations of motion. These equations of motion are determined
-by the one linear operator H,, which is just the transform of the linear
-operator H occurring in Schrédinger’s form for the equations of
+by the one linear operator \(H_t\), which is just the transform of the linear
+operator \(H\) occurring in Schr&ouml;dinger's form for the equations of
 motion and corresponds to the energy in the Heisenberg picture. We
 shall call the dynamical variables in the Heisenberg picture, where
 they vary with the time, Heisenberg dynamical variables, to distinguish
-them from the fixed dynamical variables of the Schrédinger picture,
-which we shall call Schrédinger dynamical variables. Each Heisenberg
-dynamical variable is connected with the corresponding Schrédinger
+them from the fixed dynamical variables of the Schr&ouml;dinger picture,
+which we shall call Schr&ouml;dinger dynamical variables. Each Heisenberg
+dynamical variable is connected with the corresponding Schr&ouml;dinger
 dynamical variable by equation (10). Since this connexion isa unitary
 transformation, all algebraic and functional relationships are the
-same for both kinds of dynamical variable. We have 7 = 1 for
-t = fy, so that v, = v and any Heisenberg dynamical variable at time
-tf, equals the corresponding Schrédinger dynamical variable.
+same for both kinds of dynamical variable. We have \(T = 1\) for
+\(t = t_0\), so that \(v_{t_0} = v\) and any Heisenberg dynamical variable at time
+\(t_0\) equals the corresponding Schr&ouml;dinger dynamical variable.
 
+<br><span style="color:blue;">
+式(11)あるいは式(13)は、ハイゼンベルク描像において任意の力学変数が時間とともにどのように変化するかを示しており、運動方程式のヘッツェンベルク形を与えている。これらの運動方程式は、1つの線型演算子\(H_t\)によって決定される。この線型演算子は、運動方程式のシュレーディンガー形に現れる線型演算子\(H\)の変換であり、ハイゼンベルク描像におけるエネルギーに対応する。ハイゼンベルク描像において時間とともに変化する力学変数をハイゼンベルク力学変数と呼び、シュレーディンガー描像における固定された力学変数（シュレーディンガー力学変数と呼ぶ）と区別することにする。各ハイゼンベルク力学変数は、式(10)によって対応するシュレーディンガー力学変数と結びついている。この接続はユニタリ変換であるため、代数的および関数的な関係はどちらの種類の力学変数でも同じです。\(t = t_0\) に対して \(T = 1\) となるので、\(v_{t_0} = v\) となり、時刻 \(t_0\) における任意のハイゼンベルク力学変数は対応するシュレーディンガー力学変数に等しくなります。
+</span>
+
+</p><p>
 Equation (13) can be compared with classical mechanics, where we
 also have dynamical variables varying with the time. The equations
 of motion of classical mechanics can be written in the Hamiltonian
-
-dq, oH dp, oH
-dt — ap,’ dt sg,”
-
 form
 
-(14)
+<br><span style="color:blue;">
+式(13)は古典力学と比較することができ、古典力学では時間とともに変化する力学変数も考慮されます。古典力学の運動方程式はハミルトン形式で表すことができます。
+</span>
 
-where the qg’s and p’s are a set of canonical coordinates and momenta
-and H is the energy expressed as a function of them and possibly also
-of t. The energy expressed in this way is called the Hamiltonian.
-Equations (14) give, for v any function of the q’s and p’s that does
-not contain the time ¢ explicitly,
+\[
+\frac{dq_r}{dt} = \frac{\partial H}{\partial p_r},　\frac{dp_r}{dt} = -\frac{\partial H}{\partial q_r}  \tag{14}
+\]
 
-dy du dq, , ov dp,
-aD
+where the \(q\)'s and \(p\)'s are a set of canonical coordinates and momenta
+and \(H\) is the energy expressed as a function of them and possibly also
+of \(t\). The energy expressed in this way is called the Hamiltonian.
+Equations (14) give, for \(v\) any function of the \(q\)'s and \(p\)'s that does
+not contain the time \(t\) explicitly,
 
-= [», A], (15)
+<br><span style="color:blue;">
+ここで、\(q\)と\(p\)は標準座標と運動量の組であり、\(H\)はそれらの関数として表されるエネルギーであり、場合によっては\(t\)の関数としても表される。このように表されるエネルギーはハミルトニアンと呼ばれる。
+式(14)は、\(v\)に対して、\(q\)と\(p\)の任意の関数であって、時間\(t\)を明示的に含まないものを与える。
+</span>
 
-with the classical definition of a P.B., equation (1) of § 21. This is
+\[
+\begin{align}
+\frac{dv}{dt} &= \sum_r \left\{\frac{\partial v}{\partial q_r}\frac{dq_r}{dt}+\frac{\partial v}{\partial p_r}\frac{dp_r}{dt}\right\} \\
+\\
+&=\sum_r\left\{\frac{\partial v}{\partial q_r}\frac{\partial H}{\partial p_r} - \frac{\partial v}{\partial p_r}\frac{\partial H}{\partial q_r}\right\} \\
+\\
+&=[v, H]  \tag{15}
+\end{align}
+\]
+
+with the classical definition of a P.B., equation (1) of §21. This is
 of the same form as equation (13) in the quantum theory. We thus
 get an analogy between the classical equations of motion in the
 Hamiltonian form and the quantum equations of motion in Heisen-
-berg’s form. This analogy provides a justification for the assumption
-﻿ll4 THE EQUATIONS OF MOTION § 28
-
-that the linear operator H introduced in the preceding section is the
+berg's form. This analogy provides a justification for the assumption
+that the linear operator \(H\) introduced in the preceding section is the
 energy of the system in quantum mechanics.
 
+<br><span style="color:blue;">
+古典的P.B.定義、§21の式(1)と一致する。これは量子論の式(13)と同じ形である。したがって、ハミルトン形の古典運動方程式とハイゼンベルク形の量子運動方程式の間には類似性が得られる。この類似性は、前節で導入された線型演算子\(H\)が量子力学における系のエネルギーであるという仮定を正当化する。
+</span>
+
+</p><p>
 In classical mechanics a dynamical system is defined mathemati-
-cally when the Hamiltonian is given, ie. when the energy is given
+cally when the Hamiltonian is given, i.e. when the energy is given
 in terms of a set of canonical coordinates and momenta, as this is
 sufficient to fix the equations of motion. In quantum mechanics a
-
-. dynamical system is defined mathematically when the energy is
+dynamical system is defined mathematically when the energy is
 given in terms of dynamical variables whose commutation relations
 are known, as this is then sufficient to fix the equations of motion,
-in both Schrédinger’s and Heisenberg’s form. We need to have
-either H expressed in terms of the Schrédinger dynamical variables .
-or H, expressed in terms of the corresponding Heisenberg dynamical
+in both Schr&ouml;dinger's and Heisenberg's form. We need to have
+either \(H\) expressed in terms of the Schr&ouml;dinger dynamical variables .
+or \(H_t\) expressed in terms of the corresponding Heisenberg dynamical
 variables, the functional relationship being, of course, the same in
 both cases. We call the energy expressed in this way the Hamiltonian
 of the dynamical system in quantum mechanics, to keep up the
 analogy with the classical theory.
 
+<br><span style="color:blue;">
+古典力学では、ハミルトニアンが与えられたとき、すなわちエネルギーが標準座標と運動量の集合で与えられたとき、力学系は数学的に定義されます。これは、運動方程式を確定するのに十分だからです。量子力学では、エネルギーが交換関係が既知である力学変数で与えられたとき、力学系は数学的に定義されます。これは、シュレーディンガーとハイゼンベルクの両方の形式で、運動方程式を確定するのに十分だからです。\(H\) をシュレーディンガーの力学変数で表現するか、\(H_t\) を対応するハイゼンベルクの力学変数で表現する必要がありますが、関数の関係はどちらの場合も同じです。このように表現されるエネルギーを、古典力学との類似性を保つために、量子力学における力学系のハミルトニアンと呼びます。
+</span>
+
+</p><p>
 Asystem in quantum mechanics always hasa Hamiltonian, whether
 the system is one that has a classical analogue and is describable in
 terms of canonical coordinates and momenta or not. However, if the
 system does have a classical analogue, its connexion with classical
 mechanics is specially close and one can usually assume that the
 Hamiltonian is the same function of the canonical coordinates and.
-momenta in the quantum theory as in the classical theory.t There
+momenta in the quantum theory as in the classical theory.<sup>†</sup> There
 would be a difficulty in this, of course, if the classical Hamiltonian
 involved a product of factors whose quantum analogues do not com-
 mute, as one would not know in which order to put these factors in
@@ -409,117 +625,212 @@ physics. In consequence we are able also largely to use the same
 language for describing dynamical systems in the quantum theory as
 in the classical theory (e.g. to talk about particles with given masses
 moving through given fields of force), and when given a system in
-classical mechanics, can usually give a meaning to ‘the same’ system
+classical mechanics, can usually give a meaning to ‘the same' system
 in quantum mechanics.
 
-Equation (13) holds for v, any function of the Heisenberg dynamical
-variables not involving the time explicitly, ie. for v any constant
+<br><span style="color:blue;">
+量子力学における系は、その系が古典的な類似体を持ち、正準座標と運動量で記述可能であるかどうかに関わらず、常にハミルトニアンを持つ。しかし、もし系が古典的な類似体を持つならば、古典力学との結びつきは特に密接であり、通常、量子理論におけるハミルトニアンは古典理論におけるものと同様に、正準座標と運動量の同じ関数であると仮定することができる。<sup>†</sup> もちろん、古典ハミルトニアンが、量子類似体が可換でない因子の積を含む場合、量子ハミルトニアンにおいてこれらの因子をどのような順序で配置すればよいかわからないため、これには困難が生じる。しかし、原子物理学において研究が重要なほとんどの素力学系では、このような事態は起こらない。その結果、量子論における力学系を記述する際には、古典力学におけるのとほぼ同じ言語を用いることができ（例えば、与えられた質量を持つ粒子が与えられた力の場を運動することについて話す場合など）、古典力学における系が与えられた場合、通常は量子力学における「同じ」系に意味を与えることができる。
+</span>
 
-+ This assumption is found in practice to be successful only when applied with the
+</p><p class="margin-large">
+<sup>†</sup>
+This assumption is found in practice to be successful only when applied with the
 dynamical coordinates and momenta referring to a Cartesian system of axes and not
 to more general curvilinear coordinates.
-﻿§28 HEISENBERG’S FORM FOR THE EQUATIONS OF MOTION 115
 
-linear operator in the Schrédinger picture. It shows that such a
-function v,is constant if it commutes with H, or if v commutes with 7.
-We then have y= %, =»,
+<br><span style="color:blue;">
+この仮定は、実際には、より一般的な曲線座標系ではなく、直交座標系を参照する力学座標と運動量を適用した場合にのみ有効であることがわかっています。
+</span>
 
-and we call v, or v a constant of the motion. It is necessary that v shall
-commute with # at all times, which is usually possible only if H is
-constant. In this case we can substitute H for v in (13) and deduce
-that H, is constant, showing that # itself is then a constant of the
-motion. Thus if the Hamiltonian is constant in the Schrédinger
+</p><p>
+Equation (13) holds for \(v_t\) any function of the Heisenberg dynamical
+variables not involving the time explicitly, i.e. for \(v\) any constant
+linear operator in the Schr&ouml;dinger picture. It shows that such a
+function \(v_t\)is constant if it commutes with \(H_t\) or if \(v\) commutes with \(H\).
+We then have 
+
+<br><span style="color:blue;">
+式(13)は、時間を含まないハイゼンベルク力学変数の任意の関数\(v_t\)、すなわちシュレーディンガー描像における任意の定数線型作用素\(v\)に対して成立する。これは、そのような関数\(v_t\)が\(H_t\)と可換であるか、\(v\)が\(H\)と可換であるならば定数であることを示す。
+したがって、
+</span>
+
+\[
+v_t = v_{t_0} = v
+\]
+
+and we call \(v_t\) or \(v\) a constant of the motion. It is necessary that \(v\) shall
+commute with \(H\) at all times, which is usually possible only if \(H\) is
+constant. In this case we can substitute \(H\) for \(v\) in (13) and deduce
+that \(H_t\) is constant, showing that \(H\) itself is then a constant of the
+motion. Thus if the Hamiltonian is constant in the Schr&ouml;dinger
 picture, it is also constant in the Heisenberg picture.
 
+<br><span style="color:blue;">
+そして、\(v_t\) あるいは \(v\) を運動定数と呼ぶ。\(v\) は常に \(H\) と可換である必要があるが、これは通常 \(H\) が定数である場合にのみ可能である。この場合、(13) において \(v\) を \(H\) に置き換えて \(H_t\) が定数であると推論することができ、\(H\) 自体が運動定数であることが示される。したがって、シュレーディンガー描像においてハミルトニアンが定数であるならば、ハイゼンベルク描像においてもハミルトニアンが定数である。
+</span>
+
+</p><p>
 For an isolated system, a system not acted on by any external
 forces, there are always certain constants of the motion. One of these
 is the total energy or Hamiltonian. Others are provided by the
-displacement theory of § 25. It is evident physically that the total
+displacement theory of §25. It is evident physically that the total
 energy must remain unchanged if all the dynamical variables are
-displaced in a certain way, so equation (63) of § 25 must hold with
-vg v= H. Thus D commutes with H and is a constant of the
+displaced in a certain way, so equation (63) of §25 must hold with
+\(v_d = v = H\). Thus \(D\) commutes with \(H\) and is a constant of the
 motion. Passing to the case of an infinitesimal displacement, we see
-that the displacement operators d,, d,, and d, are constants of the
-motion and hence, from (69) of § 25, the total momentum is a constant
+that the displacement operators \(d_x, d_y,\) and \(d_z\) are constants of the
+motion and hence, from (69) of §25, the total momentum is a constant
 of the motion. Again, the total energy must remain unchanged if all
 the dynamical variables are subjected to a certain rotation. This
-leads, as will be shown in § 35, to the result that the total angular
+leads, as will be shown in §35, to the result that the total angular
 momentum is a constant of the motion. The laws of conservation of
 energy, momentum, and angular momentum hold for an isolated system
 in the Heisenberg picture in quantum mechanics, as they hold in
 classical mechanics.
 
+<br><span style="color:blue;">
+孤立系、つまりいかなる外力も受けない系では、運動定数が常に存在します。その一つが全エネルギー、すなわちハミルトニアンです。その他の定数は、§25の変位理論によって与えられます。すべての力学変数が特定の方法で変位しても全エネルギーは変化しないことは物理的に明らかであり、したがって、§25の式(63)は\(v_d = v = H\)と成立します。したがって、\(D\)は\(H\)と可換であり、運動定数となります。微小変位の場合に移ると、変位演算子\(d_x, d_y,\)および\(d_z\)は運動定数であり、したがって、§25の式(69)から、全運動量は運動定数であることがわかります。繰り返しますが、すべての力学変数が特定の回転を受けても全エネルギーは変化しません。このことから、§35で示すように、全角運動量は運動定数であるという結果が導かれます。エネルギー保存則、運動量保存則、角運動量保存則は、古典力学と同様に、量子力学のハイゼンベルク描像においても孤立系に対して成立します。
+</span>
+
+</p><p>
 Two forms for the equations of motion of quantum mechanics have
-now been given. Of these, the Schrédinger form is the more useful
+now been given. Of these, the Schr&ouml;dinger form is the more useful
 one for practical problems, as it provides the simpler equations. The
-unknowns in Schrédinger’s wave equation are the numbers which
-form the representative of a ket vector, while Heisenberg’s equation
+unknowns in Schr&ouml;dinger's wave equation are the numbers which
+form the representative of a ket vector, while Heisenberg's equation
 of motion for a dynamical variable, if expressed in terms of a repre-
 sentation, would involve as unknowns the numbers forming the
 representative of the dynamical variable. The latter are far more
-numerous and therefore more difficult to evaluate than the Schri-
-dinger unknowns. Heisenberg’s form for the equations of motion is
+numerous and therefore more difficult to evaluate than the Schr&ouml;dinger unknowns. Heisenberg's form for the equations of motion is
 of value in providing an immediate analogy with classical mechanics
 and enabling one to see how various features of classical theory, such
-﻿116 THE EQUATIONS OF MOTION § 28
-
 as the conservation laws referred to above, are translated into quan-
 tum theory.
 
-29. Stationary states
+<br><span style="color:blue;">
+量子力学の運動方程式には、これまでに2つの形式が与えられている。これらのうち、シュレーディンガー形式の方がより単純な方程式を与えるため、実用的な問題にはより有用である。シュレーディンガーの波動方程式における未知数はケットベクトルの代表値を形成する数であるが、力学変数に対するハイゼンベルクの運動方程式は、表現で表現される場合、力学変数の代表値を形成する数が未知数となる。後者はシュレーディンガーの未知数よりもはるかに多く、したがって評価が困難である。運動方程式に対するハイゼンベルク形式は、古典力学との直接的な類似性を提供し、前述の保存則のような古典理論の様々な特徴が量子理論にどのように翻訳されるかを理解できるようにする点で価値がある。
+</span>
+
+</p><p>
+
+<h3>29. Stationary states　<span style="color:blue;">定常状態</span></h3>
+<p>
 We shall here deal with a dynamical system whose energy is con-
 stant. Certain specially simple relations hold for this case. Equation
-(6) can be integrated{ to give :
-T = eit),
+(6) can be integrated<sup>†</sup> to give :
 
-with the help of the initial condition that 7 = 1 for i=). This
+<br><span style="color:blue;">
+ここでは、エネルギーが一定である力学系を取り扱う。この場合、いくつかの特に単純な関係が成り立つ。式(6)を積分すると<sup>†</sup>、次式が得られる。
+</span>
+
+</p><p class="margin-large">
+<sup>†</sup>
+The integration can be carried out as though \(H\) were an ordinary algebraic
+variable instead of a linear operator, because there is no quantity that does not
+commute with \(H\) in the work.
+
+<br><span style="color:blue;">
+この積分は、\(H\) が線形演算子ではなく通常の代数変数であるかのように実行できる。なぜなら、この作業において \(H\) と交換しない量は存在しないからである。
+</span>
+
+</p><p>
+
+\[
+T = e^{-iH(t-t_0)/\hbar}
+\]
+
+with the help of the initial condition that \(T = 1\) for \(t = t_0\). This
 result substituted into (1) gives
 
-[Pi = ett) Pty), (18)
+<br><span style="color:blue;">
+初期条件\(T = 1\) \(t = t_0\) を用いて、この結果を(1)に代入すると、
+</span>
 
-which is the integral of Schrédinger’s equation of motion (5), and
+\[
+|Pt\rangle = e^{iH(t^t_0)/\hbar}|Pt_0\rangle  \tag{16}
+\]
+
+which is the integral of Schr&ouml;dinger's equation of motion (5), and
 substituted into (10) it gives
-UY, = ChHt-l0lRye—tHl—toVh (17)
 
-which is the integral of Heisenberg’s equation of motion (11), H, being
-now equal to H. Thus we have solutions of the equations of motion
+<br><span style="color:blue;">
+これはシュレーディンガーの運動方程式(5)の積分であり、(10)に代入すると
+</span>
+
+\[
+v_t = e^{iH(t-t_0)/\hbar}ve^{-iH(t-t_0)/\hbar}  \tag{17}
+\]
+
+which is the integral of Heisenberg's equation of motion (11), \(H_t\) being
+now equal to \(H\). Thus we have solutions of the equations of motion
 in a simple form. However, these solutions are not of much practical
 value, because of the difficulty involved in evaluating the operator
-etH-o% unless H is particularly simple, and for practical purposes
-one usually has to fall back on Schrédinger’s wave equation.
+\(e^{-iH(t-t_0)/\hbar}\), unless \(H\) is particularly simple, and for practical purposes
+one usually has to fall back on Schr&ouml;dinger's wave equation.
 
-Let us consider a state of motion such that at time ¢, it is an eigen-
-state of the energy. The ket |Pi,> corresponding to it at this time
-must be an eigenket of H. If H’ is the eigenvalue to which it belongs,
+<br><span style="color:blue;">
+これはハイゼンベルクの運動方程式 (11) の積分であり、\(H_t\) は \(H\) に等しくなります。このようにして、運動方程式の解が単純な形で得られます。しかし、これらの解は、\(H\) が特に単純な場合を除き、演算子 \(e^{-iH(t-t_0)/\hbar}\) の評価が困難であるため、実用上はあまり価値がありません。実用上は、通常はシュレーディンガーの波動方程式に頼らざるを得ません。
+</span>
 
-equation (16) gives |Pt) = e~tE' toh | Pty),
+</p><p>
+Let us consider a state of motion such that at time \(t_0\), it is an eigen-
+state of the energy. The ket \(|Pt_0\rangle\) corresponding to it at this time
+must be an eigenket of \(H\). If \(H^\prime\) is the eigenvalue to which it belongs,
+equation (16) gives
 
-showing that |P¢> differs from [Pi)> only by a phase factor. Thus
+<br><span style="color:blue;">
+時刻 \(t_0\) においてエネルギーの固有状態であるような運動状態を考えてみましょう。この時刻におけるそれに対応するケット \(|Pt_0\rangle\) は、\(H\) の固有ケットでなければなりません。\(H^\prime\) がそれの属する固有値であるとすると、式(16)は次式を与えます。
+</span>
+
+\[
+|Pt\rangle = e^{-iH^\prime(t-t_0)/\hbar}|Pt_0\rangle
+\]
+
+showing that \(|Pt\rangle\) differs from \(|Pt_0\rangle\) only by a phase factor. Thus
 the state always remains an eigenstate of the energy, and further, it
-does not vary with the time at all, since the direction of the ket | Pt»
+does not vary with the time at all, since the direction of the ket \(|Pt\rangle\)
 does not vary with the time. Such a state is called a stationary state.
 The probability for any particular result of an observation on it is
 independent of the time when the observation is made. From our
 assumption that the energy is an observable, there are sufficient
 stationary states for an arbitrary state to be dependent on them.
 
-The time-dependent wave function (Et) representing a stationary
-state of energy H’ will vary with time according to the law
+<br><span style="color:blue;">
+\(|Pt\rangle\) は \(|Pt_0\rangle\) と位相係数のみ異なることを示しています。したがって、状態は常にエネルギーの固有状態のままであり、さらに、ケット \(|Pt\rangle\) の方向は時間とともに変化しないため、時間によって全く変化しません。このような状態は定常状態と呼ばれます。
+その状態に対する観測の特定の結果の確率は、観測が行われた時間とは独立です。エネルギーが観測可能値であるという仮定から、任意の状態がそれらに依存するのに十分な数の定常状態が存在します。
+</span>
 
-PEt) = Yoo(E)e*, (18)
+</p><p>
+The time-dependent wave function \(\psi(\xi t)\) representing a stationary
+state of energy \(H^\prime\) will vary with time according to the law
 
-f The integration can be carried out as though H were an ordinary algebraic
-variable instead of a linear operator, because there is no quantity that does not
-commute with H in the work.
-﻿§ 29 STATIONARY STATES 117
+<br><span style="color:blue;">
+エネルギーの定常状態\(H^\prime\)を表す時間依存波動関数\(\psi(\xi t)\)は、次の法則に従って時間とともに変化する。
+</span>
 
-and Schrédinger’s wave equation (7) for it reduces to
+\[
+\psi(\xi t) = \psi_0(\xi)e^{-iH^\prime t/\hbar}  \tag{18}
+\]
 
-A'by) = Hf. (19)
-This equation merely asserts that the state represented by yy is an
-eigenstate-of H. We call a function yy satisfying (19) an eagenfunction
-of H, belonging to the eigenvalue 2’.
+and Schr&ouml;dinger's wave equation (7) for it reduces to
 
+<br><span style="color:blue;">
+シュレーディンガーの波動方程式（７）は次のように帰着する。
+</span>
+
+\[
+H^\prime\psi_0\rangle = H\psi_0\rangle  \tag{19}
+\]
+
+This equation merely asserts that the state represented by \(\psi_0\) is an
+eigenstate of \(H\). We call a function \(\psi_0\) satisfying (19) an eagenfunction
+of \(H\), belonging to the eigenvalue \(H^\prime\).
+
+<br><span style="color:blue;">
+この式は、\(\psi_0\) で表される状態が \(H\) の固有状態であることを単に主張しているに過ぎません。(19) を満たす関数 \(\psi_0\) を \(H\) の固有関数と呼び、固有値 \(H^\prime\) に属します。
+</span>
+
+</p><p>
 In the Heisenberg picture the stationary states correspond to fixed
 eigenvectors of the energy. We can set up a representation in which
 all the basic vectors are eigenvectors of the energy and so correspond
@@ -534,148 +845,278 @@ of finding a complete set of commuting observables, each of which
 is a constant of the motion, and then making these observables
 diagonal. The energy must be a function of these observables, from
 Theorem 2 of §19. It is sometimes convenient to take the energy
-
 itself as one of them.
-Let « denote the complete set of commuting observables in a
 
-Heisenberg representation, so that the basic vectors are written <a’ |,
-|x”). The energy is a function of these observables a, say H = H(a).
-From (17) we get
+<br><span style="color:blue;">
+ハイゼンベルク描像において、定常状態はエネルギーの固定された固有ベクトルに対応する。すべての基本ベクトルがエネルギーの固有ベクトルであり、したがってハイゼンベルク描像における定常状態に対応するような表現を設定することができる。このような表現をハイゼンベルク表現と呼ぶ。1925年にハイゼンベルクによって発見された量子力学の最初の形態は、この種の表現に基づいていた。この表現においてエネルギーは対角線上にある。他の対角線上の力学変数はエネルギーと交換可能でなければならないため、運動の定数となる。したがって、ハイゼンベルク表現を設定する問題は、それぞれが運動の定数である交換可能な観測量の完全な集合を見つけ、それらの観測量を対角線上にするという問題に帰着する。§19の定理2より、エネルギーはこれらの観測量の関数でなければならない。エネルギーそのものを
+それらの1つとして捉えることが便利な場合もあります。
+</span>
 
-Coe’ fuzfec”> == Cox! [ett tol iyye tH -t0)f [>
-= eH’ -H MI bela"), (20)
+</p><p>
+Let \(\alpha\) denote the complete set of commuting observables in a
+Heisenberg representation, so that the basic vectors are written \(\langle\alpha^\prime|\),
+\(|\alpha^{\prime\prime}\rangle\). The energy is a function of these observables \(\alpha\), say \(H = H(\alpha)\). From (17) we get
 
-where H’ = H(«’) and H” = H(«"). The factor <a’ |v|x"> on the right-
-hand side here is independent of ¢, being an element of the matrix
-representing the fixed linear operator v. Formula (20) shows how the
+<br><span style="color:blue;">
+可換な観測量の完全な集合をハイゼンベルク表現で\(\alpha\)とすると、基本ベクトルは\(\langle\alpha^\prime|\)、\(|\alpha^{\prime\prime}\rangle\)と表記される。エネルギーはこれらの観測量\(\alpha\)の関数であり、\(H = H(\alpha)\)とおく。(17)式から次式を得る。
+</span>
+
+\[
+\begin{align}
+\langle\alpha^\prime|v_t|\alpha^{\prime\prime}\rangle &=
+\langle\alpha^\prime|e^{iH(t-t_0)/\hbar}ve^{-iH(t^t_0)/\hbar}|\alpha^{\prime\prime}\rangle \\
+\\
+&=e^{i(H^\prime - H^{\prime\prime})(t - t_0)/\hbar}\langle\alpha^\prime|v|\alpha^{\prime\prime}\rangle  \tag{20}
+\end{align}
+\]
+
+where \(H^\prime = H(\alpha^\prime)\) and \(H^{\prime\prime} = H(\alpha^{\prime\prime})\). The factor \(\langle\alpha^\prime|v|\alpha^{\prime\prime}\rangle\) on the right-
+hand side here is independent of \(t\), being an element of the matrix
+representing the fixed linear operator \(v\). Formula (20) shows how the
 Heisenberg matrix elements of any Heisenberg dynamical variable
-vary with time, and it makes », satisfy the equation of motion (11),
+vary with time, and it makes \(v_t\) satisfy the equation of motion (11),
 as is easily verified. The variation given by (20) is simply periodic
-
 with the frequency
+
+<br><span style="color:blue;">
+ここで、\(H^\prime = H(\alpha^\prime)\) かつ \(H^{\prime\prime} = H(\alpha^{\prime\prime})\) である。ここで右辺の係数 \(\langle\alpha^\prime|v|\alpha^{\prime\prime}\rangle\) は \(t\) とは独立であり、固定線形演算子 \(v\) を表す行列の要素である。式 (20) は、任意のハイゼンベルク力学変数のハイゼンベルク行列要素が時間とともにどのように変化するかを示しており、\(v_t\) が運動方程式 (11) を満たすことが容易に検証できる。式 (20) で与えられる変化は、周波数
+</span>
+
+\[
+|H^\prime - H^{\prime\prime}|/2\pi\hbar = |H^\prime - H^{\prime\prime}|/h  \tag{21}
+\]
 
 depending only on the energy difference of the two stationary states
 to which the matrix element refers. This result is closely connected
-
-with the Combination Law of Spectroscopy and Bohr’s Frequency
-3595.57 T
-﻿8 THE EQUATIONS OF MOTION § 29
-
+with the Combination Law of Spectroscopy and Bohr's Frequency
 Condition, according to which (21) is the frequency of the electro-
 magnetic radiation emitted or absorbed when the system makes a
 transition under the influence of radiation between the stationary
-states «’ and «”, the eigenvalues of H being Bohr’s energy levels.
-These matters will be dealt with in § 45.
+states \(\alpha^\prime\) and \(\alpha^{\prime\prime}\), the eigenvalues of \(H\) being Bohr's energy levels. These matters will be dealt with in §45.
 
-30. The free particle
+<br><span style="color:blue;">
+行列要素が参照する2つの定常状態のエネルギー差のみに依存します。この結果は、分光学の結合法則とボーアの周波数条件と密接に関連しています。これによれば、(21)は、系が放射の影響下で定常状態\(\alpha^\prime\)と\(\alpha^{\prime\prime}\)の間で遷移する際に放出または吸収される電磁放射の周波数であり、\(H\)の固有値はボーアのエネルギー準位です。これらの事項については、§45で扱います。
+</span>
+
+</p><p>
+
+<h3>30. The free particle　<span style="color:blue;">自由粒子</span></h3>
+<p>
 
 The most fundamental and elementary application of quantum
 mechanics is to the system consisting merely of a free particle, or
 particle not acted on by any forces. For dealing with it we use as
-dynamical variables the three Cartesian coordinates z, y, 2 and their
-conjugate momenta p,, p,, Pp, The Hamiltonian is equal to the
+dynamical variables the three Cartesian coordinates \(x,y,z\) and their
+conjugate momenta \(p_x,p_y,p_z\). The Hamiltonian is equal to the
 kinetic energy of the particle, namely
 
-1
+<br><span style="color:blue;">
+量子力学の最も基本的かつ初歩的な応用は、自由粒子、つまりいかなる力も受けていない粒子のみからなる系への応用です。この系を扱うために、力学変数として、3つの直交座標\(x,y,z\)とそれらの共役運動量\(p_x,p_y,p_z\)を用います。ハミルトニアンは粒子の運動エネルギーに等しく、すなわち
+</span>
 
-H = <—(pi-+pi+92) (22)
+\[
+H = \frac{1}{2m}(p_x^2 + p_y^2 + p_z^2)  \tag{22}
+\]
 
-according to Newtonian mechanics, m being the mass. This formula
-is valid only if the velocity of the particle is small compared with c,
+according to Newtonian mechanics, \(m\) being the mass. This formula
+is valid only if the velocity of the particle is small compared with \(c\),
 the velocity of light. For a rapidly moving particle, such as we often
 have to deal with in atomic theory, (22) must be replaced by the
 relativistic formula
 
-H = o(mic?+ p+ py +p). (23)
+<br><span style="color:blue;">
+ニュートン力学によれば、\(m\)は質量である。この式は、粒子の速度が光速\(c\)に比べて小さい場合にのみ有効である。原子論でしばしば扱うような高速で移動する粒子の場合、(22)は相対論的な式に置き換える必要がある。
+</span>
 
-For small values of p,, p,, and p, (23) goes over into (22), except for
-the constant term mc? which corresponds to the rest-energy of the
+\[
+H = c(m^2c^2 + p_x^2 + p_y^2 + p_z^2)^{\frac{1}{2}}  \tag{23}
+\]
+
+For small values of \(p_x, p_y,\) and \(p_z\) (23) goes over into (22), except for
+the constant term \(mc^2\) which corresponds to the rest-energy of the
 particle in the theory of relativity and which has no influence on the
 equations of motion. Formulas (22) and (23) can be taken over
 directly into the quantum theory, the square root in (23) being now
-understood as the positive square root defined at the end of § 11.
-The constant term mc? by which (23) differs from (22) for small values
-of p,, py, and p, can still have no physical effects, since the Hamil-
-tonian in the quantum theory, as introduced in § 27, is undefined to
+understood as the positive square root defined at the end of §11.
+The constant term \(mc^2\) by which (23) differs from (22) for small values
+of \(p_x,p_y,\) and \(p_z\) can still have no physical effects, since the Hamil-
+tonian in the quantum theory, as introduced in §27, is undefined to
 the extent of an arbitrary additive real constant.
 
+<br><span style="color:blue;">
+\(p_x, p_y,\) および \(p_z\) の値が小さい場合、(23) は (22) にそのまま当てはまります。ただし、定数項 \(mc^2\) は相対性理論における粒子の静止エネルギーに相当し、運動方程式には影響を与えません。式 (22) と (23) は量子論に直接取り入れることができ、(23) の平方根は §11 の最後で定義された正の平方根として理解されます。\(p_x, p_y,\) および \(p_z\) の値が小さい場合に (23) と (22) の差となる定数項 \(mc^2\) は、依然として物理的な影響を及ぼしません。これは、§27 で導入された量子論におけるハミルトニアンは、任意の加法的な実定数の範囲では未定義であるためです。
+</span>
+
+</p><p>
 We shall here work with the more accurate formula (23). We shall
 first solve the Heisenberg equations of motion. From the quantum
-conditions (9) of § 21, p, commutes with p, and p,, and hence, from
-Theorem 1 of § 19 extended to a set of commuting observables, p,
-commutes with any function of p,, p,, and p, and therefore with H.
-It follows that p,, is a constant of the motion. Similarly p, and p, are
+conditions (9) of §21, \(p_x\) commutes with \(p_y\) and \(p_z\), and hence, from
+Theorem 1 of §19 extended to a set of commuting observables, \(p_x\)
+commutes with any function of \(p_x,p_y,\) and \(p_z\) and therefore with \(H\).
+It follows that \(p_x\) is a constant of the motion. Similarly \(p_y\) and \(p_z\) are
 constants of the motion. These results are the same as in the classical
-﻿§ 30 THE FREE PARTICLE 119
-
-theory. Again, the equation of motion for a coordinate, 2, say, is,
+theory. Again, the equation of motion for a coordinate, \(x_t\) say, is,
 according to (11),
 
-wa, = th = x,c(mc? +p -+-pyt- pz)! —e( mc? + pe + pat De) hp
+<br><span style="color:blue;">
+ここでは、より正確な式 (23) を扱います。まず、ハイゼンベルクの運動方程式を解きます。§21 の量子条件 (9) より、\(p_x\) は \(p_y\) および \(p_z\) と可換であり、したがって、§19 の定理 1 を可換な観測量の集合に拡張すると、\(p_x\) は \(p_x,p_y,\) および \(p_z\) の任意の関数と可換であり、したがって \(H\) とも可換です。
+したがって、\(p_x\) は運動の定数です。同様に、\(p_y\) および \(p_z\) も運動の定数です。これらの結果は古典理論と同じです。また、座標 \(x_t\) に対する運動方程式は、(11) によれば、次のように表されます。
+</span>
+
+\[
+i\hbar\dot{x}_t = i\hbar\frac{dx_t}{dt}=x_tc(m^2c^2+p_x^2+p_y^2+p_z^2)^{\frac{1}{2}}-c(m^2c^2+p_x^2+p_y^2+p_z^2)^{\frac{1}{2}}x_t
+\]
 
 The right-hand side here can be evaluated by means of formula
-(31) of § 22 with the roles of coordinates and momenta interchanged,
+(31) of §22 with the roles of coordinates and momenta interchanged,
+so that it reads 
 
-so that it reads q,f—fa, = ih of|ap,, (24)
-f now being any function of the p’s. This gives
-. é 22 2 tL p2tp2)t an © Pa
-yO (25)
-. , _@ , ep,
-Similarly, Y= “ee y= + .
+<br><span style="color:blue;">
+ここでの右辺は、座標と運動量の役割を入れ替えた§22の式(31)を用いて評価することができる。
+</span>
+
+\[
+q_rf—fq_r = i\hbar \partial f/\partial p_r  \tag{24}
+\]
+
+\(f\) now being any function of the \(p\)'s. This gives
+
+<br><span style="color:blue;">
+\(f\)は\(p\)の任意の関数となる。これは
+</span>
+
+\[
+\left.
+\begin{array}{l}
+\dot{x}_t = \frac{\partial}{\partial p_x}c(m^2c^2+p_x^2+p_y^2+p_z^2)^{\frac{1}{2}}=\frac{c^2p_x}{H} \\
+\\
+Similarly　\dot{y}_t = \frac{c^2p_y}{H}　\dot{z}_t = \frac{c^2p_z}{H}
+\end{array}
+\right\}
+\tag{25}
+\]
 
 The magnitude of the velocity is
 
-v= (+ 9+ a)? = (pit py t+ pz) / A. (26)
+<br><span style="color:blue;">
+速度の大きさは
+</span>
+
+\[
+v = (\dot{x}_t^2+\dot{y}_t^2+\dot{z}_t^2)^{\frac{1}{2}} = c^2(p_x^2+p_y^2+@_z^2)^{\frac{1}{2}}/H  \tag{26}
+\]
+
 Equations (25) and (26) are just the same as in the classical theory.
+
+<br><span style="color:blue;">
+式(25)および式(26)は古典理論の場合と全く同じである。
+</span>
+
+</p><p>
 Let us consider a state that is an eigenstate of the momenta,
-belonging to the eigenvalues p,, p;,, p;. This state must be an eigen-
-
+belonging to the eigenvalues \(p_x^\prime,p_y^prime, p_z^\prime\). This state must be an eigen-
 state of the Hamiltonian, belonging to the eigenvalue
-= e(m?-+p? +p, +pe)h, (27)
-and must therefore be a stationary state. The possible values for H’
 
-are all numbers from mc? to oo, as in the classical theory. The wave
-function (xyz) representing this state at any time in Schrédinger’s
+<br><span style="color:blue;">
+運動量の固有状態、すなわち固有値 \(p_x^\prime,p_y^\prime,p_z^\prime\) に属する状態を考えてみましょう。この状態はハミルトニアンの固有状態、すなわち固有値 \(p_x^\prime,p_y^\prime,p_z^\prime\) に属する状態です。
+</span>
 
+\[
+H^\prime = c(m^2c^2+p_x^{\prime 2}+p_y^{\prime 2}+p_z^{\prime 2})^{\frac{1}{2}}  \tag{27}
+\]
+
+and must therefore be a stationary state. The possible values for \(H^\prime\)
+are all numbers from \(mc^2\) to \8\infty\), as in the classical theory. The wave
+function \(\psi(xyz)\) representing this state at any time in Schr&ouml;dinger's
 representation must satisfy
 
-peahorye)> = peislnye)> = —i6 HEV)»,
+<br><span style="color:blue;">
+したがって定常状態である。\(H^\prime\) の取り得る値は、古典理論と同様に、\(mc^2\) から \(\infty\) までのすべての数値である。シュレーディンガー表現においてこの状態を表す波動関数 \(\psi(xyz)\) は、次の式を満たす必要がある。
+</span>
 
-with similar equations for p, and p,. These equations show that
-(xyz) is of the form .
-b(ayz) = aetPrtt Py Par, (28)
-where a@ is independent of x, y, and z. From (18) we see now that the
-time-dependent wave function ¥(xyzt) is of the form
-b(xyzt) == dy elPsttPyytP,2- HD, (29)
-where a, is independent of x, y, z, and ¢.
-The function (29) of x, y, z, and ¢ describes plane waves in space-
+\[
+p_x^\prime\psi(xyz)\rangle = p_x\psi(xyz)\rangle = -i\hbar\frac{\partial\psi(xyz)}{\partial x}\rangle
+\]
+
+with similar equations for \(p_y\) and \(p_z\). These equations show that
+\(\psi(xyz)\) is of the form
+
+<br><span style="color:blue;">
+\(p_y\) と \(p_z\) についても同様の式が成り立ちます。これらの式から、\(\psi(xyz)\) は次の式で表されることがわかります。
+</span>
+
+\[
+\psi(xyz) = ae^{i(p_x^\prime x+p_y^\prime y+p_z^\prime z)/\hbar}  \tag{28}
+\]
+
+where \(a\) is independent of \(x, y,\) and \(z\). From (18) we see now that the
+time-dependent wave function \(\psi(xyzt)\) is of the form
+
+<br><span style="color:blue;">
+ここで、\(a\)は\(x, y,\)および\(z\)に依存しない。(18)から、時間依存波動関数\(\psi(xyzt)\)は次の式で表されることがわかる。
+</span>
+
+\[
+\psi(xyzt) = a_0 e^{i(p_x^\prime x+p_y^\prime y+p_z^\prime z-H^\prime t)/\hbar}  \tag{29}
+\]
+
+where \(a_0\) is independent of \(x, y, z,\) and \(t\).
+
+<br><span style="color:blue;">
+ここで\(a_0\)は\(x, y, z,\)および\(t\)から独立しています。
+</span>
+
+</p><p>
+The function (29) of \(x, y, z,\) and \(t\) describes plane waves in space-
 time. We see from this example the suitability of the terms ‘wave
-function’ and ‘wave equation’. The frequency of the waves is
+function' and ‘wave equation'. The frequency of the waves is
 
-v= H'/h, (30)
-﻿120 THE EQUATIONS OF MOTION § 30
+<br><span style="color:blue;">
+関数(29)の\(x, y, z,\)と\(t\)は時空における平面波を記述する。この例から「波動関数」と「波動方程式」という用語の適切さが分かる。波の周波数は
+</span>
+
+\[
+\nu = H^\prime / h  \tag{30}
+\]
 
 their wavelength is
-A= hl(p2+pP +p) = h/P’, (31)
 
-P’ being the length of the vector (pi, },p,), and their motion is in
-the direction specified by the vector (p;, 9, p;) with the velocity
+<br><span style="color:blue;">
+それらの波長は
+</span>
 
-My = H'/P! = fv", (32)
+\[
+\lambda = h/(p_x^{\prime 2}+p_y^{\prime 2}+p_z^{\prime 2})^{\frac{1}{2}} = h/P^\prime  \tag{31}
+\]
 
-v’ being the velocity of the particle corresponding to the momentum
-(Des Di P;) a8 given by formula (26). Equations (30), (31), and (32)
+\(P^\prime\) being the length of the vector \((p_x^\prime,p_y^\prime,p_z^\prime)\), and their motion is in the direction specified by the vector \((p_x^\prime, p_y^\prime, p_z^\prime)\) with the velocity
+
+<br><span style="color:blue;">
+\(P^\prime\)はベクトル\((p_x^\prime,p_y^\prime,p_z^\prime)\)の長さであり、その動きはベクトル\((p_x^\prime, p_y^\prime, p_z^\prime)\)で指定された方向に速度で行われる。
+</span>
+
+\[
+\lambda \nu = H^\prime/P^\prime = c^2/v^\prime  \tag{32}
+\]
+
+\(v^\prime\) being the velocity of the particle corresponding to the momentum
+\((p_x^\prime,p_y^\prime,p_z^\prime)\) as given by formula (26). Equations (30), (31), and (32)
 are easily seen to hold in all Lorentz frames of reference, the expres-
 sion on the right-hand side of (29) being, in fact, relativistically
-invariant with p;,,p,,p, and H’ as the components of a 4-vector.
+invariant with \(p_x^\prime, p_y^\prime, p_z^\prime\) and \(H^\prime\) as the components of a 4-vector.
 These properties of relativistic invariance led de Broglie, before the
 discovery of quantum mechanics, to postulate the existence of waves
 of the form (29) associated with the motion of any particle. They
 are therefore known as de Broglie waves.
 
+<br><span style="color:blue;">
+\(v^\prime\) は、式 (26) で与えられる運動量 \((p_x^\prime,p_y^\prime,p_z^\prime)\) に対応する粒子の速度である。式 (30)、(31)、(32) は、あらゆるローレンツ座標系で成立することが容易に分かる。実際、式 (29) の右辺は、\(p_x^\prime, p_y^\prime, p_z^\prime\) および \(H^\prime\) を 4 次元ベクトルの成分として相対論的に不変である。これらの相対論的不変性の性質から、量子力学の発見以前に、ド・ブロイは、あらゆる粒子の運動に関連する (29) の形の波の存在を仮定した。したがって、それらはド・ブロイ波として知られている。
+</span>
+
+</p><p>
 In the limiting case when the mass m is made to tend to zero, the
-classical velocity of the particle v becomes equal to c and hence, from
-(32), the wave velocity also becomes c. The waves are then like the
+classical velocity of the particle v becomes equal to \(c\) and hence, from
+(32), the wave velocity also becomes \(c\). The waves are then like the
 light-waves associated with a photon, with the difference that they
 contain no reference to the polarization and involve a complex ex-
 ponential instead of sines and cosines. Formulas (30) and (31) are
@@ -683,512 +1124,867 @@ still valid, connecting the frequency of the light-waves with the
 energy of the photon and the wavelength of the light-waves with
 the momentum of the photon.
 
+<br><span style="color:blue;">
+質量mがゼロに近づく極限の場合、粒子の古典速度vは\(c\)に等しくなり、したがって、(32)式から、波の速度も\(c\)となる。このとき、波は光子に付随する光波と似ているが、偏光を考慮せず、正弦と余弦の代わりに複素指数関数を伴うという違いがある。式(30)と(31)は依然として有効であり、光波の周波数と光子のエネルギー、光波の波長と光子の運動量を結び付けている。
+</span>
+
+</p><p>
 For the state represented by (29), the probability of the particle
 being found in any specified small volume when an observation of its
 position is made is independent of where the volume is. This provides
-an example of Heisenberg’s principle of uncertainty, the state being
+an example of Heisenberg's principle of uncertainty, the state being
 one for which the momentum is accurately given and for which, in
 consequence, the position is completely unknown. Such a state is,
 of course, a limiting case which never occurs in practice. The states
 usually met with in practice are those represented by wave packets,
 which may be formed by superposing a number of waves of the type
-(29) belonging to slightly different values of (9%, p;,, p.), a8 discussed
-in § 24. The ordinary formula in hydrodynamics for the velocity of
+(29) belonging to slightly different values of \((p_x^\prime, p_y^\prime, p_z^\prime)\), as discussed
+in §24. The ordinary formula in hydrodynamics for the velocity of
 such a wave packet, i.e. the group velocity of the waves, is
 
-dv
-d(1/d)
+<br><span style="color:blue;">
+(29)で表される状態においては、粒子の位置を観測した際に、その粒子が任意の小さな体積の中に存在する確率は、その体積がどこにあるかに依存しない。これはハイゼンベルクの不確定性原理の一例であり、運動量が正確に与えられ、その結果として位置が全く不明な状態である。このような状態は、もちろん実際には決して起こらない極限ケースである。実際に通常遭遇する状態は、波束で表される状態であり、§24で議論されているように、\((p_x^\prime, p_y^\prime, p_z^\prime)\)のわずかに異なる値に属する(29)型の波を複数重ね合わせることで形成される。このような波束の速度、すなわち波の群速度を表す流体力学における通常の公式は、
+</span>
 
-(33)
-﻿§ 30 THE FREE PARTICLE 121
+\[
+\frac{d\nu}{d(1/\lambda)}  \tag{33}
+\]
 
 which gives, from (30) and (31)
 
-aH’ qo oy ping COP’ ,
+<br><span style="color:blue;">
+(30)と(31)から、
+</span>
 
-= a =U. 4
+\[
+\frac{dH^\prime}{dP^\prime} = c\frac{d}{dP\prime}(m^2c^2+P^{\prime 2})^{\frac{1}{2}} = \frac{c^2P^\prime}{H^\prime}=v^\prime  \tag{34}
+\]
+
 This is just the velocity-of the particle. The wave packet moves in
 the same direction and with the same velocity as the particle moves
-
 in classical mechanics.
 
-31. The motion of wave packets
+<br><span style="color:blue;">
+これは粒子の速度です。波束は古典力学において粒子と同じ方向に同じ速度で動きます。
+</span>
+
+</p><p>
+
+<h3>31. The motion of wave packets　<span style="color:blue;">波束の運動</span></h3>
+<p>
 
 The result just deduced for a free particle is an example of a general
 principle. For any dynamical system with a classical analogue, a state
 for which the classical description is valid as an approximation is
 represented in quantum mechanics by a wave packet, all the co-
 ordinates and momenta having approximate numerical values, whose
-accuracy is limited by Heisenberg’s principle of uncertainty. Now
-Schrédinger’s wave equation fixes how such a wave packet varies with
+accuracy is limited by Heisenberg's principle of uncertainty. Now
+Schr&ouml;dinger's wave equation fixes how such a wave packet varies with
 time, so in order that the classical description may remain valid, the
 wave packet should remain a wave packet and should move according
 to the laws of classical dynamics. We shall verify that this is so.
 
+<br><span style="color:blue;">
+自由粒子について今導出された結果は、一般原理の一例です。古典的な類似体を持つ任意の力学系において、近似として古典的な記述が成立する状態は、量子力学においては波束によって表されます。この場合、すべての座標と運動量は近似的な数値を持ち、その精度はハイゼンベルクの不確定性原理によって制限されます。さて、シュレーディンガーの波動方程式は、このような波束が時間とともにどのように変化するかを規定します。したがって、古典的な記述が成立し続けるためには、波束は波束のままであり、古典力学の法則に従って運動しなければなりません。これを検証しましょう。
+</span>
+
+</p><p>
 We take a dynamical system having a classical analogue and let
-its Hamiltonian be H(q,,p,) (r = 1, 2,...,n). The corresponding classi-
-cal dynamical system will have as Hamiltonian H,(q,, p,) say, obtained
-by putting ordinary algebraic variables for the g, and p, in A(g,, 7,)
-and making # — 0 if it occurs in H(q,,p,). The classical Hamiltonian
-Hf, is, of course, a real function of its variables. It is usually a
-quadratic function of the momenta p,, but not always so, the
+its Hamiltonian be \(H(q_r, p_r) (r = 1, 2,...,n)\). The corresponding classi-
+cal dynamical system will have as Hamiltonian \(H_c(q_r,p_r)\) say, obtained
+by putting ordinary algebraic variables for the \(q_r\) and \(p_r\) in \(H(q_r, p_r)\)
+and making \(\hbar \rightarrow 0\) if it occurs in \(H(q_r, p_r)\). The classical Hamiltonian
+\(H_c\) is, of course, a real function of its variables. It is usually a
+quadratic function of the momenta \(p_r\), but not always so, the
 relativistic theory of a free particle being an example where it is not.
-The following argument is valid for H, any algebraic function of the p’s.
+The following argument is valid for \(H_c\) any algebraic function of the \(p\)'s.
 
-We suppose that the time-dependent wave function in Schré-
-dinger’s representation is of the form
+<br><span style="color:blue;">
+古典力学系に類似したハミルトニアンを \(H(q_r, p_r) (r = 1, 2,...,n)\) とします。対応する古典力学系のハミルトニアン \(H_c(q_r, p_r)\) は、\(q_r\) と \(p_r\) の通常の代数変数を \(H(q_r, p_r)\) に代入し、\(H(q_r, p_r)\) に含まれる場合は \(\hbar \rightarrow 0\) とすることで得られます。古典ハミルトニアン \(H_c\) は、もちろんその変数の実関数です。通常は運動量 \(p_r\) の2次関数ですが、常にそうであるとは限りません。自由粒子の相対論的理論は、そうではない例です。次の議論は、\(p\) の任意の代数関数 \(H_c\) に対して有効です。
+</span>
 
-(gt) = AekSi, (35)
-where A and S are real functions of the q’s and ¢ which do not vary
+</p><p>
+We suppose that the time-dependent wave function in Schr&ouml;dinger's representation is of the form
+
+<br><span style="color:blue;">
+シュレーディンガー表現における時間依存波動関数は次の式で表されるとする。
+</span>
+
+\[
+\psi(qt) = Ae^{iS/\hbar}  \tag{35}
+\]
+
+where \(A\) and \(S\) are real functions of the \(q\)'s and \(t\) which do not vary
 very rapidly with their arguments. The wave function is then of the
-form of waves, with A and S determining the amplitude and phase
-respectively. Schrédinger’s wave equation (7) gives
+form of waves, with \(A\) and \(S\) determining the amplitude and phase
+respectively. Schr&ouml;dinger's wave equation (7) gives
 
-RS Aci = H(y,,p,)Aei™)
+<br><span style="color:blue;">
+ここで、\(A\)と\(S\)は\(q\)と\(t\)の実関数であり、引数に対してそれほど急激には変化しない。したがって、波動関数は波の形をとり、\(A\)と\(S\)はそれぞれ振幅と位相を決定する。シュレーディンガーの波動方程式(7)は次のように表される。
+</span>
 
-or aZ _A =) — ¢-tSI(q,, p,) ActSIAy, (36)
-﻿122 THE EQUATIONS OF MOTION § 3]
+\[
+i\hbar\frac{\partial}{\partial t}Ae^{iS/\hbar}\rangle = H(q_r,p_r)Ae^{iS/\hbar}\rangle
+\]
 
-Now e~*5# is evidently a unitary linear operator and may be used for
-U in equation (70) of § 26 to give us a unitary transformation. The
-q’s remain unchanged by this transformation, each p, goes over into
+or
 
-“e-iSihi esi ~— Dp, +é8/éq,5
-with the help of (81) of § 22, and H goes over into
-e Sh (g,, pest = (Gy, Pp +88 /09,);
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\left\{i\hbar\frac{\partial A}{\partial t} - A\frac{\partial S}{\partial t}\right\}\rangle = e^{-iS/\hbar}H(q_r,p_r)Ae^{iS/\hbar}\rangle  \tag{36}
+\]
+
+Now \(e^{-iS/\hbar}\) is evidently a unitary linear operator and may be used for
+\(U\) in equation (70) of §26 to give us a unitary transformation. The
+\(q\)'s remain unchanged by this transformation, each \(p_r\) goes over into
+
+<br><span style="color:blue;">
+ここで、\(e^{-iS/\hbar}\) は明らかにユニタリ線型作用素であり、§26の式(70)の\(U\) に用いることでユニタリ変換を与えることができる。\(q\) はこの変換によって変化せず、各 \(p_r\) は次のように変化する。
+</span>
+
+\[
+e^{-iS/\hbar}p_re^{iS/\hbar} = p_r+\partial S/\partial q_r
+\]
+
+with the help of (81) of §22, and \(H\) goes over into
+
+<br><span style="color:blue;">
+§22の(81)の助けを借りて、\(H\)は
+</span>
+
+\[
+e^{-iS/\hbar}H(q_r,p_r)e^{iS/\hbar} = H(q_r,p_r+\partial S/\partial q_r)
+\]
 
 since algebraic relations are preserved by the transformation. Thus
-(86) becomes
+(36) becomes
 
-aA
+<br><span style="color:blue;">
+代数的関係は変換によって保存されるからである。したがって、(36)は
+</span>
 
-{aZ—aS) = 8( an. +53 54. (37)
+\[
+\left\{i\hbar\frac{\partial A}{\partial t} - A\frac{\partial S}{\partial t}\right\}\rangle = H\left(q_r,p_r+\frac{\partial S}{\partial q_r}\right)A\rangle   \tag{37}
+\]
 
-Let us now suppose that # can be counted as small and let us neglect
-terms involving # in (37). This involves neglecting the p,’s that occur
-in H in (37), since each p, is equivalent to the operator — ii d/éq,
-operating on the functions of the q’s to the right of it. The surviving
+Let us now suppose that \(\hbar\) can be counted as small and let us neglect
+terms involving \(\hbar\) in (37). This involves neglecting the \(p_r\)'s that occur
+in \(H\) in (37), since each \(p_r\) is equivalent to the operator \(-i\hbar \partial/\partial q_r\)
+operating on the functions of the \(q\)'s to the right of it. The surviving
+terms give
 
-terms give ag as
-Yr,
+<br><span style="color:blue;">
+ここで、\(\hbar\) が小さいとみなせると仮定し、(37) における \(\hbar\) を含む項を無視する。これは、(37) の \(H\) に現れる \(p_r\) を無視することを意味する。なぜなら、各 \(p_r\) は、その右側の \(q\) の関数に作用する演算子 \(-i\hbar \partial/\partial q_r\) と等価だからである。残った項は、
+</span>
 
-This is a differential equation which the phase function S has to
+\[
+-\frac{\partial S}{\partial t} = H_c\left(q_r,\frac{\partial S}{\partial q_r}\right)  \tag{38}
+\]
+
+This is a differential equation which the phase function \(S\) has to
 satisfy. The equation is determined by the classical Hamiltonian
-function H, and is known as the Hamilton-Jacobi equation in classical
-dynamics. It allows S to be real and so shows that the assumption
+function \(H_c\) and is known as the Hamilton-Jacobi equation in classical
+dynamics. It allows \(S\) to be real and so shows that the assumption
 of the wave form (35) does not lead to an inconsistency.
 
-To obtain an equation for A, we must retain the terms in (37)
-which are linear in % and see what they give. A direct evaluation of
-these terms is rather awkward in the case of a general function H,
+<br><span style="color:blue;">
+これは位相関数 \(S\) が満たすべき微分方程式である。この方程式は古典ハミルトニアン関数 \(H_c\) によって決定され、古典力学ではハミルトン・ヤコビ方程式として知られている。この方程式は \(S\) が実数であることを許容し、波形(35)の仮定が矛盾を生じないことを示す。
+</span>
+
+</p><p>
+To obtain an equation for \(A\), we must retain the terms in (37)
+which are linear in \(\hbar\) and see what they give. A direct evaluation of
+these terms is rather awkward in the case of a general function \(H\),
 and we can get the result we require more easily by first multiplying
-both sides of (37) by the bra vector (Af, where f is an arbitrary real
-function of the g’s. This gives
+both sides of (37) by the bra vector \(\langle Af\), where \(f\) is an arbitrary real
+function of the \(q\)'s. This gives
 
-cafin aS} — ApH (an.p.-+ 5} Y.
+<br><span style="color:blue;">
+\(A\) の方程式を得るには、(37) 式の \(\hbar\) に関して線形な項を保持し、それが何を与えるかを確認する必要があります。これらの項を直接評価するのは、一般関数 \(H\) の場合にはかなり面倒です。そこで、(37) 式の両辺にブラベクトル \(\langle Af\) を乗じることで、より簡単に必要な結果を得ることができます。ここで、\(f\) は \(q\) の任意の実関数です。これは次の式を与えます。
+</span>
 
-(38)
+\[
+\langle Af\left\{i\hbar\frac{\partial A}{\partial t}-A\frac{\partial S}{\partial t}\right\}\rangle =
+\langle AfH\left(q_r, p_r+\frac{\partial S}{\partial q_r}\right)A\rangle
+\]
 
 The conjugate complex equation is
 
-04 (as as
-cas{ 8 FAG) = (aH (gn2 +S) sA».
+<br><span style="color:blue;">
+共役複素方程式は
+</span>
 
-Subtracting and ee out by 2, we obtain
-ApS = (ALLE (tn, +) ] >. (39)
-﻿§ 31 THE MOTION OF WAVE PACKETS 123
+\[
+\langle Af\left\{-i\hbar\frac{\partial A}{\partial t}-A\frac{\partial S}{\partial t}\right\}\rangle =
+\langle AH\left(q_r, p_r+\frac{\partial S}{\partial q_r}\right)fA\rangle
+\]
+
+Subtracting and dividing out by \(i\hbar\), we obtain
+
+<br><span style="color:blue;">
+これを \(i\hbar\) で引いて割ると、
+</span>
+
+\[
+2\langle Af\frac{\partial A}{\partial t}\rangle =
+\langle A\left[f,H\left(q_r,p_r+\frac{\partial S}{\partial q_r}\right)\right]A\rangle  \tag{39}
+\]
 
 We now have to evaluate the P.B.
 
-Lf, 2 (G,.p,+8S/6q,)].-
+<br><span style="color:blue;">
+次に、P.B. を評価する必要があります。
+</span>
 
-Our assumption that % can be counted as small enables us to expand
-Al(q,, P,+ 08/éq,) a8 a power series in the p’s. The terms of zero degree
+\[
+[f,H(q_r,p_r+\partial S/\partial q_r)]
+\]
+
+Our assumption that \(\hbar\) can be counted as small enables us to expand
+\(H(q_r,p_r+\partial S/\partial q_r)\) as a power series in the \(p\)'s. The terms of zero degree
 will contribute nothing to the P.B. The terms of the first degree in
-the p’s give a contribution to the P.B. which can be evaluated most
-easily with the help of the classical formula (1) of § 21 (this formula
-being valid also in the quantum theory if u is independent of the »’s
-and v is linear in the y’s). The amount of this contribution is
+the \(p\)'s give a contribution to the P.B. which can be evaluated most
+easily with the help of the classical formula (1) of §21 (this formula
+being valid also in the quantum theory if \(u\) is independent of the \(p\)'s
+and \(v\) is linear in the \(p\)'s). The amount of this contribution is
 
-oF |= fetal]
+<br><span style="color:blue;">
+\(\hbar\) が小さいとみなせるという仮定により、\(H(q_r,p_r+\partial S/\partial q_r)\) を \(p\) のべき級数として展開することができる。0次の項は P.B. に寄与しない。\(p\) の1次の項は P.B. に寄与する。これは §21 の古典的公式 (1) を用いて最も簡単に評価できる（この公式は量子論においても、\(u\) が \(p\) から独立で、\(v\) が \(p\) に関して線形であれば成立する）。この寄与の量は
+</span>
 
-3 ag, aps Pr=OS/8ar
-the notation meaning that we must substitute 0S/éq, for each p, in
-the function [ ] of the g’s and y’s, so as to obtain a function of the q’s
-only. The terms of higher degree in the p’s give contributions to the
+\[
+\sum_S \frac{\partial f}{\partial q_s}\left[\frac{\partial H(q_r, p_r)}{\partial p_s}\right]_{p_r = \partial S/\partial q_r}
+\]
 
-P.B. which vanish when i > 0. Thus (39) becomes, with neglect of
-terms involving #, which is equivalent to the neglect of 4? in (37),
+the notation meaning that we must substitute \(\partial S/\partial q_r\) for each \(p_r\) in
+the function [ ] of the \(q\)'s and \(p\)'s, so as to obtain a function of the \(q\)'s
+only. The terms of higher degree in the \(p\)'s give contributions to the
+P.B. which vanish when \(\hbar\rightarrow 0\). Thus (39) becomes, with neglect of
+terms involving \(\hbar\), which is equivalent to the neglect of \(\hbar^2\) in (37),
 
-GZ of Ste Ie PD ]
-mer . 40
+<br><span style="color:blue;">
+この表記は、\(q\)と\(p\)の関数[ ]において、各\(p_r\)に\(\partial S/\partial q_r\)を代入して、\(q\)のみの関数を得る必要があることを意味している。\(p\)の高次項はP.B.に寄与するが、\(\hbar\rightarrow 0\)のときそれはゼロになる。したがって、(39)は、\(\hbar\)を含む項を無視すると、(37)において\(\hbar^2\)を無視することと等価である。
+</span>
 
-Now if a(g) and 6(q) are any two functions of the q’s, formula
+\[
+\langle f\frac{\partial A^2}{\partial t}\rangle = \langle A^2\sum_S\frac{\partial f}{\partial q_s}\left[\frac{\partial H_c(q_r,p_r)}{\partial p_s}\right]_{p_r=\partial S/\partial q_r}\rangle  \tag{40}
+\]
 
->
+Now if \(a(q)\) and \(b(q)\) are any two functions of the \(q\)'s, formula
+(64) of §20 gives
 
-and so (al) > = —< oan, (41)
+<br><span style="color:blue;">
+ここで、\(a(q)\) と \(b(q)\) が \(q\) の任意の2つの関数であるとすると、§20 の式(64)は次のように表される。
+</span>
 
-provided a(g) and 4(g) satisfy suitable boundary conditions, as dis-
-cussed in §§ 22 and 23. Hence (40) may be written
+\[
+\langle a(q)b(q)\rangle = \int a(q^\prime)dq^\prime b(q^\prime)
+\]
 
-Since this holds for an arbitrary real function f, we must have
+and so
 
-at : a, oD, pr=aSlegr
+<br><span style="color:blue;">
+それゆえ
+</span>
 
-This is the equation for the amplitude A of the wave function. To
+\[
+\langle a(q)\frac{\partial b(q)}{\partial q_r}\rangle = -\langle\frac{\partial a(q)}{\partial q_r} b(q)\rangle  \tag{41}
+\]
+
+provided \(a(q)\) and \(b(q)\) satisfy suitable boundary conditions, as dis-
+cussed in §§22 and 23. Hence (40) may be written
+
+<br><span style="color:blue;">
+ただし、\(a(q)\)と\(b(q)\)は§§22と23で述べた適切な境界条件を満たすものとする。したがって、(40)は
+</span>
+
+\[
+\langle f\frac{\partial A^2}{\partial t}\rangle = -\langle f\sum_s\frac{\partial}{\partial q_s}\left\{A^2\left[\frac{\partial H_c(q_r,p_r)}{\partial p_s}\right]_{p_r=\partial S/\partial q_r}\right\}\rangle
+\]
+
+Since this holds for an arbitrary real function \(f\), we must have
+
+<br><span style="color:blue;">
+これは任意の実関数\(f\)に対して成り立つので、
+</span>
+
+\[
+\frac{\partial A^2}{\partial t} = -\sum_s\frac{\partial}{\partial q_s}\left\{A^2\left[\frac{\partial H_c(q_r,p_r)}{\partial p_s}\right]_{p_r=\partial S/\partial q_r}\right\}  \tag{42}
+\]
+
+</p><p>
+This is the equation for the amplitude \(A\) of the wave function. To
 get an understanding of its significance, let us suppose we have a fluid
 moving in the space of the variables qg, the density of the fluid at any
-point and time being A? and its velocity being
+point and time being \(A^2\) and its velocity being
 
-dq, _ [ Geel
-d OP, | p,=aSlagy
+<br><span style="color:blue;">
+これは波動関数の振幅\(A\)を表す式です。この式の意味を理解するために、変数qgの空間を運動する流体を考えてみましょう。流体の密度は任意の時点において\(A^2\)、速度は\(A^2\)です。
+</span>
 
-(43)
-﻿124 THE EQUATIONS OF MOTION § 31
+\[
+\frac{dq_s}{dt}=\left[\frac{\partial H_c(q_r,p_r)}{\partial p_s}\right]_{p_r=\partial S/\partial q_r}  \tag{43}
+\]
 
 Equation (42) is then just the equation of conservation for such a
 fluid. The motion of the fluid is determined by the function S
 satisfying (38), there being one possible motion for each solution
 of (38).
 
-For a given S, let us take a solution of (42) for which at some
-definite time the density A? vanishes everywhere outside a certain
+<br><span style="color:blue;">
+式(42)は、そのような流体の保存則そのものである。流体の運動は、式(38)を満たす関数Sによって決定され、式(38)の各解に対して1つの運動が可能である。
+</span>
+
+</p><p>
+For a given \(S\), let us take a solution of (42) for which at some
+definite time the density \(A^2\) vanishes everywhere outside a certain
 small region. We may suppose this region to move with the fluid,
 its velocity at each point being given by (43), and then the equation
 of conservation (42) will require the density always to vanish outside
 the region. There is a limit to how small the region may be, imposed
-by the approximation we made in neglecting # in (39). This approxi-
+by the approximation we made in neglecting \(\hbar\) in (39). This approxi-
 mation is valid only provided
 
-ej as
+<br><span style="color:blue;">
+与えられた\(S\)に対して、ある特定の時刻において、ある小さな領域の外では密度\(A^2\)がゼロになるような(42)式の解を取ろう。この領域は流体とともに動き、各点におけるその速度は(43)式で与えられると仮定すると、(42)式の保存則は、密度が常にこの領域の外ではゼロになることを要求する。この領域をどれだけ小さくできるかには限界があり、これは(39)式で\(\hbar\)を無視するという近似によって課せられる。この近似は、
+</span>
 
-or —— <—- —
+\[
+\hbar\frac{\partial}{\partial q_r}A \ll \frac{\partial S}{\partial q_r}A
+\]
 
-which requires that A shall vary by an appreciable fraction of itself
-only through a range of the qg’s in which S varies by many times #,
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\frac{1}{A}\frac{\partial A}{\partial q_r} \ll \frac{1}{\hbar}\frac{\partial S}{\partial q_r}
+\]
+
+which requires that \(A\) shall vary by an appreciable fraction of itself
+only through a range of the \(q\)'s in which \(S\) varies by many times \(\hbar\),
 i.e. arange consisting of many wavelengths of the wave function (35).
-Our solution is then a wave packet of the type discussed in § 24 and
+Our solution is then a wave packet of the type discussed in §24 and
 remains so for all time.
 
+<br><span style="color:blue;">
+これは、\(A\) が、\(S\) が \(\hbar\) の何倍も変化する \(q\) の範囲、すなわち波動関数 (35) の多くの波長からなる範囲においてのみ、それ自身のかなりの割合で変化することを要求する。
+したがって、我々の解は §24 で議論したタイプの波束となり、常にその状態を維持する。
+</span>
+
+</p><p>
 We thus get a wave function representing a state of motion for
 which the coordinates and momenta have approximate numerical
 values throughout all time. Such a state of motion in quantum
 theory corresponds to the states with which classical theory deals.
 The motion of our wave packet is determined by equations (38) and
-(43). From these we get, defining p, as 0S/ég,,
+(43). From these we get, defining \(p_s\) as \(\partial S/\partial q_s\),
 
-dp, d2S 88 , es dq,
+<br><span style="color:blue;">
+こうして、座標と運動量が常に近似的な数値をとる運動状態を表す波動関数が得られる。量子論におけるこのような運動状態は、古典理論が扱う状態に対応する。
+我々の波束の運動は式(38)と式(43)によって決定される。これらの式から、\(p_s\)を\(\partial S/\partial q_s\)と定義すると、次の式が得られる。
+</span>
 
-dt — dt aq, btaq, ' < aq, aq, dt
-gs 8q,] <1 89,09, Dy
-0.
+\[
+\begin{align}
+\frac{dp_s}{dt}=\frac{d}{dt}\frac{\partial S}{\partial q_s}&=\frac{\partial^2 S}{\partial t\partial q_s}+\sum_u\frac{\partial^2 S}{\partial q_u\partial q_s}\frac{dq_u}{dt} \\
+\\
+&=-\frac{\partial}{\partial q_s}H_c\left(q_r,\frac{\partial S}{\partial q_r}\right)+\sum_u\frac{\partial^2 S}{\partial q_u\partial q_s}\frac{\partial H_c(q_r,p_r)}{\partial p_u} \\
+\\
+&=-\frac{\partial H_c(q_r, p_r)}{\partial q_s}  \tag{44}
+\end{align}
+\]
 
-aq
-where in the last line the y’s are counted as independent of the q’s
+where in the last line the \(p\)'s are counted as independent of the \(q\)'s
 before the partial differentiation. Equations (43) and (44) are just
 the classical equations of motion in Hamiltonian form and show that
 the wave packet moves according to the laws of classical mechanics.
-﻿§ 31 THE MOTION OF WAVE PACKETS 125
-
 We see in this way how the classical equations of motion are derivable
 from the quantum theory as a limiting case.
 
-.By a more accurate solution of the wave equation one can show
+<br><span style="color:blue;">
+ここで、最後の行では、\(p\) は偏微分の前に \(q\) とは独立に数えられています。式(43)と(44)は、ハミルトン形式の古典運動方程式であり、波束が古典力学の法則に従って運動することを示しています。このようにして、古典運動方程式が量子論の極限ケースからどのように導出できるかが分かります。
+</span>
+
+</p><p>
+By a more accurate solution of the wave equation one can show
 that the accuracy with which the coordinates and momenta simul-
 taneously have numerical values cannot remain permanently as
-favourable as the limit allowed by Heisenberg’s principle of un-
-certainty, equation (56) of § 24, but if it is initially so it will become
-less favourable, the wave packet undergoing a spreading.
+favourable as the limit allowed by Heisenberg's principle of un-
+certainty, equation (56) of §24, but if it is initially so it will become
+less favourable, the wave packet undergoing a spreading.<sup>†</sup>
 
-32. The action principlet
+<br><span style="color:blue;">
+波動方程式をより正確に解くことによって、座標と運動量が同時に数値を持つ精度は、ハイゼンベルクの不確定性原理（§24の式(56)）によって許される限界ほど永続的に有利であり続けることはできないが、たとえ最初はそうであったとしても、波束が広がるにつれて不利になってゆくことがわかる。<sup>†</sup>
+</span>
+
+</p><p class="margin-large">
+<sup>†</sup>
+See Kennard, Z. f. Physik, 44 (1927), 344; Darwin, Proc. Roy. Soc. A, 117 (1927), 258.
+</p><p>
+
+<h3>32. The action principlet　<span style="color:blue;">行動原理</span><sup>‡</sup></h3>
+
+<p class="margin-large">
+<sup>‡</sup>
+This section may be omitted by the student who is not specially concerned with
+higher dynamics.
+
+<br><span style="color:blue;">
+高次力学に特に関心のない学生は、このセクションを省略できます。
+</span>
+</p><p>
 
 Equation (10) shows that the Heisenberg dynamical variables at
-time ¢, v, are connected with their values at time f, v,, or v, by a
-unitary transformation. The Heisenberg variables at time ¢+-8¢ are
-connected with their values at time ¢ by an infinitesimal unitary
+time \(t,v_t,\) are connected with their values at time \(t_0,v_{t_0},\) or \(v,\) by a
+unitary transformation. The Heisenberg variables at time \(t+\delta t\) are
+connected with their values at time \(t\) by an infinitesimal unitary
 transformation, as is shown by the equation of motion (11) or (13),
-which gives the connexion between v,,5, and v, of the form of (79) or
-(80) of § 26 with HA, for F and 8¢/# for «. The variation with time of
+which gives the connexion between \(v_{t+\delta t}\) and \(v_t\) of the form of (79) or
+(80) of §26 with \(H_t\) for \(F\) and \(\delta t/\hbar\) for \(\epsilon\). The variation with time of
 the Heisenberg dynamical variables may thus be looked upon as the
 continuous unfolding of a unitary transformation. In classical
-mechanics the dynamical variables at time ¢+6¢ are connected with
-their values at time ¢ by an infinitesimal contact transformation and
+mechanics the dynamical variables at time \(t+\delta t\) are connected with
+their values at time \(t\) by an infinitesimal contact transformation and
 the whole motion may be looked upon as the continuous unfolding of a
 contact transformation. We have here the mathematical foundation
 of the analogy between the classical and quantum equations of
 motion, and can develop it to bring out the quantum analogue of all
 the main features of the classical theory of dynamics.
 
+<br><span style="color:blue;">
+式(10)は、時刻\(t,v_t,\)におけるハイゼンベルク力学変数が、時刻\(t_0,v_{t_0},\)または\(v,\)におけるそれらの値とユニタリー変換によって結びついていることを示しています。時刻\(t+\delta t\)におけるハイゼンベルク変数は、時刻\(t\)におけるそれらの値と無限小ユニタリー変換によって結びついており、これは運動方程式(11)または(13)によって示され、\(v_{t+\delta t}\)と\(v_t\)の間に、\(F\)の場合は\(H_t\)、\(\epsilon\)の場合は\(\delta t/\hbar\)を用いて、§26の(79)または(80)の形式で接続を与えます。したがって、ハイゼンベルクの力学変数の時間変化は、ユニタリ変換の連続的な展開と見なすことができます。古典力学では、時刻 \(t+\delta t\) における力学変数は、時刻 \(t\) におけるそれらの値と微小接触変換によって結び付けられており、運動全体は接触変換の連続的な展開と見なすことができます。ここに、古典運動方程式と量子運動方程式の類似性の数学的基礎があり、これを発展させることで、古典力学理論の主要な特徴すべてに対する量子的な類似性を明らかにすることができます。
+</span>
+
+</p><p>
 Suppose we have a representation in which the complete set of
-commuting observables € are diagonal, so that a basic bra is <é’|.
+commuting observables \(\xi\) are diagonal, so that a basic bra is \(\langle\xi^\prime|\).
 We can introduce a second representation in which the basic bras are
 
-cel = EIT. (45)
-The new basic bras depend on the time ¢ and give us a moving
+<br><span style="color:blue;">
+可換観測量\(\xi\)の完全な集合が対角線上にあるような表現があるとする。この場合、基本ブラは\(\langle\xi^\prime|\)となる。
+基本ブラが
+</span>
+
+\[
+\langle\xi^{\prime *}| = \langle\xi^\prime|T  \tag{45}
+\]
+
+The new basic bras depend on the time \(t\) and give us a moving
 representation, like a moving system of axes in an ordinary vector
 space. Comparing (45) with the conjugate imaginary of (8), we see
 that the new basic vectors are just the transforms in the Heisenberg
-picture of the original basic vectors in the Schrédinger picture, and
+picture of the original basic vectors in the Schr&ouml;dinger picture, and
 hence they must be connected with the Heisenberg dynamical
+variables \(v_t\) in the same way in which the original basic vectors are
+connected with the Schr&ouml;dinger dynamical variables \(v\). In particular,
+each \(\langle\xi^{\prime *}|\) must be an eigenvector of the \(\langle\xi_t^\prime|\)'s belonging to the eigenvalues \(\xi^\prime\). It may therefore be written \(\langle\xi_t^\prime|\), with the understanding
+that the numbers \(\xi_t^\prime\) are the same eigenvalues of the \(\xi_t\)'s that the \(\xi^\prime\)'s
+are of the \(\xi\)'s. From (45) we get
 
-f See Kennard, Z. f. Physik, 44 (1927), 344; Darwin, Proc. Roy. Soc. A, 117 (1927),
+<br><span style="color:blue;">
+新しい基本ベクトルは時間 \(t\) に依存し、通常のベクトル空間における移動軸系のような移動表現を与えます。(45) を (8) の共役虚数と比較すると、新しい基本ベクトルはシュレーディンガー描像における元の基本ベクトルのハイゼンベルク描像への変換に過ぎないことが分かります。したがって、元の基本ベクトルがシュレーディンガーの力学変数 \(v\) と関連付けられているのと同じように、新しい基本ベクトルもハイゼンベルクの力学変数 \(v_t\) と関連付けられる必要があります。特に、各 \(\langle\xi^{\prime *}|\) は、固有値 \(\xi^\prime\) に属する \(\langle\xi_t^\prime|\) の固有ベクトルでなければなりません。したがって、\(\langle\xi_t^\prime|\) と書くこともできる。ただし、\(\xi_t^\prime\) は \(\xi_t\) の固有値であり、\(\xi^\prime\) は \(\xi\) の固有値と同じである。(45) から、
+</span>
 
-258.
-{ This section may be omitted by the student who is not specially concerned with
-
-higher dynamics.
-﻿126 THE EQUATIONS OF MOTION § 82
-
-variables v, in the same way in which the original basic vectors are
-connected with the Schrédinger dynamical variables v. In particular,
-each <é’*| must be an eigenvector of the &’s belonging to the eigen-
-values é’. It may therefore be written <;|, with the understanding
-that the numbers &; are the same eigenvalues of the é,’s that the €”s
-are of the &’s. From (45) we get
-
-CEE = EIT IE", (46)
+\[
+\langle\xi_t^\prime|\xi^{\prime\prime}\rangle = \langle\xi^\prime|T|\xi^{\prime\prime}\rangle  \tag{46}
+\]
 
 showing that the transformation function is just the representative
-of T in the original representation.
+of \(T\) in the original representation.
 
-Differentiating (45) with respect to ¢ and using (6), we get
+<br><span style="color:blue;">
+変換関数は、元の表現における \(T\) の単なる代表であることを示しています。
+</span>
 
-ey @ ae wy per AL napm ‘
-the Eel = KE |e OID = oi
+</p><p>
+Differentiating (45) with respect to \(t\) and using (6), we get
 
-with the help of (12). Multiplying on the right by any ket |a>
-independent of t, we get
+<br><span style="color:blue;">
+(45) を \(t\) について微分し、(6) を用いると、
+</span>
 
-iS <Eilay = CEillhlay = [ <EUILIED aE; CElay, (47)
+\[
+i\hbar\frac{d}{dt}\langle\xi_t^\prime| = i\hbar\langle\xi^\prime|\frac{dT}{dt}=\langle\xi^\prime|HT=\langle\xi_t^\prime|H_t
+\]
+
+with the help of (12). Multiplying on the right by any ket \(|a\rangle\)
+independent of \(t\), we get
+
+<br><span style="color:blue;">
+(12) の助けを借りて、右辺に \(t\) に依存しない任意の ket \(|a\rangle\) を乗じると、
+</span>
+
+\[
+i\hbar\frac{d}{dt}\langle\xi_t^\prime|a\rangle = \langle\xi_t^\prime|H_t|a\rangle
+= \int \langle\xi_t^\prime|H_t|\xi_t^{\prime\prime}\rangle d\xi_t^{\prime\prime}\langle\xi_t^{\prime\prime}|a\rangle  \tag{47}
+\]
 
 if we take for definiteness the case of continuous eigenvalues for the
-é’s. Now equation (5), written in terms of representatives, reads
+\(\xi\)'s. Now equation (5), written in terms of representatives, reads
 
-is £ ep = { <e"|H |e") dé” ¢é"|Pt. (48)
+<br><span style="color:blue;">
+\(\xi\) の固有値が連続する場合を厳密に仮定する。式(5)を代表値で書くと、
+</span>
 
-Since <€;|H,|&> is the same function of the variables & and & that
-CEH \é") is of &’ and &’, equations (47) and (48) are of precisely the
-same form, with the variables &;,€ in (47) playing the role of the
-variables €’ and &" in (48) and the function <£|@> playing the role
-of the function <é"|Pt>. We can thus look upon (47) as a form of
-Schrédinger’s wave equation, with the function (&|a> of the variables
-€, as the wave function. In this way Schrédinger’s wave equation
+\[
+i\hbar\frac{d}{dt}\langle\xi^\prime|Pt\rangle = \int \langle\xi^\prime|H|\xi^{\prime\prime}\rangle d\xi^{\prime\prime}\langle\xi^{\prime\prime}|Pt\rangle  \tag{48}
+\]
+
+Since \(\langle\xi_t^\prime|H_t|\xi_t^{\prime\prime}\rangle\) is the same function of the variables \(\xi_t^\prime\) and \(\xi^{\prime\prime}\) that \(\langle\xi^\prime|H|\xi^{\prime\prime}\rangle\) is of \(xi^\prime\) and \(\xi^{\prime\prime}\), equations (47) and (48) are of precisely the same form, with the variables \(\xi_t^\prime, \xi_t^{\prime\prime}\) in (47) playing the role of the
+variables \(\xi^\prime\) and \(\xi^{\prime\prime}\) in (48) and the function \(\langle\xi_t^\prime|a\rangle\) playing the role
+of the function \(\langle\xi^\prime|Pt\rangle\). We can thus look upon (47) as a form of
+Schr&ouml;dinger's wave equation, with the function \(\langle\xi_t^\prime|a\rangle\) of the variables
+\(\xi_t^\prime\) as the wave function. In this way Schr&ouml;dinger's wave equation
 appears in a new light, as the condition on the representative, in the
-moving representation with the Heisenberg variables &, diagonal, of the
-jived ket corresponding to a state in the Heisenberg picture. The function
-<&la> owes its variation with time to its left factor <&|, in contra-
+moving representation with the Heisenberg variables \(\xi_t\) diagonal, of the
+jived ket corresponding to a state in the Heisenberg picture. The function \(\langle\xi_t^\prime|a\rangle\) owes its variation with time to its left factor \(\langle\xi_t^\prime|\), in contra-distinction to the function \(\langle\xi^\prime|Pt\rangle\), which owes its variation with time to its right factor \(|Pt\rangle\).
 
-distinction to the function <&’| Pt), which owes its variation with time
-to its right factor |.P>.
+<br><span style="color:blue;">
+\(\langle\xi_t^\prime|H_t|\xi_t^{\prime\prime}\rangle\) は、\(\langle\xi^\prime|H|\xi^{\prime\prime}\rangle\) が \(xi^\prime\) と \(\xi^{\prime\prime}\) の同じ関数であるため、式 (47) と (48) はまったく同じ形になり、(47) の変数 \(\xi_t^\prime, \xi_t^{\prime\prime}\) は (48) の変数 \(\xi^\prime\) と \(\xi^{\prime\prime}\) の役割を果たします。 \(\langle\xi_t^\prime|a\rangle\) は関数 \(\langle\xi_t^\prime|Pt\rangle\) の役割を果たします。したがって、(47) は、変数の関数 \(\langle\xi_t^\prime|a\rangle\) を波動関数とするシュレーディンガーの波動方程式の一種と見ることができます。このようにして、シュレーディンガーの波動方程式は、ハイゼンベルク変数 \(\xi_t\) 対角線を持つ移動表示において、ハイゼンベルク描像の状態に対応するジャイブド・ケットの代表値に関する条件として、新たな観点から現れます。関数 \(\langle\xi_t^\prime|a\rangle\) の時間変化は左因子 \(\langle\xi_t^\prime|\) に依存しますが、これとは対照的に関数 \(\langle\xi^\prime|Pt\rangle\) の時間変化は右因子 \(|Pt\rangle\) に依存します。
+</span>
 
-lf we put |a> = [é"5 in (47), we get
+</p><p>
+lf we put \(|a\rangle = |\xi^{\prime\prime}\rangle\) in (47), we get
 
-HSCEI = | CEIIELIEED By CAPE"), (49)
-﻿§ 32 THE ACTION PRINCIPLE 127
+<br><span style="color:blue;">
+(47)に\(|a\rangle = |\xi^{\prime\prime}\rangle\)を代入すると、
+</span>
 
-showing that the transformation function <é|&"> satisfies Schré-
-dinger’s wave equation. Now & = &, so we must have
+\[
+i\hbar\frac{d}{dt}\langle\xi_t^\prime|\xi^{\prime\prime}\rangle = \int \langle\xi_t^\prime|H_t|\xi_t^{\prime\prime\prime}\rangle d\xi^{\prime\prime\prime} \langle\xi_t^{\prime\prime\prime}|\xi^{\prime\prime}\rangle  \tag{49}
+\]
 
-CE4,18"> = (8, —€"), (50)
-the 6 function here being understood as the product of a number of
-factors, one for each é-variable, such as occurs for the variables
-evap €, on the right-hand side of equation (34) of §16. Thus the
-transformation function <&;|é"> is that solution of Schrédinger’s wave
-equation for which the é’s certainly have the values é” at time ft,
-The square of its modulus, |<(&|é"]*, is the relative probability of the
-é’s having the values & at time t > t, if they certainly have the values
+showing that the transformation function \(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\) satisfies Schr&ouml;dinger's wave equation. Now \(\xi_{t_0} = \xi\), so we must have
 
-&" at time t). We may write ¢&|é"> as <&/&,> and consider it as
-depending on f) as well as on é. To get its dependence on {, we take
-the conjugate complex of equation (49), interchange ¢ and f, and also
+<br><span style="color:blue;">
+変換関数\(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\)がシュレーディンガーの波動方程式を満たすことを示しています。ここで\(\xi_{t_0} = \xi\)なので、
+</span>
+
+\[
+\langle\xi_{t_0}^\prime|\xi^{\prime\prime}\rangle = \delta(\xi_{t_0}^\prime - \xi^{\prime\prime})  \tag{50}
+\]
+
+the \(\delta\) function here being understood as the product of a number of
+factors, one for each \(\xi\)-variable, such as occurs for the variables
+\(\xi_{v+1},...,\xi_u\) on the right-hand side of equation (34) of §16. Thus the
+transformation function \(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\) is that solution of Schr&ouml;dinger's wave
+equation for which the \(\xi\)'s certainly have the values \(\xi^{\prime\prime}\) at time \(t_0\),
+The square of its modulus, \(|\langle\xi_t^\prime|\xi^{\prime\prime}\rangle|^2\), is the relative probability of the
+\(\xi\)'s having the values \(\xi_t^\prime\) at time \(t \gt t_0\) if they certainly have the values \(\xi^{\prime\prime}\) at time \(t_0\). We may write \(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\) as \(\langle\xi_t^\prime|\xi_{t_0}^{\prime\prime}\rangle\) and consider it as
+depending on \(t_0\) as well as on \(t\). To get its dependence on \(t_0\) we take
+the conjugate complex of equation (49), interchange \(t\) and \(t_0\) and also
 interchange single primes and double primes. This gives
 
-— ih Eilg> = [CEE aE ERED. (51)
-0
+<br><span style="color:blue;">
+ここでの\(\delta\)関数は、§16の式(34)の右辺の変数\(\xi_{v+1},...,\xi_u\)の場合のように、各\(\xi\)変数ごとに1つずつ、複数の因子の積として理解される。したがって、変換関数 \(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\) は、\(\xi\) が時刻 \(t_0\) に確実に値 \(\xi^{\prime\prime}\) を持つようなシュレーディンガー波動方程式の解です。
+その係数の二乗 \(|\langle\xi_t^\prime|\xi^{\prime\prime}\rangle|^2\) は、時刻 \(t_0\) に確実に値 \(\xi\) を持つ場合、時刻 \(t \gt t_0\) に \(\xi\) が値 \(\xi_t^\prime\) を持つ相対確率です。 \(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\) を \(\langle\xi_t^\prime|\xi_{t_0}^{\prime\prime}\rangle\) と書き、\(t_0\) だけでなく \(t\) にも依存すると考えることもできる。\(t_0\) への依存性を求めるには、式 (49) の共役複素数を取り、\(t\) と \(t_0\) を入れ替え、さらに素数と二重素数を入れ替える。これにより、
+</span>
 
-The foregoing discussion of the transformation function <£|é”> is
-valid with the é’s any complete set of commuting observables. The
-equations were written down for the case of the é’s having continuous
-eigenvalues, but they would still be valid if any of the é’s have
+\[
+-i\hbar\frac{d}{dt_0}\langle\xi_t^\prime|\xi_{t_0}^{\prime\prime}\rangle = \int \langle\xi_t^\prime|\xi_{t_0}^{\prime\prime\prime}\rangle d\xi_{t_0}^{\prime\prime\prime} \langle\xi_{t_0}^{\prime\prime\prime}|H_{t_0}|\xi_{t_0}^{\prime\prime}\rangle \tag{51}
+\]
+
+The foregoing discussion of the transformation function \(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\) is
+valid with the \(\xi\)'s any complete set of commuting observables. The
+equations were written down for the case of the \(\xi\)'s having continuous
+eigenvalues, but they would still be valid if any of the é's have
 discrete eigenvalues, provided the necessary formal changes are made
 in them. Let us now take a dynamical system having a classical
-analogue and let us take the ¢’s to be the coordinates g. Put
+analogue and let us take the \(\xi\)'s to be the coordinates \(q\). Put
 
-<glg"> = es (52)
-and so define the function S of the variables gj, q”. This function also
-depends explicitly on ¢. (52) is a solution of Schrédinger’s wave
-equation and, if % can be counted as small, it can be handled in the
-same way as (35) was. The S of (52) differs from the S of (35) on
-account of there being no A in (52), which makes the S of (52) com-
-plex, but the real part of this S equals the S of (35) and its pure
+<br><span style="color:blue;">
+変換関数 \(\langle\xi_t^\prime|\xi^{\prime\prime}\rangle\) に関するこれまでの議論は、\(\xi\) が任意の可換な観測量の完全な集合に対して有効です。これらの式は、\(\xi\) が連続的な固有値を持つ場合について書かれていますが、é のいずれかが離散的な固有値を持つ場合でも、必要な形式的変更が加えられれば有効です。ここで、古典的な類似体を持つ力学系を取り上げ、\(\xi\) を座標 \(q\) とします。
+</span>
 
-imaginary part is of the order #. Thus, in the limit i > 0, the S of
+\[
+\langle q_t^\prime|q^{\prime\prime}\rangle = e^{iS/\hbar}  \tag{52}
+\]
+
+and so define the function \(S\) of the variables \(q_t^\prime, q^{\prime\prime}\). This function also
+depends explicitly on \(t\). (52) is a solution of Schr&ouml;dinger's wave
+equation and, if \(\hbar\) can be counted as small, it can be handled in the
+same way as (35) was. The \(S\) of (52) differs from the \(S\) of (35) on
+account of there being no \(A\) in (52), which makes the \(S\) of (52) complex, but the real part of this \(S\) equals the \(S\) of (35) and its pure imaginary part is of the order \(\hbar\). Thus, in the limit \(\hbar \rightarrow 0\), the \(S\) of
 (52) will equal that of (35) and will therefore satisfy, corresponding
+to (38),
 
-to (38), —aS/at = Hqy D4), (53)
-where Dy = O8/0qy, (54)
+<br><span style="color:blue;">
+そして、変数 \(q_t^\prime, q^{\prime\prime}\) の関数 \(S\) を定義します。この関数も \(t\) に明示的に依存します。(52) はシュレーディンガーの波動方程式の解であり、\(\hbar\) を小さいと見なせる場合は、(35) と同じように扱うことができます。(52) の \(S\) は、(52) には \(A\) がないため (52) の \(S\) は複素数になるという点で (35) の \(S\) と異なりますが、この \(S\) の実部は (35) の \(S\) に等しく、純虚部は \(\hbar\) のオーダーです。したがって、極限\(\hbar \rightarrow 0\)において、(52)の\(S\)は(35)の\(S\)に等しくなり、したがって(38)に対応して、
+</span>
 
-and H, is the Hamiltonian of the classical analogue of our quantum
-dynamical system. But (52) is also a solution of (51) with q’s for é’s,
-﻿128 THE EQUATIONS OF MOTION § 32
+\[
+—\partial S/\partial t = H_c(q_{rt}^\prime, p_{rt}^\prime)  \tag{53}
+\]
 
-which is the conjugate complex of Schrédinger’s wave equation in the
-variables q” or gj,. This causes S to satisfy alsot
+where
 
-where p, = —08/aq,. (56)
+<br><span style="color:blue;">
+ここで
+</span>
+
+\[
+p_{rt}^\prime = \partial S/\partial q_{rt}^\prime  \tag{54}
+\]
+
+and \(H_c\) is the Hamiltonian of the classical analogue of our quantum
+dynamical system. But (52) is also a solution of (51) with \(q\)'s for \(\xi\)'s, which is the conjugate complex of Schr&ouml;dinger's wave equation in the
+variables \(q^{\prime\prime}\) or \(q_{t_0}^{\prime\prime}\). This causes \(S\) to satisfy also<sup>†</sup>
+
+<br><span style="color:blue;">
+そして、\(H_c\) は我々の量子力学系の古典的類似体のハミルトニアンである。しかし、(52) は (51) の \(q\) を \(\xi\) に代入した解でもあり、これはシュレーディンガーの波動方程式の変数 \(q^{\prime\prime}\) または \(q_{t_0}^{\prime\prime}\) における共役複素数である。これにより、\(S\) は<sup>†</sup> も満たす。
+</span>
+
+</p><p class="margin-large">
+<sup>†</sup>
+ For a more accurate comparison of transformation functions with classical theory, see Van Vleck, Proc. Nat. Acad. 14, 178.
+
+<br><span style="color:blue;">
+変換関数と古典理論のより正確な比較については、Van Vleck、Proc. Nat. Acad. 14、178 を参照してください。
+</span>
+
+</p><p>
+
+\[
+\partial S/\partial t_0 = H_c(q_r^{\prime\prime},p_r^{\prime\prime})  \tag{55}
+\]
+
+where
+
+<br><span style="color:blue;">
+ここで
+</span>
+
+\[
+p_r^{\prime\prime} = -\partial S/\partial q_r^{\prime\prime}  \tag{56}
+\]
+
+</p><p>
 The solution of the Hamilton-Jacobi equations (53), (55) is the
+action function of classical mechanics for the time interval \(t_0\) to \(t\), i.e. it is the time integral of the Lagrangian \(L\),
 
-action function of classical mechanics for the time interval tg to ¢,
-i.e. it is the time integral of the Lagrangian L,
+<br><span style="color:blue;">
+ハミルトン・ヤコビ方程式(53),(55)の解は、時間間隔\(t_0\)から\(t\)までの古典力学の作用関数、すなわちラグランジアン\(L\)の時間積分である。
+</span>
 
-t
-S= { Le’) de’. (57)
-!
+\[
+S=\int_{t_0}^t L(t^\prime) dt^\prime  \tag{57}
+\]
 
-Thus the S defined by (52) is the quantum analogue of the classical action
-function and equals it in the limit i > 0. To get the quantum analogue
-of the classical Lagrangian, we pass to the case of an infinitesimal °
-time interval by putting ¢ = t)+5¢ and we then have <@,,5/|¢;,> 8 the
-analogue of e*o5i%, For the sake of the analogy, one should consider
-E(t )) as a function of the coordinates gq’ at time é,4-6¢ and the co-
-ordinates q” at time ¢), rather than as a function of the coordinates
-and velocities at time t), as one usually does.
+Thus the \(S\) defined by (52) is the quantum analogue of the classical action function and equals it in the limit \(\hbar \rightarrow 0\). To get the quantum analogue of the classical Lagrangian, we pass to the case of an infinitesimal time interval by putting \(t = t_0 + \delta t\) and we then have \(\langle q_{t_0+\delta t}^\prime|q_{t_0}^{\prime\prime}\rangle\) as the analogue of \(e^{iL(t_0)\delta t/\hbar}\), For the sake of the analogy, one should consider
+\(L)t_0\) as a function of the coordinates \(q^\prime\) at time \(t_0+\delta t\) and the co-
+ordinates \(q^{\prime\prime}\) at time \(t_0\), rather than as a function of the coordinates
+and velocities at time \(t_0\), as one usually does.
 
+<br><span style="color:blue;">
+したがって、(52)で定義される\(S\)は古典的な作用関数の量子的な類似物であり、極限\(\hbar \rightarrow 0\)においてそれに等しい。古典ラグランジアンに対する量子的な類似物を得るために、\(t = t_0 + \delta t\) と置くことで無限小時間間隔の場合に移り、\(e^{iL(t_0)\delta t/\hbar}\) の類似物として \(\langle q_{t_0+\delta t}^\prime|q_{t_0}^{\prime\prime}\rangle\) を得ます。類推のため、\(L)t_0\) を、通常のように時刻 \(t_0\) における座標と速度の関数として考えるのではなく、時刻 \(t_0+\delta t\) における座標 \(q^\prime\) と時刻 \(t_0\) における座標 \(q^{\prime\prime}\) の関数として考える必要があります。
+</span>
+
+</p><p>
 The principle of least action in classical mechanics says that the
 action function (57) remains stationary for small variations of the tra-
 jectory of the system which do not alter the end points, i.e. for small
-variations of the q’s at all intermediate times between f, and ¢ with q,,
-and q, fixed. Let us see what it corresponds to in the quantum theory.
+variations of the \(q\)'s at all intermediate times between \(t_0\) and \(t\) with \(q_{t_0}\)and \(q_t\) fixed. Let us see what it corresponds to in the quantum theory.
 
-ty
-Put exp [ Lt) aj) = exp{iS(t,, t,)/f} = Blty, ta), (58)
-te
+<br><span style="color:blue;">
+古典力学における最小作用原理によれば、作用関数(57)は、系の軌道の微小な変化に対しては定常であり、その変化は系の終点を変化させない。つまり、\(q_{t_0}\)と\(q_t\)を固定した状態で、\(t_0\)と\(t\)の間のすべての中間時刻における\(q\)の微小な変化に対しては定常である。これが量子論において何に対応するか見てみよう。
+</span>
 
-so that B(t,,t,) corresponds to <q;,|9;,> in the quantum theory. (We
-here allow qj, and ¢/, to denote different eigenvalues of q,, and q;,, to
+</p><p>
+Put
+
+\[
+exp\left\{i\int_{t_a}^{t_b} L(t) dt/\hbar\right\} = exp\{iS(t_b,t_a)/\hbar\} = B(t_b,t_a)  \tag{58}
+\]
+
+so that \(B(t_b, t_a)\) corresponds to \(\langle 1_{t_b}^\prime|q_{t_a}^\prime\rangle\) in the quantum theory. (We
+here allow \(q_{t_a}^\prime\) and \(q_{t_b}^\prime\) to denote different eigenvalues of \(q_{t_a}\) and \(q_{t_b}\), to
 save having to introduce a large number of primes into the analysis.)
-Now suppose the time interval 4 >¢ to be divided up into a large
-number of small time intervals ty > t,, t, > tos.) bm > bm bm > t, bY
-the introduction of a sequence of intermediate times t,, fg,..., t,. Then
+Now suppose the time interval \(t_0\rightarrow t\) to be divided up into a large
+number of small time intervals \(t_0\rightarrow t_1,t_1\rightarrow t_2,...,t_{m-1}\rightarrow t_m,t_m\rightarrow t\), by
+the introduction of a sequence of intermediate times \(t_1,t_2,...,t_m\). Then
 
-Bt, to) = Bii, tm) Btn, bm1)++-B (ty, t) Bt, to). (59)
+<br><span style="color:blue;">
+つまり、\(B(t_b, t_a)\) は量子論における \(\langle 1_{t_b}^\prime|q_{t_a}^\prime\rangle\) に対応する。 （ここでは、\(q_{t_a}^\prime\) と \(q_{t_b}^\prime\) を \(q_{t_a}\) と \(q_{t_b}\) の異なる固有値として用いることにします。これにより、解析に多数の素数を導入する必要がなくなります。）
+ここで、時間間隔 \(t_0\rightarrow t\) が、中間時間の列 \(t_1,t_2,...,t_m\) を導入することによって、多数の小さな時間間隔 \(t_0\rightarrow t_1,t_1\rightarrow t_2,...,t_{m-1}\rightarrow t_m,t_m\rightarrow t\) に分割されるとします。すると、
+</span>
+
+\[
+B(t,t_0)=B(t,t_m)B(t_m,t_{m-1})...B(t_2,t_1)B(t_1,t_0)  \tag{59}
+\]
+
 The corresponding quantum equation, which follows from the pro-
-perty of basic vectors (35) of § 16, is
+perty of basic vectors (35) of §16, is
 
-<atlao> = fff <atlam> 4am dia ldin-a> Uin-1-+-<Ga19> 414i |G?»
-(60)
+<br><span style="color:blue;">
+対応する量子方程式は、§16の基本ベクトルの性質（35）から導かれ、
+</span>
 
-} For a more accurate comparison of transformation functions with classical
-theory, see Van Vleck, Proc. Nat. Acad. 14, 178.
-﻿§ 32 THE ACTION PRINCIPLE 129
+\[
+\langle q_t^\prime|q_0^\prime\rangle = \int \int \cdots \int \langle q_t^\prime|q_m^\prime\rangle dq_m^\prime\langle q_m^\prime|q_{m-1}^\prime\rangle dq_{m-1}^\prime \cdots\langle q_2^\prime|q_1^\prime\rangle dq_1^\prime\langle q_1^\prime|q_0^\prime\rangle  \tag{60}
+\]
 
-g;, being written for g;, for brevity. At first sight there does not seem
+\(q_k^\prime\) being written for \(q_{i_k}^\prime\) for brevity. At first sight there does not seem
 to be any close correspondence between (59) and (60). We must,
 however, analyse the meaning of (59) rather more carefully. We must
-regard each factor B as a function of the q’s at the two ends of the
+regard each factor \(B\) as a function of the \(q\)'s at the two ends of the
 time interval to which it refers. This makes the right-hand side of
-(59) a function, not only of g, and q,, but also of all the intermediate
-qs. Equation (59) is valid only when we substitute for the inter-
-mediate q’s in its right-hand side their values for the real trajectory,
-small variations in which values leave S stationary and therefore also,
-from (58), leave B(t,t,) stationary. It is the process of substituting
-these values for the intermediate q’s which corresponds to the inte-
-grations over all values for the intermediate ¢’’s in (60). The quantum
+(59) a function, not only of \(q_t\) and \(q_{t_0}\), but also of all the intermediate
+\(q\)'s. Equation (59) is valid only when we substitute for the inter-
+mediate \(q\)'s in its right-hand side their values for the real trajectory,
+small variations in which values leave \(S\) stationary and therefore also,
+from (58), leave \(B(t,t_0)\) stationary. It is the process of substituting
+these values for the intermediate \(q\)'s which corresponds to the inte-
+grations over all values for the intermediate \(q^\prime\)'s in (60). The quantum
 analogue of the action principle is thus absorbed in the composition
 law (60) and the classical requirement that the values of the inter-
-mediate q’s shall make S stationary corresponds to the condition
-in quantum mechanics that all values of the intermediate q’’s
+mediate \(q\)'s shall make \(S\) stationary corresponds to the condition
+in quantum mechanics that all values of the intermediate \(q^\prime\)'s
 are important in proportion to their contribution to the integral
 in (60).
 
-Let us see how (59) can be a limiting case of (60) for A small. We
-must suppose the integrand in (60) to be of the form e”*, where F is
-a function of 95,491, 2.---» Gm: Which remains continuous as % tends
+<br><span style="color:blue;">
+簡潔にするために、\(q_k^\prime\) は \(q_{i_k}^\prime\) と表記されます。一見すると、(59) と (60) の間には密接な対応関係がないように見えます。しかし、(59) の意味をもう少し注意深く分析する必要があります。各因子 \(B\) を、それが参照する時間間隔の両端における \(q\) の関数として考える必要があります。これにより、(59) の右辺は、\(q_t\) と \(q_{t_0}\) だけでなく、すべての中間の \(q\) の関数になります。式(59)は、右辺の中間値\(q\)を実軌道の値、つまり値の小さな変化によって\(S\)が定常になり、したがって式(58)から\(B(t,t_0)\)も定常になる値を代入した場合にのみ有効である。中間値\(q\)をこれらの値に代入する過程は、式(60)における中間値\(q^\prime\)のすべての値についての積分に対応する。作用原理の量子的類似はこのように合成則(60)に吸収され、中間値\(q\)の値が\(S\)を定常化させるという古典的な要件は、量子力学において中間値\(q^\prime\)のすべての値が式(60)の積分への寄与に比例して重要になるという条件に対応する。
+</span>
+
+</p><p>
+Let us see how (59) can be a limiting case of (60) for \(\hbar\) small. We must suppose the integrand in (60) to be of the form \(e^{iF/\hbar}\), where \(F\) is a function of \(q_0^\prime,q_1^\prime,q_2^\prime,...,q_m^\prime,q_t^\prime\) which remains continuous as \(\hbar\) tends
 to zero, so that the integrand is a rapidly oscillating function when
-his small. The integral of such a rapidly oscillating function will be
+\(\hbar\) is small. The integral of such a rapidly oscillating function will be
 extremely small, except for the contribution arising from a region in
 the domain of integration where comparatively large variations in
-the g;, produce only very small variations in #. Such a region must
-be the neighbourhood ofa point where F is stationary for small varia-
-tions of the g;. Thus the integral in (60) is determined essentially by
+the \(q_k^\prime\) produce only very small variations in \(F\). Such a region must
+be the neighbourhood ofa point where \(F\) is stationary for small varia-
+tions of the \(q_k^\prime\). Thus the integral in (60) is determined essentially by
 the value of the integrand at a point where the integrand is stationary
-for small variations of the intermediate q’’s, and so (60) goes over
+for small variations of the intermediate \(q^\prime\)'s, and so (60) goes over
 into (59).
 
-Equations (54) and (56) express that the variables qj, p; are con-
-nected with the variables g”",p” by a contact transformation and are
+<br><span style="color:blue;">
+\(\hbar\) が小さい場合、(59) が (60) の極限ケースとなり得る理由を見てみましょう。(60) の積分関数は \(e^{iF/\hbar}\) の形をとるものと仮定する必要があります。ここで、\(F\) は \(q_0^\prime,q_1^\prime,q_2^\prime,...,q_m^\prime,q_t^\prime\) の関数であり、\(\hbar\) がゼロに近づくにつれて連続性を保ちます。そのため、\(\hbar\) が小さい場合、積分関数は急速に振動する関数となります。このような急速に振動する関数の積分は、積分領域内の比較的大きな \(q_k^\prime\) の変化が \(F\) に非常に小さな変化しか生じない領域から生じる寄与を除けば、極めて小さくなります。そのような領域は、\(q_k^\prime\) の小さな変化に対して \(F\) が定常となる点の近傍でなければならない。したがって、(60) の積分は、中間の \(q^\prime\) の小さな変化に対して積分関数が定常となる点における積分関数の値によって本質的に決定され、したがって (60) は (59) に収束する。
+</span>
+
+</p><p>
+Equations (54) and (56) express that the variables \(q_t^\prime,p_t^\prime\) are con-
+nected with the variables \(q^{\prime\prime},p^{\prime\prime}\) by a contact transformation and are
 one of the standard forms of writing the equations of a contact trans-
 formation. There is an analogous form for writing the equations of a
 unitary transformation in quantum mechanics. We get from (52), with
-the help of (45) of § 22,
+the help of (45) of §22,
 
-OS(% 9")
+<br><span style="color:blue;">
+式(54)および式(56)は、変数\(q_t^\prime,p_t^\prime\)が変数\(q^{\prime\prime},p^{\prime\prime}\)と接触変換によって結びついていることを表しており、接触変換の式を書く標準的な形式の一つである。量子力学におけるユニタリ変換の式を書くのにも同様の形式がある。(52)から、§22の(45)を用いて、次の式を得る。
+</span>
 
-a . (gj ,
-(GlPuld’> = th Cailg"’> = 4
-Ge|PrelZ qi, CAL agi,
+\[
+\langle q_t^\prime|p_{rt}|q^{\prime\prime}\rangle = -i\hbar\frac{\partial}{\partial q_{rt}^\prime}\langle q_t^\prime|q^{\prime\prime}\rangle = \frac{\partial S(q_t^\prime,q^{\prime\prime})}{\partial q_{rt}^\prime}\langle q_t^\prime|q^{\prime\prime}\rangle  \tag{61}
+\]
 
-<ale”>. (61)
-﻿“130 . . THE EQUATIONS OF MOTION § 32
-Similarly, with the help of (46) of § 22,
+Similarly, with the help of (46) of §22,
 
-. f i . a J a as tb . , a
-Cailprla”> = 2, <aila’> = <P caiig’y, (62)
-i ar
+<br><span style="color:blue;">
+同様に、§22の(46)を参考にして、
+</span>
+
+\[
+\langle q_t^\prime|p_r|q^{\prime\prime}\rangle = i\hbar\frac{\partial}{\partial q_r^{\prime\prime}}\langle q_t^\prime|q^{\prime\prime}\rangle=-\frac{\partial S(q_t^\prime,q^{\prime\prime})}{\partial q_r^{\prime\prime}}\langle q_t^\prime|q^{\prime\prime}\rangle  \tag{62}
+\]
+
 From the general definition of functions of commuting observables,
-h ta a td 4 i aw
-we nee alfi@a@ig> = fag <ala">, (63)
+we have
 
-where f(q,) and g(q) are functions of the g,'s and q’s respectively. Let
-G(q,q@) be any function of the q/s and q’s consisting of a sum or
-integral of terms each of the form f(q,)g(qg), so that all the qs in G
-occur to the left of all the g’s. Such a function we call well ordered.
-Applying (63) to each of the terms in G and adding or integrating,
+<br><span style="color:blue;">
+可換な観測量の関数の一般的な定義から、
+</span>
 
-t ql a , a AP
-meee GGG Dlg"> = Gana" aila">.
-Now let us suppose each p,, and p, can be expressed as a well-ordered
-function of the q¢,’s and g’s and write these functions 9,(q;, 9), Pr(Q Q)-
-Putting these functions for G, we get
-<GlPald"> = Pale 1 )alg">,
+\[
+\langle q_t^\prime|f(q_t)g(q)|q^{\prime\prime}\rangle = f(q_t^\prime)g(q^{\prime\prime})\langle q_t^\prime|q^{\prime\prime}\rangle  \tag{63}
+\]
 
-G1P.1e> = Pr(Ge 9")<GIg">-
+where \(f(q_t)\) and \(g(q)\) are functions of the \(q_t\)'s and \(q\)'s respectively. Let \(G(q_t,q)\) be any function of the \(q_t\)'s and \(q\)'s consisting of a sum or
+integral of terms each of the form \(f(q_t)g(q)\), so that all the \(q_t)\)'s in \(G\) occur to the left of all the \(q\)'s. Such a function we call well ordered.
+Applying (63) to each of the terms in \(G\) and adding or integrating,
+we get
+
+<br><span style="color:blue;">
+ここで、\(f(q_t)\) と \(g(q)\) はそれぞれ \(q_t\) と \(q\) の関数である。\(G(q_t,q)\) を、\(f(q_t)g(q)\) の形をとる項の和または積分からなる \(q_t\) と \(q\) の任意の関数とし、\(G\) 内のすべての \(q_t)\) がすべての \(q\) の左側に現れるものとする。このような関数を順序付き関数と呼ぶ。
+(63) を \(G\) 内の各項に適用し、加算または積分すると、
+次式を得る。
+</span>
+
+\[
+\langle q_t^\prime|G(q_t,q)|q^{\prime\prime}\rangle = G(q_t^\prime,q^{\prime\prime})\langle q_t^\prime|q^{\prime\prime}\rangle 
+\]
+
+Now let us suppose each \(p_{rt}\) and \(p_r\) can be expressed as a well-ordered
+function of the \(q_t\)'s and \(q\)'s and write these functions \(p_{rt}(q_t,q).p_r(q_t,q)\). Putting these functions for \(G\), we get
+
+<br><span style="color:blue;">
+ここで、各\(p_{rt}\)と\(p_r\)が\(q_t\)と\(q\)の整列関数として表現できると仮定し、これらの関数を\(p_{rt}(q_t,q).p_r(q_t,q)\)と書きます。これらの関数を\(G\)に当てはめると、
+</span>
+
+\[
+\begin{align}
+\langle q_t^\prime|p_{rt}|q^{\prime\prime}\rangle &= p_{rt}(q_t^\prime,q^{\prime\prime})\langle q_t^\prime|q^{\prime\prime}\rangle \\
+\\
+\langle q_t^\prime|p_r|q^{\prime\prime}\rangle &= p_r(q_t^\prime,q^{\prime\prime})\langle q_t^\prime|q^{\prime\prime}\rangle \\
+\end{align}
+\]
+
 Comparing these equations with (61) and (62) respectively, we see
+that
 
-that ,
-rom OS(G,9") rom — SG, 9")
-PrlGs ') = age : PAG Y') = ~~ agh
-This means that
-aS(G, 9g) OS (Gp 2)
-= = 4,
-Prt Ody 3 Pr aq, F (6 )
+<br><span style="color:blue;">
+これらの式をそれぞれ(61)および(62)と比較すると、
+</span>
+
+\[
+p_{rt}=\frac{\partial S(q_t,q)}{\partial q_{rt}},　p_r=-\frac{\partial S(q_t,q)}{\partial q_r}  \tag{64}
+\]
 
 provided the right-hand sides of (64) are written as well-ordered
 functions.
 
+<br><span style="color:blue;">
+ただし、(64) の右辺は整列関数として書かれるものとする。
+</span>
+
+</p><p>
 These equations are of the same form as (54) and (56), but refer to
-the non-commuting quantum variables ¢,,¢ instead of the ordinary
-algebraic variables g;,¢q". They show how the conditions for a unitary
+the non-commuting quantum variables \(q_t,q\) instead of the ordinary
+algebraic variables \(q_t^\prime,q^{\prime\prime}\). They show how the conditions for a unitary
 transformation between quantum variables are analogous to the condi-
 tions for a contact transformation between classical variables. The
 analogy is not complete, however, because the classical S must be real
-and there is no simple condition corresponding to this for the S of (64).
+and there is no simple condition corresponding to this for the \(S\) of (64).
 
-33. The Gibbs ensemble
+<br><span style="color:blue;">
+これらの式は(54)式や(56)式と同じ形をしているが、通常の代数変数\(q_t^\prime,q^{\prime\prime}\)ではなく、非可換な量子変数\(q_t,q\)を参照している。これらは、量子変数間のユニタリー変換の条件が、古典変数間の接触変換の条件とどのように類似しているかを示している。しかし、この類似性は完全ではない。なぜなら、古典変数Sは実数でなければならないが、(64)の\(S\)に対してこれに対応する単純な条件は存在しないからである。
+</span>
+</p>
 
+<h3>33. The Gibbs ensemble　<span style="color:blue;">ギブス・アンサンブル</span></h3>
+<p>
 In our work up to the present we have been assuming all along that
 our dynamical system at each instant of time is in a definite state,
 that is to say, its motion is specified as completely and accurately as
 is possible without conflicting with the general principles of the theory
-﻿§ 33 THE GIBBS ENSEMBLE 131
-
 In the classical theory this would mean, of course, that all the coordi-
 nates and momenta have specified values. Now we may be interested
 in a motion which is specified to a lesser extent than this maximum
 possible. The present section will be devoted to the methods to be
 used in such a case.
 
+<br><span style="color:blue;">
+これまでの研究において、我々は常に、力学系が各瞬間において明確な状態にある、つまり、その運動が理論の一般原理に反することなく可能な限り完全かつ正確に規定されていると仮定してきた。古典理論においては、これはもちろん、すべての座標と運動量が規定された値を持つことを意味する。今、我々は、この最大限よりも限定された程度に規定された運動に関心を持つかもしれない。本節では、そのような場合に用いられる手法について述べる。
+</span>
+
+</p><p>
 The procedure in classical mechanics is to introduce what is called
 a Gibbs ensemble, the idea of which is as follows. We consider all the
 dynamical coordinates and momenta as Cartesian coordinates in a
@@ -1208,176 +2004,305 @@ at any point, equal to the probability per unit volume of phase space
 of the system being in the neighbourhood of the corresponding state,
 we shall have the equation of conservation
 
-ap a( dq\ , 2/ dp,
-a> ~ Dd lagloai) tala]
+<br><span style="color:blue;">
+古典力学における手順は、いわゆるギブスアンサンブルを導入することであり、その考え方は以下の通りである。すべての力学座標と運動量を、系の自由度の2倍の次元数を持つ位相空間という特定の空間における直交座標として考える。系のいかなる状態も、この空間内の点として表すことができる。この点は、古典運動方程式(14)に従って運動する。今、系が任意の時点で特定の状態にあるとは限らず、一定の確率法則に従って、いくつかの可能な状態のいずれかにあるということだけが与えられていると仮定する。すると、系を位相空間内の流体で表すことができ、位相空間の任意の体積における流体の質量は、系がその体積内に存在する任意の状態にある確率全体を考慮することになる。流体の各粒子は、運動方程式(14)に従って運動する。流体の密度pを、任意の点において、系が対応する状態の近傍にある確率（位相空間の単位体積あたり）に等しいとすると、保存則が得られます。
+</span>
+
+\[
+\begin{align}
+\frac{\partial\rho}{\partial t} &= -\sum_r \left\{\frac{\partial}{\partial q_r}\left(\rho\frac{dq_r}{dt}\right)+\frac{\partial}{\partial p_r}\left(\rho\frac{dp_r}{dt}\right)\right\} \\
+\\
+&= -\sum_r \left\{\frac{\partial}{\partial q_r}\left(\rho\frac{\partial H}{\partial p_r}\right)+\frac{\partial}{\partial p_r}\left(\rho\frac{\partial H}{\partial q_r}\right)\right\} \\
+\\
+&=-[\rho,H]  \tag{65}
+\end{align}
+\]
 
 This may be considered as the equation of motion for the fluid, since
-it determines the density p for all time if p is given initially as a
-function of the g’sand p’s. It is, apart from the minus sign, of the
+it determines the density \(\rho\) for all time if \(\rho\) is given initially as a
+function of the \(q\)'sand \(p\)'s. It is, apart from the minus sign, of the
 same form as the ordinary equation of motion (15) for a dynamical
-
 variable.
+
+<br><span style="color:blue;">
+これは流体の運動方程式とみなすことができる。なぜなら、\(\rho\) が \(q\) と \(p\) の関数として最初に与えられれば、これが常に密度 \(\rho\) を決定するからである。これは、負の符号を除けば、力学変数に対する通常の運動方程式 (15) と同じ形をしている。
+</span>
+
+</p><p>
 The requirement that the total probability of the system being in
+any state shall be unity gives us a normalizing condition for \(\rho\)
 
-any state shall be unity gives us a normalizing condition for p
+<br><span style="color:blue;">
+システムがどの状態にあるかの確率が1であるという要件は、\(\rho\)の正規化条件を与える。
+</span>
 
-ff pdgdp = 1, (66)
+\[
+\int \int \rho\; dqdp = 1  \tag{66}
+\]
 
 the integration being over the whole of phase space and the single
-﻿132 THE EQUATIONS OF MOTION § 33
+differential \(dq\) or \(dp\) being written to denote the product of all the
+\(dq\)'s or \(dp\)'s. If \(\beta\) denotes any function of the dynamical variables,
+the average value of \(\beta\) will be
 
-differential dg or dp being written to denote the product of all the
-dq’s or dp’s. If 8 denotes any function of the dynamical variables,
-the average value of B will be
+<br><span style="color:blue;">
+積分は位相空間全体にわたって行われ、単一の微分\(dq\)または\(dp\)はすべての\(dq\)または\(dp\)の積を表すように書き表される。\(\beta\)が動的変数の任意の関数を表す場合、\(\beta\)の平均値は
+</span>
 
-[ f Be dade. (67)
+\[
+\int \int \beta\rho\; dqdp  \tag{67}
+\]
 
 It makes only a trivial alteration in the theory, but often facilitates
-discussion, if we work with a density p differing from the above one
-by a positive constant factor, k say, so that we have instead of (66)
+discussion, if we work with a density \(\rho\) differing from the above one
+by a positive constant factor, \(k\) say, so that we have instead of (66)
 
-[f edadp = &.
+<br><span style="color:blue;">
+これは理論にわずかな変更を加えるに過ぎませんが、例えば、密度\(\rho\)が上記のものと正の定数\(k\)だけ異なる場合、(66)の代わりに
+</span>
+
+\[
+\int \int \rho\; dqdp = k
+\]
 
 With this density we can picture the fluid as representing a number
-k of similar dynamical systems, all following through their motions
+\(k\) of similar dynamical systems, all following through their motions
 independently in the same place, without any mutual disturbance or
 interaction. The density at any point would then be the probable or
 average number of systems in the neighbourhood of any state per unit
 volume of phase space, and expression (67) would give the average
-total value of 8 for all the systems. Such a set of dynamical systems,
+total value of \(\beta\) for all the systems. Such a set of dynamical systems,
 which is the ensemble introduced by Gibbs, is usually not realizable
 in practice, except as a rough approximation, but it forms all the
 same a useful theoretical abstraction.
 
-We shall now see that there exists a corresponding density p
+<br><span style="color:blue;">
+この密度を用いて、流体を、互いに干渉したり相互作用したりすることなく、全てが独立して同じ場所で運動する、\(k\)個の類似した力学系を表すものとして描くことができる。任意の点における密度は、位相空間の単位体積あたりの、任意の状態の近傍に存在する系の確率的あるいは平均的数となり、式(67)は全ての系の\(\beta\)の平均総値を与える。このような力学系の集合、すなわちギブスによって導入されたアンサンブルは、通常、粗い近似を除いて実際には実現できないが、それでも有用な理論的抽象を形成する。
+</span>
+
+</p><p>
+We shall now see that there exists a corresponding density \(\rho\)
 in quantum mechanics, having properties analogous to the above.
 It was first introduced by von Neumann. Its existence is rather
 surprising in view of the fact that phase space has no meaning in
 quantum mechanics, there being no possibility of assigning numerical
-values simultaneously to the g’s and p’s.
+values simultaneously to the \(q\)'s and \(p\)'s.
 
+<br><span style="color:blue;">
+ここで、量子力学にも、上記と同様の性質を持つ対応する密度 \(\rho\) が存在することを見てみましょう。
+これはフォン・ノイマンによって初めて導入されました。位相空間が量子力学において意味を持たず、\(q\) と \(p\) に同時に数値を割り当てることができないという事実を考えると、その存在はむしろ驚くべきものです。
+</span>
+
+</p><p>
 We consider a dynamical system which is at a certain time in one
 or other of a number of possible states according to some given
 probability law. These states may be either a discrete set or a con-
 tinuous range, or both together. We shall here take for definiteness
 the case of a discrete set and suppose them labelled by a parameter m.
-Let the normalized ket vectors corresponding to them be |m)> and let
-the probability of the system being in the mth state be P,. We then
-define the quantum density p by
+Let the normalized ket vectors corresponding to them be \(|m\rangle\) and let
+the probability of the system being in the mth state be \(P_m\). We then
+define the quantum density \(\rho\) by
 
-p= > Im>P, cin. (68)
+<br><span style="color:blue;">
+ある時刻において、与えられた確率法則に従って、いくつかの可能な状態のいずれかをとる力学系を考える。これらの状態は、離散集合、連続範囲、あるいはその両方である。ここでは明確化のために離散集合の場合を取り、パラメータmでラベル付けするとする。それらに対応する正規化されたケットベクトルを\(|m\rangle\)とし、系がm番目の状態にある確率を\(P_m\)とする。量子密度\(\rho\)を次のように定義する。
+</span>
 
-Let p’ be any eigenvalue of p and |p’> an eigenket belonging to this
+\[
+\rho = \sum_m |m\rangle P_m\langle m|  \tag{68}
+\]
+
+
+Let \(\rho^\prime\) be any eigenvalue of \(\rho\) and \(|\rho\rangle\) an eigenket belonging to this
 eigenvalue. Then
 
-> |m>P,<m|p"> = plp’> = p'lp’>
+<br><span style="color:blue;">
+\(\rho^\prime\) を \(\rho\) の任意の固有値とし、\(|\rho\rangle\) をこの固有値に属する固有ケットとします。すると、
+</span>
 
-m
-﻿§ 33 THE GIBBS ENSEMBLE 133
-so that > <p’ [mL <m|p’> = p'<p'|p">
-or & Falomip >? = p’<p'lp">.
+\[
+\sum_m |m\rangle P_m\langle m|\rho^\prime\rangle = \rho|\rho^\prime\rangle = \rho^\prime|\rho^\prime\rangle
+\]
 
-Now P,,, being a probability, can never be negative. It follows that
-p’ cannot be negative. Thus p has no negative eigenvalues, in analogy
-with the fact that the classical density p is never negative.
+so that
 
-Let us now obtain the equation of motion for our quantum p. In
-Schrédinger’s picture the kets and bras in (68) will vary with the time
-in accordance with Schrédinger’s equation (5) and the conjugate
-imaginary of this equation, while the P,,’s will remain constant, since
+<br><span style="color:blue;">
+よって
+</span>
+
+\[\sum_m \langle \rho^\prime|m\rangle P_m\langle m|\rho^\prime\rangle = \rho^\prime\langle\rho^\prime|\rho^\prime\rangle
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\sum_m P_m|\langle m|\rho^\prime\rangle|^2=\rho^\prime\langle\rho^\prime|\rho^\prime\rangle
+\]
+
+Now \(P_m\) being a probability, can never be negative. It follows that
+\(\rho^\prime\) cannot be negative. Thus \(\rho\) has no negative eigenvalues, in analogy
+with the fact that the classical density \(\rho\) is never negative.
+
+<br><span style="color:blue;">
+ここで、\(P_m\) は確率なので、負になることはありません。したがって、\(\rho^\prime\) も負になることはありません。したがって、\(\rho\) には負の固有値は存在せず、これは古典的な密度 \(\rho\) が決して負にならないという事実と類似しています。
+</span>
+
+</p><p>
+Let us now obtain the equation of motion for our quantum \(\rho\). In
+Schr&ouml;dinger's picture the kets and bras in (68) will vary with the time
+in accordance with Schr&ouml;dinger's equation (5) and the conjugate
+imaginary of this equation, while the \(P_m\)'s will remain constant, since
 the system, so long as it is left undisturbed, cannot change over from
-a state corresponding to one ket satisfying Schrédinger’s equation to
+a state corresponding to one ket satisfying Schr&ouml;dinger's equation to
 a state corresponding to another. We thus have
 
-dp _ .,{a|m> ; dim|
+<br><span style="color:blue;">
+さて、量子\(\rho\)の運動方程式を求めよう。シュレーディンガー描像では、(68)のケットとブラはシュレーディンガー方程式(5)とその共役虚数に従って時間とともに変化するが、\(P_m\)は一定のままである。なぜなら、系は、撹乱を受けない限り、シュレーディンガー方程式を満たすあるケットに対応する状態から、別のケットに対応する状態へと遷移することができないからである。したがって、
+</span>
 
-m
-
-= ¥ (Alm>P,,<m|—|m>P,cm lH}
-
-= Hp—pH. (69)
+\[
+\begin{align}
+i\hbar\frac{d\rho}{dt} &= \sum_m i\hbar\left\{\frac{d|m\rangle}{dt}P_m\langle m|+|m\rangle P_m\frac{d\langle m|}{dt}\right\} \\
+\\
+&=\sum_m \{H|m\rangle P_m\langle m|-|m\rangle P_m\langle m|H\} \\
+\\
+&=H\rho - \rho H  \tag{69}
+\end{align}
+\]
 
 This is the quantum analogue of the classical equation of motion
-(65). Our quantum p, like the classical one, is determined for all time
+(65). Our quantum \(\rho\), like the classical one, is determined for all time
 if it is given initially.
 
-From the assumption of § 12, the average value of any observable
-8 when the system is in the state m is <m|8|m>. Hence if the system
+<br><span style="color:blue;">
+これは古典的な運動方程式の量子版である。
+(65) 我々の量子 \(\rho\) は、古典的なものと同様に、最初に与えられた場合、常に決定される。
+</span>
+
+</p><p>
+From the assumption of §12, the average value of any observable
+\(\beta\) when the system is in the state \(m\) is \(\langle m|\beta|m\rangle\). Hence if the system
 is distributed over the various states m according to the probability
-law P,,, the average value of B will be ¥ P,<m|8im>. If we introduce
+law \(P_m\), the average value of \(\beta\) will be \(\sum_m\langle m|\beta|m\rangle\). If we introduce
+a representation with a discrete set of basic ket vectors \(|\xi^\prime\rangle\) say, this equals
 
-m
+<br><span style="color:blue;">
+§12の仮定から、系が状態\(m\)にあるときの任意の観測量\(\beta\)の平均値は\(\langle m|\beta|m\rangle\)である。したがって、系が確率法則\(P_m\)に従って様々な状態mに分布する場合、\(\beta\)の平均値は\(\sum_m\langle m|\beta|m\rangle\)となる。離散的な基本ケットベクトル集合\(|\xi^\prime\rangle\)を用いた表現を導入すると、これは次のように等しくなる。
+</span>
 
-& representation with a discrete set of basic ket vectors |¢’> say, this
-equals
-
-, PaCimie'<E'|Bim> = & <eBim>Pacone>
-= § ioe) = Fe UeBle>, (70)
+\[
+\begin{align}
+\sum_{m\xi^\prime} P_m\langle m|\xi^\prime\rangle\langle\xi^\prime|\beta|m\rangle &= \sum_{\xi^\prime m}\langle\xi^\prime|\beta|m\rangle P_m\langle m|\xi^\prime\rangle \\
+\\
+&=\sum_{\xi^\prime}\langle\xi^\prime|\beta\rho|\xi^\prime\rangle = \sum_{\xi^\prime}\langle\xi^\prime|\rho\beta|\xi^\prime\rangle  \tag{70}
+\end{align}
+\]
 
 the last step being easily verified with the law of matrix multiplica-
 tion, equation (44) of §17. The expressions (70) are the analogue of
 the expression (67) of the classical theory. Whereas in the classical
-theory we have to multiply 8 by p and take the integral of the
+theory we have to multiply \(\beta\) by \(\rho\) and take the integral of the
 product over all phase space, in the quantum theory we have to
+multiply \(\beta\) by \(\rho\), with the factors in either order, and take the diagonal sum of the product in a representation. If the representa-
+tion involves a continuous range of basic vectors(|\xi^\prime\rangle\), we get instead of (70)
 
-multiply 8 by p, with the factors in either order, and take the
-3598.57 K
-﻿134 THE EQUATIONS OF MOTION § 33
+<br><span style="color:blue;">
+最後のステップは行列の乗法則、§17の式(44)によって簡単に検証できる。式(70)は古典理論の式(67)の類似である。古典理論では\(\beta\)と\(\rho\)を掛け合わせ、その積を位相空間全体で積分する必要があるが、量子論では\(\beta\)と\(\rho\)を掛け合わせ、その積の対角和を表現で取る必要がある。表現が基本ベクトル(|\xi^\prime\rangle\)の連続範囲を含む場合、式(70)の代わりに
+</span>
 
-diagonal sum of the product in a representation. If the representa-
-tion involves a continuous range of basic vectors |é>, we get instead
-
-f (70
-“em [ <e"Bple"> de” = f ce" ppie’> ae", (71)
+\[
+\int \langle\xi^\prime|\beta\rho|\xi^\prime\rangle d\xi^\prime = \int \langle\xi^\prime|\rho\beta|\xi^\prime\rangle d\xi^\prime  \tag{71}
+\]
 
 so that we must carry through a process of ‘integrating along the
-diagonal’ instead of summing the diagonal elements. We'shall define
-(71) to be the diagonal sum of Bp in the continuous case. It can easily
+diagonal' instead of summing the diagonal elements. We'shall define
+(71) to be the diagonal sum of \(\beta\rho\) in the continuous case. It can easily
 be verified, from the properties of transformation functions (56) of
-§ 18, that the diagonal sum is the same for all representations.
-From the condition that the |m)>’s are normalized we get, with
+§18, that the diagonal sum is the same for all representations.
 
-discrete £’’s
+<br><span style="color:blue;">
+そのため、対角要素を足し合わせる代わりに、「対角線に沿って積分する」という手順を実行する必要があります。(71) を連続の場合の \(\beta\rho\) の対角和として定義します。§18 の変換関数 (56) の性質から、対角和がすべての表現に対して同じであることが簡単に確認できます。
+</span>
+
+</p><p>
+From the condition that the \(|m\rangle\)'s are normalized we get, with
+discrete \(\xi^\prime\)'s
+
+<br><span style="color:blue;">
+\(|m\rangle\)が正規化されているという条件から、離散的な\(\xi^\prime\)を用いて、
+</span>
+
+\[
+\sum_{\xi^\prime} \langle\xi^\prime|\rho|\xi^\prime\rangle = \sum_{\xi^\prime m} \langle\xi^\prime|m\rangle P_m\langle m|\xi^\prime\rangle = \sum_m P_m = 1  \tag{72}
+\]
 
 since the total probability of the system being in any state is unity.
 This is the analogue of equation (66). The probability of the system
-being in the state £', or the probability of the observables € which
-are diagonal in the representation having the values é’, is, according
-to the rule for interpreting representatives of kets (51) of § 18,
+being in the state \(\xi^\prime\), or the probability of the observables \(\xi\) which
+are diagonal in the representation having the values \(\xi^\prime\), is, according
+to the rule for interpreting representatives of kets (51) of §18,
 
-S Ie’ Im>2Py = <E'Iple’>, (73)
+<br><span style="color:blue;">
+系が任意の状態にある確率は1であるからである。
+これは式(66)の類似である。系が状態\(\xi^\prime\)にある確率、すなわち表現において対角となる観測量\(\xi\)が値\(\xi^\prime\)を持つ確率は、§18のケットの代表の解釈規則(51)によれば、
+</span>
+
+\[
+\sum_m |\langle\xi^\prime|m\rangle|^2 P_m = \langle\xi^\prime|\rho|\xi^\prime\rangle  \tag{73}
+\]
 
 which gives us a meaning for each term in the sum on the left-hand
-side of (72). For continuous é’’s, the right-hand side of (73) gives the
-probability of the és having values in the neighbourhood of €’ per
-unit range of variation of the values £’.
+side of (72). For continuous \(\xi^\prime\)'s, the right-hand side of (73) gives the
+probability of the \(\xi\)'s having values in the neighbourhood of \(\xi^\prime\) per
+unit range of variation of the values \(\xi^\prime\).
 
-As in the classical theory, we may take a density equal to & times
-the above p and consider it as representing a Gibbs ensemble of &
+<br><span style="color:blue;">
+これは(72)式の左辺の和の各項の意味を与える。連続的な\(\xi^\prime\)の場合、(73)式の右辺は、\(\xi\)が\(\xi^\prime\)の近傍の値を持つ確率を、\(\xi^\prime\)の値の単位変動範囲ごとに与える。
+</span>
+
+</p><p>
+As in the classical theory, we may take a density equal to \(k\) times
+the above \(\rho\) and consider it as representing a Gibbs ensemble of \(k\)
 similar dynamical systems, between which there is no mutual dis-
-turbance or interaction. We shall then have & on the right-hand side
-of (72), and (70) or (71) will give the total average @ for all the
+turbance or interaction. We shall then have \(k\) on the right-hand side
+of (72), and (70) or (71) will give the total average \(\beta\) for all the
 members of the ensemble, while (73) will give the total probability
-of a member of the ensemble having values for its &’s equal to £'
-or in the neighbourhood of £’ per unit range of variation of the
-values €’. ,
+of a member of the ensemble having values for its \(\xi\)'s equal to \(\xi^\prime\)
+or in the neighbourhood of \(\xi^\prime\) per unit range of variation of the
+values \(\xi^\prime\).
 
+<br><span style="color:blue;">
+古典理論と同様に、上記の\(\rho\)の\(k\)倍に等しい密度を取り、それを\(k\)個の相似力学系のギブス集団を表すものとみなすことができる。これらの力学系間には相互擾乱や相互作用はない。すると、\(k\)は(72)の右辺となり、(70)または(71)は集団の全メンバーの平均\(\beta\)を与え、(73)は集団のメンバーの\(\xi\)の値が\(\xi^\prime\)に等しいか、\(\xi^\prime\)の近傍にある確率を、値\(\xi^\prime\)の単位変動範囲あたりで与える。
+</span>
+
+</p><p>
 An important application of the Gibbs ensemble is to a dynamical
 system in thermodynamic equilibrium with its surroundings at a
-given temperature 7’. Gibbs showed that such a system is repre-
+given temperature \(T\). Gibbs showed that such a system is repre-
 sented in classical mechanics by the density
 
-p == ce Hkh, (74)
-﻿§ 33 THE GIBBS ENSEMBLE 135
+<br><span style="color:blue;">
+ギブス集団の重要な応用の一つは、与えられた温度\(T\)において周囲と熱力学的平衡にある力学系への応用である。ギブスは、このような系が古典力学において密度によって表現されることを示した。
+</span>
 
-H being the Hamiltonian, which is now independent of the time, k
-being Boltzmann’s constant, and ¢ being a number chosen to make
+\[
+\rho = ce^{-H/kT}  \tag{74}
+\]
+
+\(H\) being the Hamiltonian, which is now independent of the time, \(k\)
+being Boltzmann's constant, and \(c\) being a number chosen to make
 the normalizing condition (66) hold. This formula may be taken over
 unchanged into the quantum theory. At high temperatures, (74)
-becomes p = ¢, which gives, on being substituted into the right-hand
-side of (73), c<é’|é’ == c in the case of discrete €”s. This shows that
-at high temperatures all discrete states aré equaily probable,
+becomes \(\rho = c\), which gives, on being substituted into the right-hand
+side of (73), \(c\langle\xi^\prime|\xi^\prime\rangle = c\) in the case of discrete \(\xi^\prime\)'s. This shows that
+at high temperatures all discrete states aré equaily probable.
 
+<br><span style="color:blue;">
+\(H\)は時間に依存しないハミルトニアン、\(k\)はボルツマン定数、\(c\)は正規化条件(66)が成立するように選ばれた数である。この式は量子論にそのまま引き継がれる。高温では、(74)は\(\rho = c\)となり、これを(73)の右辺に代入すると、離散的な\(\xi^\prime\)の場合に\(c\langle\xi^\prime|\xi^\prime\rangle = c\)が成立する。これは、高温ではすべての離散状態が等確率であることを示す。
+</span>
 </p>
     </body>
 </html>

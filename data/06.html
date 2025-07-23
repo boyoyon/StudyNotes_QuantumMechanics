@@ -14,6 +14,11 @@
             {
                 margin-left: 30px;
             }
+            .margin-large-blue
+            {
+                margin-left: 30px;
+                color: blue;
+            }
            .margin-abstract {
                margin-left: 60px; /* 左マージンを広くする */
                margin-right: 60px; /* 右マージンを広くする */
@@ -97,319 +102,749 @@
     </style>
     </head>
     <body>
-        <h1><center>Ⅵ ELEMENTARY APPLICATIONS<br>初歩的な応用</center></h1>
-<h2>34. The harmonic oscillator</h2>
+        <h1><center>Ⅵ ELEMENTARY APPLICATIONS<br><span style="color:blue;">初歩的な応用</span></center></h1>
+<h2>34. The harmonic oscillator　<span style="color:blue;">調和振動子</span></h2>
 <p>
 A SIMPLE and interesting example of a dynamical system in quantum
 mechanics is the harmonic oscillator. This example is of importance
 for general theory, because it forms a corner-stone in the theory of
 radiation. The dynamical variables needed for describing the system
-are just one coordinate g and its conjugate momentum p. The
+are just one coordinate \(q\) and its conjugate momentum \(p\). The
 Hamiltonian in classical mechanics is
 
-H == (p*+mra%?), (1)
+<br><span style="color:blue;">
+量子力学における力学系の単純かつ興味深い例として、調和振動子が挙げられます。この例は、放射理論の基礎となるため、一般理論にとって重要です。この系を記述するために必要な力学変数は、座標 \(q\) とその共役運動量 \(p\) だけです。古典力学におけるハミルトニアンは、
+</span>
 
-where m is the mass of the oscillating particle and w is 27 times the
+\[
+H = \frac{1}{2m}(p^2+m^2\omega^2q^2) \tag{1}
+\]
+
+where \(m\) is the mass of the oscillating particle and \(\omega\) is \(2\pi\) times the
 frequency. We assume the same Hamiltonian in quantum mechanics.
-This Hamiltonian, together with the quantum condition (10) of § 22,
+This Hamiltonian, together with the quantum condition (10) of §22,
 define the system completely.
 
+<br><span style="color:blue;">
+ここで、\(m\) は振動粒子の質量、\(\omega\) は振動数の \(2\pi\) 倍である。量子力学においても同じハミルトニアンを仮定する。このハミルトニアンは、§22の量子条件(10)と共に、系を完全に定義する。
+</span>
+
+</p><p>
 The Heisenberg equations of motion are
 
-By = [p, H] = —maq,.
+<br><span style="color:blue;">
+ハイゼンベルクの運動方程式は
+</span>
 
+\[
+\left.
+\begin{align}
+\dot{q}_t &= [q_t,H] = p_t/m \\
+\\
+\dot{p}_t &= [p_t,H] = -m\omega^2q_t
+\end{align}
+\right\}
+\tag {2}
+\]
+ 
 It is convenient to introduce the dimensionless complex dynamical
+variable
 
-variable 4 == (2mfiw)?(p+imag). (3)
+<br><span style="color:blue;">
+無次元複素力学変数を導入すると便利である。
+</span>
+
+\[
+\eta = (2m\hbar\omega)^{-\frac{1}{2}}(p+im\omega q)  \tag{3}
+\]
 
 The equations of motion (2) give
 
-ty = (2mhw)*(—mw*g, twp) = tony
+<br><span style="color:blue;">
+運動方程式(2)は
+</span>
+
+\[
+\dot{\eta}_t = (2m\hbar\omega)^{-\frac{1}{2}}(-m\omega^2q_t+i\omega p_t) = i\omega\eta_t
+\]
+
 This equation can be integrated to give ;
-m= noe, (4)
-where 7 is a linear operator independent of t, and is equal to the
-value of 7, at time t= 0. The above equations are all as in the
+
+<br><span style="color:blue;">
+この式を積分すると次の式が得られます。
+</span>
+
+\[
+\eta_t = \eta_0e^{i\omega t}  \tag{4}
+\]
+
+where \(\eta_0\) is a linear operator independent of \(t\), and is equal to the
+value of \(\eta_t\) at time \(t= 0\). The above equations are all as in the
 classical theory.
 
-We can express g and p in terms of 7 and its conjugate complex 7
-and may thus work entirely in terms of 7 and 7. We have
+<br><span style="color:blue;">
+ここで、\(\eta_0\) は \(t\) に依存しない線型作用素であり、時刻 \(t= 0\) における \(\eta_t\) の値に等しい。上記の式はすべて古典理論におけるものと同じである。
+</span>
 
-hon = (2m)~(p+-imag)(p—imeg)
-= (2m)~[p?-+-m?w*g? +-imeo(gp —P9)}
-= H—thw (5)
-and similarly hwiyn = H+thew. (8)
-Thus 99-7 = 1. (7)
-﻿§ 34 THE HARMONIC OSCILLATOR 137
+</p><p>
+We can express \(q\) and \(p\) in terms of \(\eta\) and its conjugate complex \(\overline{\eta}\) and may thus work entirely in terms of \(\eta\) and \(\overline{\eta}\). We have
 
-Equation (5) or (6) gives H in terms of 7 and 4 and (7) gives the
-commutation relation connecting y and 7. From (5)
+<br><span style="color:blue;">
+\(q\)と\(p\)は\(\eta\)とその共役複素数\(\overline{\eta}\)で表すことができ、\(\eta\)と\(\overline{\eta}\)だけで表すことができる。
+</span>
 
-heoinh = TH hoa
+\[
+\begin{align}
+\hbar\omega\eta\overline{\eta} &= (2m)^{-1}(p+im\omega q)(p-im\omega q) \\
+\\
+&= (2m)^{-1}[p^2+m^2\omega^2 q^2+im\omega(qp - pq)] \\
+\\
+&=H-\frac{1}{2}\hbar\omega  \tag{5}
+\end{align}
+\]
 
-and from (6) hong = H7+ es.
-Thus FH—Hy = hoi. (8)
-Also, (7) leads to An — qq = ny" (9)
+and similarly
 
-for any positive integer n, as may be verified by induction, since, by
-multiplying (9) by 7 on the left, we can deduce (9) with n+1 for n.
-Let H’ be an eigenvalue of H and |H’> an eigenket belonging to it.
+<br><span style="color:blue;">
+同様に
+</span>
 
-From. (5)
-hw |\n7q| > = <H' \f—tMie|> = (f’—tho)<H' |’).
-Now <H'|n7q|H’> is the square of the length of the ket 7|H’>, and
+\[
+\hbar\omega\overline{\eta}\eta = H + \frac{1}{2}\hbar\omega  \tag{6}
+\]
 
-h ‘ - ‘
-ence <H'|n¥|H"> > 0,
-the case of equality occurring only if 7|/H’> = 0. Also (H’|H’> > 0.
+Thus
 
-the case of equality occurring only if 7/H’> = 0. From the form (1)
-of H as a sum of squares, we should expect its eigenvalues to be all
-positive or zero (since the average value of H for any state must be
+<br><span style="color:blue;">
+したがって
+</span>
+
+\[
+\overline{\eta}\eta - \eta\overline{\eta} = 1  \tag{7}
+\]
+
+Equation (5) or (6) gives \(H\) in terms of \(\eta\) and \(\overline{\eta}\) and (7) gives the commutation relation connecting \(\eta\) and \(\overline{\eta}\). From (5)
+
+<br><span style="color:blue;">
+式(5)または式(6)は \(\eta\) と \(\overline{\eta}\) を用いて \(H\) を与え、式(7)は \(\eta\) と \(\overline{\eta}\) を結ぶ交換関係を与える。(5)より
+</span>
+
+\[
+\hbar\omega\overline{\eta}\eta\overline{\eta} = \overline{\eta}H - \frac{1}{2}\hbar\omega\overline{\eta}
+\]
+
+and from (6)
+
+<br><span style="color:blue;">
+そして(6)から
+</span>
+
+\[
+\hbar\omega\overline{\eta}\eta\overline{\eta} = H\overline{\eta}+\frac{1}{2}\hbar\omega\overline{\eta}
+\]
+
+Thus
+
+<br><span style="color:blue;">
+したがって
+</span>
+
+\[
+\overline{\eta}H - H\overline{\eta} = \hbar\omega\overline{\eta}  \tag{8}
+\]
+
+Also, (7) leads to
+
+<br><span style="color:blue;">
+また、(7)は
+</span>
+
+\[
+\overline{\eta}\eta^n - \eta^n\overline{\eta} = n\eta^{n-1}  \tag{9}
+\]
+
+for any positive integer \(n\), as may be verified by induction, since, by
+multiplying (9) by \(\eta\) on the left, we can deduce (9) with \(n+1\) for \(n\).
+
+<br><span style="color:blue;">
+任意の正の整数\(n\)に対して成り立つことは帰納法で証明できる。なぜなら、(9)式の左側に\(\eta\)を掛ければ、\(n\)に対して\(n+1\)となる(9)式を演繹できるからである。
+</span>
+
+</p><p>
+Let \(H^\prime\) be an eigenvalue of \(H\) and \(|H^\prime\rangle\) an eigenket belonging to it. From. (5)
+
+<br><span style="color:blue;">
+\(H^\prime\) を \(H\) の固有値とし、\(|H^\prime\rangle\) をそれに属する固有ケットとする。(5)から
+</span>
+
+\[
+\hbar\omega\langle H^\prime|\eta\overline{\eta}|H^\prime\rangle
+= \langle H^\prime|H-\frac{1}{2}\hbar\omega|H^\prime\rangle
+=(H^\prime-\frac{1}{2}\hbar\omega)\langle H^\prime|H^\prime\rangle
+\]
+
+Now \(\langle H^\prime|\eta\overline{\eta}|H^\prime\rangle\) is the square of the length of the ket \(\overline{\eta}|H^\prime\rangle\), and hence
+
+<br><span style="color:blue;">
+ここで、\(\langle H^\prime|\eta\overline{\eta}|H^\prime\rangle\)はケットの長さ\(\overline{\eta}|H^\prime\rangle\)の2乗なので、
+</span>
+
+\[
+\langle H^\prime|\eta\overline{\eta}|H^\prime\rangle \geq 0
+\]
+
+the case of equality occurring only if \(\overline{\eta}|H^\prime\rangle = 0\). Also \(\langle H^\prime|H^\prime\rangle \gt 0\).Thus
+
+<br><span style="color:blue;">
+等式が成立するのは、\(\overline{\eta}|H^\prime\rangle = 0\)のときのみである。また、\(\langle H^\prime|H^\prime\rangle \gt 0\) である。したがって、
+</span>
+
+\[
+H^\prime \geq \frac{1}{2}\hbar\omega  \tag{10}
+\]
+
+the case of equality occurring only if \(\overline{\eta}|H^\prime\rangle = 0)\). From the form (1)
+of \(H\) as a sum of squares, we should expect its eigenvalues to be all
+positive or zero (since the average value of \(H\) for any state must be
 positive or zero). We now have the more stringent condition (10).
-From. (8)
 
-HG\H'> = (GH —het)|H"> = (H'—hw)q|H). (11)
-Now if H’ + dw, 7|H'> is not zero and is then according to (11) an
-eigenket of H belonging to the eigenvalue H’—tw. Thus, with H’
-any eigenvalue of H not equal to diw, H’—fw is another eigenvalue
-of H. We can repeat the argument and infer that, if H’—hw ¥¢ fho,
-H’—2haw is another eigenvalue of H. Continuing in this way, we
-obtain the series of eigenvalues H’, H’—hw, H'—2hw, H’—dhw,...,
+<br><span style="color:blue;">
+等式が成り立つのは \(\overline{\eta}|H^\prime\rangle = 0)\) の場合にのみである。\(H\) を平方和として表す形式 (1) から、その固有値はすべて正かゼロであることが予想される（どの状態においても \(H\) の平均値は正かゼロでなければならないため）。これで、より厳しい条件 (10) が得られる。
+</span>
+
+</p><p>
+From (8)
+
+<br><span style="color:blue;">
+(8) から
+</span>
+
+\[
+H\overline{\eta}|H^\prime\rangle
+=(\overline{\eta}H-\hbar\omega\overline{\eta})|H^\prime\rangle
+=(H^\prime-\hbar\omega)\overline{\eta}|H^\prime\rangle  \tag{11}
+\]
+
+Now if \(H^\prime \neq \frac{1}{2}\hbar\omega,\overline{\eta}|H^\prime\rangle\) is not zero and is then according to (11) an
+eigenket of \(H\) belonging to the eigenvalue \(H^\prime - \hbar\omega\). Thus, with \(H^\prime\) any eigenvalue of \(H\) not equal to \(\frac{1}{2}\hbar\omega,H^\prime-\hbar\omega\) is another eigenvalue
+of \(H\). We can repeat the argument and infer that, if \(H^\prime - \hbar\omega \neq \frac{1}{2}\hbar\omega\),
+\(H^\prime - 2\hbar\omega\) is another eigenvalue of \(H\). Continuing in this way, we
+obtain the series of eigenvalues \(H^\prime, H^\prime - \hbar\omega, H^\prime - 2\hbar\omega, H^\prime - \hbar\omega, ...,\)
 which cannot extend to infinity; because then it would contain eigen-
-values contradicting (10), and can terminate only with the value jiw.
+values contradicting (10), and can terminate only with the value \(\frac{1}{2}\hbar\omega\).
 Again, from the conjugate complex of equation (8)
 
-Hn|\H'> = (nH+hwn)|H"> = (H'+hew)n|H">,
+<br><span style="color:blue;">
+ここで、\(H^\prime \neq \frac{1}{2}\hbar\omega,\overline{\eta}|H^\prime\rangle\)がゼロでない場合、(11)によれば、\(H\)の固有ケットは固有値\(H^\prime - \hbar\omega\)に属します。したがって、\(H^\prime\)の場合、\(H\)の固有値で\(\frac{1}{2}\hbar\omega,H^\prime-\hbar\omega\)に等しくないものは、\(H\)の別の固有値です。この議論を繰り返して、\(H^\prime - \hbar\omega \neq \frac{1}{2}\hbar\omega\) ならば、\(H^\prime - 2\hbar\omega\) は \(H\) の別の固有値であると推論することができます。このように続けると、\(H^\prime, H^\prime - \hbar\omega, H^\prime - 2\hbar\omega, H^\prime - \hbar\omega, ...,\) という固有値の級数が得られますが、これは無限大まで拡張できません。なぜなら、無限大まで拡張すると、式 (10) に矛盾する固有値が含まれることになり、\(\frac{1}{2}\hbar\omega\) でしか終結しないからです。
+また、式 (8) の共役複素数から、
+</span>
 
-showing that H’+%w is another eigenvalue of H,,with 7|H’> as an
-eigenket belonging to it, unless y/H’> = 0. The latter alternative
-can be ruled out, since it would lead to
+\[
+H\eta|H^\prime\rangle
+=(\eta H + \hbar\omega\eta)|H^\prime\rangle
+=(H^\prime+\hbar\omega)\eta|H^\prime\rangle
+\]
 
-0 = hwin|H'> = (H+ fhw)|H"> = (H+ thw) |H,
-﻿138 ELEMENTARY APPLICATIONS § 34
+showing that \(H^\prime + \hbar\omega\) is another eigenvalue of \(H\),with \(\eta|H^\prime\rangle\) as an eigenket belonging to it, unless \(\eta|H^\prime\rangle = 0\). The latter alternative can be ruled out, since it would lead to
 
-which contradicts (10). Thus H’--iw is always another eigenvalue
-of H, and so are H’+ 2iw, H’-++-3hw and soon. Hence the eigenvalues
-of H are the series of numbers
+<br><span style="color:blue;">
+\(H^\prime + \hbar\omega\) は \(H\) の別の固有値であり、\(\eta|H^\prime\rangle\) はそれに属する固有ケットである（\(\eta|H^\prime\rangle = 0\) の場合を除き）。後者の選択肢は、
+</span>
 
-Mio, Bho, Bw, Tio, ... (12)
+\[
+0 = \hbar\omega\overline{\eta}\eta|H^\prime\rangle
+=(H+\frac{1}{2}\hbar\omega|H^\prime\rangle
+=(H^\prime+\frac{1}{2}\hbar\omega)|H^\prime\rangle
+\]
+
+which contradicts (10). Thus \(H^\prime+\hbar\omega\) is always another eigenvalue of \(H\), and so are \(H^\prime+2\hbar\omega,H^\prime+3\hbar\omega\) and so on. Hence the eigenvalues of \(H\) are the series of numbers
+
+<br><span style="color:blue;">
+これは(10)と矛盾する。したがって、\(H^\prime+\hbar\omega\)は常に\(H\)の別の固有値であり、\(H^\prime+2\hbar\omega,H^\prime+3\hbar\omega\)も同様である。したがって、\(H\)の固有値は、
+</span>
+
+\[
+\frac{1}{2}\hbar\omega,　\frac{3}{2}\hbar\omega,　\frac{5}{2}\hbar\omega,　\frac{7}{2}\hbar\omega,　\cdots  \tag{12}
+\]
 
 extending to infinity. These are the possible energy values for the
 harmonic oscillator.
-Let |0> be an eigenket of H belonging to the lowest eigenvalue
 
-1
+<br><span style="color:blue;">
+無限に伸びる。これらは調和振動子の取り得るエネルギー値である。
+</span>
+
+</p><p>
+Let \(|0\rangle\) be an eigenket of \(H\) belonging to the lowest eigenvalue \(\frac{1}{2}\hbar\omega\), so that
+
+<br><span style="color:blue;">
+\(|0\rangle\) を \(H\) の固有ケットとし、最低の固有値 \(\frac{1}{2}\hbar\omega\) に属するものとすると、
+</span>
+
+\[
+\overline{\eta}|0\rangle = 0  \tag{13}
+\]
+
 and form the sequence of kets
 
-10>, 9/0, nP10>, —-8]0>, (14)
-These kets are all eigenkets of H, belonging to the sequence of eigen-
+<br><span style="color:blue;">
+そしてケット列を形成する
+</span>
+
+\[
+|0\rangle,　\eta|0\rangle,　\eta^2|0\rangle,　\eta^3|0\rangle,　\cdots  \tag{14}
+\]
+
+These kets are all eigenkets of \(H\), belonging to the sequence of eigen-
 values (12) respectively. From (9) and (13)
 
-n"|0> = na"4]0 (15)
-for any non-negative integer n. Thus the set of kets (14) is such that
-n or 4 applied to any one of the set gives a ket dependent on the set.
+<br><span style="color:blue;">
+これらのケットはすべて\(H\)の固有ケットであり、それぞれ固有値の列(12)に属する。(9)と(13)より
+</span>
+
+\[
+\overline{\eta}\eta^n|0\rangle = n\eta^{n-1}|0\rangle  \tag{15}
+\]
+
+for any non-negative integer \(n\). Thus the set of kets (14) is such that
+\(\eta\) or \(\overline{\eta}\) applied to any one of the set gives a ket dependent on the set.
 Now all the dynamical variables in our problem are expressible in terms
-of » and 7, so the kets (14) must form a complete set (otherwise there
+of \(\eta\) and \(\overline{\eta}\), so the kets (14) must form a complete set (otherwise there
 would be some more dynamical variables). There is just one of these
-kets for each eigenvalue (12) of H, so H by itself forms a complete
+kets for each eigenvalue (12) of \(H\), so \(H\) by itself forms a complete
 commuting set of observables. The kets (14) correspond to the various
 stationary states of the oscillator. The stationary state with energy
-(n-+-4)hw, corresponding to y”|0), is called the nth quantum state.
+\((n+\frac{1}{2})\hbar\omega\), corresponding to \(\eta^n|0\rangle\), is called the \(n\)-th quantum state.
 
-The square of the length of the ket 4”|0> is
+<br><span style="color:blue;">
+任意の非負整数 \(n\) に対して成り立つ。したがって、ケットの集合 (14) は、\(\eta\) または \(\overline{\eta}\) を集合のいずれにも適用すると、その集合に依存するケットが生成される。
+これで、問題におけるすべての動的変数は \(\eta\) と \(\overline{\eta}\) で表現できるため、ケット (14) は完全な集合を形成する必要がある（そうでなければ、さらに動的変数が存在する）。\(H\) の各固有値 (12) に対してこれらのケットが 1 つだけ存在するため、\(H\) 自体は観測可能な値の完全な可換集合を形成する。ケット (14) は振動子のさまざまな定常状態に対応する。エネルギーが \((n+\frac{1}{2})\hbar\omega\) である定常状態 (\(\eta^n|0\rangle\) に対応) は、\(n\) 番目の量子状態と呼ばれます。
+</span>
 
-(O|7"9" 0) = 2X0] "49-40
+</p><p>
+The square of the length of the ket \(\eta^n|0\rangle\) is
+
+<br><span style="color:blue;">
+ケットの長さの2乗\(\eta^n|0\rangle\)は
+</span>
+
+\[
+\langle 0|{\overline{\eta}}^n\eta^n|0\rangle
+=n\langle0|{\overline{\eta}}^{n-1}\eta^{n-1}|0\rangle
+\]
+
 with the help of (15). By induction, we find that
-<0|q""|0> = ni} (16)
-provided |0> is normalized. Thus the kets (14) multiplied by the
-coefficients n!-? with n = 0,1, 2,..., respectively form the basic kets
-of a representation, namely the representation with H diagonal. Any
-ket |z> can be expanded in the form
 
-ke) = Se, 10>, ~ a7)
+<br><span style="color:blue;">
+(15)の助けを借りて、帰納的に次の式が得られる。
+</span>
 
-where the 2,’s are numbers. In this way the ket |x) is put into
-correspondence with a power series > x, 7” in the variable 7, the
-various terms in the power series corresponding to the various
-stationary states. If jx> is normalized, it defines a state for which
-﻿§ 34 THE HARMONIC OSCILLATOR 139
+\[
+\langle 0|{\overline{\eta}}^n\eta^n|0\rangle = n!  \tag{16}
+\]
 
-the probability of the oscillator being in the nth quantum state,
-ie. the probability of H having the value (n+4)ha, is
+provided \(|0\rangle\) is normalized. Thus the kets (14) multiplied by the
+coefficients \(n!^{-\frac{1}{2}}\) with \(n = 0,1, 2,...,\) respectively form the basic kets of a representation, namely the representation with H diagonal. Any ket \(|x\rangle\) can be expanded in the form
 
-P= n! |x|, (18)
-as follows from the same argument which led to (51) of § 18.
+<br><span style="color:blue;">
+ただし、\(|0\rangle\) は正規化されている。したがって、ケット (14) に係数 \(n!^{-\frac{1}{2}}\)（\(n = 0,1, 2,...,\)）を乗じたものは、表現の基本ケット、すなわち H 対角を持つ表現を形成する。任意のケット \(|x\rangle\) は、次のように展開できる。
+</span>
 
-We may consider the ket |0) as a standard ket and the power series
-in 7 as a wave function, since any ket can be expressed as such a
-wave function multiplied into this standard ket. We get a kind of
+\[
+|x\rangle = \sum_0^\infty x_n \eta^n|0\rangle  \tag{17}
+\]
+
+where the \(x_n\)'s are numbers. In this way the ket \(|x\rangle\) is put into correspondence with a power series \(\sum x_n\eta^n\) in the variable \(\eta\), the various terms in the power series corresponding to the various stationary states. If \(|x\rangle\) is normalized, it defines a state for which the probability of the oscillator being in the \(n\)-th quantum state, i.e. the probability of \(H\) having the value (\(n+\frac{1}{2})\hbar\omega\), is
+
+<br><span style="color:blue;">
+ここで、\(x_n\)は数値である。このようにして、ケット\(|x\rangle\)は変数\(\eta\)のべき級数\(\sum x_n\eta^n\)と対応付けられ、べき級数の各項は様々な定常状態に対応する。\(|x\rangle\)が正規化されると、振動子が\(n\)番目の量子状態にある確率、すなわち\(H\)が値(\(n+\frac{1}{2})\hbar\omega\)を持つ確率が以下の状態を定義する。
+</span>
+
+\[
+P_n = n!|x_n|^2  \tag{18}
+\]
+
+as follows from the same argument which led to (51) of §18.
+
+<br><span style="color:blue;">
+これは、§18の(51)に至った同じ議論から導かれる。
+</span>
+
+</p><p>
+We may consider the ket \(|0\rangle\) as a standard ket and the power series in \(\eta\) as a wave function, since any ket can be expressed as such a wave function multiplied into this standard ket. We get a kind of
 wave function differing from the usual kind, introduced by equations
-(62) of § 20, in that it is a function of the complex dynamical variable
-y instead of observables. It was first introduced by V. Fock, so we
-shall call the representation Fock’s representation. It is for many
+(62) of §20, in that it is a function of the complex dynamical variable
+\(\eta\) instead of observables. It was first introduced by V. Fock, so we
+shall call the representation Fock's representation. It is for many
 purposes the most convenient representation for describing states of
-the harmonic oscillator. The standard ket [0 satisfies the condition
-(13), which replaces the conditions (43) of § 22 for the standard ket
-in Schrédinger’s representation.
+the harmonic oscillator. The standard ket \(|0\rangle\) satisfies the condition (13), which replaces the conditions (43) of §22 for the standard ket in Schr&ouml;dinger's representation.
 
-Let us introduce Schrédinger’s representation with g diagonal and
+<br><span style="color:blue;">
+ケット \(|0\rangle\) を標準ケット、\(\eta\) の冪級数を波動関数とみなすことができる。なぜなら、任意のケットは、この標準ケットに乗じた波動関数として表現できるからである。これにより、§20 の式 (62) で導入される通常の波動関数とは異なる種類の波動関数が得られる。これは、観測量ではなく複素動的変数 \(\eta\) の関数である。これは V. Fock によって初めて導入されたので、この表現を Fock 表現と呼ぶことにする。これは多くの目的において、調和振動子の状態を記述する最も便利な表現である。標準ケット \(|0\rangle\) は条件 (13) を満たし、これはシュレーディンガー表現における標準ケットに対する §22 の条件 (43) を置き換えるものである。
+</span>
+
+</p><p>
+Let us introduce Schr&ouml;dinger's representation with \(q\) diagonal and
 obtain the representatives of the stationary states. From (13) and (3)
 
-(p—imag)|0> = 0,
+<br><span style="color:blue;">
+対角線 \(q\) を持つシュレーディンガー表現を導入し、定常状態の代表値を得る。(13) と (3) より
+</span>
 
-so <q |p—imwg|0> = 0.
-With the help of (45) of § 22, this gives
-a ? f i
-head |0>+-mwg'<q'|0> = 0. (19)
+\[
+(p - im\omega q)|0\rangle = 0
+\]
+
+so
+
+<br><span style="color:blue;">
+それで
+</span>
+
+\[
+\langle q^\prime|p - im\omega q|0\rangle = 0
+\]
+
+With the help of (45) of §22, this gives
+
+<br><span style="color:blue;">
+§22の(45)式を用いると、
+</span>
+
+\[
+\hbar\frac{\partial}{\partial q^\prime}\langle q^\prime|0\rangle+m\omega q^\prime\langle q^\prime|0\rangle = 0  \tag{19}
+\]
+
 The solution of this differential equation is
-<q'10> = (marfhiyremoa"?h, (20)
 
-the numerical coefficient being chosen so as to make |0> normalized.
-We have here the representative of the normal state, as the state of
-lowest energy is called. The representatives of the other stationary
-states can be obtained from it. We have from (3)
+<br><span style="color:blue;">
+この微分方程式の解は
+</span>
 
-<q‘ |g" |0> = (2mhiw)-"?¢q'|(p +imagq)”|0>
+\[
+\langle q^\prime|0\rangle = (m\omega/\pi\hbar)^{\frac{1}{4}}e^{-m\omega q^{\prime 2}/2\hbar}  \tag{20}
+\]
 
-= (mfiny-nPin( —h jgi-t+ men’) <a '0>
+the numerical coefficient being chosen so as to make \(|0\rangle\) normalized. We have here the representative of the normal state, as the state of lowest energy is called. The representatives of the other stationary states can be obtained from it. We have from (3)
 
-= i*(2fen)-*( mean) z+ mcf) emo, (21)
+<br><span style="color:blue;">
+数値係数は\(|0\rangle\)が正規化されるように選ばれる。ここでは、最低エネルギー状態と呼ばれる通常状態の代表値が得られる。他の定常状態の代表値はここから得られる。(3)から
+</span>
 
-This may easily be worked out for small values of‘n. The result is of
-the form of e~”@7l2% times a power series of degree n in g’. A further
-factor n!-? must be inserted in (21) to get the normalized representa-
-tive of the nth quantum state. The phase factor i” may be discarded.
-﻿140 ELEMENTARY APPLICATIONS § 35
+\[
+\begin{align}
+\langle q^\prime|\eta^n|0\rangle &= (2m\hbar\omega)^{-n/2}\langle q^\prime|(p+im\omega q)^n|0\rangle \\
+\\
+&=(2m\hbar\omega)^{-n/2}i^n\left(-\hbar\frac{\partial}{\partial q^\prime}+m\omega q^\prime\right)^n\langle q^\prime|0\rangle \\
+\\
+&=i^n(2m\hbar\omega)^{-n/2}(m\omega/\pi\hbar)^{\frac{1}{4}}\left(-\hbar\frac{\partial}{\partial q^\prime}+m\omega q^\prime\right)^n e^{-m\omega q^{\prime 2}/2\hbar}  \tag{21}
+\end{align}
+\]
 
-35. Angular momentum
+This may easily be worked out for small values of \(n\). The result is of the form of \(e^{-m\omega q^{\prime 2}/2\hbar}\) times a power series of degree \(n\) in \(q^\prime\). A further factor \(n!^{-\frac{1}{2}}\) must be inserted in (21) to get the normalized representative of the nth quantum state. The phase factor \(i^n\) may be discarded.
 
+<br><span style="color:blue;">
+これは\(n\)の値が小さい場合、簡単に計算できます。結果は\(e^{-m\omega q^{\prime 2}/2\hbar}\)に\(q^\prime\)の次数\(n\)のべき級数を掛けた形になります。n番目の量子状態の正規化された代表値を得るには、(21)にさらに係数\(n!^{-\frac{1}{2}}\)を挿入する必要があります。位相係数\(i^n\)は無視できます。
+</span>
+
+</p>
+
+<h3>35. Angular momentum　<span style="color:blue;">角運動量</span></h3>
+<p>
 Let us consider a particle described by the three Cartesian coordi-
-nates x, y, z and their conjugate momenta p,, p,, p,. Its angular
+nates \(x, y, z\) and their conjugate momenta \(p_x,p_y,p_z\). Its angular
 momentum about the origin is defined as in the classical theory, by
 
+<br><span style="color:blue;">
+3つの直交座標\(x, y, z\)とそれらの共役運動量\(p_x, p_y, p_z\)で記述される粒子を考えてみましょう。その原点周りの角運動量は、古典理論と同様に次のように定義されます。
+</span>
+
+\[
+m_x=yp_z - zp_y　　　m_y=zp_x - xp_z　　　m_z=xp_y - yp_x  \tag{22}
+\]
+
 or by the vector equation
-m= XX p.
+
+<br><span style="color:blue;">
+あるいはベクトル方程式によって
+</span>
+
+\[
+\mathbf{m} = \mathbf{x} \times \mathbf{p}
+\]
 
 We must evaluate the P.B.s of the angular momentum components
-with the dynamical variables x, p,, etc., and with each other. This
+with the dynamical variables \(x, p_x,\) etc., and with each other. This
 we can do most conveniently with the help of the laws (4) and (5) of
-§ 21, thus
+§21, thus
+
+<br><span style="color:blue;">
+角運動量成分のP.B.を、力学変数\(x, p_x,\)などを用いて、また互いに評価する必要がある。これは、§21の法則(4)と(5)を用いて最も簡単に行うことができる。
+</span>
+
+\[
+\left.
+\begin{align}
+[m_z,x] &= [xp_y - yp_x, x] = -y[p_x,x] = y \\
+\\
+[m_z,y] &= [xp_y - yp_x, y] = x[p_y,y] = -x 
+\end{align}
+\right\} \tag{23}
+\]
+
+\[
+[m_z,z] = [xp_y - yp_x, z] = 0  \tag{24}
+\]
 
 and similarly,
 
-(23)
+<br><span style="color:blue;">
+同様に、
+</span>
 
-[m,, Pa] = Py [m,, Py] = —DPz; (25)
-[m,, P2| = 0, (26)
+\[
+[m_z, p_x] = p_y,　　　[m_z,p_y] = —p_x  \tag{25} \\
+\]
 
-with corresponding relations for m, and m,. Again
-[m,; m,| = [zp,—xp,,m,| = 2[ Pz; m,|—[x, Mp] P,
+\[
+[m_z,p_z| = 0  \tag{26}
+\]
 
-(27)
-[m., mz = My [m,, my} = ™M,-
+with corresponding relations for \(m_x\) and \(m_y\). Again
+
+<br><span style="color:blue;">
+\(m_x\)と\(m_y\)の関係も同様である。
+</span>
+
+\[
+[m_y, m_z] = [zp_x - xp_z, m_z] = z[p_x,m_z] - [x,m_z]p_z
+\]
+
+\[
+\left.
+\begin{align}
+&=-zp_y + yp_z = m_x \\
+\\
+[m_z, m_x] &= m_y,　　[m_x,m_y] = m_z
+\end{align}
+\right\}
+\tag{27}
+\]
 
 These results are all the same as in the classical theory. The sign in
 the results (23), (25), and (27) may easily be remembered from the
-rule that the + sign occurs when the three dynamical! variables, con-
-sisting of the two in the P.B. on the left-hand side’and the one
+rule that the \(+\) sign occurs when the three dynamical! variables, con-
+sisting of the two in the P.B. on the left-hand side'and the one
 forming the result on the right, are in the cyclic order (xyz) and the
-— sign occurs otherwise. Equations (27) may be put in the vector
+\(—\) sign occurs otherwise. Equations (27) may be put in the vector
+form
 
-form mxm = iim. (28)
+<br><span style="color:blue;">
+これらの結果はすべて古典理論の場合と同じである。結果(23)、(25)、(27)の符号は、左辺のP.B.の2つと右辺の結果を形成する1つの変数からなる3つの動的変数が巡回順序(xyz)にあるときに\(+\)符号が付き、そうでないときに\(—\)符号が付くという規則から容易に覚えられる。式(27)はベクトル形式で表すことができる。
+</span>
 
+\[
+\mathbf{m} \times \mathbf{m} = i\hbar \mathbf{m}  \tag{28}
+\]
+
+</p><p>
 Now suppose we have several particles with angular momenta
-m,,m,,.... Each of these angular momentum vectors will satisfy
+\(\mathbf{m}_1,\mathbf{m}_2,...\). Each of these angular momentum vectors will satisfy
+(28), thus
 
-9
+<br><span style="color:blue;">
+ここで、角運動量を持つ複数の粒子があるとします
+\(\mathbf{m}_1,\mathbf{m}_2,...\)。これらの角運動量ベクトルはそれぞれ、(28)式を満たすので、
+</span>
+
+\[
+\mathbf{m}_r \times \mathbf{m}_r = i\hbar\mathbf{m}_r
+\]
+
 and any one of them will commute with any other, so that
 
-m.<xm+m,xm,=0 (rs).
-﻿§ 35 ANGULAR MOMENTUM ; 141
+<br><span style="color:blue;">
+そしてそれらのどれか一つが他のどれとも交換可能であり、
+</span>
 
-Hence if M = > m, is the total angular momentum,
-r
+\[
+\mathbf{m}_r \times \mathbf{m}_s + \mathbf{m}_s \times \mathbf{m}_r = 0\;(r \neq s)
+\]
+ 
+</p><p>
+Hence if \(\mathbf{M} = \sum\limits_r \mathbf{m}_r\) is the total angular momentum,
 
-MxM => m,xm, = > m,xm,+ > (m,xm,-+m,x m,)
-rs r r<s
+<br><span style="color:blue;">
+したがって、\(\mathbf{M} = \sum\limits_r \mathbf{m}_r\) が全角運動量である場合、
+</span>
 
-= ik Sm, = isM. (29)
+\[
+\begin{align}
+\mathbf{M} \times \mathbf{M} &= \sum_{rs} \mathbf{m}_r \times \mathbf{m}_s
+=\sum_r \mathbf{m}_r \times \mathbf{m}_r + \sum_{r \lt s} (\mathbf{m}_r \times \mathbf{m}_s + \mathbf{m}_s \times \mathbf{m}_r) \\
+\\ 
+&= i\hbar \sum_r \mathbf{m}_r = i\hbar\mathbf{M}  \tag{29}
+\end{align}
+\]
 
 This result is of the same form as (28), so that the components of the
-total angular momentum M of any number of particles satisfy the
-same commutation relations as those of the angular momentum of
+total angular momentum \(\mathbf{M}\) of any number of particles satisfy the same commutation relations as those of the angular momentum of
 a single particle.
 
-Let A,, A,, A, denote the three coordinates of any one of the
+<br><span style="color:blue;">
+この結果は(28)と同じ形をしており、任意の数の粒子の全角運動量\(\mathbf{M}\)の成分は、単一粒子の角運動量の成分と同じ交換関係を満たす。
+</span>
+
+</p><p>
+Let \(A_x, A_y, A_z\) denote the three coordinates of any one of the
 particles, or else the three components of momentum of one of
-the particles. The A’s will commute with the angular momenta of
+the particles. The \(A\)'s will commute with the angular momenta of
 the other particles, and hence from (23), (24), (25), and (26)
 
-[M,4)=4, (If,4,)=—4,, [MA] = 0. (30)
+<br><span style="color:blue;">
+\(A_x, A_y, A_z\) を、いずれかの粒子の3つの座標、またはいずれかの粒子の運動量の3つの成分とします。\(A\) は他の粒子の角運動量と交換されるため、(23)、(24)、(25)、(26) より、
+</span>
 
-If B,, B,, B, are a second set of three quantities denoting the
+\[
+[M_z,A_x]=A_y,　　[M_z,A_y]=—A_x,　　[M_z,A_z] = 0  \tag{30}
+\]
+
+If \(B_x, B_y, B_z\) are a second set of three quantities denoting the
 coordinates or momentum components of one of the particles, they
 will satisfy similar relations to (30). We shall then have
 
-[M,, A, B, +A, By, +A,B,]
-= (M,, A,]B,+4,[M, B,]+[M,A,]B,+4,[B,]
-= A,B,+A,B,—A, B,—A, B,
-= 0.
+<br><span style="color:blue;">
+もし\(B_x, B_y, B_z\)が粒子の座標または運動量成分を表す3つの量の2番目の集合であるとすると、それらは(30)と同様の関係を満たす。すると、
+</span>
 
-Thus the scalar product A, B,+A,B,+A,B, commutes with M,,
-and similarly with M,, and M,. Introduce the vector product
+\[
+\begin{align}
+[M_z,A_xB_x &+ A_yB_y + A_zB_z] \\
+\\
+&= [M_z,A_x]B_x + A_x[M_z,B_x]+[M_z,A_y]B_y + A_y[M_z,B_y] \\
+\\
+&= A_yB_x + A_xB_y — A_xB_y — A_yB_x \\
+\\
+&= 0
+\end{align}
+\]
 
-AxB=C
+Thus the scalar product \(A_xB_x + A_yB_y + A_zB_z\) commutes with \(M_z\),
+and similarly with \(M_x\) and \(M_y\). Introduce the vector product
+
+<br><span style="color:blue;">
+したがって、スカラー積 \(A_xB_x + A_yB_y + A_zB_z\) は \(M_z\) と可換であり、同様に \(M_x\) および \(M_y\) とも可換である。ベクトル積を導入する。
+</span>
+
+\[
+\mathbf{A} \times \mathbf{B} = \mathbf{C}
+\]
+
 or
-A,B,—A,B,=C,  A,B,-A,B,=C,,  4,B,—A,B, =,
 
-and similarly  [M,,C,] = —C,, [M,, G,] = 0.
+<br><span style="color:blue;">
+または
+</span>
 
-These equations are again of the form (30), with C for A. We can
+\[
+A_yB_z — A_zB_y = C_x,　　A_zB_x - A_xB_z = C_y,　　A_xB_y — A_yB_x = C_z
+\]
+
+We have
+
+<br><span style="color:blue;">
+以下を得る
+</span>
+
+\[
+[M_z, C_x] = -A_xB_z + A_zB_x = C_y
+\]
+
+and similarly
+
+<br><span style="color:blue;">
+同様に
+</span>
+
+\[
+[M_z,C_y] = —C_x,　　[M_z, C_z] = 0
+\]
+
+These equations are again of the form (30), with \(\mathbf{C}\) for \(\mathbf{A}\). We can
 conclude from this work that equations of the form (30) hold for the
 three components of any vector that we can construct from our
-dynamical variables, and that any scalar commutes with M.
+dynamical variables, and that any scalar commutes with \(\mathbf{M}\).
 
-We can introduce linear operators # referring to rotations about
+<br><span style="color:blue;">
+これらの方程式は再び(30)の形をとり、\(\mathbf{A}\)に対して\(\mathbf{C}\)が成り立ちます。この研究から、(30)の形をとる方程式は、力学変数から構成できる任意のベクトルの3つの要素に対して成り立ち、任意のスカラーは\(\mathbf{M}\)と可換であることが結論付けられます。
+</span>
+
+</p><p>
+We can introduce linear operators \(R\) referring to rotations about
 the origin in the same way in which we introduced the linear operators
-D in § 25 referring to displacements. Taking a rotation through an
-﻿142 ELEMENTARY APPLICATIONS § 35
+\(D\) in §25 referring to displacements. Taking a rotation through an
+angle \(\delta\phi\) about the \(z\)-axis and making \(\delta\phi\) infinitesimal, we can obtain
+the limit operator corresponding to (64) of §25,
 
-angle 5¢ about the z-axis and making 6¢ infinitesimal, we can obtain
-the limit operator corresponding to (64) of § 25,
-i —1)/
-Jim (R—1)/84,
+<br><span style="color:blue;">
+§25で変位を表す線型作用素\(D\)を導入したのと同じ方法で、原点周りの回転を表す線型作用素\(R\)を導入することができる。\(z\)軸を中心に角度\(\delta\phi\)だけ回転し、\(\delta\phi\)を無限小とすると、§25の(64)に対応する極限作用素が得られる。
+</span>
 
-which we shall call the rotation operator about the z-axis and denote
-by r,. Like the displacement operators, r, is a pure imaginary linear
+\[
+\lim_{\delta\phi\rightarrow 0} (R-1)/\delta\phi
+\]
+
+which we shall call the rotation operator about the \(z\)-axis and denote
+by \(r_z\). Like the displacement operators, \(r_z\) is a pure imaginary linear
 operator and is undetermined to the extent of an arbitrary additive
-pure imaginary number. Corresponding to (66) of § 25, the change
-in any dynamical variable » caused by a rotation through a small
-angle 64 about the z-axis is
+pure imaginary number. Corresponding to (66) of §25, the change
+in any dynamical variable \(v\) caused by a rotation through a small
+angle \(\delta\phi\) about the \(z\)-axis is
 
-86(r, v—vr,), (31)
-to the first order in 5¢. Now the changes produced in the three
-components A,, A,, A, of a vector by a (right-handed) rotation 6¢
-about the z-axis applied to all measuring apparatus are 6¢A4,,
+<br><span style="color:blue;">
+これを\(z\)軸周りの回転作用素と呼び、\(r_z\)と表記する。変位作用素と同様に、\(r_z\)は純虚数線型作用素であり、任意の加法的な純虚数の範囲では未定である。§25の(66)に対応して、\(z\)軸周りの微小角度\(\delta\phi\)の回転によって引き起こされる任意の力学変数\(v\)の変化は、
+</span>
 
-—5A,, and 0 respectively, and any scalar quantity is unchanged by
-the rotation. Equating these changes to (31), we find that
+\[
+\delta\phi(r_z v — vr_z)  \tag{31}
+\]
 
-r,A,—Az1, = Ay 1,4,—A,1, = —A,;
-7,4,—A,1', = 9,
+to the first order in \(\delta\phi\). Now the changes produced in the three
+components \(A_x, A_y, A_z\) of a vector by a (right-handed) rotation \(\delta\phi\) about the \(z\)-axis applied to all measuring apparatus are \(\delta\phi A_y, —\delta\phi A_x,\) and 0 respectively, and any scalar quantity is unchanged by the rotation. Equating these changes to (31), we find that
 
-and r, commutes with any scalar. Comparing these results with (30),
-we see that ifr, satisfies the same commutation relations as M,.
-Their difference, Mf,—ifir,, commutes with all the dynamical variables
-and must therefore be a number. This number, which is necessarily
-real since M, and ihr, are real, may be made zero by a suitable choice
-of the arbitrary pure imaginary number that can be added to r,. We
-then have the result M, = itr,. (32)
+<br><span style="color:blue;">
+\(\delta\phi\) の一次式に等しい。ここで、すべての測定装置に \(z\) 軸の周りの（右手）回転 \(\delta\phi\) を適用することによってベクトルの3つの成分 \(A_x, A_y, A_z\) に生じる変化はそれぞれ \(\delta\phi A_y, —\delta\phi A_x,\) と 0 であり、スカラー量は回転によって変化しない。これらの変化を (31) と等しくすると、次の式が得られる。
+</span>
 
-Similar equations hold for M/, and M,. They are the analogues of (69)
+\[
+r_zA_x - A_xr_z = A_y,　　r_zA_y - A_yr_z = -A_x
+\]
+
+\[
+r_zA_z - A_zr_z = 0
+\]
+
+and \(r_z\) commutes with any scalar. Comparing these results with (30),
+we see that \(i\hbar r_z\) satisfies the same commutation relations as \(M_z\). Their difference, \(M_z - i\hbar r_z\), commutes with all the dynamical variables and must therefore be a number. This number, which is necessarily real since \(M_z\) and \(i\hbar r_z\) are real, may be made zero by a suitable choice of the arbitrary pure imaginary number that can be added to \(r_z\). We then have the result
+
+<br><span style="color:blue;">
+そして、\(r_z\)は任意のスカラーと可換である。これらの結果を(30)と比較すると、\(i\hbar r_z\)は\(M_z\)と同じ交換関係を満たすことがわかる。それらの差\(M_z - i\hbar r_z\)はすべての動的変数と可換であり、したがって数でなければならない。\(M_z\)と\(i\hbar r_z\)が実数であるため、この数は必然的に実数となるが、\(r_z\)に加えられる任意の純虚数を適切に選ぶことでゼロにすることができる。すると、次の結果が得られる。
+</span>
+
+\[
+M_z = i\hbar r_z  \tag{32}
+\]
+
+Similar equations hold for \(M_x\) and \(M_y\). They are the analogues of (69)
 of §25. Thus the total angular momentum is connected with the rota-
 tion operators as the total momentum ts connected with the displacement
 operators. This conclusion is valid for any point as origin.
 
+<br><span style="color:blue;">
+同様の式が \(M_x\) と \(M_y\) についても成り立つ。これらは§25の(69)式に対応する。したがって、全角運動量は、全運動量tsが変位作用素と結びついているのと同様に、回転作用素と結びついている。この結論は、任意の点を原点とした場合に成立する。
+</span>
+
+</p><p>
 The above argument applies to the angular momentum arising
 from the motion of particles, defined by (22) for each particle. There
 is another kind of angular momentum occurring in atomic theory,
@@ -418,28 +853,21 @@ be called orbital angular momentum, to distinguish it. The spin angu-
 lar momentum of a particle should be pictured as due to some internal
 motion of the particle, so that it is associated with different degrees
 of freedom from those describing the motion of the particle as a whole,
-﻿§ 35 ANGULAR MOMENTUM 143
-
 and hence the dynamical variables that describe the spin must com-
-mute with x, y, 2, Pz, Py, and p,. The spin does not correspond very
+mute with \(x,y,z,p_x,p_y,\) and \(p_z\). The spin does not correspond very
 closely to anything in classical mechanics, so the method of classical
 analogy is not suitable for studying it. However, we can build up a
 theory of the spin simply from the assumption that the components
 of the spin angular momentum are connected with the rotation opera-
 tors in the same way as we had above for orbital angular momentum,
-i.e. equation (32) holds with J, as the z component of the spin angular
-momentum of a particle and r, as the rotation operator about the
-z-axis referring to states of spin of that particle. With this assump-
-tion, the commutation relations connecting the components of the
-spin angular momentum M with any vector A referring to the spin
-must be of the standard form (30), and hence, taking A to be the
-spin angular momentum itself, we have equation (29) holding also
-for the spin. We now have (29) holding quite generally, for any sum
-of spin and orbital angular momenta, and also (30) will hold generally,
-for M the total spin and orbital angular momentum and A any vector
-dynamical variable, and the connexion between angular momentum
-and rotation operators will be always valid.
+i.e. equation (32) holds with \(M_z\) as the \(z\) component of the spin angular momentum of a particle and \(r_z\) as the rotation operator about the \(z\)-axis referring to states of spin of that particle. With this assumption, the commutation relations connecting the components of the
+spin angular momentum \(\mathbf{M}\) with any vector \(\mathbf{A}\) referring to the spin must be of the standard form (30), and hence, taking \(\mathbf{A}\) to be the spin angular momentum itself, we have equation (29) holding also for the spin. We now have (29) holding quite generally, for any sum of spin and orbital angular momenta, and also (30) will hold generally, for \(\mathbf{M}\) the total spin and orbital angular momentum and \(\mathbf{A}\) any vector dynamical variable, and the connexion between angular momentum and rotation operators will be always valid.
 
+<br><span style="color:blue;">
+上記の議論は、各粒子について(22)式で定義される、粒子の運動から生じる角運動量に当てはまります。原子論には、スピン角運動量という別の種類の角運動量があります。前者の種類の角運動量は、区別するために軌道角運動量と呼びます。粒子のスピン角運動量は、粒子の内部運動に起因するものとして描くべきであり、粒子全体の運動を記述する自由度とは異なる自由度に関連付けられます。したがって、スピンを記述する力学変数は、\(x,y,z,p_x,p_y,\)および\(p_z\)と交換する必要があります。スピンは古典力学のどの要素とも非常に密接に対応していないため、古典力学の類推の方法はスピンを研究するのに適していません。しかし、スピン角運動量の成分が、軌道角運動量の場合と同様に回転作用素と関連しているという仮定から、スピン理論を単純に構築することができます。つまり、式(32)は、\(M_z\)を粒子のスピン角運動量の\(z\)成分とし、\(r_z\)をその粒子のスピン状態を参照する\(z\)軸周りの回転作用素として成立します。この仮定のもと、スピン角運動量\(\mathbf{M}\)の成分と、スピンを参照する任意のベクトル\(\mathbf{A}\)を結び付ける交換関係は標準形(30)でなければなりません。したがって、\(\mathbf{A}\)をスピン角運動量そのものとすると、式(29)がスピンについても成立します。これで、(29) はスピン角運動量と軌道角運動量の任意の合計に対して極めて一般的に成り立つようになり、(30) も \(\mathbf{M}\) のスピン角運動量と軌道角運動量の合計、\(\mathbf{A}\) の任意のベクトル力学変数に対して一般に成り立ち、角運動量と回転作用素の関係は常に有効になります。
+</span>
+
+</p><p>
 As an immediate consequence of this connexion, we can deduce the
 law of conservation of angular momentum. For an isolated system, the
 Hamiltonian must be unchanged by any rotation about the origin, in
@@ -448,420 +876,865 @@ momentum about the origin. Thus the angular momentum is a
 constant of the motion. For this argument the origin may be any
 point.
 
+<br><span style="color:blue;">
+この関連性から直接導かれる帰結として、角運動量保存則が導かれます。孤立系の場合、ハミルトニアンは原点の周りの回転によって変化しない、つまりスカラーでなければならないため、原点の周りの角運動量と可換でなければなりません。したがって、角運動量は運動定数です。この議論では、原点は任意の点であって構いません。
+</span>
+
+</p><p>
 As a second immediate consequence, we can deduce that a state
 with zero total angular momentum is spherically symmetrical. The state
-will correspond to a ket |S>, say, satisfying
+will correspond to a ket \(|S\rangle\), say, satisfying
 
-M,|S> = M,|S) = M,|8 = 0,
-and hence ,|S> = r,|S> = 7,|S> = 0.
+<br><span style="color:blue;">
+2つ目の直接的な帰結として、全角運動量がゼロの状態は球対称であると推論できる。この状態は、例えばケット\(|S\rangle\)に対応し、
+</span>
 
-This shows that the ket |S) is unaltered by infinitesimal rotations,
+\[
+M_x|S\rangle = M_y|S\rangle = M_z|S\rangle = 0
+\]
+
+and hence
+
+<br><span style="color:blue;">
+そしてそれゆえ
+</span>
+
+\[
+r_x|S\rangle = r_y|S\rangle = r_z|S\rangle = 0
+\]
+
+This shows that the ket \(|S\rangle\) is unaltered by infinitesimal rotations,
 and it must therefore be unaltered by finite rotations, since the latter
 can be built up from infinitesimal ones. Thus the state is spherically
 symmetrical. The converse theorem, a spherically symmetrical state
 has zero total angular momentum, is also true, though its proof is not
 quite so simple. A spherically symmetrical state corresponds to a ket
-|S whose direction is unaltered by any rotation. Thus the change
-﻿144 ELEMENTARY APPLICATIONS § 35
+\(|S\rangle\) whose direction is unaltered by any rotation. Thus the change
+in \(|S\rangle\) produced by a rotation operator \(r_x,r_y,\) or \(r_z\) must be a numerical
+multiple of \(|S\rangle\), say
 
-in |S) produced by a rotation operator 7,,7,, or 7, must be a numerical
-multiple of |S), say
-e|S> = Cy|S>, ry|S> = Cy |S, 7,|S> = c,|8>,
-where the c’s are numbers. This gives
-M,|S> = ttie,|S>, MM, |8> = ihe,|S>,
+<br><span style="color:blue;">
+これは、ケット \(|S\rangle\) が無限小回転によって変化しないことを示しています。したがって、有限回転は無限小回転から構成されるため、有限回転によっても変化しないはずです。したがって、この状態は球対称です。逆の定理、すなわち球対称状態では全角運動量はゼロであるという定理も成り立ちますが、その証明はそれほど単純ではありません。球対称状態は、いかなる回転によっても方向が変化しないケット \(|S\rangle\) に対応します。したがって、回転作用素 \(r_x,r_y,\) または \(r_z\) によって生じる \(|S\rangle\) の変化は、\(|S\rangle\) の倍数、つまり
+</span>
 
-M,|S> = ike,|S). (33)
+\[
+r_x|S\rangle = c_x|S\rangle,　　r_y|S\rangle = c_y|S\rangle,　　r_z|S\rangle = c_z|S\rangle
+\]
+
+where the \(c\)'s are numbers. This gives
+
+<br><span style="color:blue;">
+ここで\(c\)は数値である。これは
+</span>
+
+\[
+M_x|S\rangle = i\hbar c_x|S\rangle,　　M_y|S\rangle = i\hbar c_y|S\rangle
+\]
+
+\[
+M_z|S\rangle = i\hbar c_z|S\rangle  \tag{33}
+\]
+
 These equations are not consistent with the commutation relations
-(29) for M,, M,, M, unless c, = ¢, = c, = 0, in which case the state
+(29) for \(M_x, M_y, M_z\) unless \(c_x = c_y = c_z = 0\), in which case the state
 has zero total angular momentum. We have in (33) an example of
 a ket which is simultaneously an eigenket of the three non-commuting
-
-linear operators M,, M,, M,, and this is possible only if all three
+linear operators \(M_x, M_y, M_z\), and this is possible only if all three
 eigenvalues are zero.
 
-36. Properties of angular momentum
+<br><span style="color:blue;">
+これらの式は、\(M_x, M_y, M_z\) について、\(c_x = c_y = c_z = 0\) の場合を除き、交換関係 (29) と矛盾します。\(c_x = c_y = c_z = 0\) の場合には、状態の全角運動量はゼロになります。(33) には、3 つの非可換線形作用素 \(M_x, M_y, M_z\) の固有ケットであるケットの例が示されていますが、これは 3 つの固有値がすべてゼロの場合にのみ可能です。
+</span>
 
+</p>
+
+<h3>36. Properties of angular momentum <span style="color:blue;">角運動量の性質</span></h3>
+<p>
 There are some general properties of angular momentum, deducible
 simply from the commutation relations between the three compo-
 nents. These properties must hold equally for spin and orbital angular
-momentum. Let m,, m,, m, be the three components of an angular
-momentum, and introduce the quantity 8 defined by
+momentum. Let \(m_x,m_y,m_z,\) be the three components of an angular
+momentum, and introduce the quantity \(\beta\) defined by
 
-B= mh+m2 +m.
-Since f is a scalar it must commute with m,, m,, and m,. Let us
-suppose we have a dynamical system for which m,, m,, m, are the
-only dynamical variables. Then 8 commutes with everything and
+<br><span style="color:blue;">
+角運動量には、3つの成分間の交換関係から単純に導かれる一般的な性質がいくつかあります。これらの性質は、スピン角運動量と軌道角運動量にも同様に成立しなければなりません。\(m_x,m_y,m_z,\)を角運動量の3つの成分とし、\(\beta\)を次のように定義します。
+</span>
 
-must be a number. We can study this dynamical system on much
-the same lines as we used for the harmonic oscillator in § 34.
+\[
+\beta= m_x^2 + m_y^2 + m_z^2
+\]
 
-Put M,—tM, = 7.
+Since \(\beta\) is a scalar it must commute with \(m_x,m_y,\) and \(m_z\). Let us suppose we have a dynamical system for which \(m_x, m_y, m_z\) are the only dynamical variables. Then 8 commutes with everything and must be a number. We can study this dynamical system on much the same lines as we used for the harmonic oscillator in §34.
+
+<br><span style="color:blue;">
+\(\beta\) はスカラーなので、\(m_x,m_y,\) および \(m_z\) と可換である。\(m_x, m_y, m_z\) のみが力学変数である力学系を考えてみよう。この場合、8 はすべてのものと可換であり、必ず数となる。この力学系は、§34 で調和振動子について述べたのとほぼ同じ方法で研究できる。
+</span>
+
+</p><p>
+Put 
+
+<br><span style="color:blue;">
+以下の様に置くと
+</span>
+
+\[
+m_x - im_y = \eta
+\]
+
 From the commutation relations (27) we get
 
-m,-+mZ— tm, My—M, Mz)
+<br><span style="color:blue;">
+交換関係（27）から、
+</span>
 
-= B—m2--tim, (34)
-and similarly qq = B—m2—im,. (85)
-Thus AN—H = BZhm,. (36)
-Also M,N—NM, = tim, —im, = —tin. (37)
+\[
+\begin{align}
+\overline{\eta}\eta = (m_x+im_y)(m_x-im_y) &= m_x^2+m_y^2-i(m_xm_y - m_ym_x) \\
+\\
+&=\beta - m_z^2 + \hbar m_z  \tag{34}
+\end{align}
+\]
+
+and similarly
+
+<br><span style="color:blue;">
+同様に
+</span>
+
+\[
+\eta\overline{\eta} = \beta-m_z^2-\hbar m_z  \tag{35}
+\]
+
+Thus
+
+<br><span style="color:blue;">
+したがって
+</span>
+
+\[
+\overline{\eta}\eta - \eta\overline{\eta} = 2\hbar m_z  \tag{36}
+\]
+
+Also
+
+<br><span style="color:blue;">
+また
+</span>
+
+\[
+m_z\eta-\eta m_z = i\hbar m_y - \hbar m_x = -\hbar\eta  \tag{37}
+\]
 
 We assume that the components of an angular momentum are
-observables and thus m, has eigenvalues. Let mj be one of them,
-and |m;> an eigenket belonging to it. From (34)
+observables and thus \(m_z\) has eigenvalues. Let \(m_z^\prime\) be one of them,
+and \(|m_z^\prime\rangle\) an eigenket belonging to it. From (34)
 
-<m, lin |m,> = <m,|B—mi-+-hm,|m,> = (B—m?+-hm,)<m,|m,.
-﻿§ 36 PROPERTIES OF ANGULAR MOMENTUM 145
+<br><span style="color:blue;">
+角運動量の成分は観測可能量であり、したがって\(m_z\)は固有値を持つと仮定する。\(m_z^\prime\)をその一つとし、\(|m_z^\prime\rangle\)をそれに属する固有ケットとする。(34)より
+</span>
 
-The left-hand side here is the square of the length of the ket y!mz>
+\[
+\langle m_z^\prime|\overline{\eta}\eta|m_z^\prime\rangle
+=\langle m_z^\prime|\beta-m_z^2+\hbar m_z|m_z^\prime\rangle
+=(\beta-m_z^{\prime 2}+\hbar m_z^\prime)\langle m_z^\prime|m_z^\prime\rangle
+\]
+
+The left-hand side here is the square of the length of the ket \(\eta|m_z^\prime\rangle\)
 and is thus greater than or equal to zero, the case of equality occur-
-ring if and only if y|{m,)> = 0. Hence
+ring if and only if \(\eta|m_z^\prime\rangle = 0\). Hence
 
-B—m2-+him!, > 0,
+<br><span style="color:blue;">
+ここで左辺はケットの長さの2乗\(\eta|m_z^\prime\rangle\)であり、したがって0以上であり、\(\eta|m_z^\prime\rangle = 0\)の場合にのみ等号が成立する。したがって、
+</span>
 
-or B+-40" > (mi—4h)?. (38)
-Thus B+it? > 0.
-Defining the number & by
+\[
+\beta - m_z^{\prime 2}+\hbar m_z^\prime \geq 0
+\]
 
-be = (BEE)! = (m3--m}-m2+ Hey, (39)
+or
 
-so that k > —4$h, the inequality (38) becomes
-k-+-Hi > |i —4h|
-or k+h > m, > —k. (40)
-An equality occurs if and only if y]m,> = 0. Similarly from (35)
-mt nii|m,> = (B—m,2—Fim) mim’),
-showing that p—mZ—im, > 0
-or k > m, > —k—Ah,
-with an equality occurring if and only if q]m> == 0. This result
-combined with (40) shows that &£ > 0 and
-k>m, > ~k, (41)
-with m, = kif aim = 0 and m, = —k if ylm> = 0.
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\beta+\frac{1}{4}\hbar^2 \geq (m_z^\prime - \frac{1}{2}\hbar)^2  \tag{38}
+\]
+
+Thus
+
+<br><span style="color:blue;">
+従って
+</span>
+
+\[
+\beta + \frac{1}{4}\hbar^2 \geq 0
+\]
+
+Defining the number \(k\) by
+
+<br><span style="color:blue;">
+数\(k\)を次のように定義する。
+</span>
+
+\[
+k+\frac{1}{2}\hbar =(\beta+\frac{1}{4}\hbar^2)^{\frac{1}{2}} = (m_x^2+m_y^2+m_z^2+\frac{1}{4}\hbar^2)^{\frac{1}{2}}  \tag{39}
+\]
+
+so that \(k \geq -\frac{1}{2}\hbar\), the inequality (38) becomes
+
+<br><span style="color:blue;">
+\(k \geq -\frac{1}{2}\hbar\)となるので、不等式(38)は
+</span>
+
+\[
+k+\frac{1}{2}\hbar \geq |m_z^\prime - \frac{1}{2}\hbar |
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+k+\hbar \geq m_z^\prime \geq -k  \tag{40}
+\]
+
+An equality occurs if and only if \(\eta|m_z^\prime\rangle = 0\). Similarly from (35)
+
+<br><span style="color:blue;">
+等式は\(\eta|m_z^\prime\rangle = 0\)の場合にのみ成立する。同様に(35)から
+</span>
+
+\[
+\langle m_z^\prime|\eta\overline{\eta}|m_z^\prime\rangle
+=(\beta - m_z^{\prime 2} - \hbar m_z^\prime)\langle m_z^\prime|m_z^\prime\rangle
+\]
+
+showing that
+
+<br><span style="color:blue;">
+以下のようになる
+</span>
+
+\[
+\beta-m_z^{\prime 2}-\hbar m_z^\prime \geq 0
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+k \geq m_z^\prime \geq -k-\hbar
+\]
+
+with an equality occurring if and only if \(\overline{\eta}|m_z^\prime\rangle = 0\). This result
+combined with (40) shows that \(k \geq 0\) and
+
+<br><span style="color:blue;">
+\(\overline{\eta}|m_z^\prime\rangle = 0\) の場合にのみ等式が成立する。この結果(40)と組み合わせると、\(k \geq 0\) と
+</span>
+
+\[
+k \geq m_z^\prime \geq -k  \tag{41}
+\]
+
+with \(m_z^\prime = k\) if \(\overline{\eta}|m_z^\prime\rangle = 0\) and \(m_z^\prime = —k\) if \(\eta|m_z^\prime\rangle = 0\).
+
+<br><span style="color:blue;">
+ただし、\(\overline{\eta}|m_z^\prime\rangle = 0\) の場合には \(m_z^\prime = k\) となり、\(\eta|m_z^\prime\rangle = 0\) の場合には \(m_z^\prime = —k\) となる。
+</span>
+
+</p><p>
+
 From (37)
-m,\m,> = (ym,—fin)|m,> = (m,—h)y|m,).
-Now if m, 4 —k, y/mj> is not zero and is then an eigenket of m,
-belonging to the eigenvalue m,—h. Similarly, ifmj,—h + —k, m,—2h
-is another eigenvalue of m,, and so on. We get in this way a series
-of eigenvalues mj, m,—h, m,—2#,..., which must terminate from (41),
-and can terminate only with the value —k. Again, from the conjugate
+
+<br><span style="color:blue;">
+(37) から
+</span>
+
+\[
+m_z\eta|m_z^\prime\rangle = (\eta m_z-\hbar\eta)|m_z^\prime\rangle
+=(m_z^\prime-\hbar)\eta|m_z^\prime\rangle
+\]
+
+Now if \(m_z^\prime \neq —k, \eta|m_z^\prime\rangle\) is not zero and is then an eigenket of(m_z\)
+belonging to the eigenvalue \(m_z^\prime-\hbar\). Similarly, if \(m_z^\prime - \hbar \neq —k, m_z^\prime - 2\hbar\) is another eigenvalue of \(m_z\), and so on. We get in this way a series
+of eigenvalues \(m_z^\prime,m_z^\prime-\hbar, m_z^\prime-2\hbar,...,\) which must terminate from (41),
+and can terminate only with the value \(—k\). Again, from the conjugate
 complex of equation (37)
-mi, ilmgy = (Fm, HHA) |my> = (mi, -A)Alm,,
-showing that m}+-# is another eigenvalue of m, unless 7|/m,> = 0, in
-which case m, = &. Continuing in this way we get a series of eigen-
-values m,,m,+h,m,+2h,.... which must terminate from (41), and
-can terminate only with the value &. We can conclude that 2% is an
-integral multiple of 4 and that the eigenvalues of m, are
 
-k, k—-h, k—2h, ..., —k+h, —k. (42)
-﻿146 ELEMENTARY APPLICATIONS § 36
+<br><span style="color:blue;">
+ここで、\(m_z^\prime \neq —k, \eta|m_z^\prime\rangle\) がゼロでない場合、\(m_z\) の固有ケットとなり、\(m_z^\prime-\hbar\) の固有値となります。同様に、\(m_z^\prime - \hbar \neq —k, m_z^\prime - 2\hbar\) が \(m_z\) の別の固有値となる場合、以下同様です。このようにして、(41) で必ず終了する一連の固有値 \(m_z^\prime,m_z^\prime-\hbar, m_z^\prime-2\hbar,...,\) が得られます。これは値 \(—k\) でのみ終了できます。ここでも、式 (37) の共役複素数から、
+</span>
 
-The eigenvalues of m, and m, are the same, from symmetry. These
-eigenvalues are all integral or half odd integral multiples of %, accord-
-ing to whether 2k is an even or odd multiple of %.
+\[
+m_z\overline{\eta}|m_z^\prime\rangle = (\overline{\eta} m_z+\hbar\overline{\eta})|m_z^\prime\rangle
+=(m_z^\prime+\hbar)\overline{\eta}|m_z^\prime\rangle
+\]
 
-Let |max> be an eigenket of m, belonging to the maximum eigen-
+showing that \(m_z^\prime+\hbar\) is another eigenvalue of \(m_z\) unless \(\overline{\eta}|m_z^\prime\rangle = 0\), in which case \(m_z^\prime = k\). Continuing in this way we get a series of eigen-
+values \(m_z^\prime, m_z^\prime+\hbar, m_z^\prime+2\hbar,...,\) which must terminate from (41), and
+can terminate only with the value \(k\). We can conclude that \(2k\) is an
+integral multiple of \(\hbar\) and that the eigenvalues of \(m_z\) are
 
-value k, so that qimax) = 0, (43)
+<br><span style="color:blue;">
+\(m_z^\prime+\hbar\) は \(m_z\) の別の固有値であるが、\(\overline{\eta}|m_z^\prime\rangle = 0\) の場合には \(m_z^\prime = k\) となる。このようにして、(41) で終了する一連の固有値 \(m_z^\prime, m_z^\prime+\hbar, m_z^\prime+2\hbar,...,\) が得られる。これは \(k\) でのみ終了する。したがって、\(2k\) は \(\hbar\) の整数倍であり、\(m_z\) の固有値は
+</span>
+
+\[
+k, k-\hbar,k-2\hbar, ...,-k+\hbar, -k  \tag{42}
+\]
+
+The eigenvalues of \(m_x\) and \(m_y\) are the same, from symmetry. These
+eigenvalues are all integral or half odd integral multiples of \(\hbar\), according to whether \(2k\) is an even or odd multiple of \(\hbar\).
+
+<br><span style="color:blue;">
+対称性から、\(m_x\) と \(m_y\) の固有値は同じです。これらの固有値はすべて、\(2k\) が \(\hbar\) の偶数倍か奇数倍かに応じて、\(\hbar\) の整数倍または半奇数倍になります。
+</span>
+
+</p><p>
+Let \(|max\rangle\) be an eigenket of \(m_z\) belonging to the maximum eigen-value \(k\), so that
+
+<br><span style="color:blue;">
+\(|max\rangle\) を最大固有値 \(k\) に属する \(m_z\) の固有ケットとすると、
+</span>
+
+\[
+\overline{\eta}|max\rangle = 0  \tag{43}
+\]
+
 and form the sequence of kets
 
-jmax>, ylmax>, 7?|max>, ...,  »?/*|max). (44)
+<br><span style="color:blue;">
+そしてケット列を形成する
+</span>
 
-These kets are all eigenkets of m,, belonging to the sequence of eigen-
-values (42) respectively. The set of kets (44) is such that the operator
-7 applied to any one of them gives a ket dependent on the set (y
-applied to the last gives zero), and from (36) and (43) one sees
-that 7 applied to any one of the set also gives a ket dependent on the
-set. All the dynamical variables for the system we are now dealing
-with are expressible in terms of 7 and 7, so the set of kets (44) is a
-complete set. There is just one of these kets for each eigenvalue (42)
-of m,, so m, by itself forms a complete commuting set of observables.
+\[
+|max\rangle,　\eta|max\rangle,　\eta^2|max\rangle,　...,　\eta^{2k/\hbar}|max\rangle  \tag{44}
+\]
 
+These kets are all eigenkets of \(m_z\), belonging to the sequence of eigen-values (42) respectively. The set of kets (44) is such that the operator \(\eta\) applied to any one of them gives a ket dependent on the set (\(\eta\) applied to the last gives zero), and from (36) and (43) one sees that \(\overline{\eta}\) applied to any one of the set also gives a ket dependent on the set. All the dynamical variables for the system we are now dealing with are expressible in terms of \(\eta\) and \(\overline{\eta}\), so the set of kets (44) is a complete set. There is just one of these kets for each eigenvalue (42) of \(m_z\), so \(m_z\) by itself forms a complete commuting set of observables.
+
+<br><span style="color:blue;">
+これらのケットはすべて\(m_z\)の固有ケットであり、それぞれ固有値の列(42)に属します。ケットの集合(44)は、そのいずれにも作用素\(\eta\)を適用すると、集合に依存するケットが生成されます（最後のケットに\(\eta\)を適用すると0になります）。また、(36)と(43)から、集合のいずれにも\(\overline{\eta}\)を適用すると、その集合に依存するケットが生成されます。現在扱っているシステムのすべての動的変数は、\(\eta\)と\(\overline{\eta}\)で表現できるため、ケットの集合(44)は完全な集合です。 \(m_z\) の各固有値 (42) に対してこのようなケットが 1 つだけ存在するため、\(m_z\) は単独で観測可能な完全な可換集合を形成します。
+</span>
+
+</p><p>
 It is convenient to define the magnitude of the angular momentum
-vector m to be k, given by (39), rather than f!, because the possible
+vector \(\mathbf{m}\) to be \(k\), given by (39), rather than \(\beta^{\frac{2}{2}}\), because the possible
+values for \(k\) are
 
-values for k are 0, fh, h, 3h, Qh, on, (45)
+<br><span style="color:blue;">
+角運動量ベクトル\(\mathbf{m}\)の大きさを、\(\beta^{\frac{2}{2}}\)ではなく(39)で与えられる\(k\)と定義する方が便利である。\(k\)の取り得る値は
+</span>
 
-extending to infinity, while the possible values for £? are a more
+\[
+0, \frac{1}{2}\hbar, \hbar, \frac{3}{2}\hbar, 2\hbar, ... \tag{45}
+\]
+
+extending to infinity, while the possible values for \(\beta^{\frac{1}{2}}\) are a more
 complicated set of numbers.
 
+<br><span style="color:blue;">
+無限大まで拡張されますが、\(\beta^{\frac{1}{2}}\) の可能な値はより複雑な数値の集合です。
+</span>
+
+</p><p>
 For a dynamical system involving other dynamical variables besides
-Mz, M,, and m,, there may be variables that do not commute with f.
-Then f is no longer a number, but a general linear operator. This
-happens for any orbital angular momentum (22), as x, y, z, Dz, Py, and
-p, do not commute with 8. We shall assume that 8 is always an
-observable, and & can then be defined by (39) with the positive square
-root function and is also an observable. We shall call & so defined
-the magnitude of the angular momentum vector m in the general
+\(m_x,m_y,\) and \(m_z\), there may be variables that do not commute with \(\beta\).
+Then \(\beta\) is no longer a number, but a general linear operator. This
+happens for any orbital angular momentum (22), as \(x, y, z, p_x, p_y,\) and
+\(p_z\) do not commute with \(\beta\). We shall assume that \(\beta\) is always an
+observable, and \(k\) can then be defined by (39) with the positive square
+root function and is also an observable. We shall call \(k\) so defined
+the magnitude of the angular momentum vector \(\mathbf{m}\) in the general
 case. The above analysis by which we obtained the eigenvalues of
-m, is still valid if we replace |m,> by a simultaneous eigenket |k’m,>
-of the commuting observables k and m,, and leads to the result that
-the possible eigenvalues for k are the numbers (45), and for each
-eigenvalue k’ of k the eigenvalues of m, are the numbers (42) with k’
-substituted for k. We have here an example of a phenomenon which
+\(m_z\) is still valid if we replace \(|m_z\rangle\) by a simultaneous eigenket \(|k^\prime m_z^\prime\rangle\) of the commuting observables \(k\) and \(m_z\), and leads to the result that
+the possible eigenvalues for \(k\) are the numbers (45), and for each
+eigenvalue \(k^\prime\) of \(k\) the eigenvalues of \(m_z\) are the numbers (42) with \(k^\prime\)
+substituted for \(k\). We have here an example of a phenomenon which
 we have not met with previously, namely that with two commuting
 observables, the eigenvalues of one depend on what eigenvalue we
-﻿§ 36 PROPERTIES OF ANGULAR MOMENTUM 147
-
 assign to the other. This phenomenon may be understood as the two
 observables being not altogether independent, but partially functions
 of one another. The number of independent simultaneous eigenkets
-of & and m, belonging to the eigenvalues k’ and m, must be indepen-
-dent of mj, since for each independent jk’m}> we can obtain an
-independent |k’m;>, for any mz in the sequence (42), by multiplying
-\b’m,> by a suitable power of y or 7.
+of \(k\) and \(m_z\) belonging to the eigenvalues \(k^\prime\) and \(m_z^\prime\) must be indepen-
+dent of \(m_z^\prime\), since for each independent \(|k^\prime m_z^prime\rangle\) we can obtain an
+independent \(|k^\prime m_z^{\prime\prime}\rangle\), for any \(m_z^{\prime\prime}\) in the sequence (42), by multiplying
+\(k^\prime m_z^\prime\rangle\) by a suitable power of \(\eta\) or \(\overline{|\eta}\).
 
+<br><span style="color:blue;">
+\(m_x,m_y,\) と \(m_z\) 以外の力学変数を含む力学系では、\(\beta\) と交換しない変数が存在する可能性があります。
+その場合、\(\beta\) はもはや数ではなく、一般線形作用素になります。これは、\(x, y, z, p_x, p_y,\) と
+\(p_z\) が \(\beta\) と交換しないため、任意の軌道角運動量 (22) に対して当てはまります。\(\beta\) は常に観測可能であり、\(k\) は (39) 式で正の平方根関数を用いて定義でき、これも観測可能であると仮定します。このように定義された \(k\) を、一般の場合における角運動量ベクトル \(\mathbf{m}\) の大きさと呼びます。 \(m_z\) の固有値を得た上記の解析は、\(|m_z\rangle\) を可換観測量 \(k\) と \(m_z\) の同時固有ケット \(|k^\prime m_z^\prime\rangle\) に置き換えても有効であり、\(k\) の可能な固有値は数 (45) であり、\(k\) の各固有値 \(k^\prime\) に対して、\(m_z\) の固有値は数 (42) で \(k\) を \(k^\prime\) に置き換えたものになるという結果になります。ここでは、これまで遭遇したことのない現象の例、すなわち、2 つの可換観測量がある場合、一方の固有値は他方に割り当てる固有値によって決まるという現象の例を示します。この現象は、2つの観測量が完全に独立しているのではなく、部分的に互いの関数であるとして理解できる。固有値\(k^\prime\)と\(m_z^\prime\)に属する\(k\)と\(m_z\)の独立同時固有ケットの数は\(m_z^\prime\)とは独立でなければならない。なぜなら、各独立\(|k^\prime m_z^prime\rangle\)に対し、数列(42)の任意の\(m_z^{\prime\prime}\)に対して、\(k^\prime m_z^\prime\rangle\)に適切な\(\eta\)または\(\overline{|\eta}\)のべき乗を乗じることで、独立\(|k^\prime m_z^{\prime\prime}\rangle\)を得ることができるからである。
+</span>
+</p><p>
 As an example let us consider a dynamical system with two angular
-momenta m, and m,, which commute with one another. If there are
+momenta \(\mathbf{m}_1\) and \(\mathbf{m}_2\), which commute with one another. If there are
 no other dynamical variables, then all the dynamical variables com-
-mute with the magnitudes /, and k, of m, and mg, so k, and k, are
-numbers. However, the magnitude K of the resultant angular
-momentum M = m,-+m, is not a number (it does not commute
-with the components of m, and m,) and it is interesting to work out
-the eigenvalues of K. This can be done most simply by a method
+mute with the magnitudes \(k_1\) and \(k_2\) of \(\mathbf{m}_1\) and \(\mathbf{m}_2\), so \(k_1\) and \(k_2\) are
+numbers. However, the magnitude \(K\) of the resultant angular
+momentum \(\mathbf{M} = \mathbf{m}_1 + \mathbf{m}_2\) is not a number (it does not commute
+with the components of \(\mathbf{m}_1\) and \(mathbf{m}_2\)) and it is interesting to work out
+the eigenvalues of \(K\). This can be done most simply by a method
 of counting independent kets. There is one independent simultaneous
-eigenket of m,, and m,, belonging to any eigenvalue m,, having one of
-the values k,, ky —h, ky —26h,..., —k, and any eigenvalue m,, having one
-of the values k,, k,—f, k,—2h,..., —k,, and this ket is an eigenket
-of M, belonging to the eigenvalue M, = m,,+mj,. The possible
-values of M’, are thus h,-+-k,, hk, tky—h, ky +k,—2h,...,—k,—ky, and
+eigenket of \(m_{1z}\) and \(m_{2z}\) belonging to any eigenvalue \(m_{1z}^\prime\) having one of
+the values \(k_1, k_1 - \hbar, k_1 - 2\hbar, ..., -k_1\) and any eigenvalue \(m_{2z}^\prime\) having one
+of the values \(k_2, k_2 - \hbar, k_2 - 2\hbar,..., -k_2\), and this ket is an eigenket
+of \(M_z\) belonging to the eigenvalue \(M_z^\prime = m_{1z}^\prime L m_{2z}^\prime\). The possible
+values of \(M_z^\prime\) are thus \(k_1+k_2, k_1+k_2-\hbar,k_1+k_2-2\hbar,...,-k_1-k_2,\) and
 the number of times each of them occurs is given by the following
-scheme (if we assume for definiteness that k, > k,),
+scheme (if we assume for definiteness that \(k_1 \geq k_2\)),
 
-Tey} Keng bey hhg Fi, Boy + ig — 2h ooey ley leg, bey — leg,»
+<br><span style="color:blue;">
+例として、互いに交換する2つの角運動量 \(\mathbf{m}_1\) と \(\mathbf{m}_2\) を持つ力学系を考えてみましょう。他の力学変数が存在しない場合、すべての力学変数は \(\mathbf{m}_1\) と \(\mathbf{m}_2\) の大きさ \(k_1\) と \(k_2\) と交換します。したがって、\(k_1\) と \(k_2\) は数です。しかし、合成角運動量 \(\mathbf{M} = \mathbf{m}_1 + \mathbf{m}_2\) の大きさ \(K\) は数ではありません（\(\mathbf{m}_1\) および \(mathbf{m}_2\) の成分と交換しません）。そのため、\(K\) の固有値を求めることは興味深いことです。これは、独立ケットを数える方法によって最も簡単に行うことができます。 \(m_{1z}\) と \(m_{2z}\) の独立な同時固有ケットが 1 つ存在し、\(k_1, k_1 - \hbar, k_1 - 2\hbar, ..., -k_1\) のいずれかの値をとる任意の固有値 \(m_{1z}^\prime\) と、\(k_2, k_2 - \hbar, k_2 - 2\hbar, ..., -k_2\) のいずれかの値をとる任意の固有値 \(m_{2z}^\prime\) に属し、このケットは \(M_z\) の固有ケットで、固有値 \(M_z^\prime = m_{1z}^\prime L m_{2z}^\prime\) に属します。したがって、\(M_z^\prime\) の可能な値は \(k_1+k_2, k_1+k_2-\hbar,k_1+k_2-2\hbar,...,-k_1-k_2,\) であり、それぞれの出現回数は次の式で表されます（明確にするために \(k_1 \geq k_2\) と仮定した場合）。
+</span>
 
-1 2 3 Qhg tl k+1 (46)
-Jey len, —hey + lig Ih...) — ho — hog
-ky 1 Qk, .. 1
+\[
+\left.
+\begin{array}{c c c c c c c c}
+k_1+k_2, & k_1+k_2-\hbar, & k_1+k_2-2\hbar, & ..., & k_1-k_2, & k_1-k_2-\hbar, & ... & \\
+1 & 2 & 3 & ... & 2k_2+1 & 2k_2+1& ... & \\
+ & & & ... & -k_1+k_2, & -k_1+k_2-\hbar, & ... & -k_1-k_2 \\
+ & & & ... & 2k_2+1 & 2k_2 & ... & 1
+\end{array}
+\right\}
+\tag{46}
+\]
 
-Now each eigenvalue K’ of K will be associated with the eigenvalues
-K’, K'—h, K'—%,..., ~K’' for M,, with the same number of indepen-
-dent simultaneous eigenkets of K and M, for each of them. The total
-number of independent eigenkets of J, belonging to any eigenvalue
-Mi must be the same, whether we take them to be simultaneous
-eigenkets of m,, and mg, or simultaneous eigenkets of K and M,, i.e.
+Now each eigenvalue \(K^\prime\) of \(K\) will be associated with the eigenvalues
+\(K^\prime, K^\prime - \hbar, K^\prime - 2\hbar, ..., -K^\prime\) for \(M_z\), with the same number of indepen-
+dent simultaneous eigenkets of \(K\) and \(M_z\) for each of them. The total
+number of independent eigenkets of \(M_z\) belonging to any eigenvalue
+\(M_z^\prime\) must be the same, whether we take them to be simultaneous
+eigenkets of \(m_{1z}\) and \(m_{2z}\) or simultaneous eigenkets of \(K\) and \(M_z\), i.e.
 it is always given by the scheme (46). It follows that the eigenvalues
+for \(K\) are
 
-for K are
+<br><span style="color:blue;">
+ここで、\(K\) の各固有値 \(K^\prime\) は、\(M_z\) の固有値 \(K^\prime, K^\prime - \hbar, K^\prime - 2\hbar, ..., -K^\prime\) と対応付けられ、それぞれについて \(K\) と \(M_z\) の独立同時固有ケットの数が同数になります。任意の固有値 \(M_z\) に属する \(M_z\) の独立固有ケットの総数は、\(m_{1z}\) と \(m_{2z}\) の同時固有ケットと考えても同じでなければなりません。つまり、常に式 (46) で与えられます。したがって、\(K\)の固有値は
+</span>
 
-lett, ey-tky—h, fey hog — 2H, ws ey — eg, (47)
+\[
+k_1+k_2,　k_1+k_2-\hbar,　k_1+k_2-2\hbar,　...,　k_1-k_2  \tag{47}
+\]
 
-and that for each of these eigenvalues for K and an eigenvalue for
-﻿148 ELEMENTARY APPLICATIONS § 36
+and that for each of these eigenvalues for \(K\) and an eigenvalue for
+\(M_z\) going with it there is just one independent simultaneous eigenket
+of \(K\) and \(M_z\).
 
-M, going with it there is just one independent simultaneous eigenket
-of K and M,.
+<br><span style="color:blue;">
+そして、\(K\) のこれらの固有値とそれに付随する \(M_z\) の固有値それぞれに対して、\(K\) と \(M_z\) の独立な同時固有ケットが 1 つだけ存在します。
+</span>
 
+</p><p>
 The effect of rotations on eigenkets of angular momentum variables
-should be noted. Take any eigenket |) of the z component of total
+should be noted. Take any eigenket \(|M_z^\prime\rangle\) of the \(z\) component of total
 angular momentum for any dynamical system, and apply to it a small
-rotation through an angle 6¢ about the z-axis. It will change into
+rotation through an angle \(\delta\phi\) about the \(z\)-axis. It will change into
 
-(1-+8¢r,)|Mz> = (1—i8$.M,/)|M,)
+<br><span style="color:blue;">
+回転が角運動量変数の固有ケットに与える影響に注意する必要がある。任意の力学系における全角運動量の\(z\)成分の任意の固有ケット\(|M_z^\prime\rangle\)を取り、\(z\)軸を中心に角度\(\delta\phi\)の小さな回転を加えると、次のように変化する。
+</span>
+
+\[
+(1+\delta\phi r_z)|M_z^\prime\rangle = (1—i\delta\phi M_z/\hbar)|M_z^\prime\rangle
+\]
+
 with the help of (32). This equals
-(1—i86.Mi/%) |My == e~BOMIh| >
 
-to the first order in 8¢. Thus |M{> gets multiplied by the numerical
-factor e-®¢MJk, By applying a succession of these small rotations, we
-find that the application of a finite rotation through an angle ¢ about
-the z-axis causes |M{> to get multiplied by e~**™%"_ Putting 6 = 2m,
-we find that an application of one revolution about the z-axis leaves
-|M“> unchanged if the eigenvalue M;, is an integral multiple of f and
-causes |M{> to change sign if 1, is half an odd integral multiple of h.
-Now consider an eigenket |K’> of the magnitude K of the total angu-
-lar momentum. If the eigenvalue K’ is an integral multiple of #, the
-possible eigenvalues of M, are all integral multiples of# and the applica-
-tion of one revolution about the z-axis must leave |K’> unchanged.
-Conversely, if K’ is halfan odd integral multiple of 4, the possible eigen-
-values of M, are all half odd integral multiples of # and the revolution
-must change the sign of |K’>. From symmetry, the application of a
-revolution about any other axis must have the same effect on |’)
-as one about the z-axis. We thus get the general result, the application
+<br><span style="color:blue;">
+(32)の助けを借りれば、これは
+</span>
+
+\[
+(1—i\delta\phi M_z^\prime/\hbar)|M_z^\prime\rangle = e^{-i\delta\phi M_z^\prime/\hbar}|M_z^\prime\rangle
+\]
+
+to the first order in \(\delta\phi\). Thus \(|M_z^\prime\rangle\) gets multiplied by the numerical
+factor \(e^{-i\delta\phi M_z^\prime/\hbar}\), By applying a succession of these small rotations, we
+find that the application of a finite rotation through an angle \(\phi\) about
+the \(z\)-axis causes \(|M_z^\prime\rangle\) to get multiplied by \(e^{-i\phi M_z^\prime/\hbar}\).Putting \(\phi = 2\pi\),
+we find that an application of one revolution about the \(z\)-axis leaves
+\(|M_z^\prime\rangle\) unchanged if the eigenvalue \(M_z^\prime\) is an integral multiple of \(\hbar\) and
+causes \(|M_z^\prime\rangle\) to change sign if \(M_z^\prime\) is half an odd integral multiple of \(\hbar\).
+Now consider an eigenket \(|K^\prime\rangle\) of the magnitude \(K\) of the total angu-
+lar momentum. If the eigenvalue \(K^\prime\) is an integral multiple of \'\hbar\), the
+possible eigenvalues of \(M_z\) are all integral multiples of \(\hbar\) and the application of one revolution about the \(z\)-axis must leave \(|K^\prime\rangle\) unchanged.
+Conversely, if \(K^\prime\) is half an odd integral multiple of \(\hbar\), the possible eigen-
+values of \(M_z\) are all half odd integral multiples of \(\hbar\) and the revolution
+must change the sign of \(|K^\prime\rangle\). From symmetry, the application of a
+revolution about any other axis must have the same effect on \(|K^\prime\rangle\) as one about the \(z\)-axis. We thus get the general result, the application
 of one revolution about any axis leaves a ket unchanged or changes tts
 sign according to whether it belongs to eigenvalues of the magnitude of
 the total angular momentum which are integral or half odd integral
-multiples of h. A state, of course, is always unaffected by the revolu-
+multiples of \(\hbar\). A state, of course, is always unaffected by the revolu-
 tion, since a state is unaffected by a change of sign of the ket corre-
 sponding to it.
 
+<br><span style="color:blue;">
+\(\delta\phi\) の 1 次まで。したがって、\(|M_z^\prime\rangle\) には数値係数 \(e^{-i\delta\phi M_z^\prime/\hbar}\) が乗じられます。これらの小さな回転を連続して適用すると、\(z\) 軸を中心に角度 \(\phi\) の有限回転を適用すると、\(|M_z^\prime\rangle\) に \(e^{-i\phi M_z^\prime/\hbar}\) が乗じられることがわかります。\(\phi = 2\pi\) と置くと、\(z\) 軸を中心に 1 回転を適用しても、固有値 \(M_z^\prime\) が \(\hbar\) の整数倍である場合、\(|M_z^\prime\rangle\) は変化せず、
+\(M_z^\prime\) が \(\hbar\) の半奇数の整数倍である場合、\(|M_z^\prime\rangle\) の符号が変わります。
+ここで、全角運動量の大きさ \(K\) の固有ケット \(|K^\prime\rangle\) を考えます。固有値 \(K^\prime\) が \'\hbar\) の整数倍である場合、\(M_z\) の取り得る固有値はすべて \(\hbar\) の整数倍となり、\(z\) 軸を中心に 1 回転させても \(|K^\prime\rangle\) は変化しません。
+逆に、\(K^\prime\) が \(\hbar\) の半奇数整数倍である場合、\(M_z\) の取り得る固有値はすべて \(\hbar\) の半奇数整数倍となり、回転によって \(|K^\prime\rangle\) の符号が変化する。対称性から、他の任意の軸を中心とした回転は、\(z\) 軸を中心とした回転と同様に \(|K^\prime\rangle\) に影響を及ぼす。したがって、一般的な結果として、任意の軸を中心とした回転では、ケットは変化しないか、または、ケットが全角運動量の大きさの固有値のうち \(\hbar\) の整数倍か半奇数整数倍のいずれに属するかに応じて符号が変化する。もちろん、状態は回転によって常に影響を受けません。なぜなら、状態はそれに対応するケットの符号の変化によって影響を受けないからです。
+</span>
+
+</p><p>
 For a dynamical system involving only orbital angular momenta,
 a ket must be unchanged by a revolution about an axis, since we can
-set up Schrédinger’s representation, with the coordinates of all the
-particles diagonal, and the Schrédinger representative of a ket will
+set up Schr&ouml;dinger's representation, with the coordinates of all the
+particles diagonal, and the Schr&ouml;dinger representative of a ket will
 get brought back to its original value by the revolution. It follows
 that the eigenvalues of the magnitude of an orbital angular momentum
 are always integral multiples of k. The eigenvalues of a component
-﻿§ 36 PROPERTIES OF ANGULAR MOMENTUM 149
-
 of an orbital angular momentum are also always integral multiples
-of #. For a spin angular momentum, Schrédinger’s representation
-
+of \(\hbar\). For a spin angular momentum, Schr&ouml;dinger's representation
 does not exist and both kinds of eigenvalue are possible.
 
-37. The spin of the electron
+<br><span style="color:blue;">
+軌道角運動量のみを含む力学系の場合、ケットは軸の周りの回転によって変化しないはずです。なぜなら、すべての粒子の座標を対角線上に置いたシュレーディンガー表示を設定でき、ケットのシュレーディンガー表示は回転によって元の値に戻るからです。したがって、軌道角運動量の大きさの固有値は常にkの整数倍になります。軌道角運動量の成分の固有値も常に\(\hbar\)の整数倍になります。スピン角運動量の場合、シュレーディンガー表示は存在せず、両方の種類の固有値が考えられます。
+</span>
+
+</p>
+
+<h3>37. The spin of the electron　<span style="color:blue;">電子のスピン</span></h3>
+<p>
 
 Electrons, and also some of the other fundamental particles (pro-
-tons, neutrons) have a spin whose magnitude is 4%. This is found
+tons, neutrons) have a spin whose magnitude is \(\frac{1}{2}\hbar\). This is found
 from experimental evidence, and also there are theoretical reasons
 showing that this spin value is more elementary than any other, even
 spin zero (see Chapter XI). The study of this particular spin is there-
 fore of special importance.
 
-For dealing with an angular momentum m whose magnitude is 3%,
+<br><span style="color:blue;">
+電子、そして他の基本粒子（陽子、中性子）の一部は、スピンの大きさが\(\frac{1}{2}\hbar\)です。これは実験的証拠から明らかであり、また、このスピン値が他のどのスピン値、さらにはスピンゼロよりも基本的であることを示す理論的根拠もあります（第11章参照）。したがって、この特定のスピンの研究は特に重要です。
+</span>
 
-it is convenient to put m = Hie. (48)
+</p><p>
+For dealing with an angular momentum \(\mathbf{m}\) whose magnitude is \(\frac{1}{2}\hbar\),it is convenient to put
 
-The components of the vector « then satisfy, from (27),
+<br><span style="color:blue;">
+大きさが\(\frac{1}{2}\hbar\)である角運動量\(\mathbf{m}\)を扱うには、次のように書くのが便利である。
+</span>
 
-Oy Fg 0, 0y = Qoz
-0,0 y-—8,0, = to, (49)
+\[
+\mathbf{m} = \frac{1}{2}\hbar\boldsymbol{\sigma}  \tag{48}
+\]
 
-Og Sy—FySz, = 2to,.
-The eigenvalues of m, are $7 and —4%, so the eigenvalues of a, are 1
-and —1, and o2 has just the one eigenvalue 1. It follows that o? must
-equal 1, and similarly for o2 and a3, i.e.
+The components of the vector \(\boldsymbol{\sigma}\) then satisfy, from (27),
 
-B= =of =i, (50)
+<br><span style="color:blue;">
+このときベクトル\(\boldsymbol{\sigma}\)の成分は、(27)より、
+</span>
+
+\[
+\left.
+\begin{align}
+\sigma_y\sigma_z - \sigma_z\sigma_y &= 2i\sigma_x \\
+\sigma_z\sigma_x - \sigma_x\sigma_z &= 2i\sigma_y \\
+\sigma_x\sigma_y - \sigma_y\sigma_x &= 2i\sigma_z
+\end{align}
+\right\}
+\tag{49}
+\]
+
+The eigenvalues of \(m_z\) are \(\frac{1}{2}\hbar\) and \(-\frac{1}{2}\hbar\), so the eigenvalues of \(\sigma_z\) are 1
+and —1, and \(\sigma_z^2\) has just the one eigenvalue 1. It follows that \(\sigma_z^2\) must equal 1, and similarly for \(\sigma_x^2\) and \(\sigma_y^2\), i.e.
+
+<br><span style="color:blue;">
+\(m_z\) の固有値は \(\frac{1}{2}\hbar\) と \(-\frac{1}{2}\hbar\) なので、\(\sigma_z\) の固有値は 1
+と -1 であり、\(\sigma_z^2\) には 1 という唯一の固有値があります。したがって、\(\sigma_z^2\) は 1 に等しくなければならず、\(\sigma_x^2\) と \(\sigma_y^2\) についても同様です。つまり、
+</span>
+
+\[
+\sigma_x^2 = \sigma_y^2 = \sigma_z^2 = 1  \tag{50}
+\]
+
 We can get equations (49) and (50) into a simpler form by means of
-
 some straightforward non-commutative algebra. From (50)
 
-2 2.
-OF, 9, 0% = 0
+<br><span style="color:blue;">
+式(49)と式(50)は、ある簡単な非可換代数によってより単純な形にすることができる。(50)より
+</span>
 
-or 0,(Fy F,— 0, Fy) + (oy 0,—G, 5y)o, = 0
+\[
+\sigma_y^2\sigma_z - \sigma_z\sigma_y^2 = 0
+\]
 
-or Oy Fg tz Fy =
+or
 
-with the help of the first of equations (49). Thismeansa, oa, = —oy oz.
-Two dynamical variables or linear operators like these which satisfy
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\sigma_y(\sigma_y\sigma_z - \sigma_z\sigma_y)+(\sigma_y\sigma_z - \sigma_z\sigma_y)\sigma_y = 0
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\sigma_y\sigma_x + \sigma_x\sigma_y = 0
+\]
+
+with the help of the first of equations (49). Thismeans \(\sigma_x\sigma_y = -\sigma_y\sigma_x\). Two dynamical variables or linear operators like these which satisfy
 the commutative law of multiplication except for a minus sign will
-be said to anticommute. Thus o, anticommutes with c,. From sym-
+be said to anticommute. Thus \(\sigma_x\) anticommutes with \(\sigma_y\). From symmetry each of the three dynamical variables \(\sigma_x,\sigma_y,\sigma_z\) must anti-commute with any other. Equations (49) may now be written
 
-metry each of the three dynamical variables c,, o,, o, must anti-
-commute with any other. Equations (49) may now be written
+<br><span style="color:blue;">
+式(49)の最初の式を用いて、\(\sigma_x\sigma_y = -\sigma_y\sigma_x\) である。負の符号を除いて乗法の交換法則を満たすこのような2つの動的変数または線型作用素は、反交換すると言われる。したがって、\(\sigma_x\) は \(\sigma_y\) と反交換する。対称性から、3つの動的変数 \(\sigma_x,\sigma_y,\sigma_z\) はそれぞれ他のどの変数とも反交換する。式(49)は次のように書ける。
+</span>
 
-0,0, = 0, = —G, Oy,
-Oz F_ = Wy = —O,5,, (51)
-Og Fy = 1G, = — dy Fz,
-and also from (50 GO, 6,0, == t. 52
-Yo) 7
+\[
+\begin{align}
+\sigma_y\sigma_z &= i\sigma_x = -\sigma_z\sigma_y \\
+\\
+\sigma_z\sigma_x &= i\sigma_y = -\sigma_x\sigma_z \\
+\\
+\sigma_x\sigma_y &= i\sigma_z = -\sigma_y\sigma_x
+\end{align}
+\tag{51}
+\]
 
-3595.57 L
-﻿150 ELEMENTARY APPLICATIONS § 37
+and also from (50)
+
+<br><span style="color:blue;">
+また（50）からも
+</span>
+
+\[
+\sigma_x\sigma_y\sigma_z = i  \tag{52}
+\]
 
 Equations (50), (51), (52) are the fundamental equations satisfied by
-the spin variables o describing a spin whose magnitude is 4%.
+the spin variables \(\sigma\) describing a spin whose magnitude is \(\frac{1}{2}\hbar\).
 
-Let us set up a matrix representation for the o’s and let us take o,
-to be diagonal. If there are no other independent dynamical variables
-besides the m’s or o’s in our dynamical system, then o, by itself forms
-a complete set of commuting observables, since the form of equations
-(50) and (51) is such that we cannot construct out of o,, o,, and o,
-any new dynamical variable that commutes with o,. The diagonal
+<br><span style="color:blue;">
+式(50)、(51)、(52)は、スピン変数\(\sigma\)が満たす基本方程式であり、その大きさは\(\frac{1}{2}\hbar\)である。
+</span>
 
-elements of the matrix representing o, being the eigenvalues 1 and
-—1 of o,, the matrix itself will be
+</p><p>
+Let us set up a matrix representation for the \(\sigma\)'s and let us take \(\sigma_z\) to be diagonal. If there are no other independent dynamical variables besides the \(m\)'s or \(\sigma\)'s in our dynamical system, then \(\sigma_z\) by itself forms a complete set of commuting observables, since the form of equations (50) and (51) is such that we cannot construct out of \(\sigma_x, \sigma_y,\) and \(\sigma_z\) any new dynamical variable that commutes with \(\sigma_z\). The diagonal
+elements of the matrix representing \(\sigma_z\) being the eigenvalues 1 and —1 of \(\sigma_z\), the matrix itself will be
 
-( 1 0
-0 i}:
-L ay a)
-et a, be represented by ):
-a
+<br><span style="color:blue;">
+\(\sigma\) の行列表現を設定し、\(\sigma_z\) を対角行列とします。\(m\) や \(\sigma\) 以外の独立な動的変数が力学系に存在しない場合、\(\sigma_z\) はそれ自体で可換な観測量の完全な集合を形成します。なぜなら、式 (50) と (51) の形から、\(\sigma_x, \sigma_y,\) と \(\sigma_z\) から \(\sigma_z\) と可換な新しい動的変数を構成することはできないからです。\(\sigma_z\) を表す行列の対角要素は \(\sigma_z\) の固有値 1 と -1 であるため、行列自体は
+</span>
 
-This matrix must be Hermitian, so that a, and a, must be real and
-a, and a, conjugate complex numbers. The equation o,¢, = —o,9,
+\[
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}
+\]
 
-gives us
-ay Ge) f% a
-—d, —a Mz —a,)’
+Let \(\sigma_x\) be represented by
 
-so that a, = a, = 0. Hence o, is represented by a matrix of the form
+<br><span style="color:blue;">
+\(\sigma_x\)を次のように表す。
+</span>
 
-0 a,
+\[
+\begin{pmatrix}
+a_1 & a_2 \\
+a_3 & a_4
+\end{pmatrix}
+\]
 
-a, Of
-The equation of = 1 now shows that a,a, = 1. Thus a, and ag, being
-conjugate complex numbers, must be of the form e’“ and e-* re-
+This matrix must be Hermitian, so that \(a_1\) and \(a_4\) must be real and \(a_2\) and \(a_3\) conjugate complex numbers. The equation \(\sigma_z\sigma_x = -\sigma_x\sigma_z\) gives us
 
-spectively, where « is a real number, so that o, is represented by a
-matrix of the form 0 “
+<br><span style="color:blue;">
+この行列はエルミート行列でなければならないので、\(a_1\)と\(a_4\)は実数で、\(a_2\)と\(a_3\)は共役複素数でなければならない。\(\sigma_z\sigma_x = -\sigma_x\sigma_z\)という式は次のように表される。
+</span>
 
-ete OP
-Similarly it may be shown that a, is also represented by a matrix of
-this form. By suitably choosing the phase factors in the representa-
+\[
+\begin{pmatrix}
+a_1 & a_2 \\
+-a_3 & -a_4
+\end{pmatrix}
+=-
+\begin{pmatrix}
+a_1 & -a_2 \\
+a_3 & -a_4
+\end{pmatrix}
+\]
 
-tion, which is not completely determined by the condition that o,
-shall be diagonal, we can arrange that o, shall be represented by the
+so that \(a_1 = a_4 = 0\). Hence \(\sigma_x\) is represented by a matrix of the form
 
-matrix 01
-1 of
+<br><span style="color:blue;">
+\(a_1 = a_4 = 0\)となる。したがって\(\sigma_x\)は次の形式の行列で表される。
+</span>
 
-The representative of o, is then determined by the equation
+\[
+\begin{pmatrix}
+0 & a_2 \\
+a_3 & 0
+\end{pmatrix}
+\]
 
-= 0,0, We thus obtain finally the three matrices
+The equation \(\sigma_x^2 = 1\) now shows that \(a2a_3 = 1\). Thus \(a_2\) and \(a_3\), being conjugate complex numbers, must be of the form \(e^{i\alpha}\) and \(e^{-i\alpha}\) respectively, where \(\alpha\) is a real number, so that \(\sigma_x\) is represented by a
+matrix of the form 
 
-(to) (Fo op a
+<br><span style="color:blue;">
+\(\sigma_x^2 = 1\) という式は、\(a2a_3 = 1\) であることを示しています。したがって、\(a_2\) と \(a_3\) は共役複素数であるため、それぞれ \(e^{i\alpha}\) と \(e^{-i\alpha}\) の形をとる必要があります。ここで \(\alpha\) は実数です。したがって、\(\sigma_x\) は次の形式の行列で表されます。
+</span>
 
-Cy
-﻿§ 37 THE SPIN OF THE ELECTRON 151
+\[
+\begin{pmatrix}
+0 & e^{i\alpha} \\
+e^{-i\alpha} & 0
+\end{pmatrix}
+\]
 
-to represent o,, o,, and a, respectively, which matrices satisfy all the
-algebraic relations (49), (50), (51), (52). The component of the vector
-o in an arbitrary direction specified by the direction cosines 1, m, n,
-namely Ic,-+-mo,-+no,, is represented by
-n l—im
-lism on} (8
+Similarly it may be shown that \(\sigma_y\) is also represented by a matrix of this form. By suitably choosing the phase factors in the representation, which is not completely determined by the condition that \(\sigma_z\) shall be diagonal, we can arrange that \(\sigma_x\) shall be represented by the matrix
+
+<br><span style="color:blue;">
+同様に、\(\sigma_y\) もこの形式の行列で表されることが示される。\(\sigma_z\) が対角行列であるという条件によって完全に決定されるわけではないが、この表現における位相係数を適切に選択することで、\(\sigma_x\) を次の行列で表すことができる。
+</span>
+
+\[
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}
+\]
+
+The representative of \(\sigma_y\) is then determined by the equation
+\(\sigma_y = i\sigma_x\sigma_z\). We thus obtain finally the three matrices
+
+<br><span style="color:blue;">
+\(\sigma_y\) の代表は、式 \(\sigma_y = i\sigma_x\sigma_z\) によって決定されます。こうして、最終的に3つの行列が得られます。
+</span>
+
+\[
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}
+,　
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}
+,　
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}
+\tag{53}
+\]
+
+to represent \(\sigma_x,\sigma_y,\) and \(\sigma_z\) respectively, which matrices satisfy all the algebraic relations (49), (50), (51), (52). The component of the vector \(\boldsymbol{\sigma}\) in an arbitrary direction specified by the direction cosines \(l,m,n,\) namely \(l\sigma_x+m\sigma_y+n\sigma_z,\) is represented by
+
+<br><span style="color:blue;">
+\(\sigma_x,\sigma_y,\) と \(\sigma_z\) をそれぞれ表す行列であり、これらの行列は代数関係式 (49), (50), (51), (52) をすべて満たす。方向余弦 \(l,m,n,\) で指定される任意の方向のベクトル \(\boldsymbol{\sigma}\) の成分、すなわち \(l\sigma_x+m\sigma_y+n\sigma_z,\) は次のように表される。
+</span>
+
+\[
+\begin{pmatrix}
+n & l-im \\
+l+im & -n
+\end{pmatrix}
+\tag{54}
+\]
+
+</p><p>
 The representative of a ket vector will consist of just two numbers,
-corresponding to the two values +1 and —1 for oj. These two num-
-bers form a function of the variable of whose domain consists of only
-the two points +land —1. The state for which oc, has the value unity
-will be represented by the function, f,(o{) say, consisting of the pair
-of numbers 1, 0 and that for which o, has the value —1 will be
-represented by the function, fs(o,) say, consisting of the pair 0, 1.
-Any function of the variable oj, i.e. any pair of numbers, can be
-expressed as a linear combination of these two. Thus any state can
-be obtained by superposition of the two states for which o, equals +1 and
-—1 respectively. For example, the state for which the component of
-o in the direction |, m, n, represented hy (54), has the value +1 is
-represented by the pair of numbers a, 6 which satisfy
+corresponding to the two values +1 and —1 for \(\sigma_z^\prime\). These two numbers form a function of the variable \(\sigma_z^\prime\) whose domain consists of only the two points +land —1. The state for which \(\sigma_z\) has the value unity will be represented by the function, \(f_\alpha(\sigma_z^\prime)\) say, consisting of the pair
+of numbers 1, 0 and that for which \(\sigma_z\) has the value —1 will be
+represented by the function, \(f_\beta(\sigma_z^\prime)\) say, consisting of the pair 0, 1. Any function of the variable \(\sigma_z^\prime\), i.e. any pair of numbers, can be expressed as a linear combination of these two. Thus any state can be obtained by superposition of the two states for which \(\sigma_z\) equals +1 and —1 respectively. For example, the state for which the component of \(\boldsymbol{\sigma}\) in the direction \(l,m,n,\) represented by (54), has the value +1 is
+represented by the pair of numbers \(a, b\) which satisfy
 
-n a) a\ fa
-itim —n ) ~ (;
-or nat+(l—im)b = a,
+<br><span style="color:blue;">
+ケットベクトルの代表値は、\(\sigma_z^\prime\) の +1 と -1 という2つの値に対応する、わずか2つの数値で構成されます。これらの2つの数値は、変数 \(\sigma_z^\prime\) の関数を形成し、その定義域は +1 と -1 の2点のみで構成されます。 \(\sigma_z\) の値が 1 である状態は、例えば 1, 0 の数値ペアからなる関数 \(f_\alpha(\sigma_z^\prime)\) で表され、\(\sigma_z\) の値が -1 である状態は、例えば 0, 1 の数値ペアからなる関数 \(f_\beta(\sigma_z^\prime)\) で表されます。変数 \(\sigma_z^\prime\) の任意の関数、つまり任意の数値ペアは、これら 2 つの関数の線形結合として表すことができます。したがって、任意の状態は、\(\sigma_z\) がそれぞれ +1 と -1 である 2 つの状態の重ね合わせによって得られます。例えば、(54)で表される\(l,m,n,\)方向の\(\boldsymbol{\sigma}\)の成分が値+1を持つ状態は、\(a, b\)のペアで表される。これは
+</span>
 
-(+tim)a—nb = b.
+\[
+\begin{pmatrix}
+n & l-im \\
+l+im & -n
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+b
+\end{pmatrix}
+=
+\begin{pmatrix}
+a \\
+b
+\end{pmatrix}
+\]
 
-a l—im I+”
+or
 
-Th ~ = = .
-“ 6 in ~ Tim
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\begin{align}
+na+(l-im)b &= a \\
+(l+im)a-nb &= b
+\end{align}
+\]
+
+Thus
+
+<br><span style="color:blue;">
+したがって
+</span>
+
+\[
+\frac{a}{b}=\frac{l-im}{1-n}=\frac{1+n}{l+im}
+\]
 
 This state can be regarded as a superposition of the two states for
+which(\sigma_z\) equals +1 and —1, the relative weights in the superposition process being as
 
-which o, equals +1 and —1, the relative weights in the superposition
+<br><span style="color:blue;">
+この状態は、(\sigma_z\)が+1と-1である2つの状態の重ね合わせとみなすことができ、重ね合わせ過程における相対的な重みは次のようになる。
+</span>
 
-process being as
-jal? : [|]? = [l—im|?: (l—n)? = l+n:l—n. (55)
+\[
+|a|^2 : |b|^2  = |l—im|^2 : (1—n)^2 = 1+n :1—n  \tag{55}
+\]
+
+</p><p>
 For the complete description of an electron (or other elementary
-particle with spin 44) we require the spin dynamical variables o,
-whose connexion with the spin angular momentum is given by (48),
-together with the Cartesian coordinates x, y, z and momenta p,, Dy,
-p, The spin dynamical variables commute with these coordinates
-and momenta. Thus a complete set of commuting observables for a
-system consisting of a single electron will be z, y, z, ¢,. In a repre-
-sentation in which these are diagonal, the representative of any state
-﻿152 ELEMENTARY APPLICATIONS § 37
-
-will be a function of four variables 2’, y’, 2’, oj. Since o, has a domain
+particle with spin \(\frac{1}{2}\hbar\)) we require the spin dynamical variables \(\sigma\), whose connexion with the spin angular momentum is given by (48), together with the Cartesian coordinates \(x, y, z\) and momenta \(p_x, p_y,p_z\). The spin dynamical variables commute with these coordinates and momenta. Thus a complete set of commuting observables for a system consisting of a single electron will be \(x,y,z,\sigma_z\). In a representation in which these are diagonal, the representative of any state will be a function of four variables \(x^\prime, y^\prime,z^\prime, \sigma_z^\prime\). Since \(\sigma_z^\prime\) has a domain
 consisting of only two points, namely 1 and —1, this function of four
 variables is the same as two functions of three variables, namely the
 two functions
 
-Ca'y"2" |) == <8", y', 2’, +1), kaly'2'|>_ == <a’, y’,2',—1|>. (56)
+<br><span style="color:blue;">
+電子（またはスピン \(\frac{1}{2}\hbar\) を持つ他の素粒子）を完全に記述するためには、スピン角運動量との関連が式 (48) で与えられるスピン力学変数 \(\sigma\) と、直交座標 \(x, y, z\) および運動量 \(p_x, p_y, p_z\) が必要となる。スピン力学変数はこれらの座標および運動量と交換可能である。したがって、単一電子からなるシステムの交換可能な観測量の完全な集合は \(x, y, z, \sigma_z\) となる。これらが対角となる表現では、任意の状態の代表値は 4 つの変数 \(x^\prime, y^\prime, z^\prime, \sigma_z^\prime\) の関数となる。 \(\sigma_z^\prime\) の定義域は 1 と -1 の 2 つの点のみから構成されるため、この 4 変数関数は 3 変数関数 2 つ、つまり次の 2 つの関数と同じになります。
+</span>
+
+\[
+\langle x^\prime y^\prime z^\prime|\rangle_+ = \langle x^\prime,y^\prime,z^\prime,+1|\rangle,　\langle x^\prime y^\prime z^\prime|\rangle_- = \langle x^\prime,y^\prime,z^\prime,-1|\rangle  \tag{56}
+\]
+
 Thus the presence of the spin may be considered either as introducing a
+new variable into the representative of a state or as giving this representative two components.
 
-new variable into the representative of a state or as giving this representa-
-tive two components.
+<br><span style="color:blue;">
+したがって、スピンの存在は、状態の表現に新しい変数を導入するもの、あるいはこの表現に2つの要素を与えるもののいずれかとして考えることができます。
+</span>
 
-38. Motion in a central field of force
+</p>
+
+<h3>38. Motion in a central field of force　<span style="color:blue;">中心力場における運動</span></h3>
+<p>
 
 An atom consists of a massive positively charged nucleus together
 with a number of electrons moving round, under the influence of the
@@ -875,366 +1748,570 @@ some kind of average of the forces due to the other electrons. Thus
 our present problem of the motion of a particle in a central field of
 force forms a corner-stone in the theory of the atom.
 
+<br><span style="color:blue;">
+原子は、正に帯電した質量の大きな原子核と、原子核の引力と電子同士の反発力によって周囲を運動する多数の電子から構成されています。この力学系を正確に扱うことは、数学的に非常に難しい問題です。しかし、各電子が、ある中心力場、すなわち原子核の力場（固定されていると仮定）の中を独立して運動し、他の電子による力の平均が存在するという大まかな近似を行うことで、この系の主要な特徴をある程度理解することができます。このように、中心力場における粒子の運動という我々の現在の問題は、原子理論の基礎を成しています。
+</span>
+
+</p><p>
+
 Let the Cartesian coordinates of the particle, referred to a system
-of axes with the centre of force as origin, be x, y, z and the corre-
-sponding components of momentum p,, p,, Pp, The Hamiltonian,
+of axes with the centre of force as origin, be \(x, y, z\) and the corre-
+sponding components of momentum \(p_x, p_y, p_z\). The Hamiltonian,
 with neglect of relativistic mechanics, will be of the form
 
-H = 1/2m.(p2+p2+p2)+V, (57)
+<br><span style="color:blue;">
+力の中心を原点とする軸系における粒子の直交座標を\(x, y, z\)とし、対応する運動量成分を\(p_x, p_y, p_z\)とする。ハミルトニアンは、相対論的力学を無視すれば、以下の形となる。
+</span>
 
-where V, the potential energy, is a function only of (2?+y?+2*). To
-develop the theory it is convenient to introduce polar dynamical
-variables. We introduce first the radius 7, defined as the positive
+\[
+H = 1/2m.(p_x^2 + p_y^2 + p_z^2)+V  \tag{57}
+\]
 
-square root r= (aL y?+a2)i,
-Its eigenvalues go from 0 too. If we evaluate its P.B.s with p,, p,,
-and p,, we obtain, with the help of formula (32) of § 22, -
+where \(V\), the potential energy, is a function only of \((x^2 + y^2 + z^2)\). To develop the theory it is convenient to introduce polar dynamical
+variables. We introduce first the radius \(r\), defined as the positive
+square root
 
-or 2 y
+<br><span style="color:blue;">
+ここで、ポテンシャルエネルギー\(V\)は\((x^2 + y^2 + z^2)\)のみの関数である。理論を展開するには、極性力学変数を導入するのが便利である。まず、半径\(r\)を導入する。これは、正の平方根として定義される。
+</span>
 
-2
-[7, De = ex = r [7, Pyl = , [7, Pe] = 7’
+\[
+r= (x^2 + y^2 + z^2)^{\frac{1}{2}}
+\]
+
+Its eigenvalues go from 0 to \(\infty\). If we evaluate its P.B.s with \(p_x, p_y,\) and \(p_z\), we obtain, with the help of formula (32) of §22,
+
+<br><span style="color:blue;">
+その固有値は0から\(\infty\)までである。\(p_x, p_y,\)および\(p_z\)を用いてその固有値を求めると、§22の式(32)を用いて、
+</span>
+
+\[
+[r,p_x]=\frac{\partial r}{\partial x}=\frac{x}{r},　[r,p_y]~\frac{y}{r},　[r,p_z]=\frac{z}{r}
+\]
 
 the same as in the classical theory. We introduce also the dynamical
-variable p, defined by
+variable \(p_r\) defined by
 
-Dp == Tey t+ YPy t+ ePe)- (58
-﻿§ 38 MOTION IN A CENTRAL FIELD OF FORCE 153
-Its P.B. with r is given by
-rr, Pr] = [r, rp, | —_ [7, CPs YPy } zp,|
+<br><span style="color:blue;">
+古典理論の場合と同様である。また、次のように定義される力学変数 \(p_r\) を導入する。
+</span>
 
-= alr, Pal+yl7, Py] +2[r, p,]
-== e.a/rty.y/rte.2z/r =r.
+\[
+p_r = r^{-1}(xp_x + yp_y + zp_z)  \tag{58}
+\]
 
-Hence [7,p,] = 1
-or 1),—P,T = th.
+Its P.B. with \(r\) is given by
 
-The commutation relation between r and p, is just the one for a
-canonical coordinate and momentum, namely equation (10) of § 22.
-This makes p, like the momentum conjugate to the r coordinate, but
+<br><span style="color:blue;">
+\(r\) に対するP.B.は次のように与えられる。
+</span>
+
+\[
+\begin{align}
+r[r,p_r] &= [r,rp_r]=[r,xp_x+yp_y+zp_z] \\
+\\
+&=x[r,p_x]+y[r,p_y]+z[r,p_z] \\
+\\
+&=x.x/r+y.y/r+z.z/r
+\end{align}
+\]
+
+Hence
+
+<br><span style="color:blue;">
+したがって
+</span>
+
+\[
+[r,p_r] = 1
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+rp_r-p_rr=i\hbar
+\]
+
+</p><p>
+The commutation relation between \(r\) and \(p_r\) is just the one for a
+canonical coordinate and momentum, namely equation (10) of §22.
+This makes \(p_r\) like the momentum conjugate to the r coordinate, but
 it is not exactly equal to this momentum because it is not real, its
 conjugate complex being
 
-By = (Pet +iyytp,2)0* = (epz+ypy+ep,— 3ih)r
-== (rp.—dvh)r“ = p,—2ihir-1. (59)
+<br><span style="color:blue;">
+\(r\) と \(p_r\) の間の交換関係は、標準座標と運動量の場合、すなわち§22の式(10)と全く同じである。
+これにより、\(p_r\) は r 座標に共役な運動量となるが、\(p_r\) は実数ではないため、この運動量と完全に等しくはない。\(p_r\) の共役複素数は
+</span>
 
-Thus p,—tir— is real and is the true momentum conjugate to r.
-The angular momentum m of the particle about the origin is given
-by (22) and its magnitude & is given by (39). Since r and p, are
-scalars, they commute with m, and therefore also with &.
-We can express the Hamiltonian in terms ofr, p,, and k. We have,
+\[
+\begin{align}
+\overline{p}_r = (p_x x+p_y y+p_z z)r^{-1} &= (xp_x+yp_y+zp_z-3i\hbar)r^{-1} \\
+\\
+&=(rp_r - 3i\hbar)r^{-1} = p_r-2i\hbar r^{-1}  \tag{59}
+\end{align}
+\]
 
-if ¥ denotes a sum over cyclic permutations of the suffixes x, y, z,
-LYS
+Thus \(p_r-i\hbar r^{-1}\) is real and is the true momentum conjugate to \(r\).
 
-k(k-+-h) =a = > (xp,—yp.)*
+<br><span style="color:blue;">
+したがって\(p_r-i\hbar r^{-1}\)は実数であり、\(r\)の真の運動量共役です。
+</span>
 
-xyz
+</p><p>
+The angular momentum \(\mathbf{m}\) of the particle about the origin is given by (22) and its magnitude \(k\) is given by (39). Since \(r\) and \(p_r\) are scalars, they commute with \(\mathbf{m}\), and therefore also with \(k\).
 
-= > (Cy XPy+YDz YP2—ZPy YPz—YPz LP y)
+<br><span style="color:blue;">
+粒子の原点周りの角運動量\(\mathbf{m}\)は(22)式で与えられ、その大きさ\(k\)は(39)式で与えられる。\(r\)と\(p_r\)はスカラーなので、\(\mathbf{m}\)と交換し、したがって\(k\)とも交換する。
+</span>
 
-= > (x2 p32 + y*p2— xp, Py Y—YPy Pn ED — UP Dy C—
-cyz
-—2hap,)
+</p><p>
+We can express the Hamiltonian in terms of \(r, p_r\), and \(k\). We have,
+if \(\sum\limits_{xyz}\) denotes a sum over cyclic permutations of the suffixes \(x, y, z,\)
 
-= (22+-y2-+2%)(p2-++p? +p)
-— (ap, +YyPy+2p,)(Pet+Py Y +P, 2+ 2m)
-7? (pt pi + p2)—1D,(B,7 + 21)
-= P(pitpi+pe)—Tpr.
+<br><span style="color:blue;">
+ハミルトニアンは\(r, p_r\)と\(k\)で表すことができます。\(\sum\limits_{xyz}\)が接尾辞\(x, y, z,\)の巡回置換の和を表すとすると、
+</span>
+
+\[
+\begin{align}
+k(k+\hbar) &= \sum_{xyz} m_z^2 = \sum_{xyz} (xp_y - yp_x)^2 \\
+\\
+&=\sum_{xyz} (xp_y xp_y + yp_x yp_x - xp_y yp_x - yp_x xp_y) \\
+\\
+&= \sum_{xyz} (x^2p_y^2 + y^2p_x^2 - xp_x p_y y - yp_y p_x x + x^2p_x^2 - xp_x p_x x - 2i\hbar xp_x) \\
+\\
+&=(x^2+y^2+z^2)(p_x^2+p_y^2+p_z^2) - \\
+\\
+&　　　-(xp_x+y_py+zp_z)(p_x x+p_y y+p_z z + 2i\hbar) \\
+\\
+&=r^2(p_x^2+p_y^2+p_z^2)-rp_r(\overline{p}_r r+2i\hbar) \\
+\\
+&=r^2(p_x^2+p_y^2+p_z^2)-rp_r^2 r
+\end{align}
+\]
+
 from (59). Hence
-H=-— (oer SE a7. (60)
 
-~~ 9m 7
+<br><span style="color:blue;">
+(59)より。したがって
+</span>
 
-This form for H is such that k commutes not only with H, as is
-necessary since & is a constant of the motion, but also with every
-dynamical variable occurring in H, namely r, p,, and V, which is a
-﻿154 ELEMENTARY APPLICATIONS § 38
+\[
+H=\frac{1}{2m}\left(\frac{1}{r}p_r^2 r+\frac{k(k+\hbar)}{r^2}\right)+V  \tag{60}
+\]
 
-function of r. In consequence, a simple treatment becomes possible,
-namely, we may consider an eigenstate of k belonging to an eigen-
-value k’ and then we can substitute b’ for & in (60) and get a problem
-in one degree of freedom r.
+This form for \(H\) is such that \(k\) commutes not only with \(H\), as is
+necessary since \(k\) is a constant of the motion, but also with every
+dynamical variable occurring in \(H\), namely \(r, p_r,\) and \(V\), which is a function of \(r\). In consequence, a simple treatment becomes possible, namely, we may consider an eigenstate of \(k\) belonging to an eigenvalue \(k^\prime\) and then we can substitute \(k^\prime\) for \(k\) in (60) and get a problem in one degree of freedom \(r\).
 
-Let us introduce Schrédinger’s representation with x, y, z diagonal.
-Then pz, Py, p, are equal to the operators —i% 6/éx, —ih a/éy, —th d/0z
-respectively. A state is represented by a wave function y(xyzt) satis-
-fying Schrédinger’s wave equation (7) of § 27, which now reads, with
-Hf given by (57),
+<br><span style="color:blue;">
+\(H\) のこの形は、\(k\) が \(H\) と可換であるだけでなく（\(k\) は運動の定数であるため必然的に可換である）、\(H\) に現れるすべての力学変数、すなわち \(r, p_r,\) と \(V\) （\(r\) の関数）とも可換である。結果として、単純な処理が可能になる。すなわち、\(k\) の固有状態が固有値 \(k^\prime\) に属すると考え、(60) において \(k\) を \(k^\prime\) に代入することで、自由度 \(r\) が 1 である問題を得ることができる。
+</span>
 
-ea = oO =| ! a (61)
+</p><p>
+Let us introduce Schr&ouml;dinger's representation with \(x, y, z\) diagonal. Then \(p_x p_y, p_z\) are equal to the operators \(—i\hbar\partial/partial y,-i\hbar\partial/\partial y,-i\hbar\partial/\partial z\)
+respectively. A state is represented by a wave function \(\psi(xyzt)\) satisfying Schr&ouml;dinger's wave equation (7) of §27, which now reads, with \(H\) given by (57),
 
-Qm\ ax? ' dy? ' az?
-We may pass from the Cartesian coordinates w,y,z to the polar
-coordinates 7,9,6é by means of the equations
-x = rsin@cos¢,
-y = rsin @sin ¢d, (62)
-z= rcos6,
+<br><span style="color:blue;">
+対角線 \(x, y, z\) を用いたシュレーディンガー表現を導入する。すると、\(p_x, p_y, p_z\) はそれぞれ作用素 \(—i\hbar\partial/partial y,-i\hbar\partial/\partial y,-i\hbar\partial/\partial z\) に等しくなる。状態は、§27 のシュレーディンガーの波動方程式 (7) を満たす波動関数 \(\psi(xyzt)\) で表される。これは、\(H\) が (57) で与えられると、次のように書ける。
+</span>
+
+\[
+i\hbar\frac{\partial \psi}{\partial t}=\left\{-\frac{\hbar^2}{2m}\left(\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}\right)+V\right\}\psi  \tag{61}
+\]
+
+We may pass from the Cartesian coordinates \(x,y,z\) to the polar
+coordinates \(r,\theta,\phi\) by means of the equations
+
+<br><span style="color:blue;">
+直交座標 \(x,y,z\) から極座標 \(r,\theta,\phi\) へは、次の方程式を使って移ることができます。
+</span>
+
+\[
+\left.
+\begin{align}
+x &= r \sin \theta \cos \phi \\
+\\
+y &= r \sin \theta \sin \phi \\
+\\
+z &= r \cos \theta
+\end{align}
+\right\}
+\tag{62}
+\]
 
 and may express the wave function in terms of the polar coordinates,
-so that it reads 4(rédt). The equations (62) give the operator equation
+so that it reads \(\psi(r\theta\phi t)\). The equations (62) give the operator equation
 
-a. de 6 by a Ge HA Ye 220
-ar er aut or by | ar bz roe ay tr oz’
-which shows, on being compared with (58), that p, = —i#a/ér. Thus
-Schrédinger’s wave equation reads, with the form (60) for H,
-Op [ie 1 @ k(k-+h)\ | Q
-i at (= (—3 Bret Here]! a (68)
+<br><span style="color:blue;">
+波動関数は極座標で表すことができ、\(\psi(r\theta\phi t)\)と表される。式(62)は、作用素方程式を与える。
+</span>
 
-Here & is a certain linear operator which, since it commutes with r
-and 6/ér, can involve only @, ¢, @/€0, and 8/86. From the formula
+\[
+\frac{\partial}{\partial r} = \frac{\partial x}{\partial r}\frac{\partial}{\partial x}+\frac{\partial y}{\partial r}\frac{\partial}{\partial y}+\frac{\partial z}{\partial r}\frac{\partial}{\partial z} = \frac{x}{r}\frac{\partial}{\partial x}+\frac{y}{r}\frac{\partial}{\partial y}+\frac{z}{r}\frac{\partial}{\partial z}
+\]
 
-k(k-+h) = m-m2 +m, (64)
+which shows, on being compared with (58), that \(p_r = —i\hbar \partial/\partial r\). Thus Schr&ouml;dinger's wave equation reads, with the form (60) for \(H\),
+
+<br><span style="color:blue;">
+これを(58)と比較すると、\(p_r = —i\hbar \partial/\partial r\)であることがわかる。したがって、シュレーディンガーの波動方程式は、\(H\)について(60)の形で、
+</span>
+
+\[
+i\hbar\frac{\partial \psi}{\partial t}
+=\left\{\frac{\hbar^2}{2m}\left(-\frac{1}{r}\frac{\partial^2}{\partial r^2}r+\frac{k(k+\hbar)}{\hbar^2r^2}\right)+V\right\}\psi  \tag{63}
+\]
+
+Here \(k\) is a certain linear operator which, since it commutes with \(r\)
+and \(\partial/\partial t\), can involve only \(\theta, \phi, \partial/\partial \theta,\) and \(\partial/\partial\phi\). From the formula
+
+<br><span style="color:blue;">
+ここで、\(k\) はある線型作用素であり、\(r\) および \(\partial/\partial t\) と可換であるため、\(\theta, \phi, \partial/\partial \theta,\) および \(\partial/\partial\phi\) のみを含むことができる。式から
+</span>
+
+\[
+k(k+\hbar) = m_x^2 + m_y^2 + m_z^2  \tag{64}
+\]
 
 which comes from (39), and from (62) one can work out the form of
-k(k-+-%) and one finds
+\(k(k+\hbar)\) and one finds
 
-h(k-+h) 1@.,8@ 1 @
-i nd 0a Sk OE (8)
+<br><span style="color:blue;">
+これは(39)から導かれ、(62)から\(k(k+\hbar)\)の形が導かれ、
+</span>
+
+\[
+\frac{k(k+\hbar)}{\hbar^2}=-\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\sin\theta\frac{\partial}{\partial\theta}-\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}  \tag{65}
+\]
+
 This operator is well known in mathematical physics. Its eigen-
 functions are called spherical harmonics and its eigenvalues are
-n(n-+-1) where nm is an integer. Thus the theory of spherical har-
-monies provides an alternative proof that the eigenvalues of k are
+\(n(n+1)\) where \(n\) is an integer. Thus the theory of spherical har-
+monies provides an alternative proof that the eigenvalues of \(k\) are
+integral multiples of \(\hbar\).
 
-integral multiples of %.
-﻿§ 38 MOTION IN A CENTRAL FIELD OF FORCE 155
+<br><span style="color:blue;">
+この作用素は数理物理学においてよく知られています。その固有関数は球面調和関数と呼ばれ、その固有値は\(n(n+1)\)（\(n\)は整数）です。したがって、球面調和関数の理論は、\(k\)の固有値が\(\hbar\)の整数倍であることの別の証明を提供します。
+</span>
 
-For an eigenstate of & belonging to the eigenvalue nfi (n a non-
-negative integer) the wave function will be of the form
+</p><p>
+For an eigenstate of \(k\) belonging to the eigenvalue \(n\hbar\) (\(n\) a non-negative integer) the wave function will be of the form
 
-| . = r2y(r8)S,,(66), (66)
-where S,,(@¢) satisfies
+<br><span style="color:blue;">
+固有値\(n\hbar\)（\(n\)は非負の整数）に属する\(k\)の固有状態に対して、波動関数は次の形式となる。
+</span>
 
-K(k+-R)S, (86) = n(n+ 1)hS,,(89), (67)
-ie. from (65) S,, is a spherical harmonic of order ». The factor r-t
+\[
+\psi = r^{-1}\chi(rt)S_n(\theta\phi)  \tag{66}
+\]
 
-is inserted in (66) for convenience. Substituting (66) into (63), we
-get as the equation for x
+where \(S_n(\theta\phi)\) satisfies
 
-0x (#8 &  nlnt+))\ ,
+<br><span style="color:blue;">
+ここで\(S_n(\theta\phi)\)は
+</span>
 
-he (sa Bre pe V}x. (68)
-If the state is a stationary state belonging to the energy value H’,
-x will be of the form x(rt) = xo(ryentettt
+\[
+k(k+\hbar)S_n(\theta\phi) = n(n+1)\hbar^2S_n(\theta\phi)  \tag{67}
+\]
+
+i.e. from (65) \(S_n\) is a spherical harmonic of order \(n\). The factor \(r^{-1}\) is inserted in (66) for convenience. Substituting (66) into (63), we get as the equation for \(\chi\)
+
+<br><span style="color:blue;">
+すなわち、(65)式から\(S_n\)は\(n\)次の球面調和関数である。(66)式では便宜上、\(r^{-1}\)という係数が挿入されている。(66)式を(63)式に代入すると、\(\chi\)の式が得られる。
+</span>
+
+\[
+i\hbar\frac{\partial\chi}{\partial t}=\left\{\frac{\hbar^2}{2m}\left(-\frac{\partial^2}{\partial r^2}+\frac{n(n+1)}{r^2}\right)+V\right\}\chi  \tag{68}
+\]
+
+If the state is a stationary state belonging to the energy value \(H^\prime\), \(\chi\) will be of the form
+
+<br><span style="color:blue;">
+状態がエネルギー値\(H^\prime\)に属する定常状態である場合、\(\chi\)は次の形式となる。
+</span>
+
+\[
+\chi(rt) = \chi_0(r)e^{-iH^\prime t/\hbar}
+\]
 
 and (68) will reduce to
-2 2
-By = [E(t +7) (69)
 
-Qm\ drt
+<br><span style="color:blue;">
+そして（68）は
+</span>
 
-This equation may be used to determine the energy-levels H’ cf the
-system. For each solution y, of (69), arising from a given n, there
-will be 2n+-1 independent states, because there are 2n--1 indepen-
-dent solutions of (67) corresponding to the 2n+1 different values
-that a component of the angular momentum, m, say, can take on.
+\[
+H^\prime\chi_0 = \left\{\frac{\hbar^2}{2m}\left(-\frac{d^2}{dr^2}+\frac{n(n+1)}{r^2}\right)+V\right\}\chi_0  \tag{69}
+\]
 
+This equation may be used to determine the energy-levels \(H^\prime\) of the system. For each solution \(chi_0\) of (69), arising from a given \(n\), there will be \(2n+1\) independent states, because there are \(2n+1\) independent solutions of (67) corresponding to the \(2n+1\) different values that a component of the angular momentum, \(m_z\) say, can take on.
+
+<br><span style="color:blue;">
+この式は、系のエネルギー準位 \(H^\prime\) を決定するために用いられる。与えられた \(n\) から生じる式 (69) の各解 \(chi_0\) に対して、\(2n+1\) 個の独立状態が存在する。これは、角運動量の成分、例えば \(m_z\) が取り得る \(2n+1\) 個の異なる値に対応する式 (67) の \(2n+1\) 個の独立解が存在するためである。
+</span>
+
+</p><p>
 The probability of the particle being in an element of volume
-dadyéz is proportional to |b/?dzdydz. With % of the form (66) this
-becomes r-?|y/2|S,,|2dadydz. The probability of the particle being in
-a spherical shell between r and r+dr is then proportional to |x|?dr.
-It now becomes clear that, in solving equation (68) or (69), we must
-impose a boundary condition on the function y at r = 0, namely the
-function must be such that the integral to the origin i ly|? dr is
-
-0
-
-convergent. If this integral were not convergent, the wave function
+\(dxdydz\) is proportional to \(|\psi|^2 dxdydz\). With \(\psi\) of the form (66) this becomes \(r^{-2}|\chi|^2|S_n|^2 dxdydz\). The probability of the particle being in a spherical shell between \(r\) and \(r+dr\) is then proportional to \(|\chi|^2\)dr\). It now becomes clear that, in solving equation (68) or (69), we must impose a boundary condition on the function \(\chi\) at \(r = 0\), namely the function must be such that the integral to the origin \(\int_0 |\chi|^2 dr\) is convergent. If this integral were not convergent, the wave function
 would represent a state for which the chances are infinitely in favour
 of the particle being at the origin and such a state would not be
 physically admissible.
 
-The boundary condition at r = 0 obtained by the above considera-
+<br><span style="color:blue;">
+粒子が体積要素内にある確率
+\(dxdydz\) は \(|\psi|^2 dxdydz\) に比例します。\(\psi\) が (66) の形式である場合、これは \(r^{-2}|\chi|^2|S_n|^2 dxdydz\) となります。粒子が \(r\) と \(r+dr\) の間の球殻内にある確率は \(|\chi|^2\)dr\) に比例します。ここで、式 (68) または (69) を解く際に、関数 \(\chi\) の \(r = 0\) に境界条件を課す必要があることが明らかになります。つまり、関数は原点への積分 \(\int_0 |\chi|^2 dr\) が収束する必要があります。もしこの積分が収束しないなら、波動関数は、粒子が原点にある可能性が無限に高い状態を表すことになり、そのような状態は物理的に許容されないでしょう。
+</span>
+
+</p><p>
+
+The boundary condition at \(r = 0\) obtained by the above considera-
 tion of probabilities is, however, not sufficiently stringent. We get a
 more stringent condition by verifying that the wave function obtained
 by solving the wave equation in polar coordinates (63) really satisfies
 the wave equation in Cartesian coordinates (61). Let us take the case
-﻿156 ELEMENTARY APPLICATIONS § 38
+of \(V = 0\), giving us the problem of the free particle. Applied to a
+stationary state with energy \(H^\prime = 0\), equation (61) gives
 
-of V = 0, giving us the problem of the free particle. Applied to a
-stationary state with energy H’ == 0, equation (61) gives
+<br><span style="color:blue;">
+しかしながら、上記の確率の考慮によって得られた \(r = 0\) における境界条件は十分に厳密ではない。極座標系における波動方程式 (63) を解くことによって得られる波動関数が、直交座標系における波動方程式 (61) を実際に満たすことを確認することによって、より厳密な条件が得られる。自由粒子の問題を与える \(V = 0\) の場合を取ろう。エネルギー \(H^\prime = 0\) の定常状態に適用すると、式 (61) は次のように表される。
+</span>
 
-V4 = 0, (70)
+\[
+\nabla^2\psi = 0  \tag{70}
+\]
 
-where V? is written for the Laplacian operator 6?/éx?+-6?/ay? + 27/é2",
+where \(\nabla^2\) is written for the Laplacian operator \(\partial^2/\partial x^2+\partial^2/\partial y^2+\partial^2/\partial z^2\),
 and equation (63) gives
 
-( a ses = 0. (71)
+<br><span style="color:blue;">
+ここで、\(\nabla^2\)はラプラシアン作用素\(\partial^2/\partial x^2+\partial^2/\partial y^2+\partial^2/\partial z^2\)を表し、式(63)は
+</span>
 
-r or? hr?
+\[
+\left(\frac{1}{r}\frac{\partial^2}{\partial r^2}r-\frac{k(k+\hbar)}{\hbar^2 r^2}\right)\psi = 0  \tag{71}
+\]
 
-A solution of (71) for k=0 is 4 =r. This does not satisfy
-(70), since, although V?r-! vanishes for any finite value of 7, its integral
-through a volume containing the origin is —47 (as may be verified
-by transforming this volume integral to a surface integral by means
-of Gauss’s theorem), and hence
+A solution of (71) for \(k=0\) is \(\psi = r^{-1}\). This does not satisfy
+(70), since, although \(\nabla^2 r^{-2}\) vanishes for any finite value of \(r\), its integral through a volume containing the origin is \(—4\pi\) (as may be verified by transforming this volume integral to a surface integral by means of Gauss's theorem), and hence
 
-V2r-k == — 4 8(x)5(y)5(2). (72)
+<br><span style="color:blue;">
+(71) 式の \(k=0\) に対する解は \(\psi = r^{-1}\) である。これは (70) を満たさない。なぜなら、\(\nabla^2 r^{-2}\) は \(r\) の任意の有限値に対してはゼロであるが、原点を含む体積を通る積分は \(-4\pi\) である（この体積積分をガウスの定理を用いて面積分に変換することで検証できる）。したがって、
+</span>
+
+\[
+\nabla^2 r^{-2} = —4\pi\delta(x)\delta(y)\delta(z)  \tag{72}
+\]
 
 Thus not every solution of (71) gives a solution of (70), and more
 generally, not every solution of (63) is a solution of (61). We must
 impose on the solution of (63) the condition that it shall not tend to
-infinity as rapidly as r-1 when r -> 0 in order that, when substituted
-into (61), it shall not give a 5 function on the right like the right-hand
-side of (72), Only when equation (63) is supplemented with this condi-
-tion does it become equivalent to equation (61). We thus have the
-boundary condition rf > 0 or y> 0 as r—-> 0.
+infinity as rapidly as \(r^{-1}\) when \(r\rightarrow 0\) in order that, when substituted into (61), it shall not give a \(\delta\) function on the right like the right-hand side of (72), Only when equation (63) is supplemented with this condition does it become equivalent to equation (61). We thus have the boundary condition \(r\psi \rightarrow 0\) or \(\chi \rightarrow 0\) as \(r \rightarrow 0\).
 
-There are also boundary conditions for the wave function at r = oo.
-If we are interested only in ‘closed’ states, i.e. states for which the
-particle does not go off to infinity, we must restrict the integral to
+<br><span style="color:blue;">
+したがって、(71) の解がすべて (70) の解を与えるわけではなく、より一般的には、(63) の解がすべて (61) の解を与えるわけでもない。(63) の解には、\(r\rightarrow 0\) のときに \(r^{-1}\) ほど急激に無限大に向かわないという条件を課す必要がある。これは、(61) に代入したときに、(72) の右辺のように右辺に \(\delta\) 関数を与えないようにするためである。この条件が式 (63) に追加された場合にのみ、式 (61) と等しくなる。したがって、\(r\rightarrow 0\) のとき境界条件 \(r\psi \rightarrow 0\) または \(\chi \rightarrow 0\) が得られる。
+</span>
 
-infinity i |x(r)|? dr to be convergent. These closed states, however,
-are not the only ones that are physically permissible, as we can also
-have states in which the particle arrives from infinity, is scattered
-by the central field of force, and goes off to infinity again. For these
-states the wave function may remain finite as r -> 00. Such states will
-be dealt with in Chapter VIII under the heading of collision problems.
-In any case the wave function must not tend to infinity as r > 00, or
-it will represent a state that has no physical meaning.
+</p><p>
+There are also boundary conditions for the wave function at \(r = \infty\). If we are interested only in ‘closed' states, i.e. states for which the particle does not go off to infinity, we must restrict the integral to
+infinity \(\int^\infty |\chi|^2 dr\) to be convergent. These closed states, however, are not the only ones that are physically permissible, as we can also have states in which the particle arrives from infinity, is scattered by the central field of force, and goes off to infinity again. For these states the wave function may remain finite as \(r \rightarrow \infty\). Such states will be dealt with in Chapter VIII under the heading of collision problems. In any case the wave function must not tend to infinity as \(r \rightarrow \infty\), or it will represent a state that has no physical meaning.
 
-39. Energy-levels of the hydrogen atom
+<br><span style="color:blue;">
+\(r = \infty\) における波動関数の境界条件も存在します。「閉じた」状態、つまり粒子が無限大に行かない状態のみに着目する場合、積分を無限大 \(\int^\infty |\chi|^2 dr\) に制限して収束させる必要があります。しかし、これらの閉じた状態は物理的に許容される唯一の状態ではありません。粒子が無限大から到達し、中心力場によって散乱され、再び無限大に行ってしまう状態も考えられます。これらの状態では、波動関数は \(r \rightarrow \infty\) のように有限のままとなる場合があります。このような状態については、第8章の衝突問題の項で扱います。いずれにせよ、波動関数は \(r \rightarrow \infty\) のように無限大に向かってはいけません。そうでないと、物理的に意味を持たない状態を表すことになります。
+</span>
+
+</p>
+
+<h3>39. Energy-levels of the hydrogen atom　<span style="color:blue;">水素原子のエネルギー準位</span></h3>
+<p>
 
 The above analysis may be applied to the problem of the hydrogen
 atom with neglect of relativistic mechanics and the spin of the
-﻿§ 39 ENERGY-LEVELS OF THE HYDROGEN ATOM 157
+electron. The potential energy \(V\) is now<sup>†</sup> \(—e^2/r\), so that equation (69) becomes
 
-electron. The potential energy V is nowt —e?/r, so that equation
-(69) becomes
+<br><span style="color:blue;">
+上記の解析は、相対論的力学と電子スピンを無視すれば、水素原子の問題にも適用できる。ポテンシャルエネルギー\(V\)は<sup>†</sup>\(—e^2/r\)となるので、式(69)は
+</span>
 
-a n(nt+l) , 2me* 1 2mH’
-ie re + Fe 7 (Xo Fe Xo (73)
+</p><p class="margin-large">
+<sup>†</sup>
+The \(e\) here, denoting minus the charge on an electron, is, of course, to be distinguished from the \(e\) denoting the base of exponentials.
 
-;
-A thorough investigation of this equation has been given by Schré-
-dinger.t We shall here obtain its eigenvalues H’ by an elementary
+<br><span style="color:blue;">
+ここでの \(e\) は電子の電荷のマイナスを表し、指数の底を表す \(e\) とは区別する必要があります。
+</span>
 
-argument.
-t is convenient to put
-Xo = (rye, (74)
-introducing the new function f(r), where a is one or other of the
-square roots a == t4)(—H2/2mH’). (75)
+</p><p>
+
+\[
+\left\{\frac{d^2}{dr^2}-\frac{n(n+1)}{r^2}+\frac{2me^2}{\hbar^2}\frac{1}{r}\right\}\chi_0 = -\frac{2mH^\prime}{\hbar^2}\chi_0  \tag{73}
+\]
+
+A thorough investigation of this equation has been given by Schr&ouml;dinger.<sup>‡</sup> We shall here obtain its eigenvalues \(H^\prime\) by an elementary argument.
+
+<br><span style="color:blue;">
+この方程式の徹底的な研究はシュレーディンガーによって行われています。<sup>‡</sup> ここでは初等的な議論によってその固有値 \(H^\prime\) を得ます。
+</span>
+
+</p><p class="margin-large">
+<sup>‡</sup>
+Schr&ouml;dinger, Ann, d. Physik, 79 (1926), 361.
+</p><p>
+
+It is convenient to put
+
+<br><span style="color:blue;">
+以下の様ように置くのが便利です。
+</span>
+
+\[
+\chi_0 = f(r)e^{-r/a}  \tag{74}
+\]
+
+introducing the new function \(f(r)\), where \(a\) is one or other of the
+square roots
+
+<br><span style="color:blue;">
+新しい関数\(f(r)\)を導入する。ここで\(a\)は、
+</span>
+
+\[
+a = \pm\sqrt{(-\hbar^2/2mH^\prime}  \tag{75}
+\]
 
 Equation (73) now becomes
 
-@ 2d n(nm+il) , Ime? 1 _
-fe adr 7 or Flr) = 0. (78)
+<br><span style="color:blue;">
+式(73)は以下の様になる
+</span>
+
+\[
+\left\{\frac{d^2}{dr^2}-\frac{2}{a}\frac{d}{dr}-\frac{n(n+1)}{r^2}+\frac{2me^2}{\hbar^2}\frac{1}{r}\right\}f(r)=0  \tag{76}
+\]
+
 We look for a solution of this equation in the form of a power series
-f(r) = 2 C,r, (77)
 
-in which consecutive values for s differ by unity although these
+<br><span style="color:blue;">
+この方程式の解をべき級数の形で求めます
+</span>
+
+\[
+f(r) = \sum_s c_sr^3  \tag{77}
+\]
+
+in which consecutive values for \(s\) differ by unity although these
 values themselves need not be integers. On substituting (77) in (76)
-
 we obtain
-¥ o,{s(s—1)r*-2— (28/a)r8-1—n(n-+ 1 prs? + (2me?/h?)rs-1} = 0,
 
-8
+<br><span style="color:blue;">
+ここで、\(s\) の連続する値は1ずつ異なるが、これらの値自体は整数である必要はない。(77) を(76) に代入すると、
+</span>
 
-which gives, on equating to zero the coefficient of r°-*, the following
-relation between successive coefficients c,,
+\[
+\sum_s c_s\{s(s-1)r^{s-2}-(2s/a)r^{s-1}-n(n+1)r^{s-2}+(2me^2/\hbar^2)r^{s-1}\}=0
+\]
 
-ca[s(s—1)—n(n-+1)] = ¢,_,[2(s—1)/a—2me?/h?]. (78)
+which gives, on equating to zero the coefficient of \(r^{s-2}\), the following relation between successive coefficients \(c_s\),
 
-We saw in the preceding section that only those eigenfunctions x
-are allowed that tend to zero with r and hence, from (74), f(r) must
-tend to zero with r. The series (77) must therefore terminate on the
-side of small s and the minimum value of s must be greater than zero.
-Now the only possible minimum values of s are those that make the
-coefficient of c, in (78) vanish, ie. n-+1 and —n, and the second
-of these is negative or zero. Thus the minimum value of s must be
-n+1. Since n is always an integer, the values of s will all be integers.
+<br><span style="color:blue;">
+\(r^{s-2}\)の係数をゼロとすると、連続する係数\(c_s\)の間に次の関係が成立する。
+</span>
 
-+ The e here, denoting minus the charge on an electron, is, of course, to be dis-
-tinguished from the e denoting the base of exponentials.
-} Schrédinger, Ann, d. Physik, 79 (1926), 361.
-﻿158 ELEMENTARY APPLICATIONS § 39
+\[
+c_s[s(s—1)—n(n+1)] = c_{s-1}[2(s—1)/a—2me^2/\hbar^2]  \tag{78}
+\]
 
-The series (77) will in general extend to infinity on the side of large s.
-For large values of s the ratio of successive terms is
+We saw in the preceding section that only those eigenfunctions \(\chi\)
+are allowed that tend to zero with \(r\) and hence, from (74), \(f(r)\) must tend to zero with \(r\). The series (77) must therefore terminate on the side of small \(s\) and the minimum value of s must be greater than zero. Now the only possible minimum values of s are those that make the
+coefficient of \(c_s\) in (78) vanish, i.e. \(n+1\) and \(—n\), and the second of these is negative or zero. Thus the minimum value of s must be
+\(n+1\). Since n is always an integer, the values of s will all be integers. The series (77) will in general extend to infinity on the side of large s. For large values of s the ratio of successive terms is
 
-Cy ar
+<br><span style="color:blue;">
+前の節で、\(r\) とともにゼロに近づく固有関数 \(\chi\) のみが許されることを見ました。したがって、式 (74) より、\(f(r)\) は \(r\) とともにゼロに近づくことがわかります。したがって、級数 (77) は小さな \(s\) の側で終了する必要があり、s の最小値はゼロより大きくなければなりません。ここで、s の最小値は (78) の \(c_s\) の係数をゼロにする値、すなわち \(n+1\) と \(—n\) のみであり、後者は負またはゼロです。したがって、s の最小値は \(n+1\) でなければなりません。n は常に整数なので、s の値はすべて整数になります。級数 (77) は一般に、大きな s の側で無限大まで拡張されます。大きな s の値に対して、連続する項の比は
+</span>
 
-t=
-
-Cy-4 8a
+\[
+\frac{c_s}{c_{s-1}}r = \frac{2r}{sa}
+\]
 
 according to (78). Thus the series (77) will always converge, as the
 ratios of the higher terms to one another are the same as for the
-
 series
-1 /2r\s
-S siz] ; (79)
 
-&
-which converges to e?7/@,
+<br><span style="color:blue;">
+(78)によれば、級数(77)は常に収束する。なぜなら、高次の項同士の比は級数(78)の場合と同じだからである。
+</span>
 
-We must now examine how our solution xy, behaves for large
-values of r. We must distinguish between the two cases of H’ positive
-and H' negative. For H’ negative, a given by (75) will be real. Sup-
-pose we take the positive value for a. Then as roo the sum of the
-series (77) will tend to infinity according to the same law as the sum
-of the series (79), ie. the law e2/¢. Thus, from (74), yo will tend to
-infinity according to the law e/@ and will not represent a physically
-possible state. There is therefore in general no permissible solution
-of (73) for negative values of H’. An exception arises, however, when-
-ever the series (77) terminates on the side of large s, in which case the
-boundary conditions are all satisfied. The condition for this termina-
-tion of the series is that the coefficient of c,_, in (78) shall vanish for
-some value of the suffix s—1 not less than its minimum value n+ 1,
-which is the same as the condition that
+\[
+\sum_s \frac{1}{s!}\left(\frac{2r}{a}\right)^s  \tag{79}
+\]
 
-s me?
+which converges to \(e^{2r/a}\),
 
-2 =0
+<br><span style="color:blue;">
+これは\(e^{2r/a}\)に収束し、
+</span>
 
-a
+</p><p>
+We must now examine how our solution \(\chi_0\) behaves for large
+values of \(r\). We must distinguish between the two cases of \(H^\prime\) positive and \(H^\prime\) negative. For \(H^\prime\) negative, a given by (75) will be real. Suppose we take the positive value for \(a\). Then as \(r \rightarrow \infty\) the sum of the series (77) will tend to infinity according to the same law as the sum of the series (79), i.e. the law \(e^{2r/a}\). Thus, from (74), \(\chi_0\) will tend to
+infinity according to the law \(e^{r/a}\) and will not represent a physically possible state. There is therefore in general no permissible solution of (73) for negative values of \(H^\prime\). An exception arises, however, whenever the series (77) terminates on the side of large s, in which case the boundary conditions are all satisfied. The condition for this termination of the series is that the coefficient of \(c_{s-1}\) in (78) shall vanish for some value of the suffix \(s—1\) not less than its minimum value \(n+1\), which is the same as the condition that
 
-for some integer s not less than n+-1. With the help of (75) this
+<br><span style="color:blue;">
+ここで、解 \(\chi_0\) が \(r\) の大きな値に対してどのように振舞うかを調べる必要がある。\(H^\prime\) が正の場合と \(H^\prime\) が負の場合の2つのケースを区別する必要がある。\(H^\prime\) が負の場合、(75) で与えられる a は実数となる。\(a\) を正の値とすると、\(r \rightarrow \infty\) のとき、級数 (77) の和は級数 (79) の和と同じ法則、すなわち \(e^{2r/a}\) の法則に従って無限大に近づく。したがって、(74) から、\(\chi_0\) は \(e^{r/a}\) の法則に従って無限大に近づくことになり、物理的に可能な状態を表さなくなる。したがって、一般に \(H^\prime\) が負の値の場合、(73) の許容される解は存在しない。しかし、級数(77)が大きなsの側で終了する場合には例外が生じ、その場合には境界条件はすべて満たされる。この級数の終了条件は、(78)の\(c_{s-1}\)の係数が、接尾辞\(s—1\)の最小値\(n+1\)以上の値でゼロになることである。これは、
+</span>
 
-condition becomes 4
-me
+\[
+\frac{s}{a}-\frac{me^2}{\hbar^2}=0
+\]
 
-Ht’ —
-282K?’
+for some integer s not less than \(n+1\). With the help of (75) this
+condition becomes
 
-I
+<br><span style="color:blue;">
+\(n+1\)以上の整数sに対して、(75)式を用いると、この条件は
+</span>
 
-(80)
+\[
+H^\prime=-\frac{me^4}{2s^2\hbar^2}  \tag{80}
+\]
 
-and is thus a condition for the energy-level H’. Since s may be any
+and is thus a condition for the energy-level \(H^\prime\). Since \(s\) may be any
 positive integer, the formula (80) gives a discrete set of negative
 energy-levels for the hydrogen atom. These are in agreement with
-experiment. For each of them (except the lowest one s = 1) there
+experiment. For each of them (except the lowest one \(s = 1\)) there
 are several independent states, as there are various possible values
 for n, namely any positive or zero integer less than s. This multi-
 plicity of states belonging to an energy-level is in addition to that
 mentioned in the preceding section arising from the various possible
-﻿§ 39 ENERGY-LEVELS OF THE HYDROGEN ATOM 159
-
 values for a component of angular momentum, which latter multi-
 plicity occurs with any central field of force. The x multiplicity occurs
 only with an inverse square law of force and even then is removed
 when one takes relativistic mechanics into account, as will be found
-in Chapter XI. The solution x, of (73) when H’ satisfies (80) tends to
-zero exponentially as r > co and thus represents a closed state (corre-
-sponding to an elliptic orbit in Bohr’s theory).
+in Chapter XI. The solution \(\chi_0\) of (73) when \(H^\prime\) satisfies (80) tends to zero exponentially as \(r \rightarrow \infty\) and thus represents a closed state (corresponding to an elliptic orbit in Bohr's theory).
 
-For any positive values of H’, a given by (75) will be pure imaginary.
-The series (77), which is like the series (79) for large r, will now have a
-sum that remains finite asr ->00. Thus x, given by (74) willnowremain
-finite as r > co and will therefore be a permissible solution of (73),
-giving a wave function ¢ that tends to zero according to the law r-* as
-r->co. Hence in addition to the discrete set of negative energy-levels
-(80), all positive energy-levels are allowed. The states of positive
+<br><span style="color:blue;">
+そして、これはエネルギー準位 \(H^\prime\) の条件となる。\(s\) は任意の正の整数をとることができるので、式 (80) は水素原子の負のエネルギー準位の離散的な集合を与える。これらは実験と一致する。それぞれの準位（最低の準位 \(s = 1\) を除く）には、n の可能な値、すなわち s 未満の任意の正または 0 の整数が様々であるため、複数の独立状態が存在する。エネルギー準位に属するこの状態の多重性は、前節で述べた角運動量の成分の可能な値の違いから生じる多重性に加えて生じるものであり、後者の多重性は任意の中心力場において発生する。x 多重性は力の反二乗則がある場合にのみ発生し、その場合でも相対論的力学を考慮に入れれば除去される（第 11 章を参照）。 (73)式の解\(\chi_0\)は、\(H^\prime\)が(80)式を満たすとき、\(r \rightarrow \infty\)とともに指数関数的にゼロに近づくため、閉じた状態（ボーア理論における楕円軌道に対応）を表す。
+</span>
 
-co
+</p><p>
+For any positive values of \(H^\prime\), a given by (75) will be pure imaginary. The series (77), which is like the series (79) for large \(r\), will now have a sum that remains finite as \(r \rightarrow \infty\). Thus \(\chi_0\) given by (74) willnowremain
+finite as \(r \rightarrow \infty\) and will therefore be a permissible solution of (73),
+giving a wave function \(\psi\) that tends to zero according to the law \(r^{-1}\) as \(r \rightarrow \infty\). Hence in addition to the discrete set of negative energy-levels (80), all positive energy-levels are allowed. The states of positive energy are not closed, since for them the integral to infinity \(\int^\infty |\chi_0|^2 dr\) does not converge. (These states correspond to the hyperbolic orbits of Bohr's theory.)
 
-energy are not closed, since for them the integral to infinity | lyql? dr
-does not converge. (These states correspond to the hyperbolic orbits
+<br><span style="color:blue;">
+\(H^\prime\) の任意の正の値に対して、(75) で与えられる a は純虚数となる。級数 (77) は、級数 (79) が大きな \(r\) の場合と同様に、\(r \rightarrow \infty\) のとき有限の和を持つ。したがって、(74) で与えられる \(\chi_0\) は \(r \rightarrow \infty\) のとき有限となり、(73) の許容解となり、\(r^{-1}\) の法則に従って \(r \rightarrow \infty\) のときゼロに近づく波動関数 \(\psi\) を与える。したがって、離散的な負のエネルギー準位の集合 (80) に加えて、すべての正のエネルギー準位が許容される。正エネルギーの状態は閉じた状態ではありません。なぜなら、それらの状態においては、無限大への積分 \(\int^\infty |\chi_0|^2 dr\) は収束しないからです。（これらの状態は、ボーア理論の双曲軌道に対応します。）
+</span>
 
-of Bohr’s theory.)
+</p>
 
-40. Selection rules
+<h3>40. Selection rules　<span style="color:blue;">選択ルール</span></h3>
+<p>
 
 If a dynamical system is set up in a certain stationary state, it will
 remain in that stationary state so long as it is not acted upon by
@@ -1242,299 +2319,580 @@ outside forces. Any atomic system in practice, however, frequently
 gets acted upon by external electromagnetic fields, under whose
 influence it is liable to cease to be in one stationary state and to make
 a transition to another. The theory of such transitions will be de-
-veloped in §§ 44and 45. A result of this theory is that, to a high degree
+veloped in §44 and §45. A result of this theory is that, to a high degree
 of accuracy, transitions between two states cannot occur under the
 influence of electromagnetic radiation if, in a Heisenberg representa-
 tion with these two stationary states as two of the basic states, the
 matrix element, referring to these two states, of the representative
-of the total electric displacement D of the system vanishes. Now it
+of the total electric displacement \(D\) of the system vanishes. Now it
 happens for many atomic systems that the great majority of the
-matrix elements of D in a Heisenberg representation do vanish, and
+matrix elements of \(D\) in a Heisenberg representation do vanish, and
 hence there are severe limitations on the possibilities for transitions.
 The rules that express these limitations are called selection rules.
 
-The idea of selection rules can be refined by a more detailed
-application of the theory of §§44 and 45, according to which
-the matrix elements of the different Cartesian components of the
-vector D are associated with different states of polarization of the
-﻿160 ELEMENTARY APPLICATIONS § 40
+<br><span style="color:blue;">
+力学系がある定常状態に設定されると、外部からの力が作用しない限り、その定常状態を維持する。しかしながら、実際には、いかなる原子系も外部電磁場の作用を頻繁に受け、その影響下では、ある定常状態を脱して別の定常状態へと遷移する傾向がある。このような遷移の理論は、§44および§45で展開される。この理論の結果として、これらの2つの定常状態を基本状態の2つとするハイゼンベルク表示において、系の全電気変位 \(D\) を表す行列要素（これらの2つの状態を参照する）がゼロとなる場合、高い精度で、2つの状態間の遷移は電磁放射の影響下では発生しない。さて、多くの原子系では、ハイゼンベルク表現における \(D\) の行列要素の大部分が消滅し、したがって遷移の可能性には厳しい制限が課せられます。
+これらの制限を表す規則は選択規則と呼ばれます。
+</span>
 
+</p><p>
+The idea of selection rules can be refined by a more detailed
+application of the theory of §44 and §45, according to which
+the matrix elements of the different Cartesian components of the
+vector \(D\) are associated with different states of polarization of the
 electromagnetic radiation. The nature of this association is just what
 one would get if one considered the matrix elements, or rather their
 real parts, as the amplitudes of harmonic oscillators which interact
 with the field of radiation according to classical electrodynamics.
+
+<br><span style="color:blue;">
+選択則の考え方は、§44と§45の理論をより詳細に適用することで洗練させることができる。それによれば、ベクトル\(D\)の異なる直交座標成分の行列要素は、電磁放射の異なる偏光状態と関連付けられる。この関連付けの性質は、行列要素、あるいはむしろその実部を、古典電気力学に従って放射場と相互作用する調和振動子の振幅とみなした場合に得られるものと全く同じである。
+</span>
+
+</p><p>
 There is a general method for obtaining all selection rules, as
 follows. Let us call the constants of the motion which are diagonal in
-the Heisenberg representation «’s and let D be one of the Cartesian
-components of D. We must obtain an algebraic equation connecting
-D and the «’s which does not involve any dynamical variables other
-than D and the a’s and which is linear in D. Such an equation will
+the Heisenberg representation \(\alpha\)'s and let \(D\) be one of the Cartesian
+components of \(D\). We must obtain an algebraic equation connecting
+\(D\) and the \(\alpha\)'s which does not involve any dynamical variables other
+than \(D\) and the \(\alpha\)'s and which is linear in \(D\). Such an equation will
+be of the form
 
-be of the form YF-Do, = 0, (81)
+<br><span style="color:blue;">
+すべての選択規則を得るための一般的な方法は、以下のとおりです。ハイゼンベルク表現において対角となる運動定数を\(\alpha\)と呼び、\(D\)を\(D\)の直交座標成分の一つとします。\(D\)と\(\alpha\)を結ぶ代数方程式を求めます。この方程式は\(D\)と\(\alpha\)以外の力学変数を含まず、\(D\)に関して線形です。この方程式は、次の形式になります。
+</span>
 
-where the f,’s and g,’s are functions of the a’s only. If this equation
+\[
+\sum_r f_r Dg_r = 0  \tag{81}
+\]
+
+where the \(f_r\)'s and \(g_r\)'s are functions of the \(\alpha\)'s only. If this equation
 is expressed in terms of representatives, it gives us
 
-X fla’)<a!|D |a"dg,(") = 0,
+<br><span style="color:blue;">
+ここで、\(f_r\)と\(g_r\)は\(\alpha\)のみの関数である。この式を代表値で表すと、次のようになる。
+</span>
 
-or <o" Do" > flo )ge(") = 0,
-which shows that <a’|D|x”> == 0 unless
-E fila! gp(o") = 0. (82)
+\[
+\sum_r f_r(\alpha^\prime)\langle\alpha^\prime|D|\alpha^{\prime\prime}\rangle g_r(\alpha^{\prime\prime})=0
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\langle\alpha^\prime|D|\alpha^{\prime\prime}\rangle\sum_r f_r(\alpha^\prime)g_r(\alpha^{\prime\prime})=0
+\]
+
+which shows that \(\langle\alpha^\prime|D|\alpha^{\prime\prime}\rangle=0\) unless
+
+<br><span style="color:blue;">
+これは、\(\langle\alpha^\prime|D|\alpha^{\prime\prime}\rangle=0\) が、
+</span>
+
+\[
+\sum_r f_r(\alpha^\prime)g_r(\alpha^{\prime\prime})=0  \tag{82}
+\]
 
 This last equation, giving the connexion which must exist between
-« and «” in order that <«'|D|a”> may not vanish, constitutes the
-selection rule, so far as the component D of D is concerned.
+\(\alpha^\prime\) and \(\alpha^{\prime\prime}\) in order that \(\langle\alpha^\prime|D|\alpha^{\prime\prime}\rangle\) may not vanish, constitutes the selection rule, so far as the component \(D\) of \(\mathbf{D}\) is concerned.
 
-Our work on the harmonic oscillator in § 34 provides an example
-of a selection rule. Equation (8) is of the form (81) with 7 for D and
-H playing the part of the «’s, and it shows that the matrix elements
-(H'|q|H"> of 7 all vanish except those for which H”’—H’ = hw. The
-conjugate complex of this result is that the matrix elements (H’|n|H’>
-of » all vanish except those for which H”—H’ = —iiw. Since q is a
-numerical multiple of »—4, its matrix elements (H’|q|H”) all vanish
-except those for which H’—H’ = tiw. If the harmonic oscillator
-carries an electric charge, its electric displacement D will be pro-
-portional to g. The selection rule is then that only those transitions
+<br><span style="color:blue;">
+この最後の式は、\(\langle\alpha^\prime|D|\alpha^{\prime\prime}\rangle\) が消えないようにするために、\(\alpha^\prime\) と \(\alpha^{\prime\prime}\) の間に存在しなければならない関係を与えており、\(\mathbf{D}\) の要素 \(D\) に関する選択規則を構成します。
+</span>
 
-can take place in which the energy H changes by a single quan-
-tum fiw.
+</p><p>
+Our work on the harmonic oscillator in §34 provides an example
+of a selection rule. Equation (8) is of the form (81) with \(\overline{\eta}\) for \(D\) and
+\(H\) playing the part of the \(\alpha\)'s, and it shows that the matrix elements
+\(\langle H^\prime|\overline{\eta}|H^{\prime\prime}\rangle\) of \(\overline{\eta}\) all vanish except those for which \(H^{\prime\prime}-H^\prime=\hbar\omega\). The conjugate complex of this result is that the matrix elements \(\langle H^\prime|\eta|H^{\prime\prime}\rangle\) of \(\eta\) all vanish except those for which \(H^{\prime\prime}—H^\prime = —i\hbar\omega\). Since \(q\) is a
+numerical multiple of \(\eta - \overline{\eta}\), its matrix elements \(\langle H^\prime|q|H^{\prime\prime\rangle\) all vanish except those for which \(H^{\prime\prime}—H^\prime = \pm\hbar\omega\). If the harmonic oscillator carries an electric charge, its electric displacement \(D\) will be pro-
+portional to \(q\). The selection rule is then that only those transitions can take place in which the energy H changes by a single quantum \(\hbar\omega\).
 
-We shall now obtain the selection rules fer m, and k for an electron
-moving in a central field of force. The components. of electric dis-
-﻿§ 40 SELECTION RULES 161
+<br><span style="color:blue;">
+§34における調和振動子に関する研究は、選択則の例を示しています。式(8)は、\(D\)と\(H\)が\(\alpha\)の役割を果たす\(\overline{\eta}\)を持つ(81)式の形をとり、\(\overline{\eta}\)の行列要素\(\langle H^\prime|\overline{\eta}|H^{\prime\prime}\rangle\)は、\(H^{\prime\prime}-H^\prime=\hbar\omega\)となる要素を除いてすべてゼロになることを示しています。この結果の共役複素数は、\(\eta\) の行列要素 \(\langle H^\prime|\eta|H^{\prime\prime}\rangle\) が、\(H^{\prime\prime}—H^\prime = —i\hbar\omega\) となる要素を除いてすべてゼロになることです。\(q\) は \(\eta - \overline{\eta}\) の倍数であるため、その行列要素 \(\langle H^\prime|q|H^{\prime\prime\rangle\) は、\(H^{\prime\prime}—H^\prime = \pm\hbar\omega\) となる要素を除いてすべてゼロになります。調和振動子が電荷を帯びている場合、その電気変位 \(D\) は \(q\) に比例します。選択規則は、エネルギー H が単一の量子 \(\hbar\omega\) だけ変化する遷移のみが実行されるというものです。
+</span>
 
-placement are here proportional to the Cartesian coordinates 2, y, 2.
-Taking first m,, we have that m, commutes with z, or that
+</p><p>
+We shall now obtain the selection rules for \(m_z\) and \(k\) for an electron
+moving in a central field of force. The components. of electric displacement are here proportional to the Cartesian coordinates \(x,y,z\). Taking first \(m_z\), we have that \(m_z\) commutes with \(z\), or that
 
-M,2—zm, = 0.
+<br><span style="color:blue;">
+ここで、中心力場中を運動する電子の\(m_z\)と\(k\)の選択則を得る。ここで、電子変位の成分は直交座標\(x,y,z\)に比例する。まず\(m_z\)をとれば、\(m_z\)は\(z\)と可換である。つまり、
+</span>
+
+\[
+m_z z - zm_z = 0
+\]
 
 This is an equation of the required type (81), giving us the selection
+rule
 
-rule , ”
-m,—M, = 0
+<br><span style="color:blue;">
+これは要求された型(81)の方程式であり、選択則を与える。
+</span>
 
-for the z-component of the displacement. Again, from equations
+\[
+m_z^\prime - m_z^{\prime\prime} = 0
+\]
 
-(23) we have [ms [m,, al] = [m,, y| =e
+for the \(z\)-component of the displacement. Again, from equations
+(23) we have
 
-or mxz—2m,7m,+omi—a = 0,
+<br><span style="color:blue;">
+変位の\(z\)成分についても同様である。再び式(23)から、
+</span>
+
+\[
+\left[m_z,[m_z, x]\right] = [m_z, y| = -x
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+m_z^2 x - 2m_z xm_z + xm_z^2 - \hbar^2x = 0
+\]
 
 which is also of the type (81) and gives us the selection rule
 
-a”
+<br><span style="color:blue;">
+これも（81）型であり、選択則を与える。
+</span>
 
-"2 tt A yp Ff2 =
-m,2—In,m,+-mPe—h 0
+\[
+m_z^{\prime 2}-2m_z^\prime m_z^{\prime\prime} + m_z^{\prime\prime 2}-\hbar^2 = 0
+\]
 
-or (m,—m,—h)(m,—m, +h) = 0
+or
 
-for the z-component of the displacement. The selection rule for the
-y-component is the same. Thus our selection rules for m, are that
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+(m_z^\prime - m_z^{\prime\prime} - \hbar)(m_z^\prime - m_z^{\prime\prime} + \hbar) = 0
+\]
+
+for the \(x\)-component of the displacement. The selection rule for the
+\(y\)-component is the same. Thus our selection rules for \(m_z\) are that
 in transitions associated with radiation with a polarization corresponding
-to an electric dipole in the z-direction, m, cannot change, while in transi-
+to an electric dipole in the \(z\)-direction, \(m_z^\prime\) cannot change, while in transi-
 tions associated with a polarization corresponding to an electric dipole
-in the x-direction or y-direction, m, must change by -h.
+in the x-direction or \(y\)-direction, \(m_z^\prime\) must change by \(\pm\hbar\).
 
+<br><span style="color:blue;">
+変位の \(x\) 成分についても同様です。\(y\) 成分の選択則も同じです。したがって、\(m_z\) の選択則は、\(z\) 方向の電気双極子に対応する偏光を持つ放射に関連する遷移では \(m_z^\prime\) は変化しないのに対し、x 方向または \(y\) 方向の電気双極子に対応する偏光を持つ放射に関連する遷移では \(m_z^\prime\) は \(\pm\hbar\) だけ変化する必要がある、というものです。
+</span>
+
+</p><p>
 We can determine more accurately the state of polarization of the
-radiation associated with a transition in which m, changes by +4, by
+radiation associated with a transition in which \(m_z^\prime\) changes by \(\pm\hbar\), by
 considering the condition for the non-vanishing of matrix elements
-of a-+iy and z—iy. We have
+of \(x+iy\) and \(x—iy\). We have
 
-[m,,2+iy] = y—-w = —iatity)
-or m,(a-+iy)—(a+iy)(m,+h) = 9,
+<br><span style="color:blue;">
+\(m_z^\prime\) が \(\pm\hbar\) だけ変化する遷移に伴う放射の偏光状態は、\(x+iy\) と \(x—iy\) の行列要素がゼロにならない条件を考慮することで、より正確に決定できる。
+</span>
+
+\[
+[m_z,x+iy] = y—ix = —i(x+iy)
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+m_z(x+iy)-(x+iy)(m_z+\hbar) = 0
+\]
 
 which is again of the type (81). It gives
-m,—m,—h = 0
 
-as the condition that <m/,|z-+ty|mz> shall not vanish. Similarly,
-m,—m,+h = 0
+<br><span style="color:blue;">
+これはまた（81）型である。
+</span>
 
-is the condition that <m,|2—iy|m%> shall not vanish. Hence
+\[
+m_z^\prime - m_z^{\prime\prime} - \hbar = 0
+\]
 
-<m,|e—iy|m,—h> = 0
+as the condition that \(\langle m_z^\prime|x+iy|m_z^{\prime\prime}\rangle\) shall not vanish. Similarly,
 
-or <mi,|x|m,,—h> = i<m,|y|m,—hy = (a-+ibje
-say, a, b, and w being real. The conjugate complex of this is
-Cnt, —Ti\an|miy = —idm’,—Tily|my = (a—tb)e**.
+<br><span style="color:blue;">
+\(\langle m_z^\prime|x+iy|m_z^{\prime\prime}\rangle\)が消滅しないという条件として。同様に、
+</span>
 
-Thus the vector #{(m,|D|m,—h>-+<m,—h|D [m,>}, which determines
-﻿162 ELEMENTARY APPLICATIONS § 40
+\[
+m_z^\prime - m_z^{\prime\prime}+\hbar = 0
+\]
 
+is the condition that \(\langle m_z^\prime|x-iy|m_z^{\prime\prime}\rangle\) shall not vanish. Hence
+
+<br><span style="color:blue;">
+は、\(\langle m_z^\prime|x-iy|m_z^{\prime\prime}\rangle\)がゼロにならないという条件である。したがって、
+</span>
+
+\[
+\langle m_z^\prime|x-iy|m_z^\prime-\hbar\rangle = 0
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+\langle m_z^\prime|x|m_z^\prime-\hbar\rangle = i\langle m_z^\prime|y|m_z^\prime-\hbar\rangle=(a+ib)e^{i\omega t}
+\]
+
+say, \(a, b,\) and \(\omega\) being real. The conjugate complex of this is
+
+<br><span style="color:blue;">
+例えば、\(a, b,\)と\(\omega\)が実数であるとする。これの共役複素数は
+</span>
+
+\[
+\langle m_z^\prime-\hbar|x|m_z^\prime\rangle = -i\langle m_z^\prime-\hbar|y|m_z^\prime\rangle = (a-ib)e^{-i\omega t}
+\]
+
+Thus the vector \(\frac{1}{2}\{\langle m_z^\prime|\mathbf{D}|m_z^\prime-\hbar\rangle+\langle m_z^\prime-\hbar|\mathbf{D}|m_z^\prime\rangle\}\), which determines
 the state of polarization of the radiation associated with transitions
-for which m, = m,—h, has the following three components
+for which \(m_z^{\prime\prime}= m_z^\prime — \hbar\), has the following three components
 
-4{<m,|x|\m,—h> + <m,—h|x|\m>}
-= U(a+tibjeiot+ (a—ibjeo} = acoswt—bsinut,
+<br><span style="color:blue;">
+したがって、\(m_z^{\prime\prime}= m_z^\prime — \hbar\) の遷移に関連する放射の偏光状態を決定するベクトル \(\frac{1}{2}\{\langle m_z^\prime|\mathbf{D}|m_z^\prime-\hbar\rangle+\langle m_z^\prime-\hbar|\mathbf{D}|m_z^\prime\rangle\}\) は、次の 3 つの要素を持ちます。
+</span>
 
-Hdmi ly|m,—h> + <m,—fly|m>} (83)
-= fi{—(a+ibje!+ (a—ibje} = asinwt+6 cos wt,
-{<m,|z|m,—h> +m, —h|z|my} = 0.
+\[
+\left.
+\begin{align}
+&\frac{1}{2}\{\langle m_z^\prime|x|m_z^\prime-\hbar\rangle+\langle m_z^\prime-\hbar|x|m_z^\prime\rangle\} \\
+&　=\frac{1}{2}\{(a+ib)e^{i\omega t}+(a-ib)e^{-i\omega t}\}=a\cos\omega t-b\sin\omega t \\
+&\frac{1}{2}\{\langle m_z^\prime|y|m_z^\prime-\hbar\rangle+\langle m_z^\prime-\hbar|y|m_z^\prime\rangle\} \\
+&　=\frac{1}{2}i\{-(a+ib)e^{i\omega t}+(a-ib)e^{-i\omega t}\}=a\sin\omega t+b\cos\omega t\\
+&\frac{1}{2}\{\langle m_z^\prime|z|m_z^\prime-\hbar\rangle+\langle m_z^\prime-\hbar|z|m_z^\prime\rangle\}=0
+\end{align}
+\right\}
+\tag{83}
+\]
 
 From the form of these components we see that the associated radia-
-tion moving in the z-direction will be circularly polarized, that
-moving in any direction in the «y-plane will be linearly polarized in
+tion moving in the \(z\)-direction will be circularly polarized, that
+moving in any direction in the \(xy\)-plane will be linearly polarized in
 this plane, and that moving in intermediate directions will be
 elliptically polarized. The direction of circular polarization for radia-
-tion moving in the z-direction will depend on whether w is positive
-or negative, and this will depend on which of the two states m, or
-m, = m,—h has the greater energy.
-We shall now determine the selection rule for k. We have
+tion moving in the \(z\)-direction will depend on whether \(\omega\) is positive
+or negative, and this will depend on which of the two states \(m_z^\prime\) or
+\(m_z^{\prime\prime} = m_z^\prime - \hbar\) has the greater energy.
 
-[k(k-+-h), 2] = [mi,z]+[m2, z]
+<br><span style="color:blue;">
+これらの成分の形状から、\(z\)方向に移動する放射は円偏光、\(xy\)平面内の任意の方向に移動する放射は同平面内で直線偏光、中間の方向に移動する放射は楕円偏光であることがわかります。\(z\)方向に移動する放射の円偏光の方向は、\(\omega\)が正か負かによって決まり、\(m_z^\prime\)と\(m_z^{\prime\prime} = m_z^\prime - \hbar\)のどちらの状態がより大きなエネルギーを持つかによって決まります。
+</span>
 
-YM. My, YELM, HM
+</p><p>
+We shall now determine the selection rule for \(k\). We have
 
-ye
+<br><span style="color:blue;">
+ここで\(k\)の選択規則を決定する。
+</span>
 
-= 2(m,x—m, y+ itz)
+\[
+\begin{align}
+[k(k+\hbar),z] &= [m_x^2,z]+[m_y^2,z] \\
+&=-y m_x - m_x y + x m_y + m_y x \\
+&=2(m_y x - m_x y + i\hbar z) \\
+&=2(m_y x - y m_x) = 2(x m_y - m_x y)
+\end{align}
+\]
 
-= 2(m,x—ym,) = 2am —M,Y¥).
+Similarly,
 
-Similarly, [k(k-+-h), c] = 2(ym,—m, 2)
-and [k(k-+-4), y] = 2(m,2—am,).
+<br><span style="color:blue;">
+同様に
+</span>
+
+\[
+[k(k+\hbar),x] = 2(ym_z - m_y z)
+\]
+
+and
+
+<br><span style="color:blue;">
+および
+</span>
+
+\[
+[k(k+\hbar, y] = 2(m_x z - x m_z)
+\]
+
 Hence
 
-[k(e-Lh), [e(e-+A), 2]
-= 4k(k+-h), m,x—m, y+tiz] “.
-am, [k(k-+h), x] —2m,[k(k+h), y]+ 2ih[k(k-+H), 2]
-z)—4m,,(m, z2—xm,)-+ Wh(k-h)z—2k(k-+hy}
-2b my, ym, 2)m,—4(m3-+m2-+-m2)z4
-+ 2fk(k+-h)e—zk(ke+h)}.
-From (22) MyzL+-MyY+M,% = 0 (84)
-and hence
-[k(h-+h), [k(k-+-h), 2] = —2{k(k+hje+ek(kh+hy},
-which gives
-k2(ke--i)22—~ Qhe(k-+ hiek(k--h) 2k? (lo-fi)?
-QWAAk(k+Aje+ek(k+h)} = 0. (85)
-﻿§ 40 SELECTION RULES 163
+<br><span style="color:blue;">
+従って
+</span>
 
-Similar equations hold for « and y. These equations are of the re-
+\[
+\begin{align}
+&[k(k+\hbar),[k(k+\hbar),z]] \\
+&　=2[k(k+\hbar),m_y x - m_x y + i\hbar z] \\
+&　=2m_y[k(k+\hbar),x]-2m_x[k(k+\hbar),y]+2i\hbar[k(k+\hbar),z] \\
+&　=4m_y(ym_z - m_y z)-4m_x(m_x z - x m_z)+2\{k(k+\hbar)z-zk(k+\hbar)\} \\
+&　=4(m_x x+m_y y+m_z z)m_z-4(m_x^2+m_y^2+m_z^2)z+ \\
+&　　　　+2\{k(k+\hbar)z-zk(k+\hbar)\}
+\end{align}
+\]
+
+From (22)
+
+<br><span style="color:blue;">
+式(22)から
+</span>
+
+\[
+m_x x+m_y y + m_z z = 0  \tag{84}
+\]
+
+and hence
+
+<br><span style="color:blue;">
+それゆえ
+</span>
+
+\[
+\left[k(k+\hbar),[k(k+\hbar),z]\right] = —2\{k(k+\hbar)z+zk(k+\hbar)\}
+\]
+
+which gives
+
+<br><span style="color:blue;">
+以下を得る
+</span>
+
+\[
+\begin{align}
+&k^2(k+\hbar)^2z—2k(k+\hbar)zk(k+\hbar)+zk^2(k+\hbar)^2-\\
+&　　　　　　　-2\hbar^2\{k(k+\hbar)z+zk(k+\hbar)\} = 0  \tag{85}
+\end{align}
+\]
+
+Similar equations hold for \(x\) and \(y\). These equations are of the re-
 quired type (81), and give us the selection rule
 
-h'?(Ke’ -+-5)2— 2h (Ie! +B) k" (kl +h) + b"2(k" Bs)?
-— 282k’ (ke! +h) —QH2k" (k” Lh) = 0,
+<br><span style="color:blue;">
+同様の式が\(x\)と\(y\)についても成り立つ。これらの式は(81)で求められる型であり、選択則を与える。
+</span>
+
+\[
+\begin{align}
+&k^{\prime 2}(k^\prime+\hbar)^2-2k^\prime(k^\prime+\hbar)k^{\prime\prime}(k^{\prime\prime}+\hbar)+k^{\prime\prime 2}(k^{\prime\prime}+\hbar)^2-\\
+&　　　　　　　　　-2\hbar^2k^\prime(k^\prime+\hbar)-2\hbar^2k^{\prime\prime}(k^{\prime\prime}+\hbar)=0
+\end{align}
+\]
 
 which reduces to
-(ho Lk" + 2h) (k' +k Vk’ — kh’ +h) (kb’ —k” —h) = 0.
 
-A transition can take place between two states &’ and k” only if one
+<br><span style="color:blue;">
+これは次のように要約される。
+</span>
+
+\[
+(k^\prime+k^{\prime\prime}+2\hbar)(k^\prime+k^{\prime\prime})(k^\prime-k^{\prime\prime}+\hbar)(k^\prime-k^{\prime\prime}-\hbar)=0
+\]
+
+A transition can take place between two states \(k^\prime\) and \(k^{\prime\prime}\) only if one
 of these four factors vanishes.
 
-Now the first of the factors, (k’+-k’ +24), can never vanish, since
-the eigenvalues of & are all positive or zero. The second, (k'--4"), can
-vanish only if k’ = O0and k” = 0. But transitions between two states
-with these values for & cannot occur on account of other selection
+<br><span style="color:blue;">
+これら4つの要因のうち1つが消滅した場合にのみ、2つの状態 \(k^\prime\) と \(k^{\prime\prime}\) の間で遷移が発生する可能性があります。
+</span>
+
+</p><p>
+Now the first of the factors, \((k^\prime + k^{\prime\prime}+2\hbar)\), can never vanish, since
+the eigenvalues of \(k\) are all positive or zero. The second, \((k^\prime+k^{\prime\prime})\), can
+vanish only if \(k^\prime = O\) and \(k^{\prime\prime} = 0\). But transitions between two states
+with these values for \(k\) cannot occur on account of other selection
 rules, as may be seen from the following argument. If two states
 (labelled respectively with a single prime and a double prime) are
-such that &’ = 0 and hk” = 0, then from (41) and the corresponding
-results for m, and m,, mi, = ml = m, = 0 and mZ = mj) = mi = 0.
-The selection rule for m, now shows that the matrix elements of
-a and y referring to the two states must vanish, as the value of m,
-does not change during the transition, and the similar selection rule
-for m, or m, shows that the matrix element of z also vanishes. Thus
-
+such that \(k^\prime = 0\) and \(k^{\prime\prime\) = 0\), then from (41) and the corresponding
+results for \(m_x\) and \(m_y, m_x^\prime = m_y^\prime = m_z^\prime = 0\) and \(m_x^{\prime\prime} = m_y^{\prime\prime} = m_z^{\prime\prime} = 0\). The selection rule for \(m_z\) now shows that the matrix elements of \(x\) and \(y\) referring to the two states must vanish, as the value of \(m_z\) does not change during the transition, and the similar selection rule
+for \(m_x\) or \(m_y\) shows that the matrix element of \(z\) also vanishes. Thus
 ransitions between the two states cannot occur. Our selection rule
-for k now reduces to
+for \(k\) now reduces to
 
-(h’—k’ +h)(k’—k’ fh) = 0,
-showing that k must change by --h. This selection rule may be written
-hy? 2h’ kh’ +-h2—H? = 0,
+<br><span style="color:blue;">
+さて、最初の因子 \((k^\prime + k^{\prime\prime}+2\hbar)\) は、\(k\) の固有値がすべて正またはゼロであるため、決して消滅することはありません。2番目の因子 \((k^\prime+k^{\prime\prime})\) は、\(k^\prime = O\) かつ \(k^{\prime\prime} = 0\) の場合にのみ消滅します。しかし、以下の議論からわかるように、\(k\) がこれらの値である2つの状態間の遷移は、他の選択規則により発生しません。 2つの状態（それぞれ単一のプライムと二重のプライムでラベル付け）が\(k^\prime = 0\)および\(k^{\prime\prime\) = 0\)となる場合、(41)および対応する\(m_x\)および\(m_y, m_x^\prime = m_y^\prime = m_z^\prime = 0\)および\(m_x^{\prime\prime} = m_y^{\prime\prime} = m_z^{\prime\prime} = 0\)の結果から、 \(m_z\) の選択則は、\(m_z\) の値が遷移中に変化しないため、2つの状態を指す \(x\) と \(y\) の行列要素が必ず消滅することを示しています。また、\(m_x\) または \(m_y\) の同様の選択則は、\(z\) の行列要素も消滅することを示しています。したがって、2つの状態間の遷移は発生しません。\(k\) の選択則は、次のように簡約されます。
+</span>
 
-and since this is the condition that a matrix element ¢k’ |z|k"> shall
-not vanish, we get the equation
+\[
+(k^\prime-k^{\prime\prime}+\hbar)(k^\prime-k^{\prime\prime}-\hbar) = 0
+\]
 
-h?z—Qkhzek+zkh?*—h2 = 0
-or [k, [k, 2] = —2, (86)
+showing that \(k\) must change by \(\pm\hbar\). This selection rule may be written
+
+<br><span style="color:blue;">
+\(k\) は \(\pm\hbar\) だけ変化する必要があることを示しています。この選択規則は次のように書けます。
+</span>
+
+\[
+k^{\prime 2}-2k^\prime k^{\prime\prime}+k^{\prime\prime 2}-\hbar^2 = 0
+\]
+
+and since this is the condition that a matrix element \(\langle k^\prime|z|k^{\prime\prime}\rangle\)shall not vanish, we get the equation
+
+<br><span style="color:blue;">
+\(k\) は \(\pm\hbar\) だけ変化する必要があることを示しています。この選択規則は次のように書けます。
+</span>
+
+\[
+k^2z-2kzk+zk^2-\hbar^2z=0
+\]
+
+or
+
+<br><span style="color:blue;">
+または
+</span>
+
+\[
+[k, [k, z] = -z  \tag{86}
+\]
 
 a result which could not easily be obtained in a more direct way.
+
+<br><span style="color:blue;">
+より直接的な方法では簡単には得られない結果です。
+</span>
+
+</p><p>
 As a final example we shall obtain the selection rule for the magni-
-tude K of the total angular momentum M ofa general atomic system.
-Let x,y,z be the coordinates of one of the electrons. We must obtain
-the condition that the (K’, K”) matrix element of 2, y, or z sball not
-vanish. This is evidently the same as the condition that the (K’, K”)
-matrix element of A,, A,, or A, shall not vanish, where A,, Ag, and Ag
-﻿164 ELEMENTARY APPLICATIONS § 40
+tude \(K\) of the total angular momentum \(\mathbf{M}\) ofa general atomic system.
+Let \(x,y,z\) be the coordinates of one of the electrons. We must obtain
+the condition that the \((K^\prime, K^{\prime\prime})\) matrix element of \(x, y,\) or \(z\) sball not
+vanish. This is evidently the same as the condition that the \((K^\prime, K^{\prime\prime})\)
+matrix element of \(\lambda_1, \lambda_2,\) or \(\lambda_3\) shall not vanish, where \(\lambda_1, \lambda_2,\) and \(\lambda_3\) are any three independent linear functions of \(x, y,\) and \(z\) with numerical coefficients, or more generally with any coefficients that commute
+with \(K\) and are thus represented by matrices which are diagonal with
+respect to \(K\). Let
 
-are any three independent linear functions of x, y, and z with numeri-
-cal coefficients, or more generally with any coefficients that commute
-with K and are thus represented by matrices which are diagonal with
+<br><span style="color:blue;">
+最後の例として、一般的な原子系の全角運動量 \(\mathbf{M}\) の大きさ \(K\) に関する選択則を導出します。
+\(x,y,z\) を電子の一つの座標とします。\(x,y,\) または \(z\) の行列要素 \((K^\prime, K^{\prime\prime})\) が零にならないという条件を満たさなければなりません。これは明らかに、\(\lambda_1, \lambda_2,\) または \(\lambda_3\) の \((K^\prime, K^{\prime\prime})\) 行列要素がゼロにならないという条件と同じである。ここで、\(\lambda_1, \lambda_2,\) および \(\lambda_3\) は、数値係数を持つ \(x, y,\) および \(z\) の任意の3つの独立した線形関数、またはより一般的には \(K\) と交換する係数を持ち、したがって \(K\) に関して対角行列で表される。
+</span>
 
-respect to K. Let Ay = e+ M, y+ M2,
-A, = M,z—M,y—ta,
-d, = M,x—M,2—thy,
-A, = M,y—M,x—thz.
+\[
+\begin{align}
+\lambda_0 &= M_x x+M_y y+M_z z \\
+\lambda_x &= M_y z - M_z y - i\hbar x \\
+\lambda_y &= M_z x - M_x z - i\hbar y \\
+\lambda_z &= M_x y - M_y x - i\hbar z
+\end{align}
+\]
+
 We have
-M,d,+M,r, +r, = > (Mf, M,2z—M, M,y—hM, x)
 
-Eye
+<br><span style="color:blue;">
+以下を得る
+</span>
 
-=> (M,M,—M,M,—ihMjze=0 (87)
-Lye
+\[
+\begin{align}
+M_x\lambda_x+M_y\lambda_y+M_z\lambda_z &= \sum_{xyz}(M_xM_y z - M_xM_z y - i\hbar M_x x) \\
+&=\sum_{xyz}(M_xM_y - M_yM_x-i\hbar M_z)z = 0  \tag{87}
+\end{align}
+\]
 
-from (29). Thus A,, A,, and A, are not linearly independent functions
-of z, y, and z. Any two of them, however, together with A, are three
-linearly independent functions of x, y, and z and may be taken as the
-above A,, As; Ag, Since the coefficients M,, M,, M, all commute with K.
-Our problem thus reduces to finding the condition that the (K’, K”)
-matrix elements of Ay, A,, A,, and A, shall not vanish. The physical
-meanings of these )’s are that A, is proportional to the component of
-the vector (x, y,2) in the direction of the vector M, and A,, A,, A, are
-proportional to the Cartesian components of the component of (xz, y, 2)
-perpendicular to M.
+from (29). Thus \(\lambda_x,\lambda_y,\) and \(\lambda_z\) are not linearly independent functions
+of \(x,y,\) and \(z\). Any two of them, however, together with \(\lambda_0\) are three
+linearly independent functions of \(x, y,\) and \(z\) and may be taken as the
+above \(\lambda_1, \lambda_2, \lambda_3\), Since the coefficients \(M_x,M_y,M_z\) all commute with \(K\). Our problem thus reduces to finding the condition that the \((K^\prime, K^{\prime\prime})\)
+matrix elements of \(\lambda_0, \lambda_x, \lambda_y\), and \(\lambda_z\) shall not vanish. The physical meanings of these \(\lambda\)'s are that \(\lambda_0\) is proportional to the component of
+the vector \((x,y,z)\) in the direction of the vector \(\mathbf{M}\), and \(\lambda_x,\lambda_y,\lambda_z\) are proportional to the Cartesian components of the component of \((x,y,z)\) perpendicular to \(\mathbf{M}\).
 
-Since A, is a scalar it must commute with K. It follows that only
-the diagonal elements (K'|A,|K’> of A, can differ from zero, so the
-selection rule is that K cannot change so far as A, is concerned. Apply-
+<br><span style="color:blue;">
+(29)より。したがって、\(\lambda_x,\lambda_y,\)と\(\lambda_z\)は\(x,y,\)と\(z\)の線形独立な関数ではない。しかし、これらのいずれか2つと\(\lambda_0\)を合わせると、\(x,y,\)と\(z\)の3つの線形独立な関数となり、上記の\(\lambda_1, \lambda_2, \lambda_3\)としてとることができる。係数\(M_x,M_y,M_z\)はすべて\(K\)と交換だからである。したがって、我々の問題は、\(\lambda_0, \lambda_x, \lambda_y\)、\(\lambda_z\) の行列要素 \((K^\prime, K^{\prime\prime})\) が零にならないという条件を見つけることに帰着します。これらの \(\lambda\) の物理的な意味は、\(\lambda_0\) がベクトル \((x,y,z)\) の \(\mathbf{M}\) 方向の成分に比例し、\(\lambda_x,\lambda_y,\lambda_z\) が \(\mathbf{M}\) に垂直な \((x,y,z)\) の直交成分に比例することです。
+</span>
 
-ing (30) to the vector A,,A,,A,, we have
+</p><p>
+Since \(\lambda_0\) is a scalar it must commute with \(K\). It follows that only
+the diagonal elements \(\langle K^\prime|\lambda_0|K^\prime\rangle\) of \(\lambda_0\) can differ from zero, so the selection rule is that \(K\) cannot change so far as \(\lambda_0\) is concerned. Applying (30) to the vector \(\lambda_x,\lambda_y,\lambda_z\), we have
 
-eo Ayo
-These relations between M, and A,,A,, A, are of exactly the same form
+<br><span style="color:blue;">
+\(\lambda_0\) はスカラーなので、\(K\) と可換である。したがって、\(\lambda_0\) の対角要素 \(\langle K^\prime|\lambda_0|K^\prime\rangle\) のみが 0 と異なることができる。したがって、選択規則は \(\lambda_0\) に関する限り \(K\) は変化しない、というものである。(30) をベクトル \(\lambda_x,\lambda_y,\lambda_z\) に適用すると、次式が得られる。
+</span>
 
-or Ny,
-as the relations (23), (24) between m, and x,y,z, and also (87) is of
-the same form as (84). The dynamical variables ,, i,, A, thus have the
-same properties relative to the angular momentum M as x,y,z have
-relative to m. The deduction of the selection rule for k when the
-electric displacement is proportional to (x,y,z) can therefore be taken
-over and applied to the selection rule for K when the electric displace-
-ment is proportional to (A,,A,,4,). We find in this way that, so far as
-Ap Ay: A, ave concerned, the selection rule for K is that it must change
-by -Lh.
+\[
+[M_z,\lambda_x]=\lambda_y,　[M_z,\lambda_y]=-\lambda_x,　[M_z,\lambda_z]=0
+\]
 
-Collecting results, we have as the selection rule for K that it must
-change by 0 or +#. We have considered the electric displacement
-﻿§ 40 SELECTION RULES 165
+These relations between \(M_z\) and \(\lambda_x,\lambda_y,\lambda_z\) are of exactly the same form
+as the relations (23), (24) between \(m_z\) and \(x,y,z\), and also (87) is of
+the same form as (84). The dynamical variables \(\lambda_x,\lambda_y,\lambda_z\) thus have the
+same properties relative to the angular momentum \(\mathbf{M}\) as \(x,y,z\) have
+relative to \(\mathbf{m}\). The deduction of the selection rule for \(k\) when the
+electric displacement is proportional to \((x,y,z)\) can therefore be taken
+over and applied to the selection rule for \(K\) when the electric displace-
+ment is proportional to \((\lambda_x,\lambda_y,\lambda_z)\). We find in this way that, so far as
+\(\lambda_x,\lambda_y,\lambda_z\) ave concerned, the selection rule for \(K\) is that it must change
+by \(\pm\hbar\).
 
+<br><span style="color:blue;">
+\(M_z\)と\(\lambda_x,\lambda_y,\lambda_z\)の関係は、\(m_z\)と\(x,y,z\)の関係(23)、(24)と全く同じ形をしており、(87)も(84)と同じ形をしています。したがって、力学変数\(\lambda_x,\lambda_y,\lambda_z\)は、\(x,y,z\)が\(\mathbf{m}\)に対して持つのと同じ角運動量\(\mathbf{M}\)に対する性質を持ちます。したがって、電気変位が \((x,y,z)\) に比例する場合の \(k\) の選択則の演繹は、電気変位が \((\lambda_x,\lambda_y,\lambda_z)\) に比例する場合の \(K\) の選択則にも適用できます。このようにして、\(\lambda_x,\lambda_y,\lambda_z\) に関する限り、\(K\) の選択則は \(\pm\hbar\) だけ変化しなければならないことがわかります。
+</span>
+
+</p><p>
+Collecting results, we have as the selection rule for \(K\) that it must
+change by 0 or \(\pm\hbar\). We have considered the electric displacement
 produced by only one of the electrons, but the same selection rule
-must hold for each electron and thus also for the total electric dis-
+must hold for each electron and thus also for the total electric displacement.
 
-placement.
+<br><span style="color:blue;">
+結果をまとめると、\(K\) の選択則として、\(\pm\hbar\) は 0 または \(\pm\hbar\) だけ変化しなければならないことがわかります。ここでは電子のうちの 1 個だけによって生じる電気変位を考慮しましたが、同じ選択則が各電子に対して、ひいては全体の電気変位に対しても成立している必要があります。
+</span>
 
-41. The Zeeman effect for the hydrogen atom
+</p>
+
+<h3>41. The Zeeman effect for the hydrogen atom　<span style="color:blue;">水素原子のゼーマン効果</span></h3>
+<p>
 
 We shall now consider the system of a hydrogen atom in a uniform
-magnetic field. The Hamiltonian (57) with V = —e®/r, which describes
+magnetic field. The Hamiltonian (57) with \(V = —e^2/r\), which describes
 the hydrogen atom in no external field, gets modified by the magnetic
 field, the modification, according to classical mechanics, consisting
-in the replacement of the components of momentum, p,, Py: Pz bY
-Detele. Ag, Pypele-Ay, Patele-A,, where A,, A,, A, are the com-
-ponents of the vector potential describing the field. For a uniform
-field of magnitude # in the direction of the z-axis we may take
-A, = —}y, A, = 34s, A, = 0. The classical Hamiltonian will
+in the replacement of the components of momentum, \(p_x,p_y,p_z\), by
+\(p_x+e/c.A_x, p_y+e/c.A_y, p_z+e/c.A_z\), where \(A_x,A_yA_z\) are the components of the vector potential describing the field. For a uniform field of magnitude \(\mathscr{H}\) in the direction of the \(z\)-axis we may take \(A_x = -\frac{1}{2}\mathscr{H}y, A_y=\frac{1}{2}\mathscr{H}x, A_z=0\). The classical Hamiltonian will then be
 
-then be
-oe?
-~~ 2m r
+<br><span style="color:blue;">
+ここで、均一磁場中の水素原子系について考察する。外場のない水素原子を記述するハミルトニアン(57) \(V = —e^2/r\) は磁場によって変形される。この変形は、古典力学によれば、運動量成分 \(p_x,p_y,p_z\) が \(p_x+e/c.A_x, p_y+e/c.A_y, p_z+e/c.A_z\) に置き換えられることである。ここで \(A_x,A_yA_z\) は磁場を記述するベクトルポテンシャルの成分である。 \(z\)軸方向に大きさ\(\mathscr{H}\)の一様場がある場合、\(A_x = -\frac{1}{2}\mathscr{H}y, A_y=\frac{1}{2}\mathscr{H}x, A_z=0\)とします。この場合、古典ハミルトニアンは
+</span>
+
+\[
+H=\frac{1}{2m}\left\{\left(p_x-\frac{1}{2}\frac{e}{c}\mathscr{H}y\right)^2+\left(p_y+\frac{1}{2}\frac{e}{c}\mathscr{H}x\right)^2+p_z^2\right\}-\frac{e^2}{r}
+\]
+
 This classical Hamiltonian may be taken over into the quantum
 theory if we add on to it a term giving the effect of the spin of the
 electron. According to experimental evidence and according to the
-theory of Chapter XI, theelectronhasa magnetic moment —eh/2mc.c,
-where o is the spin vector of §37. The energy of this magnetic moment
-in the magnetic field will be eh#/2me.o,. Thus the total quantum
+theory of Chapter XI, theelectronhasa magnetic moment \(—e\hbar/2mc.\boldsymbol{\sigma}\),
+where \(\boldsymbol{\sigma}\) is the spin vector of §37. The energy of this magnetic moment
+in the magnetic field will be \(e\hbar\mathscr{H}/2mc.\sigma_z\). Thus the total quantum
 Hamiltonian will be
-a 2 2
-= (e354) +(0y-+5 <a) i} —o +o, (88)
+
+<br><span style="color:blue;">
+この古典ハミルトニアンは、電子のスピンの効果を表す項を加えることで量子論に引き継ぐことができます。実験的証拠と第11章の理論によれば、電子は磁気モーメント\(—e\hbar/2mc.\boldsymbol{\sigma}\)を持ちます。ここで\(\boldsymbol{\sigma}\)は§37のスピンベクトルです。この磁気モーメントの磁場におけるエネルギーは\(e\hbar\mathscr{H}/2mc.\sigma_z\)です。したがって、全量子ハミルトニアンは
+</span>
+
+\[
+H=\frac{1}{2m}\left\{\left(p_x-\frac{1}{2}\frac{e}{c}\mathscr{H}y\right)^2+\left(p_y+\frac{1}{2}\frac{e}{c}\mathscr{H}x\right)^2+p_z^2\right\}-\frac{e^2}{r}+\frac{e\hbar\mathscr{H}}{2mc}\sigma_z  \tag{88}
+\]
 
 There ought strictly to be other terms in this Hamiltonian giving the
 interaction of the magnetic moment of the electron with the electric
@@ -1544,63 +2902,77 @@ mechanics into account, and will be neglected here. It will be taken
 into account in the relativistic theory of the electron given in
 Chapter XI.
 
+<br><span style="color:blue;">
+このハミルトニアンには、電子の磁気モーメントと原子核の電場との相互作用を表す他の項も厳密には存在するはずですが、この効果は小さく、相対論的力学を考慮に入れることで得られる補正と同じ桁数なので、ここでは無視します。これは、第11章で示される電子の相対論的理論で考慮されます。
+</span>
+
+</p><p>
 If the magnetic field is not too large, we can neglect terms involving
+\(\mathscr{H}^2\), so that the Hamiltonian (88) reduces to
 
-#2, so that the Hamiltonian (88) reduces to
+<br><span style="color:blue;">
+磁場がそれほど大きくない場合は、\(\mathscr{H}^2\)を含む項を無視することができるので、ハミルトニアン(88)は次のように簡約される。
+</span>
 
-1 1 2 l a
-= alle 3541) +(0,+5 < Ha) +93|—
+\[
+\begin{align}
+H &= \frac{1}{2m}(p_x^2+p_y^2+p_z^2)-\frac{e^2}{r}+\frac{e\mathscr{H}}{2mc}(xp_y-yp_x)+\frac{e\hbar\mathscr{H}}{2mc}\sigma_z \\
+\\
+&=\frac{1}{2m}(p_x^2+p_y^2+p_z^2)-\frac{e^2}{r}+\frac{e\mathscr{H}}{2mc}(m_z+\hbar\sigma_z)  \tag{89}
+\end{align}
+\]
 
-a pep — 4 ep, yp) +
-H = Sma Pe Pat P2) 7 tome (py YPa) Ta a,
-1 a H#
-= | (ptt pip) —— + = (m, +he,). (89)
-
-2m r  2me
-3595.57 mM
-﻿166 ELEMENTARY APPLICATIONS § 41
-
-The extra terms due to the magnetic field are now e#/2me.(m,+-/ia,).
+The extra terms due to the magnetic field are now \(e\mathscr{H}/2mc.(m_z+\hbar\sigma_z)\).
 But these extra terms commute with the total Hamiltonian and are
 thus constants of the motion. This makes the problem very easy.
 The stationary states of the system, i.e. the eigenstates of the Hamil-
 tonian (89), will be those eigenstates of the Hamiltonian for no field
-that are simultaneously eigenstates of the observables m, and o,, or
-at least of the one observable m,+fo,, and the energy-levels of the
+that are simultaneously eigenstates of the observables \(m_z\) and \(\sigma_z\), or
+at least of the one observable \(m_+\hbar\sigma_z\) and the energy-levels of the
 system will be those for the system with no field, given by (80) if
 one considers only closed states, increased by an eigenvalue of
-eH/2mc.(m,+tis,). Thus stationary states of the system with no
-field for which m, has the numerical value m,, an integral multiple
-of i, and for which also o, has the numerical value o, = +1, will still
+\(e\mathscr{H}/2mc.(m_z+\hbar\sigma_z)\). Thus stationary states of the system with no
+field for which \(m_z\) has the numerical value \(m_z^\prime\), an integral multiple
+of \(\hbar\), and for which also \(\sigma_z\) has the numerical value \(\sigma_z^\prime =\pm 1\), will still
 be stationary states when the field is applied. Their energy will be
 increased by an amount consisting of the sum of two parts, a part
-eF#/2mc.m, arising from the orbital motion, which part may be con-
-sidered as due to an orbital magnetic moment —em,/2mce, and a part
-e#/2me. ho’, arising from the spin. The ratio of the orbital magnetic
-moment to the orbital angular momentum m, is —e/2mc, which is
+\(e\mathscr{H}/2mc.m_z^\prime\) arising from the orbital motion, which part may be con-
+sidered as due to an orbital magnetic moment \(-em_z^\prime/2mc\), and a part
+\(e\mathscr{H}/2mc.h\sigma_z^\prime\) arising from the spin. The ratio of the orbital magnetic
+moment to the orbital angular momentum \(m_z^\prime\) is \(-e/2mc\), which is
 half the ratio of the spin magnetic moment to the spin angular
 momentum. This fact is sometimes referred to as the magnetic
 anomaly of the spin.
 
-Since the energy-levels now involve m,, the selection rule for m,
+<br><span style="color:blue;">
+磁場による余分な項は、\(e\mathscr{H}/2mc.(m_z+\hbar\sigma_z)\) となります。
+しかし、これらの余分な項は全ハミルトニアンと交換するため、運動定数となります。これにより、問題は非常に簡単になります。
+系の定常状態、すなわちハミルトニアン (89) の固有状態は、場がない場合のハミルトニアンの固有状態のうち、観測量 \(m_z\) と \(\sigma_z\) の固有状態、または少なくとも 1 つの観測量 \(m_+\hbar\sigma_z\) の固有状態であるものとなり、系のエネルギー準位は、閉じた状態のみを考慮すると、場がない場合の系のエネルギー準位 (80) に固有値 \(e\mathscr{H}/2mc.(m_z+\hbar\sigma_z)\) を加えたものとなる。したがって、磁場がかかっていない系の定常状態において、\(m_z\) が数値 \(m_z^\prime\)（\(\hbar\) の整数倍）を持ち、\(\sigma_z\) が数値 \(\sigma_z^\prime =\pm 1\) を持つ場合、磁場を印加しても定常状態のままである。そのエネルギーは、軌道運動に起因する部分（\(e\mathscr{H}/2mc.m_z^\prime\)）と、スピンに起因する部分（\(e\mathscr{H}/2mc.h\sigma_z^\prime\)）の和によって増加する。軌道磁気モーメントと軌道角運動量の比 \(m_z^\prime\) は \(-e/2mc\) であり、これはスピン磁気モーメントとスピン角運動量の比の半分です。この事実は、スピンの磁気異常と呼ばれることもあります。
+</span>
+
+</p><p>
+Since the energy-levels now involve \(m_z\), the selection rule for \(m_z\)
 obtained in the preceding section becomes capable of direct com-
 parison with experiment. We take a Heisenberg representation in
-which, among other constants of the motion, m, and o, are diagonal.
-The selection rule for m, now requires m, to change by 7, 0, or —f,
-while o,, since it commutes with the electric displacement, will not
-change at all. Thus the energy difference between the two states
+which, among other constants of the motion, \(m_z\) and \(\sigma_z\) are diagonal.
+The selection rule for \(m_z\) now requires \(m_z\) to change by \(\hbar\), 0, or \(—\hbar\), while \(\sigma_z\), since it commutes with the electric displacement, will not change at all. Thus the energy difference between the two states
 taking part in the transition process will differ by an amount
-ch t/2mc, 0, or —eh.A#/2me from its value for no magnetic field.
-Hence, from Bohr’s frequency condition, the frequency of the
-associated electromagnetic radiation will differ by e4/4nmec, 0, or
-—eH#H/4ame from that for no magnetic field. This means that each
+\(e\mathscr{H}/2mc\), 0, or \(-e\hbar\mathscr{H}/2mc\) from its value for no magnetic field.
+Hence, from Bohr's frequency condition, the frequency of the
+associated electromagnetic radiation will differ by \(e\mathscr{H}/4\pi mc\), 0, or
+\(-e\mathscr{H}/4\pi mc\) from that for no magnetic field. This means that each
 spectral line for no magnetic field gets split up by the field into three
-components. If one considers radiation moving in the z-direction,
+components. If one considers radiation moving in the \(z\)-direction,
 then from (83) the two outer components will be circularly polarized,
 while the central undisplaced one will be of zero intensity. These
 results are in agreement with experiment and also with the classical
 theory of the Zeeman effect.
 
+<br><span style="color:blue;">
+エネルギー準位に \(m_z\) が含まれるようになったため、前節で得られた \(m_z\) の選択則は実験と直接比較できるようになります。ここでは、運動定数の中でも \(m_z\) と \(\sigma_z\) が対角となるハイゼンベルク表現をとります。
+\(m_z\) の選択則では、\(m_z\) が \(\hbar\)、0、または \(-\hbar\) だけ変化することが求められますが、\(\sigma_z\) は電気変位と可換であるため、全く変化しません。したがって、遷移過程に関与する2つの状態間のエネルギー差は、磁場がない場合の値から \(e\mathscr{H}/2mc\)、0、または \(-e\hbar\mathscr{H}/2mc\) だけ異なります。
+したがって、ボーアの周波数条件から、関連する電磁放射の周波数は、磁場がない場合の周波数から \(e\mathscr{H}/4\pi mc\)、0、または \(-e\mathscr{H}/4\pi mc\) だけ異なります。これは、磁場がない場合の各スペクトル線が磁場によって3つの成分に分割されることを意味します。\(z\)方向に移動する放射を考えると、(83)から、外側の2つの成分は円偏光になり、中心の変位していない成分は強度がゼロになります。これらの結果は、実験結果およびゼーマン効果の古典理論と一致しています。
+</span>
 </p>
     </body>
 </html>
